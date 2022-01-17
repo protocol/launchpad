@@ -1,4 +1,4 @@
-# launchpad
+# Launchpad
 This repository contains intentionally organized and curated content for Protocol Labs' Launchpad program.
 We welcome contributions, but please read
 
