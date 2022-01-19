@@ -19,4 +19,4 @@
 
 ## Additional Resources
 
-* [Yet another page](additional-resources/yet-another-page.md)
+* [Pre-Requisites](additional-resources/yet-another-page.md)
