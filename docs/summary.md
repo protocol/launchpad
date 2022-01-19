@@ -20,11 +20,9 @@
 * [Week 6| Protocol Labs Toolkits & SDKs](protocol-labs-toolkits-sdks/about.md)    
     * [Some child page](page1/page1-1.md)
 
-<!-- * [Additional Resources](protocol-labs-toolkits-sdks/about.md)    
-    * [Some child page](page1/page1-1.md) -->
 
 
 
-## A second-page group​
+## Additional Resources
 
 * [Yet another page](another-page.md)
