@@ -1,6 +1,6 @@
-‌# Summary​
+‌# Table of Contents
 
-## Use headings to create page groups like this one​
+## Launchpad Weekly Learning Resources
 
 * [Week 1 | The Protocol Labs Network](protocol-labs-network/about.md)    
     * [Some child page](page1/page1-1.md)    
