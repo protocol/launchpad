@@ -1,5 +1,4 @@
 root: ./docs/
 structure:
-  readme: ./readme.md
+  readme: ./about-launchpad.md
   summary: ./summary.md
-
