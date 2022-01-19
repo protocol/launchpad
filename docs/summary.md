@@ -1,28 +1,22 @@
-‌# Table of Contents
+# Table of contents
+
+* [About](readme.md)
 
 ## Launchpad Weekly Learning Resources
 
-* [Week 1 | The Protocol Labs Network](protocol-labs-network/about.md)    
-    * [Some child page](page1/page1-1.md)    
-
-* [Week 2 | IPFS](ipfs/about.md)    
-    * [Some child page](page1/page1-1.md)
-
-* [Week 3 | IPLD](ipld/about.md)    
-    * [Some child page](page1/page1-1.md)   
-
-* [Week 4 | LibP2P](libp2p/about.md)    
-    * [Some child page](page1/page1-1.md)
-
-* [Week 5| Filecoin](filecoin/about.md)    
-    * [Some child page](page1/page1-1.md)
-
-* [Week 6| Protocol Labs Toolkits & SDKs](protocol-labs-toolkits-sdks/about.md)    
-    * [Some child page](page1/page1-1.md)
-
-
-
+* [Week 1 | The Protocol Labs Network](protocol-labs-network/about.md)
+  * [Some child page](launchpad-weekly-learning-resources/about/some-child-page.md)
+* [Week 2 | IPFS](ipfs/about.md)
+  * [Some child page](launchpad-weekly-learning-resources/about/some-child-page.md)
+* [Week 3 | IPLD](ipld/about.md)
+  * [Some child page](launchpad-weekly-learning-resources/about/some-child-page.md)
+* [Week 4 | LibP2P](libp2p/about.md)
+  * [Some child page](launchpad-weekly-learning-resources/about/some-child-page.md)
+* [Week 5| Filecoin](filecoin/about.md)
+  * [Some child page](launchpad-weekly-learning-resources/about/some-child-page.md)
+* [Week 6| Protocol Labs Toolkits & SDKs](protocol-labs-toolkits-sdks/about.md)
+  * [Some child page](launchpad-weekly-learning-resources/about/some-child-page.md)
 
 ## Additional Resources
 
-* [Yet another page](another-page.md)
+* [Yet another page](additional-resources/yet-another-page.md)
