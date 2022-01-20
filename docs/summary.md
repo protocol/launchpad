@@ -5,7 +5,7 @@
 ## Launchpad Learning Resources
 
 * [The Protocol Labs Network](protocol-labs-network/about.md)
-  * [What is PL?](protocol-labs-network/what-is-pl.md)
+  * [What is the PL Network?](protocol-labs-network/what-is-pl.md)
 * [IPFS](ipfs/about.md)
   * [Some child page](ipfs/some-child-page.md)
 * [PLD](ipld/about.md)
