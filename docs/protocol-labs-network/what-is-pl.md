@@ -68,4 +68,4 @@ Investors. Protocol Labs raised funding from an amazing set of technology invest
 
 #### The next Internet Revolution | Juan Benet | TEDxSanFrancisco
 
-[https://www.youtube.com/watch?v=2RCwZDRwk48](https://www.youtube.com/watch?v=2RCwZDRwk48)
+{% embed url="https://www.youtube.com/watch?v=2RCwZDRwk48" %}
