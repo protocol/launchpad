@@ -1,12 +1,12 @@
 ---
-description: Add the subtitle here
+description: The Protocol Labs Network
 ---
 
-# About *** Add Title of Page Here
+# About The Protocol Labs Network
 
 ## **Introduction**
 
-**Bold text** is building the next generation of the internet.
+This section introduces
 
 ![A link](../../.gitbook/assets/twitter-banner-1500x500.png)
 
