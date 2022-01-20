@@ -2,7 +2,7 @@
 
 * [About Launchpad](about-launchpad.md)
 
-## Launchpad Weekly Learning Resources
+## Launchpad Learning Resources
 
 * [The Protocol Labs Network](protocol-labs-network/about.md)
   * [Some child page](launchpad-weekly-learning-resources/about/some-child-page.md)
