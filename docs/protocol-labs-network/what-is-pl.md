@@ -8,8 +8,6 @@ description: What is the Protocol Labs Network
 
 {% embed url="https://youtu.be/QKEFMh-kT_Q" %}
 
-{% embed url="https://f.io/Rcq6E4d5" %}
-
 ## Background, Work, & Business Model
 
 _This is an_ [_annotated version of a blog_](https://protocol.ai/blog/protocol-labs-creating-new-networks/)
