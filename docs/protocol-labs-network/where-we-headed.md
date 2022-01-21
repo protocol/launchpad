@@ -28,4 +28,4 @@ _Understand the basics of the Protocol Labs network & ecosystem, Web 3.0 blockch
 
 {% embed url="https://www.youtube.com/watch?v=pJOG5Ql7ZD0" %}
 
-_In this video you can learn more about the ecosystem of gateways, pinning services, browsers solutions, messaging, client tools for IPFS, other IPFS projects, and more being build with the Protocol Labs architecture._
+_In this video you can learn more about the ecosystem of gateways, pinning services, browsers solutions, messaging, client tools for IPFS, other IPFS projects, and more being build with the Protocol Labs architecture. In this talk, we look forward to the problems we will have to solve and how we can try to think ahead to truly make a better system._
