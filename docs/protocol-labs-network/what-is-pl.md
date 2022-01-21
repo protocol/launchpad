@@ -32,7 +32,7 @@ The horizon of computing is exciting and turbulent. We face optimistic progress,
 
 ![The Research Pipeline](https://protocol.ai/assets/img/research-pipeline.b728d71d.pn)
 
-1. **We should accelerate the ideas-to-superpowers pipeline**. At the heart of computing progress lies a simple process: the research, development, and deployment cycle. Ideas are conceived and refined, encoded into mathematical rules, programmed into software, and deployed into computers, which grants super-powers to humans world-wide. The better and faster we are at sifting ideas through this pipeline, the better and faster our superpowers will come. This is the How.
+2. **We should accelerate the ideas-to-superpowers pipeline**. At the heart of computing progress lies a simple process: the research, development, and deployment cycle. Ideas are conceived and refined, encoded into mathematical rules, programmed into software, and deployed into computers, which grants super-powers to humans world-wide. The better and faster we are at sifting ideas through this pipeline, the better and faster our superpowers will come. This is the How.
 
 Breakthroughs from labs that are exclusively or mostly focused on research tend to stay buried as papers. Sometimes the lag is natural, the research is far ahead of its broad applicability. But we find that there are hundreds of breakthroughs useful long before they reach users. It can take many years, even decades, before breakthroughs are realized in products that improve people's lives. This is massively inefficient! Research has to be coupled closely with development and deployment, so that we can iterate through the cycle quickly, and build good products that actually solve problems for people.
 
