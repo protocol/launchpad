@@ -32,7 +32,7 @@ The ecosystem team at Protocol Labs focuses on the wider community including eff
 
 Within Protocol Labs, it is the role of Research to lead idea generation and testing, roadmapping, knowledge sharing, and research collaborations. Additionally, researchers set the tone of technological optimism, sharing with others the belief that scientific or engineering tools can help solve some of the biggest problems facing humanity, and that addressing these problems, indirectly or directly, is the most important work to be done. We also tackle more broadly scoped questions.
 
-** Learn More**
+**Learn More**
 * [ResNetLab](https://research.protocol.ai/groups/) is the hub page for all things research
 * [Research Groups](https://research.protocol.ai/groups/) are labs that focus on specific problems
 * [Grants](https://research.protocol.ai/categories/grants/) are available for a wide range of contributors
