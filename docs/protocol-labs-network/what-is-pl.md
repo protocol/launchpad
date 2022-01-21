@@ -8,7 +8,7 @@ description: What is the Protocol Labs Network
 
 {% embed url="https://youtu.be/QKEFMh-kT_Q" %}
 
-{% embed url="https://youtu.be/QKEFMh-kT_Q" %}
+{% embed url="https://f.io/Rcq6E4d5" %}
 
 ## Background, Work, & Business Model
 
