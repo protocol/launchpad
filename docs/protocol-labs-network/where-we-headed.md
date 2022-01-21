@@ -2,7 +2,7 @@
 description: Where are Are Headed with Web3
 ---
 
-# What is the PL Network?
+# Where does this title go?
 
 ## Where We are Headed with Web3
 
