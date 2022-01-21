@@ -34,5 +34,5 @@ Within Protocol Labs, it is the role of Research to lead idea generation and tes
 
 ** Learn More**
 * [ResNetLab](https://research.protocol.ai/groups/) is the hub page for all things research
-* [Research Groups](https://research.protocol.ai/groups/)
-* [Grants](https://research.protocol.ai/categories/grants/)
+* [Research Groups](https://research.protocol.ai/groups/) are labs that focus on specific problems
+* [Grants](https://research.protocol.ai/categories/grants/) are available for a wide range of contributors
