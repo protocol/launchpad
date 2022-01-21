@@ -1,5 +1,5 @@
 ---
-description: What is Protocol Labs
+description: What is the Protocol Labs Network
 ---
 
 # What is the PL Network?
@@ -63,14 +63,3 @@ The cryptocurrency can be used to incent individuals and other groups outside of
 Putting it altogether, the main revenue stream of Protocol Labs will be through holding **Market Protocol assets**. A Market Protocol is a system that mediates some economic activity, and settles value exchanges using a cryptographic asset. This structure solves economic problems in asymmetric peer-to-peer resource sharing, scaling, services, maintenance, and development. Only a subset of our protocols will be Market Protocols.
 
 Investors. Protocol Labs raised funding from an amazing set of technology investors. It is a diverse group, with different expertise, perspectives, and interests. Their support has been tremendously helpful from the beginning, and will continue to make a crucial difference in our future. We are lucky to work with Union Square Ventures, BlueYard, Y Combinator, Naval Ravikant, and [many others](https://protocol.ai/team/).
-
-## Videos
-
-#### The next Internet Revolution | Juan Benet | TEDxSanFrancisco
-
-{% embed url="https://www.youtube.com/watch?v=2RCwZDRwk48" %}
-
-#### Welcome to Web 3 | David Diaz | ResNetLab
-_[From ResNetLab On Tour](https://research.protocol.ai/tutorials/resnetlab-on-tour/welcome-to-web-3/)_
-
-{% embed url="https://www.youtube.com/watch?v=1WuXJ9zBAqw&t=503s" %}
