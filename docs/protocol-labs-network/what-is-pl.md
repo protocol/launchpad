@@ -60,7 +60,7 @@ A cryptocurrency can address a portion of the value created by the protocol, and
 
 This is an unprecedented way to capture a fraction of the value created and feed it back into development of the protocol and its ecosystem, and the creation of more protocols. What's more, the value capture is coming at the protocol layer and not on applications or services above. The attention and interests of the protocol developers remain aligned with successful outcomes for the protocol.
 
-![Distributed Web](https://protocol.ai/blog/protocol-labs-creating-new-networks/)
+![Distributed Web](https://protocol.ai/assets/img/filecoin_logos.2c567d09.png)
 
 The cryptocurrency can be used to incent individuals and other groups outside of the original organization to improve and work on the protocol. It can also be used to fund the entire development of the currency, by pre-selling it as Ethereum did in 2014.
 
