@@ -69,3 +69,8 @@ Investors. Protocol Labs raised funding from an amazing set of technology invest
 #### The next Internet Revolution | Juan Benet | TEDxSanFrancisco
 
 {% embed url="https://www.youtube.com/watch?v=2RCwZDRwk48" %}
+
+#### Welcome to Web 3 | David Diaz | ResNetLab
+_[From ResNetLab On Tour](https://research.protocol.ai/tutorials/resnetlab-on-tour/welcome-to-web-3/)_
+
+{% embed url="https://www.youtube.com/watch?v=1WuXJ9zBAqw&t=503s" %}
