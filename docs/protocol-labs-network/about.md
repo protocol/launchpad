@@ -8,7 +8,7 @@ description: The Protocol Labs Network
 
 This section introduces Protocol Labs as an organiztion. Here you will find resrouces to learn about who we are as an organization, what our goals and mission are, and begin to learn about how we operate.
 
-![](../.gitbook/assets/ARCHIV-protocol-labs-logo-horizontal-alt-black.png)
+![Protocol Labs Logo](../.gitbook/assets/ARCHIV-protocol-labs-logo-horizontal-alt-black.png)
 
 ## Our Vision & Mission
 
