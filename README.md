@@ -1,6 +1,6 @@
 # Launchpad
 This repository contains intentionally organized and curated content for Protocol Labs' Launchpad program.
-We welcome contributions, but please read
+We welcome contributions, but please read the [About Launchpad page](https://github.com/protocol/launchpad/blob/main/docs/about-launchpad.md) to see the steps to contribute.
 
 This site is published on GitHub pages at *https://protocol.github.io/launchpad/*
 

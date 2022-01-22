@@ -4,7 +4,7 @@
 
 ### Images Hosted Online
 Images hosted online follow the format of
-![Alt text](https://url-of-image-on-web)
+`![Alt text](https://url-of-image-on-web)`
 
 _Example_
 ```
