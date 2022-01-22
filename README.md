@@ -17,31 +17,35 @@ This site is published on GitHub pages at *https://protocol.github.io/launchpad/
 
 ## Structure‌ for Gitbook
 In `.gitbook.yml` the structure accepts two properties:‌
-readme: Your documentation's first page. Its default value is ./README.md
-summary: Your documentation's table of content. Its default value is ./SUMMARY.md
+
+* `readme:` Your documentation's first page. Its default value is `./README.md`
+* `summary:` Your documentation's table of content. Its default value is `./SUMMARY.md`
+
 The value of those properties is a path to the corresponding files. The path is relative to the "root" option. For example, here's how you can tell GitBook to look into a ./product folder for the first page and summary:
 
 ```
+root: ./docs/
 structure:  
     readme: ./product/README.md
     summary: ./product/SUMMARY.md
 ```
 ​
 ## Summary‌
-The summary file is a Markdown file (.md) that should have the following structure:
+The summary file is a Markdown file (`summary.md`) in `docs/` that should have the following structure:
 
 ```
-‌# Summary​
+‌# Table of Contents for GitBook
+* [Top-Level Page](some-file.md)
 
 ## Use headings to create page groups like this one​
 
-* [First page's title](page1/README.md)    
-    * [Some child page](page1/page1-1.md)    
-    * [Some other child page](part1/page1-2.md)
+* [First page's title](directory1/README.md)    
+    * [Some child page](directory1/page1-1.md)    
+    * [Some other child page](directory1/page1-2.md)
 
-* [Second page's title](page2/README.md)    
-    * [Some child page](page2/page2-1.md)    
-    * [Some other child page](part2/page2-2.md)    
+* [Second page's title](directory2/README.md)    
+    * [Some child page](directory2/page2-1.md)    
+    * [Some other child directory2](part2/page2-2.md)    
 
 ## A second-page group​
 
