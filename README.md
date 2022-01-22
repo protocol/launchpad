@@ -21,12 +21,12 @@ In `.gitbook.yml` the structure accepts two properties:‌
 * `readme:` Your documentation's first page. Its default value is `./README.md`
 * `summary:` Your documentation's table of content. Its default value is `./SUMMARY.md`
 
-The value of those properties is a path to the corresponding files. The path is relative to the "root" option. For example, here's how you can tell GitBook to look into a ./product folder for the first page and summary:
+The value of those properties is a path to the corresponding files. The path is relative to the `root:` option. For example, here's how you can tell GitBook to look into a ./docs folder for the first page and summary:
 
 ```
 root: ./docs/
 structure:  
-    readme: ./product/README.md
+    readme: ./about-launchpad/README.md
     summary: ./product/SUMMARY.md
 ```
 ​
@@ -35,7 +35,7 @@ The summary file is a Markdown file (`summary.md`) in `docs/` that should have t
 
 ```
 ‌# Table of Contents for GitBook
-* [Top-Level Page](some-file.md)
+* [Top-Level Page](about-launchpad.md)
 
 ## Use headings to create page groups like this one​
 
