@@ -6,7 +6,7 @@ This site is published on GitHub pages at https://protocol.github.io/launchpad/
 ## Contributing to Launchpad Curriculum
 Please work with the team to review and organize Launchpad Curriculum. In order to contribute, visit the public Launchpad repository: [https://github.com/protocol/launchpad](https://github.com/protocol/launchpad)
 
-1. First, Check out the [STYLE-GUIDE.md](https://github.com/protocol/launchpad/blob/main/STYLE-GUIDE.md) in the root repo for how to format and organize your content
+1. First, Check out the [README.md](https://github.com/protocol/launchpad) and [STYLE-GUIDE.md](https://github.com/protocol/launchpad/blob/main/STYLE-GUIDE.md) in the root repo for how to format and organize your content
 
 2. Find the section [in the `/docs/summary.md` file](https://raw.githubusercontent.com/protocol/launchpad/main/docs/summary.md) where you want to add your content.
 
