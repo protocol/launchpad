@@ -30,7 +30,7 @@ The horizon of computing is exciting and turbulent. We face optimistic progress,
 
 1. **We should improve the internet and computing generally.** Secure and robust access to information, to communication, and to computing has become a critical part of what it means to be a modern human. The internet has become the main vehicle for human interactions worldwide, and it will only become more so as our devices and interfaces improve. Brain-machine interfaces will cement this, and those are not so far away. Therefore, [**fixing problems with the internet**](https://www.youtube.com/watch?v=2RCwZDRwk48\&t=568s) and upgrading our computational fabric will have tremendous impact for humanity, now and in the future. This is the Why.
 
-![The Research Pipeline](https://protocol.ai/assets/img/research-pipeline.b728d71d.pn)
+![The Research Pipeline](https://protocol.ai/assets/img/research-pipeline.b728d71d.png)
 
 2. **We should accelerate the ideas-to-superpowers pipeline**. At the heart of computing progress lies a simple process: the research, development, and deployment cycle. Ideas are conceived and refined, encoded into mathematical rules, programmed into software, and deployed into computers, which grants super-powers to humans world-wide. The better and faster we are at sifting ideas through this pipeline, the better and faster our superpowers will come. This is the How.
 
