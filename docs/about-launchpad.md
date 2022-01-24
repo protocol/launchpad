@@ -1,6 +1,7 @@
 # About Launchpad
 
-This Gitbook Collection is published from a repository which contains intentionally organized and curated content for Protocol Labs' Launchpad program. We welcome contributions, but please read
+This Gitbook Collection is published from a repository which contains intentionally organized and curated content for Protocol Labs' Launchpad program. We welcome contributions, but please read and follow the steps below in the **Contributing to Launchpad Curriculum** section.
+
 This site is published on GitHub pages at https://protocol.github.io/launchpad/
 
 ## Contributing to Launchpad Curriculum
