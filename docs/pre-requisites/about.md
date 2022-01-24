@@ -24,9 +24,9 @@ description: Pre-Requisites to prepare for Launchpad
   * **Book Summary**
   Why the Internet was designed to be the way it is, and how it could be different, now and in the future.
 
-  _How do you design an internet? The architecture of the current Internet is the product of basic design decisions made early in its history. What would an internet look like if it were designed, today, from the ground up? In this book, MIT computer scientist David Clark explains how the Internet is actually put together, what requirements it was designed to meet, and why different design decisions would create different internets. He does not take today's Internet as a given but tries to learn from it, and from alternative proposals for what an internet might be, in order to draw some general conclusions about network architecture._
+    _How do you design an internet? The architecture of the current Internet is the product of basic design decisions made early in its history. What would an internet look like if it were designed, today, from the ground up? In this book, MIT computer scientist David Clark explains how the Internet is actually put together, what requirements it was designed to meet, and why different design decisions would create different internets. He does not take today's Internet as a given but tries to learn from it, and from alternative proposals for what an internet might be, in order to draw some general conclusions about network architecture._
 
-## Crypto / web3
+## Crypto / Web3
 
 ### Videos
 
@@ -47,6 +47,6 @@ description: Pre-Requisites to prepare for Launchpad
 * [What are tokens?](https://learn.consensys.net/catalog/info/id:174,cms_featured_course:1)
 * [What are crypto wallets](https://courses.consensys.net/courses/take/what-is-a-crypto-wallet/lessons/10028774-what-is-a-crypto-wallet-webinar)
 
-## Smart Contracts & Security
+### Smart Contracts & Security
   * [Best Practices Blog](https://consensys.github.io/smart-contract-best-practices/)
   * [Course](https://courses.consensys.net/courses/take/smart-contract-security/lessons/9798331-smart-contracts-security-best-practices)
