@@ -62,4 +62,4 @@ The benefits of async communication, though this approach might seem non-traditi
 
 This style benefits your teammates as well. Requesting someone’s time to find a document or pinging someone for something non-urgent are two of the most common productivity killers for deep focus work. As you might be aware, there is a famous meme on how you should “never an interrupt a programmer.” Once you read it, you will quickly realize that this applies to all sorts work.
 
-There will be more on async work in the **[OS Maintainership](protocol-labs-network/os-maintainership-cluture.md)** Section.
+There will be more on async work in the **[OS Culture](protocol-labs-network/os-culture.md)** Section.
