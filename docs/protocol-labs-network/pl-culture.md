@@ -38,3 +38,24 @@ Within Protocol Labs, it is the role of Research to lead idea generation and tes
 * [Grants](https://grants.protocol.ai/) are available for a wide range of contributors
 
 _[See all of the research outreach efforts](https://research.protocol.ai/outreach/)_
+
+
+### Async Work
+
+By default, our approach to communication is async.
+
+Open async communication enables greater participation, keeps low-priority matters from interrupting high-priority work, and typically leaves a better paper trail. This is not just about accommodating our global team, it’s also about ensuring that we get the most leverage from our communities.
+
+Async communication can take more time, but we believe it can enable better thinking, as well as technical outcomes for networks, systems and processes. These practices are what allow us to scale as an org.
+Though we aim for async comms, sync time is also valuable for bringing multiple parties into agreement, focused problem-solving sessions, and early-stage project formation. Sync time, or synchronous communication, is widely recognized to be face to face conversations, or phone and video communications.
+
+We strive to avoid using sync time as the hammer to solve any question. When we do meet synchronously, we attempt to propagate the outcomes of that sync time (by documenting discussions, decisions, etc.) to other teams.
+Async communication might sometimes feel like a chore, or a bit overzealous, but in time, this approach to comms builds momentum and enable us to:
+* Build and maintain documentation
+* Avoid many miscommunications
+* Reduce our bus factor
+* Make the switch from proprietary to open-source far smoother
+
+If you are unfamiliar with approaches to software development, there are several out there, but one in particular hits some of the same goals we share. The Async Manifesto, while not a perfect solution, is a short read, and worth your time.
+
+See the [Protocol Labs Handbook to learn about Asyc Work](https://app.gitbook.com/o/-L_E2woSLfhpBp2IPz9k/s/-LaPxzBaUTtDkDqr8TKl/general/how-we-work/async-work)
