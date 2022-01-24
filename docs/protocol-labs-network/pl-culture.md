@@ -46,6 +46,7 @@ _[See all of the research outreach efforts](https://research.protocol.ai/outreac
 
 
 ### Async Work
+At Protocol Labs, in order to enable contributions and collaborations worldwide, we follow principles around asynchronouslyworking.
 
 The benefits of async communication, though this approach might seem non-traditional for some, are numerous:
 

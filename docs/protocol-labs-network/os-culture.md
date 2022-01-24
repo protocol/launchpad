@@ -1,8 +1,8 @@
 ---
-description: Open Source Maintainership and Culture
+description: Open Source Maintainership Culture and Protocol Labs
 ---
 
-# Open Source Maintainership and Culture
+# Open Source Culture
 
 ## Protocol Labs: An Open Source Organization
 
@@ -73,8 +73,3 @@ The 4 components of a great asynchronous message
 🔗 Links, images, and as much supporting material as possible. Again, include screenshots, screencasts, images, etc. – whatever will help illustrate your thoughts. Add these to emails, GitHub comments, posts, etc.
 
 📥 A concrete need. What do you want to get out of the communication? Approval on a task? An asset of some kind? Be extremely clear.
-
-
-
-## Contributing and Maintaining in Open Source
-### Writing and Reviewing great PRs
