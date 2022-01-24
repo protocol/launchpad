@@ -16,9 +16,12 @@ Please work with the team to review and organize Launchpad Curriculum. In order 
 4. Create a PR for your change. Questions? [ping the core contributors](https://github.com/protocol/launchpad/graphs/contributors) to this repository.
 
 ## Expectations
-This curriculum is designed for those who already have a basics set of software engineering skills. Launchpad Cadets will know:
-* How to use Github for source control
-*
+This curriculum is designed for those who already have a basic set of software engineering skills. Launchpad Cadets will know:
+* How to use Github for source control, including making PRs & suggestions
+* How to navigate and troubleshoot an operating system and install dependencies
+* A good level of knowledge in the programming language(s) of their choice
+* Experience using the basic software engineering design lifecycle
+* Experience implementing and testing software projects
 
 ## Sections
 
@@ -27,7 +30,7 @@ This curriculum is designed for those who already have a basics set of software 
 2. [IPFS Learning Resources](ipfs/about.md)
 3. [IPLD Learning Resources](ipld/about.md)
 4. [LibP2p Learning Resources](libp2p/about.md)
-5. [Filecoin Learning Resources](filecoin/some-child-page.md)
+5. [Filecoin Learning Resources](filecoin/about.md)
 6. [Learn about Protocol Labs Toolkits & SDKs](protocol-labs-toolkits-sdks/about.md)
 7. [Learn about what is built on IPFS and Filecoin](built-on-ipfs-filecoin/about.md)
 
