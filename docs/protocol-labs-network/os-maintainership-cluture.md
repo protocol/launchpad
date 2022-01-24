@@ -32,7 +32,7 @@ In time, this approach to comms builds momentum and enable us to:
 * Reduce our bus factor​
 * Make the switch from proprietary to open-source far smoother
 
-**[The Async Manifesto]()http://asyncmanifesto.org/**, spells out many of these principles. Pay particular attention to are as follows:
+**[The Async Manifesto](http://asyncmanifesto.org/)**, spells out many of these principles. Pay particular attention to are as follows:
 
 * Valuing modern tools and flexible work environments over meetings and office hours
 * Embracing flexibility in prioritization over detailed planning
@@ -92,4 +92,5 @@ The 4 components of a great asynchronous message
 
 
 
-## Contributing
+## Contributing and Maintaining in Open Source
+### Writing and Reviewing great PRs

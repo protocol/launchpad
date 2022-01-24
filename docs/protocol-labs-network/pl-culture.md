@@ -17,12 +17,17 @@ We also believe in connection, and bringing people together to inspire innovatio
 _Watch at least one!_
 #### 2018
 {% embed url="https://www.youtube.com/watch?v=RGUETp7QMhc" %}
+
 #### 2019
 {% embed url="https://www.youtube.com/watch?v=kc_dxO-V8YM" %}
+
 #### 2020
 {% embed url="https://youtu.be/rZ9oE4VM2vE" %}
 
 #### 2021
+{% embed url="https://youtu.be/k6L3pA6F0tI" %}
+
+
 
 ## External Facing Teams
 ### Ecosystem
