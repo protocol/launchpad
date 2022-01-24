@@ -2,7 +2,7 @@
 
 This Gitbook Collection is published from a repository which contains intentionally organized and curated content for Protocol Labs' Launchpad program. We welcome contributions, but please read and follow the steps below in the **Contributing to Launchpad Curriculum** section.
 
-This site is published on GitHub pages at https://protocol.github.io/launchpad/
+This site is published on GitHub pages at [https://protocol.github.io/launchpad/](https://protocol.github.io/launchpad/), and the repo is located at [https://github.com/protocol/launchpad](https://github.com/protocol/launchpad)
 
 ## Contributing to Launchpad Curriculum
 Please work with the team to review and organize Launchpad Curriculum. In order to contribute, visit the public Launchpad repository: [https://github.com/protocol/launchpad](https://github.com/protocol/launchpad)
@@ -15,6 +15,10 @@ Please work with the team to review and organize Launchpad Curriculum. In order 
 
 4. Create a PR for your change. Questions? [ping the core contributors](https://github.com/protocol/launchpad/graphs/contributors) to this repository.
 
+## Expectations
+This curriculum is designed for those who already have a basics set of software engineering skills. Launchpad Cadets will know:
+* How to use Github for source control
+*
 
 ## Sections
 

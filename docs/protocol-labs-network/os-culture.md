@@ -1,5 +1,5 @@
 ---
-description: Open Source Maintainership Culture and Protocol Labs
+description: Open Source Culture and Async Work at Protocol Labs
 ---
 
 # Open Source Culture
