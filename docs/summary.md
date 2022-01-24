@@ -18,6 +18,8 @@
   * [Some child page](filecoin/some-child-page.md)
 * [Protocol Labs Toolkits & SDKs](protocol-labs-toolkits-sdks/about.md)
   * [Some child page](protocol-labs-toolkits-sdks/some-child-page.md)
+* [Built On IPFS and Filecoin](built-on-ipfs-filecoin/about.md)
+  * [Some child page](built-on-ipfs-filecoin/some-child-page.md)
 
 ## Other Resources
 
