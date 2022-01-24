@@ -47,20 +47,18 @@ _[See all of the research outreach efforts](https://research.protocol.ai/outreac
 
 ### Async Work
 
-By default, our approach to communication is async.
+The benefits of async communication, though this approach might seem non-traditional for some, are numerous:
 
-Open async communication enables greater participation, keeps low-priority matters from interrupting high-priority work, and typically leaves a better paper trail. This is not just about accommodating our global team, it’s also about ensuring that we get the most leverage from our communities.
+👩‍💻The ability to build large stretches of uninterrupted focus time.
 
-Async communication can take more time, but we believe it can enable better thinking, as well as technical outcomes for networks, systems and processes. These practices are what allow us to scale as an org.
-Though we aim for async comms, sync time is also valuable for bringing multiple parties into agreement, focused problem-solving sessions, and early-stage project formation. Sync time, or synchronous communication, is widely recognized to be face to face conversations, or phone and video communications.
+🌏The ability to communicate with a remote team, with members in multiple time zones.
 
-We strive to avoid using sync time as the hammer to solve any question. When we do meet synchronously, we attempt to propagate the outcomes of that sync time (by documenting discussions, decisions, etc.) to other teams.
-Async communication might sometimes feel like a chore, or a bit overzealous, but in time, this approach to comms builds momentum and enable us to:
-* Build and maintain documentation
-* Avoid many miscommunications
-* Reduce our bus factor
-* Make the switch from proprietary to open-source far smoother
+📑Having a record of the communication shared that can be referred to later on. Whereas synchronous communication often requires taking notes (creating) while hearing the message (consuming).
 
-If you are unfamiliar with approaches to software development, there are several out there, but one in particular hits some of the same goals we share. The Async Manifesto, while not a perfect solution, is a short read, and worth your time.
+🤔The chance to digest and think about a response before responding. (We all know immediate responses are often not your best.)
 
-See the [Protocol Labs Handbook to learn about Asyc Work](https://app.gitbook.com/o/-L_E2woSLfhpBp2IPz9k/s/-LaPxzBaUTtDkDqr8TKl/general/how-we-work/async-work)
+🚴‍♂️The freedom to not having to be always “at your desk” in case someone wants to talk to you.
+
+This style benefits your teammates as well. Requesting someone’s time to find a document or pinging someone for something non-urgent are two of the most common productivity killers for deep focus work. As you might be aware, there is a famous meme on how you should “never an interrupt a programmer.” Once you read it, you will quickly realize that this applies to all sorts work.
+
+There will be more on async work in the **[OS Maintainership](protocol-labs-network/os-maintainership-cluture.md)** Section.

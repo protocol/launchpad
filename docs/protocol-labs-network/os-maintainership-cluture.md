@@ -45,22 +45,6 @@ Relevant required readings are distributed in advance
 
 While we are decidedly and async-first network, we recognize the power and importance of synchronous communication, and support escalating from email to calls to in-person time when necessary to reach consensus and undo misunderstandings (that's why we have Office hours).
 
-### Benefits of Async Communication
-
-The benefits of async communication, though this approach might seem non-traditional for some, are numerous:
-
-👩‍💻 The ability to build large stretches of uninterrupted focus time.
-
-🌏 The ability to communicate with a remote team, with members in multiple time zones.
-
-📑 Having a record of the communication shared that can be referred to later on. Whereas synchronous communication often requires taking notes (creating) while hearing the message (consuming).
-
-🤔 The chance to digest and think about a response before responding. (We all know immediate responses are often not your best.)
-
-🚴‍ ♂️The freedom to not having to be always “at your desk” in case someone wants to talk to you.
-
-
-
 ### Async Communication Is Self Directing
 
 Our goal is to have resources and processes that allow you, as an individual, to feel empowered to find all the answers to the questions you might have. We try to avoid interrupting each other as much as possible, but sometimes it helps to have a little nudge in the right direction. With that said, here are some guidelines for helping you find what you’re looking for.
