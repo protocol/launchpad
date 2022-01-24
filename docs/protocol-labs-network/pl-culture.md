@@ -27,6 +27,24 @@ _Watch at least one!_
 #### 2021
 {% embed url="https://youtu.be/k6L3pA6F0tI" %}
 
+## Communication at Protocol Labs
+_[See the complete information about how Protocol Labs communicates in Spaceport](https://protocol.almanac.io/docs/communication-t5gNj2sm6jShmc8ZGmGxvmB9Iw1WNCCU)_
+
+In our mission to drive breakthroughs in computing to push humanity forward, we welcome and listen to every voice. Humanity, after all, is composed of all humans, and learning from each other is key.
+
+To ensure these conversations remain constructive and safe for all, we have developed guidelines for participation:
+
+* We are kind and respectful. We do not insult, or disparage and We ask questions, seeking clarification, assuming we don't know the full story We communicate in good faith, meaning that we don’t provoke people intentionally. We help one another grow and assume that we have the best intent.
+
+* We are allies. We stand up for one another. We build the culture and environment we want to see. So, when we see something we say something.
+
+### More on How to Interact
+
+Discord, Email, and Zoom are our workplace: in interacting with other Labbers, remember that they are your collaborators and peers.
+
+* Written communication lacks important cues we typically get when speaking to others in person
+* Written communication is long-lasting: remember that written communication lasts longer than verbal communications so others will come back to it time and time again.
+* Mind the audience: in communicating with others, pause and think about who your message is intended for and whether the medium is appropriate.
 
 
 ## External Facing Teams
