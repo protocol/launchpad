@@ -1,4 +1,3 @@
-
 ---
 description: Pre-Requisites to prepare for Launchpad
 ---
@@ -39,7 +38,7 @@ description: Pre-Requisites to prepare for Launchpad
 **[Understanding Blockchain Consensus Mechanisms](https://youtu.be/ojxfbN78WFQ)**
 {% embed url="https://youtu.be/ojxfbN78WFQ" %}
 
-**[WSmart Contracts – Simply Explained](https://youtu.be/ZE2HxTmxfrI)**
+**[Smart Contracts – Simply Explained](https://youtu.be/ZE2HxTmxfrI)**
 {% embed url="https://youtu.be/ZE2HxTmxfrI" %}
 
 ### Webinars
