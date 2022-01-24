@@ -1,6 +1,6 @@
 
 ---
-description: Add the subtitle here
+description: Pre Requisites to prepare for Launchpad
 ---
 # Launchpad Pre-Requisite Material
 
