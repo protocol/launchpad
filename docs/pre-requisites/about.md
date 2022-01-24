@@ -1,0 +1,38 @@
+
+---
+description: Add the subtitle here
+---
+# Launchpad Pre-Requisite Material
+
+## Engineering basics
+* [Good PRs/Reviews](https://google.github.io/eng-practices/review/)
+* Distributed Systems
+  * MIT 6.824 Course [Schedule & Resources](https://pdos.csail.mit.edu/6.824/schedule.html)
+    * MIT 6.824 [Distributed Systems Course](https://pdos.csail.mit.edu/6.824/)
+      * Course
+    * [Labs - Implementing distributed systems in Go](https://ipfs.io/ipfs/Qmcri6S86LuivUY4FDcM1phu5REXcFYootxn1GsRoqnFN4/)
+
+## Golang
+* [Functional Options for friendly APIS](https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis)
+* [Go Comments and Conventions](https://github.com/golang/go/wiki/CodeReviewComments)
+* [Slice Tricks for Go](https://github.com/golang/go/wiki/SliceTricks)
+* PLs [Distributed Systems Curriculum (with Golang)](https://docs.google.com/document/d/18mlkt3JPHP2eSeDOeCE0wafnLKv95Taj0rDh0NIus3Y/edit#heading=h.l73q2rxlx59z). Includes a tutorial on debugging.Lots of good coding exercises.
+
+## Computer Networks
+* [Coursea on _The Bits and Bytes of Computer Networking_](https://www.coursera.org/learn/computer-networking)
+* MIT Press book on [_Designing an Internet_](https://mitpress.mit.edu/books/designing-internet)
+
+###Summary
+Why the Internet was designed to be the way it is, and how it could be different, now and in the future.
+
+How do you design an internet? The architecture of the current Internet is the product of basic design decisions made early in its history. What would an internet look like if it were designed, today, from the ground up? In this book, MIT computer scientist David Clark explains how the Internet is actually put together, what requirements it was designed to meet, and why different design decisions would create different internets. He does not take today's Internet as a given but tries to learn from it, and from alternative proposals for what an internet might be, in order to draw some general conclusions about network architecture.
+
+## Crypto / web3
+* What is a blockchain: https://youtu.be/SSo_EIwHSd4
+* How does bitcoin work: https://youtu.be/bBC-nXj3Ng4
+* Blockchain consensus: https://youtu.be/ojxfbN78WFQ
+* How do people use crypto? https://learn.consensys.net/catalog/info/id:194,cms_featured_course:1
+* What are tokens? https://learn.consensys.net/catalog/info/id:174,cms_featured_course:1
+* What are crypto wallets: https://courses.consensys.net/courses/take/what-is-a-crypto-wallet/lessons/10028774-what-is-a-crypto-wallet-webinar
+* What are smart contracts: https://youtu.be/ZE2HxTmxfrI
+* Smart contract security: https://consensys.github.io/smart-contract-best-practices/, https://courses.consensys.net/courses/take/smart-contract-security/lessons/9798331-smart-contracts-security-best-practices
