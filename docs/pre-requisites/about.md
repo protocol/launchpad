@@ -28,9 +28,9 @@ description: Pre-Requisites to prepare for Launchpad
   * [Best Practices Blog](https://consensys.github.io/smart-contract-best-practices/)
   * [Course](https://courses.consensys.net/courses/take/smart-contract-security/lessons/9798331-smart-contracts-security-best-practices)
 
-## Engineering basics
-* [Good PRs/Reviews](https://google.github.io/eng-practices/review/)
-* **MIT Distributed Systems Course (Optional)**
+## Distributed Systems (Optional)
+
+* **MIT Distributed Systems Course**
   * MIT 6.824 Course [Schedule & Resources](https://pdos.csail.mit.edu/6.824/schedule.html)
     * MIT 6.824 [Distributed Systems Course](https://pdos.csail.mit.edu/6.824/)
       * Course [Schedule & Resources](https://pdos.csail.mit.edu/6.824/schedule.html)

@@ -19,3 +19,5 @@ In order to become a well-functioning community, maintainers and contributors sh
 
 
 ### Writing and Reviewing great PRs
+
+See Google's _[Code Review Developer Guide](https://google.github.io/eng-practices/review/)_ for more
