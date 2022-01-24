@@ -6,13 +6,13 @@ description: Pre-Requisites to prepare for Launchpad
 
 ## Engineering basics
 * [Good PRs/Reviews](https://google.github.io/eng-practices/review/)
-* Distributed Systems
+* **MIT Distributed Systems Course (Optional)**
   * MIT 6.824 Course [Schedule & Resources](https://pdos.csail.mit.edu/6.824/schedule.html)
     * MIT 6.824 [Distributed Systems Course](https://pdos.csail.mit.edu/6.824/)
       * Course [Schedule & Resources](https://pdos.csail.mit.edu/6.824/schedule.html)
     * [Labs - Implementing distributed systems in Go](https://ipfs.io/ipfs/Qmcri6S86LuivUY4FDcM1phu5REXcFYootxn1GsRoqnFN4/)
 
-## Golang
+## Golang (Optional)
 * [Functional Options for friendly APIS](https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis)
 * [Go Comments and Conventions](https://github.com/golang/go/wiki/CodeReviewComments)
 * [Slice Tricks for Go](https://github.com/golang/go/wiki/SliceTricks)
@@ -36,10 +36,10 @@ description: Pre-Requisites to prepare for Launchpad
 **[How does bitcoin work?](https://youtu.be/bBC-nXj3Ng4)**
 {% embed url="https://youtu.be/bBC-nXj3Ng4" %}
 
-**[Blockchain consensus](https://youtu.be/ojxfbN78WFQ)**
+**[Understanding Blockchain Consensus Mechanisms](https://youtu.be/ojxfbN78WFQ)**
 {% embed url="https://youtu.be/ojxfbN78WFQ" %}
 
-**[What are smart contracts](https://youtu.be/ZE2HxTmxfrI)**
+**[WSmart Contracts – Simply Explained](https://youtu.be/ZE2HxTmxfrI)**
 {% embed url="https://youtu.be/ZE2HxTmxfrI" %}
 
 ### Webinars
@@ -47,6 +47,6 @@ description: Pre-Requisites to prepare for Launchpad
 * [What are tokens?](https://learn.consensys.net/catalog/info/id:174,cms_featured_course:1)
 * [What are crypto wallets](https://courses.consensys.net/courses/take/what-is-a-crypto-wallet/lessons/10028774-what-is-a-crypto-wallet-webinar)
 
-* Smart contracts & security
+## Smart Contracts & Security
   * [Best Practices Blog](https://consensys.github.io/smart-contract-best-practices/)
   * [Course](https://courses.consensys.net/courses/take/smart-contract-security/lessons/9798331-smart-contracts-security-best-practices)
