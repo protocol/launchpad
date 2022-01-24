@@ -8,7 +8,7 @@
   * [What is the PL Network?](protocol-labs-network/what-is-pl.md)
   * [Where We are Headed](protocol-labs-network/where-we-headed.md)
   * [PL Culture](protocol-labs-network/pl-culture.md)
-  * [OS Maintainership](protocol-labs-network/os-maintaintership-culture.md)
+  * [OS Maintainership](protocol-labs-network/os-maintainership-culture.md)
 * [IPFS](ipfs/about.md)
   * [Some child page](ipfs/some-child-page.md)
 * [PLD](ipld/about.md)
