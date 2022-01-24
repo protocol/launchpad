@@ -28,7 +28,7 @@ _Watch at least one!_
 {% embed url="https://youtu.be/k6L3pA6F0tI" %}
 
 ## Communication at Protocol Labs
-_[See the complete information about how Protocol Labs communicates in Spaceport](https://protocol.almanac.io/docs/communication-t5gNj2sm6jShmc8ZGmGxvmB9Iw1WNCCU)_
+_[See the complete article about how Protocol Labs communicates in Spaceport](https://protocol.almanac.io/docs/communication-t5gNj2sm6jShmc8ZGmGxvmB9Iw1WNCCU)_
 
 In our mission to drive breakthroughs in computing to push humanity forward, we welcome and listen to every voice. Humanity, after all, is composed of all humans, and learning from each other is key.
 

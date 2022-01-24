@@ -77,4 +77,4 @@ The 4 components of a great asynchronous message
 
 ### Healthy Team Habits (Optional)
 
-{% embed url="https://youtu.be/GcvGc3pgOT8" %}
+{% embed url="https://youtu.be/XHyRCTTYBSA" %}

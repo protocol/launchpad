@@ -5,7 +5,7 @@ description: Open Source Maintainership Best Practices
 # Open Source Maintainership
 
 ## Contributing and Maintaining in Open Source
-In This talk by Steven Allen & , they will review some of the customs and best practices involved when becoming a part of a community that is an open source projects.
+In This talk by Steven Allen & Raul Kripalani, they will review some of the customs and best practices involved when becoming a part of a community that is an open source projects.
 
 
 In order to become a well-functioning community, maintainers and contributors should remember the following principles:
