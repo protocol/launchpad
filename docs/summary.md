@@ -12,13 +12,19 @@
   * [Some child page](ipfs/some-child-page.md)
 * [PLD](ipld/about.md)
   * [Some child page](ipld/some-child-page.md)
-* [LibP2P](libp2p/README.md)
+* [LibP2P](libp2p/about.md)
   * [Some child page](llibp2p/some-child-page.md)
 * [Filecoin](filecoin/about.md)
   * [Some child page](filecoin/some-child-page.md)
 * [Protocol Labs Toolkits & SDKs](protocol-labs-toolkits-sdks/about.md)
   * [Some child page](protocol-labs-toolkits-sdks/some-child-page.md)
 
-## Additional Resources
+## Other Resources
 
 * [Pre-Requisites](pre-requisites/about.md)
+* [Additional Resources](additional-learning-resources/about.md)
+  * [Some child page](additional-learning-resources/resource1/some-child-page.md)
+  * [Some child page](additional-learning-resources/resource2/some-child-page.md)
+  * [Some child page](additional-learning-resources/resource3/some-child-page.md)
+  * [Some child page](additional-learning-resources/resource4/some-child-page.md)
+  * [Some child page](additional-learning-resources/resource5/some-child-page.md)
