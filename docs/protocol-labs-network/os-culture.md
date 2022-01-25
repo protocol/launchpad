@@ -13,13 +13,6 @@ Working at a company in the Protocol Labs Network (PLN) is a fairly unique exper
 
 In this talk by Steven & Dietrich, they review some of the customs and best practices involved when becoming a part of an open source community.
 
-In order to become a well-functioning community, maintainers and contributors should remember the following principles:
-
-* Understand the format of what you are contributing to. Read guides, and do some research to see how others do it
-* Understand that both the committer and maintainer contributing to this community, and maintainers are investing time in you to merge and maintain these changes
-* Explain your commits and PRs so maintainers can easily understand and merge what you want to contribute.
-* For large changes, have a more thorough explanation from rationale, design decisions, and proof, to testing and to-dos
-
 {% embed url="https://youtu.be/GcvGc3pgOT8" %}
 
 ### Managing Roles
@@ -28,7 +21,7 @@ The tricky part in being an employee of a PL Network company, and a member of a 
 
 One way to think about it, is to think of yourself as two people, or one person, but with two hats. When you are wearing that libp2p hat, you are not an employee of your Protocol Labs Network company, you are instead an open source contributor to libp2p. While wearing this hat, you are looking out for this project’s best interests, independent of what your PLN obligations are.
 
-## Async Work & Communication
+### Async Work & Communication for Open Source
 
 _This is an annotated version of_ [_this Spaceport article_](https://protocol.almanac.io/docs/async-work-ezPny9x7Q50QISL4UIUhB3PoURV0lgxP)
 
@@ -85,7 +78,19 @@ The 4 components of a great asynchronous message
 
 📥 A concrete need. What do you want to get out of the communication? Approval on a task? An asset of some kind? Be extremely clear.
 
-## Writing and Reviewing Great PRs
+## Contributing
+### Contributing and Maintaining in Open Source
+In This talk by Steven Allen & Raul Kripalani, they will review some of the customs and best practices involved when becoming a part of a community that is an open source projects.
+
+_//You Tube Embed Here_
+
+In order to become a well-functioning community, maintainers and contributors should remember the following principles:
+* Understand the format of what you are contributing to. Read guides, and do som research to see how others do it
+* Understand that both the committer and maintainer contributing to this community, and maintainers are investing time in you to merge and maintain these changes
+* Explain your commits and PRs so maintainers can easily understand and merge what you want to contribute.
+* For large changes, have a more thorough explanation from rationale, design decisions, and proof, to testing and to-dos
+
+### Writing and Reviewing Great PRs
 
 This document by Steven Allen and Raul Kripalani describes best practices for a thorough golang PR submission & review.
 
@@ -100,20 +105,3 @@ See Google's [_Code Review Developer Guide_](https://google.github.io/eng-practi
 ### Healthy Team Habits (Optional)
 
 {% embed url="https://youtu.be/XHyRCTTYBSA" %}
-
-
-## Contributing and Maintaining in Open Source
-In This talk by Steven Allen & Raul Kripalani, they will review some of the customs and best practices involved when becoming a part of a community that is an open source projects.
-
-
-In order to become a well-functioning community, maintainers and contributors should remember the following principles:
-* Understand the format of what you are contributing to. Read guides, and do som research to see how others do it
-* Understand that both the committer and maintainer contributing to this community, and maintainers are investing time in you to merge and maintain these changes
-* Explain your commits and PRs so maintainers can easily understand and merge what you want to contribute.
-* For large changes, have a more thorough explanation from rationale, design decisions, and proof, to testing and to-dos
-
-
-
-### Writing and Reviewing Great PRs
-
-See Google's _[Code Review Developer Guide](https://go
