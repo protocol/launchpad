@@ -6,7 +6,13 @@ description: What is the Protocol Labs Network
 
 ## Protocol Labs: An Overview
 
-{% embed url="https://youtu.be/QKEFMh-kT_Q" %}
+{% embed url="https://docs.google.com/presentation/d/108Dt3QwjB6Mi3lXhl9olGqmhyx2tIiYwY3wUtLpiRco/edit" %}
+
+{% embed url="https://docs.google.com/presentation/d/108Dt3QwjB6Mi3lXhl9olGqmhyx2tIiYwY3wUtLpiRco/edit?usp=sharing" %}
+This video walks through major themes and takeaways from the doc above
+{% endembed %}
+
+<!-- {% embed url="https://youtu.be/QKEFMh-kT_Q" %} -->
 
 ## Background, Work, & Business Model
 
