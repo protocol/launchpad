@@ -8,6 +8,7 @@ description: Open Source Culture and Async Work at Protocol Labs
 
 Working at a company in the Protocol Labs Network (PLN) is a fairly unique experience. For many Labbers, your work will often require contributing to one or many open source projects. IPFS, libp2p, Filecoin, Multiformats, IPLD, and others are all projects created and sponsored by the PL Network. Each of these projects is an independent open source project, and each of them has needs and goals that span multiple organizations within and outside the PL Network.
 
+
 ### Open Source Culture | Steven Allen & Dietrich Ayala
 
 In this talk by Steven & Dietrich, they review some of the customs and best practices involved when becoming a part of an open source community.
@@ -33,6 +34,9 @@ _This is an annotated version of_ [_this Spaceport article_](https://protocol.al
 
 Open async communication enables greater participation, keeps low-priority matters from interrupting high-priority work, and typically leaves a better paper trail.
 
+
+### Sync Comms
+
 Though we aim for async comms, **sync time is also valuable for bringing multiple parties into agreement, focused problem-solving sessions, and early-stage project formation**. Sync time, or synchronous communication, is widely recognized to be face to face conversations, or phone and video communications.
 
 In time, this approach to comms builds momentum and enable us to:
@@ -42,6 +46,7 @@ In time, this approach to comms builds momentum and enable us to:
 * Reduce our bus factor​
 * Make the switch from proprietary to open-source far smoother
 
+### Async Principles
 [**The Async Manifesto**](http://asyncmanifesto.org), spells out many of these principles. Pay particular attention to are as follows:
 
 * Valuing modern tools and flexible work environments over meetings and office hours
