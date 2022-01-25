@@ -1,5 +1,5 @@
 ---
-description: COntributing in Open Source
+description: Contributing in Open Source
 ---
 
 # Making & Maintaining Open Source Contributions
