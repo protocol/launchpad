@@ -6,6 +6,7 @@
 
 * [The Protocol Labs Network](protocol-labs-network/about.md)
   * [What is the PL Network?](protocol-labs-network/what-is-pl.md)
+  * [Teams in the PL Network](protocol-labs-network/teams-in-pl.md)
   * [Where We are Headed](protocol-labs-network/where-we-headed.md)
   * [Protocol Labs Culture](protocol-labs-network/pl-culture.md)
   * [Open Source Stewardship](protocol-labs-network/os-culture.md)
