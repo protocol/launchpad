@@ -9,7 +9,7 @@ description: Open Source Culture and Stewardship
 Working at a company in the Protocol Labs Network (PLN) is a fairly unique experience. For many Labbers, your work will often require contributing to one or many open source projects. IPFS, libp2p, Filecoin, Multiformats, IPLD, and others are all projects created and sponsored by the PL Network. Each of these projects is an independent open source project, and each of them has needs and goals that span multiple organizations within and outside the PL Network.
 
 
-### Open Source Culture | Steven Allen & Dietrich Ayala
+#### Open Source Culture | Steven Allen & Dietrich Ayala
 
 In this talk by Steven & Dietrich, they review some of the customs and best practices involved when becoming a part of an open source community.
 
@@ -80,26 +80,17 @@ The 4 components of a great asynchronous message
 
 ## Contributing
 ### Contributing and Maintaining in Open Source
-In This talk by Steven Allen & Raul Kripalani, they will review some of the customs and best practices involved when becoming a part of a community that is an open source projects.
+In This talk Steven Allen & Raul Kripalani will give tips and advice on how to make sure contributing to your open source project is effective, and maintains the spirit of positive communication and working together as a community to build great software in a way that teaches and elevates all member of a community.
 
-_//You Tube Embed Here_
+{% embed url="https://youtu.be/A9Lo_rLNU9w" %}
 
-In order to become a well-functioning community, maintainers and contributors should remember the following principles:
-* Understand the format of what you are contributing to. Read guides, and do som research to see how others do it
-* Understand that both the committer and maintainer contributing to this community, and maintainers are investing time in you to merge and maintain these changes
-* Explain your commits and PRs so maintainers can easily understand and merge what you want to contribute.
-* For large changes, have a more thorough explanation from rationale, design decisions, and proof, to testing and to-dos
+#### Writing and Reviewing Great PRs
 
-### Writing and Reviewing Great PRs
-
-This document by Steven Allen and Raul Kripalani describes best practices for a thorough golang PR submission & review.
+This document, covered in the video above, by Steven Allen and Raul Kripalani describes best practices for a thorough PR submission & review, along with an additional guide for Golang contributions.
 
 {% embed url="https://docs.google.com/document/d/1EP6S8k-DNsDgIKmtrA_9YrCghq3F21IqhDh9THNuoOU/edit" %}
 
-{% embed url="https://drive.google.com/file/d/1EHUXFm0SA4DiBlHTXnRQQ-vHXuQdyBCo/view?usp=sharing" %}
-This video walks through major themes and takeaways from the doc above
-{% endembed %}
-
+### Code Review Developer Guide (Optional)
 See Google's [_Code Review Developer Guide_](https://google.github.io/eng-practices/review/) for more
 
 ### Healthy Team Habits (Optional)
