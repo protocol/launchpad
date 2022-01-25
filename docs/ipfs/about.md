@@ -18,6 +18,6 @@ IPFS as an organization is trying to look ahead to the next 10, 100, 1000 years,
 
 Though it gets difficult to predict what is going to happen in the next, say, 100 years, we can
 
-
+Computers have gone through so many phases from the first computers, to machines that can timeshare, to multiprocessing and sandboxed VMs, to user terminals, to networked computers with multiprocessing, now with personal computers networked across a worldwide internet that all came from a relatively simple set of functions and data transmission.
 
 ## Sections | IPFS
