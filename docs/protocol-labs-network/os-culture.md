@@ -88,7 +88,8 @@ In order to become a well-functioning community, maintainers and contributors sh
 * Understand the format of what you are contributing to. Read guides, and do som research to see how others do it
 * Understand that both the committer and maintainer contributing to this community, and maintainers are investing time in you to merge and maintain these changes
 * Explain your commits and PRs so maintainers can easily understand and merge what you want to contribute.
-* For large changes, have a more thorough explanation from rationale, design decisions, and proof, to testing and to-dos
+* For large changes, have a more thorough explanation from rationale, design decisions, and proof, to testing and to-dos, as well as use feature branches for long-running changes.
+*
 
 #### Writing and Reviewing Great PRs
 
