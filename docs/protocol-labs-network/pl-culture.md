@@ -26,10 +26,7 @@ _Watch at least one!_
 
 #### 2020
 
-<!-- {% embed url="https://youtu.be/rZ9oE4VM2vE" %} -->
-{% embed url="https://drive.google.com/file/d/1telh7oSfX3Nr0wMKTI8LXqV17n4cDPKb/view" %}
-<Protocol Labs 2020 Culture>
-{% endembed %}
+{% embed url="https://youtu.be/rZ9oE4VM2vE" %}
 
 #### 2021
 
