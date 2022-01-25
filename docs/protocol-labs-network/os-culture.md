@@ -9,7 +9,7 @@ description: Open Source Culture and Stewardship
 Working at a company in the Protocol Labs Network (PLN) is a fairly unique experience. For many Labbers, your work will often require contributing to one or many open source projects. IPFS, libp2p, Filecoin, Multiformats, IPLD, and others are all projects created and sponsored by the PL Network. Each of these projects is an independent open source project, and each of them has needs and goals that span multiple organizations within and outside the PL Network.
 
 
-### Open Source Culture | Steven Allen & Dietrich Ayala
+#### Open Source Culture | Steven Allen & Dietrich Ayala
 
 In this talk by Steven & Dietrich, they review some of the customs and best practices involved when becoming a part of an open source community.
 
@@ -90,16 +90,13 @@ In order to become a well-functioning community, maintainers and contributors sh
 * Explain your commits and PRs so maintainers can easily understand and merge what you want to contribute.
 * For large changes, have a more thorough explanation from rationale, design decisions, and proof, to testing and to-dos
 
-### Writing and Reviewing Great PRs
+#### Writing and Reviewing Great PRs
 
-This document by Steven Allen and Raul Kripalani describes best practices for a thorough golang PR submission & review.
+See the document, covered in the video above, by Steven Allen and Raul Kripalani describes best practices for a thorough golang PR submission & review.
 
 {% embed url="https://docs.google.com/document/d/1EP6S8k-DNsDgIKmtrA_9YrCghq3F21IqhDh9THNuoOU/edit" %}
 
-{% embed url="https://drive.google.com/file/d/1EHUXFm0SA4DiBlHTXnRQQ-vHXuQdyBCo/view?usp=sharing" %}
-This video walks through major themes and takeaways from the doc above
-{% endembed %}
-
+### Code Review Developer Guide (Optional)
 See Google's [_Code Review Developer Guide_](https://google.github.io/eng-practices/review/) for more
 
 ### Healthy Team Habits (Optional)
