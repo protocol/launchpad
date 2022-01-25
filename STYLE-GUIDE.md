@@ -31,3 +31,15 @@ _Example_
 ```
 
 You can also add a YouTube video in the UI by pasting the YouTube URL and pressing enter
+
+### Google Doc Embeds
+
+
+Example:
+```
+{% embed url="https://docs.google.com/document/d/1EP6S8k-DNsDgIKmtrA_9YrCghq3F21IqhDh9THNuoOU/edit" %}
+
+{% embed url="https://drive.google.com/file/d/1EHUXFm0SA4DiBlHTXnRQQ-vHXuQdyBCo/view?usp=sharing" %}
+This video walks through major themes and takeaways from the doc above
+{% endembed %}
+```
