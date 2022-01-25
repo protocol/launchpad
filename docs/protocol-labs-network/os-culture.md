@@ -80,20 +80,13 @@ The 4 components of a great asynchronous message
 
 ## Contributing
 ### Contributing and Maintaining in Open Source
-In This talk by Steven Allen & Raul Kripalani, they will review some of the customs and best practices involved when becoming a part of a community that is an open source projects.
+In This talk Steven Allen & Raul Kripalani will give tips and advice on how to make sure contributing to your open source project is effective, and maintains the spirit of positive communication and working together as a community to build great software in a way that teaches and elevates all member of a community.
 
-_//You Tube Embed Here_
-
-In order to become a well-functioning community, maintainers and contributors should remember the following principles:
-* Understand the format of what you are contributing to. Read guides, and do som research to see how others do it
-* Understand that both the committer and maintainer contributing to this community, and maintainers are investing time in you to merge and maintain these changes
-* Explain your commits and PRs so maintainers can easily understand and merge what you want to contribute.
-* For large changes, have a more thorough explanation from rationale, design decisions, and proof, to testing and to-dos, as well as use feature branches for long-running changes.
-*
+{% embed url="https://youtu.be/A9Lo_rLNU9w" %}
 
 #### Writing and Reviewing Great PRs
 
-See the document, covered in the video above, by Steven Allen and Raul Kripalani describes best practices for a thorough golang PR submission & review.
+This document, covered in the video above, by Steven Allen and Raul Kripalani describes best practices for a thorough PR submission & review, along with an additional guide for Golang contributions.
 
 {% embed url="https://docs.google.com/document/d/1EP6S8k-DNsDgIKmtrA_9YrCghq3F21IqhDh9THNuoOU/edit" %}
 
