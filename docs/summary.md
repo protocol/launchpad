@@ -12,7 +12,7 @@
   * [Open Source Stewardship](protocol-labs-network/os-stewardship.md)
   * [Open Source Contribution](protocol-labs-network/os-contributing.md)
 * [IPFS](ipfs/about.md)
-  * [Some child page](launchpad-learning-resources/about-1/some-child-page.md)
+  * [Some child page](ipfs/how-ipfs-works.md)
 * [IPLD](ipld/about.md)
   * [Some child page](launchpad-learning-resources/about-2/some-child-page.md)
 * [Libp2p](libp2p/about.md)
