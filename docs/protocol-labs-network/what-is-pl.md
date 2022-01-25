@@ -6,7 +6,6 @@ description: What is the Protocol Labs Network
 
 ## Protocol Labs: An Overview
 
-{% embed url="https://docs.google.com/presentation/d/108Dt3QwjB6Mi3lXhl9olGqmhyx2tIiYwY3wUtLpiRco/edit" %}
 
 {% embed url="https://docs.google.com/presentation/d/108Dt3QwjB6Mi3lXhl9olGqmhyx2tIiYwY3wUtLpiRco/edit?usp=sharing" %}
 This deck shows a quick overview of the major principles of Protocol Labs
