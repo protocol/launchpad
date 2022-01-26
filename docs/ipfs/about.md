@@ -11,11 +11,11 @@ description: The What and Why of IPFS
 ## Why IPFS?
 The acceleration of innovation over the past few decades, in comparison with the past million years of human evolution, is moving at an incredible pace.
 
-IPFS as an organization is trying to look ahead to the next 10, 100, 1000 years, and think about how computing will shape and impact a future we can't even being to imagine.
+IPFS as an organization is trying to look ahead to the next 10, 100, 1000 years and beyond and think about how computing will shape and impact a future we can't even being to imagine.
 
 {% embed url="https://www.youtube.com/watch?v=zE_WSLbqqvo" %}
 
-Though it gets difficult to predict what is going to happen in the next, say, 100 years, we can
+Though it gets difficult to predict what is going to happen in the next, say, 100 years, we can ........
 
 Computers have gone through so many phases from the first computers, to machines that can timeshare, to multiprocessing and sandboxed VMs, to user terminals, to networked computers with multiprocessing, now with personal computers networked across a worldwide internet that all came from a relatively simple set of functions and data transmission.
 
@@ -29,7 +29,7 @@ Web1 was a worldwide network of static website, on which any users could basical
 
 **Web 2 - Shared Creation**
 
-Web2 is a version of the internet where users are able to easily create and post their own content, though how decisions are made, who owners the data, and the ways (and to whom) content is shared is ruled by a few, large, technological gateholders.
+Web2 is a version of the internet where users are able to easily create and post their own content, though how decisions are made, who owns the data, and the ways (and to whom) content is shared is ruled by a few, large, technological gateholders.
 
 **Web 3 - Shared Hosting**
 
