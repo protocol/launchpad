@@ -6,17 +6,15 @@ description: What is the Protocol Labs Network
 
 ## Protocol Labs: An Overview
 
-
 {% embed url="https://docs.google.com/presentation/d/108Dt3QwjB6Mi3lXhl9olGqmhyx2tIiYwY3wUtLpiRco/edit?usp=sharing" %}
 This deck shows a quick overview of the major principles of Protocol Labs
 {% endembed %}
-
 
 ## Background, Work, & Business Model
 
 _This is an_ [_annotated version of a blog_](https://protocol.ai/blog/protocol-labs-creating-new-networks/)
 
-**Protocol Labs** is a research, development, and deployment lab for network protocols. We believe the internet is humanity’s most important technology. Our mission is to improve the internet and computing, generally. We are doing so by creating groundbreaking protocols, and speeding up the pipeline from ideas on paper to users’ hands.
+**The Protocol Labs Network** is community of teams, projects, and organizations focused on the research, development, and deployment of network protocols. We believe the internet is humanity’s most important technology. Our mission is to improve the internet and computing, generally. We are doing so by creating groundbreaking protocols, and speeding up the pipeline from ideas on paper to users’ hands.
 
 ### Our Background: The Challenges of Our Time
 
