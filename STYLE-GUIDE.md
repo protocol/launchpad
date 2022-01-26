@@ -5,7 +5,7 @@
 * A single `#` will not show up on a page
 * Main section titles will be created with two `##`, e.g.`## Main Title`
 * Sub titles are created with three `###` e.g. `### Sub Title`
-* Video titles and other embedded content will be created with four `####`, e.g. `#### Video Title | Presenter`. Try and include the video title with a pipe `|` and the people in the video/ creator
+* Video titles and other embedded content will be created with four `####`, e.g. `#### Video Title | Presenter`. Try and include the video title with a pipe `|` and the people in the video/ creator.
 _Example_
 ```
 #### Open Source Culture | Steven Allen & Dietrich Ayala
@@ -57,7 +57,7 @@ Simply add it with the embed tags:
 {% embed url="<link to document>" %}
 <Add a short description here>
 {% endembed %}
-
+```
 Example 1:
 ```
 {% embed url="https://docs.google.com/document/d/1EP6S8k-DNsDgIKmtrA_9YrCghq3F21IqhDh9THNuoOU/edit" %}
