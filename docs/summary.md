@@ -44,7 +44,7 @@
   * [Sealing & Proving](filecoin/sealing-proving.md)
   * [Where We Are Headed](filecoin/where-we-are-headed.md)
   * [How Filecoin Actors Work](filecoin/filecoin-actors.md)
-  * [Resources](filecoin/resources.md)
+  * [Filecoin Resources](filecoin/filecoin-resources.md)
 * [Protocol Labs Toolkits & SDKs](protocol-labs-toolkits-sdks/about.md)
   * [Textile](protocol-labs-toolkits-sdks/textile.md)
   * [Ceramic](protocol-labs-toolkits-sdks/ceramic.md)
