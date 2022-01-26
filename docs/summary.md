@@ -42,7 +42,7 @@
   * [How Filecoin Works](filecoin/how-filecoin-works.md)
   * [Filecoin Cryptoeconomics](filecoin/filecoin-cryptoeconomics.md)
   * [Sealing & Proving](filecoin/sealing-proving.md)
-  * [Where we Are Headed](filecoin/where-we-are-headed.md)
+  * [Where We Are Headed](filecoin/where-we-are-headed.md)
   * [How Filecoin Actors Work](filecoin/filecoin-actors.md)
   * [Resources](filecoin/resources.md)
 * [Protocol Labs Toolkits & SDKs](protocol-labs-toolkits-sdks/about.md)
@@ -54,7 +54,11 @@
   * [Fleek Space Daemon](protocol-labs-toolkits-sdks/fleek-space-daemon.md)
   * [DIY Projects](protocol-labs-toolkits-sdks/diy-projects.md)
 * [Built On IPFS and Filecoin](built-on-ipfs-filecoin/about.md)
-  * [Some child page](launchpad-learning-resources/about-6/some-child-page.md)
+  * [Filecoin Launchpad](built-on-ipfs-filecoin/filecoin-launchpad.md)
+  * [Starling Case Study](built-on-ipfs-filecoin/starling-case-study.md)
+  * [Community & Meetups](built-on-ipfs-filecoin/community-meetups.md)
+  * [Apps & Tooling](built-on-ipfs-filecoin/apps-tooling.md)
+  * [Research & Grants](built-on-ipfs-filecoin/research-grants.md)
 
 ## Other Resources
 
