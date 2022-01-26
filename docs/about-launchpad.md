@@ -27,12 +27,12 @@ This curriculum is designed for those who already have a basic set of software e
 
 1. [Pre-Requisites](pre-requisites/about.md)
 2. [The Protocol Labs Network](protocol-labs-network/about.md)
-3. [IPFS Learning Resources](libp2p/about.md)
-4. [IPLD Learning Resources](filecoin/about.md)
-5. [LibP2p Learning Resources](ipld/about.md)
-6. [Filecoin Learning Resources](built-on-ipfs-filecoin/about.md)
-7. [Learn about Protocol Labs Toolkits & SDKs](protocol-labs-toolkits-sdks/about.md)
-8. [Learn about what is built on IPFS and Filecoin](ipfs/about.md)
+3. [IPFS Learning Resources](broken-reference)
+4. [IPLD Learning Resources](ipld/about.md)
+5. [LibP2p Learning Resources](built-on-ipfs-filecoin/about.md)
+6. [Filecoin Learning Resources](protocol-labs-toolkits-sdks/about.md)
+7. [Learn about Protocol Labs Toolkits & SDKs](libp2p/about.md)
+8. [Learn about what is built on IPFS and Filecoin](filecoin/about.md)
 
 ### ⚖️ Launchpad Principles
 
