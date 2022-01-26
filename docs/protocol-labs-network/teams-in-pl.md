@@ -11,6 +11,8 @@ The PL Network is made up of 300+ projects, companies, and organizations. You ca
 The [PL Spaceport](https://protocol.almanac.io/docs/protocol-labs-spaceport-sFKNLxQKYdQOZfLTL4kL9uVha4TdGlYh) has many links to resources for PL Network members, including:
 
 * [PLN Member Directory](https://protocol.almanac.io/docs/pln-member-directory-84TYCGFm9s07JuPfNqpvCXWDLgK1EAhU)
+  * [Teams](https://airtable.com/shrqUt3aQvZLs0fx7/tblceMFkdHORmuzl4)
+  * [Labbers](https://airtable.com/shrx4IjMUG9DSshyB/tblpTKZo66tbYIxH4)
 * [PLN Code of Conduct](https://protocol.almanac.io/docs/pln-code-of-conduct-ymBUYyonmhfvizGu6yOpXH1qkuWYce96)
 * [Glossary](https://protocol.almanac.io/docs/glossary-ycx3uRbXUM3d7uf1EBz89msUmb1UjzR7)
 
