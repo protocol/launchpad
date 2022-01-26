@@ -1,11 +1,195 @@
 ---
-description: The Basics of How IPFS Works
+description: IPFS Gateways and Browsers
 ---
 
-# How IPFS Works
+## HTTP Gateways
+_This is an [annotated version of this doc](https://docs.ipfs.io/how-to/address-ipfs-on-web/#http-gateways)_
 
-## Content Addressing
-**IPFS** stands for **I**nter **P**lanetary **F**ile **S**ystem.  
+<!-- What else should be included?-->
+
+Gateways are provided strictly for convenience: in other words, they help tools that speak HTTP but do not speak distributed protocols (such as IPFS) to communicate. They are the first stage of the upgrade path for the web. More information about IPFS Gateways.
+
+### Centralization
+HTTP gateways have worked well since 2015, but they come with a significant set of limitations related both to the centralized nature of HTTP and some of HTTP's semantics. Location-based addressing of a gateway depends on both DNS and HTTPS/TLS, which relies on a trust in certificate authorities (opens new window)(CAs) and public key infrastructure (opens new window)(PKI). In the long term, these issues should be mitigated by use of opportunistic protocol upgrade schemes.
+
+### Protocol upgrade
+Tools and browser extensions should detect IPFS content paths and resolve them directly over IPFS protocol. They should use HTTP gateway only as a fallback when no native implementation is available in order to ensure a smooth, backward-compatible transition.
+
+### Path gateway
+In the most basic scheme, a URL path used for content addressing is effectively a resource name without a canonical location. The HTTP server provides the location part, which makes it possible for browsers to interpret an IPFS content path as relative to the current server and just work without a need for any conversion:
+
+```
+https://<gateway-host>.tld/ipfs/<cid>/path/to/resource
+https://<gateway-host>.tld/ipns/<ipnsid_or_dnslink>/path/to/resource
+```
+
+## Gateway Recipes
+
+_This is an [annotated version of content from the go-ipfs repo](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#gateway-recipe)_
+
+<!-- What else should be included? Links?  -->
 
 
-## Why IPFS?
+Below is a list of the most common public gateway setups.
+
+* Public subdomain gateway at http://{cid}.ipfs.dweb.link (each content root gets its own Origin)
+
+```
+$ ipfs config --json Gateway.PublicGateways '{
+    "dweb.link": {
+      "UseSubdomains": true,
+      "Paths": ["/ipfs", "/ipns"]
+    }
+  }'
+  ```
+* Backward-compatible: this feature enables automatic redirects from content paths to subdomains:
+
+`http://dweb.link/ipfs/{cid} → http://{cid}.ipfs.dweb.link`
+
+* X-Forwarded-Proto: if you run go-ipfs behind a reverse proxy that provides TLS, make it add a X-Forwarded-Proto: https HTTP header to ensure users are redirected to https://, not http://. It will also ensure DNSLink names are inlined to fit in a single DNS label, so they work fine with a wildcart TLS cert (details). The NGINX directive is proxy_set_header X-Forwarded-Proto "https";.:
+
+`http://dweb.link/ipfs/{cid} → https://{cid}.ipfs.dweb.link`
+
+http://dweb.link/ipns/your-dnslink.site.example.com → https://your--dnslink-site-example-com.ipfs.dweb.link
+
+* X-Forwarded-Host: we also support X-Forwarded-Host: example.com if you want to override subdomain gateway host from the original request:
+
+`http://dweb.link/ipfs/{cid} → http://{cid}.ipfs.example.com`
+
+Public path gateway at `http://ipfs.io/ipfs/{cid}` (no Origin separation)
+
+```
+$ ipfs config --json Gateway.PublicGateways '{
+    "ipfs.io": {
+      "UseSubdomains": false,
+      "Paths": ["/ipfs", "/ipns", "/api"]
+    }
+  }'
+  ```
+* Public DNSLink gateway resolving every hostname passed in Host header.
+
+`$ ipfs config --json Gateway.NoDNSLink false`
+  * Note that NoDNSLink: false is the default (it works out of the box unless set to true manually)
+
+* Hardened, site-specific DNSLink gateway.
+
+Disable fetching of remote data (NoFetch: true) and resolving DNSLink at unknown hostnames (NoDNSLink: true). Then, enable DNSLink gateway only for the specific hostname (for which data is already present on the node), without exposing any content-addressing Paths:
+
+```
+$ ipfs config --json Gateway.NoFetch true
+$ ipfs config --json Gateway.NoDNSLink true
+$ ipfs config --json Gateway.PublicGateways '{
+    "en.wikipedia-on-ipfs.org": {
+      "NoDNSLink": false,
+      "Paths": []
+    }
+  }'
+```
+
+## IPFS In Web Browsers
+
+_This is an [annotated version of content from the ipfs/in-web-browsers repo](https://github.com/ipfs/in-web-browsers)_
+
+<!-- What else should be included? Links? Can we pare it down?-->
+
+Informal group working on improving IPFS presence in web browsers
+
+Our goal is to facilitate native support for IPFS and other decentralized protocols in web browsers in order to benefit ....
+
+* Browser users: Browser extensions and native-included IPFS alike expose IPFS features in a robust and intuitive way
+* Web developers: Web developers can enjoy a smooth experience working with IPFS in browser contexts
+* Browser vendors: Browser developers are empowered to meet the requirements of the distributed web
+
+### Current Projects
+
+- [IPFS Companion browser extension](#ipfs-companion-browser-extension)
+  - [IPFS and the JavaScript ecosystem](#ipfs-and-the-javascript-ecosystem)
+  - [How to address IPFS on the web](#how-to-address-ipfs-on-the-web)
+  - [How to run own HTTP Gateway](#how-to-run-own-http-gateway)
+  - [DNSLink](#dnslink)
+  - [Collaborations](#collaborations)
+    - [W3C](#w3c)
+    - [IPFS and Igalia collaborate on dweb in browsers](#ipfs-and-igalia-collaborate-on-dweb-in-browsers)
+    - [Brave](#brave)
+    - [Opera](#opera)
+- [Get involved!](#get-involved)
+- [Resources](#resources)
+
+## Current projects
+
+### IPFS Companion browser extension
+
+[IPFS Companion](https://github.com/ipfs-shipyard/ipfs-companion#ipfs-companion) is a browser extension that simplifies access to IPFS resources and adds browser support for the IPFS protocol. It runs in <img src="https://unpkg.com/@browser-logos/firefox@2.0.0/firefox_16x16.png" width="16" height="16">Firefox (desktop and Android) and Chromium-based browsers includingChrome or Brave. Check out all of [IPFS Companion's features](https://github.com/ipfs-shipyard/ipfs-companion#ipfs-companion-features) and [**install it**](https://github.com/ipfs-shipyard/ipfs-companion#install) today!
+
+<!-- image here -->
+
+#### Notable past web extension experiments
+- Mozilla hosted a community effort called [`libdweb`](https://github.com/mozilla/libdweb/) to implement experimental APIs for Firefox WebExtensions, with a goal of enabling dweb protocols in Firefox through browser add-ons:
+ - IPFS [libdweb experiments](https://github.com/ipfs-shipyard/ipfs-companion/blob/libdweb/docs/libdweb.md), including a [native protocol handler](https://github.com/ipfs-shipyard/ipfs-companion/pull/533), [local DNS-SD discovery and TCP transport](https://github.com/ipfs-shipyard/ipfs-companion/pull/553)
+ - The long-term goal of this project was to integrate these APIs into the WebExtensions ecosystem, but as of Q3 2020 it is not yet in Firefox Nightly
+- Exposing the IPFS API via [`window.ipfs`](https://docs.ipfs.io/how-to/companion-window-ipfs/) (experiment ended in 2020)
+- Support for [`chrome.sockets.*` APIs](https://github.com/ipfs-shipyard/ipfs-companion/issues/664) in Chromium browsers (deprioritized due to [EOL 2022](https://9to5google.com/2020/01/15/google-killing-chrome-apps/))
+
+### IPFS and the JavaScript ecosystem
+
+At present, in order to interact with IPFS in a web browser, you must either bundle [`js-ipfs-core`](https://www.npmjs.com/package/ipfs-core) (a full IPFS node in JavaScript) with your client-side application, or use the [`js-ipfs-http-client`](https://www.npmjs.com/package/ipfs-http-client) HTTP [RPC API](https://docs.ipfs.io/reference/http/api/) client library to connect to an external daemon running on a local or remote machine.
+
+- To learn more, make sure to check the `browser-*` examples at [`ipfs-examples/js-ipfs-examples`](https://github.com/ipfs-examples/js-ipfs-examples/tree/master/examples)
+ - Highlight: an advanced, end-to-end example of using js-ipfs node in `SharedWorker` from `ServiceWorker` can be found at [`js-ipfs-examples/browser-service-worker`](https://github.com/ipfs-examples/js-ipfs-examples/tree/master/examples/browser-service-worker)
+
+### How to address IPFS on the web
+
+- For regular users, see this [guide to how to address IPFS content paths on the web](https://docs.ipfs.io/how-to/address-ipfs-on-web/)
+- For browser vendors and user agent developers, see this [memo](ADDRESSING.md) for the current set of URL conventions for the IPFS community; we invite everyone to submit questions and suggestions for improvements via issues/PRs
+
+### How to Run Your Own HTTP Gateway
+
+Use the latest [go-ipfs daemon](https://github.com/ipfs/go-ipfs) and follow [gateway recipes](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#gateway-recipes).
+
+#### DNSLink
+
+[DNSLink](https://dnslink.dev) enables you to map a domain name to an IPFS address (CID or IPNS libp2p-key) by means of a DNS TXT record.
+
+- Read the [DNSLink guide](https://docs.ipfs.io/concepts/dnslink/) for details, including how to set it up on your own website
+- See details on [DNSLink in IPFS Companion](https://docs.ipfs.io/how-to/dnslink-companion/) to see additional benefits of using IPFS Companion with DNSLink support
+
+### Collaborations
+
+#### W3C
+
+Protocol Labs is a [W3C Member](https://www.w3.org/Consortium/Member/List).
+Current focus is to watch, learn, and participate in [WebExtensions Community Group](https://www.w3.org/community/webextensions/).
+
+#### IPFS and Igalia collaborate on dweb in browsers
+
+In 2020 IPFS and Igalia started a collaboration that continues to this day.
+Read more: https://blog.ipfs.io/2021-01-15-ipfs-and-igalia-collaborate-on-dweb-in-browsers/  
+
+The most notable highlights:
+
+* IPFS and [Igalia](https://www.igalia.com/) started a collaboration that will continue during 2021.
+* [Distributed web schemes have been safelisted in Chrome 86](https://www.chromestatus.com/feature/4776602869170176)’s implementation of [custom handlers](https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers) and [registered at IANA](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml).
+* Chrome 89 will allow browser extensions to register cross-origin handlers or handlers for schemes with prefix `ext+`. Refinement is pending for the [permission UI](https://bugs.chromium.org/p/chromium/issues/detail?id=1079333).
+* Firefox 84 marks `http://*.localhost/` URLs as [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts), which means websites loaded from local [subdomain gateway](https://docs.ipfs.io/how-to/address-ipfs-on-web/#subdomain-gateway) will have access to the same Web APIs as HTTPS version.
+* Firefox 84 has improved support for [loading locally delivered mixed-resources](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content#Loading_locally_delivered_mixed-resources). Patches have also been submitted to WebKit but are pending on reviews and discussions.
+* Work is in progress to improve Chromium’s consistency and specification compliance regarding the notion of [secure contexts](https://w3c.github.io/webappsec-secure-contexts/), including removing non-standard [localhost](https://chromestatus.com/feature/5698580851458048) [names](https://chromestatus.com/feature/5668106045227008).
+* Miscellaneous other fixes have landed for the Firefox and Chromium’s implementations of custom handlers.
+* WIP refactor to make it easier to register custom protocol handlers ([example](https://chromium-review.googlesource.com/c/chromium/src/+/2992306), related talk: [Integrating New Protocol Handlers into Chrome [BlinkOn 15]](https://www.youtube.com/watch?v=kHIN6FkLAS8))
+
+
+#### Brave
+
+[Brave v1.19 has integrated IPFS into their desktop web browser](https://brave.com/brave-integrates-ipfs/) for Windows, macOS and Linux. When Brave detects an address which is an HTTP gateway URL to IPFS content or a native IPFS address such as `ipfs://` or `ipns://` it will prompt the user to install and enable the native IPFS node, or to use an HTTP gateway.
+Diagnostic UI can be found at `brave://ipfs`, we suggest enabling IPFS Companion for the best experience
+
+TLDR integration status:
+
+- Initial release (v1.19) is focused on daemon orchestration and on URI support (read [blogs and press](https://github.com/ipfs/in-web-browsers/issues/64#issuecomment-763016248))
+- Demo: Opening `ipfs://{cid}` will trigger install prompt for go-ipfs managed by Brave itself.
+- For the best experience enable IPFS Companion and switch it to IPFS Node Type ["Provided by Brave"](https://docs.ipfs.io/how-to/companion-node-types/#provided-by-brave).
+ When Companion is enabled all IPFS resources will be resolved by the local node.
+
+#### Opera
+
+Opera for Android 57 introduced support for resolving `ipfs://` or `ipns://` via a customizable gateway.  
+[Read more](https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/)
