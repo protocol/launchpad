@@ -39,3 +39,14 @@ Web3 is an internet that shares and distributes the processesing and decision ma
 Dive into the technical details [with this article](https://mikeal.notion.site/web3-data-permanence-0230072b594748ed9aa0c71ad331f289).
 
 ## Sections | IPFS
+
+* [IPFS](ipfs/about.md)
+  * [How IPFS Works](ipfs/how-ipfs-works.md)
+  * [Who Uses IPFS](ipfs/who-uses-ipfs.md)
+  * [The IPFS Gateways](ipfs/ipfs-gateways.md)
+  * [Bitswap](ipfs/bitswap.md)
+  * [Graphsync](ipfs/graphsync.md)
+  * [Mutable Content](ipfs/mutable-content.md)
+  * [Important IPFS History](ipfs/ipfs-history.md)
+  * [IPFS Public DHT](ipfs/ipfs-public-dht.md)
+  * [IPFS Resources](ipfs/ipfs-resources.md)
