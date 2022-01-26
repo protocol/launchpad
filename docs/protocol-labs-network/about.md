@@ -28,7 +28,8 @@ Protocol Labs drives breakthroughs in computing to push humanity forward.
 ## Sections | The Protocol Labs Network
 
 1. [What is the PL Network?](protocol-labs-network/what-is-pl.md)
-2. [Where we are Headed](protocol-labs-network/where-we-headed.md)
-3. [PL Culture & Gatherings](protocol-labs-network/pl-culture.md)
-4. [Open Source Culture & Async Work](protocol-labs-network/os-culture.md)
-5. [Open Source Software Maintainership](protocol-labs-network/os-maintainership.md)
+2. [Teams in the PL Network](protocol-labs-network/teams-in-pl.md)
+3. [Where we are Headed](protocol-labs-network/where-we-headed.md)
+4. [Protocol Labs Culture](protocol-labs-network/pl-culture.md)
+4. [Open Source Stewardship](protocol-labs-network/os-stewardship.md)
+5. [Open Source Contributions](protocol-labs-network/os-contributing.md)

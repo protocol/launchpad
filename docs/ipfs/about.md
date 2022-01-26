@@ -1,26 +1,41 @@
 ---
-description: Add the subtitle here
+description: The What and Why of IPFS
 ---
 
-# About *** Add Title of Page Here
+# About IPFS
 
-## **Introduction**
+## What is IPFS
+**IPFS** stands for **I**nter **P**lanetary **F**ile **S**ystem.  
 
-**Bold text** is building the next generation of the internet.
 
-![A link](../../.gitbook/assets/twitter-banner-1500x500.png)
+## Why IPFS?
+The acceleration of innovation over the past few decades, in comparison with the past million years of human evolution, is moving at an incredible pace.
 
-## Our mission
+IPFS as an organization is trying to look ahead to the next 10, 100, 1000 years, and think about how computing will shape and impact a future we can't even being to imagine.
 
-Protocol Labs drives breakthroughs in computing to push humanity forward.
+{% embed url="https://www.youtube.com/watch?v=zE_WSLbqqvo" %}
 
-## Our Vision / How
+Though it gets difficult to predict what is going to happen in the next, say, 100 years, we can
 
-* Ideas to super-powers **pipeline.**
-* A **lab** capable of repeatable innovation.&#x20;
-* World-class **team** & **network**.
-* Org **enables** teams to be super effective.
-* Create, support, and grow **projects**.
-* Build **crypto networks** and **businesses**.
-* **Open Source** all the things \o/.
-* **Collaborate** with other groups.&#x20;
+Computers have gone through so many phases from the first computers, to machines that can timeshare, to multiprocessing and sandboxed VMs, to user terminals, to networked computers with multiprocessing, now with personal computers networked across a worldwide internet that all came from a relatively simple set of functions and data transmission.
+
+### What is Web 3?
+
+[This article gives a great summary](https://medium.com/@vegxcodes/what-you-should-know-about-web3-part-1-15a2ddcfbc41) of the first three stages of Web evolution.
+
+**Web 1 - Shared Information**
+
+Web1 was a worldwide network of static website, on which any users could basically view and share pages of information, with little interaction.
+
+**Web 2 - Shared Creation**
+
+Web2 is a version of the internet where users are able to easily create and post their own content, though how decisions are made, who owners the data, and the ways (and to whom) content is shared is ruled by a few, large, technological gateholders.
+
+**Web 3 - Shared Hosting**
+
+Web3 is an internet that shares and distributes the processesing and decision making necessary for the internet, where the users have soverign control over their data.
+
+
+Dive into the technical details [with this article](https://mikeal.notion.site/web3-data-permanence-0230072b594748ed9aa0c71ad331f289).
+
+## Sections | IPFS
