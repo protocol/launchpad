@@ -5,7 +5,7 @@ description: Contributing in Open Source
 # Making & Maintaining Open Source Contributions
 
 ## Contributing
-### Contributing and Maintaining in Open Source
+#### Contributing and Maintaining in Open Source | Steven Allen & Raul Kripalani
 In This talk Steven Allen & Raul Kripalani will give tips and advice on how to make sure contributing to your open source project is effective, and maintains the spirit of positive communication and working together as a community to build great software in a way that teaches and elevates all member of a community.
 
 {% embed url="https://youtu.be/A9Lo_rLNU9w" %}

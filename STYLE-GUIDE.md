@@ -1,5 +1,20 @@
 # Style Guide
 
+## Titles
+* The name of a page is set in the `/docs/summary.md` page. Whatever you put on the list is what the page will be
+* A single `#` will not show up on a page
+* Main section titles will be created with two `##`, e.g.`## Main Title`
+* Sub titles are created with three `###` e.g. `### Sub Title`
+* Video titles and other embedded content will be created with four `####`, e.g. `#### Video Title | Presenter`. Try and include the video title with a pipe `|` and the people in the video/ creator
+_Example_
+```
+#### Open Source Culture | Steven Allen & Dietrich Ayala
+
+In this talk by Steven & Dietrich, they review some of the customs and best practices involved when becoming a part of an open source community.
+
+{% embed url="https://youtu.be/GcvGc3pgOT8" %}
+```
+
 ## Embedding
 
 ### Images Hosted Online

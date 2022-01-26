@@ -4,7 +4,7 @@ description: What is the Protocol Labs Network
 
 # What is the PL Network?
 
-## Protocol Labs: An Overview
+#### Protocol Labs: An Overview | Molly Mackinlay
 
 {% embed url="https://docs.google.com/presentation/d/108Dt3QwjB6Mi3lXhl9olGqmhyx2tIiYwY3wUtLpiRco/edit?usp=sharing" %}
 This deck shows a quick overview of the major principles of Protocol Labs
@@ -52,7 +52,7 @@ Even though we are young, we have already created a large ecosystem of interrela
 * [CoinList](https://coinlist.co) is a protocol token fundraising platform. AngelList meets Kickstarter meets Protocol Tokens.
 * [SAFT](https://coinlist.co/saft) is a legal framework for protocol token fundraising.
 
-### A Network built around Market Protocols
+### A Network Built around Market Protocols
 
 In 2013, while studying Bitcoin, it became clear that cryptocurrencies solved many fundamental issues with protocol development:
 
