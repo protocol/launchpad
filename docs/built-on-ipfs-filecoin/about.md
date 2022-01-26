@@ -9,13 +9,13 @@ description: Add the subtitle here
 
 ![A link](../../.gitbook/assets/twitter-banner-1500x500.png)
 
-## Sub-Heading
+### Sub-Heading
 
 ## Second Heading
 
 text
 
-## Sub-Heading
+### Sub-Heading
 
 text
 * **Collaborate** with other groups.&#x20;
