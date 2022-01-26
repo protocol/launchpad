@@ -5,8 +5,7 @@
 * A single `#` will not show up on a page
 * Main section titles will be created with two `##`, e.g.`## Main Title`
 * Sub titles are created with three `###` e.g. `### Sub Title`
-* Video titles and other embedded content will be created with four `####`, e.g. `#### Video Title | Presenter`. Try and include the video title with a pipe `|` and the people in the video. Underneath this title write a line or two about the video, then embed it below
-
+* Video titles and other embedded content will be created with four `####`, e.g. `#### Video Title | Presenter`. Try and include the video title with a pipe `|` and the people in the video/ creator
 _Example_
 ```
 #### Open Source Culture | Steven Allen & Dietrich Ayala
