@@ -5,7 +5,17 @@ description: The What and Why of IPFS
 # About IPFS
 
 ## What is IPFS
-**IPFS** stands for **I**nter**P**lanetary **F**ile **S**ystem.  
+ **IPFS** stands for **I**nter**P**lanetary **F**ile **S**ystem. <!-- In this section, you will: -->
+
+<!-- **Understand**
+* Thing1
+* Thing2
+* Thing3 -->
+
+<!--** Be Able To**
+* Thing1
+* Thing2
+* Thing3 -->
 
 
 ## Why IPFS?
