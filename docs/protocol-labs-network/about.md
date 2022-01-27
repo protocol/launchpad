@@ -10,6 +10,18 @@ This section introduces Protocol Labs Network. Here you will find resources to l
 
 ![Protocol Labs Logo](../.gitbook/assets/ARCHIV-protocol-labs-logo-horizontal-alt-black.png)
 
+<!-- In this section, you will: -->
+
+<!-- **Understand**
+* Thing1
+* Thing2
+* Thing3 -->
+
+<!--** Be Able To**
+* Thing1
+* Thing2
+* Thing3 -->
+
 ## Vision & Mission
 
 Protocol Labs drives breakthroughs in computing to push humanity forward.
