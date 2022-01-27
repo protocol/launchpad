@@ -3,18 +3,31 @@ description: Add the subtitle here
 ---
 
 
-## First Heading
+## The Life of a Libp2p Connections
 
-**Bold text** is building the next generation of the internet.
+<!-- Paragraph about Libp2p Connections -->
 
-![A link](../../.gitbook/assets/twitter-banner-1500x500.png)
+#### The Life of a libp2p Connection | Jacob Heun
 
-### Sub-Heading
+<!-- Need summary of video -->
 
-## Second Heading
+{% embed url="https://www.youtube.com/watch?v=zcWHamr5m_k" %}
 
-text
+<!-- Main points of video -->
 
-### Sub-Heading
+## Libp2p Users
+The users of the Libp2p protocol suite.
+<!-- Need more here about these users -->
 
-text
+
+* [Prysmaticlabs.com](http://Prysmaticlabs.com)
+* [onflow.org](http://onflow.org)
+* [minaprotocol.com](http://minaprotocol.com)
+* [polygon.technology](http://polygon.technology)
+* [celestia.org](http://celestia.org)
+* [elrond.com](http://elrond.com)
+* [0x.org](http://0x.org)
+* [filecoin.io](http://filecoin.io)
+* [ipfs.io](http://ipfs.io)
+* [ethereum.org](https://ethereum.org/en/eth2/)
+* [polkadot.network](https://polkadot.network/)
