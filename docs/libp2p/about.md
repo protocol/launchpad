@@ -32,6 +32,8 @@ Building large scale peer-to-peer systems has been complex and difficult over th
 ### Why Libp2p?
 _This is an annotated version of the [blog by Pierre Kreiger on parity.io](https://www.parity.io/blog/why-libp2p)_
 
+<!-- What can we pare down from this? -->
+
 Libp2p is a network framework that allows you to write decentralized peer-to-peer applications. Originally the networking protocol of IPFS, it has since been extracted to become its own first-class project.
 
 As part of the development process of Polkadot, we created [our own implementation of libp2p](https://github.com/libp2p/rust-libp2p) written in Rust, with the intent of using it in Polkadot and Substrate. While not completely mature, it is already quite robust and successfully powering the current testnets.
