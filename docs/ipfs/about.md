@@ -15,7 +15,7 @@ description: The What and Why of IPFS
 <!--** Be Able To**
 * Thing1
 * Thing2
-* Thing3 --> 
+* Thing3 -->
 
 ## Why IPFS?
 The acceleration of innovation over the past few decades, in comparison with the past million years of human evolution, is moving at an incredible pace.
@@ -61,3 +61,5 @@ Dive into the technical details [with this article](https://mikeal.notion.site/w
   * [Important IPFS History](ipfs/ipfs-history.md)
   * [IPFS Public DHT](ipfs/ipfs-public-dht.md)
   * [IPFS Resources](ipfs/ipfs-resources.md)
+
+  **IPFS**  |  [Docs](https://docs.ipfs.io/)  |  [GitHub](https://github.com/ipfs)     **IPLD**  |  [Docs](https://ipld.io/docs/)  |  [GitHub](https://github.com/ipld)  **Libp2p**  |  [Docs](https://docs.libp2p.io/)  |  [GitHub](https://github.com/libp2p)     **Filcoin**  |  [Docs](https://docs.filecoin.io/)  |  [GitHub](https://github.com/filecoin-project) 
