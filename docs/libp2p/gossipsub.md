@@ -1,20 +1,25 @@
 ---
-description: Add the subtitle here
+description: A Publish / Subscribe Message Delivery Network
 ---
 
 
-## First Heading
+## What is Gossipsub?
 
-**Bold text** is building the next generation of the internet.
+#### Demystifying Libp2p Gossipsub | Ethereum Foundation - Raúl Kripalani
 
-![A link](../../.gitbook/assets/twitter-banner-1500x500.png)
+<!-- Need a summary -->
 
-### Sub-Heading
+{% embed url=https://www.youtube.com/watch?v=BUc4xta7Mfk" %}
 
-## Second Heading
+<!-- Add Main Points -->
 
-text
 
-### Sub-Heading
+## Gossipsub 1.1
 
-text
+####  A scalable, extensible & hardened P2P PubSub Router protocol | Ready Layer One - David Dias
+
+<!-- Need a summary -->
+
+{% embed url="https://www.youtube.com/watch?v=H9Eb4uftrSA" %}
+
+<!-- Add Main Points -->
