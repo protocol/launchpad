@@ -63,4 +63,4 @@ Dive into the technical details [with this article](https://mikeal.notion.site/w
   * [IPFS Resources](ipfs/ipfs-resources.md)
 
 #### Links
-  **IPFS**  |  [Docs](https://docs.ipfs.io/) <&nbsp> |  [GitHub](https://github.com/ipfs)     **IPLD**  |  [Docs](https://ipld.io/docs/)  |  [GitHub](https://github.com/ipld)  **Libp2p**  |  [Docs](https://docs.libp2p.io/)  |  [GitHub](https://github.com/libp2p)     **Filcoin**  |  [Docs](https://docs.filecoin.io/)  |  [GitHub](https://github.com/filecoin-project)
+  **IPFS**  |  [Docs](https://docs.ipfs.io/)  |  [GitHub](https://github.com/ipfs)     **IPLD**  |  [Docs](https://ipld.io/docs/)  |  [GitHub](https://github.com/ipld)  **Libp2p**  |  [Docs](https://docs.libp2p.io/)  |  [GitHub](https://github.com/libp2p)     **Filecoin**  |  [Docs](https://docs.filecoin.io/)  |  [GitHub](https://github.com/filecoin-project)
