@@ -1,20 +1,15 @@
 ---
-description: Add the subtitle here
+description: The Problems & Modular Solutions of Libp2p
 ---
 
 
-## First Heading
+## The Problems
+In the course of creating and researching distributed apps, there were a number of problems encoutered that the libp2p project addressed.
 
-**Bold text** is building the next generation of the internet.
+<!-- Add list of problems & summary here -->
 
-![A link](../../.gitbook/assets/twitter-banner-1500x500.png)
+#### Solving Distributed Networking Problems with Libp2p | IPFS Camp
 
-### Sub-Heading
+<!-- Summary? Who does it feature?  -->
 
-## Second Heading
-
-text
-
-### Sub-Heading
-
-text
+{% embed url="https://www.youtube.com/watch?v=oIMZP7sfFtM" %}
