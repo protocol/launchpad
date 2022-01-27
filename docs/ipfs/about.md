@@ -5,8 +5,17 @@ description: The What and Why of IPFS
 # About IPFS
 
 ## What is IPFS
-**IPFS** stands for **I**nter**P**lanetary **F**ile **S**ystem.  
+**IPFS** stands for **I**nter**P**lanetary **F**ile **S**ystem.<!-- In this section, you will: -->
 
+<!-- **Understand**
+* Thing1
+* Thing2
+* Thing3 -->
+
+<!--** Be Able To**
+* Thing1
+* Thing2
+* Thing3 -->
 
 ## Why IPFS?
 The acceleration of innovation over the past few decades, in comparison with the past million years of human evolution, is moving at an incredible pace.
@@ -15,7 +24,9 @@ IPFS as an organization is trying to look ahead to the next 10, 100, 1000 years 
 
 {% embed url="https://www.youtube.com/watch?v=zE_WSLbqqvo" %}
 
-Though it gets difficult to predict what is going to happen in the next, say, 100 years, we can ........
+Though it gets difficult to predict what is going to happen in the next, say, 100 years, we can
+start to invest in it now with web3.
+<!-- Add more here -->
 
 Computers have gone through so many phases from the first computers, to machines that can timeshare, to multiprocessing and sandboxed VMs, to user terminals, to networked computers with multiprocessing, now with personal computers networked across a worldwide internet that all came from a relatively simple set of functions and data transmission.
 
@@ -50,3 +61,6 @@ Dive into the technical details [with this article](https://mikeal.notion.site/w
   * [Important IPFS History](ipfs/ipfs-history.md)
   * [IPFS Public DHT](ipfs/ipfs-public-dht.md)
   * [IPFS Resources](ipfs/ipfs-resources.md)
+
+#### Links
+  **IPFS**  |  [Docs](https://docs.ipfs.io/) <br /> |  [GitHub](https://github.com/ipfs)     **IPLD**  |  [Docs](https://ipld.io/docs/)  |  [GitHub](https://github.com/ipld)  **Libp2p**  |  [Docs](https://docs.libp2p.io/)  |  [GitHub](https://github.com/libp2p)     **Filcoin**  |  [Docs](https://docs.filecoin.io/)  |  [GitHub](https://github.com/filecoin-project)
