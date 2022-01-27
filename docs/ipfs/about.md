@@ -5,7 +5,8 @@ description: The What and Why of IPFS
 # About IPFS
 
 ## What is IPFS
-**IPFS** stands for **I**nter**P**lanetary **F**ile **S**ystem.<!-- In this section, you will: -->
+#### Links
+  **IPFS** stands for **I**nter**P**lanetary **F**ile **S**ystem.<!-- In this section, you will: -->
 
 <!-- **Understand**
 * Thing1
@@ -62,5 +63,6 @@ Dive into the technical details [with this article](https://mikeal.notion.site/w
   * [IPFS Public DHT](ipfs/ipfs-public-dht.md)
   * [IPFS Resources](ipfs/ipfs-resources.md)
 
-#### Links
+###### Links
+  **IPFS**
   **IPFS**  |  [Docs](https://docs.ipfs.io/)  |  [GitHub](https://github.com/ipfs)     **IPLD**  |  [Docs](https://ipld.io/docs/)  |  [GitHub](https://github.com/ipld)  **Libp2p**  |  [Docs](https://docs.libp2p.io/)  |  [GitHub](https://github.com/libp2p)     **Filecoin**  |  [Docs](https://docs.filecoin.io/)  |  [GitHub](https://github.com/filecoin-project)

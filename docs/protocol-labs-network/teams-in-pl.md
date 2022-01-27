@@ -23,7 +23,8 @@ To explore the various projects and tools building in the IPFS & Filecoin ecosys
 The four main projects we will be focusing on are IPFS, IPLD, Libp2p, and Filecoin.
 Most of the information and interaction can be found on docs and GitHub organizations:
 
-**IPFS**  |  [Docs](https://docs.ipfs.io/)  |  [GitHub](https://github.com/ipfs)
+#### Links
+  **IPFS**  |  [Docs](https://docs.ipfs.io/)  |  [GitHub](https://github.com/ipfs)
 
 **IPLD**  |  [Docs](https://ipld.io/docs/)  |  [GitHub](https://github.com/ipld)
 
