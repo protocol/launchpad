@@ -62,23 +62,25 @@ The second main aspect of libp2p’s modularity is its protocol negotiation proc
 
 While nodes are encouraged to support a specific set of common protocols, none of them are technically mandatory. This makes it possible to easily experiment with new protocols or new ideas, and to deploy new versions of protocols while still supporting old versions without adding technical debt.
 
-The main libp2p protocols
+#### The Main Libp2p Protocols
 While there is no mandatory protocol, in practice nodes are encouraged to support the most commonly-supported protocols. This includes:
 
-secio, which is responsible for encrypting communications.
-mplex or yamux, which are protocols on top of secio that are responsible for multiplexing.
-Multiplexing is the process in which multiple individual streams of data are grouped together into a single connection. As in, you probably have one coax or fiber cable coming into your apartment, but you and your roommate both want to stream different movies on Netflix. The data must be multiplexed to travel to your home, and demultiplexed to arrive at the correct device.
+* _secio_, which is responsible for encrypting communications.
+* _mplex_ or _yamux_, which are protocols on top of secio that are responsible for multiplexing.
+
+[Multiplexing](https://en.wikipedia.org/wiki/Multiplexing) is the process in which multiple individual streams of data are grouped together into a single connection. As in, you probably have one coax or fiber cable coming into your apartment, but you and your roommate both want to stream different movies on Netflix. The data must be multiplexed to travel to your home, and demultiplexed to arrive at the correct device.
 
 Once we have the ability to do this, we can, almost for free, open as many substreams as we want using as many different protocols as we want. These protocols include:
 
-identify, which makes it possible to obtain information about a node, including the multiaddresses it’s listening on and the multiaddress it sees us as, similar to what the STUN protocol does.
-ping, which enables pinging the remote to determine whether it’s still alive.
-kademlia, for peer discovery and distributed records storage.
-floodsub and gossipsub, two pub-sub protocols.
-And several more, including, of course, any custom protocol one wishes to create.
+* _identify_, which makes it possible to obtain information about a node, including the multiaddresses it’s listening on and the multiaddress it sees us as, similar to what [the STUN protocol](https://en.wikipedia.org/wiki/STUN) does.
+* _ping_, which enables pinging the remote to determine whether it’s still alive.
+* _[kademlia](https://en.wikipedia.org/wiki/Kademlia)_, for peer discovery and distributed records storage.
+* _floodsub_ and _gossipsub_, two [pub-sub](https://en.wikipedia.org/wiki/
+
 In the context of Substrate, each project is able to define its own networking protocol. For example, the protocol used by the BBQ Birch testnet is named bbq while the protocol used by Polkadot is named dot.
 
-The global vision of libp2p
+#### The Global Vision of Libp2p
+
 Another reason to use libp2p is its involvement in decentralized projects. It has been powering IPFS from the very beginning, and is going to be powering several emerging projects such as Filecoin, probably Ethereum 2.0, Agoric, and of course Substrate and Polkadot.
 
 Having multiple projects share the same network protocol has a big advantage: it makes it possible for nodes to share their capability across multiple networks. To give you an example, let’s take the relay protocol.
@@ -91,9 +93,9 @@ By having multiple projects use libp2p as their networking stack, they will all 
 
 Libp2p has been designed to be the network protocol powering the future of decentralization. When companies launch traditional applications, they only focus on the application experience and logic—they don’t need to reinvent TCP/IP. That is the ultimate goal of libp2p: allow application developers to develop applications knowing that their service will be reachable and available. With implementations in Rust, JavaScript, and Go and development in Java, Haskell, and Python, libp2p is growing fast.
 
-You can find the Rust code here: libp2p/rust-libp2p
+You can find the Rust code here: [libp2p/rust-libp2p](https://github.com/libp2p/rust-libp2p)
 
-If you want to contribute, start by checking out the contribution guidelines.
+If you want to contribute, start by checking out the [contribution guidelines](https://github.com/ipfs/community/blob/master/CONTRIBUTING.md).
 
 
 ## Second Heading
