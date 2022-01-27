@@ -2,16 +2,24 @@
 description: Websites, Repos, Community & More
 ---
 
-
 ## Main Resources
 
 * Lipbp2p [Website](https://libp2p.io/)
 * Libp2p [Github Repos](https://github.com/libp2p)
 * Libp2p [Documentation](https://docs.libp2p.io/i)
 
+### Github Discussions
+
+* Libp2p [spec issues](https://github.com/libp2p/specs/issues)
+* Libp2p [notes issues](https://github.com/libp2p/notes/issues)
+* Libp2p [discussion forum](https://discuss.libp2p.io/ )
 
 ### Tutorials
 If you want to dive in, check out our [collection of tutorials](https://docs.libp2p.io/tutorials/), which will help guide you through your explorations of libp2p.
+
+You can also follow this [Getting Started with Rust and Libp2p tutorial](https://docs.rs/libp2p/latest/libp2p/tutorial/index.html) to build a small ping clone, sending a ping to a peer, expecting a pong as a response.
+
+
 
 ### Examples
 

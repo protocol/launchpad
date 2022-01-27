@@ -1,5 +1,5 @@
 ---
-description: The Problems & Modular Solutions of Libp2p
+description: The Problems & Modular Solution of Libp2p
 ---
 
 
