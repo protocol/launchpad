@@ -29,4 +29,4 @@ Most of the information and interaction can be found on docs and GitHub organiza
 
 **Libp2p**  |  [Docs](https://docs.libp2p.io/)  |  [GitHub](https://github.com/libp2p)
 
-**Filcoin**  |  [Docs](https://docs.filecoin.io/)  |  [GitHub](https://github.com/filecoin-project) 
+**Filecoin**  |  [Docs](https://docs.filecoin.io/)  |  [GitHub](https://github.com/filecoin-project)
