@@ -8,7 +8,7 @@
 * Video titles and other embedded content will be created with four `####`, e.g. `#### Video Title | Presenter`. Try and include the video title with a pipe `|` and the people in the video/ creator
 _Example_
 ```
-#### Open Source Culture | Steven Allen & Dietrich Ayala
+#### Open Source Culture | Organization Name - Steven Allen & Dietrich Ayala
 
 In this talk by Steven & Dietrich, they review some of the customs and best practices involved when becoming a part of an open source community.
 

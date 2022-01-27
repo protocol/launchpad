@@ -98,7 +98,13 @@ You can find the Rust code here: [libp2p/rust-libp2p](https://github.com/libp2p/
 If you want to contribute, start by checking out the [contribution guidelines](https://github.com/ipfs/community/blob/master/CONTRIBUTING.md).
 
 
-## Second Heading
+### More on Libp2p Basics (Optional)
+
+#### Intro to Libp2p | Encode Filecoin Club - Max Inden <!-- Is this the right Max? -->
+
+In this talk by Steven & Dietrich, they review some of the customs and best practices involved when becoming a part of an open source community.
+
+{% embed url="https://www.youtube.com/watch?v=7OZLImVRvro" %}
 
 
 #### Links
