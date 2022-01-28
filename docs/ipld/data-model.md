@@ -12,6 +12,18 @@ The Data Model is how we reason about data moving through the various states—i
 
 The data model defines a common representation of basic types that **are easily representable by common programming languages** and **found in the most common and successful serialization formats**. 
 
+```js
+const data = {
+ string: "☺️  we can do strings!",
+ ints: 1337,
+ floats: 13.37,
+ booleans: true,
+ lists: [1, 2, 3],
+ bytes: new Uint8Array([0x01, 0x03, 0x03, 0x07]),
+ links: CID(bafyreidykglsfhoixmivffc5uwhcgshx4j465xwqntbmu43nb2dzqwfvae)
+}
+```
+
 Read more about the Data Model at https://ipld.io/docs/data-model/
 
 ### Blocks and Nodes

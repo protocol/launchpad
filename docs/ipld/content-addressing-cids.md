@@ -21,6 +21,8 @@ Content addressing can ask any how for content by the fingerprint (hash) of that
 
 ***GRAPHIC FROM https://docs.google.com/presentation/d/1OnqLcAsY8j_ysSzMKDtXeEkcJV2NKNoEecgHTDXjPqQ/edit#slide=id.g100b1e739cd_0_22 slide 22?***
 
+Further 
+
 ## Content Identifiers (CIDs)
 
 CIDs are:
@@ -119,5 +121,8 @@ Beyond CIDv0, there is only one currently valid CID version `1`, but a CIDv1 in 
 * Base8: `7002700221003354646620015366255572724534256627001166445373566362164244362403233057202006337540365`
 * Base2: `0000000010111000000010010001000000011011101100110100110110010000000001101011110110010101101101111...` (you get the idea...)
 
-**https://cid.ipfs.io/** is a useful tool for dissecting a CID string.
+### Further Reading
 
+* [**Content addressing and CIDs**](https://docs.ipfs.io/concepts/content-addressing/) in the IPFS documentation.
+* The [**CID Inspector**](https://cid.ipfs.io/) is a useful tool for dissecting a CID string.
+* [**Anatomy of a CID**](https://proto.school/anatomy-of-a-cid/) on Proto.school, a guided, interactive tutorial.
