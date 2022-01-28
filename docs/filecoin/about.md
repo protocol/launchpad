@@ -2,34 +2,18 @@
 description: Add the subtitle here
 ---
 
+# Filecoin
 
-## First Heading
+The mission of **Filecoin** is to create a decentralized, efficient, and robust foundation for humanity’s information**.**
 
-<!-- In this section, you will: -->
+![](https://lh4.googleusercontent.com/OX3\_r64M0C6jSJantF8W3Xovw8lywU6njHSygtJNxfIpCG1523NZQj2O9WSapLqhOLJIvOc\_V6yGPIL7qELLeCSGHFpwtjTVNFsDC9fx30vH7rMnRTiRhYbq8MrXQtEWBlm0Rj4724Js)
 
-<!-- **Understand**
-* Thing1
-* Thing2
-* Thing3 -->
+Filecoin is a data storage and retrieval marketplace that coordinates untrusted parties to buy and sell provable storage.
 
-<!--** Be Able To**
-* Thing1
-* Thing2
-* Thing3 -->
+![](<../.gitbook/assets/image (1).png>)
 
-**Bold text** is building the next generation of the internet.
+#### Important Pages
 
-![A link](../../.gitbook/assets/twitter-banner-1500x500.png)
-
-### Sub-Heading
-
-## Second Heading
-
-text
-
-### Sub-Heading
-
-text
-
-#### Links
-  **IPFS**  |  [Docs](https://docs.ipfs.io/)  |  [GitHub](https://github.com/ipfs)     - **IPLD**  |  [Docs](https://ipld.io/docs/)  |  [GitHub](https://github.com/ipld) -  **Libp2p**  |  [Docs](https://docs.libp2p.io/)  |  [GitHub](https://github.com/libp2p)  -   **Filecoin**  |  [Docs](https://docs.filecoin.io/)  |  [GitHub](https://github.com/filecoin-project) 
+* [https://stats.filecoin.io/](https://stats.filecoin.io)
+* [https://dashboard.starboard.ventures/deals](https://dashboard.starboard.ventures/deals)
+* [https://status.filecoin.io/](https://status.filecoin.io)

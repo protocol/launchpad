@@ -2,19 +2,28 @@
 description: Add the subtitle here
 ---
 
+# How Filecoin Works
 
-## First Heading
+### Filecoin basics <a href="#filecoin-basics" id="filecoin-basics"></a>
 
-**Bold text** is building the next generation of the internet.
+* **A basic introduction to how the Filecoin network operates:** [**https://docs.filecoin.io/about-filecoin/how-filecoin-works/#the-network**](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#the-network)**​**
+  * Includes:
+    * The Network
+    * Filecoin Nodes
+    * Filecoin Storage Providers (miners)
+    * Deals
+    * Proofs
+    * Gas
+    * Actors
+    * Addresses
+    * Building Blocks
 
-![A link](../../.gitbook/assets/twitter-banner-1500x500.png)
+{% embed url="https://youtu.be/Sz2OQc2WOdA" %}
 
-### Sub-Heading
+Mining, sealing, sector types, Collateral, making deals, Filecoin+, offline deals
 
-## Second Heading
+### Filecoin for Developers & Builders <a href="#undefined" id="undefined"></a>
 
-text
+{% embed url="https://youtu.be/0EcBTPyfrt4" %}
 
-### Sub-Heading
-
-text
+Intro to Filecoin developer products

@@ -2,9 +2,11 @@
 description: The many projects and organizations that make up the PL Network
 ---
 
-## Teams in the PL Network
+# Teams in the PL Network
 
-![](../.gitbook/assets/image.png)
+### Teams in the PL Network
+
+![](<../.gitbook/assets/image (2).png>)
 
 The PL Network is made up of 300+ projects, companies, and organizations. You can explore a number of those organizations, and the people that work on them, in the WIP [PL Network Directory](https://airtable.com/appHT5ErKdHcsFznj/tblceMFkdHORmuzl4/viwRVjfIBeMdEb8jZ?blocks=hide).
 
@@ -18,16 +20,16 @@ The [PL Spaceport](https://protocol.almanac.io/docs/protocol-labs-spaceport-sFKN
 
 To explore the various projects and tools building in the IPFS & Filecoin ecosystems, use the explorable ecosystem directories at [https://ecosystem.ipfs.io/](https://ecosystem.ipfs.io) & [https://ecosystem.filecoin.io/](https://ecosystem.filecoin.io)
 
-## IPFS, IPLD, Libp2p, and Filecoin
+### IPFS, IPLD, Libp2p, and Filecoin
 
-The four main projects we will be focusing on are IPFS, IPLD, Libp2p, and Filecoin.
-Most of the information and interaction can be found on docs and GitHub organizations:
+The four main projects we will be focusing on are IPFS, IPLD, Libp2p, and Filecoin. Most of the information and interaction can be found on docs and GitHub organizations:
 
-#### Links
-  **IPFS**  |  [Docs](https://docs.ipfs.io/)  |  [GitHub](https://github.com/ipfs)
+**Links**
 
-**IPLD**  |  [Docs](https://ipld.io/docs/)  |  [GitHub](https://github.com/ipld)
+**IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs)
 
-**Libp2p**  |  [Docs](https://docs.libp2p.io/)  |  [GitHub](https://github.com/libp2p)
+**IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld)
 
-**Filecoin**  |  [Docs](https://docs.filecoin.io/)  |  [GitHub](https://github.com/filecoin-project)
+**Libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p)
+
+**Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)
