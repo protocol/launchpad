@@ -1,2 +1,0 @@
-# The IPLD Data Model
-
