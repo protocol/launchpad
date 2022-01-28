@@ -50,3 +50,89 @@ $ ipfs dag get /ipld/bafybeibxm2nsadl3fnxv2sxcxmxaco2jl53wpeorjdzidjwf5aqdg7wa6u
 Note in the output above, a Link (CID) is represented using the form `{"/":"<cid>"}`. Similarly, Bytes are represented as `{"/":{"bytes":"<base64 encoded bytes>"}}`.
 
 [**DAG-JOSE**](https://ipld.io/specs/codecs/dag-jose/) is the newest codec able to support the complete Data Model. It combines the [JOSE](https://jose.readthedocs.io/en/latest/) format with CBOR to provide a standards-based signing and encryption format for flexible IPLD data.
+
+#### Examples
+
+Given some data (represented here as JavaScript) in memory, compatible with the IPLD Data Model, what does it look like in encoded form?
+
+```js
+const data = {
+ string: "☺️  we can do strings!",
+ ints: 1337,
+ floats: 13.37,
+ booleans: true,
+ lists: [1, 2, 3],
+ bytes: new Uint8Array([0x01, 0x03, 0x03, 0x07]),
+ links: CID(bafyreidykglsfhoixmivffc5uwhcgshx4j465xwqntbmu43nb2dzqwfvae)
+}
+```
+
+**DAG-JSON**:
+
+```json
+{
+ "arrays": [1, 2, 3],
+ "booleans": true,
+ "bytes": { "/": { "bytes": "AQMDBw" } },
+ "floats": 13.37,
+ "ints": 1337,
+ "links": { "/": "bafyreidykglsfhoixmivffc5uwhcgshx4j465xwqntbmu43nb2dzqwfvae" },
+ "string": "☺️  we can do strings!"
+}
+```
+
+Note that DAG-JSON strips extraneous whitespace, the above example is present pretty-printed for ease of reading:
+
+```json
+{"arrays":[1,2,3],"booleans":true,"bytes":{"/":{"bytes":"AQMDBw"}},"floats":13.37,"ints":1337,"links":{"/":"bafyreidykglsfhoixmivffc5uwhcgshx4j465xwqntbmu43nb2dzqwfvae"},"string":"☺️  we can do strings!"}
+```
+
+**DAG-CBOR**:
+
+DAG-CBOR is difficult to illustrate as it's a purely binary format. Our example data encodes to the following binary data represented in hexadecimal:
+
+```
+a764696e74731905396562797465734401030307656c696e6b73d82a58250001711220785197229dc8bb115294
+5da58e2348f7e279eeded06cc2ca736d0e879858b501666172726179738301020366666c6f617473fb402abd70
+a3d70a3d66737472696e67781ae298baefb88f202077652063616e20646f20737472696e67732168626f6f6c65
+616e73f5
+```
+
+CBOR has a standard diagnostic output that is useful for visualizing this data, however:
+
+```
+a7                                                # map(7)
+  64                                              #   string(4)
+    696e7473                                      #     "ints"
+  19 0539                                         #   uint(1337)
+  65                                              #   string(5)
+    6279746573                                    #     "bytes"
+  44                                              #   bytes(4)
+    01030307                                      #     "\x01\x03\x03\x07"
+  65                                              #   string(5)
+    6c696e6b73                                    #     "links"
+  d8 2a                                           #   tag(42)
+    58 25                                         #     bytes(37)
+      0001711220785197229dc8bb1152945da58e2348f7  #       "\x00\x01q\x12 xQ"]¥#H÷"
+      e279eeded06cc2ca736d0e879858b501            #       "âyîÞÐl Êsm\x0e"
+  66                                              #   string(6)
+    617272617973                                  #     "arrays"
+  83                                              #   array(3)
+    01                                            #     uint(1)
+    02                                            #     uint(2)
+    03                                            #     uint(3)
+  66                                              #   string(6)
+    666c6f617473                                  #     "floats"
+  fb 402abd70a3d70a3d                             #   float(13.37)
+  66                                              #   string(6)
+    737472696e67                                  #     "string"
+  78 1ae298baef                                   #   string(22)
+    e298baefb88f202077652063616e20646f2073747269  #     "☺️  we can do stri"
+    6e677321                                      #     "ngs!"
+  68                                              #   string(8)
+    626f6f6c65616e73                              #     "booleans"
+  f5                                              #   true
+```
+
+*(You can use https://cbor.me via the web, or install https://github.com/rvagg/cborg on the commandline to replicate this output if you have raw CBOR to inspect).*
+

@@ -45,3 +45,6 @@ One of the ways that Git is efficient is that only the changes need to be stored
 
 IPFS benefits from these same properties. A copy of Wikipedia on IPFS may take up many GBs, but changing a single page only requires changes to that page and its parents (up to the new "root"!). Having a CID for the old and new lets us move back and forward in time through the snapshots, while not needing to download the whole thing from scratch.
 
+### Further Reading
+
+* [**Merkle DAGs: Structuring Data for the Distributed Web**](https://proto.school/merkle-dags) on Proto.school, a guided, interactive tutorial.
