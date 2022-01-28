@@ -43,7 +43,7 @@
 * [Filecoin](filecoin/about.md)
   * [How Filecoin Works](filecoin/how-filecoin-works.md)
   * [Filecoin Cryptoeconomics](filecoin/filecoin-cryptoeconomics.md)
-  * [Sealing & Proving](filecoin/sealing-proving.md)
+  * [The Filecoin Protocol](filecoin/sealing-proving.md)
   * [Where We Are Headed](filecoin/where-we-are-headed.md)
   * [How Filecoin Actors Work](filecoin/filecoin-actors.md)
   * [Filecoin Resources](filecoin/filecoin-resources.md)

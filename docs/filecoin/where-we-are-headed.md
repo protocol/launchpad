@@ -2,19 +2,22 @@
 description: Add the subtitle here
 ---
 
+# Where We Are Headed
 
-## First Heading
+### Filecoin Community Roadmap
 
-**Bold text** is building the next generation of the internet.
+* [https://github.com/filecoin-project/community/discussions/399](https://github.com/filecoin-project/community/discussions/399)
 
-![A link](../../.gitbook/assets/twitter-banner-1500x500.png)
+### Filecoin 2021 Milestones & Future Work
 
-### Sub-Heading
+{% embed url="https://youtu.be/Uya0C_lMSuY" %}
 
-## Second Heading
+### Filecoin Ecosystem & Opportunities (Optional)
 
-text
+{% embed url="https://www.youtube.com/watch?v=Z7rYxoGBVjg" %}
 
-### Sub-Heading
+{% embed url="https://www.youtube.com/watch?v=ApVVg78ZBog" %}
 
-text
+### Filecoin InterPlanetary Building Blocks (Optional)
+
+{% embed url="https://youtu.be/3BgHJbjqbNg" %}
