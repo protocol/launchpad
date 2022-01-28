@@ -45,21 +45,6 @@ Only the smallest files in IPFS are stored as a single blob ("block"): to keep b
 
 Directories are graphs of named links pointing to files, forming graphs that address other graphs
 
-## Recommended Introductiory Resources
-
-[**ResNetLab: Course Module - Content Addressing**](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-addressing/):
-
-{% embed url="https://www.youtube.com/watch?v=dN9EvujJ9cM" %}
-
-[**ResNetLab: Course Module - InterPlanetary Linked Data (IPLD)**](https://research.protocol.ai/tutorials/resnetlab-on-tour/ipld/)
-
-{% embed url="https://www.youtube.com/watch?v=Sgf6j_mCdjI" %}
-
-### Further Introductory Reading:
-
-* [**A Terse, Quick IPLD Primer for the Engineer**](https://ipld.io/docs/intro/primer/)
-* [**IPLD in the InterPlanetary Ecosystem**](https://ipld.io/docs/intro/ecosystem/)
-
 ## Sections | IPLD
 
 * [IPLD](about.md)

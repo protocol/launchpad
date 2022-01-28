@@ -6,7 +6,9 @@ description: Where are Are Headed with Web3
 
 ## The Future of Web3
 
-There are nearly 300 companies building in the Protocol Labs Network (PLN) as of Jan 2022, and over 50% joined in the last 6 months. As the web3 space accelerates, now is a great time for high-growth researchers & developers inside and outside web3 to ramp up their “InterPlanetary” knowledge and contribute to these cutting-edge technologies. From core distributed systems engineers, to network researchers, to community managers, to startup operators, there are a vast number of exciting roles and opportunities across PLN teams and companies.
+There are nearly 300 companies building in the Protocol Labs Network (PLN) as of Jan 2022, and over 50% joined in the last 6 months. As the web3 space accelerates, now is a great time for high-growth researchers & developers inside and outside web3 to ramp up their “InterPlanetary” knowledge and contribute to these cutting-edge technologies.&#x20;
+
+From core distributed systems engineers, to network researchers, to community managers, to startup operators, there are a vast number of exciting roles and opportunities across PLN teams and companies.
 
 #### The next Internet Revolution | Juan Benet | TEDxSanFrancisco
 
