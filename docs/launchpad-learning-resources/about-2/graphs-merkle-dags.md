@@ -1,2 +1,0 @@
-# Graphs: Merkle DAGs
-

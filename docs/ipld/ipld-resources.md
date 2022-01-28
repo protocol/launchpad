@@ -34,7 +34,7 @@ description: IPLD Resources
 * Matrix #ipld:ipfs.io (https://app.element.io/#/room/#ipld:ipfs.io) - active discussion with a large and broad community (also bridged to Filecoin Slack as #ipld)
 
 **Public meetings**:
-* Public meeting every two weeks - open Zoom for anyone to join w/ broadcast to IPFS channel on YouTube. Details @ https://github.com/ipld/team-mgmt. Casual sync and chat, everyone welcome to join and discuss or lurk.
+* Public meetings every two weeks ([Calendar](https://calendar.google.com/calendar/u/0/embed?src=ipfs.io\_eal36ugu5e75s207gfjcu0ae84@group.calendar.google.com\&ctz=UTC)) - open Zoom for anyone to join w/ broadcast to IPFS channel on YouTube. See [here](https://github.com/ipld/team-mgmt) for more details. Casual sync and chat, everyone welcome to join and discuss or lurk.
 
 **People**:
 * Eric Myhre - primary IPLD steward (Go) - always keen for a chat about IPLD, highly recommended for engineers wanting to deepen their formal understanding of anything IPLD - book a 1:1 for a casual chat.

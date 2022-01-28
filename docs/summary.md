@@ -31,7 +31,7 @@
   * [Paths & Selectors](ipld/paths-selectors.md)
   * [Distributed Data Structures](ipld/data-structures.md)
   * [The CAR Format](ipld/car.md)
-  * [IPLD Resources](ipld/ipld-resources.m)
+  * [IPLD Resources](ipld/ipld-resources.md)
 * [Libp2p](libp2p/about.md)
   * [Core Concepts](libp2p/core-concepts.md)
   * [Gossipsub](libp2p/gossipsub.md)

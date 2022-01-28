@@ -6,6 +6,8 @@ description: The CAR Format
 
 **CAR**, or Content Addressable aRchives, is a format for bundling IPLD blocks into a large bundle. These bundles can be stored as files, typically with a `.car` extension, or transferred over the wire. We categorise CAR as a "transport" for IPLD.
 
+![](<../../.gitbook/assets/image (4).png>)
+
 ### CARv1
 
 The CARv1 format comprises a sequence of length-prefixed IPLD block data, where the first block in the CAR is the **Header** encoded as DAG-CBOR, and the remaining blocks form the **Data** component of the CAR and are each additionally prefixed with their CIDs. The length prefix of each block in a CAR is encoded as a "varint"—an unsigned LEB128 integer. This integer specifies the number of remaining bytes for that block entry—excluding the bytes used to encode the integer, but including the CID for non-header blocks.
