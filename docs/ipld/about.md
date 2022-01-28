@@ -6,7 +6,7 @@ description: The What and Why of IPLD
 
 IPLD (InterPlanetary Linked Data) is **The Data Layer for content-addressed systems**
 
-![](<../.gitbook/assets/image (15).png>)
+![](<../.gitbook/assets/image (15) (1).png>)
 
 ## Why IPLD?
 

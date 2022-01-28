@@ -6,7 +6,7 @@ description: Add the subtitle here
 
 Libp2p is a modularized and extensible network stack to overcome the networking challenges faced when doing peer-to-peer applications. libp2p is used by IPFS as its networking library.
 
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/image (7) (1).png>)
 
 Building large scale peer-to-peer systems has been complex and difficult over the last 15 years, and libp2p is a way to fix that. It is a “network stack,” a protocol suite that cleanly separates concerns, and enables sophisticated applications to only use the protocols they absolutely need, without giving up interoperability and upgradeability. libp2p grew out of IPFS, but it is built so that lots of people can use it for lots of different projects.
 

@@ -2,10 +2,6 @@
 description: The Basics of How IPFS Works
 ---
 
-# How IPFS Works
+# IPFS Public DHT
 
-## Content Addressing
-  **IPFS** stands for **I**nter **P**lanetary **F**ile **S**ystem.  
-
-
-## Why IPFS?
+![](<../.gitbook/assets/image (7).png>)
