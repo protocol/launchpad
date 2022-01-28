@@ -2,21 +2,11 @@
 description: The What and Why of IPLD
 ---
 
-# About IPLD
+# IPLD
 
 IPLD (InterPlanetary Linked Data) is **The Data Layer for content-addressed systems**
 
-<!-- In this section, you will: -->
-
-<!-- **Understand**
-* Thing1
-* Thing2
-* Thing3 -->
-
-<!--** Be Able To**
-* Thing1
-* Thing2
-* Thing3 -->
+![](<../.gitbook/assets/image (15).png>)
 
 ## Why IPLD?
 
@@ -34,7 +24,7 @@ Treating the data layer as a discrete system provides leverage to content addres
 
 ## How is IPLD related to IPFS?
 
-IPLD is the data layer of IPFS. But the reverse is also true because IPFS is *a* block store for IPLD.
+IPLD is the data layer of IPFS. But the reverse is also true because IPFS is _a_ block store for IPLD.
 
 IPLD deals with data consistency, data addressing, data relationships (graphs), content addressed data structures, data navigation and more.
 
@@ -69,4 +59,5 @@ Directories are graphs of named links pointing to files, forming graphs that add
   * [The CAR Format](car.md)
 
 #### Links
-  **IPFS**  |  [Docs](https://docs.ipfs.io/)  |  [GitHub](https://github.com/ipfs)     - **IPLD**  |  [Docs](https://ipld.io/docs/)  |  [GitHub](https://github.com/ipld) -  **Libp2p**  |  [Docs](https://docs.libp2p.io/)  |  [GitHub](https://github.com/libp2p)  -   **Filecoin**  |  [Docs](https://docs.filecoin.io/)  |  [GitHub](https://github.com/filecoin-project) 
+
+**IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs) - **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld) - **Libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p) - **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)

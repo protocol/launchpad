@@ -2,32 +2,25 @@
 description: The What and Why of IPFS
 ---
 
-# About IPFS
+# IPFS
 
 ## What is IPFS
-#### Links
-  **IPFS** stands for **I**nter**P**lanetary **F**ile **S**ystem.<!-- In this section, you will: -->
 
-<!-- **Understand**
-* Thing1
-* Thing2
-* Thing3 -->
+**IPFS** stands for **I**nter**P**lanetary **F**ile **S**ystem.
 
-<!--** Be Able To**
-* Thing1
-* Thing2
-* Thing3 -->
+The mission of **IPFS** is to create a resilient, upgradable, open network to preserve and grow humanity's knowledge.
+
+![](<../.gitbook/assets/image (20).png>)
 
 ## Why IPFS?
+
 The acceleration of innovation over the past few decades, in comparison with the past million years of human evolution, is moving at an incredible pace.
 
 IPFS as an organization is trying to look ahead to the next 10, 100, 1000 years and beyond and think about how computing will shape and impact a future we can't even being to imagine.
 
 {% embed url="https://www.youtube.com/watch?v=zE_WSLbqqvo" %}
 
-Though it gets difficult to predict what is going to happen in the next, say, 100 years, we can
-start to invest in it now with web3.
-<!-- Add more here -->
+Though it gets difficult to predict what is going to happen in the next, say, 100 years, we can start to invest in it now with web3.
 
 Computers have gone through so many phases from the first computers, to machines that can timeshare, to multiprocessing and sandboxed VMs, to user terminals, to networked computers with multiprocessing, now with personal computers networked across a worldwide internet that all came from a relatively simple set of functions and data transmission.
 
@@ -47,8 +40,9 @@ Web2 is a version of the internet where users are able to easily create and post
 
 Web3 is an internet that shares and distributes the processesing and decision making necessary for the internet, where the users have soverign control over their data.
 
-
 Dive into the technical details [with this article](https://mikeal.notion.site/web3-data-permanence-0230072b594748ed9aa0c71ad331f289).
+
+![](<../.gitbook/assets/image (8).png>)
 
 ## Sections | IPFS
 
@@ -63,5 +57,6 @@ Dive into the technical details [with this article](https://mikeal.notion.site/w
   * [IPFS Public DHT](ipfs/ipfs-public-dht.md)
   * [IPFS Resources](ipfs/ipfs-resources.md)
 
-##### Links
-  **IPFS**  |  [Docs](https://docs.ipfs.io/)  |  [GitHub](https://github.com/ipfs)     - **IPLD**  |  [Docs](https://ipld.io/docs/)  |  [GitHub](https://github.com/ipld) -  **Libp2p**  |  [Docs](https://docs.libp2p.io/)  |  [GitHub](https://github.com/libp2p)  -   **Filecoin**  |  [Docs](https://docs.filecoin.io/)  |  [GitHub](https://github.com/filecoin-project)
+**Links**
+
+**IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs) - **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld) - **Libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p) - **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)
