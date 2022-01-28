@@ -2,19 +2,18 @@
 description: Add the subtitle here
 ---
 
+# Filecoin Cryptoeconomics
 
-## First Heading
+### The Filecoin Economy
 
-**Bold text** is building the next generation of the internet.
+* ****[**https://filecoin.io/blog/posts/filecoin-network-economics/**](https://filecoin.io/blog/posts/filecoin-network-economics/)****
+* ****[**https://filecoin.io/blog/posts/introducing-the-filecoin-economy/** ](https://filecoin.io/blog/posts/introducing-the-filecoin-economy/)****
+  * ****[**https://filecoin.io/2020-engineering-filecoins-economy-en.pdf**](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)****
 
-![A link](../../.gitbook/assets/twitter-banner-1500x500.png)
+{% embed url="https://www.youtube.com/watch?v=MbLyVt2rISQ" %}
 
-### Sub-Heading
+### Other Cryptoeconomics Deep Dives (Optional)
 
-## Second Heading
+{% embed url="https://youtu.be/VvUhitKaYWY" %}
 
-text
-
-### Sub-Heading
-
-text
+{% embed url="https://youtu.be/O0SHgksn1AI" %}

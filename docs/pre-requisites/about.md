@@ -49,3 +49,6 @@ description: Pre-Requisites to prepare for Launchpad
   Why the Internet was designed to be the way it is, and how it could be different, now and in the future.
 
     _How do you design an internet? The architecture of the current Internet is the product of basic design decisions made early in its history. What would an internet look like if it were designed, today, from the ground up? In this book, MIT computer scientist David Clark explains how the Internet is actually put together, what requirements it was designed to meet, and why different design decisions would create different internets. He does not take today's Internet as a given but tries to learn from it, and from alternative proposals for what an internet might be, in order to draw some general conclusions about network architecture._
+
+#### Links
+  **IPFS**  |  [Docs](https://docs.ipfs.io/)  |  [GitHub](https://github.com/ipfs)     - **IPLD**  |  [Docs](https://ipld.io/docs/)  |  [GitHub](https://github.com/ipld) -  **Libp2p**  |  [Docs](https://docs.libp2p.io/)  |  [GitHub](https://github.com/libp2p)  -   **Filecoin**  |  [Docs](https://docs.filecoin.io/)  |  [GitHub](https://github.com/filecoin-project) 

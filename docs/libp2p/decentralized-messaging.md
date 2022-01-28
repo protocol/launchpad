@@ -1,20 +1,16 @@
 ---
-description: Add the subtitle here
+description: An Open & Private Messaging Solution
 ---
 
 
-## First Heading
+## Why Decentralized Messaging?
 
-**Bold text** is building the next generation of the internet.
-
-![A link](../../.gitbook/assets/twitter-banner-1500x500.png)
-
-#### Sub-Heading
+<!-- Add some here -->
 
 ## Second Heading
 
-text
+#### Intro to Decentralized Messaging | ETHGlobal – Jacob Heun
 
-#### Sub-Heading
+<!-- Need a summary -->
 
-text
+{% embed url="https://www.youtube.com/watch?v=69h1zhIdCN0" %}
