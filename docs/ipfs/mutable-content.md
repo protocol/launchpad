@@ -2,10 +2,11 @@
 description: The Basics of How IPFS Works
 ---
 
-# How IPFS Works
+# Mutable Content
 
-## Content Addressing
-  **IPFS** stands for **I**nter **P**lanetary **F**ile **S**ystem.  
+##
 
+## IPNS (The InterPlanetary Name System)
 
-## Why IPFS?
+![](<../.gitbook/assets/image (6).png>)
+

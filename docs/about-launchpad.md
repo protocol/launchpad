@@ -1,10 +1,14 @@
 # About Launchpad
 
-This Gitbook Collection is published from a repository which contains intentionally organized and curated content for Protocol Labs' Launchpad program. We welcome contributions, but please read and follow the steps below in the **Contributing to Launchpad Curriculum** section.
+PLN Launchpad is a six-week onboarding program to train, onboard, and match engineers at scale with opportunities across the PL Network. Launchpad cohorts will onboard a wide funnel of primed talent into PL Network teams - and also grow network engineering culture, strong community bonds, and solid cross-functional knowledge of various parts of the PL Network tools and protocols. You can read more about Launchpad [here](https://protocol.almanac.io/docs/launchpad-bo0e0qpGcnxNq85SIjUQNlQzn0AiEmCD).
+
+## About the Launchpad Curriculum
+
+This Gitbook Collection contains the Launchpad curriculum of learning materials. It is published from a repository which contains intentionally organized and curated content about the PL Network, IPFS, libp2p, IPLD, Filecoin, and the variety of tools & SDKs that are used across the network. We welcome contributions, but please read and follow the steps below in the **Contributing to Launchpad Curriculum** section.
 
 This site is published on GitHub pages [On Gitbook](https://app.gitbook.com/o/-L\_E2woSLfhpBp2IPz9k/s/dJC0yfHL6n4VMktmNXWq/), and the repo is located at [https://github.com/protocol/launchpad](https://github.com/protocol/launchpad)
 
-## Contributing to Launchpad Curriculum
+## Contributing to the Launchpad Curriculum
 
 Please work with the team to review and organize Launchpad Curriculum. In order to contribute, visit the public Launchpad repository: [https://github.com/protocol/launchpad](https://github.com/protocol/launchpad)
 

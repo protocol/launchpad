@@ -1,2 +1,5 @@
 Gemfile.lock
 **/gemfile.lock
+*.DS_Store
+ **/.DS_Store
+**/.gitbook/.DS_Store
