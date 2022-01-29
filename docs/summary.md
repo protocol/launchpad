@@ -22,7 +22,7 @@
   * [IPFS Public DHT](ipfs/ipfs-public-dht.md)
   * [IPFS Resources](ipfs/ipfs-resources.md)
 * [IPLD](ipld/about.md)
-  * [Content Addressing & CIDs](content-addressing-cids.md)
+  <!-- * [Content Addressing & CIDs](content-addressing-cids.md)
   * [Graphs: Merkle DAGs](merkle-dags.md)
   * [The IPLD Data Model](data-model.md)
   * [Codecs](codecs.md)
@@ -31,7 +31,7 @@
   * [Paths & Selectors](paths-selectors.md)
   * [Distributed Data Structures](data-structures.md)
   * [The CAR Format](car.md)
-  * [IPLD Resources](ipld/ipld-resources.m)
+  * [IPLD Resources](ipld/ipld-resources.m) -->
 * [Libp2p](libp2p/about.md)
   * [Core Concepts](libp2p/core-concepts.md)
   * [Gossipsub](libp2p/gossipsub.md)
