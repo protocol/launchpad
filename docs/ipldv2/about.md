@@ -8,7 +8,6 @@ IPLD (InterPlanetary Linked Data) is **The Data Layer for content-addressed syst
 
 ![](<../.gitbook/assets/image (15) (1).png>)
 
-
 ## Why IPLD?
 
 IPLD answers the qeustion: Can we extract a re-usable data layer from IPFS that can be used to build other types of content-addressed data systems?
