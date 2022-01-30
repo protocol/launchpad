@@ -6,7 +6,7 @@ description: Paths & Selectors
 
 ### Pathing in IPLD
 
-"Pathing" refers to the use of simple strings called "paths" to describe navigation between nodes in an IPLD data graph.
+'Pathing' refers to the use of simple strings called "paths" to describe navigation between nodes in an IPLD data graph.
 
 You can think of "pathing" in IPLD as being comparable to how you use "paths" in a filesystem: paths are composed of a series of segments, and each segment is an instruction on how to navigate deeper into the filesystem. With filesystems, each step is over a "directory" and leads you to either a "file" or another "directory"; for IPLD, each step is over a "node" and leads you to another "node"!
 
