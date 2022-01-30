@@ -52,6 +52,6 @@ We refer to the different kinds of representable data in the Data Model as "kind
 
 We use the term "kinds" here to disambiguate this from "types", which is a term we use at the [Schemas](schemas.md) level.
 
-The "recursive kinds" are **Maps** and **Lists** (since they can contain other kinds).
+The 'recursive kinds' are **Maps** and **Lists** (since they can contain other kinds).
 
 Read more about IPLD Kinds and specifics of what we expect regarding their bounds and representation at https://ipld.io/docs/data-model/kinds/
