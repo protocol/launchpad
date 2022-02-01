@@ -10,7 +10,7 @@ description: The What and Why of IPFS
 
 The mission of **IPFS** is to create a resilient, upgradable, open network to preserve and grow humanity's knowledge.
 
-![](<../../.gitbook/assets/image (37).png>)
+![](<../../.gitbook/assets/ipfs.png>)
 
 ## Why IPFS?
 
@@ -42,7 +42,7 @@ Web3 is an internet that shares and distributes the processesing and decision ma
 
 Dive into the technical details [with this article](https://mikeal.notion.site/web3-data-permanence-0230072b594748ed9aa0c71ad331f289).
 
-![](<../../.gitbook/assets/image (11).png>)
+![](<../../.gitbook/assets/ipfs_web3_stack.png>)
 
 ## Sections | IPFS
 

@@ -1,41 +1,21 @@
 ---
-description: The What and Why of IPFS
+description: Other Organizations and our Ecosystem
 ---
 
 # Who Uses IPFS
 
-## What is IPFS
+## The Ecosystem
 
-**IPFS** stands for **I**nter **P**lanetary **F**ile **S**ystem.
+<!-- Need a summary paragraph -->
 
-## Why IPFS?
+**[The Ecosystem Directory](https://ecosystem.ipfs.io/)**
 
-The acceleration of innovation over the past few decades, in comparison with the past million years of human evolution, is moving at an incredible pace.
+<!-- more info about the biggest ones? -->
 
-IPFS as an organization is trying to look ahead to the next 10, 100, 1000 years and beyond and think about how computing will shape and impact a future we can't even being to imagine.
+## Brave
 
-{% embed url="https://www.youtube.com/watch?v=zE_WSLbqqvo" %}
+IPFS has been integrated into Brave, the fast, privacy-oriented browser, reinventing the Web for users, publishers and advertisers. 
+- [January 19, 2021: Brave Integrates IPFS](https://brave.com/brave-integrates-ipfs/)
 
-Though it gets difficult to predict what is going to happen in the next, say, 100 years, we can ........
-
-Computers have gone through so many phases from the first computers, to machines that can timeshare, to multiprocessing and sandboxed VMs, to user terminals, to networked computers with multiprocessing, now with personal computers networked across a worldwide internet that all came from a relatively simple set of functions and data transmission.
-
-### What is Web 3?
-
-[This article gives a great summary](https://medium.com/@vegxcodes/what-you-should-know-about-web3-part-1-15a2ddcfbc41) of the first three stages of Web evolution.
-
-**Web 1 - Shared Information**
-
-Web1 was a worldwide network of static website, on which any users could basically view and share pages of information, with little interaction.
-
-**Web 2 - Shared Creation**
-
-Web2 is a version of the internet where users are able to easily create and post their own content, though how decisions are made, who owns the data, and the ways (and to whom) content is shared is ruled by a few, large, technological gateholders.
-
-**Web 3 - Shared Hosting**
-
-Web3 is an internet that shares and distributes the processesing and decision making necessary for the internet, where the users have soverign control over their data.
-
-Dive into the technical details [with this article](https://mikeal.notion.site/web3-data-permanence-0230072b594748ed9aa0c71ad331f289).
-
-## Sections | IPFS
+**[IPFS Support in Brave](https://brave.com/ipfs-support/)**
+_Brian Bondy, CTO and co-founder of Brave, January 19, 2021_

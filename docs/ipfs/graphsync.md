@@ -1,11 +1,11 @@
 ---
-description: The Basics of How IPFS Works
+description: Graphsync, Bitswap, & Data Transfer
 ---
 
-# Graphsync
+# Expanding Upon Graphysync, Bitswap, and Data Transfer Algorithms
 
-## Content Addressing
+### The Future of Decentralized Data Transfer | Hannah Howard
 
-**IPFS** stands for **I**nter **P**lanetary **F**ile **S**ystem.
+{% embed url="https://www.youtube.com/watch?v=Qtt21TItPI4" %}
 
-## Why IPFS?
+<!-- Summarizing points -->
