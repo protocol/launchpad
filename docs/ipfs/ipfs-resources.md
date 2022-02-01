@@ -51,8 +51,6 @@ These tools can help you use and build on IPFS more quickly and efficiently — 
 
 Protect yourself from single-point-of-failure risks and benefit from decentralized infrastructure by hosting your static website using IPFS. If you're new to IPFS, this is an excellent place to start learning how to build on the decentralized web.
 
-[Start the tutorial →](https://docs.ipfs.io/how-to/websites-on-ipfs/single-page-website.md)
-
 ### Learn About the Decentralized Web
 
 Want to know more about the decentralized web (DWeb) and how it's changing the internet? These resources will give you a clearer understanding of the DWeb movement, and how it's improving the world:
