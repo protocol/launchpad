@@ -1,7 +1,7 @@
 # Style Guide
 
 ## Titles
-* The name of a page is set in the `SUMMARY.md` page. Whatever you put on the list is what the page will be
+* The name of a page is set in the `/docs/summary.md` page. Whatever you put on the list is what the page will be
 * A single `#` will not show up on a page
 * Main section titles will be created with two `##`, e.g.`## Main Title`
 * Sub titles are created with three `###` e.g. `### Sub Title`
@@ -27,12 +27,12 @@ _Example_
 ```
 
 ### Add Images directly
-To add your own images, add the image into the `.gitbook/assets` directory, then embed it as so:
+To add your own images, add the image into the `/docs/.gitbook/assets` directory, then embed it as so:
 ```
-![Protocol Labs Logo](../../.gitbook/assets/<name-of-image.png>)
+![Protocol Labs Logo](../.gitbook/assets/<name-of-image.png>)
 ```
 
-You can also add images in the ui by clicking and dragging, and the images will automatically be put into the `.gitbook/assets` directory
+You can also add images in the ui by clicking and dragging, and the images will automatically be put into the `/docs/.gitbook/assets` directory
 
 
 ### Video Embeds - YouTube

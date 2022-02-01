@@ -8,4 +8,5 @@ description: The Basics of How IPFS Works
 
 ## IPNS (The InterPlanetary Name System)
 
-![](<../../.gitbook/assets/image (8).png>)
+![](<../.gitbook/assets/image (6).png>)
+

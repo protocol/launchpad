@@ -2,14 +2,13 @@
 description: The What and Why of IPFS
 ---
 
-# Who Uses IPFS
+# About IPFS
 
 ## What is IPFS
+  **IPFS** stands for **I**nter **P**lanetary **F**ile **S**ystem.  
 
-**IPFS** stands for **I**nter **P**lanetary **F**ile **S**ystem.
 
 ## Why IPFS?
-
 The acceleration of innovation over the past few decades, in comparison with the past million years of human evolution, is moving at an incredible pace.
 
 IPFS as an organization is trying to look ahead to the next 10, 100, 1000 years and beyond and think about how computing will shape and impact a future we can't even being to imagine.
@@ -35,6 +34,7 @@ Web2 is a version of the internet where users are able to easily create and post
 **Web 3 - Shared Hosting**
 
 Web3 is an internet that shares and distributes the processesing and decision making necessary for the internet, where the users have soverign control over their data.
+
 
 Dive into the technical details [with this article](https://mikeal.notion.site/web3-data-permanence-0230072b594748ed9aa0c71ad331f289).
 
