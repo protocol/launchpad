@@ -42,12 +42,12 @@ Protocol Labs drives breakthroughs in computing to push humanity forward.
 
 ## Sections | The Protocol Labs Network
 
-1. [What is the PL Network?](https://github.com/protocol/launchpad/blob/main/docs/protocol-labs-network/protocol-labs-network/what-is-pl.md)
-2. [Teams in the PL Network](https://github.com/protocol/launchpad/blob/main/docs/protocol-labs-network/protocol-labs-network/teams-in-pl.md)
-3. [Where we are Headed](https://github.com/protocol/launchpad/blob/main/docs/protocol-labs-network/protocol-labs-network/where-we-headed.md)
-4. [Protocol Labs Culture](https://github.com/protocol/launchpad/blob/main/docs/protocol-labs-network/protocol-labs-network/pl-culture.md)
-5. [Open Source Stewardship](https://github.com/protocol/launchpad/blob/main/docs/protocol-labs-network/protocol-labs-network/os-stewardship.md)
-6. [Open Source Contributions](https://github.com/protocol/launchpad/blob/main/docs/protocol-labs-network/protocol-labs-network/os-contributing.md)
+1. [What is the PL Network?](what-is-pl.md)
+2. [Teams in the PL Network](teams-in-pl.md)
+3. [Where we are Headed](where-we-headed.md)
+4. [Protocol Labs Culture](pl-culture.md)
+5. [Open Source Stewardship](os-stewardship.md)
+6. [Open Source Contributions](os-contributing.md)
 
 #### Links
 
