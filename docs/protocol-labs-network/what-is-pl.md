@@ -46,7 +46,7 @@ Even though we are young, we have already created a large ecosystem of interrela
 
 * [The InterPlanetary File System](https://ipfs.io) (IPFS) is a new protocol to decentralize the web. IPFS enables the creation of completely decentralized and distributed applications, using content addressing and digital signatures. IPFS makes the web faster, safer, and more open.
 * [Filecoin](https://filecoin.io) is a cryptocurrency powered storage network. Miners earn Filecoin by providing open hard-drive space to the network, while users spend Filecoin to store their files encrypted in the decentralized network.
-* [Libp2p](https://libp2p.io) is a modular networking stack. libp2p brings together a variety of transports and peer-to-peer protocols, making it easy for developers to build large, robust p2p networks.
+* [Libp2p](https://libp2p.io) is a modular networking stack. Libp2p brings together a variety of transports and peer-to-peer protocols, making it easy for developers to build large, robust p2p networks.
 * [IPLD](https://ipld.io) is the data model for the Decentralized Web. It connects all data through cryptographic hashes, and makes it easy to traverse and link to.
 * The [Multiformats Project](https://multiformats.io) is a collection of protocols to future-proof systems, today. Self-describing formats make your systems interoperable and upgradable.
 * [CoinList](https://coinlist.co) is a protocol token fundraising platform. AngelList meets Kickstarter meets Protocol Tokens.
