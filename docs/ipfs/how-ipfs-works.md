@@ -2,8 +2,6 @@
 description: The Basics of How IPFS Works
 ---
 
-
-
 ## How IPFS Works
 
 #### How IPFS Works | Steve Allen
@@ -14,10 +12,13 @@ _This is an [annotated version of this doc](https://www.youtube.com/watch?v=0IGz
 
 New to IPFS or the distributed web? Here's where to get started on understanding the key ingredients in what makes IPFS work. Because IPFS is a system that hopes to change how we use the Internet, it comes with many new concepts.
 
+#### The IPFS Naming System
+![](<../../.gitbook/assets/image (8).png>)
+
 <!-- Which should we mark as optional? -->
 
 #### How IPFS Deals with Files | IPFS Camp 2019
-{% embed url="https://www.youtube.com/watch?v=Z5zNPwMDYGgk" %}
+{% embed url="https://www.youtube.com/watch?v=Z5zNPwMDYGg" %}
 
 #### The Lifecycle of Data in DWeb | IPFS Camp 2019
 {% embed url="https://www.youtube.com/watch?v=fLUq0RkiTBA" %}

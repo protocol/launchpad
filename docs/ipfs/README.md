@@ -52,10 +52,8 @@ Web3 is an internet that shares and distributes the processesing and decision ma
 
 Dive into the technical details [with this article](https://mikeal.notion.site/web3-data-permanence-0230072b594748ed9aa0c71ad331f289).
 
-![](<../../.gitbook/assets/image (8).png>)
-
 ## Try IPFS
-The docs has [an ipfs how-to](https://docs.ipfs.io/how-to/command-line-quick-start/#prerequisites) with the command line. 
+The docs has [an ipfs how-to](https://docs.ipfs.io/how-to/command-line-quick-start/#prerequisites) with the command line.
 
 
 ## Sections | IPFS

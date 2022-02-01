@@ -8,12 +8,14 @@ description: Other Organizations and our Ecosystem
 
 **[The Ecosystem Directory](https://ecosystem.ipfs.io/)**
 
-<!-- more info about the biggest ones? -->
+Use the filters on the ecosystem directory page to explore projects by what they do, the industry, and which tooling (such as IPFS, FIlecoin, go-ipfs) to better understand what makes up the ecosystem.
+
+![Ecosystem Filter](../../.gitbook/assets/ecosystem-filters.png)
 
 
 ## Brave
 
-IPFS has been integrated into Brave, the fast, privacy-oriented browser, reinventing the Web for users, publishers and advertisers. 
+IPFS has been integrated into Brave, the fast, privacy-oriented browser, reinventing the Web for users, publishers and advertisers.
 
 - [January 19, 2021: Brave Integrates IPFS](https://brave.com/brave-integrates-ipfs/)
 
