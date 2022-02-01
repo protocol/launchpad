@@ -25,17 +25,17 @@
 
 **GitHub**:
 
-* Primary venue for discussion, specs and docs: https://github.com/ipld/ipld
-* Go-focused discussion and development: https://github.com/ipld/go-ipld-prime
-* JS-focused discussion and development: https://github.com/multiformats/js-multiformats
+* Primary venue for discussion, specs and docs: [github.com/ipld/ipld](https://github.com/ipld/ipld)
+* Go-focused discussion and development: [github.com/ipld/go-ipld-prime](https://github.com/ipld/go-ipld-prime)
+* JS-focused discussion and development: [github.com/multiformats/js-multiformats](https://github.com/multiformats/js-multiformats)
 
 **Discussion**:
 
-* Matrix #ipld:ipfs.io (https://app.element.io/#/room/#ipld:ipfs.io) - active discussion with a large and broad community (also bridged to Filecoin Slack as #ipld)
+* Matrix #ipld:ipfs.io ([app.element.io/#/room/#ipld:ipfs.io](https://app.element.io/#/room/#ipld:ipfs.io)) - active discussion with a large and broad community (also bridged to Filecoin Slack as #ipld)
 
 **Public meetings**:
 
-* Public meeting every two weeks - open Zoom for anyone to join w/ broadcast to IPFS channel on YouTube. Details @ https://github.com/ipld/team-mgmt. Casual sync and chat, everyone welcome to join and discuss or lurk.
+* Public meeting every two weeks - open Zoom for anyone to join w/ broadcast to IPFS channel on YouTube. Details @ [github.com/ipld/team-mgmt](https://github.com/ipld/team-mgmt). Casual sync and chat, everyone welcome to join and discuss or lurk.
 
 **People**:
 
