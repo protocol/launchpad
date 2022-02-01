@@ -63,7 +63,7 @@
 
 ## Other Resources
 
-* [Pre-Requisites](docs/pre-requisites/about.md)
+* [Pre-Requisites](docs/pre-requisites/README.md)
 * [Additional Resources](docs/additional-learning-resources/README.md)
   * [Some child page](docs/additional-learning-resources/some-child-page.md)
   * [Some child page](docs/additional-learning-resources/some-child-page-1.md)
