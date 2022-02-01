@@ -46,7 +46,7 @@
   * [The Filecoin Protocol](docs/filecoin/sealing-proving.md)
   * [Progress & Future Work](docs/filecoin/where-we-are-headed.md)
   * [Filecoin Resources](docs/filecoin/filecoin-resources.md)
-* [Protocol Labs Toolkits & SDKs](docs/protocol-labs-toolkits-sdks/README.md)
+<!-- * [Protocol Labs Toolkits & SDKs](docs/protocol-labs-toolkits-sdks/README.md)
   * [Textile](docs/protocol-labs-toolkits-sdks/textile.md)
   * [Ceramic](docs/protocol-labs-toolkits-sdks/ceramic.md)
   * [Fission](docs/protocol-labs-toolkits-sdks/fission.md)
@@ -59,7 +59,7 @@
   * [Starling Case Study](docs/built-on-ipfs-filecoin/starling-case-study.md)
   * [Community & Meetups](docs/built-on-ipfs-filecoin/community-meetups.md)
   * [Apps & Tooling](docs/built-on-ipfs-filecoin/apps-tooling.md)
-  * [Research & Grants](docs/built-on-ipfs-filecoin/research-grants.md)
+  * [Research & Grants](docs/built-on-ipfs-filecoin/research-grants.md) -->
 
 ## Other Resources
 
