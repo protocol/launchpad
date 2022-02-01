@@ -19,7 +19,7 @@ description: The What and Why of IPFS
 
 The mission of **IPFS** is to create a resilient, upgradable, open network to preserve and grow humanity's knowledge.
 
-![IPFS Logo](<../../.gitbook/assets/IPFS-logo-horizontal-color-dark.png>)
+![Web 3 Stack](<../../.gitbook/assets/IPFS-logo-horizontal-color-dark.png>)
 
 ## Why IPFS?
 

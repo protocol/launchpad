@@ -31,8 +31,9 @@ _Example_
 To add your own images, add the image into the `.gitbook/assets` directory, then embed it as so:
 
 ```
-![Protocol Labs Logo](../../.gitbook/assets/<name-of-image.png>)
+![Protocol Labs Logo](<../../.gitbook/assets/<name-of-image.png>)
 ```
+> Note that one must have actual opening and closing brackets <> around the path to the image
 
 You can also add images in the ui by clicking and dragging, and the images will automatically be put into the `/docs/.gitbook/assets` directory
 
