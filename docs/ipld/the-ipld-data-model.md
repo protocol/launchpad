@@ -20,7 +20,7 @@ const data = {
 }
 ```
 
-Read more about the Data Model at https://ipld.io/docs/data-model/
+Read more about the Data Model at [**ipld.io/docs/data-model**](https://ipld.io/docs/data-model/)
 
 ## Blocks and Nodes
 
@@ -40,14 +40,14 @@ We can see 5 *nodes*:
 4. The first list value (the string `"b"`)
 5. The second list value (the string `"c"`)
 
-Read more about Nodes and their relationship to other IPLD concepts at https://ipld.io/docs/data-model/node/
+Read more about Nodes and their relationship to other IPLD concepts at [ipld.io/docs/data-model/node](https://ipld.io/docs/data-model/node/)
 
 ## Kinds
 
 We refer to the different kinds of representable data in the Data Model as "kinds": **Booleans**, **Strings**, **Ints**, **Floats**, **Null**, **Bytes**, **Lists**, **Maps** and **Links**.
 
-We use the term "kinds" here to disambiguate this from "types", which is a term we use at the [Schemas](schemas.md) level.
+We use the term "kinds" here to disambiguate this from "types", which is a term we use at the [Schemas](ipld-schemas.md) level.
 
 The 'recursive kinds' are **Maps** and **Lists** (since they can contain other kinds).
 
-Read more about IPLD Kinds and specifics of what we expect regarding their bounds and representation at https://ipld.io/docs/data-model/kinds/
+Read more about IPLD Kinds and specifics of what we expect regarding their bounds and representation at [ipld.io/docs/data-model/kinds](https://ipld.io/docs/data-model/kinds/)
