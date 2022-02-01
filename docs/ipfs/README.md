@@ -54,18 +54,22 @@ Dive into the technical details [with this article](https://mikeal.notion.site/w
 
 ![](<../../.gitbook/assets/image (8).png>)
 
+## Try IPFS
+The docs has [an ipfs how-to](https://docs.ipfs.io/how-to/command-line-quick-start/#prerequisites) with the command line. 
+
+
 ## Sections | IPFS
 
 * [IPFS](ipfs/about.md)
-  * [How IPFS Works](ipfs/how-ipfs-works.md)
-  * [Who Uses IPFS](ipfs/who-uses-ipfs.md)
-  * [The IPFS Gateways](ipfs/ipfs-gateways.md)
-  * [Bitswap](ipfs/bitswap.md)
-  * [Graphsync](ipfs/graphsync.md)
-  * [Mutable Content](ipfs/mutable-content.md)
-  * [Important IPFS History](ipfs/ipfs-history.md)
-  * [IPFS Public DHT](ipfs/ipfs-public-dht.md)
-  * [IPFS Resources](ipfs/ipfs-resources.md)
+  * [How IPFS Works](how-ipfs-works.md)
+  * [Who Uses IPFS](who-uses-ipfs.md)
+  * [The IPFS Gateways](ipfs-gateways.md)
+  * [Bitswap](bitswap.md)
+  * [Graphsync](graphsync.md)
+  * [Mutable Content](mutable-content.md)
+  * [Important IPFS History](ipfs-history.md)
+  * [IPFS Public DHT](ipfs-public-dht.md)
+  * [IPFS Resources](ipfs-resources.md)
 
 **Links**
 
