@@ -46,16 +46,16 @@ Dive into the technical details [with this article](https://mikeal.notion.site/w
 
 ## Sections | IPFS
 
-* [IPFS](https://github.com/protocol/launchpad/blob/main/docs/ipfs/ipfs/about.md)
-  * [How IPFS Works](https://github.com/protocol/launchpad/blob/main/docs/ipfs/ipfs/how-ipfs-works.md)
-  * [Who Uses IPFS](https://github.com/protocol/launchpad/blob/main/docs/ipfs/ipfs/who-uses-ipfs.md)
-  * [The IPFS Gateways](https://github.com/protocol/launchpad/blob/main/docs/ipfs/ipfs/ipfs-gateways.md)
-  * [Bitswap](https://github.com/protocol/launchpad/blob/main/docs/ipfs/ipfs/bitswap.md)
-  * [Graphsync](https://github.com/protocol/launchpad/blob/main/docs/ipfs/ipfs/graphsync.md)
-  * [Mutable Content](https://github.com/protocol/launchpad/blob/main/docs/ipfs/ipfs/mutable-content.md)
-  * [Important IPFS History](https://github.com/protocol/launchpad/blob/main/docs/ipfs/ipfs/ipfs-history.md)
-  * [IPFS Public DHT](https://github.com/protocol/launchpad/blob/main/docs/ipfs/ipfs/ipfs-public-dht.md)
-  * [IPFS Resources](https://github.com/protocol/launchpad/blob/main/docs/ipfs/ipfs/ipfs-resources.md)
+* [IPFS](README.md)
+  * [How IPFS Works](how-ipfs-works.md)
+  * [Who Uses IPFS](who-uses-ipfs.md)
+  * [The IPFS Gateways](ipfs-gateways.md)
+  * [Bitswap](bitswap.md)
+  * [Graphsync](graphsync.md)
+  * [Mutable Content](mutable-content.md)
+  * [Important IPFS History](ipfs-history.md)
+  * [IPFS Public DHT](ipfs-public-dht.md)
+  * [IPFS Resources](ipfs-resources.md)
 
 **Links**
 

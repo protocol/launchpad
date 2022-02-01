@@ -47,16 +47,17 @@ Directories are graphs of named links pointing to files, forming graphs that add
 
 ## Sections | IPLD
 
-* [IPLD](./)
-  * [Content Addressing & CIDs](https://github.com/protocol/launchpad/blob/main/docs/ipld/content-addressing-cids.md)
-  * [Graphs: Merkle DAGs](https://github.com/protocol/launchpad/blob/main/docs/ipld/merkle-dags.md)
-  * [The IPLD Data Model](https://github.com/protocol/launchpad/blob/main/docs/ipld/data-model.md)
-  * [Codecs](https://github.com/protocol/launchpad/blob/main/docs/ipld/codecs.md)
-  * [IPLD & IPFS](https://github.com/protocol/launchpad/blob/main/docs/ipld/ipfs.md)
-  * [IPLD Schemas](https://github.com/protocol/launchpad/blob/main/docs/ipld/schemas.md)
-  * [Paths & Selectors](https://github.com/protocol/launchpad/blob/main/docs/ipld/paths-selectors.md)
-  * [Distributed Data Structures](https://github.com/protocol/launchpad/blob/main/docs/ipld/data-structures.md)
-  * [The CAR Format](https://github.com/protocol/launchpad/blob/main/docs/ipld/car.md)
+* [IPLD](README.md)
+  * [Content Addressing & CIDs](content-addressing-and-cids.md)
+  * [Graphs: Merkle DAGs](graphs-merkle-dags.md)
+  * [The IPLD Data Model](the-ipld-data-model.md)
+  * [Codecs](codecs.md)
+  * [IPLD & IPFS](ipld-and-ipfs.md)
+  * [IPLD Schemas](ipld-schemas.md)
+  * [Paths & Selectors](paths-and-selectors.md)
+  * [Distributed Data Structures](distributed-data-structures.md)
+  * [The CAR Format](the-car-format.md)
+  * [IPLD Resources](ipld-resources.md)
 
 #### Links
 

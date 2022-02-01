@@ -28,7 +28,7 @@ Libp2p currently executes NAT traversal using[ Circuit Relays](https://docs.libp
 2. There is NO real incentive to be a Relay server.
 3. Introduces communication latency between the two peers that are interfacing via the Relay server.
 
-A more scalable approach to NAT traversal is to enable direct communication between the peers via a technique called [_Hole Punching_](https://en.wikipedia.org/wiki/Hole\_punching\_\(networking\)). Hole punching removes the need to relay _all_ traffic between two peers via a Relay server.
+A more scalable approach to NAT traversal is to enable direct communication between the peers via a technique called [_Hole Punching_](https://en.wikipedia.org/wiki/Hole_punching_(networking)). Hole punching removes the need to relay _all_ traffic between two peers via a Relay server.
 
 ### Issues & Project Tracking
 

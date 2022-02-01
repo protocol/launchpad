@@ -8,7 +8,7 @@ description: Pre-Requisites to prepare for Launchpad
 
 ### Videos
 
-[**How does a blockchain work - Simply Explained**](https://youtu.be/SSo\_EIwHSd4)
+[**How does a blockchain work - Simply Explained**](https://youtu.be/SSo_EIwHSd4)
 
 {% embed url="https://youtu.be/SSo_EIwHSd4" %}
 
@@ -26,8 +26,8 @@ description: Pre-Requisites to prepare for Launchpad
 
 ### Webinars
 
-* [How do people use crypto?](https://learn.consensys.net/catalog/info/id:194,cms\_featured\_course:1)
-* [What are tokens?](https://learn.consensys.net/catalog/info/id:174,cms\_featured\_course:1)
+* [How do people use crypto?](https://learn.consensys.net/catalog/info/id:194,cms_featured_course:1)
+* [What are tokens?](https://learn.consensys.net/catalog/info/id:174,cms_featured_course:1)
 * [What are crypto wallets](https://courses.consensys.net/courses/take/what-is-a-crypto-wallet/lessons/10028774-what-is-a-crypto-wallet-webinar)
 
 ### Smart Contracts & Security
