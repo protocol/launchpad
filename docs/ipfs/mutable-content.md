@@ -33,6 +33,8 @@ When looking up an IPNS address, use the `/ipns/` prefix:
 ```
 ### Pubsub + IPNS
 <!-- Add a paragraph  -->
+<!-- Check with Lidel if this content moved from the dht.md page is a good enough summary -->
+
 This is a [summarized version of the description here by Fleek](https://blog.fleek.co/posts/immutable-ipfs)
 
 With IPFS, when you change even the slightest bit of content in a given file, say, a webpage, there is a new hash or CID generated. Once you change it, it's impossible to point to the updated bit of content.

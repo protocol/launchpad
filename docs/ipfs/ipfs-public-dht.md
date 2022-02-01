@@ -18,6 +18,3 @@ From LabWeek 2021
 
 ### Radar
 <!-- Add a paragraph  -->
-
-### Bitswap Peering
-<!-- Add a paragraph  -->
