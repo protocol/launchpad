@@ -18,7 +18,11 @@ DAG-PB is a protobuf based format that can only contain two things: a Byte array
 
 A typical DAG-PB block, represented as JSON, might look something like this:
 
+<<<<<<< HEAD
 ```
+=======
+```json
+>>>>>>> main
 {
     "Data": "... binary data",
     "Links": [

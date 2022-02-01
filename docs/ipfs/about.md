@@ -31,17 +31,12 @@ IPFS as an organization is trying to look ahead to the next 10, 100, 1000 years 
 
 {% embed url="https://www.youtube.com/watch?v=zE_WSLbqqvo" %}
 
-<<<<<<< HEAD
-Though it gets difficult to predict what is going to happen in the next, say, 100 years, we can
-start to invest in it now with web3.
-<!-- Add more here -->
-=======
 Though it gets difficult to predict what is going to happen in the next, say, 100 years, we can start to invest in it now with web3.
->>>>>>> main
+
 
 Computers have gone through so many phases from the first computers, to machines that can timeshare, to multiprocessing and sandboxed VMs, to user terminals, to networked computers with multiprocessing, now with personal computers networked across a worldwide internet that all came from a relatively simple set of functions and data transmission.
 
-### What is Web 3?
+### What is Web3?
 
 [This article gives a great summary](https://medium.com/@vegxcodes/what-you-should-know-about-web3-part-1-15a2ddcfbc41) of the first three stages of Web evolution.
 

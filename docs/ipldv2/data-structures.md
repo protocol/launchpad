@@ -8,7 +8,11 @@ description: Distributed Data Structures
 
 It's easy to think primarily in terms of files, (particularly when "file" is in the IPFS acronym!), but content addressed data is so much more powerful than just a mechanism for addressing plain files. File data in IPFS, using DAG-PB and UnixFS has fixed layouts, a limited Data Model, and room for a few pieces of additional properties to represent directory structures and basic file metadata.
 
+<<<<<<< HEAD
 If files were enough for data storage, we would not need databases with sophsticated data models and capabilities to organize and address sets and subsets of arbitrary data types. But we obviously do need these tools to expand the possibilities in application development. In web3 application development, we need our databases to be distributed, robust and scalable. The IPLD Data Model and the suite of IPLD tooling and libraries are intended to meet this challenge.
+=======
+If files were enough for data storage, we would not need databases with sophsticated data models and capabilities to organise and address sets and subsets of arbitrary data types. But we obviously do need these tools to expand the possibilities in application development. In web3 application development, we need our databases to be distributed, robust and scalable. The IPLD Data Model and the suite of IPLD tooling and libraries are intended to meet this challenge.
+>>>>>>> main
 
 ### Persistent and Immutable
 
