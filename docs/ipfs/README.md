@@ -17,8 +17,6 @@ description: The What and Why of IPFS
 * Thing2
 * Thing3 -->
 
-**IPFS** stands for **I**nter**P**lanetary **F**ile **S**ystem.
-
 The mission of **IPFS** is to create a resilient, upgradable, open network to preserve and grow humanity's knowledge.
 
 ![](<../.gitbook/assets/image (20).png>)
