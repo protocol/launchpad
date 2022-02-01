@@ -122,11 +122,11 @@ Cooperative systems are inherently susceptible to abuse by bad actors, and altho
 
 Publish/Subscribe is a system where peers congregate around topics they are interested in. Peers interested in a topic are said to be subscribed to that topic:
 
-![peer topic blob](https://docs.libp2p.io/concepts/publish-subscribe/subscribed\_peers.png)
+![peer topic blob](https://docs.libp2p.io/concepts/publish-subscribe/subscribed_peers.png)
 
 Peers can send messages to topics. Each message gets delivered to all peers subscribed to the topic:
 
-![peer message blob](https://docs.libp2p.io/concepts/publish-subscribe/message\_delivered\_to\_all.png)
+![peer message blob](https://docs.libp2p.io/concepts/publish-subscribe/message_delivered_to_all.png)
 
 **Design goals**
 
