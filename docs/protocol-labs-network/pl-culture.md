@@ -71,7 +71,7 @@ Within Protocol Labs, it is the role of Research to lead idea generation and tes
 
 ### Async Work
 
-At Protocol Labs, in order to enable contributions and collaborations worldwide, we follow principles around asynchronouslyworking.
+At Protocol Labs, in order to enable contributions and collaborations worldwide, we follow principles around working asynchronously.
 
 The benefits of async communication, though this approach might seem non-traditional for some, are numerous:
 
@@ -87,4 +87,4 @@ The benefits of async communication, though this approach might seem non-traditi
 
 This style benefits your teammates as well. Requesting someone’s time to find a document or pinging someone for something non-urgent are two of the most common productivity killers for deep focus work. As you might be aware, there is a famous meme on how you should “never an interrupt a programmer.” Once you read it, you will quickly realize that this applies to all sorts work.
 
-There will be more on async work in the [**OS Stewardship**](os-stewardship.md) Section.
+There will be more on async work in the [**OS CStewardship**](https://github.com/protocol/launchpad/blob/main/docs/protocol-labs-network/protocol-labs-network/os-stewardship.md) Section.
