@@ -1,8 +1,12 @@
 # The CAR Format
 
+![](<../../.gitbook/assets/ipld_car_intro.png>)
+
 ### The CAR Format
 
 **CAR**, or Content Addressable aRchives, is a format for bundling IPLD blocks into a large bundle. These bundles can be stored as files, typically with a `.car` extension, or transferred over the wire. We categorise CAR as a "transport" for IPLD.
+
+![](<../../.gitbook/assets/ipld_car_more.png>)
 
 #### CARv1
 

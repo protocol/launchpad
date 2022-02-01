@@ -1,7 +1,5 @@
 # IPLD Schemas
 
-### IPLD Schemas
-
 IPLD concerns itself with the data layer of the distributed web. Its scope begins above the data storage and transmission layer, only interested in how data elements are encoded and decoded to a particular storage format and then presented in a consistent and usable form when above this encoding layer.
 
 Schemas are an important tool for extending IPLD’s scope into the application layer, where coherent and useful data structures are important, rather than disjointed and atomized data elements. In this way, IPLD Schemas provide a barrier to prevent data encoding and storage concerns from leaking too heavily into the application layer. Instead, IPLD can present a clear data abstraction to distributed web developers, a strong separation of concerns. Further, IPLD Schemas contain tools to embed advanced logic able to power bi-directional transformations, further pushing data representation concerns out of the application layer.
@@ -11,25 +9,29 @@ type Message struct {
   msg String
   payload Payload
 }
+
 type Payload union {
   | Error "error"
   | Progress "progress"
   | Ping "ping"
 } representation keyed
+
 type Error string
+
 type Progress struct {
   percent Float
   last String
 }
+
 type Ping struct {
   ts Int
   nonce String
 }
 ```
 
-#### Use Cases
+## Use Cases
 
-IPLD Schemas help us describe and reason about the _shape_ of data that we expect to flow through an IPLD based system. With associated tooling, Schemas can also present a simplified and customized interface to an application's data concerns.
+IPLD Schemas help us describe and reason about the *shape* of data that we expect to flow through an IPLD based system. With associated tooling, Schemas can also present a simplified and customized interface to an application's data concerns.
 
 * **Schemas as a documentation tool**: At their most basic, IPLD Schemas are simply a method of describing the properties of data. The Schema DSL is simple (much simpler than other data schema languages), and as such it is a useful documentation tool because it is fairly easy to understand without much prior exposure. Their simple and clear definition also provides a much more sophisticated way to describe the shape of data than other traditional means (such as exampling data in a JSON form). Even though IPLD Schemas are a relatively new technology, you will find it being used in an increasing number of specifications and other documentation.
 * **Schemas as a validation tool**: IPLD Schemas are designed to be efficient and have simple and predictable paths to matching data layouts for the purpose of validation. The data layouts describable by IPLD Schemas are not exhaustive but cover the most common forms that are fast to validate. Therefore IPLD Schema types do not need to be deeply traversed to provide validation feedback.
@@ -37,7 +39,7 @@ IPLD Schemas help us describe and reason about the _shape_ of data that we expec
 * **Schemas as a transformational tool**: IPLD Schemas don't provide a sophisticated set of data transformational tools but they do provide a basic abstraction layer that can turn the simple IPLD Data Model types into forms that are more sympathetic to application design.
 * **Schemas as a code generation tool**: IPLD Schemas provide a means to connect the serialization and deserialization process with application layer data structures. As such, they can be used to generate APIs and code to simplify and more tightly bound the data layer of a distributed web application.
 
-#### Kinds and Types
+## Kinds and Types
 
 IPLD treats its Data Model as the base layer for data representation. As such, rather than referring to the elements of the data model as "types", they are "kinds". A "kind" is what is present at the Data Model layer as far as the tools for the Data Model are concerned (such as encoding formats).
 
