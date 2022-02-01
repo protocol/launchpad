@@ -74,6 +74,22 @@ nodeID := multihash(publicKey)
 ```
 See more in the [IPFS keystore spec](https://github.com/ipfs/specs/blob/master/KEYSTORE.md).
 
+<<<<<<< HEAD
+=======
+#### The Stack
+IPFS has a stack of modular protocols. Each layer may have multiple implementations, all in different modules. This spec will only address the interfaces between the layers, and briefly mention possible implementations. Details are left to the other specs.
+
+IPFS has five layers:
+
+IPFS stack layers:
+
+- naming - [content addressed](https://docs.ipfs.io/concepts/content-addressing/) (`/ipfs/<cid>`) OR  a self-certifying PKI namespace ([IPNS](https://docs.ipfs.io/concepts/glossary#ipns), `/ipns/{libp2p-key}`) OR a [DNSLink](https://docs.ipfs.io/concepts/glossary#dnslink) (`/ipns/{dnslink-name}`)
+- merkledag - datastructure format (thin waist)
+- exchange - block transport and replication
+- routing - locating content and peers
+- network - establishing connections between peers
+
+>>>>>>> fc68bb53fca04ef15e277ea49a6b29ec946014c2
 ## IPFS Basics & Toolkits
 
 #### IPFS Basics + Tools | ETHGlobal & Juan Benet
