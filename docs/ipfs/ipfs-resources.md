@@ -2,11 +2,12 @@
 description: The What and the How
 ---
 ## Discuss IPFS
+* IPFS [Discussion Forum](https://discuss.ipfs.io/)
+* Matrix [chat](https://matrix.to/#/#lobby:ipfs.io)
 * IPFS [notes issues](https://github.com/ipfs/notes/issues)
 * IPFS [spec issues](https://github.com/ipfs/specs/issues)
 * All [IPFS closed issues](https://github.com/ipfs/ipfs/issues?q=is%3Aissue+is%3Aclosed)
-* IPFS [Discussion Forum](https://discuss.ipfs.io/)
-* Matrix [chat](https://matrix.to/#/#lobby:ipfs.io)
+
 
 **[IPFS Glossary](https://docs.ipfs.io/concepts/glossary/)**
 
@@ -72,6 +73,5 @@ Are you looking for inspiration? You can find a huge collection of awesome commu
 
 [Check out Awesome IPFS now →](https://awesome.ipfs.io/)
 
-
-
-##IPFS Glossary
+<!--
+##IPFS Glossary Does this exist?-->
