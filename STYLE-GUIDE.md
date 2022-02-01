@@ -6,6 +6,7 @@
 * Main section titles will be created with two `##`, e.g.`## Main Title`
 * Sub titles are created with three `###` e.g. `### Sub Title`
 * Video titles and other embedded content will be created with four `####`, e.g. `#### Video Title | Presenter`. Try and include the video title with a pipe `|` and the people in the video/ creator
+
 _Example_
 ```
 #### Video Title | Organization Name(if not PL) - Name(s) of Presenters
@@ -27,7 +28,7 @@ _Example_
 ```
 
 ### Add Images directly
-To add your own images, add the image into the `/docs/.gitbook/assets` directory, then embed it as so:
+To add your own images, add the image into the `.gitbook/assets` directory, then embed it as so:
 ```
 ![Protocol Labs Logo](../.gitbook/assets/<name-of-image.png>)
 ```
