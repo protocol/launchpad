@@ -42,6 +42,7 @@ A video embed requires it to be published to Youtube (typically as an unlisted v
 Simply add in the web address with `{% embed url"<https.youtube.com/video-url>" %}`
 
 _Example_
+
 ```
 {% embed url="https://www.youtube.com/watch?v=2RCwZDRwk48" %}
 ```
@@ -58,13 +59,17 @@ Simply add it with the embed tags:
 {% embed url="<link to document>" %}
 <Add a short description here>
 {% endembed %}
+```
 
 Example 1:
+
 ```
 {% embed url="https://docs.google.com/document/d/1EP6S8k-DNsDgIKmtrA_9YrCghq3F21IqhDh9THNuoOU/edit" %}
 {% endembed %}
 ```
+
 Example 2:
+
 ```
 {% embed url="https://drive.google.com/file/d/1EHUXFm0SA4DiBlHTXnRQQ-vHXuQdyBCo/view?usp=sharing" %}
 This video walks through major themes and takeaways from the doc above
