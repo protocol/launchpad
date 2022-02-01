@@ -9,6 +9,47 @@ _This is an [annotated version of this doc](https://docs.ipfs.io/how-to/address-
 
 Gateways are provided strictly for convenience: in other words, they help tools that speak HTTP but do not speak distributed protocols (such as IPFS) to communicate. They are the first stage of the upgrade path for the web. More information about IPFS Gateways.
 
+### Subdomain gateway
+
+When [origin-based security](https://en.wikipedia.org/wiki/Same-origin_policy) is needed, [CIDv1](../concepts/content-addressing.md#identifier-formats) in case-insensitive encoding such as Base32 or Base36 should be used in the subdomain:
+
+    https://<cidv1b32>.ipfs.<gateway-host>.tld/path/to/resource
+
+Example:
+
+    https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.dweb.link/wiki/
+    https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.cf-ipfs.com/wiki/Vincent_van_Gogh.html
+    https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.localhost:8080/wiki/
+
+[Read More](https://docs.ipfs.io/how-to/address-ipfs-on-web/#subdomain-gateway)
+
+## Native URLs
+
+Subdomain convention can be replaced with a native handler. The IPFS URL protocol scheme follows the same requirement of case-insensitive CIDv1 in Base32 as subdomains:
+
+```
+ipfs://{cidv1b32}/path/to/resource
+```
+
+An IPFS URL does not retain the original path, but instead requires a conversion step to/from URI representation:
+
+> `ipfs://{immutable-root}/path/to/resourceA` → `/ipfs/{immutable-root}/path/to/resourceA`  
+> `ipns://{mutable-root}/path/to/resourceB` → `/ipns/{mutable-root}/path/to/resourceB`
+
+The first element after the double slash is an opaque identifier representing the content root. It is interpreted as an authority component used for origin calculation, which provides necessary isolation between security contexts of different content trees.
+
+Example:
+
+```
+ipfs://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/wiki/Vincent_van_Gogh.html
+```
+
+
+
+> Native URI require CID to be case-insensitive. Use of CIDv1 in Base32 is advised.
+
+[Read More](https://docs.ipfs.io/how-to/address-ipfs-on-web/#native-urls)
+
 ### Centralization
 HTTP gateways have worked well since 2015, but they come with a significant set of limitations related both to the centralized nature of HTTP and some of HTTP's semantics. Location-based addressing of a gateway depends on both DNS and HTTPS/TLS, which relies on a trust in certificate authorities (opens new window)(CAs) and public key infrastructure (opens new window)(PKI). In the long term, these issues should be mitigated by use of opportunistic protocol upgrade schemes.
 
@@ -23,68 +64,10 @@ https://<gateway-host>.tld/ipfs/<cid>/path/to/resource
 https://<gateway-host>.tld/ipns/<ipnsid_or_dnslink>/path/to/resource
 ```
 
-## Gateway Recipes
+**Gateway Recipes**
 
-_This is an [annotated version of content from the go-ipfs repo](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#gateway-recipe)_
+_Read about [Gateway Recipes](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#gateway-recipe)_
 
-<!-- What else should be included? Links?  -->
-
-
-Below is a list of the most common public gateway setups.
-
-* Public subdomain gateway at http://{cid}.ipfs.dweb.link (each content root gets its own Origin)
-
-```
-$ ipfs config --json Gateway.PublicGateways '{
-    "dweb.link": {
-      "UseSubdomains": true,
-      "Paths": ["/ipfs", "/ipns"]
-    }
-  }'
-  ```
-* Backward-compatible: this feature enables automatic redirects from content paths to subdomains:
-
-`http://dweb.link/ipfs/{cid} → http://{cid}.ipfs.dweb.link`
-
-* X-Forwarded-Proto: if you run go-ipfs behind a reverse proxy that provides TLS, make it add a X-Forwarded-Proto: https HTTP header to ensure users are redirected to https://, not http://. It will also ensure DNSLink names are inlined to fit in a single DNS label, so they work fine with a wildcart TLS cert (details). The NGINX directive is proxy_set_header X-Forwarded-Proto "https";.:
-
-`http://dweb.link/ipfs/{cid} → https://{cid}.ipfs.dweb.link`
-
-http://dweb.link/ipns/your-dnslink.site.example.com → https://your--dnslink-site-example-com.ipfs.dweb.link
-
-* X-Forwarded-Host: we also support X-Forwarded-Host: example.com if you want to override subdomain gateway host from the original request:
-
-`http://dweb.link/ipfs/{cid} → http://{cid}.ipfs.example.com`
-
-Public path gateway at `http://ipfs.io/ipfs/{cid}` (no Origin separation)
-
-```
-$ ipfs config --json Gateway.PublicGateways '{
-    "ipfs.io": {
-      "UseSubdomains": false,
-      "Paths": ["/ipfs", "/ipns", "/api"]
-    }
-  }'
-  ```
-* Public DNSLink gateway resolving every hostname passed in Host header.
-
-`$ ipfs config --json Gateway.NoDNSLink false`
-  * Note that NoDNSLink: false is the default (it works out of the box unless set to true manually)
-
-* Hardened, site-specific DNSLink gateway.
-
-Disable fetching of remote data (NoFetch: true) and resolving DNSLink at unknown hostnames (NoDNSLink: true). Then, enable DNSLink gateway only for the specific hostname (for which data is already present on the node), without exposing any content-addressing Paths:
-
-```
-$ ipfs config --json Gateway.NoFetch true
-$ ipfs config --json Gateway.NoDNSLink true
-$ ipfs config --json Gateway.PublicGateways '{
-    "en.wikipedia-on-ipfs.org": {
-      "NoDNSLink": false,
-      "Paths": []
-    }
-  }'
-```
 
 ## IPFS In Web Browsers
 
@@ -115,7 +98,7 @@ Our goal is to facilitate native support for IPFS and other decentralized protoc
 - [Get involved!](#get-involved)
 - [Resources](#resources)
 
-## Current projects
+## Current Projects
 
 ### IPFS Companion browser extension
 
