@@ -50,7 +50,7 @@ description: Pre-Requisites to prepare for Launchpad
 * [Slice Tricks for Go](https://github.com/golang/go/wiki/SliceTricks)
 * PLs [Distributed Systems Curriculum (with Golang)](https://docs.google.com/document/d/18mlkt3JPHP2eSeDOeCE0wafnLKv95Taj0rDh0NIus3Y/edit#heading=h.l73q2rxlx59z). Includes a tutorial on debugging.Lots of good coding exercises.
 
-## Computer Networks
+## Computer Networks (Optional)
 
 * [Coursea on _The Bits and Bytes of Computer Networking_](https://www.coursera.org/learn/computer-networking)
 * MIT Press book on [_Designing an Internet_](https://mitpress.mit.edu/books/designing-internet)
