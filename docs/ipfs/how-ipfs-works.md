@@ -79,11 +79,13 @@ IPFS has a stack of modular protocols. Each layer may have multiple implementati
 
 IPFS has five layers:
 
-naming - a self-certifying PKI namespace (IPNS)
-merkledag - datastructure format (thin waist)
-exchange - block transport and replication
-routing - locating peers and objects
-network - establishing connections between peers
+IPFS stack layers:
+
+- naming - [content addressed](https://docs.ipfs.io/concepts/content-addressing/) (`/ipfs/<cid>`) OR  a self-certifying PKI namespace ([IPNS](https://docs.ipfs.io/concepts/glossary#ipns), `/ipns/{libp2p-key}`) OR a [DNSLink](https://docs.ipfs.io/concepts/glossary#dnslink) (`/ipns/{dnslink-name}`)
+- merkledag - datastructure format (thin waist)
+- exchange - block transport and replication
+- routing - locating content and peers
+- network - establishing connections between peers
 
 ## IPFS Basics & Toolkits
 
