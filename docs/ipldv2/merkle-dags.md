@@ -10,11 +10,7 @@ description: Graphs: Merkle DAGs
 
 This is a basic concept arising from graph theory and defines: any connected set of data where the connections go in only one direction ("directed") and the graph does not contain any cycles ("acyclic").
 
-<<<<<<< HEAD
 Ralph Merkle, formalized the hash tree pattern 1979 which specializes a form of DAG. Essentially:
-=======
-Ralph Merkle, formalised the hash tree pattern 1979 which specializes a form of DAG. Essentially:
->>>>>>> main
 
 > Content being hashed may also contain hash digests of other content; therefore, any content "address" authenticates content "linked" via the inclusion of their digest in the tree below it
 

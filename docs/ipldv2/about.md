@@ -10,11 +10,9 @@ IPLD (InterPlanetary Linked Data) is **The Data Layer for content-addressed syst
 
 ## Why IPLD?
 
-<<<<<<< HEAD
 IPLD answers the question: Can we extract a re-usable data layer from IPFS that can be used to build other types of content-addressed data systems?
-=======
-IPLD answers the qeustion: Can we extract a re-usable data layer from IPFS that can be used to build other types of content-addressed data systems?
->>>>>>> main
+the question: Can we extract a re-usable data layer from IPFS that can be used to build other types of content-addressed data systems?
+
 
 Every content addressed system reinvents the data layer, typically in non-reusable ways. But we think that **building the next Git should take hours, not days!** so IPLD aims to be an off-the-shelf content addressed data layer, with associated libraries, documentation and tooling.
 

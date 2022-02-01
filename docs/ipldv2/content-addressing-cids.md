@@ -4,11 +4,7 @@ description: Content Addressing & CIDs
 
 ## Content Addressing
 
-<<<<<<< HEAD
 ### Why Location aAdressing Fails Us
-=======
-### Why location addressing fails us
->>>>>>> main
 
 * A URL only points to a single copy, stored in a single location.
 * If that copy disappears, there is no way to know where other copies are.

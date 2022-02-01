@@ -4,11 +4,7 @@ description: IPLD Resources
 
 ## IPLD Resources
 
-<<<<<<< HEAD
 ### Further Reading & Watching
-=======
-### Further Reading / Watching
->>>>>>> main
 
 * [**IPLD in the InterPlanetary Ecosystem**](https://ipld.io/docs/intro/ecosystem/)
 * [**ResNetLab: Course Module - Content Addressing**](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-addressing/) *(Video)*

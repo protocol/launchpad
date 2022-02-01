@@ -6,11 +6,8 @@ description: Codecs
 
 IPLD is ambitious in its aims to be able to represent many, varied types of content addressed data. To do this, it must be able to decode and encode those data formats. Being able to represent, manipulate and navigate data in memory is only possible if we can turn at-rest binary data into meaningful data structures.
 
-<<<<<<< HEAD
 Every content addressed data system defines at leats one data storage format. Some formats are common between systems—JSON is a common format since it is supported across almost every programming language and is easy to read! Binary formats are common for their compactness when storing or transferring large amounts of data. [CBOR is a binary format](https://cbor.io/) that is similar to JSON but more compact and able to represent more data types.
-=======
-Every content addressed data system defines at leats one data storage format. Some formats are common between systems—JSON is a common format since it is supported across almost every programming language and is easy to read! Binary formats are common for their compactness when storing or transferring large amounts of data. CBOR is a binary format that is similar to JSON but more compact and able to represent more data types.
->>>>>>> main
+
 
 Popular content addressed systems such as Git, Bitcoin and Ethereum have their own unique and custom formats, specifically engineered to their own use-cases.
 
