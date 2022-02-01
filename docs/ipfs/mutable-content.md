@@ -31,6 +31,18 @@ When looking up an IPNS address, use the `/ipns/` prefix:
 ```
 /ipns/QmSrPmbaUKA3ZodhzPWZnpFgcPMFWF4QsxXbkWfEptTBJd
 ```
+### Pubsub + IPNS
+<!-- Add a paragraph  -->
+This is a [summarized version of the description here by Fleek](https://blog.fleek.co/posts/immutable-ipfs)
+
+With IPFS, when you change even the slightest bit of content in a given file, say, a webpage, there is a new hash or CID generated. Once you change it, it's impossible to point to the updated bit of content.
+
+IPNS solves the issue of creating constant links to content that may be updated, and is the 'new' version of content that you want to share with others. IPNS uses public-link cryptography to assign a link to the content you created on IPFS.
+
+There are a couple of ways you can link to the content you are sharing, either using DNSLink to link using the DNS addressing system, or a truly decentralized solutio such as ENS that will help maintain a constant link to the most updated version of a piece of content.
+
+**Pubsub** Makes it possible for users to share the content with the peers that wish to subscribe to it & delivers messages throughout a decentralized network. Read more in the [libp2p docs](https://docs.libp2p.io/concepts/publish-subscribe/).
+
 
 ## Tutorial: Example IPNS Setup with CLI
 

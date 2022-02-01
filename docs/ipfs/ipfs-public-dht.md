@@ -15,8 +15,6 @@ From LabWeek 2021
 
 <!-- Link to public copy of Slides: https://docs.google.com/presentation/d/1NJMonh2YolwKSpwEt61lU2YdvUswDAFhErn4RJwCVh0/edit#slide=id.p -->
 
-### Pubsub + IPNS
-<!-- Add a paragraph  -->
 
 ### Radar
 <!-- Add a paragraph  -->
