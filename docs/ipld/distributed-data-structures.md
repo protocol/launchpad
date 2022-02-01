@@ -1,18 +1,16 @@
 # Distributed Data Structures
 
-### Distributed Data Structures
-
-#### Beyond File Data
+## Beyond File Data
 
 It's easy to think primarily in terms of files, (particularly when "file" is in the IPFS acronym!), but content addressed data is so much more powerful than just a mechanism for addressing plain files. File data in IPFS, using DAG-PB and UnixFS has fixed layouts, a limited Data Model, and room for a few pieces of additional properties to represent directory structures and basic file metadata.
 
-If files were enough for data storage, we would not need databases with sophsticated data models and capabilities to organise and address sets and subsets of arbitrary data types. But we obviously do need these tools to expand the possibilities in application development. In web3 application development, we need our databases to be distributed, robust and scalable. The IPLD Data Model and the suite of IPLD tooling and libraries are intended to meet this challenge.
+If files were enough for data storage, we would not need databases with sophsticated data models and capabilities to organize and address sets and subsets of arbitrary data types. But we obviously do need these tools to expand the possibilities in application development. In web3 application development, we need our databases to be distributed, robust and scalable. The IPLD Data Model and the suite of IPLD tooling and libraries are intended to meet this challenge.
 
-#### Persistent and Immutable
+## Persistent and Immutable
 
 **Persistent and immutable data structures are not new.** Functional Programming leans heavily on these concepts and research has been going on into these data structures for a very long time. Standard libraries for Scala, Clojure, Haskell, etc. are full of data structures that translate (almost) directly to the distributed, content-addressed world.
 
-The HAMT algorithm used for UnixFS filesystem sharding, as mentioned in the IPLD & IPFS section, is an excellent example of such an algorithm and you'll find variations of this algorithm in the various "collections" implementations in many languages.
+The HAMT algorithm used for UnixFS filesystem sharding, as mentioned in the [IPLD & IPFS](ipfs.md) section, is an excellent example of such an algorithm and you'll find variations of this algorithm in the various "collections" implementations in many languages.
 
 Selecting algorithms for building, traversing and mutating content addressed data structures require careful consideration of the trade-offs. Algorithms that are efficient in memory-space, often don't translate well to a world where we need to deal with network latency.
 
@@ -21,11 +19,11 @@ Selecting algorithms for building, traversing and mutating content addressed dat
 
 Directional and acyclic graphs of immutable pieces of data can be challenging to wrangle but scale powerfully.
 
-#### Example: Super-large array
+## Example: Super-large array
 
-Let's build an algorithm for storing a scalable distributed _array_. We want to be able to store a few, to a few billion elements in our array, and do so with IPLD. Our array could be distributed across many parties, and we shouldn't need to have _all_ of the blocks that make up our array just to access a single element. Accessing one element in a super-large array should require minimal block loads from our storage system (or distributed network).
+Let's build an algorithm for storing a scalable distributed *array*. We want to be able to store a few, to a few billion elements in our array, and do so with IPLD. Our array could be distributed across many parties, and we shouldn't need to have *all* of the blocks that make up our array just to access a single element. Accessing one element in a super-large array should require minimal block loads from our storage system (or distributed network).
 
-For simplicity, our array cannot be sparse and must include contiguous elements starting from index `0` _(aside: sparse arrays are an entirely different matter, although something the Filecoin chain has to deal with)_.
+For simplicity, our array cannot be sparse and must include contiguous elements starting from index `0` *(aside: sparse arrays are an entirely different matter, although something the Filecoin chain has to deal with)*.
 
 Let's begin with a simple IPLD block to hold our array data:
 
@@ -109,6 +107,7 @@ An approximation of such an algorithm could look like the following, implemented
 
 ```js
 const width = 5 // fixed maximum length of any individual block
+
 class SuperLargeArrayBlock {
   getElementAt(index) {
     if (this.height > 1) {
@@ -120,6 +119,7 @@ class SuperLargeArrayBlock {
     // read directly from this node's data array
     return this.elements[index]
   }
+
   getChildAt(childIndex) {
     // ... load a child block and return a SuperLargeArrayBlock for it
   }
@@ -135,9 +135,9 @@ It's not critical to understand in depth how this algorithm works; but it is wor
 
 Algorithms for **mutation** operations that update our data structure, requiring new hashes for changed blocks, are left as an exercise for the brave. Consider how one might add `Push(value)`, `Pop()` or `Set(index, value)` operations.
 
-#### Further reading
+### Further reading
 
-You can read an in-depth description of this data structure, its properties and algorithms for traversal and mutation in the specification for the [**Vector**](https://github.com/ipld/ipld/blob/master/\_legacy/specs/data-structures/vector.md) data structure.
+You can read an in-depth description of this data structure, its properties and algorithms for traversal and mutation in the specification for the [**Vector**](https://github.com/ipld/ipld/blob/master/_legacy/specs/data-structures/vector.md) data structure.
 
 The [**HAMT**](https://ipld.io/specs/advanced-data-layouts/hamt/) algorithm is worth reading as it serves as a general-purpose associative array algorithm across many parts of the IPLD ecosystem, including IPFS itself.
 
