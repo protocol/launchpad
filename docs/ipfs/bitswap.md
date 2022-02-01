@@ -1,11 +1,15 @@
 ---
-description: The Basics of How IPFS Works
+description: The Data Exchange Algorithm of IPFS
 ---
 
-# How IPFS Works
-
-## Content Addressing
-  **IPFS** stands for **I**nter **P**lanetary **F**ile **S**ystem.  
+## Bitswap
+_This is an [copy of the tutorial on ResNetLab Tutorials](https://research.protocol.ai/tutorials/resnetlab-on-tour/beyond-bitswap/)_
 
 
-## Why IPFS?
+#### Beyond Bitswap | ResNetLabs on Tour <!-- Presenter?-->
+
+<!-- Add introduction here -->
+
+{% embed url="https://www.youtube.com/watch?v=cXl-tzX24VQ&t=10s" %}
+
+<!-- Add summarizing points -->
