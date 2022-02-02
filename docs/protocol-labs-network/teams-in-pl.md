@@ -2,17 +2,6 @@
 description: The many projects and organizations that make up the PL Network
 ---
 
-### Working Groups, Teams, and Organizations
-Teams are the reporting organization structure established by Protocol Labs. Though they establish Labbers' general focus of work, the nature of PL's collborative organization means that Labbers may end up working with many individuals outside their team, and often with those outside of Protocol Labs itself.
-
-Usually, a Working Group (WG) like Ecosystem WG or EngRes WG is made up of multiple Teams, which focus on specific topics (hackathons, IPFS<>Filecoin interoperations, etc). Those WGs might span multiple organizations. For example Ecosystem WG spans the Filecoin Foundation, the PL Outercore team, and a number of other companies.
-
-Once a Project or Enablement team starts coordinating a certain number of Labbers (>5 people or so) it may start to organize itself into Working Groups (WGs).
-
-Organizations, also known as members of the 'Ecosystem' or 'Network' include research efforts (usually at a university), startups and other companies...., and any other other fledgling projects that work with our own protocols and projects.
-
-In other words, anyone building on or around IPFS, IPLD, Libp2p, and Filecoin is considered an orgnization that is a part of our ecosystem or network, and hte outercore team at PL is here to engage with them.
-
 ![](<../../.gitbook/assets/image (2).png>)
 
 ## The Protocol Labs Network
@@ -28,6 +17,26 @@ The [PL Spaceport](https://protocol.almanac.io/docs/protocol-labs-spaceport-sFKN
 * [Glossary](https://protocol.almanac.io/docs/glossary-ycx3uRbXUM3d7uf1EBz89msUmb1UjzR7)
 
 To explore the various projects and tools building in the IPFS & Filecoin ecosystems, use the explorable ecosystem directories at [https://ecosystem.ipfs.io/](https://ecosystem.ipfs.io) & [https://ecosystem.filecoin.io/](https://ecosystem.filecoin.io)
+
+## Major Network Services and Working Groups
+
+**Working Groups (WGs)**
+- Ecosystem WG
+- PL EngRes WG
+
+**Network Tooling**
+- Builders Funnel
+- Talent Funnel
+- Network Member Services
+
+### Working Groups, Teams, and Organizations
+
+There are a number of Working Groups within the Protocol Labs Network that organize the work of multiple teams and align them with a central vision/mission. A Working Group (WG) like Ecosystem WG or EngRes WG is made up of multiple teams, which focus each on a specific topic (hackathons, IPFS<>Filecoin interoperations, etc) within the wider WG mission. 
+
+In some cases, those WGs might span multiple organizations, or companies. For example Ecosystem WG spans the Filecoin Foundation, the PL Outercore team, the PL Starfleet team, and a number of other companies. We often use "organization" and "team" interchangably when we mean "top level team of teams".
+
+Teams are the reporting organization structure established by Protocol Labs. Though they establish Labbers' general focus of work, the nature of PL's collborative organization means that Labbers may end up working with many individuals outside their team, and often with those outside of Protocol Labs itself.
+
 
 ### IPFS, IPLD, Libp2p, and Filecoin
 
