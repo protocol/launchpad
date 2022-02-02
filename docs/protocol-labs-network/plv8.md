@@ -6,8 +6,6 @@ Protocol Labs exists to enable a network of projects, tools, startups, research,
 
 ![PL Version 8](<../../.gitbook/assets/plv8.png>)
 
-The mission of the Ecosystem effort is to seed the long-term growth of the decentralized web, by cultivating a wide variety of developers and stakeholders, aligning them with the success of our protocols, and treating them like gold.
-
 ## Version 8 Principles
 ### Scaling the Network
 * Reorient PL towards scalability -- in crypto native ways
@@ -22,7 +20,7 @@ The mission of the Ecosystem effort is to seed the long-term growth of the decen
 * Develop network-wide support & collab resources
 
 
-### Build Up Existing Teams
+### Build Up Existing Teams & Projects
 * Enable well-gelled teams to keep executing
 * Enable greater team agency and independence
 * Empower to be more entrepreneurial and risk-tolerant.
