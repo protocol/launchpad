@@ -15,7 +15,8 @@ Usually, a Working Group (for example, Ecosystem WG, EngRes WG) is made up of mu
 
 Once a Project or Enablement team starts coordinating a certain number of Labbers (>5 people or so) it may start to organize itself into Working Groups (WGs).
 
-Organizations include research efforts (usually at a university), startups and other companies....
+Organizations or 'The Ecosystem' include research efforts (usually at a university), startups and other companies....
+anyone building on IPFS, IPLD, Libp2p, and Filecoin
 
 ## The Protocol Labs Network
 
