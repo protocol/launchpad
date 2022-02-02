@@ -19,7 +19,7 @@ description: The What and Why of IPFS
 
 The mission of **IPFS** is to create a resilient, upgradable, open network to preserve and grow humanity's knowledge.
 
-![IPFS Logo](<../../.gitbook/assets/IPFS-logo-horizontal-color-dark.png>)
+![PL Logo](<../../.gitbook/assets/IPFS-logo-horizontal-color-dark.png>)
 
 ## Why IPFS?
 
@@ -52,7 +52,7 @@ Web3 is an internet that shares and distributes the processesing and decision ma
 
 Dive into the technical details [with this article](https://mikeal.notion.site/web3-data-permanence-0230072b594748ed9aa0c71ad331f289).
 
-![Protocol Labs Logo](<../../.gitbook/assets/image (11).png>)
+![Web3 Stack](<../../.gitbook/assets/image (11).png>)
 
 ## Try IPFS
 The docs has [an ipfs how-to](https://docs.ipfs.io/how-to/command-line-quick-start/#prerequisites) with the command line.
