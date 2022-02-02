@@ -9,7 +9,7 @@ description: The many projects and organizations that make up the PL Network
 ![](<../../.gitbook/assets/image (2).png>)
 
 ### Working Groups, Teams, and Organizations
-Teams are the reporting organization structure established by Protocol Labs. Though they establish Labbers' general focus of work, the nature of PL's collborative organization means that Labbers may end up working with many individuals outside their team, and even protocol Labs itself.
+Teams are the reporting organization structure established by Protocol Labs. Though they establish Labbers' general focus of work, the nature of PL's collborative organization means that Labbers may end up working with many individuals outside their team, and often with those outside of Protocol Labs itself.
 
 Usually, a Working Group (WG) like Ecosystem WG or EngRes WG is made up of multiple Teams, which focus on specific topics (hackathons, IPFS<>Filecoin interoperations, etc). Those WGs might span multiple organizations. For example Ecosystem WG spans the Filecoin Foundation, the PL Outercore team, and a number of other companies.
 
