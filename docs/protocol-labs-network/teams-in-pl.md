@@ -8,6 +8,17 @@ description: The many projects and organizations that make up the PL Network
 
 ![](<../../.gitbook/assets/image (2).png>)
 
+### Working Groups, Teams, and Organizations
+Teams are the reporting organization structure established by Protocol Labs. Though they establish Labbers' general focus of work, the nature of PL's collborative organization means that Labbers may end up working with many individuals outside their team, and even protocol Labs itself.
+
+Usually, a Working Group (for example, Ecosystem WG, EngRes WG) is made up of multiple Teams, which focus on specific topics (hackathons, IPFS<>Filecoin interop, etc). Those WGs might span multiple organizations (ex Ecosystem WG spans the Filecoin Foundation, the PL Outercore team, and a number of other companies).
+
+Once a Project or Enablement team starts coordinating a certain number of Labbers (>5 people or so) it may start to organize itself into Working Groups (WGs).
+
+Organizations include research efforts (usually at a university), startups and other companies....
+
+## The Protocol Labs Network
+
 The PL Network is made up of 300+ projects, companies, and organizations. You can explore a number of those organizations, and the people that work on them, in the WIP [PL Network Directory](https://airtable.com/appHT5ErKdHcsFznj/tblceMFkdHORmuzl4/viwRVjfIBeMdEb8jZ?blocks=hide).
 
 The [PL Spaceport](https://protocol.almanac.io/docs/protocol-labs-spaceport-sFKNLxQKYdQOZfLTL4kL9uVha4TdGlYh) has many links to resources for PL Network members, including:
