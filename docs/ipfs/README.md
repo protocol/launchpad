@@ -5,7 +5,12 @@ description: The What and Why of IPFS
 # IPFS
 
 ## What is IPFS
- **IPFS** stands for **I**nter**P**lanetary **F**ile **S**ystem. <!-- In this section, you will: -->
+ **IPFS** stands for **I**nter**P**lanetary **F**ile **S**ystem.
+
+IPFS is a distributed system for storing and accessing files, websites, applications, and data. Read more about how this works [in the docs](https://docs.ipfs.io/concepts/what-is-ipfs/).
+
+IPFS aims to [decentralize the web](https://docs.ipfs.io/concepts/what-is-ipfs/#decentralization) and connects people to information using [content addressing](https://docs.ipfs.io/concepts/what-is-ipfs/#content-addressing) instead of URLs and servers.
+<!-- In this section, you will: -->
 
 <!-- **Understand**
 * Thing1
@@ -55,7 +60,14 @@ Dive into the technical details [with this article](https://mikeal.notion.site/w
 ![Web3 Stack](<../../.gitbook/assets/image (11).png>)
 
 ## Try IPFS
-The docs has [an ipfs how-to](https://docs.ipfs.io/how-to/command-line-quick-start/#prerequisites) with the command line.
+#### Getting Started with IPFS
+
+<!--
+{% embed url="https://youtu.be/GcvGc3pgOT8" %} -->
+
+* [Command-Line Quick Start](https://docs.ipfs.io/how-to/command-line-quick-start/#prerequisites)
+* [Command Line installation instructions](https://docs.ipfs.io/install/command-line/#system-requirements)
+* [IPFS Distributions](https://dist.ipfs.io/#go-ipfs)
 
 
 ## Sections | IPFS
