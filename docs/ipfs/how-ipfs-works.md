@@ -18,16 +18,20 @@ At a high level, the talk covered the following concepts:
 
 #### Name
 * [Content IDentifiers (CIDs)](https://docs.ipfs.io/concepts/content-addressing/#content-addressing-and-cids) – These are self-describing hashes used to describe eerything stored in IPFS, essentially a hash with some metadata
-
+* Paths – Paths are recursive unlike URLs and can refer to previous blocks.
+* [IPNS](https://docs.ipfs.io/concepts/ipns/#interplanetary-name-system-ipns) – Public keys are mapped to a path, and you use your private key to sign it- as you modify this content, you can use IPNS to point to a new version of a previous piece of content that is signed by your private key.
 
 #### Find
+* [Routing & DHT](https://docs.ipfs.io/concepts/dht/#learn-more) – Content on IPFS uses a combination of a CID and routing systems that help identify the set of peers you can get the content from with a distributed routing table (or Distributed Hash Table).
+* [Kademlia](https://docs.ipfs.io/concepts/dht/#kademlia) – Kademlia is a distance metric + query algorithm that helps users find the peers with the most accessible pieces of data.
 
 #### Fetch
-
+* [Bitswap](https://docs.ipfs.io/concepts/bitswap/#how-bitswap-works) – Using wantlists of data, or CIDs, that specific users are looking for, and checks peers that a node is connected to first for those CIDs before querying the rest of the DHT.
 
 ### More IPFS Concepts
 _You can also [find this content in IPFS Docs](https://docs.ipfs.io/concepts/)_
- Because IPFS is a system that hopes to change how we use the Internet, it comes with many new concepts:
+
+Because IPFS is a system that hopes to change how we use the Internet, it comes with many new concepts:
 
 <!-- Which should we mark as optional? -->
 
