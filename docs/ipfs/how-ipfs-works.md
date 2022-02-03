@@ -5,15 +5,27 @@ description: The Basics of How IPFS Works
 ## How IPFS Works
 
 #### How IPFS Works | Steve Allen
+In this video, Steve Allen describes how IPFS **Imports, Names, Finds** and **Fetches** content.
+
 {% embed url="https://www.youtube.com/watch?v=0IGzEYixJHk" %}
 
-### IPFS Concepts
-_This is an [annotated version of this doc](https://www.youtube.com/watch?v=0IGzEYixJHk)_
+At a high level, the talk covered the following concepts:
 
-New to IPFS or the distributed web? Here's where to get started on understanding the key ingredients in what makes IPFS work. Because IPFS is a system that hopes to change how we use the Internet, it comes with many new concepts.
+#### Import
+* [Chunking](https://docs.ipfs.io/concepts/file-systems/#unix-file-system-unixfs) – When an object is added to IPFS, it is chunked up into smaller parts, each part is hashed, and a CID is created for each chunk. This DAG building process has two main parameters, the leaf format and the chunking strategy.
+* [UnixFS](https://docs.ipfs.io/concepts/file-systems/#unix-file-system-unixfs) – When you add a file to IPFS, it might be too big to fit in a single block, so it needs metadata to link all its blocks together. UnixFS is a protocol-buffers-based format for describing files, directories, and symlinks in IPFS. This data format is used to represent files and all their links and metadata in IPFS. UnixFS creates a block (or a tree of blocks) of linked objects.
+* [IPLD](https://docs.ipfs.io/project/related-projects/#ipld) – A meta-format for understanding, encoding, and decoding Merkle-linked data. IPLD works to make it possible to define a data model and make it possible to link together different types of Merkle-linked data.
 
-#### The IPFS Naming System
-![](<../../.gitbook/assets/image (8).png>)
+#### Name
+
+#### Find
+
+#### Fetch
+
+
+### More IPFS Concepts
+_You can also [find this content in IPFS Docs](https://docs.ipfs.io/concepts/)_
+ Because IPFS is a system that hopes to change how we use the Internet, it comes with many new concepts:
 
 <!-- Which should we mark as optional? -->
 

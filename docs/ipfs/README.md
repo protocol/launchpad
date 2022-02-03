@@ -60,7 +60,14 @@ Dive into the technical details [with this article](https://mikeal.notion.site/w
 ![Protocol Labs Logo](<../../.gitbook/assets/image (11).png>)
 
 ## Try IPFS
-The docs has [an ipfs how-to](https://docs.ipfs.io/how-to/command-line-quick-start/#prerequisites) with the command line.
+#### Getting Started with IPFS
+
+<!--
+{% embed url="https://youtu.be/GcvGc3pgOT8" %} -->
+
+* [Command-Line Quick Start](https://docs.ipfs.io/how-to/command-line-quick-start/#prerequisites)
+* [Command Line installation instructions](https://docs.ipfs.io/install/command-line/#system-requirements)
+* [IPFS Distributions](https://dist.ipfs.io/#go-ipfs)
 
 
 ## Sections | IPFS
