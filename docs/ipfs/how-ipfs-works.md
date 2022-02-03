@@ -63,19 +63,21 @@ Note, this document is not meant to be an introduction of the concepts in IPFS a
 #### IPFS and the Merkle DAG
 At the heart of IPFS is the MerkleDAG, a directed acyclic graph whose links are hashes. This gives all objects in IPFS useful properties:
 
-authenticated: content can be hashed and verified against the link
-permanent: once fetched, objects can be cached forever
-universal: any datastructure can be represented as a merkledag
-decentralized: objects can be created by anyone, without centralized writers
+- authenticated: content can be hashed and verified against the link
+- permanent: once fetched, objects can be cached forever
+- universal: any datastructure can be represented as a merkledag
+- decentralized: objects can be created by anyone, without centralized writers
+
 In turn, these yield properties for the system as a whole:
 
-links are content addressed
-objects can be served by untrusted agents
-objects can be cached permanently
-objects can be created and used offline
-networks can be partitioned and merged
-any datastructure can be modelled and distributed
-(todo: list more)
+- links are content addressed
+- objects can be served by untrusted agents
+- objects can be cached permanently
+- objects can be created and used offline
+- networks can be partitioned and merged
+- any datastructure can be modelled and distributed
+- (todo: list more)
+
 IPFS is a stack of network protocols that organize agent networks to create, publish, distribute, serve, and download merkledags. It is the authenticated, decentralized, permanent web.
 
 #### Nodes and Network Model
@@ -85,6 +87,7 @@ The IPFS network uses PKI based identity. An "ipfs node" is a program that can f
 privateKey, publicKey := keygen()
 nodeID := multihash(publicKey)
 ```
+
 See more in the [IPFS keystore spec](https://github.com/ipfs/specs/blob/master/KEYSTORE.md).
 
 ## IPFS Basics & Toolkits
