@@ -15,6 +15,9 @@ From LabWeek 2021
 
 <!-- Link to public copy of Slides: https://docs.google.com/presentation/d/1NJMonh2YolwKSpwEt61lU2YdvUswDAFhErn4RJwCVh0/edit#slide=id.p -->
 
+<a href="https://blog.ipfs.io/2020-07-20-dht-deep-dive/">Deep dive blog post on the DHT</a>
+
+<a href="https://docs.ipfs.io/concepts/dht">IPFS Docs: DHT</a>
 
 ### Radar
 <!-- Add a paragraph  -->
