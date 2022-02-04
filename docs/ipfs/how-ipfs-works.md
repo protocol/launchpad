@@ -28,7 +28,7 @@ At a high level, the talk covered the following concepts:
 #### Fetch
 * [Bitswap](https://docs.ipfs.io/concepts/bitswap/#how-bitswap-works) – Using wantlists of data, or CIDs, that specific users are looking for, and checks peers that a node is connected to first for those CIDs before querying the rest of the DHT.
 
-### More IPFS Concepts
+## More IPFS Concepts
 _You can also [find this content in IPFS Docs](https://docs.ipfs.io/concepts/)_
 
 Because IPFS is a system that hopes to change how we use the Internet, it comes with many new concepts:
@@ -44,6 +44,15 @@ Because IPFS is a system that hopes to change how we use the Internet, it comes 
 #### Whiteboard Series with NEAR | Ep: 42 Adin Schmahmann
 {% embed url="https://www.youtube.com/watch?v=J-drqD2UebM" %}
 
+## Tutorials
+Follow along with the video tutorial using the following resources:
+
+* [Command-Line Quick Start](https://docs.ipfs.io/how-to/command-line-quick-start/#prerequisites)
+* [Command Line installation instructions](https://docs.ipfs.io/install/command-line/#system-requirements)
+* [IPFS Distributions](https://dist.ipfs.io/#go-ipfs)
+
+#### Getting Started with IPFS
+{% embed url="https://youtu.be/t1JaBTBESq8" %}
 
 
 ## IPFS Basics & Toolkits (Optional)

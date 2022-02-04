@@ -37,7 +37,7 @@ IPFS as an organization is trying to look ahead to the next 10, 100, 1000 years 
 Though it gets difficult to predict what is going to happen in the next, say, 100 years, we can start to invest in it now with web3.
 
 
-Computers have gone through so many phases from the first computers, to machines that can timeshare, to multiprocessing and sandboxed VMs, to user terminals, to networked computers with multiprocessing, now with personal computers networked across a worldwide internet that all came from a relatively simple set of functions and data transmission.
+Computers have gone through so many phases from the first computers, to machines that can timeshare, to multiprocessing and sandboxed VMs, to user terminals, to networked computers with multiprocessing, now with personal computers networked across a worldwide internet that all came from a relatively simple set of functions and data transmission. Now, IPFS is on the front lines of the Web3 evolution the will bring us to the next stage in computing.
 
 ### What is Web3?
 
@@ -58,17 +58,6 @@ Web3 is an internet that shares and distributes the processesing and decision ma
 Dive into the technical details [with this article](https://mikeal.notion.site/web3-data-permanence-0230072b594748ed9aa0c71ad331f289).
 
 ![Web3 Stack](<../../.gitbook/assets/image (11).png>)
-
-## Try IPFS
-#### Getting Started with IPFS
-
-<!--
-{% embed url="https://youtu.be/GcvGc3pgOT8" %} -->
-
-* [Command-Line Quick Start](https://docs.ipfs.io/how-to/command-line-quick-start/#prerequisites)
-* [Command Line installation instructions](https://docs.ipfs.io/install/command-line/#system-requirements)
-* [IPFS Distributions](https://dist.ipfs.io/#go-ipfs)
-
 
 ## Sections | IPFS
 

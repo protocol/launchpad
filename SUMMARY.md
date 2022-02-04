@@ -14,6 +14,7 @@
 * [IPFS](docs/ipfs/README.md)
   * [How IPFS Works](docs/ipfs/how-ipfs-works.md)
   * [Who Uses IPFS](docs/ipfs/who-uses-ipfs.md)
+  * [IPFS Subsystems & Architecture](subsystems-architecture.md)
   * [The IPFS Gateways](docs/ipfs/ipfs-gateways.md)
   * [Bitswap](docs/ipfs/bitswap.md)
   * [Graphsync](docs/ipfs/graphsync.md)
