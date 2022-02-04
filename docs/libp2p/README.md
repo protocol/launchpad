@@ -51,7 +51,7 @@ While nodes are encouraged to support a specific set of common protocols, none o
 
 While there is no mandatory protocol, in practice nodes are encouraged to support the most commonly-supported protocols. This includes:
 
-* _secio_, which is responsible for encrypting communications.
+* _noise_ which is responsible for encrypting communications.
 * _mplex_ or _yamux_, which are protocols on top of secio that are responsible for multiplexing.
 
 [Multiplexing](https://en.wikipedia.org/wiki/Multiplexing) is the process in which multiple individual streams of data are grouped together into a single connection. As in, you probably have one coax or fiber cable coming into your apartment, but you and your roommate both want to stream different movies on Netflix. The data must be multiplexed to travel to your home, and demultiplexed to arrive at the correct device.
