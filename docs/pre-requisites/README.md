@@ -35,20 +35,11 @@ description: Pre-Requisites to prepare for Launchpad
 * [Best Practices Blog](https://consensys.github.io/smart-contract-best-practices/)
 * [Course](https://courses.consensys.net/courses/take/smart-contract-security/lessons/9798331-smart-contracts-security-best-practices)
 
-## Distributed Systems (Optional)
-
-* **MIT Distributed Systems Course**
-  * MIT 6.824 Course [Schedule & Resources](https://pdos.csail.mit.edu/6.824/schedule.html)
-    * MIT 6.824 [Distributed Systems Course](https://pdos.csail.mit.edu/6.824/)
-      * Course [Schedule & Resources](https://pdos.csail.mit.edu/6.824/schedule.html)
-    * [Labs - Implementing distributed systems in Go](https://ipfs.io/ipfs/Qmcri6S86LuivUY4FDcM1phu5REXcFYootxn1GsRoqnFN4/)
-
 ## Golang (Optional)
 
-* [Functional Options for friendly APIS](https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis)
+* PLs [Distributed Systems Curriculum (with Golang)](https://docs.google.com/document/d/18mlkt3JPHP2eSeDOeCE0wafnLKv95Taj0rDh0NIus3Y/edit#heading=h.l73q2rxlx59z). Includes a tutorial on debugging.Lots of good coding exercises.
 * [Go Comments and Conventions](https://github.com/golang/go/wiki/CodeReviewComments)
 * [Slice Tricks for Go](https://github.com/golang/go/wiki/SliceTricks)
-* PLs [Distributed Systems Curriculum (with Golang)](https://docs.google.com/document/d/18mlkt3JPHP2eSeDOeCE0wafnLKv95Taj0rDh0NIus3Y/edit#heading=h.l73q2rxlx59z). Includes a tutorial on debugging.Lots of good coding exercises.
 
 ## Computer Networks (Optional)
 
