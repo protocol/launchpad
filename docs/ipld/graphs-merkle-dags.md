@@ -8,6 +8,8 @@ Hence: **Merkle DAGs**.
 
 "Merkle Trees" are another common term for the same thing, however these are often associated with strict trees of hashes, where each level of the tree is _only_ the concatenation of hashes below it. This structure is useful for "inclusion" algorithms but is not strictly necessary to define a "Merkle DAG" (or "tree"). Any node in the tree may contain hashes of content below that node along with any other content that may be useful at that node.
 
+If you haven't worked with Merkle Trees before, [check out the tutorial in Protoschool to get a better understanding](https://proto.school/merkle-dags/01).
+
 ## Merkle Roots
 
 ![](<../../.gitbook/assets/ipld_merkle_roots.png>)
