@@ -41,7 +41,7 @@ This video is the basic setup for ipfs-go on a [linux VM](https://multipass.run/
 
 {% embed url="https://youtu.be/A7yZaYhrwyM" %}
 
-<!-- 
+<!--
 #### IPFS Basics – Working with Files in IPFS
 
 This video covers the basics of working with IPFS files in a Linux cli, as well as a quick explanation of the ins and outs of the IPFS desktop CLI and the Mutable File system used with it.
@@ -61,11 +61,6 @@ The commands covered and explained include:
 _You can also [find this content in IPFS Docs](https://docs.ipfs.io/concepts/)_
 
 Because IPFS is a system that hopes to change how we use the Internet, it comes with many new concepts:
-
-<!-- Which should we mark as optional? -->
-
-#### How IPFS Deals with Files | IPFS Camp 2019
-{% embed url="https://www.youtube.com/watch?v=Z5zNPwMDYGg" %}
 
 #### The Lifecycle of Data in DWeb | IPFS Camp 2019
 {% embed url="https://www.youtube.com/watch?v=fLUq0RkiTBA" %}
