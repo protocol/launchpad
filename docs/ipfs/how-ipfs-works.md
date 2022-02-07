@@ -41,7 +41,7 @@ This video is the basic setup for ipfs-go on a [linux VM](https://multipass.run/
 
 {% embed url="https://youtu.be/A7yZaYhrwyM" %}
 
-
+<!-- 
 #### IPFS Basics – Working with Files in IPFS
 
 This video covers the basics of working with IPFS files in a Linux cli, as well as a quick explanation of the ins and outs of the IPFS desktop CLI and the Mutable File system used with it.
@@ -54,7 +54,7 @@ The commands covered and explained include:
 * `ipfs get <put-your-CID-here>`
 * `ipfs pin <put-your-CID-here>`
 * `ipfs pin rm /ipfs/<put-your-CID-here>`
-*  `ipfs add`
+*  `ipfs add` -->
 
 
 ## More IPFS Concepts
@@ -72,7 +72,6 @@ Because IPFS is a system that hopes to change how we use the Internet, it comes 
 
 #### Whiteboard Series with NEAR | Ep: 42 Adin Schmahmann
 {% embed url="https://www.youtube.com/watch?v=J-drqD2UebM" %}
-
 ## IPFS Basics & Toolkits (Optional)
 
 #### IPFS Basics + Tools | ETHGlobal & Juan Benet
