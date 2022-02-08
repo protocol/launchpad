@@ -6,7 +6,7 @@ description: The IPFS Public DHT & Content Discovery and Routing
 The public distributed hash table is the record of content that is used, along with Kademlia, to discover content-addressed data in a peer-to-peer network.
 
 ### What does the DHT do for IPFS?
-A [DHT is a distributed system](https://blog.ipfs.io/2020-07-20-dht-deep-dive/) for mapping keys to values. In IPFS, the DHT is used as the fundamental component of the content routing system. It maps what the user is looking for (a CID) to the peer that is actually storing the matching content. There are 3 types of key-value pairings that are mapped using the DHT:
+A [DHT is a distributed system](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) for mapping keys to values. In IPFS, the DHT is used as the fundamental component of the content routing system. It maps what the user is looking for (a CID) to the peer that is actually storing the matching content. There are 3 types of key-value pairings that are mapped using the DHT:
 
 * Provider Records – These map a data identifier (i.e., a multihash) to a peer that has advertised that they have, and are willing, to provide you with that content. This is used by IPFS to find content, and IPNS to find pubsub peers.
 
@@ -15,7 +15,7 @@ A [DHT is a distributed system](https://blog.ipfs.io/2020-07-20-dht-deep-dive/) 
 * Peer Records – These map a peerID to a set of multiaddresses at which the peer may be reached. This is
 used by IPFS when we know of a peer with content, but do not know its address, and used for manual connections
 
-[Read Mored in the docs](https://docs.ipfs.io/concepts/dht)
+[Read More in the docs](https://docs.ipfs.io/concepts/dht)
 
 ## Kademlia
 
