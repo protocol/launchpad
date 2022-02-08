@@ -62,11 +62,6 @@ _You can also [find this content in IPFS Docs](https://docs.ipfs.io/concepts/)_
 
 Because IPFS is a system that hopes to change how we use the Internet, it comes with many new concepts:
 
-<!-- Which should we mark as optional? -->
-
-#### How IPFS Deals with Files | IPFS Camp 2019
-{% embed url="https://www.youtube.com/watch?v=Z5zNPwMDYGg" %}
-
 #### The Lifecycle of Data in DWeb | IPFS Camp 2019
 {% embed url="https://www.youtube.com/watch?v=fLUq0RkiTBA" %}
 
