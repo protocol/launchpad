@@ -41,15 +41,9 @@ This video is the basic setup for ipfs-go on a [linux VM](https://multipass.run/
 
 {% embed url="https://youtu.be/A7yZaYhrwyM" %}
 
-<<<<<<< HEAD
-
-<!-- #### IPFS Basics – Working with Files in IPFS
-
-=======
 <!--
 #### IPFS Basics – Working with Files in IPFS
 
->>>>>>> gitbook
 This video covers the basics of working with IPFS files in a Linux cli, as well as a quick explanation of the ins and outs of the IPFS desktop CLI and the Mutable File system used with it. -->
 
 <!-- {% embed url="https://youtu.be/A7yZaYhrwyM" %} -->
