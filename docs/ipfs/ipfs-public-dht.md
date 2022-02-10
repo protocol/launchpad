@@ -20,6 +20,9 @@ used by IPFS when we know of a peer with content, but do not know its address, a
 ## Kademlia
 
 [Kademlia](https://en.wikipedia.org/wiki/Kademlia) is a distributed hash table for decentralized peer-to-peer computer networks designed by Petar Maymounkov and David Mazières in 2002. It specifies the structure of the network and the exchange of information through node lookups.
+
+Kademlia makes it easier and quicker to find peers with content by, essentially, comparing how similar two nodes' content is and rank it by how similar or 'close' it is.
+
 #### The Public DHT | LabWeek 2021 <!-- Who Presented?  -->
 <!-- Add a context paragraph-- The DHT keeps the IPFS Network of Peers Connected... -->
 
