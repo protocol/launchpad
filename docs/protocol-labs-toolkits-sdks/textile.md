@@ -1,5 +1,5 @@
 ---
-description: Add the subtitle here
+description: Connecting and Extending PL Projects
 ---
 
 ## Textile
@@ -9,7 +9,7 @@ Textile is designed to connect and extend Libp2p, IPFS, and Filecoin.
 
 Textile’s suite of developer tools, including Powergate, Buckets, and ThreadDB, let developers build meaningful experiences quickly with Web3 protocols like libp2p, IPFS, and Filecoin.
 
-#### Building Web3: Textile and Data Ownership | Filecoin 
+#### Building Web3: Textile and Data Ownership | Filecoin
 
 {% embed url="https://www.youtube.com/watch?v=d1kpID1LSRE" %}
 
