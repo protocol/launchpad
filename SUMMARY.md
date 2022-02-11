@@ -60,10 +60,10 @@
   * [Estuary](docs/protocol-labs-toolkits-sdks/estuary.md)
   * [Fleek Space Daemon](docs/protocol-labs-toolkits-sdks/fleek-space-daemon.md)
   * [DIY Projects](docs/protocol-labs-toolkits-sdks/diy-projects.md) -->
-* [Built On IPFS and Filecoin](docs/built-on-ipfs-filecoin/README.md)
-  * [Filecoin Launchpad](docs/built-on-ipfs-filecoin/filecoin-launchpad.md)
-  * [Starling Case Study](docs/built-on-ipfs-filecoin/starling-case-study.md)
+<!-- * [Built On IPFS and Filecoin](docs/built-on-ipfs-filecoin/README.md)
+  * [Filecoin Launchpad](docs/built-on-ipfs-filecoin/filecoin-launchpad.md) -->
+  <!-- * [Starling Case Study](docs/built-on-ipfs-filecoin/starling-case-study.md)
   * [Community & Meetups](docs/built-on-ipfs-filecoin/community-meetups.md)
   * [Apps & Tooling](docs/built-on-ipfs-filecoin/apps-tooling.md)
-  * [Research & Grants](docs/built-on-ipfs-filecoin/research-grants.md)
+  * [Research & Grants](docs/built-on-ipfs-filecoin/research-grants.md) -->
 * [Additional Resources](docs/additional-learning-resources/README.md)
