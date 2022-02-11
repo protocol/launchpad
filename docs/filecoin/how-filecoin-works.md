@@ -58,7 +58,7 @@ Historically in other blockchains, miners specify a GasFee in a unit of native c
 * **_GasLimit_**: the limit on the amount of gas that a message's execution can consume, estimated and specified by a message sender. It is measured in units of Gas. The sum of _GasLimit_ for all messages included in a block must not exceed the _BlockGasLimit_. Messages will fail to execute if they run out of _Gas_, and any effects of the execution will be reverted.
 * **_GasFeeCap_**: the maximum token amount that a sender is willing to pay per GasUnit for including a message in a block. It is measured in units of attoFIL/Gas. A message sender must have a minimum balance of _GasFeeCap \* GasLimit_ when sending a message, even though not all of that will be consumed. _GasFeeCap_ can serve as a safeguard against high, unexpected _BaseFee_ fluctuations.
 * **_GasPremium_**: a priority fee that is paid to the block-producing storage provider. This is capped by _GasFeeCap_. The _BaseFee_ has a higher priority. It is measured in units of attoFIL/Gas and can be as low as 1 attoFIL/Gas.
-* **_Overestimation burn_**: an additional amount of gas to burn that grows larger when the difference between _GasLimit_ and _GasUsage_ is large. See [current implementation](https://github.com/filecoin-project/lotus/blob/v0.10.0/chain/vm/burn.go#L38)).
+* **_Overestimation burn_**: an additional amount of gas to burn that grows larger when the difference between _GasLimit_ and _GasUsage_ is large. (See [current implementation](https://github.com/filecoin-project/lotus/blob/v0.10.0/chain/vm/burn.go#L38)).
 
 
 [Read More](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#gas-fees)

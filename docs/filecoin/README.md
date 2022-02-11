@@ -18,6 +18,14 @@ Filecoin is a data storage and retrieval marketplace that coordinates untrusted 
 
 ![](<../../.gitbook/assets/image (1).png>)
 
+### Tutorials
+For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials])(https://proto.school/course/filecoin). Concepts covered include:
+
+* [Content addressing on the decentralized web](https://proto.school/content-addressing)
+* [Verifying Storage on Filecoin](https://proto.school/verifying-storage-on-filecoin)
+* [Merkle DAGs: Structuring Data for the Distributed Web](https://proto.school/merkle-dags)
+* [Anatomy of a CID (Multiformats)](https://proto.school/anatomy-of-a-cid)
+
 ### Data & Information about Filecoin
 
 * [https://stats.filecoin.io/](https://stats.filecoin.io)
