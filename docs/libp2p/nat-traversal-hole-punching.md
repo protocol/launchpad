@@ -7,10 +7,13 @@ description: Combining Protocols for NAT Traversal
 ### NAT Traversal & Hole Punching
 
 #### NAT Traversal
+NAT devices allow the use of private IP addresses on private networks behind routers with a single public IP address facing the Internet. The internal network devices communicate with hosts on the external network by changing the source address of outgoing requests to that of the NAT device and relaying replies back to the originating device.
 
 #### Hole Punching
 
 Hole Punching is the process of establishing direct connections between two libp2p peers in which one or both are behind firewalls and/or NATs (Network Address Translations).
+
+<!-- Hole punching blog http://bafybeigd25fcawofxm2jkjvnnk4z45d3ikolysdv7q4rzqlx2t5oj5v4ra.ipfs.localhost:8080/2022-01-20-libp2p-hole-punching/ -->
 
 This includes two types of hosts: publicly reachable and non-publicly reachable hosts. Addresses of the former type of hosts can be directly dialed on the public Internet. Addresses of the latter type of hosts can only be dialed through a relay protocol, or through some means of hole punching. The document refers to publicly reachable hosts as public and non-publicly reachable hosts as private.
 
