@@ -7,7 +7,11 @@ description: Combining Protocols for NAT Traversal
 ### NAT Traversal & Hole Punching
 
 #### NAT Traversal
-NAT devices allow the use of private IP addresses on private networks behind routers with a single public IP address facing the Internet. The internal network devices communicate with hosts on the external network by changing the source address of outgoing requests to that of the NAT device and relaying replies back to the originating device.
+
+[NAT Traversal](https://en.wikipedia.org/wiki/NAT_traversal) allows those using different Internet Protocols (such as IPFS and HTTP) to communicate through gateways. A necessary component of this is Network Address Translation. Because the people who originally designed IP addresses (a location address on the internet) didn't make it possible to make enough public IP addresses as there are machines to locate, there are a limited number of public IP addresses, and not every machine connected to the internet can have their own.
+
+In order to address this problem, routers and gateways use [**N**etwork **A**ddress **T**ranslation (NAT)](https://en.wikipedia.org/wiki/Network_address_translation) to connect each machine to the internet. Machines on a shared home or private network will have private IP addresses used within that network as their address, however, when each machine wants to connect with devices on the public internet, that router or gateway will add the public IP address to any packets of information machines send out when they communicate with the internet at large.
+
 
 #### Hole Punching
 
