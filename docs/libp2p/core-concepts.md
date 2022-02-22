@@ -30,17 +30,12 @@ NAT allows many machines to share a single public address, and it is essential f
 
 [Read More](https://docs.libp2p.io/concepts/nat/)
 
-#### Circuit Relay
+#### [Circuit Relay]((https://docs.libp2p.io/concepts/circuit-relay/))
 
 Circuit relay is a transport protocol that routes traffic between two peers over a third-party “relay” peer.
 
-In many cases, peers will be unable to traverse their NAT and/or firewall in a way that makes them publicly accessible. Or they may not share common transport protocols that would allow them to communicate directly.
+When two peers can connect, such as when there both are both behind a NAT, [the circuit relay is used](https://blog.aira.life/understanding-ipfs-circuit-relay-ccc7d2a39).
 
-To enable peer-to-peer architectures in the face of connectivity barriers like NAT, libp2p defines a [protocol called p2p-circuit](https://github.com/libp2p/specs/tree/master/relay). When a peer isn’t able to listen on a public address, it can dial out to a relay peer, which will keep a long-lived connection open. Other peers will be able to dial through the relay peer using a p2p-circuit address, which will forward traffic to its destination.
-
-The circuit relay protocol is inspired by TURN, which is part of the Interactive Connectivity Establishment collection of NAT traversal techniques.
-
-[Read More](https://docs.libp2p.io/concepts/circuit-relay/)
 
 #### Protocols
 
