@@ -8,60 +8,31 @@ description: The Building Blocks of Libp2p
 
 _This is an annotated version of_ [_this libp2p doc_](https://docs.libp2p.io/concepts/)
 
-libp2p covers a lot of ground, and may involve unfamiliar terminology and concepts. This section goes over the foundational concepts involved in libp2p.
+libp2p covers a lot of ground, and may involve unfamiliar terminology and concepts. This section defines some basic vocabulary and links to to the core information about these concepts.
 
-#### Transport
+#### [Transport](https://docs.libp2p.io/concepts/transport/)
 
-When you make a connection from your computer to a machine on the internet, chances are pretty good you’re sending your bits and bytes using TCP/IP, the wildly successful combination of the Internet Protocol, which handles addressing and delivery of data packets, and the Transmission Control Protocol, which ensures that the data that gets sent over the wire is received completely and in the right order.
+To communicate on the internet, you need to use an agreed upon **T**ransport **P**rotocol (most of the internet uses a TCP/IP combination). With Libp2p you can listen, dial, and provide addresses (which specify the transport). Libp2p makes it possible to use multiaddresses to communicate with different protocols, in a peer-to-peer fashion.
 
-Because TCP/IP is so ubiquitous and well-supported, it’s often the default choice for networked applications. While TCP and UDP (together with IP) are the most common protocols in use today, they are by no means the only options. Alternatives exist at lower levels (e.g. sending raw ethernet packets or bluetooth frames), and higher levels (e.g. QUIC, which is layered over UDP).
+#### [NAT Traversal]((https://docs.libp2p.io/concepts/nat/))
 
-In libp2p, we call these foundational protocols that move bits around transports, and one of libp2p’s core requirements is to be transport agnostic.
+NAT allows many machines with private addressed on a private network to use a single public address, however, it also comes with a firewall, which can make it difficult for two peers to connect.
 
-[Read More](https://docs.libp2p.io/concepts/transport/)
+[NAT Traversal](https://tailscale.com/blog/how-nat-traversal-works/) is a strategy for making it possible for two peers behing NATs to connect.
 
-#### NAT Traversal
+Libp2p uses [STUN Hole-Punching and the TURN Circuit Relay Protocol](https://docs.libp2p.io/concepts/nat/) to give peers direct access to communicate with one another.  
 
-The internet is composed of countless networks, bound together into shared address spaces by foundational transport protocols.
-
-As traffic moves between network boundaries, it’s very common for a process called Network Address Translation to occur. Network Address Translation (NAT) maps an address from one address space to another.
-
-NAT allows many machines to share a single public address, and it is essential for the continued functioning of the IPv4 protocol, which would otherwise be unable to serve the needs of the modern networked population with its 32-bit address space.
-
-[Read More](https://docs.libp2p.io/concepts/nat/)
 
 #### [Circuit Relay]((https://docs.libp2p.io/concepts/circuit-relay/))
 
-Circuit relay is a transport protocol that routes traffic between two peers over a third-party “relay” peer.
-
-When two peers can connect, such as when there both are both behind a NAT, [the circuit relay is used](https://blog.aira.life/understanding-ipfs-circuit-relay-ccc7d2a39).
+Circuit relay is a transport protocol that routes traffic between two peers over a third-party “relay” peer, when NAT Traversal and hole punching aren't an option, [the circuit relay can be used to connect them](https://blog.aira.life/understanding-ipfs-circuit-relay-ccc7d2a39).
 
 
-#### Protocols
+#### [Protocols](https://docs.libp2p.io/concepts/protocols/#what-is-a-libp2p-protocol)
 
-There are protocols everywhere you look when you’re writing network applications, and libp2p is has many. The kind of protocols this article is concerned with are the ones built with libp2p itself, using the core libp2p abstractions like transport, peer identity, addressing, and so on.
+Protocols define an application you are using with libp2p and provide the core funcitonality. [The Libp2p Protocol](https://docs.libp2p.io/concepts/protocols/#what-is-a-libp2p-protocol) uses Protocol Ids to identify them, Handler Functions to accept connections, and Binary Streams as a medium.
 
-Throughout this article, we’ll call this kind of protocol that is built with libp2p a libp2p protocol, but you may also see them referred to as “wire protocols” or “application protocols”.
-
-These are the protocols that define your application and provide its core functionality.
-
-There are some [key defining features of a libp2p protocol](https://docs.libp2p.io/concepts/protocols/#what-is-a-libp2p-protocol), and a protocol negotiation processes
-
-**Protocol Negotiation**
-
-When dialing out to initiate a new stream, libp2p will send the protocol id of the protocol you want to use. The listening peer on the other end will check the incoming protocol id against the registered protocol handlers.
-
-If the listening peer does not support the requested protocol, it will end the stream, and the dialing peer can try again with a different protocol, or possibly a fallback version of the initially requested protocol.
-
-If the protocol is supported, the listening peer will echo back the protocol id as a signal that future data sent over the stream will use the agreed protocol semantics.
-
-This process of reaching agreement about what protocol to use for a given stream or connection is called protocol negotiation.
-
-**Core Libp2p Protocols**
-
-In addition to the protocols that you write when developing a libp2p application, libp2p itself defines several foundational protocols that are used for core features.
-
-[Read More](https://docs.libp2p.io/concepts/protocols/)
+There are some [key defining features of a libp2p protocol](https://docs.libp2p.io/concepts/protocols/#what-is-a-libp2p-protocol), including a [protocol negotiation processes](https://docs.libp2p.io/concepts/protocols/#protocol-negotiation), and [libp2p uses other protocols defined here](https://docs.libp2p.io/concepts/protocols/#core-libp2p-protocols) to define itself.
 
 #### Peer Identity
 
