@@ -12,23 +12,23 @@ The Filecoin network is a distributed, peer-to-peer network formed by Filecoin p
 
 Peers communicate over secure channels that they use to distribute information to the network (gossiping), to transfer data among themselves, and to discover other peers, maintaining a well-connected swarm in which information like blocks and messages flows swiftly even when many thousands of peers participate.
 
-### [Filecoin Nodes](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#filecoin-nodes)
-
-Filecoin Nodes or Filecoin clients are peers that sync the Filecoin blockchain and validate the messages in every block, which, once applied, provide a global state.
-
-Filecoin Nodes can also publish different types of messages to the network by broadcasting them.
-
 #### Filecoin Storage Basics | Rod Vagg
 
 Learn about mining, sealing, sector types, Collateral, making deals, Filecoin+, offline deals.
 
 {% embed url="https://youtu.be/Sz2OQc2WOdA" %}
 
-### Filecoin Storage Providers (Miners)
+### [Filecoin Nodes](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#filecoin-nodes)
+
+Filecoin Nodes or Filecoin clients are peers that sync the Filecoin blockchain and validate the messages in every block, which, once applied, provide a global state.
+
+Filecoin Nodes can also publish different types of messages to the network by broadcasting them.
+
+
+### [Filecoin Storage Providers (Miners)](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#filecoin-storage-providers)
 
 The storage providers provide services to the network by executing different types of deals and appending new blocks to the chain (every 30 seconds), for which they collect FIL rewards.
 
-[Read More](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#filecoin-storage-providers)
 
 ### [Deals]((https://docs.filecoin.io/about-filecoin/how-filecoin-works/#deals))
 
