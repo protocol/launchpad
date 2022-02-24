@@ -1,5 +1,5 @@
 ---
-description: Pre-Requisites to prepare for Launchpad
+description: Pre-Requisites to Prepare for Launchpad
 ---
 
 # Pre-Requisites

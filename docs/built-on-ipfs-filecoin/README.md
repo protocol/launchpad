@@ -1,5 +1,5 @@
 ---
-description: Add the subtitle here
+description: Apps, Tooling, and Other Projects
 ---
 
 # Built On IPFS and Filecoin
@@ -29,5 +29,5 @@ IPFS and Filecoin have made it possible for a number of Dapps and tooling to be 
     * [April 13th Filecoin Meetup](https://www.youtube.com/watch?v=zjtsnqNjIfo)<span style="text-decoration:underline;"> </span>
     * [March 29th Core Devs Mtg](https://www.youtube.com/watch?v=utHInpSmoxw)<span style="text-decoration:underline;"> </span>
     * [March 30th Filecoin Plus](https://www.youtube.com/watch?v=BOLZ_iyVVaI)  
-    
+
 * Filecoin launchpad [https://www.youtube.com/playlist?list=PL_0VrY55uV19AJ9uqZODM16cL8oj3uAO-](https://www.youtube.com/playlist?list=PL_0VrY55uV19AJ9uqZODM16cL8oj3uAO-)
