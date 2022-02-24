@@ -15,7 +15,7 @@ This site is published on GitHub pages [On Gitbook](https://app.gitbook.com/o/-L
 
 ## Expectations
 
-This curriculum is designed for those who already have a basic set of software engineering skills. Launchpad Cadets will know:
+This curriculum is designed for those who already have a basic set of software engineering skills. Launchpad Cadets should at a minimum already know:
 
 * How to use Github for source control, including making PRs & suggestions
 * How to navigate and troubleshoot an operating system and install dependencies
