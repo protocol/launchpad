@@ -14,11 +14,16 @@ Please work with the team to review and organize Launchpad Curriculum. In order 
 4. Create a PR for your change to the `gitbook` branch. Questions? [ping the core contributors](https://github.com/protocol/launchpad/graphs/contributors) to this repository.
 
 ## Sections
-0. Pre-Requisites
-1. The Protocol Labs Network
-2. IPFS
-3. IPLD
-4. LibP2p
-5. Filecoin
-6. Protocol Labs Toolkits & SDKs
-7. Built on IPFS and Filecoin
+
+### Launchpad Learning Resources
+* The Protocol Labs Network
+* IPFS
+* IPLD
+* LibP2p
+* Filecoin
+
+### Other Resources
+* Pre-Requisites
+* Protocol Labs Toolkits & SDKs
+* Built on IPFS and Filecoin
+* Additional Resources
