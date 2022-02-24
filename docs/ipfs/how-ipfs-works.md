@@ -74,9 +74,3 @@ Because IPFS is a system that hopes to change how we use the Internet, it comes 
 <!-- Add Description -->
 
 {% embed url="https://www.youtube.com/watch?v=ldEDa6_CT7k" %}
-
-#### Interplanetary File Storage! | Simply Explained
-
-<!-- Add Description -->
-
-{% embed url="https://www.youtube.com/watch?v=5Uj6uR3fp-U" %}

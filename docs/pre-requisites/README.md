@@ -35,6 +35,14 @@ description: Pre-Requisites to Prepare for Launchpad
 * [Best Practices Blog](https://consensys.github.io/smart-contract-best-practices/)
 * [Webinar on Smart Contracts Security Best Practices](https://courses.consensys.net/courses/take/smart-contract-security/lessons/9798331-smart-contracts-security-best-practices)
 
+### IPFS
+
+#### Interplanetary File Storage! | Simply Explained
+
+<!-- Add Description -->
+
+{% embed url="https://www.youtube.com/watch?v=5Uj6uR3fp-U" %}
+
 
 #### Links
 
