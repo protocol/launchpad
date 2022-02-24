@@ -4,6 +4,7 @@ PLN Launchpad is a six-week onboarding program to train, onboard, and match engi
 
 * See the [Announcement Blog Post](https://protocol.ai/blog/announcing-pl-launchpad/)
 * [Apply](https://boards.greenhouse.io/protocollabs/jobs/4305898004?gh_src=8ab0a83a4us) to become a part of the next Launchpad cohort
+* See all the [job opportunities available in the Protocol Labs Network](https://protocol.getro.com/companies?page=2)
 
 Launchpad cohorts will onboard a wide funnel of primed talent into PL Network teams - and also grow network engineering culture, strong community bonds, and solid cross-functional knowledge of various parts of the PL Network tools and protocols.
 
