@@ -1,6 +1,11 @@
 # About Launchpad
 
-PLN Launchpad is a six-week onboarding program to train, onboard, and match engineers at scale with opportunities across the PL Network. Launchpad cohorts will onboard a wide funnel of primed talent into PL Network teams - and also grow network engineering culture, strong community bonds, and solid cross-functional knowledge of various parts of the PL Network tools and protocols. You can read more about Launchpad [here](https://protocol.almanac.io/docs/launchpad-bo0e0qpGcnxNq85SIjUQNlQzn0AiEmCD).
+PLN Launchpad is a six-week onboarding program to train, onboard, and match engineers and startup operators at scale with opportunities across the PL Network.
+
+* See the [Announcement Blog Post](https://protocol.ai/blog/announcing-pl-launchpad/)
+* [Apply](https://boards.greenhouse.io/protocollabs/jobs/4305898004?gh_src=8ab0a83a4us) to become a part of the next Launchpad cohort
+
+Launchpad cohorts will onboard a wide funnel of primed talent into PL Network teams - and also grow network engineering culture, strong community bonds, and solid cross-functional knowledge of various parts of the PL Network tools and protocols.
 
 ## About the Launchpad Curriculum
 

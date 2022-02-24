@@ -17,8 +17,6 @@ Please work with the team to review and organize Launchpad Curriculum. In order 
 
 ## Sections
 
-## Sections
-
 ### Launchpad Learning Resources
 * [The Protocol Labs Network](docs/protocol-labs-network/README.md)
 * [IPFS](docs/ipfs/README.md)
