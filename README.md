@@ -17,15 +17,17 @@ Please work with the team to review and organize Launchpad Curriculum. In order 
 
 ## Sections
 
+## Sections
+
 ### Launchpad Learning Resources
-* The Protocol Labs Network
-* IPFS
-* IPLD
-* LibP2p
-* Filecoin
+* [The Protocol Labs Network](docs/protocol-labs/README.md)
+* [IPFS](docs/ipfs/README.md)
+* [IPLD](docs/ipld/README.md)
+* [LibP2p](docs/libp2p/README.md)
+* [Filecoin](docs/filecoin/README.md)
 
 ### Other Resources
-* Pre-Requisites
-* Protocol Labs Toolkits & SDKs
-* Built on IPFS and Filecoin
-* Additional Resources
+* [Pre-Requisites](docs/pre-requisites/README.md)
+* [Protocol Labs Toolkits & SDKs](docs/protocol-labs-toolkits-sdks/README.md)
+* [Built on IPFS and Filecoin](docs/built-on-ipfs-filecoin/README.md)
+* [Additional Resources](docs/additional-learning-resources/README.md)
