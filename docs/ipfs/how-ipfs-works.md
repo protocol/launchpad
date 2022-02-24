@@ -54,7 +54,7 @@ This video covers the basics of working with IPFS files in a Linux cli, as well 
 * `ipfs get <put-your-CID-here>`
 * `ipfs pin <put-your-CID-here>`
 * `ipfs pin rm /ipfs/<put-your-CID-here>`
-*  `ipfs add` -->
+*  `ipfs add`  -->
 
 
 ## More IPFS Concepts
