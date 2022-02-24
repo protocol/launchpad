@@ -4,7 +4,7 @@ We welcome contributions, but please read the [About Launchpad page](docs/about-
 
 This site is [published on GitBook](https://app.gitbook.com/o/-L_E2woSLfhpBp2IPz9k/s/dJC0yfHL6n4VMktmNXWq/)
 
-**!Important** The deafult branch for this repository is **gitbook** not _main_. The published version of this is the gitbook branch, and other branches should be synced to the gitbook branch.
+**!Important** The default branch for this repository is **gitbook** not _main_. The published version of this is the gitbook branch, and other branches should be synced to the gitbook branch.
 
 ## Contributing to the Launchpad Curriculum
 
