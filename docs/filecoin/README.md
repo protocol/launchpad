@@ -30,6 +30,7 @@ For those who are newer to the world of Filecoin, Web3, and storage verification
 
 ### Data & Information about Filecoin
 
+* [Filecoin Spec](https://spec.filecoin.io/#section-intro)
 * [https://stats.filecoin.io/](https://stats.filecoin.io)
 * [https://dashboard.starboard.ventures/deals](https://dashboard.starboard.ventures/deals)
 * [https://status.filecoin.io/](https://status.filecoin.io)
