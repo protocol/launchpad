@@ -10,7 +10,7 @@ Launchpad cohorts will onboard a wide funnel of primed talent into PL Network te
 
 ## About the Launchpad Curriculum
 
-This Gitbook Collection contains the Launchpad curriculum of learning materials. It is published from a repository which contains intentionally organized and curated content about the PL Network, IPFS, libp2p, IPLD, Filecoin, and the variety of tools & SDKs that are used across the network. We welcome contributions, but please read and follow the steps below in the **Contributing to Launchpad Curriculum** section.
+This Gitbook Collection contains the Launchpad curriculum of learning materials. It is published from a repository which contains intentionally organized and curated content about the PL Network, IPFS, libp2p, IPLD, Filecoin, and the variety of tools & SDKs that are used across the network. We welcome contributions, but please read and follow the steps in the []**Contributing to Launchpad Curriculum** section in the README](./README.md).
 
 This site is published on GitHub pages [On Gitbook](https://app.gitbook.com/o/-L\_E2woSLfhpBp2IPz9k/s/dJC0yfHL6n4VMktmNXWq/), and the repo is located at [https://github.com/protocol/launchpad](https://github.com/protocol/launchpad)
 
