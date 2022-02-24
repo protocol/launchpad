@@ -4,6 +4,8 @@ We welcome contributions, but please read the [About Launchpad page](docs/about-
 
 This site is [published on GitBook](https://app.gitbook.com/o/-L_E2woSLfhpBp2IPz9k/s/dJC0yfHL6n4VMktmNXWq/)
 
+**!Important** The deafult branch for this repository is **gitbook** not _main_. The published version of this is the gitbook branch, and other branches should be synced to the gitbook branch.
+
 ## Contributing to the Launchpad Curriculum
 
 Please work with the team to review and organize Launchpad Curriculum. In order to contribute, visit the public Launchpad repository: [https://github.com/protocol/launchpad](https://github.com/protocol/launchpad)
