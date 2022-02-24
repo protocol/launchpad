@@ -1,6 +1,6 @@
 # About Launchpad
 
-PLN Launchpad is a six-week onboarding program to train, onboard, and match engineers and startup operators at scale with opportunities across the PL Network.
+Protocol Labs Network (PLN) Launchpad is a six-week onboarding program to train, onboard, and match engineers and startup operators at scale with opportunities across the PL Network.
 
 * See the [Announcement Blog Post](https://protocol.ai/blog/announcing-pl-launchpad/)
 * [Apply](https://boards.greenhouse.io/protocollabs/jobs/4305898004?gh_src=8ab0a83a4us) to become a part of the next Launchpad cohort
