@@ -28,4 +28,4 @@ Please work with the team to review and organize Launchpad Curriculum. In order 
 * [Pre-Requisites](docs/pre-requisites/README.md)
 * [Protocol Labs Toolkits & SDKs](docs/protocol-labs-toolkits-sdks/README.md)
 * [Built on IPFS and Filecoin](docs/built-on-ipfs-filecoin/README.md)
-* [Additional Resources](docs/additional-learning-resources/README.md)
+* [Additional Learning](docs/additional-learning-resources/README.md)
