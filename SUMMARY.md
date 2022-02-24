@@ -66,4 +66,4 @@
   * [Community & Meetups](docs/built-on-ipfs-filecoin/community-meetups.md)
   * [Apps & Tooling](docs/built-on-ipfs-filecoin/apps-tooling.md)
   * [Research & Grants](docs/built-on-ipfs-filecoin/research-grants.md) -->
-* [Additional Resources](docs/additional-learning-resources/README.md)
+* [Additional Learning](docs/additional-learning-resources/README.md)

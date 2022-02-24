@@ -2,8 +2,6 @@
 description: Deeper Learning and Context to Prepare you for Web3
 ---
 
-# Additional Resources
-
 ## Distributed Systems Course
 
 * **MIT Distributed Systems Course**
