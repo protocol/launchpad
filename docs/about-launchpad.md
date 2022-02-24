@@ -10,7 +10,7 @@ Launchpad cohorts will onboard a wide funnel of primed talent into PL Network te
 
 ## About the Launchpad Curriculum
 
-This Gitbook Collection contains the Launchpad curriculum of learning materials. It is published from a repository which contains intentionally organized and curated content about the PL Network, IPFS, libp2p, IPLD, Filecoin, and the variety of tools & SDKs that are used across the network. We welcome contributions, but please read and follow the steps in the [**Contributing to Launchpad Curriculum** section in the README](./README.md).
+This Gitbook Collection contains the Launchpad curriculum of learning materials. It is published from a repository which contains intentionally organized and curated content about the PL Network, IPFS, libp2p, IPLD, Filecoin, and the variety of tools & SDKs that are used across the network. We welcome contributions, but please read and follow the steps in the [**Contributing to Launchpad Curriculum** section in the README](./README.md), or you can [submit an issue](https://github.com/protocol/launchpad/issues).
 
 This site is published on GitHub pages [On Gitbook](https://app.gitbook.com/o/-L\_E2woSLfhpBp2IPz9k/s/dJC0yfHL6n4VMktmNXWq/), and the repo is located at [https://github.com/protocol/launchpad](https://github.com/protocol/launchpad)
 
@@ -20,8 +20,8 @@ This curriculum is designed for those who already have a basic set of software e
 
 * How to use Github for source control, including making PRs & suggestions
 * How to navigate and troubleshoot an operating system and install dependencies
-* A good level of knowledge in the programming language(s) of their choice
-* Experience using the basic software engineering design lifecycle
+* A good level of knowledge in a programming language(s)
+* Experience with the basic software engineering design lifecycle
 * Experience implementing and testing software projects
 
 
