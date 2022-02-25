@@ -58,7 +58,7 @@ Executing messages, for example by including transactions or proofs in the chain
 * **_GasPremium_**: a priority fee that is paid to the block-producing storage provider.
 * **_Overestimation burn_**: an additional amount of gas to burn that grows larger when the difference between _GasLimit_ and _GasUsage_ is large. (See [current implementation](https://github.com/filecoin-project/lotus/blob/v0.10.0/chain/vm/burn.go#L38)).
 
-### [Actors]((https://docs.filecoin.io/about-filecoin/how-filecoin-works/#actors))
+### [Actors](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#actors)
 Actors are a [software design pattern](https://en.wikipedia.org/wiki/Actor_model) for managing state. Accounts, Multisigs, Miners, and anything with a state, such as an account balance, are implemented as an _actor_.
 
 ### [Addresses](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#addresses)
@@ -70,6 +70,29 @@ In Filecoin, addresses are used to identify actors. There are 4 address types:
 * `3` - BLS Public Key Address
 
 
-### Filecoin for Developers & Builders <a href="#undefined" id="undefined"></a>
+### Filecoin for Developers & Builders | Pooja Shah
+
+In this talk by Pooja Shah of Protocol Labs, learn about the basic functioning and purpose of Filecoin. The Core features and use cases of Filecoin will be covered, and Pooja will also go over some of the activity going on in the ecosystem, including the core developer projects that make it possible to implement, develop, and use Filecoin.
 
 {% embed url="https://youtu.be/0EcBTPyfrt4" %}
+
+#### Filecoin Core Featuers
+* Granular control over parameters for data Storage
+* Storage receipts
+* Control over storage pricing (and what you will pay)
+* Content addressing
+* Data persistence
+
+#### Filecoin Use Cases
+* Filecoin for data storage
+* Filecoin for payments
+* Ancillary tools and services
+
+#### Filecoin Tools and Services (Products for Developers)
+* Filecoin Protocol implementation: These include [Lotus](https://github.com/filecoin-project/lotus) (go), go-filecoin, forest (Rust) and fuhon (C++)
+* Developer tools
+* Networks for
+* Hosted services
+* Other useful tools
+
+**Lotus Common Architecture** Currently for those using lotus directly, it is recommended that you have a hardware configuration with 32GB of RAM, an 8-core CPU, and 200BG+ of SSD storage to optimize
