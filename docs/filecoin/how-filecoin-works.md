@@ -76,6 +76,8 @@ In this talk by Pooja Shah of Protocol Labs, learn about the basic functioning a
 
 {% embed url="https://youtu.be/0EcBTPyfrt4" %}
 
+### Summary and Links
+
 #### Filecoin Core Featuers
 * Granular control over parameters for data Storage
 * Storage receipts
@@ -89,10 +91,13 @@ In this talk by Pooja Shah of Protocol Labs, learn about the basic functioning a
 * Ancillary tools and services
 
 #### Filecoin Tools and Services (Products for Developers)
-* Filecoin Protocol implementation: These include [Lotus](https://github.com/filecoin-project/lotus) (go), go-filecoin, forest (Rust) and fuhon (C++)
-* Developer tools
-* Networks for
-* Hosted services
-* Other useful tools
+* Filecoin Protocol implementation: These include [Lotus](https://github.com/filecoin-project/lotus) (go), go-filecoin, forest (Rust) and fuhon (C++).
+* Developer tools: these include Textile [Powergate](https://docs.textile.io/powergate/), Truffle [Ganache](https://trufflesuite.com/docs/filecoin/ganache/overview.html), Fleek [Space Daemon](https://docs.fleek.co/space-daemon/overview/) and more.
+* Filecoin Networks: Run Localnet to test before reelasing your apps on the [Lotus Devnet](https://github.com/textileio/lotus-devnet) or the [Filecoin Devnet](https://docs.filecoin.io/build/local-devnet/). Other developer networks can be [found in the docs](https://docs.filecoin.io/networks/). Learn more about Mainnet on the [Filecoin Website](https://filecoin.io/build/#tools-and-more) and [docs](https://docs.filecoin.io/get-started/).
+* Hosted services: These are Filecoin-backed pinning services (FPS) from to keep data available for those who don't want top maintain their own nodes. These include [Textile buckets](https://docs.textile.io/buckets/), [Pinata](https://www.pinata.cloud/), [Chainsafe](https://files.chainsafe.io/), [NFT Storage](https://nft.storage/), [Web3 Storage](https://web3.storage/), [Estuary](https://estuary.tech/), and more.
+* Other useful tools include Docker images, hosted Lotus endpoints, status tools, API clients, CLIs, wallets, remote signing, and more.
 
-**Lotus Common Architecture** Currently for those using lotus directly, it is recommended that you have a hardware configuration with 32GB of RAM, an 8-core CPU, and 200BG+ of SSD storage to optimize
+**Lotus Common Architecture** Currently for those using lotus directly, it is recommended that you have a hardware configuration with 32GB of RAM, an 8-core CPU, and at least 200 GB of SSD storage. See the [Filecoin docs on Hardware requirements](https://docs.filecoin.io/storage-provider/hardware-requirements/)
+
+<!-- ## Getting Started with a Filecoin Node
+Add Tutorial here -->
