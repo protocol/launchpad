@@ -39,7 +39,6 @@ description: Pre-Requisites to Prepare for Launchpad
 
 #### Interplanetary File Storage! | Simply Explained
 
-<!-- Add Description -->
 
 {% embed url="https://www.youtube.com/watch?v=5Uj6uR3fp-U" %}
 
