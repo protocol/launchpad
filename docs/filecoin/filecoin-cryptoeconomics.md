@@ -1,5 +1,5 @@
 ---
-description: Add the subtitle here
+description: Storage Providers, Clients, and the Economy
 ---
 
 ## The Filecoin Economy
