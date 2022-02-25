@@ -40,15 +40,6 @@ Protocol Labs drives breakthroughs in computing to push humanity forward.
 * **Open Source** all the things \o/.
 * **Collaborate** openly with many groups.
 
-## Sections | The Protocol Labs Network
-
-1. [What is the PL Network?](what-is-pl.md)
-2. [Teams in the PL Network](teams-in-pl.md)
-3. [Where we are Headed](where-we-headed.md)
-4. [Protocol Labs Culture](pl-culture.md)
-5. [Open Source Stewardship](os-stewardship.md)
-6. [Open Source Contributions](os-contributing.md)
-
 #### Links
 
 **IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs) - **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld) - **Libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p) - **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)

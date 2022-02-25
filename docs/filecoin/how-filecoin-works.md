@@ -1,29 +1,75 @@
 ---
-description: Add the subtitle here
+description: The Peer-to-peer Network for Sharing Files
 ---
 
 # How Filecoin Works
 
-### Filecoin basics <a href="#filecoin-basics" id="filecoin-basics"></a>
+## Filecoin Basics <a href="#filecoin-basics" id="filecoin-basics"></a>
 
-* **A basic introduction to how the Filecoin network operates:** [**https://docs.filecoin.io/about-filecoin/how-filecoin-works/#the-network**](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#the-network)**​**
-  * Includes:
-    * The Network
-    * Filecoin Nodes
-    * Filecoin Storage Providers (miners)
-    * Deals
-    * Proofs
-    * Gas
-    * Actors
-    * Addresses
-    * Building Blocks
+_A more thorough explanation of these concepts [can be found in the Filecoin docs](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#the-network)_
+
+The Filecoin network is a distributed, peer-to-peer network formed by Filecoin peers who participate in different ways.
+
+Peers communicate over secure channels that they use to distribute information to the network (gossiping), to transfer data among themselves, and to discover other peers, maintaining a well-connected swarm in which information like blocks and messages flows swiftly even when many thousands of peers participate.
+
+#### Filecoin Storage Basics | Rod Vagg
+
+Learn about mining, sealing, sector types, Collateral, making deals, Filecoin+, offline deals.
 
 {% embed url="https://youtu.be/Sz2OQc2WOdA" %}
 
-Mining, sealing, sector types, Collateral, making deals, Filecoin+, offline deals
+### [Filecoin Nodes](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#filecoin-nodes)
+
+Filecoin Nodes or Filecoin clients are peers that sync the Filecoin blockchain and validate the messages in every block, which, once applied, provide a global state.
+
+Filecoin Nodes can also publish different types of messages to the network by broadcasting them.
+
+
+### [Filecoin Storage Providers (Miners)](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#filecoin-storage-providers)
+
+The storage providers provide services to the network by executing different types of deals and appending new blocks to the chain (every 30 seconds), for which they collect FIL rewards.
+
+
+### [Deals]((https://docs.filecoin.io/about-filecoin/how-filecoin-works/#deals))
+
+There are two main types of deals in Filecoin: storage deals and retrieval deals.
+
+Storage deals are agreements between clients and storage providers to store some data in the network. Once a deal is initiated, and the storage provider has received the data to store, it will repeatedly prove to the chain that it is still storing the data per the agreement so that it can collect rewards. If not, the storage provider will be slashed and lose FIL.
+
+
+### [Proofs](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#proofs)
+
+As mentioned above, storage providers must prove that they are storing the data per the terms of a deal. That means that:
+
+- They must store all the data submitted by the client
+- They must store it during the whole lifetime of the deal
+
+
+### [Gas](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#gas-fees)
+
+Executing messages, for example by including transactions or proofs in the chain, consumes both computation and storage resources on the network. Gas is a measure of resources consumed by messages. The gas consumed by a message directly affects the cost that the sender has to pay for it to be included in a new block by a storage provider.
+
+**Important Gas Concepts**
+
+* **_GasUsage_**: the amount of gas that a message's execution actually consumes.
+* **_BaseFee_**: the amount of FIL that gets burned _per unit of gas consumed_ for the execution of every message.
+* **_GasLimit_**: the limit on the amount of gas that a message's execution can consume, estimated and specified by a message sender.
+* **_GasFeeCap_**: the maximum token amount that a sender is willing to pay per GasUnit for including a message in a block.
+* **_GasPremium_**: a priority fee that is paid to the block-producing storage provider.
+* **_Overestimation burn_**: an additional amount of gas to burn that grows larger when the difference between _GasLimit_ and _GasUsage_ is large. (See [current implementation](https://github.com/filecoin-project/lotus/blob/v0.10.0/chain/vm/burn.go#L38)).
+
+### [Actors]((https://docs.filecoin.io/about-filecoin/how-filecoin-works/#actors))
+Actors are a [software design pattern](https://en.wikipedia.org/wiki/Actor_model) for managing state. Accounts, Multisigs, Miners, and anything with a state, such as an account balance, are implemented as an _actor_.
+
+### [Addresses](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#addresses)
+In Filecoin, addresses are used to identify actors. There are 4 address types:
+
+* `0` - ID Address
+* `1` - SECP256K1 Public Key Address
+* `2` - Actor Address
+* `3` - BLS Public Key Address
+
 
 ### Filecoin for Developers & Builders <a href="#undefined" id="undefined"></a>
 
 {% embed url="https://youtu.be/0EcBTPyfrt4" %}
-
-Intro to Filecoin developer products

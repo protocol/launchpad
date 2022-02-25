@@ -2,11 +2,12 @@
 description: The Important History in the Evolution of IPFS
 ---
 
+<!--
 ## Historical Changes & Updates
-<!-- Give a bit of context, 1 or 2 paragraphs -->
+ Give a bit of context, 1 or 2 paragraphs 
 
 ### IPFS 0.5 Release
-<!-- Paragraph about content routing improvements -->
+ Paragraph about content routing improvements -->
 
 #### IPFS Intro & Welcome | Molly Mackinlay
 

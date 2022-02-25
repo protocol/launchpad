@@ -11,7 +11,7 @@ description: The What and the How
 
 **[IPFS Glossary](https://docs.ipfs.io/concepts/glossary/)**
 
-[Find out more in the Community section →](https://docs.ipfs.io/community/README.md)
+[IPFS Community](https://docs.ipfs.io/community/#community)
 
 ## JS-IPFS Examples
 _The full example can be found [in the ipfs-examples repo](https://github.com/ipfs-examples/js-ipfs-examples)_
@@ -61,9 +61,9 @@ Want to know more about the decentralized web (DWeb) and how it's changing the i
 
 [See more guides in the Concepts section →](https://docs.ipfs.io/concepts/README.md)
 
-::: callout
+### Interacite Tutorials
 ProtoSchool's self-guided [interactive tutorials](https://proto.school/tutorials) are designed to introduce you to decentralized web concepts, protocols, and tools. Explore JS-IPFS APIs by completing browser-based coding challenges in ProtoSchool's [IPFS course](https://proto.school/course/ipfs), or explore code-free intros to essential DWeb concepts and related projects in the IPFS ecosystem.
-:::
+
 
 ### See What Others are Building
 

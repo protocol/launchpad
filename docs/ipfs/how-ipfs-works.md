@@ -62,11 +62,6 @@ _You can also [find this content in IPFS Docs](https://docs.ipfs.io/concepts/)_
 
 Because IPFS is a system that hopes to change how we use the Internet, it comes with many new concepts:
 
-<!-- Which should we mark as optional? -->
-
-#### How IPFS Deals with Files | IPFS Camp 2019
-{% embed url="https://www.youtube.com/watch?v=Z5zNPwMDYGg" %}
-
 #### The Lifecycle of Data in DWeb | IPFS Camp 2019
 {% embed url="https://www.youtube.com/watch?v=fLUq0RkiTBA" %}
 
@@ -79,9 +74,3 @@ Because IPFS is a system that hopes to change how we use the Internet, it comes 
 <!-- Add Description -->
 
 {% embed url="https://www.youtube.com/watch?v=ldEDa6_CT7k" %}
-
-#### Interplanetary File Storage! | Simply Explained
-
-<!-- Add Description -->
-
-{% embed url="https://www.youtube.com/watch?v=5Uj6uR3fp-U" %}

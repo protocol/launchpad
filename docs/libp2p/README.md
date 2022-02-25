@@ -10,6 +10,14 @@ Libp2p is a modularized and extensible network stack to overcome the networking 
 
 Building large scale peer-to-peer systems has been complex and difficult over the last 15 years, and libp2p is a way to fix that. It is a “network stack,” a protocol suite that cleanly separates concerns, and enables sophisticated applications to only use the protocols they absolutely need, without giving up interoperability and upgradeability. libp2p grew out of IPFS, but it is built so that lots of people can use it for lots of different projects.
 
+### The Libp2p Roadmap
+
+**[Our long term roadmap](https://github.com/libp2p/specs/blob/master/ROADMAP.md)**
+
+This is the stuff that moves libp2p from "a networking toolbox to build P2P applications" to the thing that fundamentally reshapes the architecture of the Internet; our dreams and aspirations, the North star we should always keep in sight; this is what motivates us and it's speaks intimately to our mission statement; the libp2p analogy of IPFS working on Mars.
+
+[Node data dashboard](https://kademlia-exporter.max-inden.de/d/-avwMhsik/kademlia-exporter?orgId=1)
+
 ### Introduction to Libp2p | David Dias
 
 {% embed url="https://www.youtube.com/watch?v=CRe_oDtfRLw" %}

@@ -14,7 +14,7 @@
 * [IPFS](docs/ipfs/README.md)
   * [How IPFS Works](docs/ipfs/how-ipfs-works.md)
   * [Who Uses IPFS](docs/ipfs/who-uses-ipfs.md)
-  * [IPFS Subsystems & Architecture](subsystems-architecture.md)
+  * [IPFS Subsystems & Architecture](docs/ipfs/subsystems-architecture.md)
   * [The IPFS Gateways](docs/ipfs/ipfs-gateways.md)
   * [Bitswap](docs/ipfs/bitswap.md)
   * [Graphsync](docs/ipfs/graphsync.md)
@@ -47,27 +47,23 @@
   * [The Filecoin Protocol](docs/filecoin/sealing-proving.md)
   * [Progress & Future Work](docs/filecoin/where-we-are-headed.md)
   * [Filecoin Resources](docs/filecoin/filecoin-resources.md)
-<!-- * [Protocol Labs Toolkits & SDKs](docs/protocol-labs-toolkits-sdks/README.md)
-  * [Textile](docs/protocol-labs-toolkits-sdks/textile.md)
-  * [Ceramic](docs/protocol-labs-toolkits-sdks/ceramic.md)
-  * [Fission](docs/protocol-labs-toolkits-sdks/fission.md)
-  * [Web3.storage](docs/protocol-labs-toolkits-sdks/web3-storage.md)
-  * [Estuary](docs/protocol-labs-toolkits-sdks/estuary.md)
-  * [Fleek Space Daemon](docs/protocol-labs-toolkits-sdks/fleek-space-daemon.md)
-  * [DIY Projects](docs/protocol-labs-toolkits-sdks/diy-projects.md)
-* [Built On IPFS and Filecoin](docs/built-on-ipfs-filecoin/README.md)
-  * [Filecoin Launchpad](docs/built-on-ipfs-filecoin/filecoin-launchpad.md)
-  * [Starling Case Study](docs/built-on-ipfs-filecoin/starling-case-study.md)
-  * [Community & Meetups](docs/built-on-ipfs-filecoin/community-meetups.md)
-  * [Apps & Tooling](docs/built-on-ipfs-filecoin/apps-tooling.md)
-  * [Research & Grants](docs/built-on-ipfs-filecoin/research-grants.md) -->
+
 
 ## Other Resources
 
 * [Pre-Requisites](docs/pre-requisites/README.md)
-* [Additional Resources](docs/additional-learning-resources/README.md)
-  * [Some child page](docs/additional-learning-resources/some-child-page.md)
-  * [Some child page](docs/additional-learning-resources/some-child-page-1.md)
-  * [Some child page](docs/additional-learning-resources/some-child-page-2.md)
-  * [Some child page](docs/additional-learning-resources/some-child-page-3.md)
-  * [Some child page](docs/additional-learning-resources/some-child-page-4.md)
+* [Protocol Labs Toolkits & SDKs](docs/protocol-labs-toolkits-sdks/README.md)
+  * [Textile](docs/protocol-labs-toolkits-sdks/textile.md)
+  * [Ceramic](docs/protocol-labs-toolkits-sdks/ceramic.md)
+  <!-- * [Fission](docs/protocol-labs-toolkits-sdks/fission.md)
+  * [Web3.storage](docs/protocol-labs-toolkits-sdks/web3-storage.md)
+  * [Estuary](docs/protocol-labs-toolkits-sdks/estuary.md)
+  * [Fleek Space Daemon](docs/protocol-labs-toolkits-sdks/fleek-space-daemon.md)
+  * [DIY Projects](docs/protocol-labs-toolkits-sdks/diy-projects.md) -->
+* [Built On IPFS and Filecoin](docs/built-on-ipfs-filecoin/README.md)
+  <!-- * [Filecoin Launchpad](docs/built-on-ipfs-filecoin/filecoin-launchpad.md) -->
+  <!-- * [Starling Case Study](docs/built-on-ipfs-filecoin/starling-case-study.md)
+  * [Community & Meetups](docs/built-on-ipfs-filecoin/community-meetups.md)
+  * [Apps & Tooling](docs/built-on-ipfs-filecoin/apps-tooling.md)
+  * [Research & Grants](docs/built-on-ipfs-filecoin/research-grants.md) -->
+* [Additional Learning](docs/additional-learning-resources/README.md)
