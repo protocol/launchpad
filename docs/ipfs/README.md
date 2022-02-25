@@ -60,7 +60,7 @@ Dive into the technical details [with this article](https://mikeal.notion.site/w
 ![Web3 Stack](<../../.gitbook/assets/image (11).png>)
 
 ### Tutorials
-For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/ipfs). Concepts You should complete include:
+For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/ipfs). Concepts you should complete include:
 
 * [Content addressing on the decentralized web](https://proto.school/content-addressing)
 * [Merkle DAGs: Structuring Data for the Distributed Web](https://proto.school/merkle-dags)
