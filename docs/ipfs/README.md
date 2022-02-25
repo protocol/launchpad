@@ -59,6 +59,14 @@ Dive into the technical details [with this article](https://mikeal.notion.site/w
 
 ![Web3 Stack](<../../.gitbook/assets/image (11).png>)
 
+### Tutorials
+For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/ipfs). Concepts You should complete include:
+
+* [Content addressing on the decentralized web](https://proto.school/content-addressing)
+* [Merkle DAGs: Structuring Data for the Distributed Web](https://proto.school/merkle-dags)
+* [Anatomy of a CID (Multiformats)](https://proto.school/anatomy-of-a-cid)
+* [P2P Data Links with Content Addressing](https://proto.school/basics)
+
 **Links**
 
 **IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs) - **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld) - **Libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p) - **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)
