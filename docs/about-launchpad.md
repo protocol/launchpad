@@ -1,33 +1,29 @@
 # About Launchpad
 
-PLN Launchpad is a six-week onboarding program to train, onboard, and match engineers at scale with opportunities across the PL Network. Launchpad cohorts will onboard a wide funnel of primed talent into PL Network teams - and also grow network engineering culture, strong community bonds, and solid cross-functional knowledge of various parts of the PL Network tools and protocols. You can read more about Launchpad [here](https://protocol.almanac.io/docs/launchpad-bo0e0qpGcnxNq85SIjUQNlQzn0AiEmCD).
+Protocol Labs Network (PLN) Launchpad is a six-week onboarding program to train, onboard, and match engineers and startup operators at scale with opportunities across the PL Network.
+
+* See the [Announcement Blog Post](https://protocol.ai/blog/announcing-pl-launchpad/)
+* [Apply](https://boards.greenhouse.io/protocollabs/jobs/4305898004?gh_src=8ab0a83a4us) to become a part of the next Launchpad cohort
+* See all the [job opportunities available in the Protocol Labs Network](https://protocol.getro.com/companies?page=2)
+
+Launchpad cohorts will onboard a wide funnel of primed talent into PL Network teams - and also grow network engineering culture, strong community bonds, and solid cross-functional knowledge of various parts of the PL Network tools and protocols.
 
 ## About the Launchpad Curriculum
 
-This Gitbook Collection contains the Launchpad curriculum of learning materials. It is published from a repository which contains intentionally organized and curated content about the PL Network, IPFS, libp2p, IPLD, Filecoin, and the variety of tools & SDKs that are used across the network. We welcome contributions, but please read and follow the steps below in the **Contributing to Launchpad Curriculum** section.
+This Gitbook Collection contains the Launchpad curriculum of learning materials. It is published from a repository which contains intentionally organized and curated content about the PL Network, IPFS, libp2p, IPLD, Filecoin, and the variety of tools & SDKs that are used across the network. We welcome contributions, but please read and follow the steps in the [**Contributing to Launchpad Curriculum** section in the README](./README.md), or you can [submit an issue](https://github.com/protocol/launchpad/issues).
 
 This site is published on GitHub pages [On Gitbook](https://app.gitbook.com/o/-L\_E2woSLfhpBp2IPz9k/s/dJC0yfHL6n4VMktmNXWq/), and the repo is located at [https://github.com/protocol/launchpad](https://github.com/protocol/launchpad)
 
 ## Expectations
 
-This curriculum is designed for those who already have a basic set of software engineering skills. Launchpad Cadets will know:
+This curriculum is designed for those who already have a basic set of software engineering skills. Launchpad Cadets should at a minimum already know:
 
 * How to use Github for source control, including making PRs & suggestions
 * How to navigate and troubleshoot an operating system and install dependencies
-* A good level of knowledge in the programming language(s) of their choice
-* Experience using the basic software engineering design lifecycle
+* A good level of knowledge in a programming language(s)
+* Experience with the basic software engineering design lifecycle
 * Experience implementing and testing software projects
 
-## Sections
-
-1. [Pre-Requisites](pre-requisites/README.md)
-2. [The Protocol Labs Network](protocol-labs-network/README.md)
-3. [IPFS Learning Resources](ipfs/README.md)
-4. [IPLD Learning Resources](ipld/README.md)
-5. [LibP2p Learning Resources](libp2p/README.md)
-6. [Filecoin Learning Resources](filecoin/README.md)
-7. [Learn about Protocol Labs Toolkits & SDKs](protocol-labs-toolkits-sdks/README.md)
-8. [Learn about what is built on IPFS and Filecoin](built-on-ipfs-filecoin/README.md)
 
 ### ⚖️ Launchpad Principles
 

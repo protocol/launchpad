@@ -42,18 +42,6 @@ That works fine if all your devices are clients, but what about when a request f
 
 Libp2p also handles peer discovery and handshake protocols. In a world where clients act as servers too, there will inevitably be a variety of hardware, operating systems, and communication protocols between nodes. Encryption and security underpin Web3 design, and libp2p supports both unencrypted (e.g. TCP, UDP) and encrypted protocols (e.g. TLS, Noise) out of the box.
 
-Many web protocols are stuck in the 90’s, and as security holes are breached, more and more patches are added. That’s where libp2p’s modularity comes in. Libp2p is designed so that you can upgrade any element you want, all while remaining backwards compatible.
-
-Modularity Libp2p has been designed from the start to be very modular, so that it can be implemented in many different peer-to-peer projects. While nodes in traditional peer-to-peer applications are referred to by an IP address and port combination, libp2p uses the concept of a multiaddress instead. Some examples:
-
-* `/ip4/90.46.231.22/udp/25000` indicates the node whose IP address is `90.46.231.22` and listening on UDP port 25000.
-* `_/ip6/fe80::0202:b3ff:fe1e:8329/udp/1567/_quic` means that we should use [the QUIC protocol](https://en.wikipedia.org/wiki/QUIC) on top of UDP port 1567 with an IPv6 address. \*`/dnsaddr/example.com/tcp/80/ws` means that we should use the [WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket) on top of TCP port 80, using DNS to resolve the hostname example.com.
-
-Not all projects that use libp2p need to support all protocols. In fact, the concept of a multiaddress exists in order to make it possible to extend libp2p with new protocols (as was done for example with QUIC in the past). In the future we may, for example, add Bluetooth as a transport protocol.
-
-The second main aspect of libp2p’s modularity is its protocol negotiation process. Once a connection between two peers has been established, the only thing that libp2p handles is negotiating the protocols that are used on that connection.
-
-While nodes are encouraged to support a specific set of common protocols, none of them are technically mandatory. This makes it possible to easily experiment with new protocols or new ideas, and to deploy new versions of protocols while still supporting old versions without adding technical debt.
 
 ### The Main Libp2p Protocols
 
@@ -71,33 +59,26 @@ Once we have the ability to do this, we can, almost for free, open as many subst
 * [_kademlia_](https://en.wikipedia.org/wiki/Kademlia), for peer discovery and distributed records storage.
 * _floodsub_ and _gossipsub_, two \[pub-sub]\(https://en.wikipedia.org/wiki/
 
-In the context of Substrate, each project is able to define its own networking protocol. For example, the protocol used by the BBQ Birch testnet is named bbq while the protocol used by Polkadot is named dot.
 
 ### The Global Vision of Libp2p
 
 Another reason to use libp2p is its involvement in decentralized projects. It has been powering IPFS from the very beginning, and is going to be powering several emerging projects such as Filecoin, probably Ethereum 2.0, Agoric, and of course Substrate and Polkadot.
 
-Having multiple projects share the same network protocol has a big advantage: it makes it possible for nodes to share their capability across multiple networks. To give you an example, let’s take the relay protocol.
-
-In a decentralized environment, you often want nodes to be directly connected to one another. However, in practice, many nodes are not reachable, as they are behind NATs or use platforms that don’t allow incoming connections.
-
-To solve this problem, libp2p provides a protocol named relay which allows a node to act as a proxy between two other nodes. All communication is encrypted and the identity of the remote is verified, so the proxy cannot act as a man-in-the-middle.
-
-By having multiple projects use libp2p as their networking stack, they will all be able to benefit from the same relay nodes, and therefore share resources.
-
-Libp2p has been designed to be the network protocol powering the future of decentralization. When companies launch traditional applications, they only focus on the application experience and logic—they don’t need to reinvent TCP/IP. That is the ultimate goal of libp2p: allow application developers to develop applications knowing that their service will be reachable and available. With implementations in Rust, JavaScript, and Go and development in Java, Haskell, and Python, libp2p is growing fast.
-
 You can find the Rust code here: [libp2p/rust-libp2p](https://github.com/libp2p/rust-libp2p)
 
 If you want to contribute, start by checking out the [contribution guidelines](https://github.com/ipfs/community/blob/master/CONTRIBUTING.md).
-
-## More on Libp2p Basics (Optional)
 
 ### Intro to Libp2p | Encode Filecoin Club - Max Inden
 
 In this talk by Steven & Dietrich, they review some of the customs and best practices involved when becoming a part of an open source community.
 
 {% embed url="https://www.youtube.com/watch?v=7OZLImVRvro" %}
+
+### Tutorials
+For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/tutorials). Tutorials you should complete include:
+
+* [Introduction to Libp2p](https://proto.school/introduction-to-libp2p)
+* [Blogging on the Decentralized Web](https://proto.school/blog)
 
 ### Links
 

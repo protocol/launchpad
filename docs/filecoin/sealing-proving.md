@@ -24,8 +24,6 @@ description: Add the subtitle here
 * Consensus: [https://spec.filecoin.io/#section-algorithms.expected\_consensus](https://spec.filecoin.io/#section-algorithms.expected\_consensus)
 * Deal-making: [https://spec.filecoin.io/#section-systems.filecoin\_markets.storage\_market.deal-flow](https://spec.filecoin.io/#section-systems.filecoin\_markets.storage\_market.deal-flow)
 
-### FIL Protocol School (highly valuable deep dive into protocol design for any future Filecoin developer) <a href="#fil-protocol-school-highly-valuable-deep-dive-into-protocol-design-for-any-future-filecoin-developer" id="fil-protocol-school-highly-valuable-deep-dive-into-protocol-design-for-any-future-filecoin-developer"></a>
-
 #### **How the Filecoin Protocol works:** [**https://drive.google.com/drive/folders/1stQQlqN-V7tBwfSAcyLKnhCuViCTbwWm**](https://drive.google.com/drive/folders/1stQQlqN-V7tBwfSAcyLKnhCuViCTbwWm)**​** <a href="#how-the-filecoin-protocol-works-https-drive.google.com-drive-folders-1stqqlqn-v7tbwfsacylknhcuvictbw" id="how-the-filecoin-protocol-works-https-drive.google.com-drive-folders-1stqqlqn-v7tbwfsacylknhcuvictbw"></a>
 
 Program Agenda

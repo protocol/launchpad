@@ -37,7 +37,7 @@ IPFS as an organization is trying to look ahead to the next 10, 100, 1000 years 
 Though it gets difficult to predict what is going to happen in the next, say, 100 years, we can start to invest in it now with web3.
 
 
-Computers have gone through so many phases from the first computers, to machines that can timeshare, to multiprocessing and sandboxed VMs, to user terminals, to networked computers with multiprocessing, now with personal computers networked across a worldwide internet that all came from a relatively simple set of functions and data transmission. Now, IPFS is on the front lines of the Web3 evolution the will bring us to the next stage in computing.
+Computation has gone through so many phases; from the first computers, to machines that can timeshare, to multiprocessing and sandboxed VMs, to user terminals, to networked computers with multiprocessing, now with personal computers networked across a worldwide internet that all came from a relatively simple set of functions and data transmission. Now, IPFS is on the front lines of the Web3 evolution the will bring us to the next stage in computing.
 
 ### What is Web3?
 
@@ -55,22 +55,18 @@ Web2 is a version of the internet where users are able to easily create and post
 
 Web3 is an internet that shares and distributes the processesing and decision making necessary for the internet, where the users have soverign control over their data.
 
-Dive into the technical details [with this article](https://mikeal.notion.site/web3-data-permanence-0230072b594748ed9aa0c71ad331f289).
+Dive into the technical details [with this article on web3 data permanence](https://mikeal.notion.site/web3-data-permanence-0230072b594748ed9aa0c71ad331f289) By Mikeal Rogers.
 
 ![Web3 Stack](<../../.gitbook/assets/image (11).png>)
 
-## Sections | IPFS
+### Tutorials
+For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/ipfs). Tutorials you should complete include:
 
-* [IPFS](ipfs/about.md)
-  * [How IPFS Works](how-ipfs-works.md)
-  * [Who Uses IPFS](who-uses-ipfs.md)
-  * [The IPFS Gateways](ipfs-gateways.md)
-  * [Bitswap](bitswap.md)
-  * [Graphsync](graphsync.md)
-  * [Mutable Content](mutable-content.md)
-  * [Important IPFS History](ipfs-history.md)
-  * [IPFS Public DHT](ipfs-public-dht.md)
-  * [IPFS Resources](ipfs-resources.md)
+* [Content Addressing on the Decentralized Web](https://proto.school/content-addressing)
+* [Merkle DAGs: Structuring Data for the Distributed Web](https://proto.school/merkle-dags)
+* [Mutable File System](https://proto.school/mutable-file-system)
+* [Regular Files API](https://proto.school/regular-files-api) (read only)
+
 
 **Links**
 
