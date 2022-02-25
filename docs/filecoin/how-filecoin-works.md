@@ -6,7 +6,7 @@ description: The Peer-to-peer Network for Sharing Files
 
 ## Filecoin Basics <a href="#filecoin-basics" id="filecoin-basics"></a>
 
-_A more thorough explanaiton of these concepts [can be found in the Filecoin docs](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#the-network)_
+_A more thorough explanation of these concepts [can be found in the Filecoin docs](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#the-network)_
 
 The Filecoin network is a distributed, peer-to-peer network formed by Filecoin peers who participate in different ways.
 
