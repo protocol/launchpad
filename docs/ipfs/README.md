@@ -59,19 +59,6 @@ Dive into the technical details [with this article](https://mikeal.notion.site/w
 
 ![Web3 Stack](<../../.gitbook/assets/image (11).png>)
 
-## Sections | IPFS
-
-* [IPFS](ipfs/about.md)
-  * [How IPFS Works](how-ipfs-works.md)
-  * [Who Uses IPFS](who-uses-ipfs.md)
-  * [The IPFS Gateways](ipfs-gateways.md)
-  * [Bitswap](bitswap.md)
-  * [Graphsync](graphsync.md)
-  * [Mutable Content](mutable-content.md)
-  * [Important IPFS History](ipfs-history.md)
-  * [IPFS Public DHT](ipfs-public-dht.md)
-  * [IPFS Resources](ipfs-resources.md)
-
 **Links**
 
 **IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs) - **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld) - **Libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p) - **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)
