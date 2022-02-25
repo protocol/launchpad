@@ -45,7 +45,7 @@
   * [How Filecoin Works](docs/filecoin/how-filecoin-works.md)
   * [Filecoin Cryptoeconomics](docs/filecoin/filecoin-cryptoeconomics.md)
   * [The Filecoin Protocol](docs/filecoin/sealing-proving.md)
-  * [DRand](docs/filecoin/drand.md)
+  * [Drand](docs/filecoin/drand.md)
   * [Progress & Future Work](docs/filecoin/where-we-are-headed.md)
   * [Filecoin Resources](docs/filecoin/filecoin-resources.md)
 
