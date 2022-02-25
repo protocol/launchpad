@@ -21,12 +21,10 @@ Available storage, and the price of that storage, is not controlled by any singl
 _Filecoin is a data storage and retrieval marketplace that coordinates untrusted parties to buy and sell provable storage._
 
 ### Tutorials
-For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/filecoin). Concepts covered include:
+For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/filecoin). Tutorials you should complete include:
 
-* [Content addressing on the decentralized web](https://proto.school/content-addressing)
 * [Verifying Storage on Filecoin](https://proto.school/verifying-storage-on-filecoin)
-* [Merkle DAGs: Structuring Data for the Distributed Web](https://proto.school/merkle-dags)
-* [Anatomy of a CID (Multiformats)](https://proto.school/anatomy-of-a-cid)
+
 
 ### Data & Information About Filecoin
 
