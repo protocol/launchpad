@@ -1,5 +1,5 @@
 ---
-description: Add the subtitle here
+description: Incentivizing Decentralized Storage
 ---
 
 # Filecoin
