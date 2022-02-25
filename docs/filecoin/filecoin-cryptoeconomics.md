@@ -19,15 +19,19 @@ The Filecoin network will have [multiple types of providers](https://docs.fileco
 
 There are several special mechanisms that Filecoin blockchain implements, such as rewarding storage providers with a _power_ value that increases a provider's chance of being a block provider. The network also empowers clients through [Filecoin Plus](https://plus.fil.org/), a community-governed notary program that allows approved clients to make special storage deals that give their providers additional _power_.
 
-## Blog Posts
-* [**https://filecoin.io/blog/posts/filecoin-network-economics/**](https://filecoin.io/blog/posts/filecoin-network-economics/)
-* [**https://filecoin.io/blog/posts/introducing-the-filecoin-economy/**](https://filecoin.io/blog/posts/introducing-the-filecoin-economy/)
-  * [**https://filecoin.io/2020-engineering-filecoins-economy-en.pdf**](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)
-
-
 #### Filecoin Economy Deep Dive | Filecoin Foundation – ZX Zhang
 
+In this video, Zixuan Zhang explains how filecoin mining is like Airbnb for the data on the internet. Get a
+
 {% embed url="https://www.youtube.com/watch?v=MbLyVt2rISQ" %}
+
+## Blog Posts & Papers
+* [Filecoin Network Economics](https://filecoin.io/blog/posts/filecoin-network-economics/)
+* [Introducing the Filecoin Economy](https://filecoin.io/blog/posts/introducing-the-filecoin-economy/)
+* [Engineering Filecoin's Economy (Paper)](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)
+
+![Filecon Economy Diagram](<../../.gitbook/assets/Fil_Econ_Digram.png>)
+
 
 ### Other Cryptoeconomics Deep Dives (Optional)
 
