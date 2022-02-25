@@ -20,6 +20,12 @@ The [PL Spaceport](https://protocol.almanac.io/docs/protocol-labs-spaceport-sFKN
 
 To explore the various projects and tools building in the IPFS & Filecoin ecosystems, use the explorable ecosystem directories at [https://ecosystem.ipfs.io/](https://ecosystem.ipfs.io) & [https://ecosystem.filecoin.io/](https://ecosystem.filecoin.io)
 
+## Built and Building On
+
+You can see projects and tools that have been developed to make creating in web3 with Protocol Labs projects easier under [Protocol Labs Toolkits and SDKs](./protocol-labs-toolkits-sdks/README.md)
+
+Learn about the cool projects, apps, and tooling that is being built using the Protocol Labs technologies in the [Built on IPFS and Filecoin section](./protocol-labs-toolkits-sdks/README.md).
+
 ## Major Network Services and Working Groups
 
 **Working Groups (WGs)**

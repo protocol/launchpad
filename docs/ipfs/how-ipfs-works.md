@@ -54,7 +54,7 @@ This video covers the basics of working with IPFS files in a Linux cli, as well 
 * `ipfs get <put-your-CID-here>`
 * `ipfs pin <put-your-CID-here>`
 * `ipfs pin rm /ipfs/<put-your-CID-here>`
-*  `ipfs add` -->
+*  `ipfs add`  -->
 
 
 ## More IPFS Concepts
@@ -74,9 +74,3 @@ Because IPFS is a system that hopes to change how we use the Internet, it comes 
 <!-- Add Description -->
 
 {% embed url="https://www.youtube.com/watch?v=ldEDa6_CT7k" %}
-
-#### Interplanetary File Storage! | Simply Explained
-
-<!-- Add Description -->
-
-{% embed url="https://www.youtube.com/watch?v=5Uj6uR3fp-U" %}

@@ -14,6 +14,14 @@ IPLD answers the question: Can we extract a re-usable data layer from IPFS that 
 
 Every content addressed system reinvents the data layer, typically in non-reusable ways. But we think that **building the next Git should take hours, not days!** so IPLD aims to be an off-the-shelf content addressed data layer, with associated libraries, documentation and tooling.
 
+## Background Information (Optional)
+In order to understand the pieces that make up a CID and the IPLD model, you will need to understand the following fundamental concepts:
+* [Base Encoding](https://skorks.com/2009/08/different-types-of-encoding-schemes-a-primer/) – This is the basically the way that binary data is converted in to a compressed set of characters. for example, Base 10 encoding says that 0001 1010 = 26, but in base64 0001 1010 == MDAwMSAxMDEw. [Play around with different encoding here](https://cryptii.com/pipes/binary-to-base64)
+* [Hashing](https://www.sentinelone.com/cybersecurity-101/hashing/) – A hash is a function that converts one value to another. In cryptography, the function that converts data from one form to another is an unknown process that is so complex it is impossible(?) to reverse, that produces a unique, fixed length output.
+* [Codecs](https://www.analogictips.com/what-is-a-codec/) – Codecs are encoder/ decoder tools that translate to and from binary formats, in different ways.
+* [Varints](https://carlmastrangelo.com/blog/lets-make-a-varint) – Variable length integers, or Varints, are a way of compressing down integers into a smaller space than is normally needed. Since smaller numbers don't neet as many bytes to represent them (0000 0010 == 2) vs (1110 0011 == 27), you can add a byte at the beginning to indicate how many bits are needed, to save on bit usage.
+* [CIDs (Content Identifiers)](https://mikeal.notion.site/what-is-web3-994f2d4cf1944e99a898643cb704d9a6#e34e81fc76b0404ab20f55f0940dfbcd) – A CID is a binary address format that prepend a bunch of [varints](https://carlmastrangelo.com/blog/lets-make-a-varint) to **self-describe** the inner structure. a CID includes: cid has a few parts; the hash, a description of the hash, a description of the encoding format, and a single int (1) to represent “CIDv1”
+
 ## IPLD as Leverage
 
 Treating the data layer as a discrete system provides leverage to content addressed developers:
@@ -36,8 +44,8 @@ IPLD does not limit itself to peer to peer systems (Amazon S3 can be a perfectly
 
 At its most fundamental, **IPFS** is a collection of:
 
-1. binary blobs of data - "blocks";
-2. their associated content identifiers - CIDs
+1. Binary blobs of data - "blocks";
+2. Their associated content identifiers - CIDs
 
 These are both the core concerns of IPLD. IPFS builds on these primitives to provide a sophsticated peer to peer content addressing data stack, with a mature suite of tooling to deal with files.
 
@@ -60,19 +68,11 @@ Directories are graphs of named links pointing to files, forming graphs that add
 * [**A Terse, Quick IPLD Primer for the Engineer**](https://ipld.io/docs/intro/primer/)
 * [**IPLD in the InterPlanetary Ecosystem**](https://ipld.io/docs/intro/ecosystem/)
 
-## Sections | IPLD
+### Tutorials
+For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/ipld). Tutorials you should complete include:
 
-* [IPLD](README.md)
-  * [Content Addressing & CIDs](content-addressing-and-cids.md)
-  * [Graphs: Merkle DAGs](graphs-merkle-dags.md)
-  * [The IPLD Data Model](the-ipld-data-model.md)
-  * [Codecs](codecs.md)
-  * [IPLD & IPFS](ipld-and-ipfs.md)
-  * [IPLD Schemas](ipld-schemas.md)
-  * [Paths & Selectors](paths-and-selectors.md)
-  * [Distributed Data Structures](distributed-data-structures.md)
-  * [The CAR Format](the-car-format.md)
-  * [IPLD Resources](ipld-resources.md)
+* [Anatomy of a CID](https://proto.school/anatomy-of-a-cid)
+* [P2P Data Links with Content Addressing](https://proto.school/basics)
 
 #### Links
 
