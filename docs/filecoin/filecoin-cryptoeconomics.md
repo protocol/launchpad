@@ -21,7 +21,7 @@ There are several special mechanisms that Filecoin blockchain implements, such a
 
 #### Filecoin Economy Deep Dive | Filecoin Foundation – ZX Zhang
 
-In this video, Zixuan Zhang explains how filecoin mining is like Airbnb for the data on the internet. Get a better understanding of the industry, the economy, the storage services, power, Filecoin content delivery, and more.
+In this video, Zixuan Zhang explains how Filecoin is like Airbnb for data (storage) on the internet. Get a better understanding of the industry, the economy, the storage services, power, Filecoin content delivery, and more.
 
 {% embed url="https://www.youtube.com/watch?v=MbLyVt2rISQ" %}
 
