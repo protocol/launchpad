@@ -30,7 +30,7 @@ In this video, Zixuan Zhang explains how filecoin mining is like Airbnb for the 
 * [Introducing the Filecoin Economy](https://filecoin.io/blog/posts/introducing-the-filecoin-economy/)
 * [Engineering Filecoin's Economy (Paper)](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)
 
-![Protocol Labs Logo](<../../.gitbook/assets/Fil_Econ_Digram.png>)
+![Filecon Economy Diagram](<../../.gitbook/assets/Fil_Econ_Digram.png>)
 
 
 ### Other Cryptoeconomics Deep Dives (Optional)
