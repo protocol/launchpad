@@ -28,7 +28,7 @@ For those who are newer to the world of Filecoin, Web3, and storage verification
 * [Merkle DAGs: Structuring Data for the Distributed Web](https://proto.school/merkle-dags)
 * [Anatomy of a CID (Multiformats)](https://proto.school/anatomy-of-a-cid)
 
-### Data & Information about Filecoin
+### Data & Information About Filecoin
 
 * [Filecoin Spec](https://spec.filecoin.io/#section-intro)
 * [https://stats.filecoin.io/](https://stats.filecoin.io)
