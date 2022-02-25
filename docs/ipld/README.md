@@ -68,19 +68,11 @@ Directories are graphs of named links pointing to files, forming graphs that add
 * [**A Terse, Quick IPLD Primer for the Engineer**](https://ipld.io/docs/intro/primer/)
 * [**IPLD in the InterPlanetary Ecosystem**](https://ipld.io/docs/intro/ecosystem/)
 
-## Sections | IPLD
+### Tutorials
+For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/ipld). Tutorials you should complete include:
 
-* [IPLD](README.md)
-  * [Content Addressing & CIDs](content-addressing-and-cids.md)
-  * [Graphs: Merkle DAGs](graphs-merkle-dags.md)
-  * [The IPLD Data Model](the-ipld-data-model.md)
-  * [Codecs](codecs.md)
-  * [IPLD & IPFS](ipld-and-ipfs.md)
-  * [IPLD Schemas](ipld-schemas.md)
-  * [Paths & Selectors](paths-and-selectors.md)
-  * [Distributed Data Structures](distributed-data-structures.md)
-  * [The CAR Format](the-car-format.md)
-  * [IPLD Resources](ipld-resources.md)
+* [Anatomy of a CID](https://proto.school/anatomy-of-a-cid)
+* [P2P Data Links with Content Addressing](https://proto.school/basics)
 
 #### Links
 

@@ -99,6 +99,12 @@ In this talk by Steven & Dietrich, they review some of the customs and best prac
 
 {% embed url="https://www.youtube.com/watch?v=7OZLImVRvro" %}
 
+### Tutorials
+For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/). Tutorials you should complete include:
+
+* [Introduction to Libp2p](https://proto.school/introduction-to-libp2p)
+* [Blogging on the Decentralized Web](https://proto.school/blog)
+
 ### Links
 
 **IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs) - **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld) - **Libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p) - **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)

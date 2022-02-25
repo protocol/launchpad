@@ -59,18 +59,14 @@ Dive into the technical details [with this article](https://mikeal.notion.site/w
 
 ![Web3 Stack](<../../.gitbook/assets/image (11).png>)
 
-## Sections | IPFS
+### Tutorials
+For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/ipfs). Tutorials you should complete include:
 
-* [IPFS](ipfs/about.md)
-  * [How IPFS Works](how-ipfs-works.md)
-  * [Who Uses IPFS](who-uses-ipfs.md)
-  * [The IPFS Gateways](ipfs-gateways.md)
-  * [Bitswap](bitswap.md)
-  * [Graphsync](graphsync.md)
-  * [Mutable Content](mutable-content.md)
-  * [Important IPFS History](ipfs-history.md)
-  * [IPFS Public DHT](ipfs-public-dht.md)
-  * [IPFS Resources](ipfs-resources.md)
+* [Content Addressing on the Decentralized Web](https://proto.school/content-addressing)
+* [Merkle DAGs: Structuring Data for the Distributed Web](https://proto.school/merkle-dags)
+* [Mutable File System](https://proto.school/mutable-file-system)
+* [Regular Files API](https://proto.school/regular-files-api) (read only)
+
 
 **Links**
 
