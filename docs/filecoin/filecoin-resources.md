@@ -21,9 +21,9 @@ description: Resources and Reference for all Things Filecoin
   * Community meetups ([Calendar](https://calendar.google.com/calendar/b/6?cid=ZmlsZWNvaW4ub3JnX2o3bW1ldjI0ZzgwcmVsbzU2cHFtMWVsMWUwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20))
   * Working groups (join #enterprise-sp-wg for more info. Normally happens at Saturday noon EST, [zoom](https://us02web.zoom.us/u/kcJaBnwKNl))
   * Core Dev meetings ([Planning](https://github.com/filecoin-project/tpm/tree/master/Core%20Dev%20Meetings), [Recordings](https://www.youtube.com/playlist?list=PL\_0VrY55uV1-9t74K-eFQN7Bc7ROG06hT))
-  
+
 ### People
-  * Lotus: [Aayush Rajasekaran](mailto:aayush.rajasekaran@protocol.ai)[Łukasz Magiera](mailto:lukasz@protocol.ai)[Kuba Sztandera](mailto:kubuxu@protocol.ai)
+  * Lotus: [Aayush Rajasekaran](mailto:aayush.rajasekaran@protocol.ai) & [Łukasz Magiera](mailto:lukasz@protocol.ai)[Kuba Sztandera](mailto:kubuxu@protocol.ai)
   * Lotus miner: [Łukasz Magiera](mailto:lukasz@protocol.ai)
   * Go-actors: [Wyatt](mailto:wdaviau@protocol.ai)
   * Fil-markets: [Dirk McCormick](mailto:dirk@protocol.ai)[Aarsh Shah](mailto:aarsh.shah@protocol.ai)
