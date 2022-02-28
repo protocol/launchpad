@@ -17,9 +17,10 @@ description: Add the subtitle here
 * System (builtin) actors: [https://spec.filecoin.io/#section-systems.filecoin\_vm.sysactors](https://spec.filecoin.io/#section-systems.filecoin\_vm.sysactors)​
 * Filecoin Virtual Machine (WIP for user-defined actors): [fvm.filecoin.io](http://fvm.filecoin.io)​
 
-#### How the Filecoin Protocol Works
+### How the Filecoin Protocol Works
  [Filecoin School Resources](https://drive.google.com/drive/folders/1stQQlqN-V7tBwfSAcyLKnhCuViCTbwWm)
-Program Agenda
+
+#### Program Agenda
 
 * **Introduction (30mins)**
   * Filecoin introduction (10mins)
@@ -55,7 +56,7 @@ Program Agenda
 
 <details>
 
-<summary>Protocol School Notes (Recommended!)</summary>
+<summary>Protocol School Notes</summary>
 
 * **Introduction (30mins) \[Nicola]**
   * _Filecoin introduction (10mins)_
