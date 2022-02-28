@@ -67,6 +67,8 @@ Peers can send messages to topics. Each message gets delivered to all peers subs
 
 Stream Multiplexing (_stream muxing_) is a way of sending multiple streams of data over one communication link. It combines multiple signals into one unified signal so it can be transported 'over the wires', then it is demulitiplexed (_demuxed_) so it can be output and used by separate applications.
 
+This is done to share the transmission bandwidth available between multiple sources to make transmission for efficient.
+
 
 **Where it Fits In**
 
@@ -85,6 +87,4 @@ Use [Crate Libp2p](https://docs.rs/libp2p/0.40.0/libp2p/) to understand the modu
 
 _Find the_ [_full tutorial here_](https://docs.rs/libp2p/0.40.0/libp2p/tutorial/index.html)
 
-This tutorial aims to give newcomers a hands-on overview on how to use the Rust libp2p implementation. People new to Rust likely want to get started on Rust itself, before diving into all the networking fun. This library makes heavy use of asynchronous Rust. In case you are not familiar with these concepts the Rust async-book should prove useful. People new to libp2p might prefer to get a general overview at libp2p.io first, though libp2p knowledge is not required for this tutorial.
-
-This tutorial covers building a small ping clone, sending a ping to a peer, expecting a pong as a response.
+This tutorial aims to give newcomers a hands-on overview on how to use the Rust libp2p implementation.
