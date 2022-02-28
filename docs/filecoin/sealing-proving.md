@@ -12,20 +12,13 @@ description: Add the subtitle here
 
 ### The Filecoin Actors & State Tree <a href="#filecoin-actors" id="filecoin-actors"></a>
 
-* ​![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FdJC0yfHL6n4VMktmNXWq%2Fuploads%2F9sXqaU7dbfs8TKZPgeAy%2Fimage.png?alt=media\&token=1e9c8eef-b677-4352-a401-fb4559b58694)--> [https://f.io/1hY6-xOB](https://f.io/1hY6-xOB)​
+* ​[How Filecion Actors Work](https://f.io/1hY6-xOB)​
 * VM & Actors: [https://spec.filecoin.io/#section-systems.filecoin\_vm](https://spec.filecoin.io/#section-systems.filecoin\_vm)​
 * System (builtin) actors: [https://spec.filecoin.io/#section-systems.filecoin\_vm.sysactors](https://spec.filecoin.io/#section-systems.filecoin\_vm.sysactors)​
 * Filecoin Virtual Machine (WIP for user-defined actors): [fvm.filecoin.io](http://fvm.filecoin.io)​
 
-### Core Primitives (Optional reference) <a href="#core-primitives-optional-reference" id="core-primitives-optional-reference"></a>
-
-* Lotus versioning scheme: [https://github.com/filecoin-project/lotus/discussions/7053](https://github.com/filecoin-project/lotus/discussions/7053)​
-* Piece logistics: [https://spec.filecoin.io/#section-systems.filecoin\_files.piece ](https://spec.filecoin.io/#section-systems.filecoin\_files.piece)​
-* Consensus: [https://spec.filecoin.io/#section-algorithms.expected\_consensus](https://spec.filecoin.io/#section-algorithms.expected\_consensus)
-* Deal-making: [https://spec.filecoin.io/#section-systems.filecoin\_markets.storage\_market.deal-flow](https://spec.filecoin.io/#section-systems.filecoin\_markets.storage\_market.deal-flow)
-
-#### **How the Filecoin Protocol works:** [**https://drive.google.com/drive/folders/1stQQlqN-V7tBwfSAcyLKnhCuViCTbwWm**](https://drive.google.com/drive/folders/1stQQlqN-V7tBwfSAcyLKnhCuViCTbwWm)**​** <a href="#how-the-filecoin-protocol-works-https-drive.google.com-drive-folders-1stqqlqn-v7tbwfsacylknhcuvictbw" id="how-the-filecoin-protocol-works-https-drive.google.com-drive-folders-1stqqlqn-v7tbwfsacylknhcuvictbw"></a>
-
+#### How the Filecoin Protocol Works
+ [Filecoin School Resources](https://drive.google.com/drive/folders/1stQQlqN-V7tBwfSAcyLKnhCuViCTbwWm)
 Program Agenda
 
 * **Introduction (30mins)**
@@ -239,7 +232,15 @@ Program Agenda
 
 </details>
 
-### Storage Provider Resources (Optional) <a href="#storage-provider-resources-optional" id="storage-provider-resources-optional"></a>
+### Core Primitives (Optional reference) <a href="#core-primitives-optional-reference" id="core-primitives-optional-reference"></a>
+
+* Lotus versioning scheme: [https://github.com/filecoin-project/lotus/discussions/7053](https://github.com/filecoin-project/lotus/discussions/7053)​
+* Piece logistics: [https://spec.filecoin.io/#section-systems.filecoin\_files.piece ](https://spec.filecoin.io/#section-systems.filecoin\_files.piece)​
+* Consensus: [https://spec.filecoin.io/#section-algorithms.expected\_consensus](https://spec.filecoin.io/#section-algorithms.expected\_consensus)
+* Deal-making: [https://spec.filecoin.io/#section-systems.filecoin\_markets.storage\_market.deal-flow](https://spec.filecoin.io/#section-systems.filecoin\_markets.storage\_market.deal-flow)
+
+
+### Storage Provider Resources (Optional)
 
 {% embed url="https://youtu.be/XlqW3LrN578" %}
 
