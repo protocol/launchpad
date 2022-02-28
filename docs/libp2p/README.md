@@ -10,7 +10,7 @@ Libp2p is a modular system of *protocols*, *specifications* and *libraries* that
 
 ![](<../../.gitbook/assets/image (10).png>)
 
-Building large scale peer-to-peer systems has presented many complex difficulties, and libp2p is a way to fix that. The libp2p projects makes it possible for a [peer-to-peer](https://docs.libp2p.io/introduction/what-is-libp2p/#peer-to-peer-basics) applications to operate in an [interface that supports many Internet protocols](https://docs.libp2p.io/introduction/what-is-libp2p/#transport), with [secure identities](https://docs.libp2p.io/introduction/what-is-libp2p/#identity), [peer routing and content discovery](https://docs.libp2p.io/introduction/what-is-libp2p/#identity).
+Building large scale peer-to-peer systems has presented many complex difficulties, and libp2p is a way to fix that. The libp2p projects makes it possible for a [peer-to-peer](https://docs.libp2p.io/introduction/what-is-libp2p/#peer-to-peer-basics) applications to operate in an [interface that supports many Internet protocols](https://docs.libp2p.io/introduction/what-is-libp2p/#transport), with [secure identities](https://docs.libp2p.io/introduction/what-is-libp2p/#identity), [peer routing](https://docs.libp2p.io/introduction/what-is-libp2p/#peer-routing), and content discovery](https://docs.libp2p.io/introduction/what-is-libp2p/#content-discovery).
 
 ### The Libp2p Roadmap
 
@@ -44,7 +44,7 @@ Libp2p also handles peer discovery and handshake protocols. In a world where cli
 
 ### Intro to Libp2p | Encode Filecoin Club - Max Inden
 
-In this talk by Steven & Dietrich, they review some of the customs and best practices involved when becoming a part of an open source community.
+In this talk by Steven & Dietrich, they review some of the customs and best practices involved when becoming a part of an open source community. [Learn more about contributing](https://docs.libp2p.io/contributing/) and check out the [community repo](https://github.com/libp2p/community).
 
 {% embed url="https://www.youtube.com/watch?v=7OZLImVRvro" %}
 
