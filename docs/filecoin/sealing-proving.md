@@ -19,6 +19,8 @@ description: Add the subtitle here
 
 ### How the Filecoin Protocol Works
  [Filecoin School Resources](https://drive.google.com/drive/folders/1stQQlqN-V7tBwfSAcyLKnhCuViCTbwWm)
+ 
+ [![image](https://user-images.githubusercontent.com/618519/156397357-e5108eb5-2064-472e-b426-60d1f2ba1aad.png)](https://drive.google.com/drive/folders/1stQQlqN-V7tBwfSAcyLKnhCuViCTbwWm)
 
 #### Program Agenda
 
