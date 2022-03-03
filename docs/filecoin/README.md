@@ -4,7 +4,7 @@ description: Incentivizing Decentralized Storage
 
 # Filecoin
 
-**Filecoin in the incentivation structure** for IPFS
+**Filecoin in the incentivation structure** for IPFS.
 
 The mission of **Filecoin** is to create a decentralized, efficient, and robust foundation for humanity’s information.
 
