@@ -4,6 +4,8 @@ description: Incentivizing Decentralized Storage
 
 # Filecoin
 
+**Filecoin in the incentivation structure** for IPFS.
+
 The mission of **Filecoin** is to create a decentralized, efficient, and robust foundation for humanity’s information.
 
 Filecoin is a peer-to-peer network that stores files, with built-in economic incentives to ensure files are stored reliably over time. In other words, Filecoin is a decentralized storage network that provides data persistence via a decentralized protocol, and publicly verifiable storage proofs on a blockchain.
