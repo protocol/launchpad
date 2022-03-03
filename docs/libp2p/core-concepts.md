@@ -67,7 +67,7 @@ Peers can send messages to topics. Each message gets delivered to all peers subs
 
 Stream Multiplexing (_stream muxing_) is a way of sending multiple streams of data over one communication link. It combines multiple signals into one unified signal so it can be transported 'over the wires', then it is demulitiplexed (_demuxed_) so it can be output and used by separate applications.
 
-This is done to share the transmission bandwidth available between multiple sources to make transmission for efficient.
+This is done to share the transmission bandwidth available between multiple sources to make transmission more efficient.
 
 
 **Where it Fits In**
