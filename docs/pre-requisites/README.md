@@ -42,6 +42,9 @@ description: Pre-Requisites to Prepare for Launchpad
 
 {% embed url="https://www.youtube.com/watch?v=5Uj6uR3fp-U" %}
 
+### Web3
+* [Web2 vs. Web3 – Ethereum](https://ethereum.org/en/developers/docs/web2-vs-web3/)
+* [Decentralisation: the next big step for the worl wide web - The Guardian](https://www.theguardian.com/technology/2018/sep/08/decentralisation-next-big-step-for-the-world-wide-web-dweb-data-internet-censorship-brewster-kahle)
 
 #### Links
 
