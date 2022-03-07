@@ -71,6 +71,7 @@ Directories are graphs of named links pointing to files, forming graphs that add
 ### Tutorials
 For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/ipld). Tutorials you should complete include:
 
+* [Merkle DAGs: Structuring Data for the Distributed Web](https://proto.school/merkle-dags)
 * [Anatomy of a CID](https://proto.school/anatomy-of-a-cid)
 * [P2P Data Links with Content Addressing](https://proto.school/basics)
 

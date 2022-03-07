@@ -64,7 +64,6 @@ Dive into the technical details [with this article on web3 data permanence](http
 For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/ipfs). Tutorials you should complete include:
 
 * [Content Addressing on the Decentralized Web](https://proto.school/content-addressing)
-* [Merkle DAGs: Structuring Data for the Distributed Web](https://proto.school/merkle-dags)
 * [Mutable File System](https://proto.school/mutable-file-system)
 * [Regular Files API](https://proto.school/regular-files-api) (read only)
 
