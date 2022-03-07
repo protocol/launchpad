@@ -4,11 +4,18 @@ description: Pre-Requisites to Prepare for Launchpad
 
 ## Launchpad Pre-Requisites
 
-### Cryptocurrency
+
+### IPFS &  Web3
+
+#### Interplanetary File Storage! | Simply Explained
+
+{% embed url="https://www.youtube.com/watch?v=5Uj6uR3fp-U" %}
 
 [**How does a blockchain work - Simply Explained**](https://youtu.be/SSo_EIwHSd4)
 
 {% embed url="https://youtu.be/SSo_EIwHSd4" %}
+
+### Cryptocurrency
 
 [**How does bitcoin work?**](https://youtu.be/bBC-nXj3Ng4)
 
@@ -33,12 +40,6 @@ description: Pre-Requisites to Prepare for Launchpad
 * [Best Practices Blog](https://consensys.github.io/smart-contract-best-practices/)
 * [Webinar on Smart Contracts Security Best Practices](https://courses.consensys.net/courses/take/smart-contract-security/lessons/9798331-smart-contracts-security-best-practices)
 
-### IPFS &  Web3
-
-#### Interplanetary File Storage! | Simply Explained
-
-
-{% embed url="https://www.youtube.com/watch?v=5Uj6uR3fp-U" %}
 
 #### Web3 & Decentralization
 
