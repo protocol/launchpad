@@ -46,7 +46,7 @@ In some cases, those WGs might span multiple organizations, or companies. For ex
 Teams are the reporting organization structure established by Protocol Labs. Though they establish Labbers' general focus of work, the nature of PL's collborative organization means that Labbers may end up working with many individuals outside their team, and often with those outside of Protocol Labs itself.
 
 
-### IPFS, IPLD, Libp2p, and Filecoin
+### IPFS, IPLD, libp2p, and Filecoin
 
 The four main projects we will be focusing on are IPFS, IPLD, Libp2p, and Filecoin. Most of the information and interaction can be found on docs and GitHub organizations:
 
