@@ -33,7 +33,7 @@
   * [Distributed Data Structures](docs/ipld/distributed-data-structures.md)
   * [The CAR Format](docs/ipld/the-car-format.md)
   * [IPLD Resources](docs/ipld/ipld-resources.md)
-* [Libp2p](docs/libp2p/README.md)
+* [libp2p](docs/libp2p/README.md)
   * [Core Concepts](docs/libp2p/core-concepts.md)
   * [Gossipsub](docs/libp2p/gossipsub.md)
   * [Libp2p Connections and Users](docs/libp2p/libp2p-connections-users.md)

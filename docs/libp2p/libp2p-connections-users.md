@@ -2,17 +2,17 @@
 description: Add the subtitle here
 ---
 
-# Libp2p Connections and Users
+# libp2p Connections and Users
 
-### The Life of a Libp2p Connections
+### The Life of a libp2p Connections
 
 **The Life of a libp2p Connection | Jacob Heun**
 
 {% embed url="https://www.youtube.com/watch?v=zcWHamr5m_k" %}
 
-### Libp2p Users
+### libp2p Users
 
-The users of the Libp2p protocol suite.
+The users of the libp2p protocol suite.
 
 * [Prysmaticlabs.com](http://prysmaticlabs.com)
 * [onflow.org](http://onflow.org)

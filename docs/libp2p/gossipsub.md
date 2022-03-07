@@ -6,7 +6,7 @@ description: A Publish / Subscribe Message Delivery Network
 
 ### What is Gossipsub?
 
-**Demystifying Libp2p Gossipsub | Ethereum Foundation - Raúl Kripalani**
+**Demystifying libp2p Gossipsub | Ethereum Foundation - Raúl Kripalani**
 
 ### Gossipsub 1.1
 

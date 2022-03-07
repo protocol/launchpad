@@ -1,5 +1,5 @@
 ---
-description: The Building Blocks of Libp2p
+description: The Building Blocks of libp2p
 ---
 
 # Core Concepts
@@ -12,7 +12,7 @@ libp2p covers a lot of ground, and may involve unfamiliar terminology and concep
 
 #### [Transport](https://docs.libp2p.io/concepts/transport/)
 
-To communicate on the internet, you need to use an agreed upon **T**ransport **P**rotocol (most of the internet uses a TCP/IP combination). With Libp2p you can listen, dial, and provide addresses (which specify the transport). Libp2p makes it possible to use multiaddresses to communicate with different protocols, in a peer-to-peer fashion.
+To communicate on the internet, you need to use an agreed upon **T**ransport **P**rotocol (most of the internet uses a TCP/IP combination). With libp2p you can listen, dial, and provide addresses (which specify the transport). libp2p makes it possible to use multiaddresses to communicate with different protocols, in a peer-to-peer fashion.
 
 #### [NAT Traversal]((https://docs.libp2p.io/concepts/nat/))
 
@@ -20,7 +20,7 @@ NAT allows many machines with private addressed on a private network to use a si
 
 [NAT Traversal](https://tailscale.com/blog/how-nat-traversal-works/) is a strategy for making it possible for two peers behing NATs to connect.
 
-Libp2p uses [STUN Hole-Punching and the TURN Circuit Relay Protocol](https://docs.libp2p.io/concepts/nat/) to give peers direct access to communicate with one another.  
+libp2p uses [STUN Hole-Punching and the TURN Circuit Relay Protocol](https://docs.libp2p.io/concepts/nat/) to give peers direct access to communicate with one another.  
 
 
 #### [Circuit Relay]((https://docs.libp2p.io/concepts/circuit-relay/))
@@ -30,7 +30,7 @@ Circuit relay is a transport protocol that routes traffic between two peers over
 
 #### [Protocols](https://docs.libp2p.io/concepts/protocols/#what-is-a-libp2p-protocol)
 
-Protocols define an application you are using with libp2p and provide the core funcitonality. [The Libp2p Protocol](https://docs.libp2p.io/concepts/protocols/#what-is-a-libp2p-protocol) uses Protocol Ids to identify them, Handler Functions to accept connections, and Binary Streams as a medium.
+Protocols define an application you are using with libp2p and provide the core funcitonality. [The libp2p Protocol](https://docs.libp2p.io/concepts/protocols/#what-is-a-libp2p-protocol) uses Protocol Ids to identify them, Handler Functions to accept connections, and Binary Streams as a medium.
 
 There are some [key defining features of a libp2p protocol](https://docs.libp2p.io/concepts/protocols/#what-is-a-libp2p-protocol), including a [protocol negotiation processes](https://docs.libp2p.io/concepts/protocols/#protocol-negotiation), and [libp2p uses other protocols defined here](https://docs.libp2p.io/concepts/protocols/#core-libp2p-protocols) to define itself.
 
@@ -43,7 +43,7 @@ A Peer Identity (often written `PeerId`) is a unique multihash identifier for ea
 
 Flexible networks need flexible addressing systems. Since libp2p is designed to work across a wide variety of networks, we need a way to work with a lot of different addressing schemes in a consistent way.
 
-Libp2p uses a flexible addressing system that can work in many different networks and interact with many different addressing schemes. Libp2p uses known as a `multiaddress` (aka `multiaddr`), which is a convention for encoding multiple layers of addressing information into a single "future-proof" path structure.
+libp2p uses a flexible addressing system that can work in many different networks and interact with many different addressing schemes. libp2p uses known as a `multiaddress` (aka `multiaddr`), which is a convention for encoding multiple layers of addressing information into a single "future-proof" path structure.
 
 #### [Security](https://docs.libp2p.io/concepts/security-considerations/)
 
@@ -81,9 +81,9 @@ Implementations of the multiplexing module include mplex protocol developer for 
 
 ### Other Resources
 
-Use [Crate Libp2p](https://docs.rs/libp2p/0.40.0/libp2p/) to understand the modules, macros, structs, enums, traits, and functions used for the libp2p implementations
+Use [Crate libp2p](https://docs.rs/libp2p/0.40.0/libp2p/) to understand the modules, macros, structs, enums, traits, and functions used for the libp2p implementations
 
-#### Rust Libp2p Tutorial (Optional)
+#### Rust libp2p Tutorial (Optional)
 
 _Find the_ [_full tutorial here_](https://docs.rs/libp2p/0.40.0/libp2p/tutorial/index.html)
 
