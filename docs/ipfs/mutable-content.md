@@ -45,7 +45,7 @@ There are a couple of ways you can link to the content you are sharing, either u
 
 **Pubsub** Makes it possible for users to share the content with the peers that wish to subscribe to it & delivers messages throughout a decentralized network. Read more in the [libp2p docs](https://docs.libp2p.io/concepts/publish-subscribe/).
 
-
+<!--
 ## Tutorial: Example IPNS Setup with CLI
 
 1. Start your IPFS daemon, if it isn't already running:
@@ -166,8 +166,6 @@ IPNS is not the only way to create mutable addresses on IPFS. You can also use [
 ## DNS Link
 _This is an [annotated version of this doc](https://docs.ipfs.io/concepts/dnslink/)_
 
-<!-- What can be taken out? -->
-
 DNSLink uses [DNS `TXT` records](https://en.wikipedia.org/wiki/TXT_record) to map a DNS name, like [`ipfs.io`](https://ipfs.io), to an IPFS address. Because you can edit your DNS records, you can use them to always point to the latest version of an object in IPFS. Since DNSLink uses DNS records, you can assign names, paths, and sub-domains that are easy to type, read, and remember.
 
 A DNSLink address looks like an [IPNS](ipns.md) address, but it uses a DNS name in place of a hashed public key:
@@ -223,4 +221,4 @@ Will get you this block:
 
 ```
 /ipfs/QmVMxjouRQCA2QykL5Rc77DvjfaX6m8NL6RyHXRTaZ9iya/introduction/
-```
+``` -->
