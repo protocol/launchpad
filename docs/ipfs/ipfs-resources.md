@@ -13,7 +13,12 @@ description: The What and the How
 
 [IPFS Community](https://docs.ipfs.io/community/#community)
 
-### [JS-IPFS Examples](https://github.com/ipfs-examples/js-ipfs-examples)_
+### [JS-IPFS Examples](https://github.com/ipfs-examples)
+
+### [IPFS Projects](https://github.com/ipfs)
+* [go-ipfs](https://github.com/ipfs/go-ipfs)
+* [js-ipfs](https://github.com/ipfs/js-ipfs)
+
 
 ## IPFS Tools
 _This information is [also available on ipfs-docs.io](https://docs.ipfs.io/)_
