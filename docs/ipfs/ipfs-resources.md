@@ -13,6 +13,8 @@ description: The What and the How
 
 [IPFS Community](https://docs.ipfs.io/community/#community)
 
+## GitHub
+
 ### [JS-IPFS Examples](https://github.com/ipfs-examples)
 
 ### [IPFS Projects](https://github.com/ipfs)
@@ -25,7 +27,7 @@ _This information is [also available on ipfs-docs.io](https://docs.ipfs.io/)_
 
 These tools can help you use and build on IPFS more quickly and efficiently — give them a try today!
 
-* [Browser Companion](https://github.com/ipfs-shipyard/ipfs-companion
+* [Browser Companion](https://github.com/ipfs-shipyard/ipfs-companion)
 *  [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop)
 * [IPLD Explorer](https://explore.ipld.io/)
 
