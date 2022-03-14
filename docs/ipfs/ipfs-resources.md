@@ -46,25 +46,6 @@ These tools can help you use and build on IPFS more quickly and efficiently — 
 | [Browser Companion](https://github.com/ipfs-shipyard/ipfs-companion)            | [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop)                                          | [IPLD Explorer](https://explore.ipld.io/)                           |
 
 
-## Learn More
-### Host your website on IPFS
-
-Protect yourself from single-point-of-failure risks and benefit from decentralized infrastructure by hosting your static website using IPFS. If you're new to IPFS, this is an excellent place to start learning how to build on the decentralized web.
-
-### Learn About the Decentralized Web
-
-Want to know more about the decentralized web (DWeb) and how it's changing the internet? These resources will give you a clearer understanding of the DWeb movement, and how it's improving the world:
-
-- [What is IPFS](https://docs.ipfs.io/concepts/what-is-ipfs.md)
-- [Peer-to-peer sharing](https://docs.ipfs.io/concepts/dht.md)
-- [Content-addressed data](https://docs.ipfs.io/concepts/content-addressing.md)
-
-[See more guides in the Concepts section →](https://docs.ipfs.io/concepts/README.md)
-
-### Interacite Tutorials
-ProtoSchool's self-guided [interactive tutorials](https://proto.school/tutorials) are designed to introduce you to decentralized web concepts, protocols, and tools. Explore JS-IPFS APIs by completing browser-based coding challenges in ProtoSchool's [IPFS course](https://proto.school/course/ipfs), or explore code-free intros to essential DWeb concepts and related projects in the IPFS ecosystem.
-
-
 ### See What Others are Building
 
 Are you looking for inspiration? You can find a huge collection of awesome community projects over at Awesome IPFS.
