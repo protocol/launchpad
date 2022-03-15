@@ -15,7 +15,7 @@ description: Pre-Requisites to Prepare for Launchpad
 
 {% embed url="https://youtu.be/SSo_EIwHSd4" %}
 
-### Cryptocurrency
+### Cryptocurrency & the Blockchain
 
 [**How does bitcoin work?**](https://youtu.be/bBC-nXj3Ng4)
 
@@ -29,7 +29,7 @@ description: Pre-Requisites to Prepare for Launchpad
 
 {% embed url="https://youtu.be/ZE2HxTmxfrI" %}
 
-### Crypto Basics
+### Crypto Tools
 
 * [What are NFTs?](https://www.youtube.com/watch?v=FkUn86bH34M)
 {% embed url="https://www.youtube.com/watch?v=FkUn86bH34M" %}
