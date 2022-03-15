@@ -36,16 +36,18 @@ description: Resources and Reference for all Things Filecoin
   * Community mgmt + releases: [Jennifer Wang](mailto:jennifer.wang@protocol.ai)
   * FIPs: [kaitlin@fil.org](mailto:kaitlin@fil.org)
 
-## More Filecoin Initiatives:
+## More Filecoin Initiatives
 ### Filecoin Virtual Machine
   * [Video – Introducing the FVM](https://www.youtube.com/watch?v=Vw9syGiG31c&t=1s)
-  * [Blog – Introducing the FVM](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/]
+  * [Blog – Introducing the FVM](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/)
   * [FVM Website](https://fvm.filecoin.io/)
+  
 ### Filecoin Plus
   * [Blog – Filecoin Plus: How Storage Providers Can Engage with Verified Clients](https://filecoin.io/blog/posts/filecoin-plus-how-storage-providers-can-engage-with-verified-clients/)
   * [Filecoin Plus Website](https://plus.fil.org/)
-### Filecoin Green:
+
+### Filecoin Green
  * [Video – Tools for Greening Filecoin](https://www.youtube.com/watch?v=leA6cbq6ToA)
  * [Blog – Filecoin Green](https://filecoin.io/blog/posts/filecoin-green/)
- * [Filecoin Green Website](https://filecoin.io/blog/posts/filecoin-green/)
+
 ### [Filecoin Foundation for the Decentralised Web](https://ffdweb.org/)
