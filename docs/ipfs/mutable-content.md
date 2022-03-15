@@ -3,24 +3,29 @@ description: Mutable content in IPFS
 ---
 
 ## Mutable Content
-<!-- What is mutable content, in simple terms, and what does it mean in this context? -->
+One of the most powerful things about IPFS is that any piece of data or content you store on the network cannot be modified with changing the [Content Identifier (CID)](https://protocol-labs.gitbook.io/launchpad-curriculum/launchpad-learning-resources/ipld/content-addressing-and-cids) of that piece of content, because the content identifier is created in part by hashing the content.
 
-_This is an [copy of the tutorial on ResNetLab Tutorials](https://research.protocol.ai/tutorials/resnetlab-on-tour/mutable-content/)_
+The fact that data is also created on the blockchain - that is, the content in one block contains, as a part of the data that makes it up, the id of the block of content that is the parent of that block - also contributes to the immutability of that piece of data.
+
+### Pinning and Immutability
+Data on IPFS will not by default remain on that network unless it is pinned. In order to make a piece of data a persistent piece of data, you either need to make sure that data is pinned on a node that is active on the IPFS network.
+
+Your options for persistent data are:
+1. You pin it yourself, and keep that node active on the network
+2. You make an agreement with a [pinning service](https://docs.ipfs.io/concepts/persistence/#pinning-services) and pay them to make sure your data persists in long-term storage.
 
 #### Mutable Content | ResNetLabs on Tour – David Dias
 
-<!-- Add introduction here -->
-
 {% embed url="https://www.youtube.com/watch?v=57guoGS53Bo&t=12s" %}
 
-<!-- Add main points -->
+_This is an [copy of the tutorial on ResNetLab Tutorials](https://research.protocol.ai/tutorials/resnetlab-on-tour/mutable-content/)_
 
 ## The InterPlanetary Name System
 _This is an [annotated version of this doc](https://docs.ipfs.io/concepts/ipns/)_
 
 <!-- What can be kept in? Removed? -->
 
-IPFS uses [content-based addressing](content-addressing.md); it creates an address of a file based on data contained within the file. If you were to share an IPFS address such as `/ipfs/QmbezGequPwcsWo8UL4wDF6a8hYwM1hmbzYv2mnKkEWaUp` with someone, you would need to give the person a new link every time you update the content.
+Since IPFS uses [content-based addressing](content-addressing.md), if you were to share an IPFS address such as `/ipfs/QmbezGequPwcsWo8UL4wDF6a8hYwM1hmbzYv2mnKkEWaUp` with someone, you would need to give the person a new link every time you update the content.
 
 The InterPlanetary Name System (IPNS) solves this issue by creating an address that can be updated.
 
