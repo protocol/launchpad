@@ -38,5 +38,7 @@ Are you looking for inspiration? You can find a huge collection of awesome commu
 
 [Check out Awesome IPFS now →](https://awesome.ipfs.io/)
 
+### [Getting Started with IPFS and Filecoin](https://protocollabs.notion.site/Getting-started-with-IPFS-Filecoin-173c73d4d8d64765a42058594bc46bb7)
+
 <!--
 ##IPFS Glossary Does this exist?-->

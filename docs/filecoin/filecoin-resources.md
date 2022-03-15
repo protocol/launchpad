@@ -13,6 +13,10 @@ description: Resources and Reference for all Things Filecoin
     * Rust proofs implementation: [https://github.com/filecoin-project/rust-fil-proofs](https://github.com/filecoin-project/rust-fil-proofs)
   * Community: [https://github.com/filecoin-project/community](https://github.com/filecoin-project/community)
   * Protocol discussions (FIPs): [https://github.com/filecoin-project/FIPs](https://github.com/filecoin-project/FIPs)
+
+### [Getting Started with IPFS and Filecoin](https://protocollabs.notion.site/Getting-started-with-IPFS-Filecoin-173c73d4d8d64765a42058594bc46bb7)
+
+
 ### Discussions / Messaging
   * [Filecoin Slack](http://filecoin.io/slack): #fil-lotus-dev, #fil-lotus-help, #fil-actors, #fil-fips, etc - active discussion with a large and broad community
   * PL Slack #fil, #project-lotus, #fil-protocol-dev
