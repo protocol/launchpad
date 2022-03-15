@@ -7,7 +7,7 @@ description: Resources and Reference for all Things Filecoin
 ## Resources & Contribution Channels
 
 ### GitHub:
-  * Primary venue for discussion, specs and docs: [https://github.com/](https://github.com)filecoin-project
+  * Primary venue for discussion, specs and docs: [https://github.com/](https://github.com/filecoin-project)
     * Lotus implementation: [https://github.com/filecoin-project/lotus](https://github.com/filecoin-project/lotus)
     * Go actors implementation: [https://github.com/filecoin-project/specs-actors](https://github.com/filecoin-project/specs-actors)
     * Rust proofs implementation: [https://github.com/filecoin-project/rust-fil-proofs](https://github.com/filecoin-project/rust-fil-proofs)
@@ -41,7 +41,7 @@ description: Resources and Reference for all Things Filecoin
   * [Video – Introducing the FVM](https://www.youtube.com/watch?v=Vw9syGiG31c&t=1s)
   * [Blog – Introducing the FVM](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/)
   * [FVM Website](https://fvm.filecoin.io/)
-  
+
 ### Filecoin Plus
   * [Blog – Filecoin Plus: How Storage Providers Can Engage with Verified Clients](https://filecoin.io/blog/posts/filecoin-plus-how-storage-providers-can-engage-with-verified-clients/)
   * [Filecoin Plus Website](https://plus.fil.org/)
