@@ -3,7 +3,7 @@ description: Content Discovery and Routing with Kademlia
 ---
 
 ## The Public DHT
-The public distributed hash table is the record of content that is used, along with Kademlia, to discover content-addressed data in a peer-to-peer network. The DHT is the mechanism that allows a peer-to-peer network to work without the old [client-server model] that the web2 internet runs on. 
+The public distributed hash table is the record of content that is used, along with Kademlia, to discover content-addressed data in a peer-to-peer network. The DHT is the mechanism that allows a peer-to-peer network to work without the old [client-server model] that the web2 internet runs on.
 
 ### What does the DHT do for IPFS?
 A [DHT is a distributed system](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) for mapping keys to values. In IPFS, the DHT is used as the fundamental component of the content routing system. It maps what the user is looking for (a CID) to the peer that is actually storing the matching content. There are 3 types of key-value pairings that are mapped using the DHT:
@@ -22,6 +22,9 @@ used by IPFS when we know of a peer with content, but do not know its address, a
 [Kademlia](https://en.wikipedia.org/wiki/Kademlia) is a distributed hash table for decentralized peer-to-peer computer networks designed by Petar Maymounkov and David Mazières in 2002. It specifies the structure of the network and the exchange of information through node lookups.
 
 Kademlia makes it easier and quicker to find peers with content by, essentially, comparing how similar two nodes' content is and rank it by how similar or 'close' it is.
+
+## Bitswap
+Along with Kademlia and the DHT, [Bitswap](https://docs.ipfs.io/concepts/bitswap/#bitswap) is a message-based protocol that enables peers to exchange data. Bitswap enables a peer to create a want-list of content, then query connected peers (and the peers they are connected to) for that information.
 
 #### The Public DHT | LabWeek 2021 <!-- Who Presented?  -->
 <!-- Add a context paragraph-- The DHT keeps the IPFS Network of Peers Connected... -->
