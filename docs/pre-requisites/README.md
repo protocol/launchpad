@@ -31,7 +31,8 @@ description: Pre-Requisites to Prepare for Launchpad
 
 ### Crypto Basics
 
-* [How do people use crypto?](https://learn.consensys.net/catalog/info/id:194,cms_featured_course:1)
+* [What are NFTs?](https://www.youtube.com/watch?v=FkUn86bH34M)
+{% embed url="https://www.youtube.com/watch?v=FkUn86bH34M" %}
 * [What are tokens?](https://en.wikipedia.org/wiki/Security_token1)
 * [**What are Crypto Wallets**](https://www.youtube.com/watch?v=d8IBpfs9bf4)
 
