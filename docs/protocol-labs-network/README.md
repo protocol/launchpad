@@ -16,7 +16,7 @@ In this section, you will:
 
 * What the PL Network is, how Protocol Labs evolved from company to network, and what the resources and tools are within the PL Network to support teams, individuals, and companies
 * The methods and philosophies about how work and communication is carried out in the Protocol Labs Network & within PLN open source communities
-* The motivations and original goals the brought about IPFS, libp2p, Filecoin etc, and how these have evolved to the present day
+* The motivations and original goals that brought about IPFS, libp2p, Filecoin etc, and how these have evolved to the present day
 * What OSS projects that are part of the PL Stack and what other projects, tools, and resources are being created in the PLN ecosystem. Be able to describe what some of these other projects do and how they work together.
 
 **Be Able To**
@@ -42,4 +42,4 @@ Protocol Labs drives breakthroughs in computing to push humanity forward.
 
 #### Links
 
-**IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs) - **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld) - **Libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p) - **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)
+**IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs) - **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld) - **libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p) - **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)

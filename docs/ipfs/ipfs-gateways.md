@@ -66,7 +66,7 @@ https://<gateway-host>.tld/ipns/<ipnsid_or_dnslink>/path/to/resource
 
 **Gateway Recipes**
 
-_Read about [Gateway Recipes](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#gateway-recipe)_
+_Read about [Gateway Recipes](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#gateway-recipes)_
 
 
 ## IPFS In Web Browsers

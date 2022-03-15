@@ -13,56 +13,23 @@ description: The What and the How
 
 [IPFS Community](https://docs.ipfs.io/community/#community)
 
-## JS-IPFS Examples
-_The full example can be found [in the ipfs-examples repo](https://github.com/ipfs-examples/js-ipfs-examples)_
+## GitHub
 
-#### Prerequisites
+### [JS-IPFS Examples](https://github.com/ipfs-examples)
 
-Make sure you have installed all of the following prerequisites on your development machine:
+### [IPFS Projects](https://github.com/ipfs)
+* [go-ipfs](https://github.com/ipfs/go-ipfs)
+* [js-ipfs](https://github.com/ipfs/js-ipfs)
 
-- Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
-- Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager.
 
-#### Installation
-
-1. Install yarn globally (needed to resolve dependencies correctly when working in a monorepo)
-   ```sh
-   npm install -g yarn
-   ```
-2. Install NPM packages
-   ```sh
-   yarn install
-   ```
-3. Run all the examples
-   ```sh
-   yarn run test
-   ```
-
-## Download IPFS Tools
+## IPFS Tools
 _This information is [also available on ipfs-docs.io](https://docs.ipfs.io/)_
 
 These tools can help you use and build on IPFS more quickly and efficiently — give them a try today!
 
-| [Browser Companion](https://github.com/ipfs-shipyard/ipfs-companion)            | [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop)                                          | [IPLD Explorer](https://explore.ipld.io/)                           |
-
-
-## Learn More
-### Host your website on IPFS
-
-Protect yourself from single-point-of-failure risks and benefit from decentralized infrastructure by hosting your static website using IPFS. If you're new to IPFS, this is an excellent place to start learning how to build on the decentralized web.
-
-### Learn About the Decentralized Web
-
-Want to know more about the decentralized web (DWeb) and how it's changing the internet? These resources will give you a clearer understanding of the DWeb movement, and how it's improving the world:
-
-- [What is IPFS](https://docs.ipfs.io/concepts/what-is-ipfs.md)
-- [Peer-to-peer sharing](https://docs.ipfs.io/concepts/dht.md)
-- [Content-addressed data](https://docs.ipfs.io/concepts/content-addressing.md)
-
-[See more guides in the Concepts section →](https://docs.ipfs.io/concepts/README.md)
-
-### Interacite Tutorials
-ProtoSchool's self-guided [interactive tutorials](https://proto.school/tutorials) are designed to introduce you to decentralized web concepts, protocols, and tools. Explore JS-IPFS APIs by completing browser-based coding challenges in ProtoSchool's [IPFS course](https://proto.school/course/ipfs), or explore code-free intros to essential DWeb concepts and related projects in the IPFS ecosystem.
+* [Browser Companion](https://github.com/ipfs-shipyard/ipfs-companion)
+*  [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop)
+* [IPLD Explorer](https://explore.ipld.io/)
 
 
 ### See What Others are Building
@@ -70,6 +37,8 @@ ProtoSchool's self-guided [interactive tutorials](https://proto.school/tutorials
 Are you looking for inspiration? You can find a huge collection of awesome community projects over at Awesome IPFS.
 
 [Check out Awesome IPFS now →](https://awesome.ipfs.io/)
+
+### [Getting Started with IPFS and Filecoin](https://protocollabs.notion.site/Getting-started-with-IPFS-Filecoin-173c73d4d8d64765a42058594bc46bb7)
 
 <!--
 ##IPFS Glossary Does this exist?-->

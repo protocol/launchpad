@@ -15,7 +15,7 @@ description: Pre-Requisites to Prepare for Launchpad
 
 {% embed url="https://youtu.be/SSo_EIwHSd4" %}
 
-### Cryptocurrency
+### Cryptocurrency & the Blockchain
 
 [**How does bitcoin work?**](https://youtu.be/bBC-nXj3Ng4)
 
@@ -29,11 +29,15 @@ description: Pre-Requisites to Prepare for Launchpad
 
 {% embed url="https://youtu.be/ZE2HxTmxfrI" %}
 
-### Webinars
+### Crypto Tools
 
-* [How do people use crypto?](https://learn.consensys.net/catalog/info/id:194,cms_featured_course:1)
-* [What are tokens?](https://learn.consensys.net/catalog/info/id:174,cms_featured_course:1)
-* [What are crypto wallets](https://courses.consensys.net/courses/take/what-is-a-crypto-wallet/lessons/10028774-what-is-a-crypto-wallet-webinar)
+* [What are NFTs?](https://www.youtube.com/watch?v=FkUn86bH34M)
+{% embed url="https://www.youtube.com/watch?v=FkUn86bH34M" %}
+* [What are tokens?](https://en.wikipedia.org/wiki/Security_token1)
+* [**What are Crypto Wallets**](https://www.youtube.com/watch?v=d8IBpfs9bf4)
+
+{% embed url="https://www.youtube.com/watch?v=d8IBpfs9bf4" %}
+
 
 ### Smart Contracts & Security
 
@@ -48,4 +52,4 @@ description: Pre-Requisites to Prepare for Launchpad
 
 #### Links
 
-**IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs) - **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld) - **Libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p) - **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)
+**IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs) - **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld) - **libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p) - **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)

@@ -22,9 +22,9 @@ To explore the various projects and tools building in the IPFS & Filecoin ecosys
 
 ## Built and Building On
 
-You can see projects and tools that have been developed to make creating in web3 with Protocol Labs projects easier under [Protocol Labs Toolkits and SDKs](./protocol-labs-toolkits-sdks/README.md)
+You can see projects and tools that have been developed to make creating in web3 with Protocol Labs projects easier under [Protocol Labs Toolkits and SDKs](https://protocol-labs.gitbook.io/launchpad-curriculum/other-resources/protocol-labs-toolkits-sdks)
 
-Learn about the cool projects, apps, and tooling that is being built using the Protocol Labs technologies in the [Built on IPFS and Filecoin section](./protocol-labs-toolkits-sdks/README.md).
+Learn about the cool projects, apps, and tooling that is being built using the Protocol Labs technologies in the [Built on IPFS and Filecoin section](https://protocol-labs.gitbook.io/launchpad-curriculum/other-resources/built-on-ipfs-filecoin).
 
 ## Major Network Services and Working Groups
 
@@ -46,7 +46,7 @@ In some cases, those WGs might span multiple organizations, or companies. For ex
 Teams are the reporting organization structure established by Protocol Labs. Though they establish Labbers' general focus of work, the nature of PL's collborative organization means that Labbers may end up working with many individuals outside their team, and often with those outside of Protocol Labs itself.
 
 
-### IPFS, IPLD, Libp2p, and Filecoin
+### IPFS, IPLD, libp2p, and Filecoin
 
 The four main projects we will be focusing on are IPFS, IPLD, Libp2p, and Filecoin. Most of the information and interaction can be found on docs and GitHub organizations:
 

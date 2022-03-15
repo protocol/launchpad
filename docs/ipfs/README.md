@@ -60,20 +60,13 @@ Dive into the technical details [with this article on web3 data permanence](http
 ![Web3 Stack](<../../.gitbook/assets/image (11).png>)
 
 ### Tutorials
-**ProtoSchool**
 For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/ipfs). Tutorials you should complete include:
 
 * [Content Addressing on the Decentralized Web](https://proto.school/content-addressing)
-* [Merkle DAGs: Structuring Data for the Distributed Web](https://proto.school/merkle-dags)
 * [Mutable File System](https://proto.school/mutable-file-system)
 * [Regular Files API](https://proto.school/regular-files-api) (read only)
-
-**ResNetLabs On Tour**
-* [Welcome to Web 3.0](https://research.protocol.ai/tutorials/resnetlab-on-tour/welcome-to-web-3/)
-* [Content Exchange](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-exchange/)
-* [Beyond Bitswap](https://research.protocol.ai/tutorials/resnetlab-on-tour/beyond-bitswap/)
 
 
 **Links**
 
-**IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs) - **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld) - **Libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p) - **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)
+**IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs) - **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld) - **libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p) - **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)

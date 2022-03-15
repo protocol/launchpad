@@ -8,7 +8,7 @@ description: The Culture & Community of Protocol Labs
 
 Protocol Labs is building the next generation of the internet. We are an open-source Network that spans the research to development pipeline to create new protocols, tools, and services to radically improve the internet. Our products serve thousands of organizations and millions of people.
 
-Many teams in the PL Network are fully distributed and follow a common set of open source practices to grow and flourish together. This distributed, open source philosophy is at the core of how was operate.
+Many teams in the PL Network are fully distributed and follow a common set of open source practices to grow and flourish together. This distributed, open source philosophy is at the core of how we operate.
 
 We also believe in connection, and bringing people together to inspire innovation. That's why we have yearly PL Network "Lab Weeks" to gather our community of "labbers" (contributors and members of PL Network teams) together and align on the next year's opportunities and challenges.
 
