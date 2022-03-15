@@ -29,11 +29,14 @@ description: Pre-Requisites to Prepare for Launchpad
 
 {% embed url="https://youtu.be/ZE2HxTmxfrI" %}
 
-### Webinars
+### Crypto Basics
 
 * [How do people use crypto?](https://learn.consensys.net/catalog/info/id:194,cms_featured_course:1)
-* [What are tokens?](https://learn.consensys.net/catalog/info/id:174,cms_featured_course:1)
-* [What are crypto wallets](https://courses.consensys.net/courses/take/what-is-a-crypto-wallet/lessons/10028774-what-is-a-crypto-wallet-webinar)
+* [What are tokens?](https://en.wikipedia.org/wiki/Security_token1)
+* [**What are Crypto Wallets**](https://www.youtube.com/watch?v=d8IBpfs9bf4)
+
+{% embed url="https://www.youtube.com/watch?v=d8IBpfs9bf4" %}
+
 
 ### Smart Contracts & Security
 
