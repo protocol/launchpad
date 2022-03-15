@@ -1,9 +1,9 @@
 ---
-description: The IPFS Public DHT & Content Discovery and Routing
+description: Content Discovery and Routing with Kademlia
 ---
 
 ## The Public DHT
-The public distributed hash table is the record of content that is used, along with Kademlia, to discover content-addressed data in a peer-to-peer network.
+The public distributed hash table is the record of content that is used, along with Kademlia, to discover content-addressed data in a peer-to-peer network. The DHT is the mechanism that allows a peer-to-peer network to work without the old [client-server model] that the web2 internet runs on. 
 
 ### What does the DHT do for IPFS?
 A [DHT is a distributed system](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) for mapping keys to values. In IPFS, the DHT is used as the fundamental component of the content routing system. It maps what the user is looking for (a CID) to the peer that is actually storing the matching content. There are 3 types of key-value pairings that are mapped using the DHT:
