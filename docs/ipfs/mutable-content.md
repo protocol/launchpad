@@ -3,7 +3,7 @@ description: Mutable content in IPFS
 ---
 
 ## Mutable Content
-One of the most powerful things about IPFS is that any piece of data or content you store on the network cannot be modified with changing the [Content Identifier (CID)](https://protocol-labs.gitbook.io/launchpad-curriculum/launchpad-learning-resources/ipld/content-addressing-and-cids) of that piece of content, because the content identifier is created in part by hashing the content.
+One of the most powerful things about IPFS is that any piece of data or content you store on the network cannot be modified with changing the [Content Identifier (CID)](https://protocol-labs.gitbook.io/launchpad-curriculum/launchpad-learning-resources/ipld/content-addressing-and-cids) for that data, since the CID is created (in part) by hashing the content.
 
 The fact that data is also created on the blockchain - that is, the content in one block contains, as a part of the data that makes it up, the id of the block of content that is the parent of that block - also contributes to the immutability of that piece of data.
 
@@ -20,14 +20,11 @@ Your options for persistent data are:
 
 _This is an [copy of the tutorial on ResNetLab Tutorials](https://research.protocol.ai/tutorials/resnetlab-on-tour/mutable-content/)_
 
-## The InterPlanetary Name System
-_This is an [annotated version of this doc](https://docs.ipfs.io/concepts/ipns/)_
+## The Inter Planetary Name System (IPNS)
 
-<!-- What can be kept in? Removed? -->
+Since IPFS uses CIDs, if you were to share an IPFS address such as `/ipfs/QmbezGequPwcsWo8UL4wDF6a8hYwM1hmbzYv2mnKkEWaUp` with someone, you would need to give the person a new link every time you update the content.
 
-Since IPFS uses [content-based addressing](content-addressing.md), if you were to share an IPFS address such as `/ipfs/QmbezGequPwcsWo8UL4wDF6a8hYwM1hmbzYv2mnKkEWaUp` with someone, you would need to give the person a new link every time you update the content.
-
-The InterPlanetary Name System (IPNS) solves this issue by creating an address that can be updated.
+The [InterPlanetary Name System (IPNS)](https://docs.ipfs.io/concepts/ipns/#interplanetary-name-system-ipns) solves this issue by creating an address that can be updated.
 
 A _name_ in IPNS is the [hash](hashing.md) of a public key. It is associated with a record containing information about the hash it links to that is signed by the corresponding private key. New records can be signed and published at any time.
 
@@ -37,14 +34,8 @@ When looking up an IPNS address, use the `/ipns/` prefix:
 /ipns/QmSrPmbaUKA3ZodhzPWZnpFgcPMFWF4QsxXbkWfEptTBJd
 ```
 ### Pubsub + IPNS
-<!-- Add a paragraph  -->
-<!-- Check with Lidel if this content moved from the dht.md page is a good enough summary -->
 
-This is a [summarized version of the description here by Fleek](https://blog.fleek.co/posts/immutable-ipfs)
-
-With IPFS, when you change even the slightest bit of content in a given file, say, a webpage, there is a new hash or CID generated. Once you change it, it's impossible to point to the updated bit of content.
-
-IPNS solves the issue of creating constant links to content that may be updated, and provides the 'new' link to content that you want to share with others. IPNS uses public-link cryptography to assign a link to the content you created on IPFS.
+IPNS [solves the issue of creating constant links to content](https://blog.fleek.co/posts/immutable-ipfs) that may be updated, and provides the 'new' link to content that you want to share with others. IPNS uses public-link cryptography to assign a link to the content you created on IPFS.
 
 There are a couple of ways you can link to the content you are sharing, either using DNSLink to link using the DNS addressing system, or a truly decentralized solution such as ENS that will help maintain a constant link to the most updated version of a piece of content.
 
