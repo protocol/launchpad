@@ -22,9 +22,9 @@ To explore the various projects and tools building in the IPFS & Filecoin ecosys
 
 ## Built and Building On
 
-You can see projects and tools that have been developed to make creating in web3 with Protocol Labs projects easier under [Protocol Labs Toolkits and SDKs](./protocol-labs-toolkits-sdks/README.md)
+You can see projects and tools that have been developed to make creating in web3 with Protocol Labs projects easier under [Protocol Labs Toolkits and SDKs](protocol-labs-toolkits-sdks/README.md)
 
-Learn about the cool projects, apps, and tooling that is being built using the Protocol Labs technologies in the [Built on IPFS and Filecoin section](./protocol-labs-toolkits-sdks/README.md).
+Learn about the cool projects, apps, and tooling that is being built using the Protocol Labs technologies in the [Built on IPFS and Filecoin section](built-on-ipfs-filecoin/README.md).
 
 ## Major Network Services and Working Groups
 
