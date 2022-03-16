@@ -5,7 +5,7 @@ description: Mutable content in IPFS
 ## Mutable Content
 One of the most powerful things about IPFS is that any piece of data or content you store on the network cannot be modified with changing the [Content Identifier (CID)](https://protocol-labs.gitbook.io/launchpad-curriculum/launchpad-learning-resources/ipld/content-addressing-and-cids) for that data, since the CID is created (in part) by hashing the content.
 
-The fact that the history of the data are preserved on the blockchain - that is, the content in one block contains, as a part of the data that makes it up, the id of the block of content that is the parent of that block - also contributes to the immutability of that piece of data.
+The fact that the history of the data are preserved on the blockchain - that is, the content in one block contains, as a part of the data that makes it up, the id of the parent of that block - also contributes to the immutability of that piece of data.
 
 ### Pinning and Immutability
 Data on IPFS will not by default remain on that network unless it is pinned. In order to make a piece of data a persistent piece of data, you either need to make sure that data is pinned on a node that is active on the IPFS network.
@@ -18,8 +18,6 @@ Your options for persistent data are:
 _See the full set of resources [on the ResNetLab Tutorials page](https://research.protocol.ai/tutorials/resnetlab-on-tour)_
 
 {% embed url="https://www.youtube.com/watch?v=57guoGS53Bo&t=12s" %}
-
-_This is an [copy of the tutorial on ResNetLab Tutorials](https://research.protocol.ai/tutorials/resnetlab-on-tour/mutable-content/)_
 
 ## The Inter Planetary Name System (IPNS)
 
