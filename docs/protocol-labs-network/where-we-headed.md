@@ -17,6 +17,7 @@ From core distributed systems engineers, to network researchers, to community ma
 _Learn about how important a distributed system like IPFS is in preserving documents, and how we are moving towards a web of the future. Every day hundreds of developer are putting together more of these pieces, and many applications have already been created leveraging this technology. Understand the possibilities that exist for a decentralized, free internet._
 
 #### Welcome to Web 3 | David Diaz | ResNetLab
+_See the full set of resources [on the ResNetLab Tutorials page](https://research.protocol.ai/tutorials/resnetlab-on-tour)_
 
 [_From ResNetLab On Tour_](https://research.protocol.ai/tutorials/resnetlab-on-tour/welcome-to-web-3/)
 
