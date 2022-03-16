@@ -6,6 +6,37 @@ description: Contributing in Open Source
 
 ## Contributing
 
+### The Projects
+Get started contributing to IPFS Projects, with these high-traffic repos:
+
+###
+* [go-ipfs](https://github.com/ipfs/go-ipfs) is a high traffic project, with many contributors from outside PL
+* [libp2p](https://github.com/libp2p/go-libp2p-core)
+* [ipfs-cluster](https://github.com/ipfs/ipfs-cluster)
+* [js-ipfs](https://github.com/ipfs/js-ipfs) has multiple projects in a single repo
+* [multiformats](https://github.com/multiformats/js-multiformats)
+* [js-libp2p](https://github.com/libp2p/js-libp2p)
+* [Filecoin Improvement Requests (FIPs)](https://github.com/filecoin-project/FIPs)
+
+
+
+### Graphical/ User Interfaces
+
+We often see issues being filled in these repos that end up getting moved elsewhere:
+https://github.com/ipfs/ipfs-desktop/
+https://github.com/ipfs/ipfs-webui/
+https://github.com/ipfs/ipfs-companion/
+
+### Docs
+* [IPFS docs](https://github.com/ipfs/ipfs-docs)
+* [libp2p docs](https://github.com/libp2p/docs)
+* [IPLD docs](https://github.com/ipld/docs)
+* [Filecoin docs](https://github.com/filecoin-project/filecoin-docs)
+* [Lotus docs](https://github.com/filecoin-project/lotus-docs)
+
+### Dashboards
+* See this [dashboard for go-ipfs projects and tickets](https://github.com/orgs/ipfs/projects/16/views/1)
+
 #### Contributing and Maintaining in Open Source | Steven Allen & Raul Kripalani
 
 In This talk Steven Allen & Raul Kripalani will give tips and advice on how to make sure contributing to your open source project is effective, and maintains the spirit of positive communication and working together as a community to build great software in a way that teaches and elevates all member of a community.
