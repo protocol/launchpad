@@ -2,6 +2,17 @@
 description: Deeper Learning and Context to Prepare you for Web3
 ---
 
+## IPFS Additional Resources
+
+#### The Lifecycle of Data in DWeb | IPFS Camp 2019
+{% embed url="https://www.youtube.com/watch?v=fLUq0RkiTBA" %}
+
+#### IPFS Basics + Tools | ETHGlobal & Juan Benet
+
+<!-- Add Description -->
+
+{% embed url="https://www.youtube.com/watch?v=ldEDa6_CT7k" %}
+
 ## Distributed Systems Course
 
 * **MIT Distributed Systems Course**

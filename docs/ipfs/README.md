@@ -66,6 +66,17 @@ For those who are newer to the world of Filecoin, Web3, and storage verification
 * [Mutable File System](https://proto.school/mutable-file-system)
 * [Regular Files API](https://proto.school/regular-files-api) (read only)
 
+#### Getting Started with IPFS
+This video is the basic setup for ipfs-go on a [linux VM](https://multipass.run/), using [wget](https://www.tecmint.com/install-wget-in-linux/) to grab the resources. You will also `ipfs init` a node and get it running with `ipfs daemon`.
+
+{% embed url="https://youtu.be/A7yZaYhrwyM" %}
+
+
+#### IPFS Basics: Accessing Files
+In this tutorial, you can follow along to understand the basics of how you as a user can access, add, and pin files in IPFS.  Follow along  with the examples to learn about pinning and adding files, how files from IPFS can be previewed and inspected, and learn a bit about how that data is created and stored on IPFS.
+
+{% embed url="https://www.youtube.com/watch?v=EkQfoQprA8s" %}
+
 
 **Links**
 
