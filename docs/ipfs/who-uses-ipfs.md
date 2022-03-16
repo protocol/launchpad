@@ -13,7 +13,7 @@ Use the filters on the ecosystem directory page to explore projects by what they
 ![Ecosystem Directory Filter](../../.gitbook/assets/ecosystem-filters.png)
 
 
-## Brave
+## Brave for Browsing
 
 IPFS has been integrated into Brave, the fast, privacy-oriented browser, reinventing the Web for users, publishers and advertisers.
 
