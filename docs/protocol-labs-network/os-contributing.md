@@ -18,9 +18,9 @@ Get started contributing to IPFS Projects, with these high-traffic repos:
 
 ### Graphical/ User Interfaces
 We often see issues being filled in these repos that end up getting moved elsewhere:
-https://github.com/ipfs/ipfs-desktop/
-https://github.com/ipfs/ipfs-webui/
-https://github.com/ipfs/ipfs-companion/
+* [IPFS Desktop](https://github.com/ipfs/ipfs-desktop/)
+* [IPFS Web UI](https://github.com/ipfs/ipfs-webui/)
+* [IPFS Companion](https://github.com/ipfs/ipfs-companion/)
 
 ### Docs
 * [IPFS docs](https://github.com/ipfs/ipfs-docs)
