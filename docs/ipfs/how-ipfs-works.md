@@ -1,5 +1,5 @@
 ---
-description: The Basics of How IPFS Works
+description: A Deeper Dive Into How IPFS Works
 ---
 
 ## How IPFS Works
@@ -28,18 +28,6 @@ At a high level, the talk covered the following concepts:
 #### Fetch
 * [Bitswap](https://docs.ipfs.io/concepts/bitswap/#how-bitswap-works) – Using wantlists of data, or CIDs, that specific users are looking for, and checks peers that a node is connected to first for those CIDs before querying the rest of the DHT.
 
-## Tutorials
-Follow along with the video tutorial using the following resources:
-
-* [Command-Line Quick Start](https://docs.ipfs.io/how-to/command-line-quick-start/#prerequisites)
-* [Command Line installation instructions](https://docs.ipfs.io/install/command-line/#system-requirements)
-* [IPFS Distributions](https://dist.ipfs.io/#go-ipfs)
-* [IPFS CLI reference](https://docs.ipfs.io/reference/cli/#ipfs)
-
-#### Getting Started with IPFS
-This video is the basic setup for ipfs-go on a [linux VM](https://multipass.run/), using [wget](https://www.tecmint.com/install-wget-in-linux/) to grab the resources. You will also `ipfs init` a node and get it running with `ipfs daemon`.
-
-{% embed url="https://youtu.be/A7yZaYhrwyM" %}
 
 <!--
 #### IPFS Basics – Working with Files in IPFS
@@ -62,15 +50,6 @@ _You can also [find this content in IPFS Docs](https://docs.ipfs.io/concepts/)_
 
 Because IPFS is a system that hopes to change how we use the Internet, it comes with many new concepts:
 
-#### The Lifecycle of Data in DWeb | IPFS Camp 2019
-{% embed url="https://www.youtube.com/watch?v=fLUq0RkiTBA" %}
-
 #### Whiteboard Series with NEAR | Ep: 42 Adin Schmahmann
 {% embed url="https://www.youtube.com/watch?v=J-drqD2UebM" %}
 ## IPFS Basics & Toolkits (Optional)
-
-#### IPFS Basics + Tools | ETHGlobal & Juan Benet
-
-<!-- Add Description -->
-
-{% embed url="https://www.youtube.com/watch?v=ldEDa6_CT7k" %}

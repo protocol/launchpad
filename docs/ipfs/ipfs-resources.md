@@ -21,6 +21,12 @@ description: The What and the How
 * [go-ipfs](https://github.com/ipfs/go-ipfs)
 * [js-ipfs](https://github.com/ipfs/js-ipfs)
 
+## Tutorials
+
+* [Command-Line Quick Start](https://docs.ipfs.io/how-to/command-line-quick-start/#prerequisites)
+* [Command Line installation instructions](https://docs.ipfs.io/install/command-line/#system-requirements)
+* [IPFS Distributions](https://dist.ipfs.io/#go-ipfs)
+* [IPFS CLI reference](https://docs.ipfs.io/reference/cli/#ipfs)
 
 ## IPFS Tools
 _This information is [also available on ipfs-docs.io](https://docs.ipfs.io/)_
@@ -28,7 +34,7 @@ _This information is [also available on ipfs-docs.io](https://docs.ipfs.io/)_
 These tools can help you use and build on IPFS more quickly and efficiently — give them a try today!
 
 * [Browser Companion](https://github.com/ipfs-shipyard/ipfs-companion)
-*  [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop)
+* [IPFS Desktop](https://github.com/ipfs-shipyard/ipfs-desktop)
 * [IPLD Explorer](https://explore.ipld.io/)
 
 
