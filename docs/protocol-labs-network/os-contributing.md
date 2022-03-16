@@ -4,12 +4,10 @@ description: Contributing in Open Source
 
 # Open Source Contribution
 
-## Contributing
-
-### The Projects
+## The Projects
 Get started contributing to IPFS Projects, with these high-traffic repos:
 
-###
+### PL Repos
 * [go-ipfs](https://github.com/ipfs/go-ipfs) is a high traffic project, with many contributors from outside PL
 * [libp2p](https://github.com/libp2p/go-libp2p-core)
 * [ipfs-cluster](https://github.com/ipfs/ipfs-cluster)
@@ -18,10 +16,7 @@ Get started contributing to IPFS Projects, with these high-traffic repos:
 * [js-libp2p](https://github.com/libp2p/js-libp2p)
 * [Filecoin Improvement Requests (FIPs)](https://github.com/filecoin-project/FIPs)
 
-
-
 ### Graphical/ User Interfaces
-
 We often see issues being filled in these repos that end up getting moved elsewhere:
 https://github.com/ipfs/ipfs-desktop/
 https://github.com/ipfs/ipfs-webui/
@@ -36,6 +31,8 @@ https://github.com/ipfs/ipfs-companion/
 
 ### Dashboards
 * See this [dashboard for go-ipfs projects and tickets](https://github.com/orgs/ipfs/projects/16/views/1)
+
+## How to Contribute
 
 #### Contributing and Maintaining in Open Source | Steven Allen & Raul Kripalani
 
