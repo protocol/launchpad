@@ -1,5 +1,5 @@
 ---
-description: Contributing in Open Source
+description: Contributing to Protocol Labs Core Project
 ---
 
 # Open Source Contribution
