@@ -5,7 +5,7 @@ description: Contributing in Open Source
 # Open Source Contribution
 
 ## The Projects
-Get started contributing to IPFS Projects, with these high-traffic repos:
+Get started contributing to IPFS Projects, with these high-traffic repos
 
 ### PL Repos
 * [go-ipfs](https://github.com/ipfs/go-ipfs) is a high traffic project, with many contributors from outside PL

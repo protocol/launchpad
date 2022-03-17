@@ -20,9 +20,9 @@ This curriculum is designed for those who already have a basic set of software e
 
 * How to use Github for source control, including making PRs & suggestions
 * How to navigate and troubleshoot an operating system and install dependencies
-* A good level of knowledge in a programming language(s)
 * Experience with the basic software engineering design lifecycle
 * Experience implementing and testing software projects
+* The ability to write  and program in programming languages (technical participants)
 
 
 ### ⚖️ Launchpad Principles
