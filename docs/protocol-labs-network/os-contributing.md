@@ -13,7 +13,7 @@ Get started contributing to IPFS Projects, with these high-traffic repos
 * [ipfs-cluster](https://github.com/ipfs/ipfs-cluster) provides data orchestration across a swarm of IPFS daemons by allocating, replicating and tracking a global pinset distributed among multiple peers.
 * [js-ipfs](https://github.com/ipfs/js-ipfs) has multiple JS projects in a single repo. See the [what they each do](https://github.com/ipfs/js-ipfs#structure).
 * [multiformats](https://github.com/multiformats/js-multiformats) is a library that defines common interfaces and low level building blocks for multiformat technologies (multicodec, multihash, multibase, and CID).
-* [js-libp2p](https://github.com/libp2p/js-libp2p)
+* [js-libp2p](https://github.com/libp2p/js-libp2p) is an implementation in JavaScript. This is a project that needs contribution and would be a good place for JS developers to [dig in and learn](https://github.com/libp2p/js-libp2p/blob/master/doc/GETTING_STARTED.md) about the PL Networking stack.  
 * [Filecoin Improvement Requests (FIPs)](https://github.com/filecoin-project/FIPs) contains the set of fundamental governing principles for the Filecoin Network. It outlines the vision for Filecoin and it also describes how improvements to these rules can be proposed and ratified.
 
 ### Graphical/ User Interfaces
@@ -41,7 +41,7 @@ In This talk Steven Allen & Raul Kripalani will give tips and advice on how to m
 
 {% embed url="https://youtu.be/A9Lo_rLNU9w" %}
 
-Guide to [Writing and Reviewing Great PRs]https://docs.google.com/document/d/1EP6S8k-DNsDgIKmtrA_9YrCghq3F21IqhDh9THNuoOU/edit)
+Guide to [Writing and Reviewing Great PRs](https://docs.google.com/document/d/1EP6S8k-DNsDgIKmtrA_9YrCghq3F21IqhDh9THNuoOU/edit)
 
 ### Code Review Developer Guide
 
