@@ -22,7 +22,7 @@ This curriculum is designed for those who already have a basic set of software e
 * How to navigate and troubleshoot an operating system and install dependencies
 * Experience with the basic software engineering design lifecycle
 * Experience implementing and testing software projects
-* The ability to write  and program in programming languages (technical participants)
+* The ability to read and write in programming languages (technical participants)
 
 
 ### ⚖️ Launchpad Principles
