@@ -8,21 +8,22 @@ description: Contributing to Protocol Labs Core Project
 Get started contributing to IPFS Projects, with these high-traffic repos
 
 ### PL Repos
-* [go-ipfs](https://github.com/ipfs/go-ipfs) is a high traffic project, with many contributors from outside PL
-* [libp2p](https://github.com/libp2p/go-libp2p-core)
-* [ipfs-cluster](https://github.com/ipfs/ipfs-cluster)
-* [js-ipfs](https://github.com/ipfs/js-ipfs) has multiple projects in a single repo
-* [multiformats](https://github.com/multiformats/js-multiformats)
+* [go-ipfs](https://github.com/ipfs/go-ipfs) is a high traffic project, with many contributors from outside PL.
+* [libp2p](https://github.com/libp2p/go-libp2p-core) is the home of the OSS project that makes up the networking layer used by PL.
+* [ipfs-cluster](https://github.com/ipfs/ipfs-cluster) provides data orchestration across a swarm of IPFS daemons by allocating, replicating and tracking a global pinset distributed among multiple peers.
+* [js-ipfs](https://github.com/ipfs/js-ipfs) has multiple JS projects in a single repo. See the [what they each do](https://github.com/ipfs/js-ipfs#structure).
+* [multiformats](https://github.com/multiformats/js-multiformats) is a library that defines common interfaces and low level building blocks for multiformat technologies (multicodec, multihash, multibase, and CID).
 * [js-libp2p](https://github.com/libp2p/js-libp2p)
-* [Filecoin Improvement Requests (FIPs)](https://github.com/filecoin-project/FIPs)
+* [Filecoin Improvement Requests (FIPs)](https://github.com/filecoin-project/FIPs) contains the set of fundamental governing principles for the Filecoin Network. It outlines the vision for Filecoin and it also describes how improvements to these rules can be proposed and ratified.
 
 ### Graphical/ User Interfaces
 We often see issues being filled in these repos that end up getting moved elsewhere:
-* [IPFS Desktop](https://github.com/ipfs/ipfs-desktop/)
-* [IPFS Web UI](https://github.com/ipfs/ipfs-webui/)
-* [IPFS Companion](https://github.com/ipfs/ipfs-companion/)
+* [IPFS Desktop](https://github.com/ipfs/ipfs-desktop/). Use [IPFS Desktop](https://docs.ipfs.io/install/ipfs-desktop/#ipfs-desktop) to get acquainted with IPFS without needing to touch the terminal — or, if you're already experienced, use the powerful menubar/taskbar shortcuts alongside the command line to make your IPFS workflow faster.
+* [IPFS Web UI](https://github.com/ipfs/ipfs-webui/) is [a web interface](https://webui.ipfs.io/#/welcome) to IPFS, shipped with go-ipfs, js-ipfs, and ipfs-desktop.
+* [IPFS Companion](https://github.com/ipfs/ipfs-companion/) is a browser extension for Firefox, Chrome, Brave, Opera, and Edge.
 
 ### Docs
+Contribute while you learn more about PL projects:
 * [IPFS docs](https://github.com/ipfs/ipfs-docs)
 * [libp2p docs](https://github.com/libp2p/docs)
 * [IPLD docs](https://github.com/ipld/docs)
@@ -40,15 +41,11 @@ In This talk Steven Allen & Raul Kripalani will give tips and advice on how to m
 
 {% embed url="https://youtu.be/A9Lo_rLNU9w" %}
 
-#### Writing and Reviewing Great PRs
-
-This document, covered in the video above, by Steven Allen and Raul Kripalani describes best practices for a thorough PR submission & review, along with an additional guide for Golang contributions.
-
-{% embed url="https://docs.google.com/document/d/1EP6S8k-DNsDgIKmtrA_9YrCghq3F21IqhDh9THNuoOU/edit" %}
+Guide to [Writing and Reviewing Great PRs]https://docs.google.com/document/d/1EP6S8k-DNsDgIKmtrA_9YrCghq3F21IqhDh9THNuoOU/edit)
 
 ### Code Review Developer Guide
 
-_This is an annotated version of Google's_ [_Code Review Developer Guide_](https://google.github.io/eng-practices/review/)
+_This is an annotated version of Google's [Code Review Developer Guide](https://google.github.io/eng-practices/review/)_
 
 Code reviews should look at:
 
