@@ -29,6 +29,7 @@ Learn about the cool projects, apps, and tooling that is being built using the P
 ## Major Network Services and Working Groups
 
 **Working Groups (WGs)**
+Working groups are cross-team projects that each have a captain, responsible for the person who is the DRI for the projects, writes specs, plans, and guides the project & its members, publishing progress and OKRs.
 - Ecosystem WG
 - PL EngRes WG
 

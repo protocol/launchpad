@@ -41,7 +41,7 @@ In This talk Steven Allen & Raul Kripalani will give tips and advice on how to m
 
 {% embed url="https://youtu.be/A9Lo_rLNU9w" %}
 
-Guide to [Writing and Reviewing Great PRs](https://docs.google.com/document/d/1EP6S8k-DNsDgIKmtrA_9YrCghq3F21IqhDh9THNuoOU/edit)
+**Guide to [Writing and Reviewing Great PRs](https://docs.google.com/document/d/1EP6S8k-DNsDgIKmtrA_9YrCghq3F21IqhDh9THNuoOU/edit)**
 
 ### Code Review Developer Guide
 

@@ -10,6 +10,27 @@ description: What is the Protocol Labs Network
 This deck shows a quick overview of the major principles of Protocol Labs
 {% endembed %}
 
+## Protocol Labs Main Projects
+* [IPFS](https://ipfs.io/) Was the original core project in the PLN, from which the other projects and technologies have grown from.
+
+* [Filecoin](https://filecoin.io/) is the incentivization structure
+
+libp2p
+
+Testground
+
+IPLD
+
+Multiformats
+
+SourceCred
+
+ProtoSchool
+
+drand
+
+## The Stack
+
 ## Background, Work, & Business Model
 
 _This is an_ [_annotated version of a blog_](https://protocol.ai/blog/protocol-labs-creating-new-networks/)
@@ -30,11 +51,11 @@ The horizon of computing is exciting and turbulent. We face optimistic progress,
 
 ### Principles
 
-* **We should improve the internet and computing generally.** Secure and robust access to information, to communication, and to computing has become a critical part of what it means to be a modern human. The internet has become the main vehicle for human interactions worldwide, and it will only become more so as our devices and interfaces improve. Brain-machine interfaces will cement this, and those are not so far away. Therefore, [**fixing problems with the internet**](https://www.youtube.com/watch?v=2RCwZDRwk48\&t=568s) and upgrading our computational fabric will have tremendous impact for humanity, now and in the future. This is the Why.
+* **We should improve the internet and computing generally.** Secure and robust access to information, to communication, and to computing has become a critical part of what it means to be a modern human. The internet has become the main vehicle for human interactions worldwide, and it will only become more so as our devices and interfaces improve. Brain-machine interfaces will cement this, and those are not so far away. Therefore, [**fixing problems with the internet**](https://www.youtube.com/watch?v=2RCwZDRwk48\&t=568s) and upgrading our computational fabric will have tremendous impact for humanity, now and in the future. This is the **Why**.
 
 ![The Research Pipeline](https://protocol.ai/assets/img/research-pipeline.b728d71d.png)
 
-* **We should accelerate the ideas-to-superpowers pipeline**. At the heart of computing progress lies a simple process: the research, development, and deployment cycle. Ideas are conceived and refined, encoded into mathematical rules, programmed into software, and deployed into computers, which grants super-powers to humans world-wide. The better and faster we are at sifting ideas through this pipeline, the better and faster our superpowers will come. This is the How.
+* **We should accelerate the ideas-to-superpowers pipeline**. At the heart of computing progress lies a simple process: the research, development, and deployment cycle. Ideas are conceived and refined, encoded into mathematical rules, programmed into software, and deployed into computers, which grants super-powers to humans world-wide. The better and faster we are at sifting ideas through this pipeline, the better and faster our superpowers will come. This is the **How**.
 
 Breakthroughs from labs that are exclusively or mostly focused on research tend to stay buried as papers. Sometimes the lag is natural, the research is far ahead of its broad applicability. But we find that there are hundreds of breakthroughs useful long before they reach users. It can take many years, even decades, before breakthroughs are realized in products that improve people's lives. This is massively inefficient! Research has to be coupled closely with development and deployment, so that we can iterate through the cycle quickly, and build good products that actually solve problems for people.
 
@@ -43,14 +64,14 @@ Breakthroughs from labs that are exclusively or mostly focused on research tend 
 Even though we are young, we have already created a large ecosystem of interrelated projects and products. These have all spawned from the first, IPFS, and naturally have much to do with decentralized data distribution. Our approach is to carefully modularize projects so that they can serve as many people as possible. Once it is clear a sub-project should be independent, we spin it into its own effort. I will leave the descriptions here short, click through to find out more about each.
 
 ![Distributed Web](https://protocol.ai/assets/img/pl\_projects.87ac4e1b.png)
-
+<!--
 * [The InterPlanetary File System](https://ipfs.io) (IPFS) is a new protocol to decentralize the web. IPFS enables the creation of completely decentralized and distributed applications, using content addressing and digital signatures. IPFS makes the web faster, safer, and more open.
 * [Filecoin](https://filecoin.io) is a cryptocurrency powered storage network. Miners earn Filecoin by providing open hard-drive space to the network, while users spend Filecoin to store their files encrypted in the decentralized network.
 * [libp2p](https://libp2p.io) is a modular networking stack. libp2p brings together a variety of transports and peer-to-peer protocols, making it easy for developers to build large, robust p2p networks.
 * [IPLD](https://ipld.io) is the data model for the Decentralized Web. It connects all data through cryptographic hashes, and makes it easy to traverse and link to.
 * The [Multiformats Project](https://multiformats.io) is a collection of protocols to future-proof systems, today. Self-describing formats make your systems interoperable and upgradable.
 * [CoinList](https://coinlist.co) is a protocol token fundraising platform. AngelList meets Kickstarter meets Protocol Tokens.
-* [SAFT](https://coinlist.co/saft) is a legal framework for protocol token fundraising.
+* [SAFT](https://coinlist.co/saft) is a legal framework for protocol token fundraising. -->
 
 ### A Network Built around Market Protocols
 
@@ -63,5 +84,5 @@ This is an unprecedented way to capture a fraction of the value created and feed
 ![Distributed Web](https://protocol.ai/assets/img/filecoin\_logos.2c567d09.png)
 
 The cryptocurrency can be used to incent individuals and other groups outside of the original organization to improve and work on the protocol. It can also be used to fund the entire development of the currency, by pre-selling it as Ethereum did in 2014.
-
-The PL Network is funded by, and derives funding from, **Market Protocol assets**. A Market Protocol is a system that mediates some economic activity, and settles value exchanges using a cryptographic asset. This structure solves economic problems in asymmetric peer-to-peer resource sharing, scaling, services, maintenance, and development. In the case of the PL Network, a portion of that network-aligning asset is funneled back into [protocol public goods funding](https://fundingthecommons.io) to reward research, development, and product teams across the network.
+<!--
+The PL Network is funded by, and derives funding from, **Market Protocol assets**. A Market Protocol is a system that mediates some economic activity, and settles value exchanges using a cryptographic asset. This structure solves economic problems in asymmetric peer-to-peer resource sharing, scaling, services, maintenance, and development. In the case of the PL Network, a portion of that network-aligning asset is funneled back into [protocol public goods funding](https://fundingthecommons.io) to reward research, development, and product teams across the network. -->
