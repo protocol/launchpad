@@ -33,7 +33,7 @@
   * [IPLD Resources](docs/ipld/ipld-resources.md)
 * [libp2p](docs/libp2p/README.md)
   * [Core Concepts](docs/libp2p/core-concepts.md)
-  * [Libp2p Connections and Users](docs/libp2p/libp2p-connections-users.md)
+  * [libp2p Connections and Users](docs/libp2p/libp2p-connections-users.md)
   * [Decentralized Messaging](docs/libp2p/decentralized-messaging.md)
   * [Gossipsub](docs/libp2p/gossipsub.md)
   * [Distributed Networking Solutions](docs/libp2p/distributed-networking-solutions.md)

@@ -1,5 +1,5 @@
 ---
-description: Add the subtitle here
+description: How libp2p Routes Content to Connect Users
 ---
 
 # libp2p Connections and Users
@@ -10,9 +10,19 @@ description: Add the subtitle here
 
 {% embed url="https://www.youtube.com/watch?v=zcWHamr5m_k" %}
 
+[#### Content routing | ResNetLabs On Tour](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/)
+
+The content routing system of IPFS is the part of the architecture that discovers content in the network. It is a key part of the architecture, and the one with the largest number of open research questions. In this module, you’ll hear about:
+
+* IPFS’s content routing architecture
+* The settings and algorithmics of IPFS’s DHT
+* IPFS’s gossip-based content routing approaches
+
+{% embed url="https://www.youtube.com/watch?v=KMmiAnMJU-c" %}
+
 ### libp2p Users
 
-The users of the libp2p protocol suite.
+The users of the libp2p protocol suite include, and is a list that is always being added to:
 
 * [Prysmaticlabs.com](http://prysmaticlabs.com)
 * [onflow.org](http://onflow.org)
