@@ -38,7 +38,7 @@
   * [Gossipsub](docs/libp2p/gossipsub.md)
   * [Distributed Networking Solutions](docs/libp2p/distributed-networking-solutions.md)
   * [Nat Traversal and Hole Punching](docs/libp2p/nat-traversal-hole-punching.md)
-  * [Libp2p Resources](docs/libp2p/libp2p-resources.md)
+  * [libp2p Resources](docs/libp2p/libp2p-resources.md)
 * [Filecoin](docs/filecoin/README.md)
   * [How Filecoin Works](docs/filecoin/how-filecoin-works.md)
   * [Filecoin Cryptoeconomics](docs/filecoin/filecoin-cryptoeconomics.md)
