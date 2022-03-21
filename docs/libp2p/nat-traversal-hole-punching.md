@@ -6,6 +6,8 @@ description: Combining Protocols for NAT Traversal
 
 ### NAT Traversal & Hole Punching
 
+[Hole Punching](https://blog.ipfs.io/2022-01-20-libp2p-hole-punching/) is a problem that arises when you are working with p2p connections and you encounter issues with dialing non-public computers. [Read more in the blog](https://blog.ipfs.io/2022-01-20-libp2p-hole-punching/)
+
 #### NAT Traversal
 
 [NAT Traversal](https://en.wikipedia.org/wiki/NAT_traversal) allows those using different Internet Protocols (such as IPFS and HTTP) to communicate through gateways. A necessary component of this is Network Address Translation. Because the people who originally designed IP addresses (a location address on the internet) didn't make it possible to make enough public IP addresses as there are machines to locate, there are a limited number of public IP addresses, and not every machine connected to the internet can have their own.
