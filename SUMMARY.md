@@ -55,7 +55,6 @@
 * [Protocol Labs Toolkits & SDKs](docs/protocol-labs-toolkits-sdks/README.md)
   * [Textile](docs/protocol-labs-toolkits-sdks/textile.md)
   * [Ceramic](docs/protocol-labs-toolkits-sdks/ceramic.md)
-* [IPFS History](docs/ipfs/ipfs-history.md)
   <!-- * [Fission](docs/protocol-labs-toolkits-sdks/fission.md)
   * [Web3.storage](docs/protocol-labs-toolkits-sdks/web3-storage.md)
   * [Estuary](docs/protocol-labs-toolkits-sdks/estuary.md)
