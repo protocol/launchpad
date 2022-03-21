@@ -10,7 +10,7 @@ description: How libp2p Routes Content to Connect Users
 
 {% embed url="https://www.youtube.com/watch?v=zcWHamr5m_k" %}
 
-#### [Content routing | ResNetLabs On Tour](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/)
+#### [Content Routing | ResNetLabs On Tour – Alfonso de la Rocha](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/)
 
 The content routing system of IPFS is the part of the architecture that discovers content in the network. It is a key part of the architecture, and the one with the largest number of open research questions. In this module, you’ll hear about:
 
