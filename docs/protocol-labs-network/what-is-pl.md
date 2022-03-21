@@ -13,8 +13,8 @@ This deck shows a quick overview of the major principles of Protocol Labs
 ## Protocol Labs Main Projects
 * [IPFS](https://ipfs.io/) Was the original core project in the PLN, from which the other projects and technologies have grown from.
 
-* [Filecoin](https://filecoin.io/) is the incentivization structure
-
+* [Filecoin](https://filecoin.io/) is the incentivization structure for Protocol Labs projects
+<!-- 
 libp2p
 
 Testground
@@ -27,7 +27,7 @@ SourceCred
 
 ProtoSchool
 
-drand
+drand -->
 
 ## The Stack
 
