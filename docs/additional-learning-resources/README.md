@@ -32,34 +32,33 @@ description: Deeper Learning and Context to Prepare you for Web3
 
 * [Coursea on _The Bits and Bytes of Computer Networking_](https://www.coursera.org/learn/computer-networking)
 * MIT Press book on [_Designing an Internet_](https://mitpress.mit.edu/books/designing-internet)
-  *   **Book Summary** Why the Internet was designed to be the way it is, and how it could be different, now and in the future.
+  *   **Summary:** _Why the Internet was designed to be the way it is, and how it could be different, now and in the future._
 
-      _How do you design an internet? The architecture of the current Internet is the product of basic design decisions made early in its history. What would an internet look like if it were designed, today, from the ground up? In this book, MIT computer scientist David Clark explains how the Internet is actually put together, what requirements it was designed to meet, and why different design decisions would create different internets. He does not take today's Internet as a given but tries to learn from it, and from alternative proposals for what an internet might be, in order to draw some general conclusions about network architecture._
 
 ## IPFS History
 
-      #### IPFS Intro & Welcome | Molly Mackinlay
+#### IPFS Intro & Welcome | Molly Mackinlay
 
-      <!-- Summary -->
+<!-- Summary -->
 
-      {% embed url="https://www.youtube.com/watch?v=rYD2lfuatJM" %}
+{% embed url="https://www.youtube.com/watch?v=rYD2lfuatJM" %}
 
-      <!-- Important Points -->
-
-      ## Cultural History and IPFS Components
-
-      #### Files API Coffee Talk | Jeromy Johnson
-
-      <!-- Add Summary -->
-
-      {% embed url="https://www.youtube.com/watch?v=FX_AXNDsZ9k" %}
+<!-- Important Points -->
 
 
-      #### Bitswap Coffee Talk | Jeromy Johnson
 
-      <!-- Summary -->
+#### Files API Coffee Talk | Jeromy Johnson
 
-      {% embed url="https://www.youtube.com/watch?v=9UjqJTCg_h4" %}
+<!-- Add Summary -->
+
+{% embed url="https://www.youtube.com/watch?v=FX_AXNDsZ9k" %}
+
+
+#### Bitswap Coffee Talk | Jeromy Johnson
+
+<!-- Summary -->
+
+{% embed url="https://www.youtube.com/watch?v=9UjqJTCg_h4" %}
 
 
 #### Links
