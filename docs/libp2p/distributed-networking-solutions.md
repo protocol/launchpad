@@ -4,7 +4,7 @@ description: The Problems & Modular Solution of libp2p
 
 ## Distributed Networking Solutions
 
-[#### The modular p2p Networking Stack | ResNetLabs On Tour](https://research.protocol.ai/tutorials/resnetlab-on-tour/modular-p2p-stack/)
+#### [The modular p2p Networking Stack | ResNetLabs On Tour](https://research.protocol.ai/tutorials/resnetlab-on-tour/modular-p2p-stack/)
 
 libp2p is the Web 3.0 framework of choice for decentralised process addressing. In this module, you will hear about libp2p’s modular and composable building blocks for P2P networking applications and innovation, which include:
 
