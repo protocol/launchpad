@@ -11,9 +11,12 @@ For most blockchain protocols, miners are incentivized to do work that record le
 The Filecoin network will have [multiple types of providers](https://docs.filecoin.io/storage-provider/how-providing-works/#types-of-provider).
 
 ### Proofs and Sealing
+
+**Sealing** is the process of formatting and storing data in sectors on Filecoin.
+
 Since Filecoin exists to incentivize storage on the network, there are certain proofs that storage provides must verify to meet the requirements for **[Proof of Storage (PoS)](https://spec.filecoin.io/algorithms/pos/)**, called called **Proof of Replication (PoRep)** at the beginning of the deal, when the data is first stored, and **Proof of Spacetime (PoSt)** continually over the lifetime of a deal to verify that storage space is dedicated to a piece of data.
 
-While that data is being stored, several content identifiers are produced such as CommR, CommD, and more, which you can read about in the [ProtoSchool tutorial](https://proto.school/verifying-storage-on-filecoin/03).
+While that data is being sealed and stored, several content identifiers are produced such as CommR, CommD, and more, which you can read about in the [ProtoSchool tutorial](https://proto.school/verifying-storage-on-filecoin/03).
 
 ### [Storage Providers (Miners)](https://docs.filecoin.io/storage-provider/how-providing-works)
 
