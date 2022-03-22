@@ -14,6 +14,8 @@ Your options for persistent data are:
 1. You pin it yourself, and keep that node active on the network
 2. You make an agreement with a [pinning service](https://docs.ipfs.io/concepts/persistence/#pinning-services) and pay them to make sure your data persists in long-term storage.
 
+![Pinning IPFS](<../../.gitbook/assets/pinning.png>)
+
 #### Mutable Content | ResNetLabs on Tour – David Dias
 _See the full set of resources [on the ResNetLab Tutorials page](https://research.protocol.ai/tutorials/resnetlab-on-tour)_
 
