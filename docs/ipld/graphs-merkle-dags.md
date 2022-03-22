@@ -40,3 +40,4 @@ IPFS benefits from these same properties. A copy of Wikipedia on IPFS may take u
 ## Further Reading
 
 * [**Merkle DAGs: Structuring Data for the Distributed Web**](https://proto.school/merkle-dags) on Proto.school, a guided, interactive tutorial.
+* [Merkle proofs Explained.](https://medium.com/crypto-0-nite/merkle-proofs-explained-6dd429623dc5)
