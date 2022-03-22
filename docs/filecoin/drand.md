@@ -1,5 +1,5 @@
 ---
-description: Distributed, Unpredictable, Publicly-Verifiable, and Decentralized
+description: Distributed, Unpredictable, Publicly-Verifiable, and Decentralized Randomness Generator
 ---
 
 
