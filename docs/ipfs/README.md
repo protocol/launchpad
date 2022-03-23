@@ -55,7 +55,7 @@ Web2 is a version of the internet where users are able to easily create and post
 
 Web3 is an internet that shares and distributes the processesing and decision making necessary for the internet, where the users have sovereign control over their data. Web 3 is a distributed, decentralized version of the internet.
 
-![Protocol Labs Logo](<../../.gitbook/assets/web2-web3.png>)
+![Decentralized and Distributed](<../../.gitbook/assets/web2-web3.png>)
 
 Dive into the technical details [with this article on web3 data permanence](https://mikeal.notion.site/web3-data-permanence-0230072b594748ed9aa0c71ad331f289) By Mikeal Rogers.
 
