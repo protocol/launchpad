@@ -14,17 +14,18 @@ The four main projects we will be focusing on in this curriculum are IPFS, IPLD,
 
 ![](<../../.gitbook/assets/image (31).png>)
 
-**IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs)
+* **IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs)
 
-**IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld)
+* **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld)
 
-**Libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p)
+* **Libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p)
 
-**Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)
+* **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)
 
-Note that these are not the only projects in the core Protocol Labs stack, and there are many more, such as multiformats, Drand, Bacalhau, and more that are continually being added and updated to contribute to the PLN.
+Note that these are not the only projects in the core Protocol Labs stack, and there are many more, such as [Multiformats](https://multiformats.io/), [Drand](https://drand.love/), [Bacalhau](https://github.com/filecoin-project/bacalhau), and more that are continually being added and updated to contribute to the PLN.
 
-#### The Project Stack 
+
+#### The Project Stack
 
 ![Web3 Stack](<../../.gitbook/assets/image (11).png>)
 

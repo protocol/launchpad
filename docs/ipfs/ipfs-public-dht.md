@@ -7,7 +7,9 @@ The public distributed hash table is the record of content that is used, along w
 
 ### Nodes, Peers, and the Swarm
 
-A **Peer** on the IPFS network who has a node connected and relays and/or store information on the network. You can either search peers using the DHT and Kademlia, or be directly connected to a peer. The set of peers that you (as a peer) are connected to directly is called a **swarm**.
+A **Peer** on the IPFS network who has a node connected and relays and/or store information on the network. You can either search peers using the DHT and Kademlia, or be directly connected to a peer. The set of peers that you (as a peer) are connected to directly is called a **swarm
+
+![Peers and Swarms](<../../.gitbook/assets/peer-swarm3.png>)
 
 **[IPFS Nodes](https://docs.ipfs.io/concepts/nodes/#types)** are programs that run on a computer that can exchange data with other IPFS nodes. **[Bootstrap nodes](https://docs.ipfs.io/concepts/nodes/#bootstrap)** are used when a new node initially enters the IPFS network.
 
