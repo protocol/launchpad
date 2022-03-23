@@ -1,5 +1,5 @@
 ---
-description: Add the subtitle here
+description: An Easy to Use Web3 Hosting Service
 ---
 
 ## Fleek
@@ -12,7 +12,7 @@ With Fleek, you can host a website on web3, manage your domain, upload and pin f
 
 The Space Daemon packages together IPFS, Textile Threads/Buckets, and Textile Powergate (Filecoin) into one easy to install and JS interface to make it easy to build peer to peer and privacy focused apps.
 
-![Fleek Info](<../../.gitbook/assets/fleek-space-daemon.png>))
+![Fleek Info](<../../.gitbook/assets/fleek-space-daemon.png>)
 
 [Get started with the Fleek Space Daemon](https://docs.fleek.co/space-daemon/getting-started/) in the documentation
 
