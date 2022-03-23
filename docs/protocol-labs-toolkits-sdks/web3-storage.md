@@ -1,21 +1,19 @@
 ---
-description: Add the subtitle here
+description: Simple, Open, Free Storage
 ---
 
-# Web3.storage
+## Web3.Storage
 
-### First Heading
+With **[Web3.Storage](https://web3.storage/)** you get all the benefits of decentralized storage technologies with the frictionless experience you expect in a modern dev workflow.
 
-**Bold text** is building the next generation of the internet.
+Web3.Storage is a service to make building on top of Filecoin as simple as possible - giving developers the power of distributed storage and content addressing via simple client libraries or an HTTP API.
 
-![A link](https://github.com/protocol/launchpad/blob/main/.gitbook/assets/twitter-banner-1500x500.png)
+![Protocol Labs Logo](<../../.gitbook/assets/web3-storage.png>)
 
-#### Sub-Heading
+[Learn more](https://web3.storage/docs/concepts/storage-economics) about why storage is free on Web3.Storage.
 
-### Second Heading
+### Resources
 
-text
-
-#### Sub-Heading
-
-text
+* [Quickstart](https://web3.storage/docs/#quickstart) with NodeJS
+* [Example App](https://web3.storage/docs/examples/image-gallery)
+* The [Content Archive (CAR) Format](https://web3.storage/docs/how-tos/work-with-car-files)

@@ -56,8 +56,8 @@
   * [Textile](docs/protocol-labs-toolkits-sdks/textile.md)
   * [Ceramic](docs/protocol-labs-toolkits-sdks/ceramic.md)
   * [Fleek](docs/protocol-labs-toolkits-sdks/fleek-space-daemon.md)
-  <!-- * [Fission](docs/protocol-labs-toolkits-sdks/fission.md)
   * [Web3.storage](docs/protocol-labs-toolkits-sdks/web3-storage.md)
+  <!-- * [Fission](docs/protocol-labs-toolkits-sdks/fission.md)
   * [Estuary](docs/protocol-labs-toolkits-sdks/estuary.md)
   * [DIY Projects](docs/protocol-labs-toolkits-sdks/diy-projects.md) -->
 * [Built On IPFS and Filecoin](docs/built-on-ipfs-filecoin/README.md)
