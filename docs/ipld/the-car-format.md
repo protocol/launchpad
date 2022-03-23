@@ -27,7 +27,7 @@ Another example use-case: **Filecoin** deals are typically performed using the C
 
 #### CARv2
 
-CARv2 is an incremental upgrade to CARv2 in that it _wraps_ a CARv1 in an outer layer of data that provides some extra descriptive elements about the data in the CAR and a means for attaching an **index** of blocks within the CAR to the end of the archive. These improvements allow CARv2 to be used as an efficient IPLD block store (efficient on read operations, write operations are a little more complex due to the trailing index).
+CARv2 is an incremental upgrade to CARv1 in that it _wraps_ a CARv1 in an outer layer of data that provides some extra descriptive elements about the data in the CAR and a means for attaching an **index** of blocks within the CAR to the end of the archive. These improvements allow CARv2 to be used as an efficient IPLD block store (efficient on read operations, write operations are a little more complex due to the trailing index).
 
 ```
 | 11-byte fixed pragma | 40-byte header | optional padding | CARv1 data payload | optional padding | optional index payload |
