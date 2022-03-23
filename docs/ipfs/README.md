@@ -43,8 +43,6 @@ Computation has gone through so many phases; from the first computers, to machin
 
 [This article gives a great summary](https://medium.com/@vegxcodes/what-you-should-know-about-web3-part-1-15a2ddcfbc41) of the first three stages of Web evolution.
 
-![Protocol Labs Logo](<../../.gitbook/assets/web2-web3.png>)
-
 **Web 1 - Shared Information**
 
 Web1 was a worldwide network of static website, on which any users could basically view and share pages of information, with little interaction.
@@ -55,11 +53,11 @@ Web2 is a version of the internet where users are able to easily create and post
 
 **Web 3 - Shared Hosting**
 
-Web3 is an internet that shares and distributes the processesing and decision making necessary for the internet, where the users have soverign control over their data.
+Web3 is an internet that shares and distributes the processesing and decision making necessary for the internet, where the users have sovereign control over their data. Web 3 is a distributed, decentralized version of the internet.
+
+![Protocol Labs Logo](<../../.gitbook/assets/web2-web3.png>)
 
 Dive into the technical details [with this article on web3 data permanence](https://mikeal.notion.site/web3-data-permanence-0230072b594748ed9aa0c71ad331f289) By Mikeal Rogers.
-
-![Web3 Stack](<../../.gitbook/assets/image (11).png>)
 
 ### Tutorials
 For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/ipfs). Tutorials you should complete include:

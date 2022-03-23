@@ -6,6 +6,28 @@ description: The many projects and organizations that make up the PL Network
 
 ![](<../../.gitbook/assets/image (2).png>)
 
+## The Protocol Labs Projects
+
+### IPFS, IPLD, libp2p, and Filecoin
+
+The four main projects we will be focusing on in this curriculum are IPFS, IPLD, Libp2p, and Filecoin. Most of the information and interaction can be found on docs and GitHub organizations:
+
+![](<../../.gitbook/assets/image (31).png>)
+
+**IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs)
+
+**IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld)
+
+**Libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p)
+
+**Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)
+
+Note that these are not the only projects in the core Protocol Labs stack, and there are many more, such as multiformats, Drand, Bacalhau, and more that are continually being added and updated to contribute to the PLN.
+
+#### The Project Stack 
+
+![Web3 Stack](<../../.gitbook/assets/image (11).png>)
+
 ## The Protocol Labs Network
 
 The PL Network is made up of 300+ projects, companies, and organizations. You can explore a number of those organizations, and the people that work on them, in the WIP [PL Network Directory](https://airtable.com/appHT5ErKdHcsFznj/tblceMFkdHORmuzl4/viwRVjfIBeMdEb8jZ?blocks=hide).
@@ -45,18 +67,3 @@ There are a number of Working Groups within the Protocol Labs Network that organ
 In some cases, those WGs might span multiple organizations, or companies. For example Ecosystem WG spans the Filecoin Foundation, the PL Outercore team, the PL Starfleet team, and a number of other companies. We often use "organization" and "team" interchangably when we mean "top level team of teams".
 
 Teams are the reporting organization structure established by Protocol Labs. Though they establish Labbers' general focus of work, the nature of PL's collborative organization means that Labbers may end up working with many individuals outside their team, and often with those outside of Protocol Labs itself.
-
-
-### IPFS, IPLD, libp2p, and Filecoin
-
-The four main projects we will be focusing on are IPFS, IPLD, Libp2p, and Filecoin. Most of the information and interaction can be found on docs and GitHub organizations:
-
-![](<../../.gitbook/assets/image (31).png>)
-
-**IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs)
-
-**IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld)
-
-**Libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p)
-
-**Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)
