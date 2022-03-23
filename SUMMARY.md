@@ -56,7 +56,7 @@
   * [Textile](docs/protocol-labs-toolkits-sdks/textile.md)
   * [Ceramic](docs/protocol-labs-toolkits-sdks/ceramic.md)
   * [Fleek](docs/protocol-labs-toolkits-sdks/fleek-space-daemon.md)
-  * [Web3.storage](docs/protocol-labs-toolkits-sdks/web3-storage.md)
+  * [Web3.Storage](docs/protocol-labs-toolkits-sdks/web3-storage.md)
   <!-- * [Fission](docs/protocol-labs-toolkits-sdks/fission.md)
   * [Estuary](docs/protocol-labs-toolkits-sdks/estuary.md)
   * [DIY Projects](docs/protocol-labs-toolkits-sdks/diy-projects.md) -->

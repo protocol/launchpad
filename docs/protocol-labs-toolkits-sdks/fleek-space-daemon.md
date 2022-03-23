@@ -4,7 +4,7 @@ description: An Easy-to-Use Web3 Hosting Service
 
 ## Fleek
 
-**Fleek Space Daemon** makes it easy to build on Open Web protocols and a base layer infrastructure powered by them. Build and host your sites, apps, Dapps, and other services on trustless, permissionless, and open technologies focused on creating user-controlled, encrypted, private, p2p experiences easily.
+**Fleek** makes it easy to build on Open Web protocols and a base layer infrastructure powered by them. Build and host your sites, apps, Dapps, and other services on trustless, permissionless, and open technologies focused on creating user-controlled, encrypted, private, p2p experiences easily.
 
 With Fleek, you can host a website on web3, manage your domain, upload and pin files to IPFS, use the Space SDK to build and Open Web app, and use the Fleek IPFS gateway, in addition to the Space Daemon.
 

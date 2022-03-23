@@ -8,7 +8,7 @@ With **[Web3.Storage](https://web3.storage/)** you get all the benefits of decen
 
 Web3.Storage is a service to make building on top of Filecoin as simple as possible - giving developers the power of distributed storage and content addressing via simple client libraries or an HTTP API.
 
-![Protocol Labs Logo](<../../.gitbook/assets/web3-storage.png>)
+![Web3.Storage Basics](<../../.gitbook/assets/web3-storage.png>)
 
 [Learn more](https://web3.storage/docs/concepts/storage-economics) about why storage is free on Web3.Storage.
 
