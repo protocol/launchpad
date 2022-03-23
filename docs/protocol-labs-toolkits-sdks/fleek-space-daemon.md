@@ -8,6 +8,8 @@ description: An Easy-to-Use Web3 Hosting Service
 
 With Fleek, you can host a website on web3, manage your domain, upload and pin files to IPFS, use the Space SDK to build and Open Web app, and use the Fleek IPFS gateway, in addition to the Space Daemon.
 
+![Fleek Hosting](<../../.gitbook/assets/fleek-hosting.png>)
+
 ### Fleek Space Daemon
 
 The Space Daemon packages together IPFS, Textile Threads/Buckets, and Textile Powergate (Filecoin) into one easy to install and JS interface to make it easy to build peer to peer and privacy focused apps.
