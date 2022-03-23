@@ -19,7 +19,7 @@ Location addressing asks exactly one remote host for content by name (which may 
 
 Content addressing can ask any how for content by the fingerprint (hash) of that content since the relationship between the fingerprint and the content is immutable. Since we can verify the content we receive matches the fingerprint, it doesn't matter who we receive the content from.
 
-![](<../../.gitbook/assets/ipld_content_vs_location_2.png>)
+![](<../../.gitbook/assets/location-content-add.png>)
 
 ## Content Identifiers (CIDs)
 
