@@ -43,6 +43,8 @@ Computation has gone through so many phases; from the first computers, to machin
 
 [This article gives a great summary](https://medium.com/@vegxcodes/what-you-should-know-about-web3-part-1-15a2ddcfbc41) of the first three stages of Web evolution.
 
+![Protocol Labs Logo](<../../.gitbook/assets/web2-web3.png>)
+
 **Web 1 - Shared Information**
 
 Web1 was a worldwide network of static website, on which any users could basically view and share pages of information, with little interaction.
