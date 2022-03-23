@@ -13,6 +13,13 @@ Textile’s suite of developer tools, including Powergate, Buckets, and ThreadDB
 
 {% embed url="https://www.youtube.com/watch?v=d1kpID1LSRE" %}
 
+## Powergate
+
+Powergate is an API for deploying hybrid Filecoin and IPFS storage into your stack. Designed for developers who want powerful ways to connect & extend Libp2p, IPFS, and Filecoin. It is a Docker container wrapped around an IPFS node + Filecoin node which allows you to stage, store, and retrieve data, with default configs for miner selection
+
+![Fleek Info](<../../.gitbook/assets/powergate.png>)
+
+### Other Tools
 
 ### The Hub
 The Hub is your portal to the IPFS network and the fastest way to start building and experimenting with Textile technologies.
@@ -36,10 +43,6 @@ Spend less time configuring encryption or managing content addresses with Thread
 
 [Read More](https://docs.textile.io/threads/)
 
-### Filecoin Powergate
-> Warning: The Powergate is undergoing rapid development and should not be used in production.
-
-The Powergate is an API for deploying hybrid Filecoin and IPFS storage into your stack.
 
 ## Other Resources
 Join our public Slack, visit our GitHub, follow us on Twitter, and check out the Blog!

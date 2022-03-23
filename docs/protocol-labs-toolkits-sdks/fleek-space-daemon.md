@@ -1,5 +1,5 @@
 ---
-description: An Easy to Use Web3 Hosting Service
+description: An Easy-to-Use Web3 Hosting Service
 ---
 
 ## Fleek
