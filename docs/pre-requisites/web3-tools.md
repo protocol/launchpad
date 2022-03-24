@@ -6,9 +6,15 @@ description:  The Basic Tools and Mechanisms
 
 ### Crypto Tools
 
-* [What are NFTs?](https://www.youtube.com/watch?v=FkUn86bH34M)
+* [**What are NFTs?**](https://www.youtube.com/watch?v=FkUn86bH34M)
+
 {% embed url="https://www.youtube.com/watch?v=FkUn86bH34M" %}
-* [What are tokens?](https://en.wikipedia.org/wiki/Security_token1)
+
+* [**What are tokens?**](https://www.coinbase.com/learn/crypto-basics/what-is-a-token)
+    * https://www.coinbase.com/learn/crypto-basics/what-is-a-token  
+
+{% embed url="https://www.youtube.com/watch?v=cqZhNzZoMh8" %}
+
 * [**What are Crypto Wallets**](https://www.youtube.com/watch?v=d8IBpfs9bf4)
 
 {% embed url="https://www.youtube.com/watch?v=d8IBpfs9bf4" %}
