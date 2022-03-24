@@ -10,8 +10,6 @@ Once we have fully transitioned to web3, developers will no longer build and dep
 
 Web3 applications will run on blockchains and decentralized networks of many peer to peer nodes, using a different set of protocols, including cryptoeconomic protocols referred to as DeFi (decentralized finance). The apps built on web3 are known as DApps (decentralized apps).
 
-[This article gives a great summary](https://medium.com/@vegxcodes/what-you-should-know-about-web3-part-1-15a2ddcfbc41) of the first three stages of Web evolution.
-
 **Web 1 - Shared Information**
 
 Web1 was a worldwide network of static website, on which any users could basically view and share pages of information, with little interaction.
@@ -22,7 +20,7 @@ Web2 is a version of the internet where users are able to easily create and post
 
 **Web 3 - Shared Hosting**
 
-Web3 is an internet that shares and distributes the processesing and decision making necessary for the internet, where the users have sovereign control over their data. Web 3 is a distributed, decentralized version of the internet.
+Web3 is an internet that shares and distributes the processesing and decision making necessary for the internet, where the users have sovereign control over their data. Web3 is a distributed, decentralized version of the internet.
 
 ![Decentralized and Distributed](<../../.gitbook/assets/web2-web3.png>)
 
@@ -40,6 +38,7 @@ See the [original whitepaper](https://ipfs.io/ipfs/QmR7GSQM93Cx5eAg6a6yRzNde1FQv
 
 #### Web3 & Decentralization – Further Reading
 
+* [What you Should Know about Web3](https://medium.com/@vegxcodes/what-you-should-know-about-web3-part-1-15a2ddcfbc41)
 * [Wikipedia – Web3](https://en.wikipedia.org/wiki/Web3)
 * [Web2 vs. Web3 – Ethereum](https://ethereum.org/en/developers/docs/web2-vs-web3/)
 * [Decentralisation: the next big step for the world wide web - The Guardian](https://www.theguardian.com/technology/2018/sep/08/decentralisation-next-big-step-for-the-world-wide-web-dweb-data-internet-censorship-brewster-kahle)
