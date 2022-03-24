@@ -4,51 +4,21 @@ description: Pre-Requisites to Prepare for Launchpad
 
 ## Launchpad Pre-Requisites
 
+Before staring Protocol Labs' Launchpad program, you will need to have an understanding of the basic mechanisms and tools.
 
-### IPFS &  Web3
+### Goals
+1. Understand what web3 is, how it is different than past iterations of the web, and why it is important to build this new version of the web
 
-#### Interplanetary File Storage! | Simply Explained
+2. Have a basic understanding of what makes up the web3 ecosystem, and how Protocol Labs (and IPFS) is building for web3 and the future
 
-{% embed url="https://www.youtube.com/watch?v=5Uj6uR3fp-U" %}
+3. Understand the basic tools and mechanisms used in web3, such as blockchain, cryptocurrency, smart contracts, and security.
 
-[**How does a blockchain work - Simply Explained**](https://youtu.be/SSo_EIwHSd4)
+### Sections
 
-{% embed url="https://youtu.be/SSo_EIwHSd4" %}
+* [Web3 & Protocol Labs](docs/pre-requisites/web3-ipfs.md)
+* [Building Web3](docs/pre-requisites/building-web3.md)
+* [Web3 Tools](docs/pre-requisites/web3-tools.md)
 
-### Cryptocurrency & the Blockchain
-
-[**How does bitcoin work?**](https://youtu.be/bBC-nXj3Ng4)
-
-{% embed url="https://youtu.be/bBC-nXj3Ng4" %}
-
-[**Understanding Blockchain Consensus Mechanisms**](https://youtu.be/ojxfbN78WFQ)
-
-{% embed url="https://youtu.be/ojxfbN78WFQ" %}
-
-[**Smart Contracts – Simply Explained**](https://youtu.be/ZE2HxTmxfrI)
-
-{% embed url="https://youtu.be/ZE2HxTmxfrI" %}
-
-### Crypto Tools
-
-* [What are NFTs?](https://www.youtube.com/watch?v=FkUn86bH34M)
-{% embed url="https://www.youtube.com/watch?v=FkUn86bH34M" %}
-* [What are tokens?](https://en.wikipedia.org/wiki/Security_token1)
-* [**What are Crypto Wallets**](https://www.youtube.com/watch?v=d8IBpfs9bf4)
-
-{% embed url="https://www.youtube.com/watch?v=d8IBpfs9bf4" %}
-
-
-### Smart Contracts & Security
-
-* [Best Practices Blog](https://consensys.github.io/smart-contract-best-practices/)
-* [Webinar on Smart Contracts Security Best Practices](https://courses.consensys.net/courses/take/smart-contract-security/lessons/9798331-smart-contracts-security-best-practices)
-
-
-#### Web3 & Decentralization
-
-* [Web2 vs. Web3 – Ethereum](https://ethereum.org/en/developers/docs/web2-vs-web3/)
-* [Decentralisation: the next big step for the world wide web - The Guardian](https://www.theguardian.com/technology/2018/sep/08/decentralisation-next-big-step-for-the-world-wide-web-dweb-data-internet-censorship-brewster-kahle)
 
 #### Links
 
