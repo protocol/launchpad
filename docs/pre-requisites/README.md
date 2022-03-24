@@ -4,20 +4,20 @@ description: Pre-Requisites to Prepare for Launchpad
 
 ## Launchpad Pre-Requisites
 
-Before staring Protocol Labs' Launchpad program, you will need to have an understanding of the basic mechanisms and tools.
+Before staring Protocol Labs' Launchpad program, you will need to have an understanding of the basic mechanisms and tools, as well as the _what_ and _why_ of web3, to better understand the mission of Protocol Labs and it's ecosystem.
 
 ### Goals
 1. Understand what web3 is, how it is different than past iterations of the web, and why it is important to build this new version of the web
 
 2. Have a basic understanding of what makes up the web3 ecosystem, and how Protocol Labs (and IPFS) is building for web3 and the future
 
-3. Understand the basic tools and mechanisms used in web3, such as blockchain, cryptocurrency, smart contracts, and security.
+3. Understand the basic tools and mechanisms used in web3, such as blockchain, cryptocurrency, smart contracts, and security
 
 ### Sections
 
-* [Web3 & Protocol Labs](docs/pre-requisites/web3-ipfs.md)
-* [Building Web3](docs/pre-requisites/building-web3.md)
-* [Web3 Tools](docs/pre-requisites/web3-tools.md)
+* [Web3 & Protocol Labs](web3-ipfs.md)
+* [Building Web3](building-web3.md)
+* [Web3 Tools](web3-tools.md)
 
 
 #### Links
