@@ -19,6 +19,8 @@ Web3 enhances the internet as we know it today with a few other added characteri
 
 {% embed url="https://youtu.be/SSo_EIwHSd4" %}
 
+{% embed url="https://www.youtube.com/watch?v=aQWflNQuP_o" %}
+
 ### Cryptocurrency & the Blockchain
 
 [**How does bitcoin work?**](https://youtu.be/bBC-nXj3Ng4)
