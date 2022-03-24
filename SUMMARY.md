@@ -52,6 +52,9 @@
 ## Other Resources
 
 * [Pre-Requisites](docs/pre-requisites/README.md)
+  * [Web3 & Protocol Labs](docs/pre-requisites/web3-ipfs.md)
+  * [Building Web3](docs/pre-requisites/building-web3.md)
+  * [Web3 Tools](docs/pre-requisites/web3-tools.md)
 * [Protocol Labs Toolkits & SDKs](docs/protocol-labs-toolkits-sdks/README.md)
   * [Textile](docs/protocol-labs-toolkits-sdks/textile.md)
   * [Ceramic](docs/protocol-labs-toolkits-sdks/ceramic.md)
