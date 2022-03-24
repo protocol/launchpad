@@ -1,10 +1,12 @@
 ---
-description: What is Web3, and How Protocol Labs is Contributing
+description: What is Web3, and How the Protocol Labs Network is Contributing
 ---
 
 ## Web3 & IPFS
 
 ### What is Web3?
+
+{% embed url="https://www.youtube.com/watch?v=l44z35vabvA" %}
 
 Once we have fully transitioned to web3, developers will no longer build and deploy applications that run on a single server or that store their data in a single database (hosted and managed by a single cloud service provider).
 
@@ -12,15 +14,15 @@ Web3 applications will run on blockchains and decentralized networks of many pee
 
 **Web 1 - Shared Information**
 
-Web1 was a worldwide network of static website, on which any users could basically view and share pages of information, with little interaction.
+Web1, the first iteration of the world wide web, was a global network of static websites, on which any users could view and share pages of information, with little interaction.
 
 **Web 2 - Shared Creation**
 
-Web2 is a version of the internet where users are able to easily create and post their own content, though how decisions are made, who owns the data, and the ways (and to whom) content is shared is ruled by a few, large, technological gateholders.
+Web2 is the current version of the internet, where users are able to easily create and post their own content (through platforms like centralized marketplaces, social networks, chat forums, and similar).
 
 **Web 3 - Shared Hosting**
 
-Web3 is an internet that shares and distributes the processesing and decision making necessary for the internet, where the users have sovereign control over their data. Web3 is a distributed, decentralized version of the internet.
+Web3 is a new distributed, decentralized verion of the internet that reallocates decision-making and data ownership directly to users, giving them sovereign control over their data.
 
 ![Decentralized and Distributed](<../../.gitbook/assets/web2-web3.png>)
 
