@@ -4,7 +4,7 @@ description: Pre-Requisites to Prepare for Launchpad
 
 # Pre-Requisites
 
-Before staring Protocol Labs' Launchpad program, you will need to have an understanding of the basic mechanisms and tools, as well as the _what_ and _why_ of web3, to better understand the mission of Protocol Labs and it's ecosystem.
+Before staring PL Launchpad program, you will need to have an understanding of the basic mechanisms and tools, as well as the _what_ and _why_ of web3.
 
 ## Learning Objectives
 
