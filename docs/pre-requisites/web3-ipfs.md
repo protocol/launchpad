@@ -1,5 +1,5 @@
 ---
-description: What is Web3, and How IPFS and PL are Contributing
+description: What is Web3, and How Protocol Labs is Contributing
 ---
 
 ## Web3 & IPFS

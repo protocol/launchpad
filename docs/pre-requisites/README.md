@@ -9,9 +9,13 @@ Before staring Protocol Labs' Launchpad program, you will need to have an unders
 ### Goals
 1. Understand what web3 is, how it is different than past iterations of the web, and why it is important to build this new version of the web
 
-2. Have a basic understanding of what makes up the web3 ecosystem, and how Protocol Labs (and IPFS) is building for web3 and the future
+2. Be able to explain the basics of distributed storage, how IPFS works, and what NFTs are
 
-3. Understand the basic tools and mechanisms used in web3, such as blockchain, cryptocurrency, smart contracts, and security
+3. Have a basic understanding of what makes up the web3 ecosystem, and how Protocol Labs (and IPFS) is building for web3 and the future
+
+4. Understand the basic tools and mechanisms used in web3, such as blockchain, cryptocurrency, smart contracts, and security
+
+
 
 ### Sections
 
