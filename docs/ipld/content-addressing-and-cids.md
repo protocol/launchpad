@@ -13,13 +13,13 @@
 
 ### Location- vs content-addressing
 
-![](<../../.gitbook/assets/ipld_content_vs_location.png>)
+![](<../../.gitbook/assets/ipld\_content\_vs\_location (1).png>)
 
 Location addressing asks exactly one remote host for content by name (which may or may not be related to the content).
 
 Content addressing can ask any how for content by the fingerprint (hash) of that content since the relationship between the fingerprint and the content is immutable. Since we can verify the content we receive matches the fingerprint, it doesn't matter who we receive the content from.
 
-![](<../../.gitbook/assets/location-content-add.png>)
+![](../../.gitbook/assets/location-content-add.png)
 
 ## Content Identifiers (CIDs)
 
@@ -31,22 +31,22 @@ CIDs are:
 * **self describing**
 * used to name every piece of data in IPFS
 
-![](<../../.gitbook/assets/ipld_cids.png>)
+![](<../../.gitbook/assets/ipld\_cids (1).png>)
 
 Example:
 
-* **CIDv0**: [<code>**Qm**S4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv</code>](https://ipfs.io/ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv)
-* **CIDv1**: [<code>**bafybei**bxm2nsadl3fnxv2sxcxmxaco2jl53wpeorjdzidjwf5aqdg7wa6u</code>](https://ipfs.io/ipfs/bafybeibxm2nsadl3fnxv2sxcxmxaco2jl53wpeorjdzidjwf5aqdg7wa6u)
+* **CIDv0**: [**`Qm`**`S4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv`](https://ipfs.io/ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv)
+* **CIDv1**: [**`bafybei`**`bxm2nsadl3fnxv2sxcxmxaco2jl53wpeorjdzidjwf5aqdg7wa6u`](https://ipfs.io/ipfs/bafybeibxm2nsadl3fnxv2sxcxmxaco2jl53wpeorjdzidjwf5aqdg7wa6u)
 
-*(These point to the same content but use two different versions of the CID specification, more on this later).*
+_(These point to the same content but use two different versions of the CID specification, more on this later)._
 
 CIDs are self-describing content addresses: hash digests with descriptions of what & how. They tell you the hash function used as well as the codec that can be used to interpret the binary data being linked to.
 
 A hash digest is a fine content address, but a CID makes it self-describing and able to jump across systems.
 
-A Git commit hash is just a hash digest and you know it's a SHA1 output because *it's Git* and that's all Git has been using. But now that Git wants to start using SHA2-256 hashes, the assumptions built in about SHA1 are quire painful and they need a way to distinguish. If Git was built using CIDs instead, it wouldn't matter what hash function was used and upgrading would be trivial.
+A Git commit hash is just a hash digest and you know it's a SHA1 output because _it's Git_ and that's all Git has been using. But now that Git wants to start using SHA2-256 hashes, the assumptions built in about SHA1 are quire painful and they need a way to distinguish. If Git was built using CIDs instead, it wouldn't matter what hash function was used and upgrading would be trivial.
 
-Similarly, you know that a Git commit hash addresses a Git commit because you use it within the Git context. But what if you wanted to address a Git commit from an Ethereum block and point to that Ethereum block from a reproducible build system? When using these digests you also need to say *what* system those digests live within (i.e. where you might find them and what you might do when you locate the data).
+Similarly, you know that a Git commit hash addresses a Git commit because you use it within the Git context. But what if you wanted to address a Git commit from an Ethereum block and point to that Ethereum block from a reproducible build system? When using these digests you also need to say _what_ system those digests live within (i.e. where you might find them and what you might do when you locate the data).
 
 CIDs give us a complete self-describing package:
 
@@ -74,7 +74,7 @@ CIDs are the native link format for IPLD that distinguishes it from a simple dat
 
 ## Anatomy of a CID
 
-![](<../../.gitbook/assets/ipld_anatomy_of_a_cid.png>)
+![](../../.gitbook/assets/ipld\_anatomy\_of\_a\_cid.png)
 
 CIDs build on some basic technologies for self-describing data:
 
@@ -94,7 +94,7 @@ Generally, multicodec numbers are used as prefixes to the values they identify. 
 
 A **Multihash** is a self-describing hash digest. The hash digest is prefixed with a number that identifies the hash function, this number is listed in the Multicodec registry. Each hash function that anyone wants to generate multihashes from has an entry in the table. For example, the SHA3-384 hash function has the code `0x15`, while a BLAKE2b hash function with 384-bit output is `0xb230`. After the hash function code prefix, a Multihash also prefixes the length of the hash digest to follow. So a Multihash can be said to be: `<hash-function-code><digest-length><digest-bytes>`.
 
-**Multibase** defines a specification for self-describing base encoding for string representation of bytes. Multibase uses a prefix *character* which describes the base used to encode the bytes that follow. For example:
+**Multibase** defines a specification for self-describing base encoding for string representation of bytes. Multibase uses a prefix _character_ which describes the base used to encode the bytes that follow. For example:
 
 * `b` - base32
 * `z` - base58
@@ -123,5 +123,5 @@ Beyond CIDv0, there is only one currently valid CID version `1`, but a CIDv1 in 
 ## Further Reading
 
 * [**Content addressing and CIDs**](https://docs.ipfs.io/concepts/content-addressing/) in the IPFS documentation.
-* The [**CID Inspector**](https://cid.ipfs.io/) is a useful tool for dissecting a CID string.
+* The [**CID Inspector**](https://cid.ipfs.io) is a useful tool for dissecting a CID string.
 * [**Anatomy of a CID**](https://proto.school/anatomy-of-a-cid/) on Proto.school, a guided, interactive tutorial.

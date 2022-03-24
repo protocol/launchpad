@@ -6,7 +6,7 @@ description: The What and Why of IPLD
 
 IPLD (InterPlanetary Linked Data) is **The Data Layer for content-addressed systems**
 
-![](<../../.gitbook/assets/ipld.png>)
+![](<../../.gitbook/assets/ipld (1).png>)
 
 ## Why IPLD?
 
@@ -15,11 +15,13 @@ IPLD answers the question: Can we extract a re-usable data layer from IPFS that 
 Every content addressed system reinvents the data layer, typically in non-reusable ways. But we think that **building the next Git should take hours, not days!** so IPLD aims to be an off-the-shelf content addressed data layer, with associated libraries, documentation and tooling.
 
 ## Background Information (Optional)
+
 In order to understand the pieces that make up a CID and the IPLD model, you will need to understand the following fundamental concepts:
+
 * [Base Encoding](https://skorks.com/2009/08/different-types-of-encoding-schemes-a-primer/) – This is the basically the way that binary data is converted in to a compressed set of characters. for example, Base 10 encoding says that 0001 1010 = 26, but in base64 0001 1010 == MDAwMSAxMDEw. [Play around with different encoding here](https://cryptii.com/pipes/binary-to-base64)
 * [Hashing](https://www.sentinelone.com/cybersecurity-101/hashing/) – A hash is a function that converts one value to another. In cryptography, the function that converts data from one form to another is an unknown process that is so complex it is impossible(?) to reverse, that produces a unique, fixed length output.
 * [Codecs](https://www.analogictips.com/what-is-a-codec/) – Codecs are encoder/ decoder tools that translate to and from binary formats, in different ways.
-* [Varints](https://carlmastrangelo.com/blog/lets-make-a-varint) – Variable length integers, or Varints, are a way of compressing down integers into a smaller space than is normally needed. Since smaller numbers don't neet as many bytes to represent them (0000 0010 == 2) vs (1110 0011 == 27), you can add a byte at the beginning to indicate how many bits are needed, to save on bit usage.
+* [Varints](https://carlmastrangelo.com/blog/lets-make-a-varint) – Variable length integers, or Varints, are a way of compressing down integers into a smaller space than is normally needed. Since smaller numbers don't neet as many bytes to represent them (0000 0010 == 2) vs (1110 0011 == 27), you can add a byte at the beginning to indicate how many bits are needed, to save on bit usage.
 * [CIDs (Content Identifiers)](https://mikeal.notion.site/what-is-web3-994f2d4cf1944e99a898643cb704d9a6#e34e81fc76b0404ab20f55f0940dfbcd) – A CID is a binary address format that prepend a bunch of [varints](https://carlmastrangelo.com/blog/lets-make-a-varint) to **self-describe** the inner structure. a CID includes: cid has a few parts; the hash, a description of the hash, a description of the encoding format, and a single int (1) to represent “CIDv1”
 
 ## IPLD as Leverage
@@ -69,6 +71,7 @@ Directories are graphs of named links pointing to files, forming graphs that add
 * [**IPLD in the InterPlanetary Ecosystem**](https://ipld.io/docs/intro/ecosystem/)
 
 ### Tutorials
+
 For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/ipld). Tutorials you should complete include:
 
 * [Merkle DAGs: Structuring Data for the Distributed Web](https://proto.school/merkle-dags)

@@ -1,5 +1,6 @@
 # Table of contents
 
+* [README](README.md)
 * [About Launchpad](docs/about-launchpad.md)
 
 ## Launchpad Learning Resources
@@ -42,12 +43,10 @@
 * [Filecoin](docs/filecoin/README.md)
   * [How Filecoin Works](docs/filecoin/how-filecoin-works.md)
   * [Filecoin Cryptoeconomics](docs/filecoin/filecoin-cryptoeconomics.md)
-  <!-- * [Filecoin Implementations](docs/filecoin/filecoin-implementations.md) -->
   * [The Filecoin Protocol](docs/filecoin/sealing-proving.md)
   * [Drand](docs/filecoin/drand.md)
   * [Progress & Future Work](docs/filecoin/where-we-are-headed.md)
   * [Filecoin Resources](docs/filecoin/filecoin-resources.md)
-
 
 ## Other Resources
 
@@ -60,13 +59,5 @@
   * [Ceramic](docs/protocol-labs-toolkits-sdks/ceramic.md)
   * [Fleek](docs/protocol-labs-toolkits-sdks/fleek-space-daemon.md)
   * [Web3.Storage](docs/protocol-labs-toolkits-sdks/web3-storage.md)
-  <!-- * [Fission](docs/protocol-labs-toolkits-sdks/fission.md)
-  * [Estuary](docs/protocol-labs-toolkits-sdks/estuary.md)
-  * [DIY Projects](docs/protocol-labs-toolkits-sdks/diy-projects.md) -->
 * [Built On IPFS and Filecoin](docs/built-on-ipfs-filecoin/README.md)
-  <!-- * [Filecoin Launchpad](docs/built-on-ipfs-filecoin/filecoin-launchpad.md) -->
-  <!-- * [Starling Case Study](docs/built-on-ipfs-filecoin/starling-case-study.md)
-  * [Community & Meetups](docs/built-on-ipfs-filecoin/community-meetups.md)
-  * [Apps & Tooling](docs/built-on-ipfs-filecoin/apps-tooling.md)
-  * [Research & Grants](docs/built-on-ipfs-filecoin/research-grants.md) -->
 * [Additional Learning](docs/additional-learning-resources/README.md)
