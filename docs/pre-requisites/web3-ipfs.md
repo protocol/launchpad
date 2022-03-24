@@ -6,6 +6,10 @@ description: What is Web3, and How IPFS and PL are Contributing
 
 ### What is Web3?
 
+Once we have fully transitioned to web3, developers will no longer build and deploy applications that run on a single server or that store their data in a single database (hosted and managed by a single cloud service provider).
+
+Web3 applications will run on blockchains and decentralized networks of many peer to peer nodes, using a different set of protocols, including cryptoeconomic protocols referred to as DeFi (decentralized finance). The apps built on web3 are known as DApps (decentralized apps).
+
 [This article gives a great summary](https://medium.com/@vegxcodes/what-you-should-know-about-web3-part-1-15a2ddcfbc41) of the first three stages of Web evolution.
 
 **Web 1 - Shared Information**
