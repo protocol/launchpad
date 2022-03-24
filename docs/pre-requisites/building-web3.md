@@ -13,10 +13,6 @@ Web3 enhances the internet as we know it today with a few other added characteri
 * Stateful
 * Has secure, native currency and payments
 
-#### Interplanetary File Storage! | Simply Explained
-
-{% embed url="https://www.youtube.com/watch?v=5Uj6uR3fp-U" %}
-
 [**How does a blockchain work - Simply Explained**](https://youtu.be/SSo_EIwHSd4)
 
 {% embed url="https://youtu.be/SSo_EIwHSd4" %}

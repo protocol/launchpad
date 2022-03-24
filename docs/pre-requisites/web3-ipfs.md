@@ -28,7 +28,19 @@ Web3 is an internet that shares and distributes the processesing and decision ma
 
 Dive into the technical details [with this article on web3 data permanence](https://mikeal.notion.site/web3-data-permanence-0230072b594748ed9aa0c71ad331f289) By Mikeal Rogers.
 
-#### Web3 & Decentralization
+### IPFS
 
+IPFS was the core (first) project in the Protocol Labs Network, from which other projects and technologies have grown. Protocol Labs was formed by Juan Benet in May 2014 to support fundamental research, development, and deployment of infrastructure for open networks (like the internet), with IPFS and its complementary incentivization layer, Filecoin, as the first projects.
+
+See the [original whitepaper](https://ipfs.io/ipfs/QmR7GSQM93Cx5eAg6a6yRzNde1FQv7uL6X1o4k7zrJa3LX/ipfs.draft3.pdf) and learn more about the [history in docs](https://docs.ipfs.io/project/history/#a-p2p-summer-1999-2003).
+
+#### Interplanetary File Storage! | Simply Explained
+
+{% embed url="https://www.youtube.com/watch?v=5Uj6uR3fp-U" %}
+
+#### Web3 & Decentralization – Further Reading
+
+* [Wikipedia – Web3](https://en.wikipedia.org/wiki/Web3)
 * [Web2 vs. Web3 – Ethereum](https://ethereum.org/en/developers/docs/web2-vs-web3/)
 * [Decentralisation: the next big step for the world wide web - The Guardian](https://www.theguardian.com/technology/2018/sep/08/decentralisation-next-big-step-for-the-world-wide-web-dweb-data-internet-censorship-brewster-kahle)
+* [The New York Times - What  is web3?](https://www.nytimes.com/interactive/2022/03/18/technology/web3-definition-internet.html)
