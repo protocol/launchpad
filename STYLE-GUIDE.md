@@ -77,3 +77,9 @@ Example 2:
 This video walks through major themes and takeaways from the doc above
 {% endembed %}
 ```
+
+_Forms Example_
+
+```
+{% embed url="https://docs.google.com/forms/d/e/1FAIpQLSfBhz3elo3K8U6MpMKeO1-0CfTdTQwPaMSYJPi3bSNyFLm0Dw/viewform?usp=sf_link" %}
+```

@@ -21,7 +21,7 @@ Before staring Protocol Labs' Launchpad program, you will need to have an unders
 
 ## Quiz
 
-[**Pre-Requisites Quiz - Protocol Labs Launchpad**](https://docs.google.com/forms/d/e/1FAIpQLSfBhz3elo3K8U6MpMKeO1-0CfTdTQwPaMSYJPi3bSNyFLm0Dw/viewform?usp=sf\_link)
+Take the [**Pre-Requisites Quiz - Protocol Labs Launchpad**](https://docs.google.com/forms/d/e/1FAIpQLSfBhz3elo3K8U6MpMKeO1-0CfTdTQwPaMSYJPi3bSNyFLm0Dw/viewform?usp=sf\_link) before or after covering the pre-requisite content to gauge your understanding.
 
 {% embed url="https://docs.google.com/forms/d/e/1FAIpQLSfBhz3elo3K8U6MpMKeO1-0CfTdTQwPaMSYJPi3bSNyFLm0Dw/viewform?usp=sf_link" %}
 
