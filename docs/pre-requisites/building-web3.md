@@ -3,6 +3,8 @@ description: The What and Why of Web3
 ---
 
 ## Building Web3
+{% embed url="https://www.youtube.com/watch?v=pJOG5Ql7ZD0" %}
+
 Web3 enhances the internet as we know it today with a few other added characteristics. web3 is:
 
 * Verifiable
