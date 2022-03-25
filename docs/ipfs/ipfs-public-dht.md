@@ -22,6 +22,8 @@ The [DHT is a distributed system](https://medium.com/coinmonks/a-brief-overview-
 
 * Peer Records – These map a peerID to a set of multiaddresses at which the peer may be reached. This is used by IPFS when we know of a peer with content, but do not know its address, and used for manual connections
 
+![DHT and Peers](<../../.gitbook/assets/dht-peers.png>)
+
 [Read More in the docs](https://docs.ipfs.io/concepts/dht)
 
 ## Kademlia

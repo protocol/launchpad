@@ -36,6 +36,8 @@ There are two main types of deals in Filecoin: storage deals and retrieval deals
 
 Storage deals are agreements between clients and storage providers to store some data in the network. Once a deal is initiated, and the storage provider has received the data to store, it will repeatedly prove to the chain that it is still storing the data per the agreement so that it can collect rewards. If not, the storage provider will be slashed and lose FIL.
 
+![Anatomy of a Filecoin Deal](<../../.gitbook/assets/filecoin-deal.png>)
+
 
 ### [Proofs](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#proofs)
 
