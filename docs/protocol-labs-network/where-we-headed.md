@@ -25,10 +25,10 @@ _See the full set of resources [on the ResNetLab Tutorials page](https://researc
 
 _Understand the basics of the Protocol Labs network & ecosystem, Web 3.0 blockchains, the semantic web, and the reasons that Protocol Labs is building the backbone for a distributed web. In this module, you’ll hear about Issues facing Web 2.0 and motivation for Web 3.0, IPFSits role in Web 3.0 with location addressing, and exciting projects in the IPFS ecosystem._
 
-## Optional Content
+<!-- ## Optional Content -- this was moved to pre-reqs
 
 #### Juan Benet Presents Building Web3 at Web3 Summit 2019
 
 {% embed url="https://www.youtube.com/watch?v=pJOG5Ql7ZD0" %}
 
-_In this video you can learn more about the ecosystem of gateways, pinning services, browsers solutions, messaging, client tools for IPFS, other IPFS projects, and more being build with the Protocol Labs architecture. In this talk, we look forward to the problems we will have to solve and how we can try to think ahead to truly make a better system._
+_In this video you can learn more about the ecosystem of gateways, pinning services, browsers solutions, messaging, client tools for IPFS, other IPFS projects, and more being build with the Protocol Labs architecture. In this talk, we look forward to the problems we will have to solve and how we can try to think ahead to truly make a better system._ -->

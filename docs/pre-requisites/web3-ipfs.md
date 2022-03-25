@@ -20,7 +20,7 @@ Web1, the first iteration of the world wide web, was a global network of static 
 
 Web2 is the current version of the internet, where users are able to easily create and post their own content (through platforms like centralized marketplaces, social networks, chat forums, and similar).
 
-**Web 3 - Shared Hosting**
+**Web 3 - Shared Ownership**
 
 Web3 is a new distributed, decentralized verion of the internet that reallocates decision-making and data ownership directly to users, giving them sovereign control over their data.
 
