@@ -6,7 +6,7 @@ description:  The Basic Tools and Mechanisms
 There are many tools that you can use to engage with web3 capabilities, including NFTs for storing unique assets, tokens which refer the the currency that exist in the decentralized currency world, and wallets, which are used to secure and store private keys.
 
 ### NFTs
-NFTs are a type of cryptographic asset that is encrypted with an creator's signature, ensuring that the owner of that asset owns the true, original (non-fungible) version of that asset. Though NFTs are most well-known for works of art, there are many other applications of NFT technology. There are various [marketplaces](https://decrypt.co/80595/best-nft-marketplaces) and tools, such as [NFT.Storage](https://nft.storage, that you can explore.
+NFTs are a type of cryptographic asset that is encrypted with an creator's signature, ensuring that the owner of that asset owns the true, original (non-fungible) version of that asset. Though NFTs are most well-known for works of art, there are many other applications of NFT technology. There are various [marketplaces](https://decrypt.co/80595/best-nft-marketplaces) and tools, such as [NFT.Storage](https://nft.storage), that you can explore.
 
 
 [**What are NFTs? | Simply Explained**](https://www.youtube.com/watch?v=FkUn86bH34M)
@@ -14,7 +14,7 @@ NFTs are a type of cryptographic asset that is encrypted with an creator's signa
 {% embed url="https://www.youtube.com/watch?v=FkUn86bH34M" %}
 
 ### Tokens
-In the web3 world, the word [token](https://www.coinbase.com/learn/crypto-basics/what-is-a-token) is synonumous with _coin_ or a way to refer to a type of cryptocurrency. Tokens can be used for many things outside of their use as a currency, including governance, NFTs, and security tokens.
+In the web3 world, the word [token](https://www.coinbase.com/learn/crypto-basics/what-is-a-token) is synonumous with _coin_ or a way to refer to a type of cryptocurrency. Tokens can be used for many things outside of their use as a currency, including governance, NFTs, and security tokens. To exchange tokens, you can choose from an ever evolving set of [cryptocurrency exchanges](https://www.forbes.com/advisor/investing/best-crypto-exchanges/).
 
 [**What are tokens? | Simply Explained**](https://www.youtube.com/watch?v=cqZhNzZoMh8)
 
