@@ -21,7 +21,7 @@ In the web3 world, the word [token](https://www.coinbase.com/learn/crypto-basics
 {% embed url="https://www.youtube.com/watch?v=cqZhNzZoMh8" %}
 
 ### Wallets
-Essentially, [wallets](https://www.coinbase.com/learn/crypto-basics/what-is-a-crypto-wallet) are where you store your private keys that you use to access your cryptocurrencies and other accounts. You can categorize wallets into two categories, hot & cold (also known as [custodial and non-custodial](https://www.gemini.com/cryptopedia/crypto-wallets-custodial-vs-noncustodial#section-custodial-crypto-wallets-pro-and-cons)) wallets, and understanding how to use them is key to being able to trade cryptocurrencies, and create & use DApps that incorporate payments.
+Essentially, [wallets](https://www.coinbase.com/learn/crypto-basics/what-is-a-crypto-wallet) are where you store your private keys that you use to access your cryptocurrencies and other accounts. You can categorize wallets into two categories, hot & cold (which can also be [custodial and non-custodial](https://www.gemini.com/cryptopedia/crypto-wallets-custodial-vs-noncustodial#section-custodial-crypto-wallets-pro-and-cons) accounts) wallets, and understanding how to use them is key to being able to trade cryptocurrencies, and create & use DApps that incorporate payments.
 
 [**What are Crypto Wallets | Simply Explained**](https://www.youtube.com/watch?v=d8IBpfs9bf4)
 
