@@ -71,8 +71,9 @@ In Filecoin, addresses are used to identify actors. There are 4 address types:
 * `2` - Actor Address
 * `3` - BLS Public Key Address
 
+### Filecoin Deep Dive (Optional)
 
-### Filecoin for Developers & Builders | Pooja Shah
+#### Filecoin for Developers & Builders | Pooja Shah
 
 In this talk by Pooja Shah of Protocol Labs, learn about the basic functioning and purpose of Filecoin. The Core features and use cases of Filecoin will be covered, and Pooja will also go over some of the activity going on in the ecosystem, including the core developer projects that make it possible to implement, develop, and use Filecoin.
 
