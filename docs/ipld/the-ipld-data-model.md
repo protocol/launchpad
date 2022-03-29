@@ -2,7 +2,7 @@
 
 IPLD defines a **Data Model** that details the forms that data can take in memory, and through which a codec transforms that memory to and from encoded bytes.
 
-Like the JSON data model, the IPLD Data Model includes **Booleans**, **Strings**, **Ints**, **Floats**, **Null**, **Lists** and **Maps**, but also adds **Bytes** and **Links** (CIDs).
+Like the JSON data model, the IPLD Data Model includes data **[Kinds](https://ipld.io/docs/schemas/using/authoring-guide/#schema-kinds)** which include **Booleans**, **Strings**, **Ints**, **Floats**, **Null**, **Lists** and **Maps**, but also adds **[Bytes](https://ipld.io/docs/schemas/using/authoring-guide/#bytesprefix-unions-for-bytes)** and **[Links](https://ipld.io/docs/schemas/using/authoring-guide/#links)** (CIDs).
 
 The Data Model is how we reason about data moving through the various states—in-memory, programmatic access and manipulation, and serialization to and from bytes for storage or transfers.
 
