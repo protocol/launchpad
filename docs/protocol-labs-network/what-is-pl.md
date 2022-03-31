@@ -4,17 +4,17 @@ description: What is the Protocol Labs Network
 
 # What is the PL Network?
 
-#### Protocol Labs: An Overview | Molly Mackinlay
+#### The Protocol Labs Network in 2022 | Molly Mackinlay
 
-{% embed url="https://docs.google.com/presentation/d/108Dt3QwjB6Mi3lXhl9olGqmhyx2tIiYwY3wUtLpiRco/edit?usp=sharing" %}
-This deck shows a quick overview of the major principles of Protocol Labs
-{% endembed %}
+In this talk by Molly Mackinlay, understand where Protocol Labs is an organization in 2022, where we are headed, the trajectory, evolving landscape, and how we are accelerating the PL network. Originally given in Feb 2022.
+
+{% embed url="https://www.youtube.com/watch?v=RXt65xbyq6c" %}
 
 ## Protocol Labs Main Projects
 * [IPFS](https://ipfs.io/) Was the original core project in the PLN, from which the other projects and technologies have grown from.
 
 * [Filecoin](https://filecoin.io/) is the incentivization structure for Protocol Labs projects
-<!-- 
+<!--
 libp2p
 
 Testground
