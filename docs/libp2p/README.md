@@ -3,7 +3,7 @@ description: The Networking Layer
 ---
 
 # libp2p
-**libp2p is the networking & communication layer** for IPFS. [Visit the main website](http://libp2p.io.ipns.localhost:8080/) for resources and information.
+**libp2p is the networking & communication layer** for IPFS. [Visit the main website](https://libp2p.io/) for resources and information.
 
 Moving from a location-addressed system to a peer-to-peer, content addressed system presents a lot of challenges. The internet as it is, with firewalls and NATs, was designed to provide data (securely) for the traditional Web2 systems.
 
