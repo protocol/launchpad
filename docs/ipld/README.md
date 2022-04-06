@@ -71,7 +71,7 @@ For those who are newer to the world of Filecoin, Web3, and storage verification
 
 #### [IPLD Tutorial - DAGs, Roots, and UnixFS | Rod Vagg](https://youtu.be/nLgxTYoF-K4)
 
-[Follow along with this activity](https://www.notion.so/pl-strflt/DHT-Overview-e4bc573eaf094efc8a0781de47262db6) that introduces activities in the CLI that will help you understand the DAG structure, Merkle Roots, and the UnixFS file format
+[Follow along with this activity](https://www.notion.so/pl-strflt/DHT-Overview-e4bc573eaf094efc8a0781de47262db6) in the CLI that will help you understand the Merkle DAG structure, Merkle Roots, and the UnixFS file format
 {% embed url="hhttps://youtu.be/nLgxTYoF-K4" %}
 
 
