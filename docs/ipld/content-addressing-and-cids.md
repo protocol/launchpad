@@ -44,7 +44,7 @@ CIDs are self-describing content addresses: hash digests with descriptions of wh
 
 A hash digest is a fine content address, but a CID makes it self-describing and able to jump across systems.
 
-A Git commit hash is just a hash digest and you know it's a SHA1 output because _it's Git_ and that's all Git has been using. But now that Git wants to start using SHA2-256 hashes, the assumptions built in about SHA1 are quire painful and they need a way to distinguish. If Git was built using CIDs instead, it wouldn't matter what hash function was used and upgrading would be trivial.
+A Git commit hash is just a hash digest and you know it's a SHA1 output because _it's Git_ and that's all Git has been using. But now that Git wants to start using SHA2-256 hashes, the assumptions built in about SHA1 are quite painful and they need a way to distinguish. If Git was built using CIDs instead, it wouldn't matter what hash function was used and upgrading would be trivial.
 
 Similarly, you know that a Git commit hash addresses a Git commit because you use it within the Git context. But what if you wanted to address a Git commit from an Ethereum block and point to that Ethereum block from a reproducible build system? When using these digests you also need to say _what_ system those digests live within (i.e. where you might find them and what you might do when you locate the data).
 
