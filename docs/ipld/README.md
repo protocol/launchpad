@@ -4,7 +4,7 @@ description: The What and Why of IPLD
 
 # IPLD
 
-[IPLD (InterPlanetary Linked Data) is **The Data Layer for content-addressed systems**](https://blog.ipfs.io/what-is-ipld/) that deals with all the heavy lifting that IPFS does to represent data as Merkle-DAGs with roots identified by content IDs called **CIDs**. 
+[IPLD (InterPlanetary Linked Data) is **The Data Layer for content-addressed systems**](https://blog.ipfs.io/what-is-ipld/) that deals with all the heavy lifting that IPFS does to represent data as Merkle-DAGs with roots identified by content IDs called **CIDs**.
 
 ![](<../../.gitbook/assets/ipld (1).png>)
 
@@ -42,6 +42,10 @@ IPLD is generally not concerned about data storage or transports (with some cave
 
 IPLD does not limit itself to peer to peer systems (Amazon S3 can be a perfectly reasonable IPLD block storage system!), but in general we think peer to peer is preferable!
 
+### [**ResNetLab: Course Module - InterPlanetary Linked Data (IPLD)**](https://research.protocol.ai/tutorials/resnetlab-on-tour/ipld/)
+
+{% embed url="https://www.youtube.com/watch?v=Sgf6j_mCdjI" %}
+
 ### IPLD and File Data
 
 At its most fundamental, **IPFS** is a collection of:
@@ -55,20 +59,6 @@ Only the smallest files in IPFS are stored as a single blob ("block"): to keep b
 
 Directories are graphs of named links pointing to files, forming graphs that address other graphs
 
-## Recommended Introductiory Resources
-
-[**ResNetLab: Course Module - Content Addressing**](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-addressing/):
-
-{% embed url="https://www.youtube.com/watch?v=dN9EvujJ9cM" %}
-
-[**ResNetLab: Course Module - InterPlanetary Linked Data (IPLD)**](https://research.protocol.ai/tutorials/resnetlab-on-tour/ipld/)
-
-{% embed url="https://www.youtube.com/watch?v=Sgf6j_mCdjI" %}
-
-### Further Introductory Reading:
-
-* [**A Terse, Quick IPLD Primer for the Engineer**](https://ipld.io/docs/intro/primer/)
-* [**IPLD in the InterPlanetary Ecosystem**](https://ipld.io/docs/intro/ecosystem/)
 
 ### Tutorials
 
@@ -77,6 +67,19 @@ For those who are newer to the world of Filecoin, Web3, and storage verification
 * [Merkle DAGs: Structuring Data for the Distributed Web](https://proto.school/merkle-dags)
 * [Anatomy of a CID](https://proto.school/anatomy-of-a-cid)
 * [P2P Data Links with Content Addressing](https://proto.school/basics)
+
+
+#### [IPLD Tutorial - DAGs, Roots, and UnixFS | Rod Vagg](https://youtu.be/nLgxTYoF-K4)
+
+[Follow along with this activity](https://www.notion.so/pl-strflt/DHT-Overview-e4bc573eaf094efc8a0781de47262db6) that introduces activities in the CLI that will help you understand the DAG structure, Merkle Roots, and the UnixFS file format
+{% embed url="hhttps://youtu.be/nLgxTYoF-K4" %}
+
+
+### Further Introductory Reading:
+
+* [**A Terse, Quick IPLD Primer for the Engineer**](https://ipld.io/docs/intro/primer/)
+* [**IPLD in the InterPlanetary Ecosystem**](https://ipld.io/docs/intro/ecosystem/)
+
 
 #### Links
 
