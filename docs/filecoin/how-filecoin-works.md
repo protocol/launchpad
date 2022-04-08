@@ -33,7 +33,7 @@ The storage providers provide services to the network by executing different typ
 
 #### Storage & Retrieval Markets | Filecoin Research - Juan Benet and Jeromy Johnson
 
-In this 4 minute talk by Jeromy Johnson & Juan Benet, understand how Filecoin, which differs from most blockchains in how it incentivizes storage,
+In this 4 minute talk by Jeromy Johnson & Juan Benet, understand how Filecoin, which differs from most blockchains in how it incentivizes storage, interacts with both storage and retrieval markets.
 
 {% embed url="https://www.youtube.com/watch?v=TzfcqPzSR0s" %}
 
