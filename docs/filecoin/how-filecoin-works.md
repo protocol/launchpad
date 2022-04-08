@@ -24,10 +24,18 @@ Filecoin Nodes or Filecoin clients are peers that sync the Filecoin blockchain a
 
 Filecoin Nodes can also publish different types of messages to the network by broadcasting them.
 
+## Storage and Retrieval
 
 ### [Filecoin Storage Providers (Miners)](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#filecoin-storage-providers)
 
 The storage providers provide services to the network by executing different types of deals and appending new blocks to the chain (every 30 seconds), for which they collect FIL rewards.
+
+
+#### Storage & Retrieval Markets | Filecoin Research - Juan Benet and Jeromy Johnson
+
+In this 4 minute talk by Jeromy Johnson & Juan Benet, understand how Filecoin, which differs from most blockchains in how it incentivizes storage,
+
+{% embed url="https://www.youtube.com/watch?v=TzfcqPzSR0s" %}
 
 
 ### [Deals]((https://docs.filecoin.io/about-filecoin/how-filecoin-works/#deals))
