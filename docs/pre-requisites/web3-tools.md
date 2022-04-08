@@ -5,6 +5,14 @@ description:  The Basic Tools and Mechanisms
 ## Web3 Tools
 There are many tools that you can use to engage with web3 capabilities, including NFTs for storing unique assets, tokens which refer the the currency that exist in the decentralized currency world, and wallets, which are used to secure and store private keys.
 
+### Zero-Knowledge Proofs
+
+Zero Knowledge proofs are cryptographic methods and strategies for validating information without revealing data that you want to keep private or secret. Though this technology has applications in cryptocurrency, the applications are wide and provide benefits in many applications.
+
+[**Zero Knowledge Proof - ZKP | Simply Explained**](https://www.youtube.com/watch?v=OcmvMs4AMbM)
+
+{% embed url="https://www.youtube.com/watch?v=OcmvMs4AMbM" %}
+
 ### NFTs
 NFTs are a type of cryptographic asset that is encrypted with an creator's signature, ensuring that the owner of that asset owns the true, original (non-fungible) version of that asset. Though NFTs are most well-known for works of art, there are many other applications of NFT technology. There are various [marketplaces](https://decrypt.co/80595/best-nft-marketplaces) and tools, such as [NFT.Storage](https://nft.storage), that you can explore.
 
