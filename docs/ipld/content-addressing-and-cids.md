@@ -11,7 +11,7 @@
   * HTTPS is an improvement, but only secures the transport, not the content.
 * No request aggregation, resulting in duplication of effort and bandwidth waste (i.e. no options for multicast in the wild).
 
-### Location- vs content-addressing
+### Location- vs Content-Addressing
 
 ![](<../../.gitbook/assets/ipld\_content\_vs\_location (1).png>)
 
@@ -64,7 +64,7 @@ Because of the wonders of content addressing, CIDs give us:
 
 Also: Change Tracking, Cacheability, Efficient Syncability, Scalability, Offline-first Architectures, Resilience, and more!
 
-## Links as the heart of IPLD
+## Links –The Heart of IPLD
 
 CIDs are the native link format for IPLD that distinguishes it from a simple data representation system. They are how we can connect graphs of data in flexible ways.
 
