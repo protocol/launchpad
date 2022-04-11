@@ -9,7 +9,7 @@ Moving from a location-addressed system to a peer-to-peer, content addressed sys
 
 libp2p is a modular system of *protocols*, *specifications* and *libraries* that enable the development of peer-to-peer network applications. Because of the way libp2p is architected, a lot of the needs and considerations that the web2 network was built on no longer apply.
 
-**[See the Implementations and Bundles](http://libp2p.io.ipns.localhost:8080/implementations/)** for all of the libraries of modules you can use and bundles for different use cases available in various languages.
+**[See the Implementations and Bundles](https://libp2p.io/implementations/)** for all of the libraries of modules you can use and bundles for different use cases available in various languages.
 
 ![](<../../.gitbook/assets/image (10).png>)
 
