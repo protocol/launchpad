@@ -58,7 +58,7 @@ For those who are newer to the world of Filecoin, Web3, and storage verification
 * [Blogging on the Decentralized Web](https://proto.school/blog)
 * [ResNetLab on Tour– Content Routing](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/)
 
-#### Oublish Subscribe (Pubsub) with IPFS & libp2p
+#### Publish Subscribe (Pubsub) with IPFS & libp2p
 In this tutorial video, you will see how you can use the publish-subscribe functionality (using the libp2p Gossipsub routing algorithm) with an IPFS node.  Follow along to start an IPFS node with pubsub enabled, and send and recieve messages.
 
 {% embed url="https://www.youtube.com/watch?v=9pUqOhORsYI" %}
