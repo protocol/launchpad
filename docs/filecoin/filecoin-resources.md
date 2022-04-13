@@ -16,6 +16,8 @@ description: Resources and Reference for all Things Filecoin
 
 ### [Getting Started with IPFS and Filecoin](https://protocollabs.notion.site/Getting-started-with-IPFS-Filecoin-173c73d4d8d64765a42058594bc46bb7)
 
+### [Storage Provider Bootcamp](https://www.youtube.com/watch?v=T-TgPILQD3c)
+In this bootcamp from March 2022, get all the information you will need to start down the path of becoming a Filecoin storage provider.
 
 ### Discussions / Messaging
   * [Filecoin Slack](http://filecoin.io/slack): #fil-lotus-dev, #fil-lotus-help, #fil-actors, #fil-fips, etc - active discussion with a large and broad community
