@@ -20,3 +20,4 @@ For developers, Piñata
 * [Piñata Medium articles](https://medium.com/pinata)
 * [Piñata blog](https://www.pinata.cloud/blog)
 * [Sign up for a Piñata cloud account](https://app.pinata.cloud/)
+* [Tutorial- Sharing Content](https://medium.com/pinata/how-to-easily-share-content-on-patreon-with-pinata-aa8682f2ee0c)
