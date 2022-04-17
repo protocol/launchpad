@@ -11,6 +11,8 @@ This section is a constant work in progress, and highlights just _some_ of the t
 * **[Textile](textile.md)**: A suite of developer tools, including Powergate, Buckets, and ThreadDB, and more
 * **[Ceramic](ceramic.md)**: Identity-based storage & indexing  
 * **[Fission](https://dev.to/fission/fission-on-the-ipfs-community-call-nof)**: SDK for web3-native apps
-* **[Web3.storage](https://docs.web3.storage/examples/getting-started)**
+* **[Web3.storage](web3.storage)**
+* **[Fleek](fleedks-apce-daemon.md)**
+* **[Piñata](pinata.md)**
+* **[Chainsafe]()**
 * **[Estuary](https://docs.estuary.tech/tutorial-get-an-api-key)**
-* **[Fleek Space Daemon](https://docs.fleek.co/space-daemon/overview/)**
