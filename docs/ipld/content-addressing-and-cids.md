@@ -54,7 +54,7 @@ CIDs give us a complete self-describing package:
 * How many bytes of output we have
 * What kind of data is being addressed and how we might interpret it when we find it
 
-### CIDs are immutable Links
+### CIDs are Immutable Links
 
 Because of the wonders of content addressing, CIDs give us:
 
