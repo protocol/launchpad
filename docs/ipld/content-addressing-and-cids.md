@@ -119,7 +119,7 @@ The full list of bases and their mappings can be found in the Multibase registry
 
 Base32 is the most commonly used base encoding for version 1 CIDs, hence the `b` at the beginning. This character says that all the following characters can be passed through a base32 decoder to retrieve the raw bytes.
 
-Fun fact: while not the most compact string representation, base32 is the preferred base encoding for CIDv1 because it only uses lower-case ASCII characters so is safe to use in DNS entries (URLs).
+Fun fact: while not the most compact string representation, base32 is the preferred base encoding for CIDv1 because it only uses lower-case ASCII characters so is safe to use in DNS entries (and therefore URLs).
 
 ### Interpreting a CID
 
