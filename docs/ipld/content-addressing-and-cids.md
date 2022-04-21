@@ -123,7 +123,7 @@ Fun fact: while not the most compact string representation, base32 is the prefer
 
 ### Interpreting a CID
 
-A CID is the concatenation of the multiformats `<multibase>(<cid-version><multicodec><multihash>)`. When represented as a string, the Multibase character is prefixed, but when represented as bytes we don't need Multibase so it's simply `<cid-version><multicodec><multihash>`.
+A raw byte form of a CID is the concatenation of multiformat values `<cid-version><multicodec><multihash>`. When represented as a string (e.g. `bafyrei....`), the Multibase character is prefixed, so it becomes `<multibase>(<cid-version><multicodec><multihash>)`.
 
 **CIDv0 is a special case** because it predates the Multiformats specifications. It's simply the Multihash of the content and as a string is represented using the Bitcoin variant of base58 (there is also a Flickr variant!). CIDv0 exclusively use the SHA2-256 hash function, and because the digest length is 256 bits (32 bytes), we end up with the Multibase prefix being represented as `Qm` in string form.
 
