@@ -88,7 +88,7 @@ A CID can be said to be built as a concatenation of these technologies: `<multib
 
 ### Multiformats
 
-[Multiformats](https://multiformats.io/) were created to make it easy to switch data formats on IPFS (and [any other system that implements IPLD](https://multiformats.io/#projects-using-multiformats)), future proofing them by making them self-describing, which prevents breaking changes and make it possible for  to anything that uses that data format to interoperate with (or upgrade to) other systems that use differently defined data.
+[Multiformats](https://multiformats.io/) were created to make formats, protocols, hash digests and other small values self-describing. They are useful in IPFS (and [any other system that implements IPLD](https://multiformats.io/#projects-using-multiformats)) for communicating encoding formats (codecs) and hash functions. Their self-describing nature is a form of future-proofing which prevents breaking changes and allows for interoperability between a wide variety hash functions and encoding formats, including those from other content-addressed systems.
 
 #### Multiformat Protocols
 
