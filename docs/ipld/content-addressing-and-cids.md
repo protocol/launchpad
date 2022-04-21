@@ -92,10 +92,10 @@ A CID can be said to be built as a concatenation of these technologies: `<multib
 
 #### Multiformat Protocols
 
-* **Multihash**: Self-describing hashes
-* **Multiaddr**: Self-describing network addresses
 * **Multibase**: Self-describing base encodings
+* **Multihash**: Self-describing hashes
 * **Multicodec**: Self-describing serialization
+* **Multiaddr**: Self-describing network addresses
 * **Multistream**: Self-describing stream network protocols
 * **Multigram**: Self-describing packet network protocols
 
