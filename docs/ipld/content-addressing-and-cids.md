@@ -11,7 +11,7 @@
   * HTTPS is an improvement, but only secures the transport, not the content.
 * No request aggregation, resulting in duplication of effort and bandwidth waste (i.e. no options for multicast in the wild).
 
-### Location- vs content-addressing
+### Location- vs Content-Addressing
 
 ![](<../../.gitbook/assets/ipld\_content\_vs\_location (1).png>)
 
@@ -54,7 +54,7 @@ CIDs give us a complete self-describing package:
 * How many bytes of output we have
 * What kind of data is being addressed and how we might interpret it when we find it
 
-### CIDs are immutable links
+### CIDs are Immutable Links
 
 Because of the wonders of content addressing, CIDs give us:
 
@@ -64,7 +64,7 @@ Because of the wonders of content addressing, CIDs give us:
 
 Also: Change Tracking, Cacheability, Efficient Syncability, Scalability, Offline-first Architectures, Resilience, and more!
 
-## Links as the heart of IPLD
+## Links –The Heart of IPLD
 
 CIDs are the native link format for IPLD that distinguishes it from a simple data representation system. They are how we can connect graphs of data in flexible ways.
 
@@ -88,13 +88,28 @@ A CID can be said to be built as a concatenation of these technologies: `<multib
 
 ### Multiformats
 
-A **Multicodec** is a pre-set number to uniquely identify a format, or protocol. A central registry stores the mappings of allocated numbers and is regularly updated: https://github.com/multiformats/multicodec.
+[Multiformats](https://multiformats.io/) were created to make formats, protocols, hash digests and other small values self-describing. They are useful in IPFS (and [any other system that implements IPLD](https://multiformats.io/#projects-using-multiformats)) for communicating encoding formats (codecs) and hash functions. Their self-describing nature is a form of future-proofing which prevents breaking changes and allows for interoperability between a wide variety hash functions and encoding formats, including those from other content-addressed systems.
 
-Generally, multicodec numbers are used as prefixes to the values they identify. When represented in binary, these are typically encoded as "varints", or variable-length integers ([LEB128](https://en.wikipedia.org/wiki/LEB128)) for compactness.
+#### Multiformat Protocols
 
-A **Multihash** is a self-describing hash digest. The hash digest is prefixed with a number that identifies the hash function, this number is listed in the Multicodec registry. Each hash function that anyone wants to generate multihashes from has an entry in the table. For example, the SHA3-384 hash function has the code `0x15`, while a BLAKE2b hash function with 384-bit output is `0xb230`. After the hash function code prefix, a Multihash also prefixes the length of the hash digest to follow. So a Multihash can be said to be: `<hash-function-code><digest-length><digest-bytes>`.
+* **Multibase**: Self-describing base encodings
+* **Multihash**: Self-describing hashes
+* **Multicodec**: Self-describing serialization
+* **Multiaddr**: Self-describing network addresses
+* **Multistream**: Self-describing stream network protocols
+* **Multigram**: Self-describing packet network protocols
 
-**Multibase** defines a specification for self-describing base encoding for string representation of bytes. Multibase uses a prefix _character_ which describes the base used to encode the bytes that follow. For example:
+#### CID Multiformats
+
+A **Multicodec** is a pre-set number to uniquely identify a data format or protocol. See the multicodec registry of the different formats: [https://github.com/multiformats/multicodec](https://github.com/multiformats/multicodec).
+
+Generally, multicodec numbers are used as prefixes to the values they identify. When represented in binary, these are typically encoded as "varints", or variable-length integers ([LEB128](https://en.wikipedia.org/wiki/LEB128)).
+
+A **Multihash**, a type of multicodec, is a self-describing hash digest. The hash digest is prefixed with a number that identifies the hash function, and it makes it much easier for systems that depend on hash functions for security to upgrade if there is a cryptographic break.
+
+The different hash functions can be seen in the [multicodec table](https://github.com/multiformats/multicodec)). For example, the SHA3-384 hash function has the code `0x15`, while a BLAKE2b hash function with 384-bit output is `0xb230`. After the hash function code prefix, a Multihash also prefixes the length of the hash digest to follow. So a Multihash can be said to be: `<hash-function-code><digest-length><digest-bytes>`.
+
+**Multibase** is a protocol that allows for string or text data to self-describes which base encoding is used. Multibase uses a prefix _character_ which describes the base used to encode the bytes that follow. For example:
 
 * `b` - base32
 * `z` - base58
@@ -102,13 +117,13 @@ A **Multihash** is a self-describing hash digest. The hash digest is prefixed wi
 
 The full list of bases and their mappings can be found in the Multibase registry at https://github.com/multiformats/multibase
 
-Base32 is the most commonly used base encoding for version 1 CIDs, hence the `b` at the begininning. This character says that all the following characters can be passed through a base32 decoder to retrieve the raw bytes.
+Base32 is the most commonly used base encoding for version 1 CIDs, hence the `b` at the beginning. This character says that all the following characters can be passed through a base32 decoder to retrieve the raw bytes.
 
-Fun fact: while not the most compact string representation, base32 is the preferred base encoding for CIDv1 because it only uses lower-case ASCII characters so is safe to use in DNS entries.
+Fun fact: while not the most compact string representation, base32 is the preferred base encoding for CIDv1 because it only uses lower-case ASCII characters so is safe to use in DNS entries (and therefore URLs).
 
 ### Interpreting a CID
 
-A CID is the concatenation of `<multibase>(<cid-version><multicodec><multihash>)` - that is, when represented as a string, the Multibase character is prefixed but when represented as bytes we don't need Multibase so it's simply `<cid-version><multicodec><multihash>`.
+A raw byte form of a CID is the concatenation of multiformat values `<cid-version><multicodec><multihash>`. When represented as a string (e.g. `bafyrei....`), the Multibase character is prefixed, so it becomes `<multibase>(<cid-version><multicodec><multihash>)`.
 
 **CIDv0 is a special case** because it predates the Multiformats specifications. It's simply the Multihash of the content and as a string is represented using the Bitcoin variant of base58 (there is also a Flickr variant!). CIDv0 exclusively use the SHA2-256 hash function, and because the digest length is 256 bits (32 bytes), we end up with the Multibase prefix being represented as `Qm` in string form.
 
