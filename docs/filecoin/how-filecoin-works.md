@@ -80,11 +80,11 @@ In Filecoin, addresses are used to identify actors. There are 4 address types:
 * `3` - BLS Public Key
 
 ### [Filecoin Plus](https://plus.fil.org/)
-FIlcion Plus is a mechanism for onboarding data into the Filecoin market that incentivizes the storage providers on the Filecoin network to store useful data on the network. Storage providers who store data that has been approved for DataCap have more power to win block rewards.
+Filecion Plus is a mechanism for onboarding data into the Filecoin market that incentivizes the storage providers on the Filecoin network to store real, valuable, and usable data on the network. Storage providers who store data that has been approved for DataCap have more power to win block rewards.
 
 ![Filcoin Plus Governance](<../../.gitbook/assets/fil-notary-governance.png>)
 
-There are a few ways one can get [approved to store data](https://plus.fil.org/landing) on the Filecoin network, and there are [governance process and roles](https://github.com/filecoin-project/notary-governance) to onboard that data ot the network.
+There are a few ways one can get [approved to store data](https://plus.fil.org/landing) on the Filecoin network, and there are [governance process and roles](https://github.com/filecoin-project/notary-governance) to onboard that data to the network.
 
 ### Filecoin Deep Dive (Optional)
 
