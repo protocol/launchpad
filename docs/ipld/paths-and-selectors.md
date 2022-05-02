@@ -8,7 +8,7 @@ You can think of "pathing" in IPLD as being comparable to how you use "paths" in
 
 The most common form of pathing can be found in the IPFS gateway, or IPFS on the CLI where a CID postfixed with a `/` followed by a string (perhaps containing further `/` path segment separators).
 
-For example, the IPFS "address" [ipfs://QmUaUmRWCfnyAdYFqckr4ArtmhAuzJSM6216SHb2emfz2B/0927/index.html](ipfs://QmUaUmRWCfnyAdYFqckr4ArtmhAuzJSM6216SHb2emfz2B/0927/index.html) (which some browsers support natively, or you can use via the IPFS gateway: [https://ipfs.io/ipfs/QmUaUmRWCfnyAdYFqckr4ArtmhAuzJSM6216SHb2emfz2B/0927/index.html](https://ipfs.io/ipfs/QmUaUmRWCfnyAdYFqckr4ArtmhAuzJSM6216SHb2emfz2B/0927/index.html)), includes a CID and a path. The CID addresses a single block, but the path (`/0927/index.html`) takes further. In this example, the path is navigating through a series of linked blocks to find a leaf block containg the content for the `index.html` file. _(Note that there is more than meets the eye to this example, since the underlying IPLD data is transformed through a UnixFS lens to provide directory-like pathing, but we'll ignore that for the purpose of a discussion on pathing!)._
+For example, the IPFS "address" [ipfs://QmUaUmRWCfnyAdYFqckr4ArtmhAuzJSM6216SHb2emfz2B/0927/index.html](ipfs://QmUaUmRWCfnyAdYFqckr4ArtmhAuzJSM6216SHb2emfz2B/0927/index.html) (which some browsers support natively, or you can use via the IPFS gateway: [https://ipfs.io/ipfs/QmUaUmRWCfnyAdYFqckr4ArtmhAuzJSM6216SHb2emfz2B/0927/index.html](https://ipfs.io/ipfs/QmUaUmRWCfnyAdYFqckr4ArtmhAuzJSM6216SHb2emfz2B/0927/index.html)), includes a CID and a path. The CID addresses a single block, but the path (`/0927/index.html`) takes us further. In this example, the path is navigating through a series of linked blocks to find a leaf block containg the content for the `index.html` file. _(Note that there is more than meets the eye to this example, since the underlying IPLD data is transformed through a UnixFS lens to provide directory-like pathing, but we'll ignore that for the purpose of a discussion on pathing!)._
 
 Another example, which you can try on the commandline with go-ipfs, is inspecting the contents of the Filecoin genesis block, which is a DAG-CBOR block and has the CID `bafyreiaqpwbbyjo4a42saasj36kkrpv4tsherf2e7bvezkert2a7dhonoi`. Running the command: `ipfs dag get bafyreiaqpwbbyjo4a42saasj36kkrpv4tsherf2e7bvezkert2a7dhonoi` we can fetch this block and _see_ it by having it translated using the DAG-JSON codec for nice human-readable printing (use `ipfs block get` if you want the raw, untranslated bytes):
 
@@ -29,7 +29,8 @@ $ ipfs dag get bafyreiaqpwbbyjo4a42saasj36kkrpv4tsherf2e7bvezkert2a7dhonoi/Token
 
 Paths will also resolve across block boundaries transparently, where a path segment encounters a Link (CID), the block being linked to is loaded and interpreted in place of the link.
 
-More information about pathing can be found at https://ipld.io/docs/data-model/pathing/
+More information about pathing can be found at [https://ipld.io/docs/data-model/pathing/](https://ipld.io/docs/data-model/pathing/).
+
 
 ## Selectors
 
