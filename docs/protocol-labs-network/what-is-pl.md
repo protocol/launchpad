@@ -27,9 +27,7 @@ In this talk by Molly Mackinlay, understand where Protocol Labs is an organizati
 
 _In Protocol Labs, there are new projects and technologies being invented every day. Keep in mind that this may not be a comprehensive list of all important projects growing in our network_
 
-## The Stack
-
-## Background, Work, & Business Model
+### Background, Work, & Business Model
 
 _This is an_ [_annotated version of a blog_](https://protocol.ai/blog/protocol-labs-creating-new-networks/)
 
