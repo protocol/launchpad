@@ -28,7 +28,7 @@ Open async communication enables greater participation, keeps low-priority matte
 
 ### Sync Comms
 
-Though we aim for async comms, **sync time is also valuable for bringing multiple parties into agreement, focused problem-solving sessions, and early-stage project formation**. Sync time, or synchronous communication, is widely recognized to be face to face conversations, or phone and video communications.
+Though we aim for async comms, **sync time is also valuable for bringing multiple parties into agreement, focused problem-solving sessions, and early-stage project formation**. Sync time, or synchronous communication, is widely recognized to be face-to-face conversations, or phone and video communications.
 
 In time, this approach to comms builds momentum and enable us to:
 
