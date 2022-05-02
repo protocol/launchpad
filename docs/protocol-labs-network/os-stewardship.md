@@ -18,7 +18,7 @@ In this talk by Steven & Dietrich, they review some of the customs and best prac
 
 The tricky part in being an employee of a PL Network company, and a member of a project with its own independent goals, is not conflating the two in a way that is harmful to the community. Talking about company-specific endeavors, internal meetings, and events in public repositories or issues can make other community members feel left out, and uninvited.
 
-One way to think about it, is to think of yourself as two people, or one person, but with two hats. When you are wearing that libp2p hat, you are not an employee of your Protocol Labs Network company, you are instead an open source contributor to libp2p. While wearing this hat, you are looking out for this project’s best interests, independent of what your PLN obligations are.
+One way to think about it is to think of yourself as two people, or one person, but with two hats. When you are wearing that libp2p hat, you are not an employee of your Protocol Labs Network company, you are instead an open source contributor to libp2p. While wearing this hat, you are looking out for this project’s best interests, independent of what your PLN obligations are.
 
 ### Async Work & Communication for Open Source
 
