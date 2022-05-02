@@ -11,9 +11,9 @@ In this talk by Molly Mackinlay, understand where Protocol Labs is an organizati
 {% embed url="https://www.youtube.com/watch?v=RXt65xbyq6c" %}
 
 ## Protocol Labs Main Projects
-* [IPFS](https://ipfs.io/) Was one of the original core OSS project, from which other projects in Protocol Labs have grown and nucleated into independent OSS projects & technologies
+* [IPFS](https://ipfs.io/) Was one of the original core OSS project, from which other projects in Protocol Labs have grown and nucleated, creating a network of OSS projects, developer tooling, DApps, and more.
 
-* [Filecoin](https://filecoin.io/) is the other original core organization that supports the builders and storage providers that use Protocol Labs & Filecoin technologies. Filecion is a utility token (cryptocurrency) that supports and incentivizes the growth of Protocol Labs technologies.
+* [Filecoin](https://filecoin.io/) is the other original core organization that supports the builders and storage providers that use Protocol Labs & Filecoin technologies. Filecion is a utility token (cryptocurrency) that supports and incentivizes the growth of Protocol Labs.
 
 * [libp2p](https://libp2p.io/) is a set of modular tools for networking and peer-to-peer communications
 
