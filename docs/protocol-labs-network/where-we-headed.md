@@ -23,7 +23,7 @@ _See the full set of resources [on the ResNetLab Tutorials page](https://researc
 
 {% embed url="https://www.youtube.com/watch?v=1WuXJ9zBAqw&t=503s" %}
 
-_Understand the basics of the Protocol Labs network & ecosystem, Web 3.0 blockchains, the semantic web, and the reasons that Protocol Labs is building the backbone for a distributed web. In this module, you’ll hear about Issues facing Web 2.0 and motivation for Web 3.0, IPFSits role in Web 3.0 with location addressing, and exciting projects in the IPFS ecosystem._
+_Understand the basics of the Protocol Labs network & ecosystem, Web 3.0 blockchains, the semantic web, and the reasons that Protocol Labs is building the backbone for a distributed web. In this module, you’ll hear about issues facing Web 2.0 and motivation for Web 3.0, IPFSits role in Web 3.0 with location addressing, and exciting projects in the IPFS ecosystem._
 
 <!-- ## Optional Content -- this was moved to pre-reqs
 
