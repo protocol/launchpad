@@ -2,7 +2,7 @@
 description: Content Discovery and Routing with Kademlia
 ---
 
-## The Public DHT
+## The Public DHT (Distributed Hash Table)
 The public distributed hash table is the record of content that is used, along with Kademlia, to discover content-addressed data in a peer-to-peer network. The DHT is the mechanism that allows a peer-to-peer network to work without the old [client-server model](https://en.wikipedia.org/wiki/Client%E2%80%93server_model) that the web2 internet runs on.
 
 ### Nodes, Peers, and the Swarm
