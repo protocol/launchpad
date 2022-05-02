@@ -10,7 +10,7 @@ In this talk by Molly Mackinlay, understand where Protocol Labs is an organizati
 
 {% embed url="https://www.youtube.com/watch?v=RXt65xbyq6c" %}
 
-## Protocol Labs Main Projects
+## Protocol Labs Projects
 * [IPFS](https://ipfs.io/) Was one of the original core OSS projects, from which other projects in Protocol Labs have grown and nucleated, creating a network of Open Source technologies, developer tooling, DApps, and more.
 
 * [Filecoin](https://filecoin.io/) is the other original core organization that supports the builders and storage providers that use Protocol Labs & Filecoin technologies. Filecion is a utility token (cryptocurrency) that supports and incentivizes the growth of our network of web3 technologies.
@@ -24,6 +24,8 @@ In this talk by Molly Mackinlay, understand where Protocol Labs is an organizati
 * [Testground](https://docs.testground.ai/) is a platform for testing, benchmarking, and simulating distributed and peer-to-peer systems at scale, that can scale from 2k-10k instances
 
 * [Drand](https://drand.love/) is a revolutionary randomness generator that can be used in protocols and cryptocurrencies
+
+_In Protocol Labs, there are new projects and technologies being invented every day. Keep in mind that this may not be a comprehensive list of all important projects growing in our network_
 
 ## The Stack
 
