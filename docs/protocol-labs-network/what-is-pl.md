@@ -11,17 +11,17 @@ In this talk by Molly Mackinlay, understand where Protocol Labs is an organizati
 {% embed url="https://www.youtube.com/watch?v=RXt65xbyq6c" %}
 
 ## Protocol Labs Main Projects
-* [IPFS](https://ipfs.io/) Was one of the original core projects, from which the other projects in Protocol Labs which have since grown and nucleated into independent projects and technologies
+* [IPFS](https://ipfs.io/) Was one of the original core OSS project, from which other projects in Protocol Labs have grown and nucleated into OSS proejcts & technologies
 
-* [Filecoin](https://filecoin.io/) is the other original organization that supports the builders and storage providers the use Protocol Labs & Filecoin technologies
+* [Filecoin](https://filecoin.io/) is the other original core organization that supports the builders and storage providers that use Protocol Labs & Filecoin technologies. Filecion is a utility token (cryptocurrency) that supports and incentivizes the growth of Protocol Labs technologies
 
 * [libp2p](https://libp2p.io/) is a set of modular tools for networking and peer-to-peer communications
 
-* [IPLD](https://ipld.io/) is the data-model that is used for the content-addressable web
+* [IPLD](https://ipld.io/) is the data model that is used for the content-addressable web
 
 * [Multiformats](https://multiformats.io/) is a project that makes is possible to create self-describing data, which allows protocols and projects to be interoperable and future-proof
 
-* [Testground](https://docs.testground.ai/) Testground is a platform for testing, benchmarking, and simulating distributed and peer-to-peer systems at scale, that can scale from 2k-10k instances
+* [Testground](https://docs.testground.ai/) is a platform for testing, benchmarking, and simulating distributed and peer-to-peer systems at scale, that can scale from 2k-10k instances
 
 * [Drand](https://drand.love/) is a revolutionary randomness generator that can be used in protocols and cryptocurrencies
 
