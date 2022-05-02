@@ -11,23 +11,19 @@ In this talk by Molly Mackinlay, understand where Protocol Labs is an organizati
 {% embed url="https://www.youtube.com/watch?v=RXt65xbyq6c" %}
 
 ## Protocol Labs Main Projects
-* [IPFS](https://ipfs.io/) Was the original core project in the PLN, from which the other projects and technologies have grown from.
+* [IPFS](https://ipfs.io/) Was one of the original core projects, from which the other projects in Protocol Labs which have since grown and nucleated into independent projects and technologies.
 
-* [Filecoin](https://filecoin.io/) is the incentivization structure for Protocol Labs projects
-<!--
-libp2p
+* [Filecoin](https://filecoin.io/) is the other original organization that supports the builders and storage providers the use Protocol Labs & Filecoin technologies.
 
-Testground
+* [libp2p](https://libp2p.io/) is a set of modular tools for networking and peer-to-peer communications.
 
-IPLD
+* [IPLD](https://ipld.io/) is the data-model that is used for the content-addressable web
 
-Multiformats
+* [Multiformats](https://multiformats.io/) is a project that makes is possible to create self-describing data, which allows protocols and projects to be interoperable and future-proof.
 
-SourceCred
+* [Testground](https://docs.testground.ai/) Testground is a platform for testing, benchmarking, and simulating distributed and peer-to-peer systems at scale, that can scale from 2k-10k instances
 
-ProtoSchool
-
-drand -->
+* [Drand](https://drand.love/) is a revolutionary randomness generator that can be used in protocols and cryptocurrencies
 
 ## The Stack
 
