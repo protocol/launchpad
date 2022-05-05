@@ -21,7 +21,7 @@ Directional and acyclic graphs of immutable pieces of data can be challenging to
 
 ## Example: Super-large array
 
-Let's build an algorithm for storing a scalable distributed *array*. We want to be able to store a few, to a few billion elements in our array, and do so with IPLD. Our array could be distributed across many parties, and we shouldn't need to have *all* of the blocks that make up our array just to access a single element. Accessing one element in a super-large array should require minimal block loads from our storage system (or distributed network).
+Let's build an algorithm for storing a scalable distributed *array*. We want to be able to store a few to a few billion elements in our array, and do so with IPLD. Our array could be distributed across many parties, and we shouldn't need to have *all* of the blocks that make up our array just to access a single element. Accessing one element in a super-large array should require minimal block loads from our storage system (or distributed network).
 
 For simplicity, our array cannot be sparse and must include contiguous elements starting from index `0` *(aside: sparse arrays are an entirely different matter, although something the Filecoin chain has to deal with)*.
 
