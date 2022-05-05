@@ -21,8 +21,8 @@ In order to understand the pieces that make up a CID and the IPLD model, you wil
 * [Base Encoding](https://skorks.com/2009/08/different-types-of-encoding-schemes-a-primer/) – This is the basically the way that binary data is converted in to a compressed set of characters. for example, Base 10 encoding says that 0001 1010 = 26, but in base64 0001 1010 == MDAwMSAxMDEw. [Play around with different encoding here](https://cryptii.com/pipes/binary-to-base64)
 * [Hashing](https://www.sentinelone.com/cybersecurity-101/hashing/) – A hash is a function that converts one value to another. In cryptography, the function that converts data from one form to another is an unknown process that is so complex it is impossible(?) to reverse, that produces a unique, fixed length output.
 * [Codecs](https://www.analogictips.com/what-is-a-codec/) – Codecs are encoder/ decoder tools that translate to and from binary formats, in different ways.
-* [Varints](https://carlmastrangelo.com/blog/lets-make-a-varint) – Variable length integers, or Varints, are a way of compressing down integers into a smaller space than is normally needed. Since smaller numbers don't neet as many bytes to represent them (0000 0010 == 2) vs (1110 0011 == 27), you can add a byte at the beginning to indicate how many bits are needed, to save on bit usage.
-* [CIDs (Content Identifiers)](https://mikeal.notion.site/what-is-web3-994f2d4cf1944e99a898643cb704d9a6#e34e81fc76b0404ab20f55f0940dfbcd) – A CID is a binary address format that prepend a bunch of [varints](https://carlmastrangelo.com/blog/lets-make-a-varint) to **self-describe** the inner structure. a CID includes: cid has a few parts; the hash, a description of the hash, a description of the encoding format, and a single int (1) to represent “CIDv1”
+* [Varints](https://carlmastrangelo.com/blog/lets-make-a-varint) – Variable length integers, or Varints, are a way of compressing down integers into a smaller space than is normally needed. Since smaller numbers don't need as many bytes to represent them (0000 0010 == 2) vs (1110 0011 == 27), you can add a byte at the beginning to indicate how many bits are needed, to save on bit usage.
+* [CIDs (Content Identifiers)](https://mikeal.notion.site/what-is-web3-994f2d4cf1944e99a898643cb704d9a6#e34e81fc76b0404ab20f55f0940dfbcd) – A CID is a binary address format that prepend a bunch of [varints](https://carlmastrangelo.com/blog/lets-make-a-varint) which **self-describe** the inner structure. A CID has a few parts; the hash, a description of the hash, a description of the encoding format, and a single int (1) to represent “CIDv1”
 
 ## IPLD as Leverage
 
@@ -50,7 +50,7 @@ IPLD does not limit itself to peer to peer systems (Amazon S3 can be a perfectly
 
 At its most fundamental, **IPFS** is a collection of:
 
-1. Binary blobs of data - "blocks";
+1. Binary blobs of data - "blocks"
 2. Their associated content identifiers - CIDs
 
 These are both the core concerns of IPLD. IPFS builds on these primitives to provide a sophsticated peer to peer content addressing data stack, with a mature suite of tooling to deal with files.
@@ -71,7 +71,7 @@ For those who are newer to the world of Filecoin, Web3, and storage verification
 
 #### [IPLD Tutorial - DAGs, Roots, and UnixFS | Rod Vagg](https://youtu.be/nLgxTYoF-K4)
 
-[Follow along with this activity](https://www.notion.so/pl-strflt/DHT-Overview-e4bc573eaf094efc8a0781de47262db6) in the CLI that will help you understand the Merkle DAG structure, Merkle Roots, and the UnixFS file format
+[Follow along with this activity](https://www.notion.so/pl-strflt/Explaining-DAGs-Roots-and-UnixFS-to-newbies-ff89ed883f1b4c5da8af13cd8ad07de9) in the CLI that will help you understand the Merkle DAG structure, Merkle Roots, and the UnixFS file format
 
 {% embed url="https://youtu.be/nLgxTYoF-K4" %}
 

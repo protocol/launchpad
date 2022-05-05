@@ -24,10 +24,18 @@ Filecoin Nodes or Filecoin clients are peers that sync the Filecoin blockchain a
 
 Filecoin Nodes can also publish different types of messages to the network by broadcasting them.
 
+## Storage and Retrieval
 
 ### [Filecoin Storage Providers (Miners)](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#filecoin-storage-providers)
 
 The storage providers provide services to the network by executing different types of deals and appending new blocks to the chain (every 30 seconds), for which they collect FIL rewards.
+
+
+#### Storage & Retrieval Markets | Filecoin Research - Juan Benet and Jeromy Johnson
+
+In this 4 minute talk by Jeromy Johnson & Juan Benet, understand how Filecoin, which differs from most blockchains in how it incentivizes storage, interacts with both storage and retrieval markets.
+
+{% embed url="https://www.youtube.com/watch?v=TzfcqPzSR0s" %}
 
 
 ### [Deals]((https://docs.filecoin.io/about-filecoin/how-filecoin-works/#deals))
@@ -69,7 +77,14 @@ In Filecoin, addresses are used to identify actors. There are 4 address types:
 * `0` - ID Address
 * `1` - SECP256K1 Public Key Address
 * `2` - Actor Address
-* `3` - BLS Public Key Address
+* `3` - BLS Public Key
+
+### [Filecoin Plus](https://plus.fil.org/)
+Filecion Plus is a mechanism for onboarding data into the Filecoin market that incentivizes the storage providers on the Filecoin network to store real, valuable, and usable data. It is a layer of social trust on top of the Filecoin Network to help incentivize this storage. Storage providers who store data that has been approved for DataCap have more power to win block rewards. The [Filecoin Plus Dashboard](https://filplus.info/) provides data about verification, storage, and more.
+
+There are a few ways one can get [approved to store data](https://plus.fil.org/landing) on the Filecoin network, and there are [governance processes and roles](https://github.com/filecoin-project/notary-governance), including root key-holders, notaries, clients, and miners who interact through the allocation and spending of DataCap, and help onboard that data to the network.
+
+![Filcoin Plus Governance](<../../.gitbook/assets/fil-notary-governance.png>)
 
 ### Filecoin Deep Dive (Optional)
 
@@ -81,7 +96,7 @@ In this talk by Pooja Shah of Protocol Labs, learn about the basic functioning a
 
 ### Summary and Links
 
-#### Filecoin Core Featuers
+#### Filecoin Core Features
 * Granular control over parameters for data Storage
 * Storage receipts
 * Control over storage pricing (and what you will pay)

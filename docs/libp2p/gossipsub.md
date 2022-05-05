@@ -15,7 +15,7 @@ Gossipsub uses a different method of communication, forwarding metadata to peers
 Learn more in the [GossipSub paper](https://arxiv.org/pdf/2007.02754.pdf)
 
 
-###Videos
+### Videos
 
 #### Demystifying libp2p Gossipsub | Ethereum Foundation - Raúl Kripalani
 

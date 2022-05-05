@@ -18,7 +18,7 @@ The tip of any Merkle DAG is called its "root". The hash of that root can be sai
 
 A **Git commit** is the hash digest of the root of a large graph. This root "block" is a concatenation of various pieces of data, including the author of the commit, the timestamp, the _previous_ commit hash digest and the hash digest of the filesystem "tree". The filesystem tree is built by hashing files, then concatenating the hashes of files within a directory to form a directory node which is then hashed and included in the parent of that directory, etc. i.e. a Git commit hash digest only hashes a small piece of data, but that data includes hashes of other data, forming a large tree spanning the files in that commit and all previous commits in the history of the Git repository.
 
-A **Bitcoin block** is the hash of only 80 bytes of data! But that small packet of data includes the hashes of the previous block as well as the tip of a very large tree containing the transations contained within that block. Bitcoin and other blockchains use the immutable and directionality of DAGs for authentication and inclusion of the entire history of the chain.
+A **Bitcoin block** is the hash of only 80 bytes of data! But that small packet of data includes the hashes of the previous block as well as the tip of a very large tree containing the transactions contained within that block. Bitcoin and other blockchains use the immutability and directionality of DAGs for authentication and inclusion of the entire history of the chain.
 
 We can use the **root** of a Merkle DAG to address arbitrarily large amounts of data.
 
@@ -32,8 +32,6 @@ Mutating content addressed data in this way provides some interesting properties
 
 * New roots give us **snapshots** for each change.
 * Different snapshots (roots) may address much of the same data, since only small parts of the graph may have changed, this gives us **de-deuplication**. One of the ways that Git is efficient is that only the changes need to be stored, and only those changed parts of a tree need be re-hashed to generate a new root (commit).
-
-One of the ways that Git is efficient is that only the changes need to be stored, and only those changed parts of a tree need be re-hashed to generate a new root (commit).
 
 IPFS benefits from these same properties. A copy of Wikipedia on IPFS may take up many GBs, but changing a single page only requires changes to that page and its parents (up to the new "root"!). Having a CID for the old and new lets us move back and forward in time through the snapshots, while not needing to download the whole thing from scratch.
 

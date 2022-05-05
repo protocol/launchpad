@@ -9,7 +9,7 @@ Moving from a location-addressed system to a peer-to-peer, content addressed sys
 
 libp2p is a modular system of *protocols*, *specifications* and *libraries* that enable the development of peer-to-peer network applications. Because of the way libp2p is architected, a lot of the needs and considerations that the web2 network was built on no longer apply.
 
-**[See the Implementations and Bundles](http://libp2p.io.ipns.localhost:8080/implementations/)** for all of the libraries of modules you can use and bundles for different use cases available in various languages.
+**[See the Implementations and Bundles](https://libp2p.io/implementations/)** for all of the libraries of modules you can use and bundles for different use cases available in various languages.
 
 ![](<../../.gitbook/assets/image (10).png>)
 
@@ -58,7 +58,7 @@ For those who are newer to the world of Filecoin, Web3, and storage verification
 * [Blogging on the Decentralized Web](https://proto.school/blog)
 * [ResNetLab on Tour– Content Routing](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/)
 
-#### Oublish Subscribe (Pubsub) with IPFS & libp2p
+#### Publish Subscribe (Pubsub) with IPFS & libp2p
 In this tutorial video, you will see how you can use the publish-subscribe functionality (using the libp2p Gossipsub routing algorithm) with an IPFS node.  Follow along to start an IPFS node with pubsub enabled, and send and recieve messages.
 
 {% embed url="https://www.youtube.com/watch?v=9pUqOhORsYI" %}
