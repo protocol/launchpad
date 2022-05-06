@@ -25,7 +25,9 @@ In this talk by Molly Mackinlay, understand where Protocol Labs is an organizati
 
 * [Drand](https://drand.love/) is a revolutionary randomness generator that can be used in protocols and cryptocurrencies
 
-* [Filecoin Virtual Machine (FVM)](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/) is a layer 1 protocol that will enable developers to create and execute smart contracts on data stored in the Filecoin network 
+* [Filecoin Virtual Machine (FVM)](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/) is a layer 1 protocol that will enable developers to create and execute smart contracts on data stored in the Filecoin network
+
+* [Lotus](https://lotus.filecoin.io/) is the main Filecoin network implementation, supported by Filecoin, written in Go & maintained by the PL team
 
 _In Protocol Labs, there are new projects and technologies being invented every day. Keep in mind that this may not be a comprehensive list of all important projects growing in our network_
 
