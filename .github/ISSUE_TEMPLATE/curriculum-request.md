@@ -10,13 +10,13 @@ assignees: ''
 ## Problem Description
 
 ### Purpose
-Describe what need this projectr is filling, or what problem is sovling, and who the intended audience or end user is
+_Describe what need this projectr is filling, or what problem is sovling, and who the intended audience or end user is_
 
 ### Proposed Solution
 What features, user stories, or product/ content you would like as an output
 
 **Where Can we find out more about this topic?**
-https://drive.google.com/drive/folders/1stQQlqN-V7tBwfSAcyLKnhCuViCTbwWm
+
 
 **Additional context**
 Add any other context or screenshots about the feature request here.
