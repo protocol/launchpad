@@ -64,7 +64,7 @@ In this tutorial, you can follow along to understand the basics of how you as a 
 #### Resources
 * [Video Script](https://www.notion.so/protocollabs/Script-IPFS-Basics-Working-with-Files-in-IPFS-4102dc71f5dc4bf49b274bdfcee4c162)
 * [Docs](https://docs.ipfs.io/how-to/command-line-quick-start/#take-your-node-online)
-* Get a CID of a file by starting IPFS and visiting localhost:5001/webui in your browser, checking out _Explore_
+* Get a CID of a file by starting IPFS and visiting `localhost:5001/webui` in your browser, checking out _Explore_
 
 
 **Links**
