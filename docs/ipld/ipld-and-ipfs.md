@@ -58,7 +58,7 @@ UnixFS uses a sharding technique called a HAMT, or [Hash Array Mapped Trie](http
 
 For an in-depth description on a generalized HAMT as it applies to IPLD, read the [**specification**](https://ipld.io/specs/advanced-data-layouts/hamt/), which also has links to various implementations. (Note that this specification is not *exactly* the same as the implementation used in UnixFS sharding; although it is used heavily throughout the Filecoin chain for its various scaleable associative arrays.)
 
-More discussion on using IPLD to build distributed data structures can be found in the [Data Structures](data-structures.md) section.
+More discussion on using IPLD to build distributed data structures can be found in the [Data Structures](distributed-data-structures.md) section.
 
 ## Limitations of File Data
 
