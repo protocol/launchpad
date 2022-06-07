@@ -12,7 +12,7 @@ description: Add the subtitle here
 
 ### The Filecoin Actors & State Tree <a href="#filecoin-actors" id="filecoin-actors"></a>
 
-* ​[How Filecion Actors Work](https://f.io/1hY6-xOB)​
+* ​[How Filecoin Actors Work](https://f.io/1hY6-xOB)​
 * VM & Actors: [https://spec.filecoin.io/#section-systems.filecoin\_vm](https://spec.filecoin.io/#section-systems.filecoin\_vm)​
 * System (builtin) actors: [https://spec.filecoin.io/#section-systems.filecoin\_vm.sysactors](https://spec.filecoin.io/#section-systems.filecoin\_vm.sysactors)​
 * Filecoin Virtual Machine (WIP for user-defined actors): [fvm.filecoin.io](http://fvm.filecoin.io)​
