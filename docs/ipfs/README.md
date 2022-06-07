@@ -30,14 +30,14 @@ The mission of **IPFS** is to create a resilient, upgradable, open network to pr
 
 The acceleration of innovation over the past few decades, in comparison with the past million years of human evolution, is moving at an incredible pace.
 
-IPFS as an organization is trying to look ahead to the next 10, 100, 1000 years and beyond and think about how computing will shape and impact a future we can't even being to imagine.
+IPFS as an organization is trying to look ahead to the next 10, 100, 1000 years and beyond and think about how computing will shape and impact a future we can't even begin to imagine.
 
 {% embed url="https://www.youtube.com/watch?v=zE_WSLbqqvo" %}
 
-Though it gets difficult to predict what is going to happen in the next, say, 100 years, we can start to invest in it now with web3.
+Though it gets difficult to predict what is going to happen in the next, say, 100 years, we can start to invest in it now with Web3.
 
 
-Computation has gone through so many phases; from the first computers, to machines that can timeshare, to multiprocessing and sandboxed VMs, to user terminals, to networked computers with multiprocessing, now with personal computers networked across a worldwide internet that all came from a relatively simple set of functions and data transmission. Now, IPFS is on the front lines of the Web3 evolution the will bring us to the next stage in computing.
+Computation has gone through so many phases; from the first computers, to machines that can timeshare, to multiprocessing and sandboxed VMs, to user terminals, to networked computers with multiprocessing, now with personal computers networked across a worldwide internet that all came from a relatively simple set of functions and data transmission. Now, IPFS is on the front lines of the Web3 evolution that will bring us to the next stage in computing.
 
 ### Tutorials
 For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/ipfs). Tutorials you should complete include:
@@ -57,7 +57,7 @@ This video is the basic setup for ipfs-go on a [linux VM](https://multipass.run/
 
 
 #### IPFS Basics: Accessing Files
-In this tutorial, you can follow along to understand the basics of how you as a user can access, add, and pin files in IPFS.  Follow along  with the examples to learn about pinning and adding files, how files from IPFS can be previewed and inspected, and learn a bit about how that data is created and stored on IPFS.
+In this tutorial, you can follow along to understand the basics of how you, as a user, can access, add, and pin files in IPFS.  Follow along with the examples to learn about pinning and adding files, how files from IPFS can be previewed and inspected, and learn a bit about how that data is created and stored on IPFS.
 
 {% embed url="https://www.youtube.com/watch?v=EkQfoQprA8s" %}
 
