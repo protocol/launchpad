@@ -71,7 +71,7 @@ description: Add the subtitle here
   * _General VM and blockchain (20mins)_
     * Transactions are called "messages"
       * From one actor to another actor
-        * Actor is something that talkies over the blockchain via functions
+        * Actor is something that talks over the blockchain via functions
           * If A sends X to B means Actor A calls function pay with input X to actor B
           * Message goes in a pool
           * Who wins the block takes some messages and puts them in a block. He then propagate block to the network
