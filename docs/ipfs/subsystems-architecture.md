@@ -52,3 +52,12 @@ nodeID := multihash(publicKey)
 ```
 
 See more in the [IPFS keystore spec](https://github.com/ipfs/specs/blob/master/KEYSTORE.md).
+
+#### IPFS Cluster
+
+[IPFS Cluster](https://ipfscluster.io/) is a distributed application that works as a sidecar to IPFS peers, maintaining a global cluster pinset and intelligently allocating its items to the IPFS peers. IPFS Cluster powers large IPFS storage services like nft.storage and web3.storage
+
+IPFS Cluster:
+* Runs independent from the rest of the IPFS Swarm
+* Performs actions that make it simple to add pins at scale, utilizing a set of 'cluster peers'
+* The cluster peers take care of asking IPFS to pin things at a sustainable rate and retry pinning in case of failures
