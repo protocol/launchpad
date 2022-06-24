@@ -3,7 +3,7 @@ description: The Data Exchange Algorithm of IPFS
 ---
 
 ## IPFS Data
-IPFS differs greatly in the way that it stores, shares, and retrieves files. Instead of having clients rely on servers, IPFS allows peers to connect & search one another in an efficient way to exchange that data directly.
+IPFS differs greatly in the way that it stores, shares, and retrieves files. Instead of having clients rely on servers, IPFS allows peers to connect and search for one another in an efficient manner to exchange data directly.
 
 ### HTTP vs. IPFS
 

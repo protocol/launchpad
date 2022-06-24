@@ -8,7 +8,7 @@ One of the most powerful things about IPFS is that any piece of data or content 
 The fact that the history of the data are preserved on the blockchain - that is, the content in one block contains, as a part of the data that makes it up, the id of the parent of that block - also contributes to the immutability of that piece of data.
 
 ### Pinning and Immutability
-Data on IPFS will not by default remain on that network unless it is pinned. In order to make a piece of data a persistent piece of data, you either need to make sure that data is pinned on a node that is active on the IPFS network.
+Data on IPFS will not by default remain on that network unless it is pinned. In order to make a piece of data a persistent piece of data, you need to make sure that data is pinned on a node that is active on the IPFS network.
 
 Your options for persistent data are:
 1. You pin it yourself, and keep that node active on the network

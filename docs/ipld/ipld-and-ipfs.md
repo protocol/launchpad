@@ -44,9 +44,10 @@ Read more about the DAG-PB codec in the [**specification**](https://ipld.io/spec
 
 ## UnixFS
 
-UnixFS is an additional encoding layer _above_ the DAG-PB codec that is applied to serialize filesystem metadata. Metadata can include file timestamps, permissions, mime types and whether this object is a file, directory or even a symlink. This data is all encoded in a second protobuf format within the `"Data"` field of a DAG-PB block. This means that a single block may incur a double Protobuf decode to retrieve complete information about the filesystem
+UnixFS is an additional encoding layer _above_ the DAG-PB codec that is applied to serialize filesystem metadata. Metadata can include file timestamps, permissions, mime types and whether this object is a file, directory or even a symlink. This data is all encoded in a second protobuf format within the `"Data"` field of a DAG-PB block. This means that a single block may incur a double Protobuf decode to retrieve complete information about the filesystem.
 
 UnixFS data also includes additional information about the form that the graph takes as it maps to filesystem data. For particularly large numbers of files, (or a large number of chunks if the files are too big), the graphs must be organised in a way that scales. This introduces the need for a "sharding" system to ensure that we don't bloat single blocks. Too many links will make the blocks themselves unmanageably large (there is also a practical limit to block size, we prefer to try and keep them below 1Mb).
+
 
 More information about UnixFS can be found in the [**IPFS docs**](https://docs.ipfs.io/concepts/file-systems/#unix-file-system-unixfs) or in the UnixFS [**specification**](https://github.com/ipfs/specs/blob/master/UNIXFS.md).
 

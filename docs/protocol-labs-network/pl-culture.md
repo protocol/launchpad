@@ -40,7 +40,7 @@ In our mission to drive breakthroughs in computing to push humanity forward, we 
 
 To ensure these conversations remain constructive and safe for all, we have developed guidelines for participation:
 
-* We are kind and respectful. We do not insult, or disparage and We ask questions, seeking clarification, assuming we don't know the full story We communicate in good faith, meaning that we don’t provoke people intentionally. We help one another grow and assume that we have the best intent.
+* We are kind and respectful. We do not insult, or disparage. And we ask questions, seek clarification, and assume we don't know the full story. We communicate in good faith, meaning that we don’t provoke people intentionally. We help one another grow and assume that we have the best intent.
 * We are allies. We stand up for one another. We build the culture and environment we want to see. So, when we see something we say something.
 
 ### More on How to Interact

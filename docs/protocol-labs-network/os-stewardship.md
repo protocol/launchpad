@@ -18,7 +18,7 @@ In this talk by Steven & Dietrich, they review some of the customs and best prac
 
 The tricky part in being an employee of a PL Network company, and a member of a project with its own independent goals, is not conflating the two in a way that is harmful to the community. Talking about company-specific endeavors, internal meetings, and events in public repositories or issues can make other community members feel left out, and uninvited.
 
-One way to think about it, is to think of yourself as two people, or one person, but with two hats. When you are wearing that libp2p hat, you are not an employee of your Protocol Labs Network company, you are instead an open source contributor to libp2p. While wearing this hat, you are looking out for this project’s best interests, independent of what your PLN obligations are.
+One way to think about it is to think of yourself as two people, or one person, but with two hats. When you are wearing that libp2p hat, you are not an employee of your Protocol Labs Network company, you are instead an open source contributor to libp2p. While wearing this hat, you are looking out for this project’s best interests, independent of what your PLN obligations are.
 
 ### Async Work & Communication for Open Source
 
@@ -28,7 +28,7 @@ Open async communication enables greater participation, keeps low-priority matte
 
 ### Sync Comms
 
-Though we aim for async comms, **sync time is also valuable for bringing multiple parties into agreement, focused problem-solving sessions, and early-stage project formation**. Sync time, or synchronous communication, is widely recognized to be face to face conversations, or phone and video communications.
+Though we aim for async comms, **sync time is also valuable for bringing multiple parties into agreement, focused problem-solving sessions, and early-stage project formation**. Sync time, or synchronous communication, is widely recognized to be face-to-face conversations, or phone and video communications.
 
 In time, this approach to comms builds momentum and enable us to:
 
@@ -39,7 +39,7 @@ In time, this approach to comms builds momentum and enable us to:
 
 ### Async Principles
 
-[**The Async Manifesto**](http://asyncmanifesto.org), spells out many of these principles. Pay particular attention to are as follows:
+[**The Async Manifesto**](http://asyncmanifesto.org), spells out many of these principles. Pay particular attention to the following:
 
 * Valuing modern tools and flexible work environments over meetings and office hours
 * Embracing flexibility in prioritization over detailed planning
@@ -47,7 +47,7 @@ In time, this approach to comms builds momentum and enable us to:
 
 A high-bandwidth bidirectional communication channel is needed, either for brainstorming or decision making, where all relevant and interested parties can be gathered.
 
-Relevant required readings are distributed in advance
+Relevant required readings are distributed in advance.
 
 ### Async Communication Is Self Directing
 
@@ -55,8 +55,8 @@ Our goal is to have resources and processes that allow you, as an individual, to
 
 * Can’t find the doc? Have you read the main resource? Have you done a thorough search of all resources? Well then, you are really out of luck, BUT! you are probably not alone. Instead of pinging someone, consider it a bug, open an issue on GitHub, and let others answer it asynchronously.
 * Need to get an answer to something?
-  * Is it urgent? No? send an email.
-  * Does it have to happen in the next 30 minutes? Yes, then ping the person or team on the channel of the respective work stream, not in a DM. It enables others to pick up an urgent item in case the main person is not available.
+  * Is it urgent? No? Send an email.
+  * Does it need to happen in the next 30 minutes? Yes, then ping the person or team on the channel of the respective work stream, not in a DM. It enables others to pick up an urgent item in case the main person is not available.
 * If you know that the person is busy, then consider providing hints on how urgent the email is on the subject (i.e., **P0 to P4**). Also, be okay with writing emails that are one sentence long. Courtesy over conciseness can cost someone time.
 
 Need something done? Create a GitHub issue, do the footwork of getting it to “ready” state, and assign it to someone.
