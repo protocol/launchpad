@@ -20,6 +20,7 @@
   * [Data Transfer](docs/ipfs/data-transfer.md)
   * [IPFS Subsystems & Architecture](docs/ipfs/subsystems-architecture.md)
   * [The IPFS Gateways](docs/ipfs/ipfs-gateways.md)
+  * [The IPFS API](docs/ipfs/ipfs-api.md)
   * [IPFS Resources](docs/ipfs/ipfs-resources.md)
 * [IPLD](docs/ipld/README.md)
   * [Content Addressing & CIDs](docs/ipld/content-addressing-and-cids.md)
