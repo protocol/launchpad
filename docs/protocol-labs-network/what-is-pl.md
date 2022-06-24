@@ -13,7 +13,7 @@ In this talk by Molly Mackinlay, understand where Protocol Labs is an organizati
 ## Protocol Labs Projects
 * [IPFS](https://ipfs.io/) Was one of the original core OSS projects, from which other projects in Protocol Labs have grown and nucleated, creating a network of Open Source technologies, developer tooling, DApps, and more.
 
-* [Filecoin](https://filecoin.io/) is the other original core organization that supports the builders and storage providers that use Protocol Labs & Filecoin technologies. Filecion is a utility token (cryptocurrency) that supports and incentivizes the growth of our network of web3 technologies.
+* [Filecoin](https://filecoin.io/) is the other original core organization that supports the builders and storage providers that use Protocol Labs & Filecoin technologies. Filecoin is a utility token (cryptocurrency) that supports and incentivizes the growth of our network of web3 technologies.
 
 * [libp2p](https://libp2p.io/) is a set of modular tools for networking and peer-to-peer communications
 
@@ -25,7 +25,9 @@ In this talk by Molly Mackinlay, understand where Protocol Labs is an organizati
 
 * [Drand](https://drand.love/) is a revolutionary randomness generator that can be used in protocols and cryptocurrencies
 
-* [Filecoin Virtual Machine (FVM)](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/) is a layer 1 protocol that will enable developers to create and execute smart contracts on data stored in the Filecoin network 
+* [Filecoin Virtual Machine (FVM)](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/) is a layer 1 protocol that will enable developers to create and execute smart contracts on data stored in the Filecoin network
+
+* [Lotus](https://lotus.filecoin.io/) is the main Filecoin network implementation, supported by Filecoin, written in Go & maintained by the PL team
 
 _In Protocol Labs, there are new projects and technologies being invented every day. Keep in mind that this may not be a comprehensive list of all important projects growing in our network_
 

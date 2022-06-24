@@ -27,7 +27,7 @@ Since IPFS uses CIDs, if you were to share an IPFS address such as `/ipfs/QmbezG
 
 The [InterPlanetary Name System (IPNS)](https://docs.ipfs.io/concepts/ipns/#interplanetary-name-system-ipns) solves this issue by creating an address that can be updated.
 
-A _name_ in IPNS is the [hash](hashing.md) of a public key. It is associated with a record containing information about the hash it links to that is signed by the corresponding private key. New records can be signed and published at any time.
+A _name_ in IPNS is the [hash](https://docs.ipfs.io/concepts/hashing/) of a public key. It is associated with a record containing information about the hash it links to that is signed by the corresponding private key. New records can be signed and published at any time.
 
 When looking up an IPNS address, use the `/ipns/` prefix:
 

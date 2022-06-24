@@ -12,7 +12,7 @@ description: Add the subtitle here
 
 ### The Filecoin Actors & State Tree <a href="#filecoin-actors" id="filecoin-actors"></a>
 
-* ​[How Filecion Actors Work](https://f.io/1hY6-xOB)​
+* ​[How Filecoin Actors Work](https://f.io/1hY6-xOB)​
 * VM & Actors: [https://spec.filecoin.io/#section-systems.filecoin\_vm](https://spec.filecoin.io/#section-systems.filecoin\_vm)​
 * System (builtin) actors: [https://spec.filecoin.io/#section-systems.filecoin\_vm.sysactors](https://spec.filecoin.io/#section-systems.filecoin\_vm.sysactors)​
 * Filecoin Virtual Machine (WIP for user-defined actors): [fvm.filecoin.io](http://fvm.filecoin.io)​
@@ -71,7 +71,7 @@ description: Add the subtitle here
   * _General VM and blockchain (20mins)_
     * Transactions are called "messages"
       * From one actor to another actor
-        * Actor is something that talkies over the blockchain via functions
+        * Actor is something that talks over the blockchain via functions
           * If A sends X to B means Actor A calls function pay with input X to actor B
           * Message goes in a pool
           * Who wins the block takes some messages and puts them in a block. He then propagate block to the network
