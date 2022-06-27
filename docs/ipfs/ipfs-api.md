@@ -53,7 +53,7 @@ Notice that there are several not implemented methods, which you will complete t
 * Review the `func main()` function, which is the entry point of the application. This function calls the different functions that you will implement and handles their result for you.
 For example, the following snippet calls the `addFile` method. If an error is returned, then the program is terminated with the error message; if no error occurs, then the CID of the file is printed.
 
-```Go
+```go
 // 1. Add the "Hello from Launchpad!" text to IPFS
 fmt.Println("Adding file to IPFS")
 cid, err := addFile(sh, "Hello from Launchpad!")
@@ -66,15 +66,15 @@ fmt.Println("File added with CID:", cid)
 
 * A connection to the node is created by providing the location of the node's API.
 
-```Go
+```go
 sh := shell.NewShell("localhost:5001")
 ```
 
 The `NewShell` method returns a `*shell.Shell` object that exposes all the available methods to interact with the IPFS node.
 
-* Add a file that contains the `Hellow from Launchpad!` text to IPFS by using the `Add` method.
+* Add a file that contains the `Hello from Launchpad!` text to IPFS by using the `Add` method.
 
-```Go
+```go
 func addFile(sh *shell.Shell, text string) (string, error) {
     return sh.Add(strings.NewReader(text))
 }
@@ -85,7 +85,7 @@ If no errors have occurred, the CID of the added file is returned.
 
 * Read the content of the file by using the `Cat` method.
 
-```Go
+```go
 func readFile(sh *shell.Shell, cid string) (*string, error) {
     reader, err := sh.Cat(fmt.Sprintf("/ipfs/%s", cid))
     if err != nil {
@@ -109,7 +109,7 @@ The `Cat` method returns a reader, so the `io.ReadAll` helper function is used t
 
 * Download the file to your computer by using the `Get` method.
 
-```Go
+```go
 func downloadFile(sh *shell.Shell, cid string) error {
     return sh.Get(cid, YourLocalPath)
 }
@@ -132,13 +132,13 @@ Copy the public key, which starts with `k...`, as you will need it to publish th
 * The `main.go` file defines a `YourPublicKey` constant at the beginning.
 Include your public key in the constant.
 
-```Go
+```go
 const YourPublicKey = "k..."
 ```
 
 * Publish the file to IPNS by using the `PublishWithDetails` method. 
 
-```Go
+```go
 func addToIPNS(sh *shell.Shell, cid string) error {
     var lifetime time.Duration = 50 * time.Hour
     var ttl time.Duration = 0 * time.Microsecond
@@ -164,7 +164,7 @@ In the previous snippet, the record is kept in IPNS for 50 hours and there is no
 
 * Use your public key to query IPNS. The result will be the CID of the file that you published.
 
-```Go
+```go
 func resolveIPNS(sh *shell.Shell) (string, error) {
     return sh.Resolve(YourPublicKey)
 }
