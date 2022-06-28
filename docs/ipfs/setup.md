@@ -1,5 +1,5 @@
 ---
-description:
+description: Deep Dive Tutorial: Setup & Access Files with IPFS
 ---
 
 # IPFS
