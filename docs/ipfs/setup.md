@@ -2,9 +2,9 @@
 description: Deep Dive Tutorial: Setup & Access Files with IPFS
 ---
 
-# IPFS Command Line Interface (CLI) Setup
+## IPFS Command Line Interface (CLI) Setup
 
-## The Basics
+### The Basics
 In these tutorials you can get started with installing go-ipfs (also known as kubo), and doing some basic things with the filesystems.
 
 #### Getting Started with IPFS
