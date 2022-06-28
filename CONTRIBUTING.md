@@ -1,4 +1,4 @@
-Please create your own branch or fork for any changes that you would like to make, then push it to the appropriate branch, either `main` or `gh-pages`.
+Please create your own branch or fork for any changes that you would like to make, then create a PR to the appropriate branch, `gitbook` .
 
 ## Steps
 1) Request access from an admin of this site
