@@ -1,5 +1,5 @@
 ---
-description: IPFS API
+description: IPFS API – Deep Dive Tutorial
 ---
 
 ## The IPFS API
@@ -136,7 +136,7 @@ Include your public key in the constant.
 const YourPublicKey = "k..."
 ```
 
-* Publish the file to IPNS by using the `PublishWithDetails` method. 
+* Publish the file to IPNS by using the `PublishWithDetails` method.
 
 ```go
 func addToIPNS(sh *shell.Shell, cid string) error {
