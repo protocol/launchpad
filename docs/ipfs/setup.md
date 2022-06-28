@@ -1,5 +1,5 @@
 ---
-description: Deep Dive Tutorial: Setup & Access Files with IPFS
+description: Deep Dive Tutorial – Setup & Access Files with IPFS
 ---
 ## IPFS Command Line Interface (CLI) Setup
 
