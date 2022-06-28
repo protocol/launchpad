@@ -13,7 +13,7 @@
   * [Open Source Stewardship](docs/protocol-labs-network/os-stewardship.md)
   * [Open Source Contribution](docs/protocol-labs-network/os-contributing.md)
 * [IPFS](docs/ipfs/README.md)
-  * [IPFS Setup (Tutorial)](docs/ipfs/mutable-content.md)
+  * [IPFS Setup (Tutorial)](docs/ipfs/setup.md.md)
   * [Mutable Content](docs/ipfs/mutable-content.md)
   * [IPFS Public DHT](docs/ipfs/ipfs-public-dht.md)
   * [Who Uses IPFS](docs/ipfs/who-uses-ipfs.md)
