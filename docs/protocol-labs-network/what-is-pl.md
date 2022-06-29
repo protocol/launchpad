@@ -23,7 +23,7 @@ In this talk by Molly Mackinlay, understand where Protocol Labs is an organizati
 
 * [Testground](https://docs.testground.ai/) is a platform for testing, benchmarking, and simulating distributed and peer-to-peer systems at scale, that can scale from 2k-10k instances
 
-* [Drand](https://drand.love/) is a revolutionary randomness generator that can be used in protocols and cryptocurrencies
+* [Drand](https://drand.love/) is a revolutionary public, distributed, verifiable randomness generator that can be used in protocols and cryptocurrencies that require public randomness.
 
 * [Filecoin Virtual Machine (FVM)](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/) is a layer 1 protocol that will enable developers to create and execute smart contracts on data stored in the Filecoin network
 
