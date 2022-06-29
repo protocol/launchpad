@@ -83,3 +83,23 @@ _Forms Example_
 ```
 {% embed url="https://docs.google.com/forms/d/e/1FAIpQLSfBhz3elo3K8U6MpMKeO1-0CfTdTQwPaMSYJPi3bSNyFLm0Dw/viewform?usp=sf_link" %}
 ```
+
+## Code Snippets
+
+When creating code snippets, use tabs (even if there is only an option in one language)
+
+### Tabs Example
+
+{% tabs %}
+{% tab title="TypeScript" %}
+```typescript
+read(key: AES256, eNode: Encrypted<VNode>): Result<Failure, VNode>
+```
+{% endtab %}
+
+{% tab title="Haskell" %}
+```haskell
+read :: AES256 -> Encrypted VirtualNode -> Either Failure VirtualNode
+```
+{% endtab %}
+{% endtabs %}
