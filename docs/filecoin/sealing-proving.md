@@ -10,16 +10,16 @@ description: Add the subtitle here
 
 {% embed url="https://youtu.be/Nmw66GZyf48" %}
 
-### The Filecoin Actors & State Tree <a href="#filecoin-actors" id="filecoin-actors"></a>
+#### How Filecoin Actors Work | Zenground0
 
-* ​[How Filecoin Actors Work](https://f.io/1hY6-xOB)​
-* VM & Actors: [https://spec.filecoin.io/#section-systems.filecoin\_vm](https://spec.filecoin.io/#section-systems.filecoin\_vm)​
-* System (builtin) actors: [https://spec.filecoin.io/#section-systems.filecoin\_vm.sysactors](https://spec.filecoin.io/#section-systems.filecoin\_vm.sysactors)​
-* Filecoin Virtual Machine (WIP for user-defined actors): [fvm.filecoin.io](http://fvm.filecoin.io)​
+In this talk, learn about the capabilities of Filecoin Actors. _Note this link is private and you should ping maintainers for access_
+
+{% embed url="https://drive.google.com/file/d/1YhJ7a-BnuPl0OOUxV_2ZV6ayxb7TFyi6/view?usp=sharing" %}
+
 
 ### How the Filecoin Protocol Works
  [Filecoin School Resources](https://drive.google.com/drive/folders/1stQQlqN-V7tBwfSAcyLKnhCuViCTbwWm)
- 
+
  [![image](https://user-images.githubusercontent.com/618519/156397357-e5108eb5-2064-472e-b426-60d1f2ba1aad.png)](https://drive.google.com/drive/folders/1stQQlqN-V7tBwfSAcyLKnhCuViCTbwWm)
 
 #### Program Agenda
