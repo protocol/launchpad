@@ -120,9 +120,11 @@ The Advertiser offers services to the network, which means that shares the proto
 
 The are two main implementations: mDNS and the Kademlia Distributed Hash Table. The Kademlia DHT is used to discover peers in the IPFS network. Other implementations are also valid as long as they comply with the previously mentioned interfaces.
 
-**The Life of a libp2p Connection | Jacob Heun**
+### Supporting Video
 
-{% embed url="https://www.youtube.com/watch?v=zcWHamr5m_k" %}
+To get more information on these concepts, watch the following video.
+
+{% embed url="https://www.youtube.com/watch?v=bWY0op7FmJ8" %}
 
 ## libp2p Users
 
