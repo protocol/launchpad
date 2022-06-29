@@ -102,7 +102,7 @@ Once the connection is secured, a multiplexer protocol is negotiated. Muxtiplexi
 
 Because the data will be sent over the same connection, we need an abstraction called _stream_. A stream represents the data for a specific protocol in a given connection. For example, if your connection exposes TCP and UDP protocols, then two streams will be created. Data flowing through the connection is assigned its corresponding _stream id_.
 
-![](<../../.gitbook/assets/libp2p-streams.png>)
+![Streams in a single connection](<../../.gitbook/assets/libp2p-streams.png>)
 
 ### Negotiating protocols
 
@@ -124,20 +124,7 @@ The are two main implementations: mDNS and the Kademlia Distributed Hash Table. 
 
 {% embed url="https://www.youtube.com/watch?v=zcWHamr5m_k" %}
 
-<!--
-#### [Content Routing | ResNetLabs On Tour – Alfonso de la Rocha](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/)
-
-The content routing system of IPFS is the part of the architecture that discovers content in the network. It is a key part of the architecture, and the one with the largest number of open research questions. In this module, you’ll hear about:
-
-* IPFS’s content routing architecture
-* The settings and algorithmics of IPFS’s DHT
-* IPFS’s gossip-based content routing approaches
-
-{% embed url="https://www.youtube.com/watch?v=KMmiAnMJU-c" %}
-
--->
-
-### libp2p Users
+## libp2p Users
 
 The users of the libp2p protocol suite include, and is a list that is always being added to:
 
