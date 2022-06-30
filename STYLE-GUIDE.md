@@ -127,6 +127,7 @@ Example
 <details>
 
 <summary>Dropdown Text</summary>
+
 **Title**
 Some content textile
 

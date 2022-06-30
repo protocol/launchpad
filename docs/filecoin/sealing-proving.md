@@ -10,15 +10,32 @@ description: Add the subtitle here
 
 {% embed url="https://youtu.be/Nmw66GZyf48" %}
 
-
-
 ### How the Filecoin Protocol Works
 
-#### Video Title | Organization Name(if not PL) - Name(s) of Presenters
+#### How the Filecoin Protocol Works | Part 1 - Nicola
 
-In this talk by ____, text text text.
+In this talk by Nicola, he discusses the basics of what Filecoin is: a storage market & a consensus.
+<details>
+
+<summary>How Filecoin Works Part 1</summary>
+
+* Introduction to the Filecoin Products 0:00:31
+* The Filecoin Blockchain: Basics of Mining & Messages 0:01:54
+  * Filecoin Messages 0:02:05
+  * Epochs 0:03:04
+  * The Filecoin Virtual Machine 0:05:54
+* FVM Components: Actors, Addresses, State, & Execution 0:07:35
+  * Actors 0:08:19
+  * Addresses 0:09:55
+  * Actor Methods 0:12:35
+  * The Execution Model 0:14:56
+
+<details>
+
 
 {% embed url="https://youtu.be/------" %}
+
+
 
 
 #### Filecoin Specs & Resources
