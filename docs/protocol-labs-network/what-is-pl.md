@@ -19,7 +19,7 @@ In this talk by Molly Mackinlay, understand where Protocol Labs is an organizati
 
 * [IPLD](https://ipld.io/) is the data model that is used for the content-addressable web
 
-* [Multiformats](https://multiformats.io/) is a project that makes is possible to create self-describing data, which allows protocols and projects to be interoperable and future-proof
+* [Multiformats](https://multiformats.io/) is a project that makes it possible to create self-describing data, which allows protocols and projects to be interoperable and future-proof
 
 * [Testground](https://docs.testground.ai/) is a platform for testing, benchmarking, and simulating distributed and peer-to-peer systems at scale, that can scale from 2k-10k instances
 
@@ -79,10 +79,10 @@ In 2013, while studying Bitcoin, it became clear that cryptocurrencies solved ma
 
 A cryptocurrency can address a portion of the value created by the protocol, and it can be allocated to fund protocol creators and maintainers.
 
-This is an unprecedented way to capture a fraction of the value created and feed it back into development of the protocol and its ecosystem, and the creation of more protocols. What's more, the value capture is coming at the protocol layer and not solely based on applications or services above. The attention and interests of the protocol developers remain aligned with successful outcomes for the protocol, and the projects building around it.
+This is an unprecedented way to capture a fraction of the value created and feed it back into development. The IPFS protocol benefits, its ecosystem, and the creation of more protocols. What's more, the value capture is coming at the protocol layer and not solely based on applications or services above. The attention and interests of the protocol developers remain aligned with successful outcomes for the protocol, and the projects building around it.
 
 ![Distributed Web](https://protocol.ai/assets/img/filecoin\_logos.2c567d09.png)
 
-The cryptocurrency can be used to incent individuals and other groups outside of the original organization to improve and work on the protocol. It can also be used to fund the entire development of the currency, by pre-selling it as Ethereum did in 2014.
+The cryptocurrency can be used to incentivize individuals, and other groups outside the original organization, to improve and work on the protocol. It can also be used to fund the entire development of the currency, by pre-selling it as Ethereum did in 2014.
 <!--
 The PL Network is funded by, and derives funding from, **Market Protocol assets**. A Market Protocol is a system that mediates some economic activity, and settles value exchanges using a cryptographic asset. This structure solves economic problems in asymmetric peer-to-peer resource sharing, scaling, services, maintenance, and development. In the case of the PL Network, a portion of that network-aligning asset is funneled back into [protocol public goods funding](https://fundingthecommons.io) to reward research, development, and product teams across the network. -->
