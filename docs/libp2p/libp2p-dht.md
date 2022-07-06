@@ -8,82 +8,102 @@ description: Describing the libp2p Distributed Hash Table
 
 The Kademlia Distributed Hash Table is used in libp2p to provide _peer discovery_ and _content routing_.
 In simple terms, a hash table is a set of records in which every record holds a `key -> value` mapping.
-In a distributed hash table, the records are distributed across the network, which means that every node holds a subset of records.
+In a distributed hash table, the **records are distributed across the network**, which means that every node holds a subset of records.
 
 When searching for a specific record, we do not have a centralized registry, therefore, must ask our peers for their subset of the DHT, and our peers must do the same subsequently until the record is found.
 
-// image
+## The Distance Metric
+
+The main operation provided by a hash table is retrieving a value by its key. In the DHT, keys are given an ID, which is usually a hash generated from the key itself. The format of the key ID is the same as the peer ID, which allows the DHT to compute a _distance_ metric. The **distance metric represents the distance between two IDs**; therefore, it is a _logical distance_, not a _physical distance_. **Peers store keys that are _close_ to them**. 
+
+The closeness of a key to a peer is computed by a _distance function_ (i.e. `distance(key_id, peer_id)`), which applies a XOR operation to the IDs. The XOR result is converted into an integer to _quantify_ the distance between the IDs. For example, `distance(key1, peer9) = 4` means that the distance between the `peer9` peer and the `key1` key is `4`.
+
+The mathemathical explanation about the distance function is not trivial, and it is beyond the outcomes of this lecture; however, you can find more information on the topic [here](https://en.wikipedia.org/wiki/Kademlia#Academic_significance).
+
+## The Routing Table
+
+Every peer holds a list of peer IDs that are _close_. The closeness of two peers is defined by the distance function (i.e. `distance(peer1, peer2)`), in the same way than the distance between a peer and a key. Keep in mind that both peers and keys use the same ID format.
+
+The internals of the routing table are beyond the outcomes of this lecture, but you can read more on the topic [here](https://en.wikipedia.org/wiki/Kademlia#Academic_significance). You can also take a look at the [Go implementation](https://github.com/libp2p/go-libp2p-kbucket/blob/f0be035294ac4f5e939af13ddc1dd24273b7d881/table.go#L25) of the routing table.
+
+## DHT Operations
 
 The libp2p DHT is based on the Kademlia DHT, so it incorporates most of its core concepts with some extra functionalities. Nodes communicate by using an RPC protocol over UDP. The operations provided by the protocol are:
 
-- Peer discovery (`findNode(peerId string)`): given a peer ID, find out where it is located.
-- Adding value: inserting a record of the form `key -> value`
-- Find a value by its key: finding the value in the DHT for a given key.
-- Add provider: advertising in the network that a peer is providing a given key.
-- Get providers: finding out what peers provide the value for the given key.
+- `FIND_NODE`: given a key, find the closest nodes to the key.
+- `ADD_VALUE`: add a `key -> value` mapping to the DHT.
+- `GET_VALUE`: given a key, find the corresponding value.
+- `ADD_PROVIDERS`: advertising in the network that a peer is providing a given key.
+- `GET_PROVIDERS`: finding out what peers provide the value for the given key.
 
-### Peer discovery
+### Find Node
 
-_Discovering a peer_ means finding its location (multiaddress) by using its peer ID. For example, if you have a peer ID ``, you want to know how to reach that node (IP address, port...).
+The `FIND_NODE` operation returns the _k_ closest nodes of a peer to a given key.
 
-Every peer holds a list of peer IDs that are _close_, along with their multiaddresses. The concept of _closeness_ in the DHT is not trivial, and it is covered later in this lecture. For now, consider that we can know if two peers are close by comparing their IDs.
-The _routing table_ is the structure responsible for managing the list of close peers.
+The close nodes of a peer are kept in the routing table. To find the _closest_ nodes of a peer to a specific key, we first compute the distance of every close node to the key (i.e. `distance(close_peer, key)`). Then, we take the nodes with the lowest distance.
 
-To understand it better, think about a function `distance(id1, id2)`, which receives two peer IDs as a parameter and is able to return an integer representing the distance between the peers. For example: `distance(my_id1, my_id2) = 4`, where the distance between the nodes is `4`.
+Because a peer might have many close nodes, a parameter, `k`, is used to limit the number of nodes that we should consider. For example, if `k = 4`, then we should only consider the four nodes with the lowest distance to the key. To understand it better, consider the following diagram:
 
-By calculating the distance between two peers, we can select the _best_ close peers and subsequently approach the target peer. To explain the process of finding a peer, consider the following diagram.
+![Find the k closest nodes example](<../../.gitbook/assets/libp2p-dht-findnode.png>)
 
-// image
+1. `Peer 1` has four _close_ peers, which are stored in its routing table.
+2. The `FIND_NODE(key1)` operation returns the _k_ closest nodes to the `key1` key.
+The distance between every close peer and the key is computed (i.e. `distance(close_peer, key1)`). Then, the _k_ nodes with the lowest distance are selected (in the example, `k = 2`).
 
-Every peer has a parameter, _dist_, which represents the distance from the peer to the target peer (`Peer 10`). For example, `Peer 5` with `dist = 10` means that `distance(peer5_id, peer10_id) = 5`.
-The arrows represent the neighbors of every peer.
+### Add Value
 
-Now consider the following diagram, which illustrates the steps of the peer discovery.
+The `ADD_VALUE` operation creates a mapping of the form `key -> value` in the DHT. For every key, an ID is generated by using the same format as peer IDs.
 
-// image
-
-You are in `Peer 1`, and you want to get to `Peer 10`. The traversal of nodes will be:
-1. `Peer 1` has three close nodes. For every node, a `find_node` request is sent.
-The response gives information about the peer's distance to `Peer 10`, and the peer's close nodes.
-`Peer 2` and `Peer 3` are selected because they have the lowest distance to `Peer 10`.
-2. From `Peer 1`, a `find_node` request is sent to the close nodes of `Peer 2` and `Peer 3` (i.e. `Peer 5`, `Peer 6`, `Peer 7`, `Peer 8`).
-The nodes with the lowest distance to `Peer 10` are selected: `Peer 6` and `Peer 7`.
-3. From `Peer 1`, a `find_node` request is sent to `Peer 9` and `Peer 10`.
-`Peer 10`'s distance is `0`, therefore, we have found the target peer.
-
-Note that all the requests are made from `Peer 1`. The starting node is responsible for managing all the requests.
-
-Some nodes might have hundreds of neighbors, so sending a request to all the neighbors of a peer could lead to performance issues. To avoid this, there is usually a limit, `k`, which you can select. In the previous example, `k = 2`.
-
-### The Distance Metric
-
-In the DHT, _distance_ does not necessarily refer to geographical distance. The distance between two peers is calculated as the `XOR` of their peer IDs (`distance(my_id1, my_id2) = XOR(my_id1, my_id2)`). Then, the result is converted into an integer.
-
-### Put value
-
-_Putting a value_ means creating a mapping of the form `key -> value` in the DHT. For every key, an ID is generated by using the same format as peer IDs. While peer IDs are usually random, key IDs are generated from the key itself.
-
-Having an ID for every key in the same format as peer IDs means that we can calculate _distances_ between key IDs and peer IDs. When putting a value, the following process occurs:
+Remember that having an ID for every key in the same format as peer IDs means that we can calculate _distances_ between key IDs and peer IDs. When adding a value, the following process occurs:
 
 1. Generate an ID for the key: `key_id`.
-2. Find the _k_ closest nodes to the key ID. This means that every close node (until a limit _k_) is asked to provide its distance to the key ID (i.e. `distance(peer_id, key_id)`). The `find_node` function is used.
-3. The `key -> value` record is stored in every close node.
+2. Find the _k_ closest nodes to the key ID (i.e. `FIND_NODE(key_id)`).
+3. The `key -> value` record is stored in every node returned by the `FIND_NODE` operation.
 
-This means that there will be **several nodes storing the same record**, which can lead to inconsistencies at some point. Validation strategies are applied.
+This means that there will be **several nodes storing the same record**, which can lead to inconsistencies at some point. Validation strategies are required.
 
 Although both peers and keys share the same ID format, peer IDs are not part of the keys. Instead, a peer, with a given peer ID, holds a set of keys.
 
-### Get value
+### Get Value
 
-To get a value from a key, we should find the peers holding the given key. Previously, we mention that peer and key IDs have the same format. Because keys are stored in peers with similar IDs, we can consider that finding a node with `peer_id = key_id` will take us to a peer that holds the key.
+To find a value for a given key, we iterately find the _k_ closest nodes of a peer. Consider the following network diagram:
 
-Therefore, the search is really a **peer discovery** traversal where we want to get to a hypothetical node with the same ID as the key. In every iteration of the search, we compute the distance `distance(peer_id, key_id)`.
+![Distances from every peer to the key](<../../.gitbook/assets/libp2p-dht-distances.png>)
 
-For a given key, we will get values from different peers, which might be inconsistent at some point. If all the values are not the same, then we must implement a consensus strategy (for example, we accept the value provided by the majority).
+Every peer has a parameter, _dist_, which represents the distance from the peer to the target key (`key1`). For example, `Peer 5` with `dist = 10` means that `distance(peer5, key1) = 5`.
+The arrows represent the close nodes of every peer.
+For simplicity, only one node (`Peer 10`) contains the key.
+
+Now consider the following diagram, where we select the _k_ closest node on every iteration (`k = 2`).
+
+![Value retrieval high-level flow](<../../.gitbook/assets/libp2p-dht-flow.png>)
+
+You are in `Peer 1`, and you want to find `key1`. The traversal of nodes will be:
+1. `Peer 1` has three close nodes. The `FIND_NODE(key1)` operation selects `Peer 2` and `Peer 3` as the closest nodes because they have the lowest distance to the key.
+2. From `Peer 1`, a `FINDE_NODE(key1)` request is sent to the close nodes of `Peer 2` and `Peer 3` (i.e. `Peer 5`, `Peer 6`, `Peer 7`, `Peer 8`).
+The nodes with the lowest distance to the key are selected: `Peer 6` and `Peer 7`.
+3. From `Peer 1`, a `FINDE_NODE(key1)` request is sent to `Peer 9` and `Peer 10`.
+`Peer 10` holds the the key, so the value is returned.
+
+Note that the previous example is just a very **high-level** explanation of the algorithm. If you want to get a deeper look, refer to the [specification](https://github.com/libp2p/specs/tree/master/kad-dht#value-retrieval). For example, because several peers might return different values for the same key, a validation strategy is needed.
 
 In storage systems (e.g. IPFS), a key of the DHT might represent the CID of a specific file. Therefore, searching for a specific key means finding what peers hold a specific file. 
 
+### Advertising Content
+
+Although you can use the `GET_VALUE` operation to retrieve a specific key, the DHT also provides the `GET_PROVIDERS` and `ADD_PROVIDER` operations to advertise content. While the `GET_VALUE` operation takes the bytes of a key as a parameter, `GET_PROVIDERS` takes a CID string. In other words, `GET_PROVIDERS` is specific to IPFS, while `GET_VALUE` is a generic operation from the Kademlia specification.
+
+`ADD_PROVIDER` creates a _provider record_ announcing to the network that a node is providing a specific CID. By default, the record expires after 24 hours. `GET_PROVIDERS` returns the peers storing the CID (i.e. the key).
+
+There is a [proposal](https://github.com/libp2p/go-libp2p-kad-dht/issues/584) to remove the specific `ADD_PROVIDER` and `GET_PROVIDERS` operations.
+
 ## Expand Your Knowledge
 
+The DHT is a complex topic, which involves understanding several concepts. The following video provides more information.
 
+{% embed url="https://www.youtube.com/watch?v=KMmiAnMJU-c" %}
 
+If you want to get more information, refer to the following links:
+
+- libp2p DHT Go Implementation ([GitHub](https://github.com/libp2p/go-libp2p-kad-dht/blob/4371650e37662cdfd9f5777240c67b861af26092/dht.go#L78))
+- libp2p DHT Specification ([GitHub](https://github.com/libp2p/specs/blob/master/kad-dht/README.md))
