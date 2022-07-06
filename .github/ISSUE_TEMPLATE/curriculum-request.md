@@ -21,7 +21,7 @@ What features, user stories, or product/ content you would like as an output
 **Additional context**
 Add any other context or screenshots about the feature request here.
 
-## Milestones
+## Milestones (Optional)
 **1) Milstone Name** Text
 
 **2) Milstone Name** Text
