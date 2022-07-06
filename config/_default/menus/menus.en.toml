@@ -1,3 +1,53 @@
+[[main]]
+  name = "Start here"
+  url = "/start-here/lorem/ipsum/"
+  weight = 10
+
+[[main]]
+  name = "IPFS"
+  url = "/ipfs/lorem/ipsum/"
+  weight = 20
+
+[[main]]
+  name = "Libp2p"
+  url = "/libp2p/lorem/ipsum/"
+  weight = 30
+
+[[main]]
+  name = "Filecoin"
+  url = "/filecoin/lorem/ipsum/"
+  weight = 40
+
+[[main]]
+  name = "Protocol Labs"
+  url = "/protocol-labs/lorem/ipsum/"
+  weight = 50 
+
+[[main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 999
+
+# [[main]]
+#   name = "Get Started"
+#   weight = 30
+#   identifier = "get-started"
+#   url = "/docs/prologue/introduction/"
+# 
+# [[main]]
+#   name = "Quick Start"
+#   weight = 40
+#   identifier = "quick-start"
+#   url = "/docs/prologue/quick-start/"
+#   parent = "get-started"
+# 
+# [[main]]
+#   name = "Tutorial"
+#   weight = 50
+#   identifier = "tutorial"
+#   url = "https://getdoks.org/tutorial/introduction/"
+#   parent = "get-started"
+
 [[docs]]
   name = "Prologue"
   weight = 10
@@ -9,12 +59,6 @@
   weight = 60
   identifier = "help"
   url = "/docs/help/"
-
-# [[docs]]
-#   name = "Lorem"
-#   weight = 70
-#   identifier = "lorem"
-#   url = "/docs/lorem/"
 
 [[guide]]
   name = "Lorem"
@@ -28,46 +72,6 @@
   identifier = "lorem"
   url = "/tutorial/lorem/"
 
-[[main]]
-  name = "Docs"
-  url = "/docs/prologue/introduction/"
-# url = "/docs/1.0/prologue/introduction/"
-  weight = 10
-
-[[main]]
-  name = "Tutorials"
-  url = "/tutorials/"
-  weight = 15
-
-# [[main]]
-#   name = "Tutorial"
-#   url = "/tutorial/lorem/ipsum/"
-#   weight = 15
-
-[[main]]
-  name = "Blog"
-  url = "/blog/"
-  weight = 20
-
-[[main]]
-  name = "Get Started"
-  weight = 30
-  identifier = "get-started"
-  url = "/docs/prologue/introduction/"
-
-[[main]]
-  name = "Quick Start"
-  weight = 40
-  identifier = "quick-start"
-  url = "/docs/prologue/quick-start/"
-  parent = "get-started"
-
-[[main]]
-  name = "Tutorial"
-  weight = 50
-  identifier = "tutorial"
-  url = "https://getdoks.org/tutorial/introduction/"
-  parent = "get-started"
 
 [[social]]
   name = "GitHub"

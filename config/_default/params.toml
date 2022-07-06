@@ -1,42 +1,42 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "Launchpad"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+titleAddition = "Blast off into web3 with Launchpad!"
+description = "Launchpad is a hiring & onboarding program designed for accelerating technical growth in the Web3 space."
 
 ## Documentation
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+images = ["launchpad.png"]
 ogLocale = "en_US"
-domainTLD = "doks.netlify.app"
-titleHome = "Doks Theme"
+domainTLD = "pl-launchpad.io"
+titleHome = "Launchpad"
 
 ## Twitter Cards
-twitterSite = "@getdoks"
-twitterCreator = "@henkverlinde"
+twitterSite = "@"
+twitterCreator = "@"
 
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
-schemaName = "Doks"
-schemaAuthor = "Henk Verlinde"
-schemaAuthorTwitter = "https://twitter.com/henkverlinde"
-schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaAuthorGitHub = "https://github.com/h-enk"
+schemaName = "Launchpad"
+schemaAuthor = "Protocol Labs"
+schemaAuthorTwitter = "https://twitter.com/"
+schemaAuthorLinkedIn = "https://www.linkedin.com/in//"
+schemaAuthorGitHub = "https://github.com/protocol/"
 schemaLocale = "en-US"
-schemaLogo = "logo-doks.png"
+schemaLogo = "logo-launchpad.png"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
 schemaImage = "doks.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
-schemaTwitter = "https://twitter.com/getdoks"
+schemaTwitter = "https://twitter.com/"
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/h-enk/doks"
+schemaGitHub = "https://github.com/protocol/launchpad"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -54,23 +54,21 @@ lqipWidth = "20x"
 smallLimit = "300"
 
 # Footer
-footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\">Netlify</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
+footer = "Powered by <a class=\"text-muted\" href=\"https://fleek.co/\">Fleek</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
 
 # Feed
-copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
+copyRight = "Copyright (c) Protocol Labs"
 
 # Alert
 alert = false
 alertDismissable = true
-# alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\" target=\"_blank\" rel=\"noopener\">Check out Doks v0.2</a>"
-alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Check out Doks v0.2</a>"
+alertText = ""
 
 # Edit Page
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
 repoHost = "GitHub"
-#repoHost = "Gitea"
-docsRepo = "https://github.com/h-enk/doks"
-docsRepoBranch = "master"
+docsRepo = "https://github.com/protocol/launchpad"
+docsRepoBranch = "main"
 docsRepoSubPath = ""
 editPage = false
 lastMod = false
@@ -87,7 +85,7 @@ lastMod = false
   kaTex = false
   multilingualMode = false
   docsVersioning = false
-  fullWidth = false
+  fullWidth = true
 
 [menu]
   [menu.section]
@@ -95,4 +93,4 @@ lastMod = false
     collapsibleSidebar = true
 
 [sections]
-  sectionNav = ["docs", "tutorials"]
+  sectionNav = ["start-here", "ipfs", "libp2p", "filecoin", "protocol-labs", "blog"]
