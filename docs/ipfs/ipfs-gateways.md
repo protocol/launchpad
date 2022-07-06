@@ -102,7 +102,7 @@ Our goal is to facilitate native support for IPFS and other decentralized protoc
 
 ### IPFS Companion browser extension
 
-[IPFS Companion](https://github.com/ipfs-shipyard/ipfs-companion#ipfs-companion) is a browser extension that simplifies access to IPFS resources and adds browser support for the IPFS protocol. It runs in <img src="https://unpkg.com/@browser-logos/firefox@2.0.0/firefox_16x16.png" width="16" height="16">Firefox (desktop and Android) and Chromium-based browsers includingChrome or Brave. Check out all of [IPFS Companion's features](https://github.com/ipfs-shipyard/ipfs-companion#ipfs-companion-features) and [**install it**](https://github.com/ipfs-shipyard/ipfs-companion#install) today!
+[IPFS Companion](https://github.com/ipfs-shipyard/ipfs-companion#ipfs-companion) is a browser extension that simplifies access to IPFS resources and adds browser support for the IPFS protocol. It runs in <img src="https://unpkg.com/@browser-logos/firefox@2.0.0/firefox_16x16.png" width="16" height="16">Firefox (desktop and Android) and Chromium-based browsers including Chrome or Brave. Check out all of [IPFS Companion's features](https://github.com/ipfs-shipyard/ipfs-companion#ipfs-companion-features) and [**install it**](https://github.com/ipfs-shipyard/ipfs-companion#install) today!
 
 <!-- image here -->
 
@@ -146,7 +146,7 @@ Current focus is to watch, learn, and participate in [WebExtensions Community Gr
 #### IPFS and Igalia collaborate on dweb in browsers
 
 In 2020 IPFS and Igalia started a collaboration that continues to this day.
-Read more: https://blog.ipfs.io/2021-01-15-ipfs-and-igalia-collaborate-on-dweb-in-browsers/  
+Read more: [https://blog.ipfs.io/2021-01-15-ipfs-and-igalia-collaborate-on-dweb-in-browsers/](https://blog.ipfs.io/2021-01-15-ipfs-and-igalia-collaborate-on-dweb-in-browsers/)  
 
 The most notable highlights:
 
