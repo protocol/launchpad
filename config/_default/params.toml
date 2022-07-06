@@ -16,15 +16,15 @@ domainTLD = "pl-launchpad.io"
 titleHome = "Launchpad"
 
 ## Twitter Cards
-twitterSite = "@"
-twitterCreator = "@"
+twitterSite = "@launchpad_pl"
+twitterCreator = "@launchpad_pl"
 
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
 schemaName = "Launchpad"
 schemaAuthor = "Protocol Labs"
-schemaAuthorTwitter = "https://twitter.com/"
+schemaAuthorTwitter = "https://twitter.com/launchpad_pl"
 schemaAuthorLinkedIn = "https://www.linkedin.com/in//"
 schemaAuthorGitHub = "https://github.com/protocol/"
 schemaLocale = "en-US"
@@ -34,7 +34,7 @@ schemaLogoHeight = 512
 schemaImage = "doks.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
-schemaTwitter = "https://twitter.com/"
+schemaTwitter = "https://twitter.com/launchpad_pl"
 schemaLinkedIn = ""
 schemaGitHub = "https://github.com/protocol/launchpad"
 schemaSection = "blog"
