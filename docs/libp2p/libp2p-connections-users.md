@@ -12,6 +12,25 @@ A central term in a p2p network is the _node_. The concept of a _node_ is pretty
 
 For example, in the following snippet, `go-libp2p` (the Go implementation of libp2p), is used to create a node with default settings.
 
+{% tabs %}
+{% tab title="Rust" %}
+```rust
+use futures::prelude::*;
+use libp2p::swarm::{Swarm, SwarmEvent};
+use libp2p::{identity, ping, Multiaddr, PeerId};
+use std::error::Error;
+
+#[async_std::main]
+async fn main() -> Result<(), Box<dyn Error>> {
+    let local_key = identity::Keypair::generate_ed25519();
+    let local_peer_id = PeerId::from(local_key.public());
+    println!("Local peer id: {:?}", local_peer_id);
+
+    let transport = libp2p::development_transport(local_key).await?;
+}
+```
+{% endtab %}
+{% tab title="Go" %}
 ```go
 import (
     libp2p "github.com/libp2p/go-libp2p"
@@ -24,6 +43,8 @@ func main() {
     }
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 Nodes establish connections with other nodes, so we need a way to locate those nodes. Multiaddresses specify the location of a node (e.g. which IP address and which port) and peer identifiers specify the identity of the node (e.g. once you get to the node, you can check if this is indeed the node you were looking for). 
 
