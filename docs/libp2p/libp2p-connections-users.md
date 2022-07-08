@@ -4,13 +4,13 @@ description: How libp2p Routes Content to Connect Users
 
 # libp2p Connections and Users
 
-## Understanding nodes
+## Understanding Nodes
 
 Although libp2p was originally developed to work with IPFS, you can use it to create p2p applications that have no relationship to IPFS at all. The modularity of libp2p allows you to take whichever pieces you need in your project.
 
 A central term in a p2p network is the _node_. The concept of a _node_ is pretty broad in software engineering, but in libp2p, it usually refers to a single _peer_ of the network (essentially, a computer that might send or receive messages within the p2p network).
 
-For example, in the following snippet, `libp2p-go` (the Go implementation of libp2p), is used to create a node with default settings.
+For example, in the following snippet, `go-libp2p` (the Go implementation of libp2p), is used to create a node with default settings.
 
 ```go
 import (
@@ -48,7 +48,7 @@ The following example specifies a connection to the `127.0.0.1` IPv4 by using th
 /ip4/127.0.0.1/tcp/8080
 ```
 
-The main advantage of multiaddresses is that they are self-describing. Only by looking at the address, you can figure out what protocols are involved in the connection.
+The main advantage of [multiaddresses](https://github.com/multiformats/multiaddr) is that they are self-describing. Only by looking at the address, you can figure out what protocols are involved in the connection.
 
 ### Establishing a connection
 
@@ -105,7 +105,7 @@ Because the data will be sent over the same connection, we need an abstraction c
 
 ### Negotiating protocols
 
-After the connection is established (i.e. handshake, security, and multiplexing), peers exchange what application protocols they support. Because `multistream-select` is used, the procedure to agree on an application protocol is the same than for the security and mutiplexing negotiations: the protocol identifier is sent to the peer and `na` is answered if the protocol is not supported.
+After the connection is established (i.e. handshake, security, and multiplexing), peers exchange what application protocols they support. Because `multistream-select` is used, the procedure to agree on an application protocol is the same as for the security and mutiplexing negotiations: the protocol identifier is sent to the peer and `na` is answered if the protocol is not supported.
 
 Every supported protocol is assigned a handler, which manages the data for that protocol.
 
@@ -113,7 +113,7 @@ Every supported protocol is assigned a handler, which manages the data for that 
 
 Every peer has an identifier, which is generated from its public key. However, this is not enough to find out the location of the peer. Libp2p exposes two interfaces: Advertiser and Discoverer.
 
-The Advertiser offers services to the network, which means that shares the protocols that it supports with the rest of the network. The Discoverer is able to find peers.
+The Advertiser offers services to the network, which means that it shares the protocols that it supports with the rest of the network. The Discoverer is able to find peers.
 
 The are two main implementations: mDNS and the Kademlia Distributed Hash Table. The Kademlia DHT is used to discover peers in the IPFS network. Other implementations are also valid as long as they comply with the previously mentioned interfaces.
 
