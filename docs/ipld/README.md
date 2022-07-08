@@ -4,7 +4,7 @@ description: The What and Why of IPLD
 
 # IPLD
 
-[IPLD (InterPlanetary Linked Data) is **The Data Layer for content-addressed systems**](https://blog.ipfs.io/what-is-ipld/) that deals with all the heavy lifting that IPFS does to represent data as Merkle-DAGs with roots identified by content IDs called **CIDs**.
+[IPLD (InterPlanetary Linked Data) is **The Data Layer for content-addressed systems**](https://blog.ipfs.io/what-is-ipld/). It deals with all the heavy lifting in IPFS; it represents data as Merkle-DAGs with roots identified by content IDs called **CIDs**.
 
 ![](<../../.gitbook/assets/ipld (1).png>)
 
@@ -18,7 +18,7 @@ Every content addressed system reinvents the data layer, typically in non-reusab
 
 In order to understand the pieces that make up a CID and the IPLD model, you will need to understand the following fundamental concepts:
 
-* [Base Encoding](https://skorks.com/2009/08/different-types-of-encoding-schemes-a-primer/) – This is the basically the way that binary data is converted in to a compressed set of characters. for example, Base 10 encoding says that 0001 1010 = 26, but in base64 0001 1010 == MDAwMSAxMDEw. [Play around with different encoding here](https://cryptii.com/pipes/binary-to-base64)
+* [Base Encoding](https://skorks.com/2009/08/different-types-of-encoding-schemes-a-primer/) – This is the basically the way that binary data is converted into a compressed set of characters. For example, Base 10 encoding says that 0001 1010 = 26, but in base64 0001 1010 == MDAwMSAxMDEw. [Play around with different encoding here](https://cryptii.com/pipes/binary-to-base64)
 * [Hashing](https://www.sentinelone.com/cybersecurity-101/hashing/) – A hash is a function that converts one value to another. In cryptography, the function that converts data from one form to another is an unknown process that is so complex it is impossible(?) to reverse, that produces a unique, fixed length output.
 * [Codecs](https://www.analogictips.com/what-is-a-codec/) – Codecs are encoder/ decoder tools that translate to and from binary formats, in different ways.
 * [Varints](https://carlmastrangelo.com/blog/lets-make-a-varint) – Variable length integers, or Varints, are a way of compressing down integers into a smaller space than is normally needed. Since smaller numbers don't need as many bytes to represent them (0000 0010 == 2) vs (1110 0011 == 27), you can add a byte at the beginning to indicate how many bits are needed, to save on bit usage.
