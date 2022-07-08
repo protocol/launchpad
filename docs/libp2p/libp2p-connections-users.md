@@ -44,6 +44,33 @@ func main() {
 }
 ```
 {% endtab %}
+{% tab title="JavaScript" %}
+```javascript
+import { TCP } from '@libp2p/tcp'
+import { WebSockets } from '@libp2p/websockets'
+import { Mplex } from '@libp2p/mplex'
+import { Noise } from '@chainsafe/libp2p-noise'
+import defaultsDeep from '@nodeutils/defaults-deep'
+import { createLibp2p as createNode } from 'libp2p'
+
+export async function createLibp2p(_options) {
+  const defaults = {
+    transports: [
+      new TCP(),
+      new WebSockets()
+    ],
+    streamMuxers: [
+      new Mplex()
+    ],
+    connectionEncryption: [
+      new Noise()
+    ]
+  }
+
+  return createNode(defaultsDeep(_options, defaults))
+}
+```
+{% endtab %}
 {% endtabs %}
 
 Nodes establish connections with other nodes, so we need a way to locate those nodes. Multiaddresses specify the location of a node (e.g. which IP address and which port) and peer identifiers specify the identity of the node (e.g. once you get to the node, you can check if this is indeed the node you were looking for). 
