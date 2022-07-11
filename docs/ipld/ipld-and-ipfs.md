@@ -2,9 +2,23 @@
 
 At its core, IPFS is best viewed as a suite of standards for storing, sharing, navigating and manipulating IPLD data. IPFS is particularly skilled at leading with structured file data, and is particularly good at performing peer to peer data sharing.
 
-**How IPFS Deals With Files - IPFS Camp 2019 Workshop** is a useful introduction to IPFS and file-based DAGs:
+### Files and Data with IPFS & IPLD
+
+#### How IPFS Deals With Files | IPFS Camp 2019 Workshop – Alan Shaw & Mikeal Rogers
+
+In this talk by Alan and Mikeal, get a useful introduction to IPFS and file-based DAGs.
 
 {% embed url="https://www.youtube.com/watch?v=Y_-TWTmF_1I" %}
+
+**The Importance of Immutabilty**
+
+IPFS allows us to verify the content we received is the content we asked for using hashes
+* Hashes are deterministic, meaning if have a given input, it will always have the same output, and If the data changes in any way, then the generated hash will also change
+* They are cryptographically secure, and can’t be predicted or reverse-engineered
+* With secure hashes, you can be confident that the content hasn’t been tampered with
+* They are immutable since a file can never change without generating a brand new hash and CID
+* IPFS enables fast caching and deduplication, where changes made don’t have to be transmitted in their entirety, you can just communicate changes to an existing CID
+* IPFS allows you to fetch the data you want from anyone, using the immutable CIDs
 
 ## A Brief DAG-PB Primer
 
