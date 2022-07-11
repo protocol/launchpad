@@ -24,7 +24,7 @@ Read more about the Data Model at [**ipld.io/docs/data-model**](https://ipld.io/
 
 ## Blocks and Nodes
 
-IPLD data is either quantified in terms of **nodes** and **blocks**. A node is a **point in a graph**, while a block is a collective unit of data that is serialized and hashed to generate a content address (CIDs). Blocks typically include many nodes.
+IPLD data is quantified in terms of **nodes** and **blocks**. A node is a **point in a graph**, while a block is a collective unit of data that is serialized and hashed to generate a content address (CIDs). Blocks typically include many nodes.
 
 If we define an example *block* of data using JSON:
 
