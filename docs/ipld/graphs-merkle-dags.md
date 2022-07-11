@@ -31,7 +31,7 @@ A graph of immutable data can said to be "mutable" if we accept that the hashes 
 Mutating content addressed data in this way provides some interesting properties, we can add, remove or modify data at any point in the graph and generate a new root each time.
 
 * New roots give us **snapshots** for each change.
-* Different snapshots (roots) may address much of the same data, since only small parts of the graph may have changed, this gives us **de-deuplication**. One of the ways that Git is efficient is that only the changes need to be stored, and only those changed parts of a tree need be re-hashed to generate a new root (commit).
+* Different snapshots (roots) may address much of the same data, since only small parts of the graph may have changed, this gives us **de-duplication**. One of the ways that Git is efficient is that only the changes need to be stored, and only those changed parts of a tree need be re-hashed to generate a new root (commit).
 
 IPFS benefits from these same properties. A copy of Wikipedia on IPFS may take up many GBs, but changing a single page only requires changes to that page and its parents (up to the new "root"!). Having a CID for the old and new lets us move back and forward in time through the snapshots, while not needing to download the whole thing from scratch.
 

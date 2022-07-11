@@ -10,7 +10,7 @@
 
 #### CARv1
 
-The CARv1 format comprises a sequence of length-prefixed IPLD block data, where the first block in the CAR is the **Header** encoded as DAG-CBOR, and the remaining blocks form the **Data** component of the CAR and are each additionally prefixed with their CIDs. The length prefix of each block in a CAR is encoded as a "varint"—an unsigned LEB128 integer. This integer specifies the number of remaining bytes for that block entry—excluding the bytes used to encode the integer, but including the CID for non-header blocks.
+The CARv1 format comprises a sequence of length-prefixed IPLD block data. The first block in the CAR is the **Header** encoded as DAG-CBOR and the remaining blocks form the **Data** component of the format and are each additionally prefixed with their CIDs. The length prefix of each block in a CAR is encoded as a "varint"—an unsigned LEB128 integer. This integer specifies the number of remaining bytes for that block entry—excluding the bytes used to encode the integer, but including the CID for non-header blocks.
 
 ```
 |--------- Header --------| |---------------------------------- Data -----------------------------------|
@@ -39,4 +39,4 @@ The index at the end of the format provides information about what blocks are st
 
 #### Further Reading
 
-The CARv1 and CARv2 specifications, including specifications for CARv2 index formats, can be found on the IPLD specifications site: https://ipld.io/specs/transport/car/
+The CARv1 and CARv2 specifications, including specifications for CARv2 index formats, can be found on the IPLD specifications site: [ipld.io/specs/transport/car](https://ipld.io/specs/transport/car/)

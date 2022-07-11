@@ -30,9 +30,11 @@ At a high level, the talk covered the following concepts:
 
 
 <!--
+
 #### IPFS Basics – Working with Files in IPFS
 
-This video covers the basics of working with IPFS files in a Linux cli, as well as a quick explanation of the ins and outs of the IPFS desktop CLI and the Mutable File system used with it. -->
+This video covers the basics of working with IPFS files in a Linux cli, as well as a quick explanation of the ins and outs of the IPFS desktop CLI and the Mutable File system used with it. 
+-->
 
 <!-- {% embed url="https://youtu.be/A7yZaYhrwyM" %} -->
 <!-- The commands covered and explained include:
