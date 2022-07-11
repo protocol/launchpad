@@ -101,7 +101,7 @@ H1:  [e0,e1,e2,e3,e4]  [e5,e6,e7,e8,e9]  [e10,e11,e12,e13,e14]  [e15,e16,e17,e18
 
 In this same way, we can keep on adding elements by increasing the height and adding additional intermediate linking nodes to support our DAG.
 
-We only need to know the root CID for our data structure, but we need an algorithm for navigating to a particular element. If we want to implement a `Get(index)` operation to fetch a single element of our super-large array, we need an algorithm that can tell us _next_ block to load as we navigate down from the root through increasing "height" layers.
+We only need to know the root CID for our data structure, but we need an algorithm for navigating to a particular element. If we want to implement a `Get(index)` operation to fetch a single element of our super-large array, we need an algorithm that can tell us the _next_ block to load as we navigate down from the root through increasing "height" layers.
 
 An approximation of such an algorithm could look like the following, implemented in JavaScript, with a `SuperLargeArrayBlock` class to represent a single block in our structure, with a `getElementAt(index)` method to fetch a particular element of the array:
 
