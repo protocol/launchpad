@@ -6,13 +6,13 @@ description: Pubsub and Circuit Relays allow distributed networking
 
 In some cases, peers might not be publicly reacheable. For example, consider that peer `A` wants to connect to `B`, but peer `B` is behind a firewall that does not allow incoming connections.
 
-To solve this issue, libp2p provides a protocol called _circuit-p2p_. When a peer is not reachable by other peers, another machine listens for connections on its behalf. Then, those connections are forwarded to the non-reachable peer. Consider the following diagram:
+To solve this issue, libp2p provides a protocol called [Circuit Relay v2](https://github.com/libp2p/specs/blob/master/relay/circuit-v2.md). When a peer is not reachable by other peers, another machine can relay messages for that peer. Consider the following diagram:
 
-![Curcuit relay example](<../../.gitbook/assets/libp2p-circuit-relay.png>)
+![Circuit relay example](<../../.gitbook/assets/libp2p-circuit-relay.png>)
 
-1. `A` is not reachable, so it asks `C` to listen for connections on its behalf.
-2. `B` establishes a connection to `C`.
-3. `C` forwards messages from `B` to `A`.
+1. `A` is not reachable, so it asks `C` to listen on its behalf.
+2. `B` establishes a connection to `C` in an attempt to communicate with `A`.
+3. `C` relays messages from `B` to `A`.
 
 Note that `A` starts the connection to `C` because `A` is not publicly accessible.
 
@@ -28,9 +28,7 @@ When sending messages over a circuit relay, we must know how to reach the _relay
 
 You can read the previous address like: "Make a connection to `127.0.0.1` at TCP port `2330`, which is the address of the peer `C`. Then, perform a circuit relay to peer `A`".
 
-Currently, there are two different version of the circuit relay protocol in libp2p: [circuit-v1](https://github.com/libp2p/specs/blob/master/relay/circuit-v1.md) and [circuit-v2](https://github.com/libp2p/specs/blob/master/relay/circuit-v2.md).
-
-You can get more information about circuit relays in the [libp2p documentation](https://docs.libp2p.io/concepts/circuit-relay/).
+You can get more information about circuit relays in the [libp2p documentation](https://docs.libp2p.io/concepts/circuit-relay/) and the [Circuit Relay v2 specs](https://github.com/libp2p/specs/blob/master/relay/circuit-v2.md).
 
 ## Publish/Subscribe
 
@@ -38,7 +36,7 @@ A PubSub (Publish/Subscribe) system allows peers to only receive messages of a s
 
 In libp2p, peers subscribe and send messages to _topics_. The concept is pretty similar to messaging systems (e.g., Kafka), but libp2p allows this behavior in a decentralized way. The main implementations of the protocol are Floodsub and Gossipsub.
 
-In Floosub, the first implementation of the pub/sub protocol, messages are delivered to all the nodes of a peer. For example, consider the following diagram.
+In Floosub, the first implementation of the pub/sub protocol, messages are delivered to all the connected nodes of a peer. For example, consider the following diagram.
 
 ![Floodsub message delivery](<../../.gitbook/assets/libp2p-pubsub-floodsub.png>)
 
@@ -46,9 +44,9 @@ In Floosub, the first implementation of the pub/sub protocol, messages are deliv
 2. `Peer 1` publishes a message, which is sent to `Peer 2` and `Peer 3`.
 3. Both `Peer 2` and `Peer 3` forward the message to `Peer 4`.
 
-The main problem of FloodSub is that it duplicates messages, thus using a lot of bandwidth. In the previous example, `Peer 4` receives the message twice.
+FloodSub is simple, reliable, and highly resistant to malicious actors and censors, but the main problem of FloodSub is that it duplicates messages, thus using a lot of bandwidth. In the previous example, `Peer 4` receives the message twice.
 
-Gossipsub, the protocol developed after FloodSub, tries to reduce the number of duplicate messages (i.e., bandwidth) by taking a different approach. Gossipsub is covered later in the Launchpad curriculum.
+[Gossipsub](https://arxiv.org/pdf/2007.02754.pdf), the protocol developed after FloodSub, tries to reduce the number of duplicate messages (i.e., bandwidth) by taking a different approach. Gossipsub is covered later in the Launchpad curriculum.
 
 You can get more information about PubSub in the [libp2p documentation](https://docs.libp2p.io/concepts/publish-subscribe/).
 
