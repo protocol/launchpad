@@ -2,7 +2,7 @@
 This repository contains intentionally organized and curated content for Protocol Labs' Launchpad program.
 We welcome contributions, but please read the Contributing section below.
 
-This site is [published on GitBook](https://app.gitbook.com/o/-L_E2woSLfhpBp2IPz9k/s/dJC0yfHL6n4VMktmNXWq/) and the repo is located at [https://github.com/protocol/launchpad](https://github.com/protocol/launchpad).
+See the staging stite at: [https://empty-poetry-5978.on.fleek.co/](https://empty-poetry-5978.on.fleek.co/)
 
 **!Important** The default branch for this repository is **gitbook** not _main_. The published version of this is the gitbook branch, and other branches should be synced to the gitbook branch.
 
