@@ -14,11 +14,11 @@ In this talk by Alan and Mikeal, get a useful introduction to IPFS and file-base
 
 IPFS allows us to verify the content we received is the content we asked for using hashes.
 * Hashes are deterministic, meaning given an input, it will always have the same output. If the input data changes in any way, then the output generated hash will also change.
-* They are cryptographically secure, and can’t be predicted or reverse-engineered
-* With secure hashes, you can be confident that the content hasn’t been tampered with
-* Since they are immutable, a file can never change without generating a brand new hash and, by extension, CID
-* IPFS enables fast caching and deduplication, this means changes don’t have to be transmitted in their entirety, you can just communicate changes of an existing CID
-* IPFS allows you to fetch the data you want from anyone, using the immutable CIDs
+* They are cryptographically secure, and can’t be predicted or reverse-engineered.
+* With secure hashes, you can be confident that the content hasn’t been tampered with.
+* Since files are immutable, they can never change without generating a brand new hash and, by extension, CID.
+* IPFS enables fast caching and deduplication, this means changes don’t have to be transmitted in their entirety, you can just communicate changes of an existing CID.
+* IPFS allows you to fetch the data you want from anyone, using the immutable CIDs.
 
 **Anatomy of a Content Identifier (CID)**
 
