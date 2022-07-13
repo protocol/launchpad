@@ -36,7 +36,7 @@ A PubSub (Publish/Subscribe) system allows peers to only receive messages of a s
 
 In libp2p, peers subscribe and send messages to _topics_. The concept is pretty similar to messaging systems (e.g., Kafka), but libp2p allows this behavior in a decentralized way. The main implementations of the protocol are Floodsub and Gossipsub.
 
-In Floosub, the first implementation of the pub/sub protocol, messages are delivered to all the connected nodes of a peer. For example, consider the following diagram.
+In Floodsub, the first implementation of the pub/sub protocol, messages are delivered to all the connected nodes of a peer. For example, consider the following diagram.
 
 ![Floodsub message delivery](<../../.gitbook/assets/libp2p-pubsub-floodsub.png>)
 
