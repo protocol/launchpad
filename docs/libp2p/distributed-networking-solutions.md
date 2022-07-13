@@ -4,7 +4,7 @@ description: Pubsub and Circuit Relays allow distributed networking
 
 ## Circuit Relays
 
-In some cases, peers might not be publicly reacheable. For example, consider that peer `A` wants to connect to `B`, but peer `B` is behind a firewall that does not allow incoming connections.
+In some cases, peers might not be publicly reachable. For example, consider that peer `A` wants to connect to `B`, but peer `B` is behind a firewall that does not allow incoming connections.
 
 To solve this issue, libp2p provides a protocol called [Circuit Relay v2](https://github.com/libp2p/specs/blob/master/relay/circuit-v2.md). When a peer is not reachable by other peers, another machine can relay messages for that peer. Consider the following diagram:
 
