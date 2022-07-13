@@ -25,7 +25,7 @@ IPFS allows us to verify the content we received is the content we asked for usi
 CIDs are unique strings. There must be a way to future proof the seemingly infinite amount of data that will be added on to the network.
 * The “core” of a CID, is the string encoded output (a hash) of a cryptographic hash function.
 * Metadata about the root (aka a prefix) + the root itself = CID
-* The collection of “metadata prefixes” (called protocols) used in CIDs are bundled into a library called Multiformats (link to multiformats library)
+* The collection of “metadata prefixes” (called protocols) used in CIDs are bundled into a library called [Multiformats](https://multiformats.io/)
 * Currently, there are 2 different versions of CIDs in IPFS, CIDv0 & CIDv1, the currently widely accepted one being v1 CIDs. The version is also prefixed in the CID itself.
 * The Multicodec tells us what algorithm was used to convert our binary data into the string hash.
 * The Multibase tells us how we got the final CID (by converting the hash + the prefixes into the string CID we see). 
