@@ -12,13 +12,36 @@ In this talk by Alan and Mikeal, get a useful introduction to IPFS and file-base
 
 **The Importance of Immutabilty**
 
-IPFS allows us to verify the content we received is the content we asked for using hashes
-* Hashes are deterministic, meaning if have a given input, it will always have the same output, and If the data changes in any way, then the generated hash will also change
-* They are cryptographically secure, and can’t be predicted or reverse-engineered
-* With secure hashes, you can be confident that the content hasn’t been tampered with
-* They are immutable since a file can never change without generating a brand new hash and CID
-* IPFS enables fast caching and deduplication, where changes made don’t have to be transmitted in their entirety, you can just communicate changes to an existing CID
-* IPFS allows you to fetch the data you want from anyone, using the immutable CIDs
+IPFS allows us to verify the content we received is the content we asked for using hashes.
+* Hashes are deterministic, meaning given an input, it will always have the same output. If the input data changes in any way, then the output generated hash will also change.
+* They are cryptographically secure, and can’t be predicted or reverse-engineered.
+* With secure hashes, you can be confident that the content hasn’t been tampered with.
+* Since files are immutable, they can never change without generating a brand new hash and, by extension, CID.
+* IPFS enables fast caching and deduplication, this means changes don’t have to be transmitted in their entirety, you can just communicate changes of an existing CID.
+* IPFS allows you to fetch the data you want from anyone, using the immutable CIDs.
+
+**Anatomy of a Content Identifier (CID)**
+
+CIDs are unique strings. There must be a way to future proof the seemingly infinite amount of data that will be added on to the network.
+* The “core” of a CID, is the string encoded output (a hash) of a cryptographic hash function.
+* Metadata about the root (aka a prefix) + the root itself = CID
+* The collection of “metadata prefixes” (called protocols) used in CIDs are bundled into a library called Multiformats (link to multiformats library)
+* Currently, there are 2 different versions of CIDs in IPFS, CIDv0 & CIDv1, the currently widely accepted one being v1 CIDs. The version is also prefixed in the CID itself.
+* The Multicodec tells us what algorithm was used to convert our binary data into the string hash.
+* The Multibase tells us how we got the final CID (by converting the hash + the prefixes into the string CID we see). 
+* The IPLD-Format tells us about the structure of the data. Examples include it being in JSON encoding, CBOR, protocol buffer, and more. 
+
+**Importing files to IPFS**
+
+Files are broken down into smaller pieces. These chunks of data and how they link up, are how we get self-describing and data verification properties of CIDs. 
+* Chunks of a file are strung together into DAGs by IPFS; oftentimes the links create a “parent-children” tree structure.
+* Directed Acyclic Graphs (DAGs) structures are customizable. The default in IPFS is DAG-PB, which is also identified in the CID under “IPLD-Format”.
+* The highest (top) level parent (grandparent/great-grandparent, etc…) is also known as the “root node” or root CID. This is the CID returned to you when you add a file to IPFS!
+* Customizing the DAG in any way, shape, or form, can yield a different “parent-children” relation and, as such, a different CID.
+* Customizing the Chunk sizing also yields a different DAG, but has many tradeoffs. Generally, bigger chunks = faster to create DAG, bad for chunk verification, bad deduplication. Smaller blocks = inverse effect. There is ongoing development for finding the sweet spot or tailoring chunking algorithms for specific use cases.
+* There are two main DAG layouts, Balanced & Trickle-Down. The first is the default in IPFS and good for most use cases, while the latter can be better for streaming content. 
+* Every chunk is wrapped in UnixFS metadata. This helps IPFS distinguish directories from files. As well as, help link chunks together.
+
 
 ## A Brief DAG-PB Primer
 
