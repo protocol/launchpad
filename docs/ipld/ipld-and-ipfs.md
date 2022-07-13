@@ -8,7 +8,7 @@ At its core, IPFS is best viewed as a suite of standards for storing, sharing, n
 
 In this talk by Alan and Mikeal, get a useful introduction to IPFS and file-based DAGs.
 
-{% embed url="https://www.youtube.com/watch?v=Y_-TWTmF_1I" %}
+{% embed url="https://www.youtube.com/watch?v=ia_Rmusva4g" %}
 
 **The Importance of Immutabilty**
 
