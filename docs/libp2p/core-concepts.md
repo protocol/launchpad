@@ -4,6 +4,18 @@ description: The Building Blocks of libp2p
 
 # Core Concepts
 
+### What is libp2p?
+libp2p is a modular peer networking stack, consisting of protocols, specs, and libraries, with many building blocks that can be implemented in applications independently, or in any combination that an application developer wishes.
+
+libp2p lives on and above the transport layers (in the traditional OSI model) and allows you to use the transport, security, encryption, and multiplexing protocols that you choose, interchangeably.
+
+![libp2p stack](<../../.gitbook/assets/libp2p_stack.png>)
+
+With the libp2p networking layer, you can use the building blocks available to you to on browsers, mobile devices, and embbeded runtimes, using the [go-libp2p](https://github.com/libp2p/go-libp2p), [js-libp2p](https://github.com/libp2p/js-libp2p), [rust-libp2p](https://github.com/libp2p/rust-libp2p), and [other](https://github.com/libp2p) implementations. [Learn more on libp2p.io](https://libp2p.io/implementations/).
+
+Libp2p gives you the ability to locate, connect, authenticate, negotiate protocols, and interact with peers and processes, regardless of runtime.
+
+
 ### Concepts
 
 _This is an annotated version of_ [_this libp2p doc_](https://docs.libp2p.io/concepts/)
@@ -78,6 +90,16 @@ libp2p's multiplexing happens at the application layer, meaning it's not provide
 
 Implementations of the multiplexing module include mplex protocol developer for libp2p, yamux by Hashicorp, quic transport protocol which includes a multiplexer, SPDY by Google, and more.
 
+#### [The Modular p2p Networking Stack | ResNetLabs On Tour – Alfonso de la Rocha](https://research.protocol.ai/tutorials/resnetlab-on-tour/modular-p2p-stack/)
+
+libp2p is the Web 3.0 framework of choice for decentralised process addressing. In this module, you will hear about libp2p’s modular and composable building blocks for P2P networking applications and innovation, which include:
+
+* Transport and pubsub protocols
+* Multiplexers
+* Secure channels and NAT Traversal
+* Peer discovery, content routing, and peer routing
+
+{% embed url="https://www.youtube.com/watch?v=bWY0op7FmJ8" %}
 
 ### Other Resources
 
