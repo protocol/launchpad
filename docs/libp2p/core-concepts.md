@@ -11,7 +11,7 @@ libp2p lives on and above the transport layers (in the traditional OSI model) an
 
 ![libp2p stack](<../../.gitbook/assets/libp2p_stack.png>)
 
-With the libp2p networking layer, you can use the building blocks available to you to on browser, mobile, and embbeded runtimes, using the [go-libp2p](https://github.com/libp2p/go-libp2p), [js-libp2p](https://github.com/libp2p/js-libp2p), [rust-libp2p](https://github.com/libp2p/rust-libp2p), and [other](https://github.com/libp2p) implementations. [Learn more on libp2p.io](https://libp2p.io/implementations/).
+With the libp2p networking layer, you can use the building blocks available to you to on browsers, mobile devices, and embbeded runtimes, using the [go-libp2p](https://github.com/libp2p/go-libp2p), [js-libp2p](https://github.com/libp2p/js-libp2p), [rust-libp2p](https://github.com/libp2p/rust-libp2p), and [other](https://github.com/libp2p) implementations. [Learn more on libp2p.io](https://libp2p.io/implementations/).
 
 Libp2p gives you the ability to locate, connect, authenticate, negotiate protocols, and interact with peers and processes, regardless of runtime.
 
