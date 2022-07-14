@@ -6,11 +6,11 @@ description: A Publish / Subscribe Message Delivery Network
 
 ### What is Gossipsub?
 
-Gossipsub is a pubsub (publish/subscribe) protocol that provides the routing for messaging that can be used in blockchain environments for transaction messages that transfer value,  and block messaging that update the status of the blockchain, along with other applications.
+Gossipsub is a pubsub (publish/subscribe) protocol that provides the routing for messaging that can be used in blockchain environments for transaction messages that transfer value, and block messaging that update the status of the blockchain, along with other applications.
 
-Before Gossibpsub, permissionless networks like Ethereum and Fliecoin used a messageing layer called flooding (or floodsub) to help protect against malicious attacks that would slow down or stop messaging on that network, however flooding can create a lot of redundancy because it floods the nodes in the network with messages.
+Before Gossibpsub, permissionless networks like Ethereum and Fliecoin used a messaging layer called flooding (or floodsub) to help protect against malicious attacks that would slow down or stop messaging on that network, however flooding can create a lot of redundancy because it floods the nodes in the network with messages.
 
-Gossipsub uses a different method of communication, forwarding metadata to peers in the network, using a **lazy pull** that limits the number of peers a node communicates with, but directly sharing nodes in their network (known as an **Eager Push**), and uses a **score function** to highligh good behavior or nodes, and help flag malicious activity.
+Gossipsub uses a different method of communication, forwarding metadata to peers in the network, using a **lazy pull** that limits the number of peers a node communicates with, but directly sharing nodes in their network (known as an **Eager Push**), and uses a **score function** to highlight good behavior or nodes, and help flag malicious activity.
 
 Learn more in the [GossipSub paper](https://arxiv.org/pdf/2007.02754.pdf)
 

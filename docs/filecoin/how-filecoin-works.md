@@ -10,7 +10,7 @@ _A more thorough explanation of these concepts [can be found in the Filecoin doc
 
 The Filecoin network is a distributed, peer-to-peer network formed by Filecoin peers who participate in different ways.
 
-Peers communicate over secure channels that they use to distribute information to the network (gossiping), to transfer data among themselves, and to discover other peers, maintaining a well-connected swarm in which information like blocks and messages flows swiftly even when many thousands of peers participate.
+Peers communicate over secure channels to distribute information around the network (gossiping). They transfer data among themselves, discover other peers, and maintain a well-connected swarm; information like blocks and messages flow swiftly even when thousands of peers participate.
 
 #### Filecoin Storage Basics | Rod Vagg
 
@@ -20,7 +20,7 @@ Learn about mining, sealing, sector types, Collateral, making deals, Filecoin+, 
 
 ### [Filecoin Nodes](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#filecoin-nodes)
 
-Filecoin Nodes or Filecoin clients are peers that sync the Filecoin blockchain and validate the messages in every block, which, once applied, provide a global state.
+Filecoin Nodes or Filecoin clients are peers that sync the Filecoin blockchain and validate the messages in every block, which once applied, provide a global state.
 
 Filecoin Nodes can also publish different types of messages to the network by broadcasting them.
 
