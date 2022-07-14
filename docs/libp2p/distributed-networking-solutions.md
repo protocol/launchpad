@@ -1,8 +1,8 @@
 ---
-description: Pubsub and Circuit Relays for Distributed Networking
+description: Pubsub and Circuit Relays allow distributed networking
 ---
 
-### Circuit Relays
+## Circuit Relays
 
 In some cases, peers might not be publicly reachable. For example, consider that peer `A` wants to connect to `B`, but peer `B` is behind a firewall that does not allow incoming connections.
 
@@ -50,10 +50,8 @@ FloodSub is simple, reliable, and highly resistant to malicious actors and censo
 
 You can get more information about PubSub in the [libp2p documentation](https://docs.libp2p.io/concepts/publish-subscribe/).
 
-## Videos
+## Resources
 
-
-####  Solving Distributed Networking Problems with libp2p | IPFS Camp
 In the course of creating and researching distributed apps, there were a number of problems encountered that the libp2p project addressed. The following video is a workshop that covers some of the issues found in distributed networking.
 
 {% embed url="https://www.youtube.com/watch?v=oIMZP7sfFtM" %}
