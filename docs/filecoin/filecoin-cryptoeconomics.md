@@ -14,7 +14,7 @@ The Filecoin network will have [multiple types of providers](https://docs.fileco
 
 **Sealing** is the process of formatting and storing data in sectors on Filecoin.
 
-Since Filecoin exists to incentivize storage on the network, there are certain proofs that storage provides must verify to meet the requirements for **[Proof of Storage (PoS)](https://spec.filecoin.io/algorithms/pos/)**, called **Proof of Replication (PoRep)** at the beginning of the deal, when the data is first stored, and **Proof of Spacetime (PoSt)** continually over the lifetime of a deal to verify that storage space is dedicated to a piece of data.
+Since Filecoin exists to incentivize storage on the network, there are certain proofs that storage providers must verify to meet the requirements for **[Proof of Storage (PoS)](https://spec.filecoin.io/algorithms/pos/)**. The first is called **Proof of Replication (PoRep)**, done at the beginning of the deal when the data is first stored. Then **Proof of Spacetime (PoSt)**, which is done continually over the lifetime of a deal to verify that storage space is dedicated to a piece of data.
 
 While that data is being sealed and stored, several content identifiers are produced such as CommR, CommD, and more, which you can read about in the [ProtoSchool tutorial](https://proto.school/verifying-storage-on-filecoin/03).
 
@@ -30,7 +30,7 @@ In this 6 minute video, understand how Filecoin proves both replication, retriev
 * Deals are made trustlessly between a client and a provider
 * There are incentive structures such as _power_ that allow providers to earn Filecoin through _storage fees_ and _block rewards_. [More on provider rewards](https://docs.filecoin.io/storage-provider/storage-provider-rewards/#storage-fees)
 
-There are several special mechanisms that Filecoin blockchain implements, such as rewarding storage providers with a _power_ value that increases a provider's chance of being a block provider. The network also empowers clients through [Filecoin Plus](https://plus.fil.org/), a community-governed notary program that allows approved clients to make special storage deals that give their providers additional _power_.
+There are several special mechanisms that the Filecoin blockchain implements, such as rewarding storage providers with a _power_ value that increases their chance of being a block provider. The network also empowers clients through [Filecoin Plus](https://plus.fil.org/), a community-governed notary program that allows approved clients to make special storage deals that give their providers additional _power_.
 
 #### Filecoin Economy Deep Dive | Filecoin Foundation – ZX Zhang
 
