@@ -1,15 +1,51 @@
 ---
-description: Deep Dive Tutorial – Setup & Access Files with IPFS
+description: Deep Dive Tutorial – Setup & Access Files on IPFS
 ---
 ## IPFS Command Line Interface (CLI) Setup
 
 ### The Basics
 In these tutorials you can get started with installing go-ipfs (also known as kubo), and doing some basic things with the filesystems.
 
-#### Getting Started with IPFS
+### Getting Started with IPFS
 This video is the basic setup for ipfs-go on a [linux VM](https://multipass.run/), using [wget](https://www.tecmint.com/install-wget-in-linux/) to grab the resources. You will also `ipfs init` a node and get it running with `ipfs daemon`.
 
+The examples in this exercise are done on a Linux machine, however the process is similar for other operating systems
+
 {% embed url="https://youtu.be/A7yZaYhrwyM" %}
+
+#### Download the IPFS Binary
+The first thing you will need to do is [go to the IPFS documentation](https://docs.ipfs.io/install/command-line/#official-distributions) and download the latest distribution for your operating system using `wget` or `curl` command, from the most [recent IPFS distribution](https://dist.ipfs.io/#go-ipfs) for your operating system.
+
+To install IPFS on Linux, use the command:
+
+```shell
+wget https://dist.ipfs.io/go-ipfs/<version>/<package>
+```
+
+### Extract and Install IPFS
+Once you have the correct biary installed for your opearting system installed, you can extract the compressed package:
+
+```shell
+tar -xvzf <package name>
+```
+
+Next, install is on your machine using the script provided in the package:
+
+```shell
+bash install.sh
+```
+
+Check to make sure that you have sucessfully installed IPFS by checking the most recent version:
+
+```shell
+ipfs --version
+```
+<!-- Q. When you ran the command to check the IPFS version, did you get a confirmation that you had the most recent version of IPFS?
+a. Yes (Correct)
+b. No -->
+
+### Start and Stop an IPFS Node
+
 
 #### Resources
 * [Installation Instructions](https://docs.ipfs.io/install/command-line/#system-requirements)
