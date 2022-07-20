@@ -1,46 +1,36 @@
 [[main]]
-  name = "Start here"
-  url = "/start-here/lorem/ipsum/"
-  weight = 10
+  name = "Curriculum"
+  url = "/curriculum"
+  weight = 1000
 
 [[main]]
-  name = "IPFS"
-  url = "/ipfs/lorem/ipsum/"
-  weight = 20
+  name = "Pre-Requisites"
+  url = "/pre-reqs"
+  weight = 2000
 
 [[main]]
-  name = "Libp2p"
+  name = "Resources"
   url = "/libp2p/lorem/ipsum/"
-  weight = 30
+  weight = 3000
 
 [[main]]
-  name = "Filecoin"
-  url = "/filecoin/lorem/ipsum/"
-  weight = 40
-
-[[main]]
-  name = "Protocol labs"
-  url = "/protocol-labs/lorem/ipsum/"
-  weight = 50 
-
-[[main]]
-  name = "Blog"
-  url = "/blog/"
-  weight = 999
+  name = "Website"
+  url = "https://pl-launchpad.io"
+  weight = 4000
 
 # [[main]]
 #   name = "Get Started"
 #   weight = 30
 #   identifier = "get-started"
 #   url = "/docs/prologue/introduction/"
-# 
+#
 # [[main]]
 #   name = "Quick Start"
 #   weight = 40
 #   identifier = "quick-start"
 #   url = "/docs/prologue/quick-start/"
 #   parent = "get-started"
-# 
+#
 # [[main]]
 #   name = "Tutorial"
 #   weight = 50

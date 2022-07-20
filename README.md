@@ -14,9 +14,9 @@ Please work with the team to review and organize Launchpad Curriculum. In order 
 1. First, check out the [README.md](https://github.com/protocol/launchpad/blob/gitbook/README.md) and [STYLE-GUIDE.md](https://github.com/protocol/launchpad/blob/gitbook/STYLE-GUIDE.md) in the root repo for how to format and organize your content
 2. Find the section in the [SUMMARY.md](https://github.com/protocol/launchpad/blob/gitbook/SUMMARY.md) file where you want to add your content.
 3. Create a new branch or fork, and find the .md doc (or create a new .md file) in the `/docs/name-of-section` [directory](https://github.com/protocol/launchpad/tree/gitbook/docs) where you would like to add your content.
-4. Create a PR for your change to the `gitbook` branch. 
- 
-**Questions?** [ping the core contributors](https://github.com/protocol/launchpad/graphs/contributors) to this repository, or open an [Issue](https://github.com/protocol/launchpad/issues). 
+4. Create a PR for your change to the `gitbook` branch.
+
+**Questions?** [ping the core contributors](https://github.com/protocol/launchpad/graphs/contributors) to this repository, or open an [Issue](https://github.com/protocol/launchpad/issues).
 
 ## Sections
 
@@ -32,3 +32,18 @@ Please work with the team to review and organize Launchpad Curriculum. In order 
 * [Protocol Labs Toolkits & SDKs](docs/protocol-labs-toolkits-sdks/README.md)
 * [Built on IPFS and Filecoin](docs/built-on-ipfs-filecoin/README.md)
 * [Additional Learning](docs/additional-learning-resources/README.md)
+
+## Hugo
+Use Hugo to statically serve & preview files on your machine
+
+* Install version 0.101.1 of Hugo with `brew install hugo`
+* Run `npm install` from the top level of the launchpad repository
+* Run `hugo server` to start hugo & preview this on `localhost:1313`
+
+#### Editing Content
+
+Content is located in `content/en/` and the directories in there will be one of the links along the top of the page.
+
+Edit the landing pages in `layouts/indel.html`
+
+Edit Sidebar content in `config/_default/menus/menus.en.toml`  
