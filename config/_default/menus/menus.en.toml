@@ -19,7 +19,7 @@
   weight = 40
 
 [[main]]
-  name = "Protocol Labs"
+  name = "Protocol labs"
   url = "/protocol-labs/lorem/ipsum/"
   weight = 50 
 
