@@ -33,7 +33,8 @@ _Teams, Network Services, and Working Groups_
 
 Protocol Labs at its core consists of an organization (also referred to as Starfleet) that supports open source projects, as well as the network of organizations that builds upon and expands the capabilities of the core technologies.
 
-**Protocol Labs Teams**
+### Protocol Labs Teams
+
 There are several core organization that make up the nucleus of the Protocol Labs organization.[EngRes](https://www.notion.so/pl-strflt/PL-EngRes-Public-b5086aea86ed4f81bc7d0721c6935e1e) has a constantly shifting portfolio of projects and efforts, which are arranged into working groups.
 
 There is also the Talent Runnel which includes recruiting, people ops, and Launchpad, as well as the Ecosystem which has a wide variety of organizations and efforts that expand the reach of Protocol Labs, and [Network Services](https://airtable.com/shrMaFq3hWY4KZnka/tbliESOTOmIM1l0rt) which provide the services such as design, website development, and much more for the different organizations across Protocol Labs.
