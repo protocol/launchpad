@@ -46,4 +46,4 @@ Content is located in `content/en/` and the directories in there will be one of 
 
 Edit the landing pages in `layouts/indel.html`
 
-Edit Sidebar content in `config/_default/menus/menus.en.toml`  
+Edit Sidebar content in `config/_default/menus/menus.en.toml`
