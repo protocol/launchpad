@@ -54,6 +54,36 @@
   weight = 20
 
 
+[[curriculum]]
+  name = "The Protocol Labs Network"
+  weight = 10
+  identifier = "curriculum-pln"
+  url = "/curriculum/get-started/what-is-lotus"
+
+[[curriculum]]
+  name = "IPFS"
+  weight = 20
+  identifier = "curriculum-ipfs"
+  url = "/curriculum/get-started/what-is-lotus"
+
+[[curriculum]]
+  name = "IPLD"
+  weight = 30
+  identifier = "curriculum-ipld"
+  url = "/curriculum/get-started/what-is-lotus"
+
+[[curriculum]]
+  name = "Libp2p"
+  weight = 40
+  identifier = "curriculum-libp2p"
+  url = "/curriculum/get-started/what-is-lotus"
+
+[[curriculum]]
+  name = "Filecoin"
+  weight = 50
+  identifier = "curriculum-filecoin"
+  url = "/curriculum/get-started/what-is-lotus"
+
 
 # [[footer]]
 #   name = "Privacy"
