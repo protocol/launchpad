@@ -14,7 +14,7 @@ description: Add the subtitle here
 
 #### How the Filecoin Protocol Works | Part 1 - Nicola
 
-In this talk by Nicola, he discusses the basics of what Filecoin is: a storage market & a consensus.
+In this talk by Nicola, he discusses the basics of Filecoin as a storage market & a consensus.
 <details>
 
 <summary>How Filecoin Works Part 1</summary>
@@ -34,8 +34,6 @@ In this talk by Nicola, he discusses the basics of what Filecoin is: a storage m
 
 
 {% embed url="https://youtu.be/------" %}
-
-
 
 
 #### Filecoin Specs & Resources
