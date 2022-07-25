@@ -15,3 +15,8 @@ resources
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+
+# JetBrains #
+###############
+/.idea/
