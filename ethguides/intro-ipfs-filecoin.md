@@ -3,7 +3,7 @@ id: ?
 title: Introduction to IPFS and Filecoin
 date: 'July 24, 2022'
 slug: ipfs-101
-description: Conceptual understanding of they why and what of IPFS and FIlecoin
+description: Conceptual understanding of the why and what of IPFS and FIlecoin
 thumbnail: 'ipfs-logo.png'
 length: 3 mins
 tags: ['101', 'web3']
