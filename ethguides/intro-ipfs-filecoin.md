@@ -1,6 +1,6 @@
 ---
 id: ?
-title: Introduciton to IPFS and Filecoin
+title: Introduction to IPFS and Filecoin
 date: 'July 24, 2022'
 slug: ipfs-101
 description: Conceptual understanding of they why and what of IPFS and FIlecoin
