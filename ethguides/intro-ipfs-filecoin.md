@@ -19,7 +19,7 @@ avatar: ipfs-logo.jpg
 
 Technologies like household automation have given women independence, and the internet has given mass accessibility to education, ideas, and collaboration on a global scale.
 
-Protocol Labs and it's network oragnization's goal is, through the development of tecnologies, to
+Protocol Labs and its network organization's goal is, through the development of tecnologies, to
 
 Text text text text
 
