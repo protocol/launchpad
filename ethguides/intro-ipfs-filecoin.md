@@ -15,7 +15,7 @@ avatar: ipfs-logo.jpg
 <Section name="1. Why were IPFS and Filecoin Created?">
 
 ## Properties of the Next Version of the Internet
-> _The Properties of the internet and it's technologies define our human rights_ Juan Benet 2022
+> _The Properties of the internet and its technologies define our human rights_ Juan Benet 2022
 
 Technologies like household automation have given women independence, and the internet has given mass accessibility to education, ideas, and collaboration on a global scale.
 
