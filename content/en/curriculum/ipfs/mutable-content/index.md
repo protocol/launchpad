@@ -8,7 +8,6 @@ menu:
 weight: 90
 ---
 
-## Mutable Content
 One of the most powerful things about IPFS is that any piece of data or content you store on the network cannot be modified with changing the [Content Identifier (CID)](https://protocol-labs.gitbook.io/launchpad-curriculum/launchpad-learning-resources/ipld/content-addressing-and-cids) for that data, since the CID is created (in part) by hashing the content.
 
 The fact that the history of the data are preserved on the blockchain - that is, the content in one block contains, as a part of the data that makes it up, the id of the parent of that block - also contributes to the immutability of that piece of data.
