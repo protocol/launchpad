@@ -85,12 +85,6 @@ lastMod = false
   kaTex = false
   multilingualMode = false
   docsVersioning = false
-  fullWidth = true
+  collapsibleSidebar = true
+  ignoreErrors = ["image-not-found"]
 
-[menu]
-  [menu.section]
-    auto = true
-    collapsibleSidebar = true
-
-[sections]
-  sectionNav = ["start-here", "ipfs", "libp2p", "filecoin", "protocol-labs", "blog"]
