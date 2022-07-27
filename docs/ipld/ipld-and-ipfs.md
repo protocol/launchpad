@@ -6,9 +6,11 @@ At its core, IPFS is best viewed as a suite of standards for storing, sharing, n
 
 #### How IPFS Deals With Files | IPFS Camp 2019 Workshop – Alan Shaw & Mikeal Rogers
 
-In this talk by Alan and Mikeal, get a useful introduction to IPFS and file-based DAGs.
+In this talk by Alan Shaw, He goes over a useful introduction to IPFS and file-based DAGs.
 
 {% embed url="https://www.youtube.com/watch?v=ia_Rmusva4g" %}
+
+At a high level, the talk covered the following concepts:
 
 **The Importance of Immutabilty**
 
