@@ -29,7 +29,7 @@ _Source: [docs.ipfs.io/subdomain-gateway](https://docs.ipfs.io/how-to/address-ip
 Subdomain convention can be replaced with a native handler. The IPFS URL protocol scheme follows the same requirement of case-insensitive CIDv1 as subdomains:
 
 ```
-ipfs://{cidv1b32}/path/to/resource
+ipfs://{cidv1}/path/to/resource
 ```
 
 An IPFS URL does not retain the original path, but instead requires a conversion step to/from URI representation:
