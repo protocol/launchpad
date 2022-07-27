@@ -22,7 +22,7 @@ Example:
     https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.cf-ipfs.com/wiki/Vincent_van_Gogh.html
     https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.localhost:8080/wiki/
 
-_Source: [docs.ipfs.io/subdomain-gateway](https://docs.ipfs.io/how-to/address-ipfs-on-web/#subdomain-gateway)
+_Source: [docs.ipfs.io/subdomain-gateway](https://docs.ipfs.io/how-to/address-ipfs-on-web/#subdomain-gateway)_
 
 ## Native URLs
 
