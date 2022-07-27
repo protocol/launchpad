@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Introduction to the PL Network"
 description: "Understand what is the Protocol Labs Network (PLN)"
 draft: false
 menu:
