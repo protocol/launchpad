@@ -12,7 +12,7 @@
 			<div class="card-list">
 				{{ $currentSection := .CurrentSection }}
 				{{ range .Site.RegularPages }}
-					{{ if eq .File.LogicalName "introduction.md" }}
+					{{ if or (eq .File.LogicalName "introduction.md") (ge (findRE ".*/introduction/index.md" .File.Path) 1) }}
 						<div class="card my-3">
 							<div class="card-body">
 								<a class="stretched-link" href="{{ .RelPermalink }}">{{ .Params.title | title }} &rarr;</a>
