@@ -22,14 +22,14 @@ Example:
     https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.cf-ipfs.com/wiki/Vincent_van_Gogh.html
     https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.localhost:8080/wiki/
 
-_Source: [docs.ipfs.io/subdomain-gateway](https://docs.ipfs.io/how-to/address-ipfs-on-web/#subdomain-gateway)
+_Source: [docs.ipfs.io/subdomain-gateway](https://docs.ipfs.io/how-to/address-ipfs-on-web/#subdomain-gateway)_
 
 ## Native URLs
 
 Subdomain convention can be replaced with a native handler. The IPFS URL protocol scheme follows the same requirement of case-insensitive CIDv1 as subdomains:
 
 ```
-ipfs://{cidv1b32}/path/to/resource
+ipfs://{cidv1}/path/to/resource
 ```
 
 An IPFS URL does not retain the original path, but instead requires a conversion step to/from URI representation:
