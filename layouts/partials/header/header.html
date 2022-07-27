@@ -6,12 +6,10 @@
 <div class="sticky-lg-top">
 {{ end -}}
 
-<div class="header-bar"></div>
-
-<header class="navbar navbar-expand-md navbar-light doks-navbar">
+<header class="navbar navbar-expand-md navbar-light doks-navbar" style="background: linear-gradient(104.24deg,#1a74fc -4.4%,#4ef286 112.23%)">
   <nav class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} flex-wrap flex-md-nowrap" aria-label="Main navigation">
     <a class="navbar-brand p-0 me-auto" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Params.Title }}">
-      {{ .Site.Params.Title }}
+      <img src="/logo.png" width="37.6" height="52.4">
     </a>
 
     <button class="btn btn-menu d-block d-md-none order-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoks" aria-controls="offcanvasDoks" aria-label="Open main menu">
@@ -24,7 +22,7 @@
         <h2 class="h5 offcanvas-title ps-2" id="offcanvasDoksLabel"><a class="text-dark" href="{{ "/" | relLangURL }}">{{ .Site.Params.Title }}</a></h2>
         <button type="button" class="btn-close text-reset me-2" data-bs-dismiss="offcanvas" aria-label="Close main menu"></button>
       </div>
-      <div class="offcanvas-body px-4">
+      <div class="offcanvas-body px-4" style="color: white;">
         <h3 class="h6 text-uppercase mb-3 d-md-none">Main</h3>
         <ul class="nav flex-column flex-md-row ms-md-n3">
           {{- $current := . -}}
@@ -106,6 +104,8 @@
     {{ end -}}
   </nav>
 </header>
+
+<div class="header-bar"></div>
 
 {{ if eq .Site.Params.options.flexSearch false }}
 </div>
