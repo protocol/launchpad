@@ -1,6 +1,6 @@
 ---
-title: "Resources"
-description: "The What and the How"
+title: "IPFS Resources"
+description: "Explore beyond the curriculum"
 draft: false
 menu:
     curriculum:
