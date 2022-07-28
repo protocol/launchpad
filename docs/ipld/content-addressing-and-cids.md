@@ -107,7 +107,7 @@ Generally, multicodec numbers are used as prefixes to the values they identify. 
 
 A **Multihash**, a type of multicodec, is a self-describing hash digest. The hash digest is prefixed with a number that identifies the hash function, and it makes it much easier for systems that depend on hash functions for security to upgrade if there is a cryptographic break.
 
-The different hash functions can be seen in the [multicodec table](https://github.com/multiformats/multicodec)). For example, the SHA3-384 hash function has the code `0x15`, while a BLAKE2b hash function with 384-bit output is `0xb230`. After the hash function code prefix, a Multihash also prefixes the length of the hash digest to follow. So a Multihash can be said to be: `<hash-function-code><digest-length><digest-bytes>`.
+The different hash functions can be seen in the [multicodec table](https://github.com/multiformats/multicodec). For example, the SHA3-384 hash function has the code `0x15`, while a BLAKE2b hash function with 384-bit output is `0xb230`. After the hash function code prefix, a Multihash also prefixes the length of the hash digest to follow. So a Multihash can be said to be: `<hash-function-code><digest-length><digest-bytes>`.
 
 **Multibase** is a protocol that allows for string or text data to self-describes which base encoding is used. Multibase uses a prefix _character_ which describes the base used to encode the bytes that follow. For example:
 
@@ -115,7 +115,7 @@ The different hash functions can be seen in the [multicodec table](https://githu
 * `z` - base58
 * `f` - base16
 
-The full list of bases and their mappings can be found in the Multibase registry at https://github.com/multiformats/multibase
+The full list of bases and their mappings can be found in the Multibase registry at [github.com/multiformats/multibase](https://github.com/multiformats/multibase)
 
 Base32 is the most commonly used base encoding for version 1 CIDs, hence the `b` at the beginning. This character says that all the following characters can be passed through a base32 decoder to retrieve the raw bytes.
 

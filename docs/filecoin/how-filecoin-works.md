@@ -10,7 +10,7 @@ _A more thorough explanation of these concepts [can be found in the Filecoin doc
 
 The Filecoin network is a distributed, peer-to-peer network formed by Filecoin peers who participate in different ways.
 
-Peers communicate over secure channels that they use to distribute information to the network (gossiping), to transfer data among themselves, and to discover other peers, maintaining a well-connected swarm in which information like blocks and messages flows swiftly even when many thousands of peers participate.
+Peers communicate over secure channels to distribute information around the network (gossiping). They transfer data among themselves, discover other peers, and maintain a well-connected swarm; information like blocks and messages flow swiftly even when thousands of peers participate.
 
 #### Filecoin Storage Basics | Rod Vagg
 
@@ -20,7 +20,7 @@ Learn about mining, sealing, sector types, Collateral, making deals, Filecoin+, 
 
 ### [Filecoin Nodes](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#filecoin-nodes)
 
-Filecoin Nodes or Filecoin clients are peers that sync the Filecoin blockchain and validate the messages in every block, which, once applied, provide a global state.
+Filecoin Nodes or Filecoin clients are peers that sync the Filecoin blockchain and validate the messages in every block, which once applied, provide a global state.
 
 Filecoin Nodes can also publish different types of messages to the network by broadcasting them.
 
@@ -112,7 +112,7 @@ In this talk by Pooja Shah of Protocol Labs, learn about the basic functioning a
 * Filecoin Protocol implementation: These include [Lotus](https://github.com/filecoin-project/lotus), Chainsafe [Forest](https://docs.google.com/document/d/1YkMvSxKtKVLnuaWVLRjxHFkqNrmZy24eYb6sa5EaIAo/edit?usp=sharing), and [Venus](https://github.com/filecoin-project/venus)
 * Developer tools: these include Textile [Powergate](https://docs.textile.io/powergate/), Truffle [Ganache](https://trufflesuite.com/docs/filecoin/ganache/overview.html), Fleek [Space Daemon](https://docs.fleek.co/space-daemon/overview/) and more
 * Filecoin Networks: Run Localnet to test before releasing your apps on the [Lotus Devnet](https://github.com/textileio/lotus-devnet) or the [Filecoin Devnet](https://docs.filecoin.io/build/local-devnet/). Other developer networks can be [found in the docs](https://docs.filecoin.io/networks/). Learn more about Mainnet on the [Filecoin Website](https://filecoin.io/build/#tools-and-more) and [docs](https://docs.filecoin.io/get-started/)
-* Hosted services: These are Filecoin-backed pinning services (FPS) from to keep data available for those who don't want top maintain their own nodes. These include [Textile buckets](https://docs.textile.io/buckets/), [Pinata](https://www.pinata.cloud/), [Chainsafe](https://files.chainsafe.io/), [NFT Storage](https://nft.storage/), [Web3 Storage](https://web3.storage/), [Estuary](https://estuary.tech/), and more
+* Hosted services: These are Filecoin-backed pinning services (FPS) to keep data available for those who don't want to maintain their own nodes. These include [Textile buckets](https://docs.textile.io/buckets/), [Pinata](https://www.pinata.cloud/), [Chainsafe](https://files.chainsafe.io/), [NFT Storage](https://nft.storage/), [Web3 Storage](https://web3.storage/), [Estuary](https://estuary.tech/), and more
 * Other useful tools include Docker images, hosted Lotus endpoints, status tools, API clients, CLIs, wallets, remote signing, and more
 
 **Lotus Common Architecture** Currently for those using lotus directly, it is recommended that you have a hardware configuration with 32GB of RAM, an 8-core CPU, and at least 200 GB of SSD storage. See the [Filecoin docs on Hardware requirements](https://docs.filecoin.io/storage-provider/hardware-requirements/)
