@@ -19,17 +19,18 @@ In order to understand the nuances of the Filecoin protocol, there are several c
 * [Data structures: Linked lists, hash tables, and Trees](https://medium.com/@limichelle21/5-data-structures-in-5-minutes-7f4b34d00b8e)
 * [Hash pointers](http://learningspot.altervista.org/hash-pointers-and-data-structures/)
 * [Actor-based concurrent computing](https://en.wikipedia.org/wiki/Actor_model)
+* [Merkle Trees](https://hackernoon.com/merkle-trees-181cb4bc30b4)
 
 #### How Filecoin Actors Work | Zenground0 – Protocol Labs
 
-This talk given in July of 2022 takes a deep dive into the Actors that make up the computational model of the Filecoin protocol. Filecoin actors are hard-coded programs that run concurrently (as opposed to linear, stack based computing) on a blockchain like Filecoin, and how they come to a consensus about the overall _state_ of the Filecoin ledger.
+This talk given in July of 2022 takes a deep dive into the Actors that make up the computational model of the Filecoin protocol. Filecoin actors are hard-coded programs that run concurrently (as opposed to linear, stack based computing) on a blockchain like Filecoin. Another role of the actors is to come to a consensus about the overall _state_ of the Filecoin ledger.
 
 As the [Filecoin Virtual Machine (FVM) is developed](https://fvm.filecoin.io/#roadmap-4), the capabilities of Filecoin actors will greatly expand, and open up the opportunity for much more functionality with smart contracts on the Filecoin blockchain.
 
 
 #### How the Filecoin Protocol Works | Part 1 - Nicola
 
-In this talk by led by Nicola or Protocol Labs, he discusses the basics of Filecoin as a storage market & a consensus. This section covers an introdcution, the blockchain basics, as well as Filecoin Virtual Machine (FVM) components.
+In this talk by led by Nicola or Protocol Labs, he discusses the basics of Filecoin as a storage market & a consensus. This section covers an introduction to the series, the blockchain basics, as well as Filecoin Virtual Machine (FVM) components.
 <details>
 
 <summary>How Filecoin Works Part 1</summary>
