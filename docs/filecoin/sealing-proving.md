@@ -23,10 +23,11 @@ In order to understand the nuances of the Filecoin protocol, there are several c
 
 #### How Filecoin Actors Work | Zenground0 – Protocol Labs
 
-This talk given in July of 2022 takes a deep dive into the Actors that make up the computational model of the Filecoin protocol. Filecoin actors are hard-coded programs that run concurrently (as opposed to linear, stack based computing) on a blockchain like Filecoin. Another role of the actors is to come to a consensus about the overall _state_ of the Filecoin ledger.
+This talk given in July of 2022 takes a deep dive into the Actors that make up the computational model of the Filecoin protocol. Filecoin actors are hard-coded programs that run concurrently (as opposed to linear, stack based computing) on a blockchain.
 
-As the [Filecoin Virtual Machine (FVM) is developed](https://fvm.filecoin.io/#roadmap-4), the capabilities of Filecoin actors will greatly expand, and open up the opportunity for much more functionality with smart contracts on the Filecoin blockchain.
+Learn about why Filecoin uses actors, the different types of actors and what the current 11 Filecoin actors do, and understand the upgrades that have occured since mainnet launch. As the [Filecoin Virtual Machine (FVM) is developed](https://fvm.filecoin.io/#roadmap-4), the capabilities of Filecoin actors will greatly expand along with the potential for the Filecoin Protocol, by decoupling adding functionality from protocol upgrades and allowing for independent user actors.
 
+{% embed url="https://youtu.be/9JbwbTPonv0" %}
 
 #### How the Filecoin Protocol Works | Part 1 - Nicola
 
@@ -48,9 +49,7 @@ In this talk by led by Nicola or Protocol Labs, he discusses the basics of Filec
 
 <details>
 
-
 {% embed url="https://youtu.be/tE4q_Vc8OjY" %}
-
 
 #### Filecoin Specs & Resources
 
