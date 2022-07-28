@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Introduction to IPFS"
 description: "The What and Why of IPFS"
 draft: false
 menu:

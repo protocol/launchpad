@@ -9,7 +9,7 @@
         {{ .Name }}
       </button>
       {{ if .HasChildren -}}
-      <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ .Identifier }}">
+      <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ .Identifier }}" id="section-{{ .Identifier }}">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
         {{ range .Children -}}
           {{- $active := or ($currentPage.IsMenuCurrent "curriculum" .) ($currentPage.HasMenuCurrent "curriculum" .) -}}

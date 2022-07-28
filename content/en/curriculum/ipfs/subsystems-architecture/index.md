@@ -15,9 +15,9 @@ _This is an [annotated version of the subsystems Repo](https://github.com/ipfs/g
 **Map of go-ipfs Subsystems**
 _WIP: This is a high-level architecture diagram of the various sub-systems of go-ipfs. To be updated with how they interact._
 
-![ipfs subsystem 1](cli-diagram.png)
+![ipfs subsystem 1](go-ipfs-subsystems.png)
 
-![ipfs subsystem 2](go-ipfs-subsystems.png)
+![ipfs subsystem 2](cli-diagram.png)
 
 ### Architecture
 

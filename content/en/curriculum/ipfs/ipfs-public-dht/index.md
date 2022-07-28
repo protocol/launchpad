@@ -14,7 +14,7 @@ The public distributed hash table is the record of content that is used, along w
 
 A **[Peer](https://docs.ipfs.io/concepts/glossary/#peer)** is any connected node on IPFS that relays and/or stores information on the network. You can either search peers using the DHT and Kademlia, or be directly connected to a peer. The set of peers that you (as a peer) are connected to directly is called a **[Swarm](https://docs.ipfs.io/concepts/glossary/#swarm)**.
 
-![Peers and Swarms](peer-swarm3.png)
+![Peers and Swarms](peer-swarm.png)
 
 **[IPFS Nodes](https://docs.ipfs.io/concepts/nodes/)** are programs that run on a computer that can exchange data with other IPFS nodes. **[Bootstrap nodes](https://docs.ipfs.io/concepts/nodes/#bootstrap)** are used when a new node initially enters the IPFS network.
 
@@ -27,7 +27,7 @@ The [DHT is a distributed system](https://medium.com/coinmonks/a-brief-overview-
 
 * Peer Records – These map a peerID to a set of multiaddresses at which the peer may be reached. This is used by IPFS when we know of a peer with content, but do not know its address, and used for manual connections
 
-![DHT and Peers](gitbook/assets/dht-peers.png)
+![DHT and Peers](dht-peers.png)
 
 [Read More in the docs](https://docs.ipfs.io/concepts/dht)
 

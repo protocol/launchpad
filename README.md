@@ -40,10 +40,12 @@ Use Hugo to statically serve & preview files on your machine
 * Run `npm install` from the top level of the launchpad repository
 * Run `hugo server` to start hugo & preview this on `localhost:1313`
 
+> Note that you may have the run `npm install` on new/ others' branches you checkout and server before running `hugo server`
+
 #### Editing Content
 
 Content is located in `content/en/` and the directories in there will be one of the links along the top of the page.
 
 Edit the landing pages in `layouts/indel.html`
 
-Edit Sidebar content in `config/_default/menus/menus.en.toml`  
+Edit Sidebar content in `config/_default/menus/menus.en.toml`
