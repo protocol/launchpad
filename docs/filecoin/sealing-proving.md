@@ -4,17 +4,32 @@ description: Add the subtitle here
 
 # The Filecoin Protocol
 
+The Filecoin Protocol is a complex and ever evolving technology that involves mining, sealing and proving, consensus, and much more. In this section you will get an overview of the process that occurs to create the Protocol which includes both a _decentralized storage market_ (the storing of data on filecoin storage providers) and a _storage based consensus_, the process of mining Filecoin blocks.
+
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FdJC0yfHL6n4VMktmNXWq%2Fuploads%2F9pAg4DeJpIPYM1f2YYOB%2Fimage.png?alt=media\&token=e8d41405-726d-4712-935d-32772618e21f)
 
-### Sealing & Proving new Sectors <a href="#how-sealing-and-proving-works" id="how-sealing-and-proving-works"></a>
+#### Sealing & Proving new Sectors | Filecoin Encode Club
+This video is an overview of the general mining process, as well as the data sealing and proving process. This video also touches on aspects of Lotus (the main Filecoin implementation) and the architecture you would set up if you were to set up a simple Filecoin Storage Provider (miner).
 
 {% embed url="https://youtu.be/Nmw66GZyf48" %}
 
-### How the Filecoin Protocol Works
+
+## Deep Dive into the Filecoin Protocol
+In order to understand the nuances of the Filecoin protocol, there are several concepts you should be familiar with, including:
+* [Data structures: Linked lists, hash tables, and Trees](https://medium.com/@limichelle21/5-data-structures-in-5-minutes-7f4b34d00b8e)
+* [Hash pointers](http://learningspot.altervista.org/hash-pointers-and-data-structures/)
+* [Actor-based concurrent computing](https://en.wikipedia.org/wiki/Actor_model)
+
+#### How Filecoin Actors Work | Zenground0 – Protocol Labs
+
+This talk given in July of 2022 takes a deep dive into the Actors that make up the computational model of the Filecoin protocol. Filecoin actors are hard-coded programs that run concurrently (as opposed to linear, stack based computing) on a blockchain like Filecoin, and how they come to a consensus about the overall _state_ of the Filecoin ledger.
+
+As the [Filecoin Virtual Machine (FVM) is developed](https://fvm.filecoin.io/#roadmap-4), the capabilities of Filecoin actors will greatly expand, and open up the opportunity for much more functionality with smart contracts on the Filecoin blockchain.
+
 
 #### How the Filecoin Protocol Works | Part 1 - Nicola
 
-In this talk by Nicola, he discusses the basics of Filecoin as a storage market & a consensus.
+In this talk by led by Nicola or Protocol Labs, he discusses the basics of Filecoin as a storage market & a consensus. This section covers an introdcution, the blockchain basics, as well as Filecoin Virtual Machine (FVM) components.
 <details>
 
 <summary>How Filecoin Works Part 1</summary>
@@ -33,11 +48,14 @@ In this talk by Nicola, he discusses the basics of Filecoin as a storage market 
 <details>
 
 
-{% embed url="https://youtu.be/------" %}
+{% embed url="https://youtu.be/tE4q_Vc8OjY" %}
 
 
 #### Filecoin Specs & Resources
 
+* [Filecoin Docs](https://docs.filecoin.io/)
+* [Filecoin Spec](https://spec.filecoin.io/)
+* [Lotus Docs](https://lotus.filecoin.io/)
 * [Lotus versioning scheme](https://github.com/filecoin-project/lotus/discussions/7053)​
 * [Piece logistics](https://spec.filecoin.io/#section-systems.filecoin\_files.piece)​
 * [Consensus](https://spec.filecoin.io/#section-algorithms.expected\_consensus)
@@ -47,11 +65,11 @@ In this talk by Nicola, he discusses the basics of Filecoin as a storage market 
 * [Filecoin Virtual Machine](http://fvm.filecoin.io)​
  (WIP for user-defined actors)
 
-#### How Filecoin Actors Work | Zenground0
+<!-- #### How Filecoin Actors Work | Zenground0
 
 In this talk, learn about the capabilities of Filecoin Actors. _Note this link is private and you should ping maintainers for access_
 
-{% embed url="https://drive.google.com/file/d/1YhJ7a-BnuPl0OOUxV_2ZV6ayxb7TFyi6/view?usp=sharing" %}
+{% embed url="https://drive.google.com/file/d/1YhJ7a-BnuPl0OOUxV_2ZV6ayxb7TFyi6/view?usp=sharing" %} -->
 
 <!-- ### Storage Provider Resources (Optional)
 
