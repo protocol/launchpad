@@ -3,3 +3,5 @@ Gemfile.lock
 *.DS_Store
  **/.DS_Store
 **/.gitbook/.DS_Store
+/resources
+/node_modules
