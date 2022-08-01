@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-ipld"
 weight: 260
+category: lecture
+level: all
 ---
 
 ## Beyond File Data

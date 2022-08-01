@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-ipld"
 weight: 210
+category: lecture
+level: all
 ---
 
 IPLD defines a **Data Model** that details the forms that data can take in memory, and through which a codec transforms that memory to and from encoded bytes.

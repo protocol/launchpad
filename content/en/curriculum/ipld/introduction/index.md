@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-ipld"
 weight: 180
+category: lecture
+level: all
 ---
 
 [IPLD (InterPlanetary Linked Data) is **The Data Layer for content-addressed systems**](https://blog.ipfs.io/what-is-ipld/). It deals with all the heavy lifting in IPFS; it represents data as Merkle-DAGs with roots identified by content IDs called **CIDs**.
