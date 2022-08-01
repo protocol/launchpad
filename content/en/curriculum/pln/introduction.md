@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-pln"
 weight: 10
+category: lecture
+level: all
 ---
 
 # The Protocol Labs Network

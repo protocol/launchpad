@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-ipfs"
 weight: 150
+category: lecture
+level: all
 ---
 
 _This is an [annotated version of this doc](https://docs.ipfs.io/how-to/address-ipfs-on-web/#http-gateways)_

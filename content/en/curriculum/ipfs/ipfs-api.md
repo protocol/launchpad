@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-ipfs"
 weight: 160
+category: tutorial
+level: deep
 ---
 
 When you run your IPFS node as a daemon, an HTTP RPC API is automatically exposed.

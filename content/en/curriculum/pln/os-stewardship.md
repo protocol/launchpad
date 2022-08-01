@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-pln"
 weight: 50
+category: lecture
+level: all
 ---
 
 ## Protocol Labs: An Open Source Organization

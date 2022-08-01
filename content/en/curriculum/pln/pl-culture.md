@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-pln"
 weight: 30
+category: lecture
+level: all
 ---
 
 Protocol Labs is building the next generation of the internet. We are an open-source Network that spans the research to development pipeline to create new protocols, tools, and services to radically improve the internet. Our products serve thousands of organizations and millions of people.

@@ -1,27 +1,58 @@
 {{ define "main" }}
-<div class="row flex-xl-nowrap">
-    <div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
-        <nav class="docs-links" aria-label="Main navigation">
-            {{ partial "sidebar/curriculum-menu.html" . }}
-        </nav>
+<div class="row flex-l-nowrap" style="justify-content: center;">
+    <div style="height: 0px;"></div>
+
+    {{ $gent := dict
+        "curriculum-pln-lecture" 0
+        "curriculum-pln-tutorial" 0
+        "curriculum-ipfs-lecture" 0
+        "curriculum-ipfs-tutorial" 0
+    }}
+
+
+    {{ range $index, $element := .Site.Menus.curriculum -}}
+        {{ $gent = merge $gent (dict (print $element.Identifier "-lecture") 0) }}
+        {{ $gent = merge $gent (dict (print $element.Identifier "-tutorial") 0) }}
+    {{ end }}
+
+    {{ range .Site.RegularPages }}
+        {{ $menu := print .Params.Menu.Curriculum.Parent "-" .Params.category}}
+        {{ $gent = merge $gent (dict $menu (add (index $gent $menu) 1) )  }}
+    {{ end }}
+    
+    <div class="curriculum-listing">
+        {{ range $index, $element := .Site.Menus.curriculum -}}
+        {{ $lecturesKey := print $element.Identifier "-" "lecture" }}
+        {{ $tutorialsKey := print $element.Identifier "-" "tutorial" }}
+        <div style="max-width: 500px; width: 100%; background-color: rgb(247, 245, 245); border: 1px solid rgb(214, 214, 214); border-radius: 6px 6px 6px 6px; margin-right: 20px; margin-top: 20px;">
+            <div style="padding: 10px;">
+                <div style="display: flex; margin-top: 12px; margin-bottom: 5px;">
+                    <div>
+                        <img src="{{ .Params.Image }}" width="100" height="100" style="border-radius: 100px;"/>
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <a href="{{ .Params.Section }}/introduction"><h2>{{ .Name }}</h2></a>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-bottom: 5px;">
+                    {{ .Params.Description }}
+                </div>
+                <div style="display: flex; padding: 5px; justify-content: end; bottom: 0px;">
+                    <div style="display: flex; align-items: center; color: rgb(51, 51, 51);">
+                        <div><img src="https://cdn-icons-png.flaticon.com/128/182/182321.png" width="23" height="23" /></div>
+                        <div style="margin-left: 5px; font-weight: bold;">{{ index $gent $lecturesKey }} lectures</div>
+                    </div>
+                    <div style="display: flex; align-items: center; color: rgb(51, 51, 51); margin-left: 10px;">
+                        <div><img src="https://cdn-icons-png.flaticon.com/128/759/759823.png" width="28" height="28" /></div>
+                        <div style="margin-left: 5px; font-weight: bold;">{{ index $gent $tutorialsKey }} tutorials</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ end }}
     </div>
-  <div class="col-md-12 col-lg-10 col-xl-8">
-    <article>
-      <h1 class="text-center">{{ if eq .CurrentSection .FirstSection }}{{ .Section | humanize }}{{ else }}{{ .Title }}{{ end }}</h1>
-      <div class="text-center">{{ .Content }}</div>
-			<div class="card-list">
-				{{ $currentSection := .CurrentSection }}
-				{{ range .Site.RegularPages }}
-					{{ if or (eq .File.LogicalName "introduction.md") (ge (findRE ".*/introduction/index.md" .File.Path) 1) }}
-						<div class="card my-3">
-							<div class="card-body">
-								<a class="stretched-link" href="{{ .RelPermalink }}">{{ .Params.title | title }} &rarr;</a>
-							</div>
-						</div>
-					{{ end }}
-				{{ end }}
-			</div>
-    </article>
-  </div>
+
+    
+
 </div>
 {{ end }}
