@@ -13,13 +13,26 @@ This video is an overview of the general mining process, as well as the data sea
 
 {% embed url="https://youtu.be/Nmw66GZyf48" %}
 
+#### Filecoin Specs & Resources
+
+* [Filecoin Docs](https://docs.filecoin.io/)
+* [Filecoin Spec](https://spec.filecoin.io/)
+* [Lotus Docs](https://lotus.filecoin.io/)
+* [Lotus versioning scheme](https://github.com/filecoin-project/lotus/discussions/7053)​
+* [Piece logistics](https://spec.filecoin.io/#section-systems.filecoin\_files.piece)​
+* [Consensus](https://spec.filecoin.io/#section-algorithms.expected\_consensus)
+* [Deal-making](https://spec.filecoin.io/#section-systems.filecoin\_markets.storage\_market.deal-flow)
+* [VM & Actors](https://spec.filecoin.io/#section-systems.filecoin\_vm)​
+* [System (builtin) actors](https://spec.filecoin.io/#section-systems.filecoin\_vm.sysactors)​
+* [Filecoin Virtual Machine](http://fvm.filecoin.io)​
+ (WIP for user-defined actors)
 
 ## Deep Dive into the Filecoin Protocol
 In order to understand the nuances of the Filecoin protocol, there are several concepts you should be familiar with, including:
-* [Data structures: Linked lists, hash tables, and Trees](https://medium.com/@limichelle21/5-data-structures-in-5-minutes-7f4b34d00b8e)
+* [Data structures: Linked lists, hash tables, and trees](https://medium.com/@limichelle21/5-data-structures-in-5-minutes-7f4b34d00b8e)
 * [Hash pointers](http://learningspot.altervista.org/hash-pointers-and-data-structures/)
 * [Actor-based concurrent computing](https://en.wikipedia.org/wiki/Actor_model)
-* [Merkle Trees](https://hackernoon.com/merkle-trees-181cb4bc30b4)
+* [Merkle trees](https://hackernoon.com/merkle-trees-181cb4bc30b4)
 
 #### How Filecoin Actors Work | Zenground0 – Protocol Labs
 
@@ -32,6 +45,9 @@ Learn about why Filecoin uses actors, the different types of actors and what the
 #### How the Filecoin Protocol Works | Part 1 - Nicola
 
 In this talk by led by Nicola or Protocol Labs, he discusses the basics of Filecoin as a storage market & a consensus. This section covers an introduction to the series, the blockchain basics, as well as Filecoin Virtual Machine (FVM) components.
+
+{% embed url="https://youtu.be/tE4q_Vc8OjY" %}
+
 <details>
 
 <summary>How Filecoin Works Part 1</summary>
@@ -49,21 +65,7 @@ In this talk by led by Nicola or Protocol Labs, he discusses the basics of Filec
 
 <details>
 
-{% embed url="https://youtu.be/tE4q_Vc8OjY" %}
 
-#### Filecoin Specs & Resources
-
-* [Filecoin Docs](https://docs.filecoin.io/)
-* [Filecoin Spec](https://spec.filecoin.io/)
-* [Lotus Docs](https://lotus.filecoin.io/)
-* [Lotus versioning scheme](https://github.com/filecoin-project/lotus/discussions/7053)​
-* [Piece logistics](https://spec.filecoin.io/#section-systems.filecoin\_files.piece)​
-* [Consensus](https://spec.filecoin.io/#section-algorithms.expected\_consensus)
-* [Deal-making](https://spec.filecoin.io/#section-systems.filecoin\_markets.storage\_market.deal-flow)
-* [VM & Actors](https://spec.filecoin.io/#section-systems.filecoin\_vm)​
-* [System (builtin) actors](https://spec.filecoin.io/#section-systems.filecoin\_vm.sysactors)​
-* [Filecoin Virtual Machine](http://fvm.filecoin.io)​
- (WIP for user-defined actors)
 
 <!-- #### How Filecoin Actors Work | Zenground0
 
