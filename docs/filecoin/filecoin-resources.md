@@ -6,11 +6,6 @@ description: Resources and Reference for all Things Filecoin
 
 ## Resources & Contribution Channels
 
-### Filecoin Sealing & Proving
-
-* VM & Actors: [https://spec.filecoin.io/#section-systems.filecoin\_vm](https://spec.filecoin.io/#section-systems.filecoin\_vm)​
-* System (builtin) actors: [https://spec.filecoin.io/#section-systems.filecoin\_vm.sysactors](https://spec.filecoin.io/#section-systems.filecoin\_vm.sysactors)​
-* Filecoin Virtual Machine (WIP for user-defined actors): [fvm.filecoin.io](http://fvm.filecoin.io)​
 
 ### GitHub:
   * Primary venue for discussion, specs and docs: [https://github.com/](https://github.com/filecoin-project)

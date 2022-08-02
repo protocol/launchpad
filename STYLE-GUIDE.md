@@ -86,20 +86,53 @@ _Forms Example_
 
 ## Code Snippets
 
-When creating code snippets, use tabs (even if there is only an option in one language)
+Tabs allow for you to have code snippets with choices for different languages. When creating code snippets, use tabs (even if there is only an option in one language)
 
 ### Tabs Example
 
+```
 {% tabs %}
 {% tab title="TypeScript" %}
-```typescript
+<```>typescript
 read(key: AES256, eNode: Encrypted<VNode>): Result<Failure, VNode>
-```
+<```>
 {% endtab %}
 
 {% tab title="Haskell" %}
-```haskell
+<```>haskell
 read :: AES256 -> Encrypted VirtualNode -> Either Failure VirtualNode
-```
+<```>
 {% endtab %}
 {% endtabs %}
+```
+_Note that the <> around the three backticks should be removed and is only done here to avoid impact on formatting_
+
+## Dropdown Menu
+
+Content can be condensed into a convenient dropdown menu like so:
+
+<details>
+
+<summary>Dropdown Text</summary>
+**Title**
+Some content textile
+
+* Some list item
+
+more text
+<details>
+
+Example
+```
+<details>
+
+<summary>Dropdown Text</summary>
+
+**Title**
+Some content textile
+
+* Some list item
+
+more text
+<details>
+```
