@@ -5,8 +5,9 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-libp2p"
-weight: 320
+weight: 330
 ---
+
 ### What is Gossipsub?
 
 Gossipsub is a pubsub (publish/subscribe) protocol that provides the routing for messaging that can be used in blockchain environments for transaction messages that transfer value, and block messaging that update the status of the blockchain, along with other applications.
