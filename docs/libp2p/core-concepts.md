@@ -14,7 +14,7 @@ libp2p covers a lot of ground, and may involve unfamiliar terminology and concep
 
 To communicate on the internet, you need to use an agreed upon **T**ransport **P**rotocol (most of the internet uses a TCP/IP combination). With libp2p you can listen, dial, and provide addresses (which specify the transport). libp2p makes it possible to use multiaddresses to communicate with different protocols, in a peer-to-peer fashion.
 
-#### [NAT Traversal]((https://docs.libp2p.io/concepts/nat/))
+#### [NAT Traversal](https://docs.libp2p.io/concepts/nat/)
 
 NAT allows many machines with private addressed on a private network to use a single public address, however, it also comes with a firewall, which can make it difficult for two peers to connect.
 
@@ -23,7 +23,7 @@ NAT allows many machines with private addressed on a private network to use a si
 libp2p uses [STUN Hole-Punching and the TURN Circuit Relay Protocol](https://docs.libp2p.io/concepts/nat/) to give peers direct access to communicate with one another.  
 
 
-#### [Circuit Relay]((https://docs.libp2p.io/concepts/circuit-relay/))
+#### [Circuit Relay](https://docs.libp2p.io/concepts/circuit-relay/)
 
 Circuit relay is a transport protocol that routes traffic between two peers over a third-party “relay” peer, when NAT Traversal and hole punching aren't an option, [the circuit relay can be used to connect them](https://blog.aira.life/understanding-ipfs-circuit-relay-ccc7d2a39).
 

@@ -13,7 +13,7 @@ libp2p is a modular system of *protocols*, *specifications* and *libraries* that
 
 ![](<../../.gitbook/assets/image (10).png>)
 
-Building large scale peer-to-peer systems has presented many complex difficulties, and libp2p is a way to fix that. The libp2p projects makes it possible for a [peer-to-peer](https://docs.libp2p.io/introduction/what-is-libp2p/#peer-to-peer-basics) applications to operate in an [interface that supports many Internet protocols](https://docs.libp2p.io/introduction/what-is-libp2p/#transport), with [secure identities](https://docs.libp2p.io/introduction/what-is-libp2p/#identity), [peer routing](https://docs.libp2p.io/introduction/what-is-libp2p/#peer-routing), and content discovery](https://docs.libp2p.io/introduction/what-is-libp2p/#content-discovery).
+Building large scale peer-to-peer systems has presented many complex difficulties, and libp2p is a way to fix that. The libp2p projects makes it possible for a [peer-to-peer](https://docs.libp2p.io/introduction/what-is-libp2p/#peer-to-peer-basics) applications to operate in an [interface that supports many Internet protocols](https://docs.libp2p.io/introduction/what-is-libp2p/#transport), with [secure identities](https://docs.libp2p.io/introduction/what-is-libp2p/#identity), [peer routing](https://docs.libp2p.io/introduction/what-is-libp2p/#peer-routing), and [content discovery](https://docs.libp2p.io/introduction/what-is-libp2p/#content-discovery).
 
 ### The libp2p Roadmap
 
@@ -56,7 +56,7 @@ For those who are newer to the world of Filecoin, Web3, and storage verification
 
 * [Introduction to libp2p](https://proto.school/introduction-to-libp2p)
 * [Blogging on the Decentralized Web](https://proto.school/blog)
-* [ResNetLab on Tour– Content Routing](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/)
+* [ResNetLab on Tour – Content Routing](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/)
 
 #### Publish Subscribe (Pubsub) with IPFS & libp2p
 In this tutorial video, you will see how you can use the publish-subscribe functionality (using the libp2p Gossipsub routing algorithm) with an IPFS node.  Follow along to start an IPFS node with pubsub enabled, and send and recieve messages.

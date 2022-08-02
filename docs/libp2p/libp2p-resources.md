@@ -8,7 +8,7 @@ description: Websites, Repos, Community & More
 
 * libp2p [Website](https://libp2p.io)
 * libp2p [Github Repos](https://github.com/libp2p)
-* libp2p [Documentation](https://docs.libp2p.io/i)
+* libp2p [Documentation](https://docs.libp2p.io/)
 
 #### Github Discussions
 
@@ -42,7 +42,7 @@ In addition to the implementations above, the libp2p community is actively worki
 
 ### Community
 
-Get in touch with other members of the libp2p community who are building tools and applications with libp2p! You can ask questions, discuss new ideas, or get support for problems at https://discuss.ipfs.io, but you can also [hop on IRC](https://github.com/protocol/launchpad/blob/main/community/irc/README.md) for a quick chat.
+Get in touch with other members of the libp2p community who are building tools and applications with libp2p! You can ask questions, discuss new ideas, or get support for problems at [discuss.ipfs.io](https://discuss.ipfs.io), but you can also [hop on IRC](https://github.com/protocol/launchpad/blob/main/community/irc/README.md) for a quick chat.
 
 See the other links in the community section for more information about meetings, events, apps people are building, and more.
 
@@ -50,15 +50,15 @@ Information about contributing to libp2p and about other software projects in th
 
 #### Get Involved
 
-libp2p is an open-source community project. While [Protocol Labs](https://protocol.ai) is able to sponsor some of the work around it, much of the design, code, and effort is contributed by volunteers and community members like you. If you’re interested in helping improve libp2p, check the [contributing](https://github.com/protocol/launchpad/blob/main/contributing/README.md) guide to get started.
+libp2p is an open-source community project. While Protocol Labs is able to sponsor some of the work around it, much of the design, code, and effort is contributed by volunteers and community members like you. If you’re interested in helping improve libp2p, check the [contributing guide](https://github.com/protocol/launchpad/blob/main/contributing/README.md) to get started.
 
 If you are diving in to contribute new code, make sure you check both the [contribution guidelines](https://github.com/libp2p/community/blob/master/CONTRIBUTE.md) and the style guide for your language ([Go](https://github.com/ipfs/community/blob/master/CONTRIBUTING\_GO.md), [JavaScript](https://github.com/ipfs/community/blob/master/CONTRIBUTING\_JS.md)).
 
 #### Related Projects
 
-libp2p began as part of the [IPFS](https://ipfs.io) project, and is still an essential component of IPFS. As such, libp2p composes well with the abstractions and tools provided by other projects in the IPFS "family". Check their individual sites for specific information and references:
+libp2p began as part of the IPFS project, and is still an essential component. As such, libp2p composes well with the abstractions and tools provided by other projects in the IPFS "family". Check their individual sites for specific information and references:
 
-* [IPFS](https://libp2p.io) is the InterPlanetary File System, which uses libp2p as its networking layer.
+* [IPFS](https://ipfs.io) is the InterPlanetary File System, which uses libp2p as its networking layer.
 * [Multiformats](https://multiformats.io) is a variety of _self-describing_ data formats.
 * [IPLD](https://ipld.io) is a set of tools for describing links between content-addressed data, like IPFS files, Git commits, or Ethereum blocks.
 * [The Permissive License Stack](https://protocol.ai/blog/announcing-the-permissive-license-stack) is a licensing strategy for software development that embraces open-source values.
