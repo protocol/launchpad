@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-filecoin"
-weight: 310
+weight: 400
 ---
 
 ## The Filecoin Economy
