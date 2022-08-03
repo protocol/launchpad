@@ -27,7 +27,7 @@ Since IPFS uses CIDs, if you were to share an IPFS address such as `/ipfs/QmbezG
 
 The [InterPlanetary Name System (IPNS)](https://docs.ipfs.io/concepts/ipns/#interplanetary-name-system-ipns) solves this issue by creating an address that can be updated. IPNS addresses a very important point; to help bridge the unfamiliarity gap to a new internet. For example, when you go to a users' profile on a social media site today, you expect to find it with the same link or URL in the future. And if there are any updates, then you expect to see those updates as well. IPNS builds on top of IPFS, by giving you a "username"; when someone asks for your username, they'll receive the most up-to-date content you published on IPFS. If you change your username, you are generating a brand new CID and by extension you are creating a brand new online profile.
 
-In IPNS, these user identifiers are not called usernames, rather, they are called _name_'s. A _name_ is a [hash](https://docs.ipfs.io/concepts/hashing/) of a public key. It is associated with a _record_ containing information about the CID it links to that is signed by the corresponding private key. New records can be signed and published at any time.
+In IPNS, these user identifiers are not called usernames, rather, they are called _name_'s. A _name_ is the [hash](https://docs.ipfs.io/concepts/hashing/) of a public key. It is associated with a _record_ containing information about the CID it links to that is signed by the corresponding private key. New records can be signed and published at any time.
 
 When looking up an IPNS address, use the `/ipns/` prefix:
 
