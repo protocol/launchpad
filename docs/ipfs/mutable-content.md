@@ -99,8 +99,8 @@ Sources: [Overview of IPNS by Adin](https://pl-strflt.notion.site/IPNS-Overview-
 
 ### Pubsub + IPNS
 
-IPNS [solves the issue of creating constant links to content](https://blog.fleek.co/posts/immutable-ipfs) that may be updated, and provides the 'new' link to content that you want to share with others. IPNS uses public-link cryptography to assign a link to the content you created on IPFS.
+[**Publish/Subsribe (PubSub)**](https://docs.libp2p.io/concepts/publish-subscribe/) - Is a messaging protocol to quickly communicate with other peers. Whenever one Publishes some content, Subscribing peers will receive it almost instantly. This protocol is not specific to IPNS, but to Libp2p; to allow for quick delivery of content over a network of users.
+
+The Publish & Subscribe model pairs really nicely with IPNS. A drawback of IPNS is that sharing and receiving a record takes too long for any modern system. With PubSub, updates to a record can be shared virtually instantly with subscribers.
 
 There are a couple of ways you can link to the content you are sharing, either using DNSLink to link using the DNS addressing system, or a truly decentralized solution such as ENS that will help maintain a constant link to the most updated version of a piece of content.
-
-**Pubsub** Makes it possible for users to share the content with the peers that wish to subscribe to it & delivers messages throughout a decentralized network. Read more in the [libp2p docs](https://docs.libp2p.io/concepts/publish-subscribe/).
