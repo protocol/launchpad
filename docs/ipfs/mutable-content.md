@@ -99,7 +99,7 @@ Sources: [Overview of IPNS by Adin](https://pl-strflt.notion.site/IPNS-Overview-
 
 ### Pubsub + IPNS
 
-IPNS [solves the issue of creating constant links to content](https://blog.fleek.co/posts/immutable-ipfs) that may be updated, and provides the 'new' link to content that you want to share with others. IPNS uses public-link cryptography to assign a link to the content you created on IPFS.
+IPNS [solves the issue of creating constant links to content](https://blog.fleek.co/posts/immutable-ipfs) that may be updated, and provides the 'new' link to content that you want to share with others. IPNS uses public-key cryptography to create a mutable link to immutable content on IPFS.
 
 There are a couple of ways you can link to the content you are sharing, either using DNSLink to link using the DNS addressing system, or a truly decentralized solution such as ENS that will help maintain a constant link to the most updated version of a piece of content.
 
