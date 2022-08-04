@@ -4,13 +4,13 @@
   weight = 1000
 
 [[main]]
-  name = "Pre-Requisites"
-  url = "/pre-reqs"
+  name = "Prerequisites"
+  url = "/prerequisites/web3-and-pl"
   weight = 2000
 
 [[main]]
   name = "Resources"
-  url = "/libp2p/lorem/ipsum/"
+  url = "/resources/toolkits/introduction"
   weight = 3000
 
 [[main]]
@@ -58,9 +58,8 @@
   name = "Protocol Labs Network"
   weight = 10
   identifier = "curriculum-pln"
-  url = "/curriculum/get-started/what-is-lotus"
   [curriculum.params]
-    image = "https://pbs.twimg.com/profile_images/1266018477694910471/1dlxWC0A_400x400.png"
+    image = "/logos/pl.png"
     section = "pln"
     description = "The Protocol Labs Network includes companies that believe in Web3 and decentralization. Discover the different organizations that are part of the ecosystem!"
 
@@ -68,9 +67,8 @@
   name = "IPFS"
   weight = 20
   identifier = "curriculum-ipfs"
-  url = "/curriculum/get-started/what-is-lotus"
   [curriculum.params]
-    image = "https://docs.ipfs.io/images/ipfs-logo.svg"
+    image = "/logos/ipfs.svg"
     section = "ipfs"
     description = "IPFS is a peer to peer network in which files are retrieved by their content, instead of their location. Learn what are the benefits (and drawbacks) of using content addressing!"
 
@@ -78,9 +76,8 @@
   name = "IPLD"
   weight = 30
   identifier = "curriculum-ipld"
-  url = "/curriculum/get-started/what-is-lotus"
   [curriculum.params]
-    image = "https://ipld.io/img/ipld-logo.png"
+    image = "/logos/ipld.png"
     section = "ipld"
     description = "IPLD includes a set of protocols and data structures that empower content addressing platforms, such as IPFS. Learn how can you use this tools in your own project!"
 
@@ -88,11 +85,10 @@
   name = "Libp2p"
   weight = 40
   identifier = "curriculum-libp2p"
-  url = "/curriculum/get-started/what-is-lotus"
   [curriculum.params]
-    image = "https://raw.githubusercontent.com/libp2p/libp2p/a13997787e57d40d6315b422afbe1ceb62f45511/logo/libp2p-logo.png"
+    image = "/logos/libp2p.png"
     section = "libp2p"
-    description = "Libp2p is the networking stack of IPFS, which aims to provide reusable networking pieces for your project!"
+    description = "Libp2p is the networking stack of IPFS, which aims to provide reusable networking pieces for your project! Get to know the different modules of Libp2p"
 
 [[curriculum]]
   name = "Filecoin"
@@ -100,9 +96,26 @@
   identifier = "curriculum-filecoin"
   url = "/curriculum/get-started/what-is-lotus"
   [curriculum.params]
-    image = "https://cryptologos.cc/logos/filecoin-fil-logo.png"
+    image = "/logos/filecoin.png"
     section = "Filecoin"
     description = "Filecoin a decentralized storage network to store large datasets in an affordable and reliable way"
+
+
+[[prereq]]
+  name = "Pre-Requisites"
+  weight = 10
+  identifier = "prereq"
+
+
+[[resources]]
+  name = "PL Toolkits and SDKs"
+  weight = 10
+  identifier = "resources-toolkits"
+
+[[resources]]
+  name = "Other Resources"
+  weight = 20
+  identifier = "resources-other"
 
 
 # [[footer]]
