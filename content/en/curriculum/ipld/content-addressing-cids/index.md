@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-ipld"
 weight: 190
+category: lecture
+level: all
 ---
 
 ## Content Addressing

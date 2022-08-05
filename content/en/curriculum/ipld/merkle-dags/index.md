@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-ipld"
 weight: 200
+category: lecture
+level: all
 ---
 
 **DAG** is an acronym for **Directed Acyclic Graph**. This is a basic concept arising from graph theory and defines: any connected set of data where the connections go in only one direction ("directed") and the graph does not contain any cycles ("acyclic"). Ralph Merkle, formalised the hash tree pattern 1979 which specializes a form of DAG. Essentially:

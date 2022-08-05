@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-ipfs"
 weight: 110
+category: lecture
+level: all
 ---
 
 ## The Ecosystem

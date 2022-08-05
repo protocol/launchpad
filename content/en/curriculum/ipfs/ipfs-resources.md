@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-ipfs"
 weight: 170
+category: lecture
+level: all
 ---
 
 ## Discuss IPFS

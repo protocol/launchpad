@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-ipld"
 weight: 250
+category: lecture
+level: all
 ---
 
 ## Paths

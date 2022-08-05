@@ -1,1 +1,25 @@
 /** Custom styles */
+
+.navbar {
+    border: 0px;
+}
+
+.nav-link.lp{
+    color: white;
+}
+
+.nav-link.lp.active {
+    color: white;
+    text-decoration: underline;
+}
+
+.curriculum-listing {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.curriculum-listing a {
+    text-decoration: none;
+    color: black;
+}

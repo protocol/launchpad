@@ -6,11 +6,9 @@ menu:
     curriculum:
         parent: "curriculum-pln"
 weight: 10
+category: lecture
+level: all
 ---
-
-# The Protocol Labs Network
-
-## **Introduction**
 
 This section introduces Protocol Labs Network. Here you will find resources to learn about the goals and mission that unite us across organizations, the many teams and individuals that contribute to the new web3 primitives, protocols, and tools we're creating, and begin to learn about how we operate.
 

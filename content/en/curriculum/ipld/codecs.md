@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-ipld"
 weight: 230
+category: lecture
+level: all
 ---
 
 IPLD is ambitious in its aims to be able to represent many, varied types of content addressed data. To do this, it must be able to decode and encode those data formats. Being able to represent, manipulate and navigate data in memory is only possible if we can turn at-rest binary data into meaningful data structures.

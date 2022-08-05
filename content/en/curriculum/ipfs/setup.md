@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-ipfs"
 weight: 80
+category: tutorial
+level: all
 ---
 
 ### The Basics

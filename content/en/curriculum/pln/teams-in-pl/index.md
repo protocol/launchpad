@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-pln"
 weight: 30
+category: lecture
+level: all
 ---
 
 Protocol Labs exists to enable a network of projects, tools, startups, research, communities (and more) that are springing up and evolving around the protocols being developed. As this ecosystem grows, these projects invest in the network itself, and the network grows along with it, which in turn benefits and incentivizes this ongoing evolution.

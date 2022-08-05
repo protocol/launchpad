@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-ipfs"
 weight: 150
+category: lecture
+level: all
 ---
 
 <!-- What else should be included?-->

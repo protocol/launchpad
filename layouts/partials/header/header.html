@@ -6,12 +6,54 @@
 <div class="sticky-lg-top">
 {{ end -}}
 
-<div class="header-bar"></div>
+<script>
+  window.store = {
+    isLocalStorageSupported: function() {
+      try {
+        return 'localStorage' in window && window['localStorage'] !== null;
+      } catch (e) {
+          return false;
+      }
+    },
+    set: function(key, value) {
+      if (this.isLocalStorageSupported()) {
+        localStorage.setItem(key, value);
+        return
+      }
+  
+      document.cookie = key + " = " + value + "; path=/";
+    },
+    get: function(key) {
+      if (this.isLocalStorageSupported()) {
+        return localStorage.getItem(key);
+      }
+  
+      const cookies = document.cookie;
+      for(const element of cookies.split(";")) {
+        console.log(element)
+        const elemSplit = element.split("=")
+  
+        if (elemSplit[0] == key) {
+          return elemSplit[1];
+        }
+      }
+    }
+  }
+  
+  function setContentLevel(level) {
+    window.store.set('content_level', level);
+    location.reload()
+  }
+  
+  function getContentLevel() {
+    return window.store.get('content_level');
+  }
+  </script>
 
-<header class="navbar navbar-expand-md navbar-light doks-navbar">
+<header class="navbar navbar-expand-md navbar-light doks-navbar" style="background: linear-gradient(104.24deg,#1a74fc -4.4%,#4ef286 112.23%)">
   <nav class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} flex-wrap flex-md-nowrap" aria-label="Main navigation">
     <a class="navbar-brand p-0 me-auto" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Params.Title }}">
-      {{ .Site.Params.Title }}
+      <img src="/logos/launchpad.png" width="37.6" height="52.4">
     </a>
 
     <button class="btn btn-menu d-block d-md-none order-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoks" aria-controls="offcanvasDoks" aria-label="Open main menu">
@@ -24,7 +66,7 @@
         <h2 class="h5 offcanvas-title ps-2" id="offcanvasDoksLabel"><a class="text-dark" href="{{ "/" | relLangURL }}">{{ .Site.Params.Title }}</a></h2>
         <button type="button" class="btn-close text-reset me-2" data-bs-dismiss="offcanvas" aria-label="Close main menu"></button>
       </div>
-      <div class="offcanvas-body px-4">
+      <div class="offcanvas-body px-4" style="color: white;">
         <h3 class="h6 text-uppercase mb-3 d-md-none">Main</h3>
         <ul class="nav flex-column flex-md-row ms-md-n3">
           {{- $current := . -}}
@@ -35,8 +77,8 @@
             {{- $active = or $active (and (eq .Name ($section | humanize)) (eq $current.Section $section)) -}}
             {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "contributors")) -}}
             {{ if .HasChildren }}
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle ps-0 py-1" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="lp-nav dropdown">
+                <a class=" dropdown-toggle ps-0 py-1" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   {{ .Name }}
                   <span class="dropdown-caret"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
                 </a>
@@ -51,7 +93,7 @@
               </li>
             {{ else }}
               <li class="nav-item">
-                <a class="nav-link ps-0 py-1{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                <a class="nav-link lp ps-0 py-1{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
               </li>
             {{ end }}
           {{ end -}}
@@ -107,6 +149,8 @@
   </nav>
 </header>
 
+<div class="header-bar"></div>
+
 {{ if eq .Site.Params.options.flexSearch false }}
 </div>
 {{ end -}}
@@ -121,6 +165,17 @@
       <div id="suggestions" class="shadow bg-white rounded d-none"></div>
     </form>
     {{ end -}}
+
+    {{ if and (eq .Kind "page") (eq .Section "curriculum") }}
+    <div style="color: black; text-align: center; font-size: 20px;">
+      <span >I am a </span>
+      <select id="content-level-selector" onChange="setContentLevel(this.value);" style="border: 0px solid white; border-bottom: 1px solid black; text-align: center;">
+          <option>shallow</option>
+          <option>deep</option>
+      </select>
+      <span>resident</span>
+    </div>
+    {{ end }}
 
     {{ if eq .Site.Params.options.docsVersioning true -}}
     <div class="dropdown ms-3">
@@ -156,3 +211,8 @@
   </aside>
 </div>
 {{ end -}}
+
+<script>
+  const contentLevelSelector = document.getElementById("content-level-selector")
+  contentLevelSelector.value = getContentLevel();
+</script>

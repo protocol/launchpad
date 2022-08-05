@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-ipld"
 weight: 280
+category: lecture
+level: all
 ---
 
 ## Further Reading / Watching
