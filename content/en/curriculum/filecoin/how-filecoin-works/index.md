@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-filecoin"
 weight: 390
+category: lecture
+level: all
 ---
 
 ## Filecoin Basics <a href="#filecoin-basics" id="filecoin-basics"></a>

@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-filecoin"
 weight: 430
+category: lecture
+level: all
 ---
 
 ### Filecoin Community Roadmap
