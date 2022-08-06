@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-filecoin"
-weight: 350
+weight: 440
 ---
 
 ## Resources & Contribution Channels

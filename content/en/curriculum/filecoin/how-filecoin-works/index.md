@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-filecoin"
-weight: 300
+weight: 390
 ---
 
 ## Filecoin Basics <a href="#filecoin-basics" id="filecoin-basics"></a>

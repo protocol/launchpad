@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-filecoin"
-weight: 340
+weight: 430
 ---
 
 ### Filecoin Community Roadmap
