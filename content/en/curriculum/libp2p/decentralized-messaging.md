@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-libp2p"
 weight: 320
+category: lecture
+level: all
 ---
 
 ### Why Decentralized Messaging?

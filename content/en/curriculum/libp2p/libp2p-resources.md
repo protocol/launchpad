@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-libp2p"
 weight: 370
+category: lecture
+level: all
 ---
 
 ### Main Resources

@@ -97,7 +97,7 @@
   url = "/curriculum/get-started/what-is-lotus"
   [curriculum.params]
     image = "/logos/filecoin.png"
-    section = "Filecoin"
+    section = "filecoin"
     description = "Filecoin a decentralized storage network to store large datasets in an affordable and reliable way"
 
 

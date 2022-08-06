@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-libp2p"
 weight: 330
+category: lecture
+level: all
 ---
 
 ### What is Gossipsub?
