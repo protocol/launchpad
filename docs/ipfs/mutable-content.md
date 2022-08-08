@@ -35,45 +35,7 @@ When looking up an IPNS address, use the `/ipns/` prefix:
 
 ### Deep Dive into IPNS
 
-IPNS is a self-certifying mutable pointer. Meaning any name that gets published is signed by a private key and anyone else can verify that it was signed by that peer with just the _name_. This self-certifying nature gives IPNS a number of super-powers not present in consensus systems (DNS, blockchain identifiers, etc.), some notable ones include: mutable link information can come from anywhere, not just a particular service/system, and it is very fast and easy to confirm a link is authentic. IPNS introduces a new data structure to IPFS called a _Record_. This gives you added functionality of controlling expiration of some CID content and version numbering. This is what an IPNS object contains:
-
-- 1. **Value** (bytes)
-  - It can be any path, such as a path to another IPNS record, a `dnslink` path (eg. `/ipns/example.com`) or an IPFS path (eg. `/ipfs/Qm...`)
-- 2. **Validity** (bytes)
-  - Expiration date of the record using [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) with nanoseconds precision.
-  - Note: Currently, the expiration date is the only available type of validity.
-- 3. **Validity Type** (uint64)
-   - Allows us to define the conditions under which the record is valid.
-   - Only supports expiration date with `validityType = 0` for now.
-- 4. **Signature** (bytes)
-  - Concatenate value, validity field and validity type
-  - Sign the concatenation result with the provided private key
-  - Note: Once we add new validity types, the signature must be changed. More information on [ipfs/notes#249](https://github.com/ipfs/notes/issues/249)
-- 5. **Sequence** (uint64)
-  - Represents the current version of the record (starts at 0)
-- 6. **Public Key** (bytes)
-  - Public key used to sign this record
-  - Note: The public key **must** be included if it cannot be extracted from the peer ID (reference [libp2p/specs#100](https://github.com/libp2p/specs/pull/100/files)).
-- 7. **ttl** (uint64)
-  - A hint for how long the record should be cached before going back to, for instance the DHT, in order to check if it has been updated.
-
-These records are stored locally, as well as spread across the network, in order to be accessible to everyone. For storing this structured data, we use [Protocol Buffers](https://github.com/google/protobuf), which is a language-neutral, platform neutral extensible mechanism for serializing structured data.
-
-```
-message IpnsEntry {
-	enum ValidityType {
-		// setting an EOL says "this record is valid until..."
-		EOL = 0;
-	}
-	required bytes value = 1;
-	required bytes signature = 2;
-	optional ValidityType validityType = 3;
-	optional bytes validity = 4;
-	optional uint64 sequence = 5;
-	optional uint64 ttl = 6;
-	optional bytes pubKey = 7;
-}
-```
+IPNS is a self-certifying mutable pointer. Meaning any name that gets published is signed by a private key and anyone else can verify that it was signed by that peer with just the _name_. This self-certifying nature gives IPNS a number of super-powers not present in consensus systems (DNS, blockchain identifiers, etc.), some notable ones include: mutable link information can come from anywhere, not just a particular service/system, and it is very fast and easy to confirm a link is authentic. IPNS introduces a new data structure to IPFS called a _Record_. This gives you added functionality of controlling expiration of some CID content and version numbering. Checkout the [IPNS spec](https://github.com/ipfs/specs/blob/main/IPNS.md#ipns-record) to learn more about records.
 
 #### How it works
 
