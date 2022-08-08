@@ -8,6 +8,15 @@
     color: white;
 }
 
+.nav-link.lp a:hover{
+    color: white !important;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+    color: white !important; 
+}
+
 .nav-link.lp.active {
     color: white;
     text-decoration: underline;
@@ -22,4 +31,50 @@
 .curriculum-listing a {
     text-decoration: none;
     color: black;
+}
+.nav-item a {
+    color: red;
+}
+.nav-item a:hover {
+    color: red;
+}
+
+/* LANDING */
+
+.landing-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.landing-info .column {
+    width: calc(50% - 10px);
+    min-width: 412.5px;
+    margin-right: 10px;
+}
+
+.landing-card {
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgb(213, 213, 213);
+}
+
+.landing-card-title {
+    color: grey;
+}
+
+.landing-card-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.landing-faq-card {
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 7px;
+}
+
+.landing-faq-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(58, 58, 58);
 }
