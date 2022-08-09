@@ -30,7 +30,7 @@ The [InterPlanetary Name System (IPNS)](https://docs.ipfs.io/concepts/ipns/#inte
 When looking up an IPNS _name_, use the `/ipns/` prefix:
 
 ```
-/ipns/QmSrPmbaUKA3ZodhzPWZnpFgcPMFWF4QsxXbkWfEptTBJd
+/ipns/k2k4r8jl0yz8qjgqbmc2cdu5hkqek5rj6flgnlkyywynci20j0iuyfuj
 ```
 
 ### Deep Dive into IPNS
