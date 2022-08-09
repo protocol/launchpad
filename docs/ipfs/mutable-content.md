@@ -58,7 +58,7 @@ Sources: [Overview of IPNS by Adin](https://pl-strflt.notion.site/IPNS-Overview-
 
 ### DNSLink
 
-DNSLink leverages the powerful distributed architecture of DNS for a variety of systems that require internet scale mutable names or pointers. With DNSLink, you can store an IPNS link using any DNS domain name. This is currently much faster than IPNS and also uses human-readable names. First, put the IPNS name in a TXT record at a specific subdomain. Then, you can resolve the name from any program by looking up the TXT value. Your programs and systems can parse out the record value, and follow the CID wherever it may go. 
+[DNSLink](https://docs.ipfs.tech/concepts/glossary/#dnslink) leverages the powerful distributed architecture of DNS for a variety of systems that require internet scale mutable names or pointers. With DNSLink, you can store a link to content-addressed data using any DNS domain name. This is currently much faster than IPNS and also uses human-readable names. It can point at any content path (`/ipfs/<cid>` or `/ipns/<libp2p-key>`).  By using IPNS name in a DNSLink record, one can keep DNS intact and publish updates over IPNS. First, put the IPNS name in a TXT record at a specific subdomain. Then, you can resolve the name from any program by looking up the TXT value. Your programs and systems can parse out the record value, and follow the CID wherever it may go. 
 
 
 **You can follow tutorials and read more at [https://dnslink.dev](https://dnslink.dev/)**
