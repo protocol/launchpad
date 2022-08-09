@@ -53,15 +53,29 @@ IPNS is a self-certifying mutable pointer. Meaning any name that gets published 
 * When users force third party republishing by sharing private keys, the issue of ["sequence number collision"](https://discuss.ipfs.tech/t/ipns-beyond-the-basics-no-ipns-pinning-service-any-docs-on-this/13424/2) would occur (among various others). This would be when two people updating a shared record have the same `sequence` number, but different CIDs. How would a receiver of said record know which one is correct?
 * Safe Vs. Old problem. This is a question around practicality on IPNS content. If I accidentally let my record expire, do I want my users to fetch and resolve the data anyways (aka serve **old** data) or not at all (**safe**). Currently, the default is to be safe, and not serve any data. This is an ongoing and situational conversation, you can [read about it on GitHub](https://github.com/ipfs/kubo/issues/1958#issuecomment-444201606)
 
-
 Sources: [Overview of IPNS by Adin](https://pl-strflt.notion.site/IPNS-Overview-and-FAQ-071b9b14f12045ea842a7d51cfb47dff#0963fe6b470a4c55b1929146c360dc95), [IPNS Spec](https://github.com/ipfs/specs/blob/main/IPNS.md), [Discuss forum for IPFS](https://discuss.ipfs.tech/t/how-do-i-make-my-ipns-records-live-longer/14768/17?u=lidel)
+
+
+### DNSLink
+
+DNSLink leverages the powerful distributed architecture of DNS for a variety of systems that require internet scale mutable names or pointers. With DNSLink, you can store an IPNS link using any DNS domain name. This is currently much faster than IPNS and also uses human-readable names. First, put the IPNS name in a TXT record at a specific subdomain. Then, you can resolve the name from any program by looking up the TXT value. Your programs and systems can parse out the record value, and follow the CID wherever it may go. 
+
+
+**You can follow tutorials and read more at [https://dnslink.dev](https://dnslink.dev/)**
+
+
+#### Quick explanation of dnslink in IPFS
+
+{% embed url="https://www.youtube.com/watch?v=YxKZFeDvcBs" %}
+
+Source: [Introduction to DNSlink](https://dnslink.dev/#introduction), [IPFS docs on DNSLink](https://docs.ipfs.tech/concepts/dnslink/)
+
 
 ### Pubsub + IPNS
 
 [**Publish/Subsribe (PubSub)**](https://docs.libp2p.io/concepts/publish-subscribe/) is a messaging protocol to quickly communicate with other peers. Whenever one Publishes some content, Subscribing peers will receive it almost instantly. This protocol is not specific to IPFS or IPNS, but to [Libp2p](https://docs.ipfs.tech/concepts/libp2p/); to allow for quick delivery of content over a network of users. For this reason, the two teams got together to bring instant messaging to a system where sharing and receiving content takes too long. With PubSub enabled on IPNS, updates to a record can be shared virtually instantly with subscribers. 
 
 To accomplish IPNS over PubSub, a persistence layer had to be added to the messaging protocol. This was started with the introduction of the [fetch protocol](https://github.com/libp2p/specs/tree/master/fetch). Now when you ask for a name, you are subcribing to that name (called a "topic" in libp2p pubsub), you create a connection with that publisher, then they send you the latest version of the record. The key differentiating factor between IPNS-over-PubSub and IPNS-over-the-DHT (the default behavior) is opening a streaming connection between peers. This way, peers are sending the latest record directly from their local node, as opposed to the default behavior of searching the DHT for the peer with latest version of a record. This means records shared over Pubsub are not available on the DHT and vise versa, unless the publisher opts-in to publish records to both routing options. If you would like to activate IPNS over Pubsub on your Kubo node, you can check out the [UsePubsub option](https://github.com/ipfs/kubo/blob/master/docs/config.md#ipns) in the IPFS config file.
-
 
 
 * Source: _We highly recommend watching the [video above](https://protocol-labs.gitbook.io/launchpad-curriculum/launchpad-learning-resources/ipfs/mutable-content#the-inter-planetary-name-system-ipns) to learn more about IPNS over PubSub_
