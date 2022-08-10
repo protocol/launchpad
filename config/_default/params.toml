@@ -54,7 +54,7 @@ lqipWidth = "20x"
 smallLimit = "300"
 
 # Footer
-footer = "Powered by <a class=\"text-muted\" href=\"https://fleek.co/\">Fleek</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
+footer = 'Made with &hearts; by Protocol Labs. <br /> The icons used are provided by <a href="https://flaticon.com">Flaticon</a>.'
 
 # Feed
 copyRight = "Copyright (c) Protocol Labs"

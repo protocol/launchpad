@@ -66,7 +66,7 @@
         <h2 class="h5 offcanvas-title ps-2" id="offcanvasDoksLabel"><a class="text-dark" href="{{ "/" | relLangURL }}">{{ .Site.Params.Title }}</a></h2>
         <button type="button" class="btn-close text-reset me-2" data-bs-dismiss="offcanvas" aria-label="Close main menu"></button>
       </div>
-      <div class="offcanvas-body px-4" style="color: white;">
+      <div class="offcanvas-body px-4">
         <h3 class="h6 text-uppercase mb-3 d-md-none">Main</h3>
         <ul class="nav flex-column flex-md-row ms-md-n3">
           {{- $current := . -}}
@@ -167,9 +167,9 @@
     {{ end -}}
 
     {{ if and (eq .Kind "page") (eq .Section "curriculum") }}
-    <div style="color: black; text-align: center; font-size: 20px;">
+    <div class="content-level-selector-container">
       <span >I am a </span>
-      <select id="content-level-selector" onChange="setContentLevel(this.value);" style="border: 0px solid white; border-bottom: 1px solid black; text-align: center;">
+      <select id="content-level-selector" class="content-level-selector" onChange="setContentLevel(this.value);">
           <option>shallow</option>
           <option>deep</option>
       </select>
