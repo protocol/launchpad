@@ -3,7 +3,7 @@ title: "Web3.Storage"
 description: "Simple, Open, Free Storage"
 draft: false
 menu:
-    resources:
+    devtools:
         parent: "resources-toolkits"
 weight: 50
 ---

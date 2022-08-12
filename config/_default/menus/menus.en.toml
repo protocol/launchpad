@@ -2,21 +2,29 @@
   name = "Curriculum"
   url = "/curriculum"
   weight = 1000
+  [main.params]
+    identifier = "curriculum"
 
 [[main]]
   name = "Prerequisites"
   url = "/prerequisites/web3-and-pl"
   weight = 2000
+  [main.params]
+    identifier = "prerequisites"
 
 [[main]]
-  name = "Resources"
-  url = "/resources/toolkits/introduction"
+  name = "Dev-Tools"
+  url = "/dev-tools/toolkits/introduction/"
   weight = 3000
+  [main.params]
+    identifier = "dev-tools"
 
 [[main]]
   name = "Website"
   url = "https://pl-launchpad.io"
   weight = 4000
+  [main.params]
+    identifier = "website"
 
 # [[main]]
 #   name = "Get Started"
@@ -107,12 +115,12 @@
   identifier = "prereq"
 
 
-[[resources]]
+[[devtools]]
   name = "PL Toolkits and SDKs"
   weight = 10
   identifier = "resources-toolkits"
 
-[[resources]]
+[[devtools]]
   name = "Other Resources"
   weight = 20
   identifier = "resources-other"

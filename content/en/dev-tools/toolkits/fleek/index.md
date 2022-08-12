@@ -3,7 +3,7 @@ title: "Fleek"
 description: "An Easy-to-Use Web3 Hosting Service"
 draft: false
 menu:
-    resources:
+    devtools:
         parent: "resources-toolkits"
 weight: 40
 ---

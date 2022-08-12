@@ -3,7 +3,7 @@ title: "Textile"
 description: "Connecting and Extending PL Projects"
 draft: false
 menu:
-    resources:
+    devtools:
         parent: "resources-toolkits"
 weight: 20
 ---

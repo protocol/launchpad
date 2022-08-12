@@ -12,7 +12,7 @@ avatar: ipfs-logo.jpg
 ---
 <!-- Note: Above header will be changed to a JSON file -->
 
-<Section name="1. Why were IPFS and Filecoin Created?">
+<Section name="1. Introduction to IPFS and Filecoin Created?">
 
 ## Properties of the Next Version of the Internet
 > _The Properties of the internet and its technologies define our human rights_ Juan Benet 2022
