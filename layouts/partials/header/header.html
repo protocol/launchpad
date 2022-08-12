@@ -76,6 +76,7 @@
             {{- $active = or $active (eq .Name $current.Title) -}}
             {{- $active = or $active (and (eq .Name ($section | humanize)) (eq $current.Section $section)) -}}
             {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "contributors")) -}}
+            {{- $active = or $active (and (eq .Params.Identifier $section)) -}}
             {{ if .HasChildren }}
               <li class="lp-nav dropdown">
                 <a class=" dropdown-toggle ps-0 py-1" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">

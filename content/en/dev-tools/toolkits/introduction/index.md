@@ -3,7 +3,7 @@ title: "Introduction to toolkits"
 description: "Tools to make Web3 with PL Fun and Easy"
 draft: false
 menu:
-    resources:
+    devtools:
         parent: "resources-toolkits"
 weight: 10
 ---
