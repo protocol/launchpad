@@ -35,7 +35,7 @@ When looking up an IPNS _name_ via an IPFS gateway, use the `/ipns/` prefix:
 
 ### Deep Dive into IPNS
 
-IPNS is a self-certifying mutable pointer. Meaning any name that gets published is signed by a private key and anyone else can verify that it was signed by that peer with just the _name_. This self-certifying nature gives IPNS a number of super-powers not present in consensus systems (DNS, blockchain identifiers, etc.), some notable ones include: mutable link information can come from anywhere, not just a particular service/system, and it is very fast and easy to confirm a link is authentic. IPNS introduces a new data structure to IPFS called an _IPNS Record_. This gives you added functionality of controlling expiration of some CID content and version numbering. Checkout the [IPNS spec](https://github.com/ipfs/specs/blob/main/IPNS.md#ipns-record) to learn more about IPNS records.
+IPNS is a self-certifying mutable pointer. Meaning any name that gets published is signed by a private key and anyone else can verify that it was signed by that peer with just the _name_. This self-certifying nature gives IPNS a number of super-powers not present in consensus systems (DNS, blockchain identifiers, etc.), some notable ones include: mutable link information can come from anywhere, not just a particular service/system, and it is very fast and easy to confirm a link is authentic. IPNS names are encapsulated by a data structure called an _IPNS Record_ which contains the CID you are pointing to, the expiration date of a name and the sequence number which is incremented whenever the record is updated. Check out the [IPNS spec](https://github.com/ipfs/specs/blob/main/IPNS.md#ipns-record) to learn more about IPNS records.
 
 #### How it works
 
