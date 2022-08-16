@@ -44,7 +44,6 @@ See the [original whitepaper](https://ipfs.io/ipfs/QmR7GSQM93Cx5eAg6a6yRzNde1FQv
 
 #### Web3 & Decentralization – Further Reading
 
-* [What you Should Know about Web3](https://medium.com/@vegxcodes/what-you-should-know-about-web3-part-1-15a2ddcfbc41)
 * [Wikipedia – Web3](https://en.wikipedia.org/wiki/Web3)
 * [Web2 vs. Web3 – Ethereum](https://ethereum.org/en/developers/docs/web2-vs-web3/)
 * [Decentralisation: the next big step for the world wide web - The Guardian](https://www.theguardian.com/technology/2018/sep/08/decentralisation-next-big-step-for-the-world-wide-web-dweb-data-internet-censorship-brewster-kahle)
