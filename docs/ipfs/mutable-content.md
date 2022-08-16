@@ -57,7 +57,24 @@ Sources: [Overview of IPNS by Adin](https://pl-strflt.notion.site/IPNS-Overview-
 
 ### DNSLink
 
-[DNSLink](https://docs.ipfs.tech/concepts/glossary/#dnslink) leverages the powerful distributed architecture of DNS for a variety of systems that require internet scale mutable names or pointers. With DNSLink, you can store a link to content-addressed data using any DNS domain name. This is currently much faster than IPNS and also uses human-readable names. It can point at any content path (`/ipfs/<cid>` or `/ipns/<libp2p-key>`).  By using IPNS name in a DNSLink record, one can keep DNS intact and publish updates over IPNS. First, put the IPNS name in a TXT record at a specific subdomain. Then, you can resolve the name from any program by looking up the TXT value. Your programs and systems can parse out the record value, and follow the CID wherever it may go. 
+[DNSLink](https://docs.ipfs.tech/concepts/glossary/#dnslink) is a standard for a mutable pointer system that stores its links in DNS TXT records corresponding to a given domain name. With DNSLink you can use a mutable pointer like a DNS domain name to point to content-addressed data in IPFS.
+
+The benefits of DNSLink include:
+- Human-readable mutable pointers, e.g. `/ipns/libp2p.io`.
+- DNSLink is that it leverages the distributed architecture of DNS to enable internet-scale mutable names or pointers which interoperate with IPFS. 
+- In many cases, resolving a DNSLink pointer is faster than IPNS. 
+
+To create a mutable pointer with DNSLink, you need:
+- a DNS domain name you control
+- A CID or an IPNS name to link to
+
+> Note that while using DNSLink to link to an IPNS name is possible, it's often counterintuitive, because you are using a mutable pointer (DNS record) to point to another mutable pointer (IPNS name). 
+
+For example, `libp2p.io` has a TXT DNS record `_dnslink.libp2p.io` with the value `dnslink=/ipfs/bafybeibwlrl7olq5sggibzucp5s6y5n22numfpyjlzntnuvgs5zt2umjuu`. This DNS record can be _mutated_ at any point to point to a new CID.
+
+Finally, there are several common ways to resolve DNSLink names:
+- With an IPFS gateway using the `/ipns/[DNSLink]` resolution scheme, e.g. https://ipfs.io/ipns/libp2p.io or https://cloudflare-ipfs.com/ipns/libp2p.io. Note that the `/ipns` is misleading – and should probably be prefixed with `/dnslink`, given that you are not resolving an IPNS name.
+- Directly via the domain, but this requires some additional DNS configuration as explained in the [DNSLink docs](https://dnslink.dev/#example-ipfs-gateway).
 
 
 **You can follow tutorials and read more at [https://dnslink.dev](https://dnslink.dev/)**
