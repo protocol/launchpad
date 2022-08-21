@@ -1,22 +1,42 @@
 /** Custom styles */
 
-.navbar {
-    border: 0px;
+/* LISTING PAGE */
+
+.curriculum-listing {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.offcanvas.show .lp {
+.curriculum-listing-card {
+    max-width: 500px;
+    width: 100%;
+    background-color: rgb(247, 245, 245);
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 6px 6px 6px 6px;
+    margin-right: 20px;
+    margin-top: 20px;
     color: black;
 }
 
-[data-dark-mode] .landing-steps {
+[data-dark-mode] .curriculum-listing-card {
+    background-color: #3d3d3d;
+    border: 1px solid #252525;
+    color: white;
+}
+
+.curriculum-listing-info {
+    margin-left: 5px;
+    font-weight: bold;
     color: black;
 }
 
-[data-dark-mode] .landing-info {
-    color: black;
+[data-dark-mode] .curriculum-listing-info {
+    color: white;
 }
 
-[data-dark-mode] .landing-info a {
+.curriculum-listing a {
+    text-decoration: none;
     color: black;
 }
 
@@ -37,6 +57,17 @@
     border-bottom: 1px solid white;
     text-align: center;
     color: white;
+}
+
+/* NAVBAR */
+
+.navbar {
+    border: 0px;
+    background: linear-gradient(104.24deg,#1a74fc -4.4%,#4ef286 112.23%);
+}
+
+[data-dark-mode] .navbar {
+    background: rgba(33, 37, 41, 0.95);
 }
 
 .offcanvas .show.nav-link.lp{
@@ -61,22 +92,20 @@
     text-decoration: underline;
 }
 
-.curriculum-listing {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+
+[data-dark-mode] body .offcanvas .nav-link.active {
+    color: white;
+    text-decoration: underline;
 }
 
-.curriculum-listing a {
-    text-decoration: none;
-    color: black;
-}
 .nav-item a {
     color: red;
 }
 .nav-item a:hover {
     color: red;
 }
+
+/* SINGLE PAGE - Content level selection */
 
 .content-level-selector-container {
     color: black;
@@ -91,7 +120,7 @@
 }
 
 
-/* LANDING 1 */
+/* LANDING PAGE */
 
 .landing-steps {
     display: flex;
@@ -105,8 +134,17 @@
     padding: 10px;
 }
 
+[data-dark-mode] .landing-steps {
+    background-color: #3d3d3d;
+    border: 1px solid #252525;
+}
+
 .landing-steps a {
     color: black;
+}
+
+[data-dark-mode]  .landing-steps a {
+    color: white;
 }
 
 .landing-steps a:hover {
@@ -169,7 +207,7 @@
 @media (max-width: 950px) {
     .landing-info .column {
         width: 100%;
-        margin-right: 10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -182,13 +220,51 @@
 
 
 .landing-card {
-    background-color: rgb(243, 243, 243);
-    border: 1px solid rgb(213, 213, 213);
     width: 100%;
+}
+
+.landing-card.blue {
+    border-left: 6px solid rgb(125, 190, 252);
+    background-color: rgb(243, 250, 255);
+    border-top: 1px solid rgb(125, 190, 252);
+}
+
+[data-dark-mode] .landing-card.blue {
+    border-left: 6px solid rgb(125, 190, 252);
+    background-color: rgb(0, 57, 98);
+    border-top: 1px solid rgb(125, 190, 252);
+}
+
+.landing-card.orange {
+    border-left: 6px solid orange;
+    background-color: rgb(254, 244, 226);
+    border-top: 1px solid orange;
+}
+
+[data-dark-mode] .landing-card.orange {
+    border-left: 6px solid orange;
+    background-color: rgb(223, 145, 2);
+    border-top: 1px solid orange;
+}
+
+.landing-card.pink {
+    border-left: 6px solid rgb(225, 1, 210);
+    background-color: rgb(255, 226, 253);
+    border-top: 1px solid rgb(225, 1, 210);
+}
+
+[data-dark-mode] .landing-card.pink {
+    border-left: 6px solid rgb(225, 1, 210);
+    background-color: rgb(190, 0, 177);
+    border-top: 1px solid rgb(225, 1, 210);
 }
 
 .landing-card-title {
     color: grey;
+}
+
+[data-dark-mode] .landing-card-title {
+    color: white;
 }
 
 .landing-card-subtitle {
@@ -196,15 +272,24 @@
     font-weight: bold;
 }
 
-.landing-button {
-    margin-right: 5px;
-    border-radius: 6px;
-    background-color: white;
-    border: 1px solid rgb(224, 224, 224);
-    cursor: pointer;
+[data-dark-mode] .landing-card-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
 }
 
-.landing-button.selected {
-    background-color: rgb(228, 244, 255); 
-    border: 1px solid rgb(146, 219, 255);
+.landing-card-text {
+    color: black;
+}
+
+[data-dark-mode] .landing-card-text {
+    color: white;
+}
+
+.landing-colo {
+    color: black;
+}
+
+[data-dark-mode] .landing-colo {
+    color: white;
 }
