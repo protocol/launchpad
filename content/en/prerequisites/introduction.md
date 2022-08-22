@@ -19,12 +19,6 @@ Before staring PL Launchpad program, you will need to have an understanding of t
 3. Understand the basic tools and mechanisms used in web3, such as blockchain, cryptocurrency, smart contracts, and security
 4. Be able to explain the basics of distributed storage, IPFS, NFTs, crypto tokens & wallets, and more
 
-## Sections
-
-* [Web3 & Protocol Labs](/prerequisites/web3-and-pl/)
-* [Building Web3](/prerequisites/building-web3/)
-* [Web3 Tools](/prerequisites/web3-tools/)
-
 ## Quiz
 
 Take the [**Pre-Requisites Quiz - Protocol Labs Launchpad**](https://docs.google.com/forms/d/e/1FAIpQLSfBhz3elo3K8U6MpMKeO1-0CfTdTQwPaMSYJPi3bSNyFLm0Dw/viewform?usp=sf\_link) before or after covering the pre-requisite content to gauge your understanding.
