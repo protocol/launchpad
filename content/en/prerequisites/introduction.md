@@ -1,5 +1,5 @@
 ---
-title: "Learning Objetives & Prerequisites Quiz"
+title: "Learning Objectives & Quiz"
 description: "Test your knowledge by taking a quiz"
 draft: false
 menu:
