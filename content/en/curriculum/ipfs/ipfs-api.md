@@ -127,7 +127,7 @@ The `Get` method expects two parameters: the CID of the file and the local path 
 * To publish your file to IPNS, you will need a public key.
 By default, when you install a local IPFS node, a public/private key pair called `self` is created. List your IPFS keys.
 
-```shell
+```bash
 > ipfs key list -l
 YOUR_PUBLIC_KEY      self
 ```
@@ -178,7 +178,7 @@ func resolveIPNS(sh *shell.Shell) (string, error) {
 
 * Verify that everything works together by running the Go application.
 
-```shell
+```bash
 > go run .
 Adding file to IPFS
 File added with CID: QmNsA8eUBSbpdCVHMLa8Py5TcNoZ1D9U5GkginqktrqNF1
