@@ -22,12 +22,12 @@ Your options for pinning content are:
 2. You use a [pinning service](https://docs.ipfs.io/concepts/persistence/#pinning-services). Some pinning services require payment for their services, others offer a [free storage allowance for new users](https://docs.ipfs.tech/concepts/persistence/#ipfs-filecoin-solutions).
 
 
-![Pinning IPFS](<../../.gitbook/assets/pinning.png>)
+![Pinning IPFS](pinning.png)
 
 ### Mutable Content | ResNetLabs on Tour – David Dias
 _See the full set of resources [on the ResNetLab Tutorials page](https://research.protocol.ai/tutorials/resnetlab-on-tour)_
 
-{% embed url="https://www.youtube.com/watch?v=57guoGS53Bo" %}
+{{< youtube 57guoGS53Bo >}}
 
 ## The InterPlanetary Name System (IPNS)
 
@@ -90,7 +90,7 @@ Finally, there are several common ways to resolve DNSLink names:
 
 #### Quick explanation of dnslink in IPFS
 
-{% embed url="https://www.youtube.com/watch?v=YxKZFeDvcBs" %}
+{{< youtube YxKZFeDvcBs >}}
 
 Source: [Introduction to DNSlink](https://dnslink.dev/#introduction), [IPFS docs on DNSLink](https://docs.ipfs.tech/concepts/dnslink/)
 
@@ -102,4 +102,4 @@ Source: [Introduction to DNSlink](https://dnslink.dev/#introduction), [IPFS docs
 To accomplish IPNS over PubSub, a [persistence layer had to be added](https://github.com/ipfs/specs/blob/main/naming/pubsub.md#layering-persistence-onto-libp2p-pubsub). Now when you ask for a name, you are subcribing to a PubSub topic based on that name, you create a connection with a peer that is following the same name, then they send you the latest version of the record. The key differentiating factor between IPNS-over-PubSub and IPNS-over-the-DHT (the default behavior) is opening a streaming connection between peers. This way, peers are sending the latest record directly from their local node, as opposed to the default behavior of searching the DHT for the peer with latest version of a record. This means records shared over Pubsub are not available on the DHT and vise versa, unless the publisher opts-in to publish records to both routing options. If you would like to activate IPNS over Pubsub on your Kubo node, you can check out the [`Ipns.UsePubsub` option](https://github.com/ipfs/kubo/blob/master/docs/config.md#ipns) in the config file.
 
 
-* Source: _We highly recommend watching the [video above](https://protocol-labs.gitbook.io/launchpad-curriculum/launchpad-learning-resources/ipfs/mutable-content#the-inter-planetary-name-system-ipns) to learn more about IPNS over PubSub_
+Source: _We highly recommend watching the [video above](https://protocol-labs.gitbook.io/launchpad-curriculum/launchpad-learning-resources/ipfs/mutable-content#the-inter-planetary-name-system-ipns) to learn more about IPNS over PubSub_
