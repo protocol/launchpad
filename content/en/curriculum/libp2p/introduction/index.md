@@ -7,7 +7,9 @@ menu:
         parent: "curriculum-libp2p"
 weight: 290
 category: lecture
-level: all
+level:
+- shallow
+- deep
 ---
 
 **libp2p is the networking & communication layer** for IPFS. [Visit the main website](https://libp2p.io/) for resources and information.

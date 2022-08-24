@@ -7,7 +7,8 @@ menu:
         parent: "curriculum-filecoin"
 weight: 420
 category: lecture
-level: all
+level:
+- deep
 ---
 
 Drand is a distributed, bias-resistant, unpredictable, and publicly verifiable randomness generator that is key to the Filecoin implementation in how it provides unpredictable, decentralized and publicly verifiable random values for the blockchain. [Learn more about how Drand works in the docs](https://drand.love/docs/overview/#how-drand-works)

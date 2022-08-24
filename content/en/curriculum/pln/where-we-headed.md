@@ -7,7 +7,8 @@ menu:
         parent: "curriculum-pln"
 weight: 40
 category: lecture
-level: all
+level:
+- deep
 ---
 
 ## The Future of Web3

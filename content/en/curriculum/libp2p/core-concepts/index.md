@@ -7,7 +7,9 @@ menu:
         parent: "curriculum-libp2p"
 weight: 300
 category: lecture
-level: all
+level:
+- shallow
+- deep
 ---
 
 ### Concepts

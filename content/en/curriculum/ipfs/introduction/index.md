@@ -7,7 +7,9 @@ menu:
         parent: "curriculum-ipfs"
 weight: 70
 category: lecture
-level: all
+level:
+- shallow
+- deep
 ---
 
 ## What is IPFS

@@ -7,7 +7,9 @@ menu:
         parent: "curriculum-ipfs"
 weight: 90
 category: lecture
-level: all
+level:
+- shallow
+- deep
 ---
 
 One of the most powerful things about IPFS is that any piece of data or content you store on the network cannot be modified with changing the [Content Identifier (CID)](https://protocol-labs.gitbook.io/launchpad-curriculum/launchpad-learning-resources/ipld/content-addressing-and-cids) for that data, since the CID is created (in part) by hashing the content.

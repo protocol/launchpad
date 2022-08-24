@@ -7,7 +7,9 @@ menu:
         parent: "curriculum-filecoin"
 weight: 400
 category: lecture
-level: all
+level:
+- shallow
+- deep
 ---
 
 ## The Filecoin Economy
