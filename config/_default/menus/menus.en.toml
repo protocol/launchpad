@@ -90,7 +90,7 @@
     description = "IPLD includes a set of protocols and data structures that empower content addressing platforms, such as IPFS. Learn how can you use this tools in your own project!"
 
 [[curriculum]]
-  name = "Libp2p"
+  name = "libp2p"
   weight = 40
   identifier = "curriculum-libp2p"
   [curriculum.params]
