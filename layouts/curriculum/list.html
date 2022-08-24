@@ -15,7 +15,7 @@
             {{ $gent = merge $gent (dict $menu (add (index $gent $menu) 1) )  }}
         {{ end }}
     {{ end }}
-    
+
     <div class="curriculum-listing">
         {{ range $index, $element := .Site.Menus.curriculum -}}
         {{ $lecturesKey := print $element.Identifier "-" "lecture" }}
@@ -36,7 +36,7 @@
                     </div>
                     <div style="display: flex; padding: 5px; justify-content: end; bottom: 0px;">
                         <div style="display: flex; align-items: center; color: rgb(51, 51, 51);">
-                            <div><img src="https://cdn-icons-png.flaticon.com/128/182/182321.png" width="23" height="23" style="margin-top: -7px;" /></div>
+                            <div><img src="https://cdn-icons-png.flaticon.com/512/973/973750.png" width="23" height="23" style="margin-top: -7px;" /></div>
                             <div class="curriculum-listing-info">{{ index $gent $lecturesKey }} lectures</div>
                         </div>
                         <div style="display: flex; align-items: center; color: rgb(51, 51, 51); margin-left: 10px;">
