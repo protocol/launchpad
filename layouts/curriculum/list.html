@@ -15,13 +15,13 @@
             {{ $gent = merge $gent (dict $menu (add (index $gent $menu) 1) )  }}
         {{ end }}
     {{ end }}
-    
+
     <div class="curriculum-listing">
         {{ range $index, $element := .Site.Menus.curriculum -}}
         {{ $lecturesKey := print $element.Identifier "-" "lecture" }}
         {{ $tutorialsKey := print $element.Identifier "-" "tutorial" }}
         <a href="{{ .Params.Section }}/introduction">
-            <div style="max-width: 500px; width: 100%; background-color: rgb(247, 245, 245); border: 1px solid rgb(214, 214, 214); border-radius: 6px 6px 6px 6px; margin-right: 20px; margin-top: 20px;">
+            <div class="curriculum-listing-card">
                 <div style="padding: 10px;">
                     <div style="display: flex; margin-top: 12px; padding: 8px;">
                         <div>
@@ -36,12 +36,12 @@
                     </div>
                     <div style="display: flex; padding: 5px; justify-content: end; bottom: 0px;">
                         <div style="display: flex; align-items: center; color: rgb(51, 51, 51);">
-                            <div><img src="https://cdn-icons-png.flaticon.com/128/182/182321.png" width="23" height="23" style="margin-top: -7px;" /></div>
-                            <div style="margin-left: 5px; font-weight: bold;">{{ index $gent $lecturesKey }} lectures</div>
+                            <div><img src="/icons/lecture.png" width="23" height="23" style="margin-top: -7px;" /></div>
+                            <div class="curriculum-listing-info">{{ index $gent $lecturesKey }} lectures</div>
                         </div>
                         <div style="display: flex; align-items: center; color: rgb(51, 51, 51); margin-left: 10px;">
-                            <div><img src="https://cdn-icons-png.flaticon.com/128/759/759823.png" width="28" height="28" /></div>
-                            <div style="margin-left: 5px; font-weight: bold;">{{ index $gent $tutorialsKey }} tutorials</div>
+                            <div><img src="/icons/tutorial.png" width="28" height="28" /></div>
+                            <div class="curriculum-listing-info">{{ index $gent $tutorialsKey }} tutorials</div>
                         </div>
                     </div>
                 </div>
@@ -49,8 +49,7 @@
         </a>
         {{ end }}
     </div>
-
-    
+    <div style="height: 20px;"></div>
 
 </div>
 {{ end }}
