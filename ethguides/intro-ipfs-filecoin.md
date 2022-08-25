@@ -14,16 +14,18 @@ avatar: ipfs-logo.jpg
 
 <Section name="1. Why were IPFS and Filecoin Created?">
 
-## Properties of the Next Version of the Internet
-> _The Properties of the internet and it's technologies define our human rights_ Juan Benet 2022
+##  What is IPFS
+IPFS is a distributed system for storing and accessing files for websites, applications, and data. What does this mean? It means that IPFS is setting the stage for a new world wide web that is decentralized, trustless, more scalable, and resistant to censorship and data collection.
 
-Technologies like household automation have given women independence, and the internet has given mass accessibility to education, ideas, and collaboration on a global scale.
+The main reason IPFS is able to do all of these things is that it is a content-addressed, distributed system. This means that _instead_ of relying on the client-server model, where users rely on a centralized server like mostly hosted by big powerful companies such as Amazon and Google, to both store and retrieve data such as images, music, video, and websites when you are interacting on the world wide web.
 
-Protocol Labs and it's network oragnization's goal is, through the development of tecnologies, to
+With IPFS, you fetch and store data on a distributed network of peers, and most likely (depending on your method of storage) this data is stored in multiple places and can be retrived by multiple peers so that if one source of information is unavailable or censored, it's easy to find it somewhere else.
 
-Text text text text
+## Why IPFS?
+As we have seen time and again, the technology we use in our daily lives shapes our reality. As Juan Benet said in 2022, _The properties of the internet and it's technologies define our human rights._  IPFS, and other projects by Protocol Labs, aim to improve the
 
-### IPFS and Filecoin
+
+## IPFS and Filecoin
 
 Text text text text
 
