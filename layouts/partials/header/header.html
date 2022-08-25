@@ -168,16 +168,13 @@
     {{ end -}}
 
     {{ if and (eq .Kind "page") (eq .Section "curriculum") }}
-    <!--
     <div class="content-level-selector-container">
-      <span >I am a </span>
+      <span >Technical Depth: </span>
       <select id="content-level-selector" class="content-level-selector" onChange="setContentLevel(this.value);">
           <option>shallow</option>
           <option>deep</option>
       </select>
-      <span>resident</span>
     </div>
-    -->
     {{ end }}
 
     {{ if eq .Site.Params.options.docsVersioning true -}}

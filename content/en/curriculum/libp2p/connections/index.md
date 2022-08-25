@@ -7,7 +7,9 @@ menu:
         parent: "curriculum-libp2p"
 weight: 310
 category: lecture
-level: all
+level:
+- shallow
+- deep
 ---
 
 ## Understanding Nodes

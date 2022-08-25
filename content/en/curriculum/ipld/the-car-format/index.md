@@ -7,7 +7,8 @@ menu:
         parent: "curriculum-ipld"
 weight: 270
 category: lecture
-level: all
+level:
+- deep
 ---
 
 ![](intro.png)

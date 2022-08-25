@@ -7,7 +7,9 @@ menu:
         parent: "curriculum-ipfs"
 weight: 120
 category: lecture
-level: all
+level:
+- shallow
+- deep
 ---
 
 #### How IPFS Works | Steve Allen

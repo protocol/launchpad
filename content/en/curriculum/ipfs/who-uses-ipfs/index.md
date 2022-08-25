@@ -7,7 +7,9 @@ menu:
         parent: "curriculum-ipfs"
 weight: 110
 category: lecture
-level: all
+level:
+- shallow
+- deep
 ---
 
 ## The Ecosystem

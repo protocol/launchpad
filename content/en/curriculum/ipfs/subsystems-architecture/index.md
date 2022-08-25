@@ -7,7 +7,8 @@ menu:
         parent: "curriculum-ipfs"
 weight: 140
 category: lecture
-level: deep
+level:
+- deep
 ---
 
 ### Subsystems

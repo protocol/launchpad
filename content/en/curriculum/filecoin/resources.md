@@ -7,7 +7,9 @@ menu:
         parent: "curriculum-filecoin"
 weight: 440
 category: lecture
-level: all
+level:
+- shallow
+- deep
 ---
 
 ## Resources & Contribution Channels

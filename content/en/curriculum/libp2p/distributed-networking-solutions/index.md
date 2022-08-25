@@ -7,7 +7,8 @@ menu:
         parent: "curriculum-libp2p"
 weight: 340
 category: lecture
-level: all
+level:
+- deep
 ---
 
 ## Circuit Relays

@@ -7,7 +7,9 @@ menu:
         parent: "curriculum-pln"
 weight: 20
 category: lecture
-level: all
+level:
+- shallow
+- deep
 ---
 
 #### The Protocol Labs Network in 2022 | Molly Mackinlay
