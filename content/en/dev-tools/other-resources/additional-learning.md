@@ -56,7 +56,6 @@ weight: 80
 
 <!-- Add Summary -->
 
-{% embed url="https://www.youtube.com/watch?v=FX_AXNDsZ9k" %}
 {{< youtube FX_AXNDsZ9k >}}
 
 
@@ -64,7 +63,6 @@ weight: 80
 
 <!-- Summary -->
 
-{% embed url="https://www.youtube.com/watch?v=9UjqJTCg_h4" %}
 {{< youtube 9UjqJTCg_h4 >}}
 
 
