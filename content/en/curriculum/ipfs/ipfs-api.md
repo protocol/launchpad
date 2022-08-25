@@ -18,10 +18,10 @@ You can access the IPFS API of your local node at `http://localhost:5001/api/v0/
 
 Although accessing the API directly through HTTP requests is a valid approach, there are tools available for the two main programming languages of the IPFS ecosystem: Go (Golang) and JavaScript.
 
-The main implementation of IPFS is https://github.com/ipfs/go-ipfs[Go-IPFS], which allows you to set up your node by spinning up a daemon application written in Go. At the same time, https://github.com/ipfs/js-ipfs[JS-IPFS] is an officially supported implementation of IPFS in JavaScript. You can take three approaches to use these implementations in your application.
+The main implementation of IPFS is [Go-IPFS](https://github.com/ipfs/go-ipfs), which allows you to set up your node by spinning up a daemon application written in Go. At the same time, [JS-IPFS](https://github.com/ipfs/js-ipfs) is an officially supported implementation of IPFS in JavaScript. You can take three approaches to use these implementations in your application.
 
 * **Embedded node:** if you want your application to spin up an IPFS node, then use `Go-IPFS` or `JS-IPFS`.
-* **Client:** if you already have a running IPFS node, then you can use a client written in Go or JS to communicate with the node. Use https://github.com/ipfs/go-ipfs-api[go-ipfs-api] for Go, and https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-http-client[js-ipfs-http-client] for JS.
+* **Client:** if you already have a running IPFS node, then you can use a client written in Go or JS to communicate with the node. Use [go-ipfs-api](https://github.com/ipfs/go-ipfs-api) for Go, and [js-ipfs-http-client](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-http-client) for JS.
 * **HTTP API:** send HTTP requests directly from your Go or JS application to interact with the node.
 
 Both `JS-IPFS` and `js-ipfs-http-client` work in the browser with some considerations noted in their READMEs.
@@ -128,7 +128,7 @@ The `Get` method expects two parameters: the CID of the file and the local path 
 * To publish your file to IPNS, you will need a public key.
 By default, when you install a local IPFS node, a public/private key pair called `self` is created. List your IPFS keys.
 
-```shell
+```bash
 > ipfs key list -l
 YOUR_PUBLIC_KEY      self
 ```
@@ -179,7 +179,7 @@ func resolveIPNS(sh *shell.Shell) (string, error) {
 
 * Verify that everything works together by running the Go application.
 
-```shell
+```bash
 > go run .
 Adding file to IPFS
 File added with CID: QmNsA8eUBSbpdCVHMLa8Py5TcNoZ1D9U5GkginqktrqNF1
