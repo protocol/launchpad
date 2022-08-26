@@ -7,7 +7,9 @@ menu:
         parent: "curriculum-filecoin"
 weight: 380
 category: lecture
-level: all
+level:
+- shallow
+- deep
 ---
 
 # Filecoin

@@ -7,7 +7,8 @@ menu:
         parent: "curriculum-libp2p"
 weight: 350
 category: lecture
-level: all
+level:
+- deep
 ---
 
 ### NAT Traversal & Hole Punching

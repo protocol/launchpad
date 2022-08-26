@@ -7,7 +7,8 @@ menu:
         parent: "curriculum-pln"
 weight: 60
 category: lecture
-level: all
+level:
+- deep
 ---
 
 ## The Projects

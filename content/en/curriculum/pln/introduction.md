@@ -7,22 +7,14 @@ menu:
         parent: "curriculum-pln"
 weight: 10
 category: lecture
-level: all
+level:
+- shallow
+- deep
 ---
 
 This section introduces Protocol Labs Network. Here you will find resources to learn about the goals and mission that unite us across organizations, the many teams and individuals that contribute to the new web3 primitives, protocols, and tools we're creating, and begin to learn about how we operate.
 
 ![Protocol Labs Logo](/images/ARCHIV-protocol-labs-logo-horizontal-alt-black.png)
-
-{{< level level="shallow" >}}
-
-probando
-
-algo
-
-y ya 
-
-{{< /level >}}
 
 In this section, you will:
 
