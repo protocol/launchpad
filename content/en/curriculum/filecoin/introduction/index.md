@@ -14,15 +14,19 @@ level:
 
 # Filecoin
 
-**Filecoin in the incentivation structure** for IPFS.
+Filecoin is an independent organization that was founded by, and now collaborates with Protocol Labs and the PLN, and is the token behind decentralized storage. Filecoin uses IPFS, libp2p, IPLD, and many other technologies to create protocols, tools, and services to help radically improve the and drive breakthroughs in computing.
 
-The mission of **Filecoin** is to create a decentralized, efficient, and robust foundation for humanity’s information.
+#### IPFS & Filecoin: The building blocks of an open, decentralized web | Ally Haire
 
-Filecoin is a peer-to-peer network that stores files, with built-in economic incentives to ensure files are stored reliably over time. In other words, Filecoin is a decentralized storage network that provides data persistence via a decentralized protocol, and publicly verifiable storage proofs on a blockchain.
+In this talk by DeveloperAlly, she gives a quick overview of the history of IPFS and Filecoin, information about the organizations today, and gives an intro about why Filecoin exists, how it's connected to IPFS, and (at 12:46) the basics of how it works to provide a decentralized and reliable storage system.
 
-![](intro.png)
+{{< youtube XZqhfE1mJ_k >}}
+</br>
+
 
 In Filecoin, users can pay to store their files on storage providers (They can also apply for to be verified clients and allocated DataCap, which incentivizes storage providers to store their data for free & reduced prices). Storage providers are computers responsible for storing files and proving they have stored the files correctly over time. Anyone who wants to store their files or get paid for storing other users’ files can join the Filecoin network.
+
+![](intro.png)
 
 Available storage, and the price of that storage, is not controlled by any single entity. Instead, Filecoin facilitates open markets for storing and retrieving files that anyone can participate in, and recieve FIL for their participation in the network.
 

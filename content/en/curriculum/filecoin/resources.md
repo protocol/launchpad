@@ -1,5 +1,5 @@
 ---
-title: "Filecoin Resources"
+title: "Resources & Quiz"
 description: "Resources and Reference for all Things Filecoin"
 draft: false
 menu:
@@ -11,8 +11,25 @@ level:
 - shallow
 - deep
 ---
+## Filecoin Quiz
+
+Take the [**Filecoin Quiz - Protocol Labs Launchpad**](https://docs.google.com/forms/d/e/1FAIpQLSe_GebiCQpNQnFrDuuIWd6gTNzlNrGa1If9MTkgHd0tIbH8cg/viewform?usp=sf\_link) after covering the pre-requisite content to gauge your understanding.
+
+{{< embed src="https://docs.google.com/forms/d/e/1FAIpQLSe_GebiCQpNQnFrDuuIWd6gTNzlNrGa1If9MTkgHd0tIbH8cg/viewform?usp=sf_link" width="100%" height="800px" >}}
 
 ## Resources & Contribution Channels
+
+## Blog Posts & Papers
+* [Filecoin Network Economics](https://filecoin.io/blog/posts/filecoin-network-economics/)
+* [Introducing the Filecoin Economy](https://filecoin.io/blog/posts/introducing-the-filecoin-economy/)
+
+![Filecon Economy Diagram](flow.png)
+
+### Cryptoeconomics Deep Dives (Optional)
+
+{{< youtube VvUhitKaYWY >}}
+
+{{< youtube O0SHgksn1AI >}}
 
 ### GitHub:
   * Primary venue for discussion, specs and docs: [https://github.com/](https://github.com/filecoin-project)
