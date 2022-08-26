@@ -65,7 +65,7 @@ In order to support the growth of the projects and tooling build on and around P
 
 ## The Protocol Labs Network
 
-The PL Network is made up of 300+ projects, companies, and organizations. You can explore a number of those organizations, and the people that work on them, in the WIP [PL Network Directory](https://airtable.com/shrqUt3aQvZLs0fx7/tblceMFkdHORmuzl4).
+The PL Network is made up of 300+ projects, companies, and organizations. You can explore a number of those organizations, and the people that work on them, in the WIP [PL Network Directory](https://www.plnetwork.io/).
 
 The [PL Spaceport](https://protocol.almanac.io/docs/protocol-labs-spaceport-sFKNLxQKYdQOZfLTL4kL9uVha4TdGlYh) has many links to resources for PL Network members, including:
 
