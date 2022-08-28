@@ -20,6 +20,9 @@ For most blockchain protocols, miners are incentivized to do work that record le
 
 The Filecoin network will have [multiple types of providers](https://docs.filecoin.io/storage-provider/how-providing-works/#types-of-provider).
 
+The **[Engineering Filecoin's Economy Paper)](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)** digs deep into how the Filecoin protocols are designed and behave, for those who want to deep dive into the token.
+
+
 ### Proofs and Sealing
 
 **Sealing** is the process of formatting and storing data in sectors on Filecoin.
@@ -57,17 +60,3 @@ Using a network of verifiers, those who are storing data can apply to have their
 In this video, Zixuan Zhang explains how filecoin mining is like Airbnb for the data on the internet. Get a better understanding of the industry, the economy, the storage services, power, Filecoin content delivery, and more.
 
 {{< youtube MbLyVt2rISQ >}}
-
-## Blog Posts & Papers
-* [Filecoin Network Economics](https://filecoin.io/blog/posts/filecoin-network-economics/)
-* [Introducing the Filecoin Economy](https://filecoin.io/blog/posts/introducing-the-filecoin-economy/)
-* [Engineering Filecoin's Economy (Paper)](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)
-
-![Filecon Economy Diagram](flow.png)
-
-
-### Cryptoeconomics Deep Dives (Optional)
-
-{{< youtube VvUhitKaYWY >}}
-
-{{< youtube O0SHgksn1AI >}}
