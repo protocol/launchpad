@@ -7,7 +7,7 @@
 
 [[main]]
   name = "Prerequisites"
-  url = "/prerequisites/introduction/"
+  url = "/prerequisites/objectives/"
   weight = 2000
   [main.params]
     identifier = "prerequisites"
