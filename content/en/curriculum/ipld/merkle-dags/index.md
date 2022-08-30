@@ -12,6 +12,22 @@ level:
 - deep
 ---
 
+Dags & Blocks
+
+{{< youtube video here>}}
+
+
+At a high level, the talk covered the following topics:
+
+* Merkle DAGs - Built from from the ground up, impossible to have circular references, and parents’ hashes are built from the hashes of its children nodes.
+
+* Block sizes - Blocks that are too big cause verification problems, transport problems, and less deduplication. 
+
+* Too small - Hashing takes longer, more requests for blocks, more hops to a piece of data. 
+
+* Just right - Depends on your use case, this will optimize for reading and writing in your scenario
+
+
 **DAG** is an acronym for **Directed Acyclic Graph**. This is a basic concept arising from graph theory and defines: any connected set of data where the connections go in only one direction ("directed") and the graph does not contain any cycles ("acyclic"). Ralph Merkle, formalised the hash tree pattern 1979 which specializes a form of DAG. Essentially:
 
 > Content being hashed may also contain hash digests of other content; therefore, any content "address" authenticates content "linked" via the inclusion of their digest in the tree below it
