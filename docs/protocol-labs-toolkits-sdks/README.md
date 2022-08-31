@@ -15,4 +15,4 @@ This section is a constant work in progress, and highlights just _some_ of the t
 * **[Fleek](fleek-space-daemon.md)**: For hosting and building DApps on web3
 * **[Fission](https://dev.to/fission/fission-on-the-ipfs-community-call-nof)**: SDK for web3-native apps to help you build web3 products & services
 * **[Web3.storage](web3-storage.md)**: A pinning service for Filecoin & IPFS storage
-* **[Piñata](pinata.md)**: A pinning service for individuals and creators
+* **[Piñata](https://www.pinata.cloud)**: A pinning service for individuals and creators
