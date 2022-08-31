@@ -51,6 +51,6 @@ Use Hugo to statically serve & preview files on your machine
 
 Content is located in `content/en/` and the directories in there will be one of the links along the top of the page.
 
-Edit the landing pages in `section-name/index.html` or section-name.md
+Edit the landing pages in `section-name/index.html` or `section-name.md`
 
 Edit Sidebar content in `config/_default/menus/menus.en.toml`
