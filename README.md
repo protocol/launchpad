@@ -41,7 +41,9 @@ Please work with the team to review and organize Launchpad Curriculum. In order 
 ## Hugo
 Use Hugo to statically serve & preview files on your machine
 
-* Install version 0.101.1 of Hugo with `brew install hugo`
+* Create a [fork of this repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo) or simply use `git clone git@github.com:protocol/launchpad.git`
+* Open the `/launchpad` folder where you cloned it 
+* Install version 0.101.1 + of Hugo with `brew install hugo`
 * Run `npm install` from the top level of the launchpad repository
 * Run `hugo server` to start hugo & preview this on `localhost:1313`
 
