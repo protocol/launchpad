@@ -8,7 +8,7 @@ There is a large set of tools that are being built on IPFS, IPLD, Libp2p and Fil
 
 This section is a constant work in progress, and highlights just _some_ of the tools being built on the Protocol Labs network that make it easier for you to use IPFS, IPLD, Filecoin, Libp2p, and more.
 
-* **[Textile](textile.md)**: A suite of developer tools, including Powergate, Buckets, and ThreadDB, and more
+* **[Textile](https://linktr.ee/textileio)**: A suite of developer tools, including Powergate, Buckets, and ThreadDB, and more
 * **[Ceramic](ceramic.md)**: Identity-based storage & indexing
 * **[Chainsafe](https://chainsafe.io/)**: Protocol engineering, research, and software teams
 * **[Estuary](https://docs.estuary.tech/tutorial-get-an-api-key)**: Public data storage tool for Filecoin & IPFS
