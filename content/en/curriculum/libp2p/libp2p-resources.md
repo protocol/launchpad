@@ -1,16 +1,23 @@
 ---
-title: "Libp2p Resources"
+title: "Quiz & Resources"
 description: "Explore beyond the curriculum"
 draft: false
 menu:
     curriculum:
         parent: "curriculum-libp2p"
+        identifier: "libp2p-resources"
 weight: 370
 category: lecture
 level:
 - shallow
 - deep
 ---
+
+## Libp2p Quiz
+
+Take the [**libp2p Quiz**](https://docs.google.com/forms/d/e/1FAIpQLSfAEZCeioMqvWe16zzH8du8ygi7rcgfqDbVHt8MVQbRq6iO4A/viewform?usp=sf_link) after covering the pre-requisite content to gauge your understanding.
+
+{{< embed src="https://docs.google.com/forms/d/e/1FAIpQLSfAEZCeioMqvWe16zzH8du8ygi7rcgfqDbVHt8MVQbRq6iO4A/viewform?usp=sf_link" width="100%" height="900px" >}}
 
 ### Main Resources
 
