@@ -4,7 +4,9 @@ We welcome contributions, but please read the Contributing section below.
 
 See the staging stite at: [https://empty-poetry-5978.on.fleek.co/](https://empty-poetry-5978.on.fleek.co/)
 
-**!Important** The default branch for this repository is **main** for the curriculum published on curriulum.pl-launchpad.io. The content published on Gitbook at https://protocol-labs.gitbook.io/launchpad-curriculum is configured & published from the **gitbook** branch.  
+The default branch for this repository is **main** for the curriculum published on: https://curriculum.pl-launchpad.io/. 
+
+**!Important** The content published on the now deprecated Gitbook at https://protocol-labs.gitbook.io/launchpad-curriculum is configured & published from the **gitbook** branch.  
 
 ## Contributing to the Launchpad Curriculum
 
