@@ -1,9 +1,9 @@
 ---
 title: "Ceramic"
-description: ""
+description: "Decentralized Identity Graph Network"
 draft: false
 menu:
-    resources:
+    devtools:
         parent: "resources-toolkits"
 weight: 30
 ---
