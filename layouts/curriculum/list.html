@@ -23,9 +23,9 @@
         <a href="{{ .Params.Section }}/introduction">
             <div class="curriculum-listing-card">
                 <div style="padding: 10px;">
-                    <div style="display: flex; margin-top: 12px; padding: 8px;">
+                    <div style="display: flex; margin-top: 12px; padding: 8px; align-items: center;">
                         <div>
-                            <img src="{{ .Params.Image }}" width="100" height="100"/>
+                            <img src="{{ .Params.Image }}" width="{{ .Params.Width }}" height="{{ .Params.Height }}"/>
                         </div>
                         <div style="margin-left: 10px;">
                             <h2>{{ .Name }}</h2>
