@@ -36,7 +36,7 @@ There are several functions that you will implement in this tutorial.
 The `main()` function manages the flow of the program by calling different helper functions.
 
 * In the `createSourceNode` function, create a libp2p node by using the `libp2p.New()` function.
-This method returns a [host.Host]() interface, which you can use to manage the node.
+This method returns a [host.Host](https://github.com/libp2p/go-libp2p/blob/master/core/host/host.go#L25) interface, which you can use to manage the node.
 
 ```go
 func createSourceNode() host.Host {
@@ -51,7 +51,7 @@ func createSourceNode() host.Host {
 
 By default, the node gets an ID and listens at a random TCP port.
 
-* Now, in the `createTargetNode` function, create a new node that listens at the `8007` TCP port. We can configure a node by passing several [Option]() structs to the `New(...)` method.
+* Now, in the `createTargetNode` function, create a new node that listens at the `8007` TCP port. We can configure a node by passing several [Option](https://github.com/libp2p/go-libp2p/blob/master/libp2p.go#L13) structs to the `New(...)` method.
 
 ```go
 func createTargetNode() host.Host {
@@ -71,7 +71,7 @@ func createTargetNode() host.Host {
 * So far, you have created two nodes; now, let's connect `sourceNode` to `targetNode`.
 The `host.Host` interface contains a `Connect` method that you can use.
 The `Connect` method expects a `peer.AddrInfo` struct, which is an abstraction that represents the _location_ of a peer.
-To create a `peer.AddrInfo` struct with the data of the node, you can use the `host.InfoFromHost` function.
+To create a `peer.AddrInfo` struct with the data of the node, you can use the [host.InfoFromHost](https://github.com/libp2p/go-libp2p/blob/master/core/host/helpers.go#L6) function.
 
 ```go
 func connectToTargetNode(sourceNode host.Host, targetNode host.Host) {
@@ -95,6 +95,7 @@ func countSourceNodePeers(sourceNode host.Host) int {
 * Now, test that the two nodes are connected by running the application.
 
 ```bash
+> go run .
 -- SOURCE NODE INFORMATION --
 ID: 12D3KooWCGcgrrrfDwzLmNeZ25543kYcewKxXzgDkGJGNXw1ZUf3
 Multiaddresses: /ip4/192.168.0.10/tcp/63678, /ip4/127.0.0.1/tcp/63678, /ip6/::1/tcp/63681
