@@ -5,6 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-filecoin"
+        identifier: "filecoin-objectives"
 weight: 375
 category: lecture
 level:
