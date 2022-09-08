@@ -10,6 +10,7 @@ category: tutorial
 level:
 - deep
 ---
+## Background
 
 When you run your IPFS node as a daemon, an HTTP RPC API is automatically exposed.
 Because every CLI command is available on the API, you can use this API to programmatically operate as if you were using the IPFS CLI. Note that the IPFS API is not a REST API; all endpoints are accessible by using the HTTP POST method.
@@ -37,6 +38,10 @@ By the end of the exercise, you should be able to:
 * Print the content of the file.
 * Download the file to your computer.
 * Add the file to IPNS.
+
+## Video: IPFS API Tutorial
+
+{{< youtube xxxxxxxx>}}
 
 ### Prerequisites
 
