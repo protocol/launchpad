@@ -64,9 +64,9 @@ Note that the `github.com/ipfs/go-ipfs-api` is set as a dependency, and the rest
 * Open the `app/main.go` file, which contains the code for this exercise.
 Notice that there are several not implemented methods, which you will complete throughout the exercise.
 
-* Review the `func main()` on line 35, which is the entry point of the application. This function calls the different functions that you will implement and handles their result for you.
+* Review the `func main()` (on ~ line 39), which is the entry point of the application. This function calls the different functions that you will implement and handles their result for you.
 
-<!-- This seems out of order, also isn't touched on in video, exclude? -->
+<!-- This seems out of order, also isn't touched on in video, exclude? I think it's confusing to put in any code that people aren't updating-->
 <!-- For example, the following snippet calls the `addFile` method. If an error is returned, then the program is terminated with the error message; if no error occurs, then the CID of the file is printed.
 
 ```go
@@ -88,7 +88,7 @@ sh := shell.NewShell("localhost:5001")
 
 The `NewShell` method returns a `*shell.Shell` object that exposes all the available methods to interact with the IPFS node.
 
-* Go back up to line 15, and add a file that contains the `Hello from Launchpad!` text to IPFS by putting `return sh.Add(strings.NewReader(text))` in the `addFile` function:
+* Go back up to ~ line 15, and add a file that contains the `Hello from Launchpad!` text to IPFS in the `addFile` function:
 
 ```go
 func addFile(sh *shell.Shell, text string) (string, error) {
@@ -101,7 +101,7 @@ If no errors have occurred, the CID of the added file is returned.
 
 ### Read a File Using the IPFS API
 
-* Next, you will read the content of the file by using the `Cat` method. Add in the following to the `readFile` function on line 19
+* Next, you will read the content of the file by using the `Cat` method. Add in the following to the `readFile` function (on ~ line 19):
 
 ```go
 func readFile(sh *shell.Shell, cid string) (*string, error) {
@@ -121,16 +121,13 @@ func readFile(sh *shell.Shell, cid string) (*string, error) {
 }
 ```
 
-The `readFile()` function retrieves data and put it in a buffer, convert it into a byte array, then convert that byte array into a string.
+The `readFile()` function retrieves data and puts it in a buffer, converts it into a byte array, then converts that byte array into a string.
 
-First, an IPFS [canonical path](https://docs.ipfs.io/how-to/address-ipfs-on-web/#turning-native-address-to-a-canonical-content-path) is passed to the `Cat` method.
-
-Next, the `Cat` method uses what is returned from the `io.ReadAll()` reader, converting it into bytes and then returning text.
-
+An IPFS [canonical path](https://docs.ipfs.io/how-to/address-ipfs-on-web/#turning-native-address-to-a-canonical-content-path) is passed to the `Cat` method. The `Cat` method returns a reader, so the `io.ReadAll` helper function is used to get the bytes of the file. Then, the bytes are cast into a string.
 
 ### Download a File Using the IPFS API
 
-* In the next function, you will download the file to your computer by using the `Get` method. in the `func downloadFile` return a file using the CID:
+* In the next `downloadFile` function, you will download the file to your computer by using the `Get` method from the [Shell struct](https://pkg.go.dev/github.com/ipfs/go-ipfs-api@v0.3.0?utm_source=gopls#Shell). The `func downloadFile` returns a file using the CID:
 
 ```go
 func downloadFile(sh *shell.Shell, cid string) error {
@@ -140,16 +137,18 @@ func downloadFile(sh *shell.Shell, cid string) error {
 
 The `Get` method expects two parameters: the CID of the file and the local path of your computer where the file will be downloaded.
 
-`YourLocalPath` is a constant defined at the beginning of the `main.go` file, where you should add the path on your local machine that you want the files downloaded to (at about line 10).
+`YourLocalPath = "~/Path/to/Directory"` is a constant defined at the beginning of the `main.go` file, where you should add the path on your local machine that you want the files downloaded to (at ~ line 13).
 
 ### Publish a File to IPNS Using the IPFS API
 
-* To publish your file to IPNS, you will need a public key.
-By default, when you install a local IPFS node, a public/private key pair called `self` is created. List your IPFS keys.
+To publish your file to IPNS, you will need a public key, since the IPNS record is signed with a public key, to verify that the mutable record that is being published is from the same source.
+
+By default, when you install a local IPFS node, a public/private key pair called `self` is created.
+* In a new terminal window, list your IPFS keys.
 
 ```bash
 > ipfs key list -l
-YOUR_PUBLIC_KEY      self
+<YOUR_PUBLIC_KEY>      self
 ```
 
 If you have not created any other key pair, only the `self` keypair should be listed.
@@ -162,7 +161,7 @@ Include your public key in the constant.
 const YourPublicKey = "k..."
 ```
 
-* Publish the file to IPNS by using the `PublishWithDetails` method.
+* Publish the file to IPNS by using the `PublishWithDetails` method in the `addTOIPNS` function that is there already:
 
 ```go
 func addToIPNS(sh *shell.Shell, cid string) error {
@@ -186,20 +185,27 @@ By default, 24 hours.
 5. `resolve`: check if the given path can be resolved before publishing.
 By default, `true`.
 
-In the previous snippet, the record is kept in IPNS for 50 hours and there is no cache.
+In the previous snippet, the record is kept in IPNS for 50 hours and there is no cache since the `ttl` variable is at 1 microsecond.
 
-* Use your public key to query IPNS. The result will be the CID of the file that you published.
+* Use your public key to query IPNS in the `resolveIPNS` function that is there. The result will be the CID of the file that you published.
 
 ```go
 func resolveIPNS(sh *shell.Shell) (string, error) {
     return sh.Resolve(YourPublicKey)
 }
 ```
-
-* Verify that everything works together by running the Go application.
+### Run your Program
+Verify that everything works together by running the Go application.
+* Change directory with `cd` into the `ipfs-go-client/app` directory
+* Make sure you have ipfs running (`ipfs daemon` in a separate terminal window) then:
 
 ```bash
 > go run .
+```
+
+You should see output like:
+
+```bash
 Adding file to IPFS
 File added with CID: QmNsA8eUBSbpdCVHMLa8Py5TcNoZ1D9U5GkginqktrqNF1
 
@@ -207,3 +213,5 @@ File added with CID: QmNsA8eUBSbpdCVHMLa8Py5TcNoZ1D9U5GkginqktrqNF1
 
 IPNS is pointing to: /ipfs/QmNsA8eUBSbpdCVHMLa8Py5TcNoZ1D9U5GkginqktrqNF1
 ```
+
+You can see an [example of the completed code here](https://github.com/protocol/launchpad-tutorials/blob/lindz/trying/ipfs-go-client/app/main.go)
