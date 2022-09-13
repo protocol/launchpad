@@ -14,6 +14,10 @@ _Example_
 In this talk by Steven & Dietrich, they review some of the customs and best practices involved when becoming a part of an open source community.
 
 {% embed url="https://youtu.be/GcvGc3pgOT8" %}
+
+OR
+
+{{< youtube XZqhfE1mJ_k >}}
 ```
 
 ## Embedding

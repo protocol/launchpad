@@ -1,5 +1,22 @@
-Gemfile.lock
-**/gemfile.lock
-*.DS_Store
- **/.DS_Store
-**/.gitbook/.DS_Store
+# HUGO #
+########
+node_modules
+public
+/resources
+.netlify
+.hugo_build.lock
+
+# OS GENERATED FILES #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
+# JetBrains #
+###############
+/.idea/

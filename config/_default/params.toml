@@ -1,0 +1,90 @@
+# Meta Data for SEO
+
+## Homepage
+title = "Launchpad"
+titleSeparator = "-"
+titleAddition = "Blast off into web3 with Launchpad!"
+description = "Launchpad is a hiring & onboarding program designed for accelerating technical growth in the Web3 space."
+
+## Documentation
+# docsVersion = "0.3"
+
+## Open Graph
+images = ["launchpad.png"]
+ogLocale = "en_US"
+domainTLD = "pl-launchpad.io"
+titleHome = "Launchpad"
+
+## Twitter Cards
+twitterSite = "@launchpad_pl"
+twitterCreator = "@launchpad_pl"
+
+## JSON-LD
+# schemaType = "Person"
+schemaType = "Organization"
+schemaName = "Launchpad"
+schemaAuthor = "Protocol Labs"
+schemaAuthorTwitter = "https://twitter.com/launchpad_pl"
+schemaAuthorLinkedIn = "https://www.linkedin.com/in//"
+schemaAuthorGitHub = "https://github.com/protocol/"
+schemaLocale = "en-US"
+schemaLogo = "logo-launchpad.png"
+schemaLogoWidth = 512
+schemaLogoHeight = 512
+schemaImage = "doks.png"
+schemaImageWidth = 1280
+schemaImageHeight = 640
+schemaTwitter = "https://twitter.com/launchpad_pl"
+schemaLinkedIn = ""
+schemaGitHub = "https://github.com/protocol/launchpad"
+schemaSection = "blog"
+
+## Sitelinks Search Box
+siteLinksSearchBox = false
+
+## Chrome Browser
+themeColor = "#fff"
+
+# Images
+quality = 85
+bgColor = "#fff"
+landscapePhotoWidths = [900, 800, 700, 600, 500]
+portraitPhotoWidths = [800, 700, 600, 500]
+lqipWidth = "20x"
+smallLimit = "300"
+
+# Footer
+footer = 'Made with &hearts; by Protocol Labs. <br /> The icons used are provided by <a href="https://flaticon.com">Flaticon</a>.'
+
+# Feed
+copyRight = "Copyright (c) Protocol Labs"
+
+# Alert
+alert = false
+alertDismissable = true
+alertText = ""
+
+# Edit Page
+# repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
+repoHost = "GitHub"
+docsRepo = "https://github.com/protocol/launchpad"
+docsRepoBranch = "main"
+docsRepoSubPath = ""
+editPage = false
+lastMod = false
+
+[options]
+  lazySizes = true
+  clipBoard = true
+  instantPage = true
+  flexSearch = true
+  darkMode = true
+  bootStrapJs = true
+  breadCrumb = false
+  highLight = true
+  kaTex = false
+  multilingualMode = false
+  docsVersioning = false
+  collapsibleSidebar = true
+  ignoreErrors = ["image-not-found"]
+
