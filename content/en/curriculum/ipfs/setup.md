@@ -84,11 +84,19 @@ In this tutorial, you can follow along to understand the basics of how you, as a
 
 {{< youtube EkQfoQprA8s >}}
 
-### Subtitle 1
+### See Your IPFS Peers (Swarm)
 
-### Subtitle 2
+### Read an IPFS File
 
-### Subtitle 3
+### Get and IPFS File with a CID
+
+### Add a File to your IPFS Node
+
+### List Pinned Files on your Node
+
+### Pin a File from the IPFS Network
+
+### List Specific File from a CID
 
 #### Resources
 * [Video Script](https://www.notion.so/protocollabs/Script-IPFS-Basics-Working-with-Files-in-IPFS-4102dc71f5dc4bf49b274bdfcee4c162)
