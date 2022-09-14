@@ -1,6 +1,6 @@
 ---
-title: "IPFS Setup & Basics (Tutorial)"
-description: "Deep Dive Tutorial – Setup & Access Files with the IPFS CLI"
+title: "IPFS Setup (Tutorial)"
+description: "Deep Dive Tutorial – Setup the IPFS CLI"
 draft: false
 menu:
     curriculum:
@@ -13,7 +13,7 @@ level:
 ---
 
 ## Background
-In these tutorials you can get started with installing go-ipfs (also known as kubo), and doing some basic things with the filesystems. These two video tutorials provide instructions for how to install and run commands with the IPFS API using a Unix-type shell & operating system.
+In this tutorial you can get started by installing go-ipfs (also known as kubo), and starting & stopping a node
 
 ## Prerequisites
 * The [latest version of Go (golang)](https://go.dev/doc/install)
@@ -74,31 +74,3 @@ Now that an instance had been created on your machine, you can start your IPFS n
 When the IPFS node is running, any information you have pinned to that node is available, and you are able to retrieve data from the public IPFS network without a gateway.
 
 You may, however want to stop your node from time to time, and you can do so by pressing `cntrl + c` twice in a row in the same terminal it's running in, or typing `killall ipfs` in another window.
-
-
-## Instructions – IPFS CLI Basics: Accessing Files
-
-In this tutorial, you can follow along to understand the basics of how you, as a user, can access file in the pubilc IPFS network. Follow along with the examples to learn about pinning and adding files, how files from IPFS can be previewed and inspected, and learn a bit about how that data is created and stored on IPFS.
-
-### Video – IPFS CLI Basics: Accessing Files
-
-{{< youtube EkQfoQprA8s >}}
-
-### See Your IPFS Peers (Swarm)
-
-### Read an IPFS File
-
-### Get and IPFS File with a CID
-
-### Add a File to your IPFS Node
-
-### List Pinned Files on your Node
-
-### Pin a File from the IPFS Network
-
-### List Specific File from a CID
-
-#### Resources
-* [Video Script](https://www.notion.so/protocollabs/Script-IPFS-Basics-Working-with-Files-in-IPFS-4102dc71f5dc4bf49b274bdfcee4c162)
-* [Docs](https://docs.ipfs.io/how-to/command-line-quick-start/#take-your-node-online)
-* Get a CID of a file by starting IPFS and visiting `localhost:5001/webui` in your browser, checking out _Explore_
