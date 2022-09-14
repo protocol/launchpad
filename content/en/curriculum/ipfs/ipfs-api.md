@@ -1,6 +1,6 @@
 ---
 title: "The IPFS API (Tutorial)"
-description: "IPFS API – Deep Dive Tutorial"
+description: "Building a Go Application with the IPFS API – Deep Dive Tutorial"
 draft: false
 menu:
     curriculum:
