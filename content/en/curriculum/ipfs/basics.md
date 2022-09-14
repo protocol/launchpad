@@ -1,5 +1,5 @@
 ---
-title: "IPFS Basics (Tutorial)"
+title: "IPFS CLI Basics (Tutorial)"
 description: "Deep Dive Tutorial – Access Files with the IPFS CLI"
 draft: false
 menu:
