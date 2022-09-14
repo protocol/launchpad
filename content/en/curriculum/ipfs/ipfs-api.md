@@ -10,6 +10,7 @@ category: tutorial
 level:
 - deep
 ---
+
 ## Background
 
 When you run your IPFS node as a daemon, an HTTP RPC API is automatically exposed.
@@ -19,7 +20,7 @@ You can access the IPFS API endpoint for your local node at `http://localhost:50
 
 Although accessing the API directly through HTTP requests is a valid approach, there are tools available for the two main programming languages of the IPFS ecosystem: Go (Golang) and JavaScript.
 
-The main implementation of IPFS is [kubo](hhttps://github.com/ipfs/kubo)(formerly go-ipfs), which allows you to set up your node by spinning up a daemon application written in Go. There is also the [JS-IPFS](https://github.com/ipfs/js-ipfs) is an officially supported implementation of IPFS in JavaScript. You can take three approaches to use these implementations in your application.
+The main implementation of IPFS is [kubo](https://github.com/ipfs/kubo)(formerly go-ipfs), which allows you to set up your node by spinning up a daemon application written in Go. [JS-IPFS](https://github.com/ipfs/js-ipfs) is an officially supported implementation of IPFS in JavaScript. You can take three approaches to use these implementations in your application.
 
 * **Embedded node:** if you want your application to spin up an IPFS node, then use `Go-IPFS` or `JS-IPFS`.
 * **Client:** if you already have a running IPFS node, then you can use a client written in Go or JS to communicate with the node. Use [go-ipfs-api](https://github.com/ipfs/go-ipfs-api) for Go, and [js-ipfs-http-client](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-http-client) for JS.
@@ -52,9 +53,7 @@ If you want to install multiple versions of Go, refer to [this page](https://go.
 * You must have an IPFS node running at the default `5001` port.
 Watch [this video](https://www.youtube.com/watch?v=A7yZaYhrwyM) to learn how to spin up an IPFS node.
 
-## Instructions
-
-### Add a File Using the IPFS API
+## Conding time!
 
 * In an editor, open the `ipfs-go-client` folder of the `launchpad-tutorials` repository.
 
@@ -64,21 +63,9 @@ Note that the `github.com/ipfs/go-ipfs-api` is set as a dependency, and the rest
 * Open the `app/main.go` file, which contains the code for this exercise.
 Notice that there are several not implemented methods, which you will complete throughout the exercise.
 
+### Review the "main" Function
+
 * Review the `func main()` (on ~ line 39), which is the entry point of the application. This function calls the different functions that you will implement and handles their result for you.
-
-<!-- This seems out of order, also isn't touched on in video, exclude? I think it's confusing to put in any code that people aren't updating-->
-<!-- For example, the following snippet calls the `addFile` method. If an error is returned, then the program is terminated with the error message; if no error occurs, then the CID of the file is printed.
-
-```go
-// 1. Add the "Hello from Launchpad!" text to IPFS
-fmt.Println("Adding file to IPFS")
-cid, err := addFile(sh, "Hello from Launchpad!")
-if err != nil {
-	fmt.Println("Error adding file to IPFS:", err.Error())
-	return
-}
-fmt.Println("File added with CID:", cid)
-``` -->
 
 * A connection to the node is created by providing the location of the node's API (the default port 5001).
 
@@ -87,6 +74,8 @@ sh := shell.NewShell("localhost:5001")
 ```
 
 The `NewShell` method returns a `*shell.Shell` object that exposes all the available methods to interact with the IPFS node.
+
+### Add a File Using the IPFS API
 
 * Go back up to ~ line 15, and add a file that contains the `Hello from Launchpad!` text to IPFS in the `addFile` function:
 
@@ -127,7 +116,7 @@ An IPFS [canonical path](https://docs.ipfs.io/how-to/address-ipfs-on-web/#turnin
 
 ### Download a File Using the IPFS API
 
-* In the next `downloadFile` function, you will download the file to your computer by using the `Get` method from the [Shell struct](https://pkg.go.dev/github.com/ipfs/go-ipfs-api@v0.3.0?utm_source=gopls#Shell). The `func downloadFile` returns a file using the CID:
+* In the next function, `downloadFile`, you will download the file to your computer by using the [Get method](https://github.com/ipfs/go-ipfs-api/blob/master/shell.go#L386) from the [Shell struct](https://github.com/ipfs/go-ipfs-api/blob/master/shell.go#L36). The `func downloadFile` returns a file using the CID:
 
 ```go
 func downloadFile(sh *shell.Shell, cid string) error {
@@ -141,9 +130,10 @@ The `Get` method expects two parameters: the CID of the file and the local path 
 
 ### Publish a File to IPNS Using the IPFS API
 
-To publish your file to IPNS, you will need a public key, since the IPNS record is signed with a public key, to verify that the mutable record that is being published is from the same source.
+To publish your file to IPNS you will need a public/private key pair, which is used as a _pointer_ to a CID. You can read more about IPNS [in the documentation](https://docs.ipfs.tech/concepts/ipns/).
 
 By default, when you install a local IPFS node, a public/private key pair called `self` is created.
+
 * In a new terminal window, list your IPFS keys.
 
 ```bash
@@ -161,7 +151,7 @@ Include your public key in the constant.
 const YourPublicKey = "k..."
 ```
 
-* Publish the file to IPNS by using the `PublishWithDetails` method in the `addTOIPNS` function that is there already:
+* Publish the file to IPNS by using the `PublishWithDetails` method in the `addToIPNS` function that is there already:
 
 ```go
 func addToIPNS(sh *shell.Shell, cid string) error {
@@ -187,6 +177,8 @@ By default, `true`.
 
 In the previous snippet, the record is kept in IPNS for 50 hours and there is no cache since the `ttl` variable is at 1 microsecond.
 
+### Retrieve an IPNS Record Using the IPFS API
+
 * Use your public key to query IPNS in the `resolveIPNS` function that is there. The result will be the CID of the file that you published.
 
 ```go
@@ -194,6 +186,7 @@ func resolveIPNS(sh *shell.Shell) (string, error) {
     return sh.Resolve(YourPublicKey)
 }
 ```
+
 ### Run your Program
 Verify that everything works together by running the Go application.
 * Change directory with `cd` into the `ipfs-go-client/app` directory
@@ -214,4 +207,4 @@ File added with CID: QmNsA8eUBSbpdCVHMLa8Py5TcNoZ1D9U5GkginqktrqNF1
 IPNS is pointing to: /ipfs/QmNsA8eUBSbpdCVHMLa8Py5TcNoZ1D9U5GkginqktrqNF1
 ```
 
-You can see an [example of the completed code here](https://github.com/protocol/launchpad-tutorials/blob/lindz/trying/ipfs-go-client/app/main.go)
+You can see an [example of the completed code here](https://github.com/protocol/launchpad-tutorials/blob/main/ipfs-go-client/solution/main.go)
