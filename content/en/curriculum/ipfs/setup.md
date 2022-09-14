@@ -1,3 +1,4 @@
+---
 title: "IPFS Setup & Basics (Tutorial)"
 description: "Deep Dive Tutorial – Setup & Access Files with the IPFS CLI"
 draft: false
@@ -12,7 +13,7 @@ level:
 ---
 
 ### Background
-In these tutorials you can get started with installing go-ipfs (also known as kubo), and doing some basic things with the filesystems.
+In these tutorials you can get started with installing go-ipfs (also known as kubo), and doing some basic things with the filesystems. These two video tutorials provide instructions for how to install and run commands with the IPFS API using a Unix-type shell & operating system.
 
 ### Prerequisites
 * A shell where you can run Unix command either on a Mac, or Unix machine, or Windows [Powershell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2)
@@ -29,10 +30,10 @@ This video is the basic setup for ipfs-go on a linux machine, using [wget](https
 
 {{< youtube A7yZaYhrwyM >}}
 
-### Instructions – IPFS Basics: Accessing Files
+### Instructions – IPFS CLI Basics: Accessing Files
 In this tutorial, you can follow along to understand the basics of how you, as a user, can access, add, and pin files in IPFS.  Follow along with the examples to learn about pinning and adding files, how files from IPFS can be previewed and inspected, and learn a bit about how that data is created and stored on IPFS.
 
-#### Video – IPFS Basics: Accessing Files
+#### Video – IPFS CLI Basics: Accessing Files
 
 {{< youtube EkQfoQprA8s >}}
 
