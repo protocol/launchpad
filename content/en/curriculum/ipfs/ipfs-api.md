@@ -53,7 +53,7 @@ If you want to install multiple versions of Go, refer to [this page](https://go.
 * You must have an IPFS node running at the default `5001` port.
 Watch [this video](https://www.youtube.com/watch?v=A7yZaYhrwyM) to learn how to spin up an IPFS node.
 
-## Conding time!
+## Instructions
 
 * In an editor, open the `ipfs-go-client` folder of the `launchpad-tutorials` repository.
 
