@@ -1,10 +1,11 @@
 ---
-title: "IPLD Resources"
+title: "Quiz & Resources"
 description: "Explore beyond the curriculum"
 draft: false
 menu:
     curriculum:
         parent: "curriculum-ipld"
+        identifier: "ipld-resources"
 weight: 280
 category: lecture
 level:
