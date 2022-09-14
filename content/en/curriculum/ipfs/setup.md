@@ -1,5 +1,5 @@
 ---
-title: "IPFS Setup (Tutorial)"
+title: "IPFS CLI Setup (Tutorial)"
 description: "Deep Dive Tutorial – Setup the IPFS CLI"
 draft: false
 menu:
@@ -23,7 +23,7 @@ In this tutorial you can get started by installing go-ipfs (also known as kubo),
 * IPFS Docs' [installation instructions](https://docs.ipfs.io/install/command-line/#system-requirements)
 
 
-## Instructions – Getting Started with IPFS
+## Instructions
 
 ### Video – Getting Started with IPFS
 This video is the basic setup for ipfs-go on a linux machine, using [wget](https://www.tecmint.com/install-wget-in-linux/) to grab the resources. You will also `ipfs init` a node and get it running with `ipfs daemon`.
