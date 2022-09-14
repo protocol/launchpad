@@ -42,7 +42,7 @@ By the end of the exercise, you should be able to:
 
 ## Video: IPFS API Tutorial
 
-{{< youtube xxxxxxxx>}}
+{{< youtube Ga9gfoZSm0Y>}}
 
 ### Prerequisites
 
