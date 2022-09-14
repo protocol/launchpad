@@ -12,10 +12,6 @@ level:
 - deep
 ---
 
-[IPLD (InterPlanetary Linked Data) is **The Data Layer for content-addressed systems**](https://blog.ipfs.io/what-is-ipld/). It deals with all the heavy lifting in IPFS; it represents data as Merkle-DAGs with roots identified by content IDs called **CIDs**.
-
-![](ipld-summary.png)
-
 ## Why IPLD?
 
 IPLD answers the question: Can we extract a re-usable data layer from IPFS that can be used to build other types of content-addressed data systems?
@@ -39,16 +35,6 @@ Treating the data layer as a discrete system provides leverage to content addres
 1. How can we scale the size and complexity of the data that we share peer to peer?
 2. Can we unify disparate content addressed formats and link between them? Git, blockchains, IPFS, etc.
 3. Can we build distributed data structures that we can interact with like we do with hosted databases, while taking advantage of the benefits of content addressing?
-
-## How is IPLD related to IPFS?
-
-IPLD is the data layer of IPFS. But the reverse is also true because IPFS is _a_ block store for IPLD.
-
-IPLD deals with data consistency, data addressing, data relationships (graphs), content addressed data structures, data navigation and more.
-
-IPLD is generally not concerned about data storage or transports (with some caveats).
-
-IPLD does not limit itself to peer to peer systems (Amazon S3 can be a perfectly reasonable IPLD block storage system!), but in general we think peer to peer is preferable!
 
 ### [**ResNetLab: Course Module - InterPlanetary Linked Data (IPLD)**](https://research.protocol.ai/tutorials/resnetlab-on-tour/ipld/)
 
