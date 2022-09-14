@@ -1,9 +1,5 @@
----
-<<<<<<< HEAD:docs/ipfs/setup.md
-description: Deep Dive Tutorial – Setup & Access Files on IPFS
-=======
-title: "IPFS Setup (Tutorial)"
-description: "Deep Dive Tutorial – Setup & Access Files with IPFS"
+title: "IPFS Setup & Basics (Tutorial)"
+description: "Deep Dive Tutorial – Setup & Access Files with the IPFS CLI"
 draft: false
 menu:
     curriculum:
@@ -13,64 +9,30 @@ category: tutorial
 level:
 - shallow
 - deep
->>>>>>> main:content/en/curriculum/ipfs/setup.md
 ---
 
-### The Basics
+### Background
 In these tutorials you can get started with installing go-ipfs (also known as kubo), and doing some basic things with the filesystems.
 
-### Getting Started with IPFS
-This video is the basic setup for ipfs-go on a [linux VM](https://multipass.run/), using [wget](https://www.tecmint.com/install-wget-in-linux/) to grab the resources. You will also `ipfs init` a node and get it running with `ipfs daemon`.
-
-<<<<<<< HEAD:docs/ipfs/setup.md
-The examples in this exercise are done on a Linux machine, however the process is similar for other operating systems
-
-{% embed url="https://youtu.be/A7yZaYhrwyM" %}
-=======
-{{< youtube A7yZaYhrwyM >}}
->>>>>>> main:content/en/curriculum/ipfs/setup.md
-
-#### Download the IPFS Binary
-The first thing you will need to do is [go to the IPFS documentation](https://docs.ipfs.io/install/command-line/#official-distributions) and download the latest distribution for your operating system using `wget` or `curl` command, from the most [recent IPFS distribution](https://dist.ipfs.io/#go-ipfs) for your operating system.
-
-To install IPFS on Linux, use the command:
-
-```shell
-wget https://dist.ipfs.io/go-ipfs/<version>/<package>
-```
-
-### Extract and Install IPFS
-Once you have the correct biary installed for your opearting system installed, you can extract the compressed package:
-
-```shell
-tar -xvzf <package name>
-```
-
-Next, install is on your machine using the script provided in the package:
-
-```shell
-bash install.sh
-```
-
-Check to make sure that you have sucessfully installed IPFS by checking the most recent version:
-
-```shell
-ipfs --version
-```
-<!-- Q. When you ran the command to check the IPFS version, did you get a confirmation that you had the most recent version of IPFS?
-a. Yes (Correct)
-b. No -->
-
-### Start and Stop an IPFS Node
-
-
-#### Resources
+### Prerequisites
+* A shell where you can run Unix command either on a Mac, or Unix machine, or Windows [Powershell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2)
+  * Optional: [a Linux VM like Multipass](https://multipass.run/)
+* [wget](https://www.tecmint.com/install-wget-in-linux/)
 * [Installation Instructions](https://docs.ipfs.io/install/command-line/#system-requirements)
-* When you run `ipfs daemon`, if you get the error: `lock <path>/.ipfs/repo.lock: someone else has the lock`, run the command `killall ipfs` and try again
+>  When you run `ipfs daemon`, if you get the error: `lock <path>/.ipfs/repo.lock: someone else has the lock`, run the command `killall ipfs` and try again
+
+### Instructions – Getting Started with IPFS
 
 
-#### IPFS Basics: Accessing Files
+#### Video – Getting Started with IPFS
+This video is the basic setup for ipfs-go on a linux machine, using [wget](https://www.tecmint.com/install-wget-in-linux/) to grab the resources. You will also `ipfs init` a node and get it running with `ipfs daemon`.
+
+{{< youtube A7yZaYhrwyM >}}
+
+### Instructions – IPFS Basics: Accessing Files
 In this tutorial, you can follow along to understand the basics of how you, as a user, can access, add, and pin files in IPFS.  Follow along with the examples to learn about pinning and adding files, how files from IPFS can be previewed and inspected, and learn a bit about how that data is created and stored on IPFS.
+
+#### Video – IPFS Basics: Accessing Files
 
 {{< youtube EkQfoQprA8s >}}
 
@@ -78,8 +40,3 @@ In this tutorial, you can follow along to understand the basics of how you, as a
 * [Video Script](https://www.notion.so/protocollabs/Script-IPFS-Basics-Working-with-Files-in-IPFS-4102dc71f5dc4bf49b274bdfcee4c162)
 * [Docs](https://docs.ipfs.io/how-to/command-line-quick-start/#take-your-node-online)
 * Get a CID of a file by starting IPFS and visiting `localhost:5001/webui` in your browser, checking out _Explore_
-
-
-**Links**
-
-**IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs) - **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld) - **libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p) - **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)
