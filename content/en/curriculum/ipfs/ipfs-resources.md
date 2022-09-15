@@ -1,5 +1,5 @@
 ---
-title: "IPFS Resources"
+title: "Quiz & Resources"
 description: "Explore beyond the curriculum"
 draft: false
 menu:
@@ -11,6 +11,11 @@ level:
 - shallow
 - deep
 ---
+## IPFS Quiz
+
+Take the [**IPFS Quiz**](https://docs.google.com/forms/d/e/1FAIpQLSdtSvO0dCquXDs_Fr5t53wjiS3WIib-nro6gK3oI6S8pri7DQ/viewform?usp=sf_link) after covering the pre-requisite content to gauge your understanding.
+
+{{< embed src="https://docs.google.com/forms/d/e/1FAIpQLSdtSvO0dCquXDs_Fr5t53wjiS3WIib-nro6gK3oI6S8pri7DQ/viewform?usp=sf_link" width="100%" height="900px" >}}
 
 ## Discuss IPFS
 * IPFS [Discussion Forum](https://discuss.ipfs.io/)

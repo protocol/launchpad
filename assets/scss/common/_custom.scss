@@ -84,7 +84,7 @@
 
 .nav a:hover{
     text-decoration: underline;
-    color: white !important; 
+    color: white !important;
 }
 
 .nav-link.lp.active {
@@ -92,17 +92,29 @@
     text-decoration: underline;
 }
 
-
 [data-dark-mode] body .offcanvas .nav-link.active {
     color: white;
     text-decoration: underline;
 }
 
-.nav-item a {
-    color: red;
-}
-.nav-item a:hover {
-    color: red;
+@media (max-width: 767px) {
+    .nav-link.lp{
+        color: black;
+    }
+    
+    .nav-link.lp a:hover{
+        color: black !important;
+    }
+    
+    .nav a:hover{
+        text-decoration: underline;
+        color: black !important;
+    }
+    
+    .nav-link.lp.active {
+        color: black;
+        text-decoration: underline;
+    }
 }
 
 /* SINGLE PAGE - Content level selection */
