@@ -1,16 +1,22 @@
 ---
-title: "IPLD Resources"
+title: "Quiz & Resources"
 description: "Explore beyond the curriculum"
 draft: false
 menu:
     curriculum:
         parent: "curriculum-ipld"
+        identifier: "ipld-resources"
 weight: 280
 category: lecture
 level:
 - shallow
 - deep
 ---
+## IPLD Quiz
+
+Take the [**IPLD Quiz**](https://docs.google.com/forms/d/e/1FAIpQLSfmAxAX_NV0AZgKxVDRHGxcOiFpEB6qhjeQc5-gSUWaWg0ajw/viewform?usp=sf_link) after covering the pre-requisite content to gauge your understanding.
+
+{{< embed src="https://docs.google.com/forms/d/e/1FAIpQLSfmAxAX_NV0AZgKxVDRHGxcOiFpEB6qhjeQc5-gSUWaWg0ajw/viewform?usp=sf_link" width="100%" height="900px" >}}
 
 ## Further Reading / Watching
 
