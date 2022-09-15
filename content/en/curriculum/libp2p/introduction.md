@@ -12,18 +12,6 @@ level:
 - deep
 ---
 
-
-<<<<<<< HEAD:docs/libp2p/README.md
-Moving from a location-addressed system to a peer-to-peer, content addressed system presents a lot of challenges. The internet as it is, with firewalls and NATs, was designed to provide data (securely) for the traditional Web2 systems.
-
-libp2p is a modular system of *protocols*, *specifications* and *libraries* that enable the development of peer-to-peer network applications. Because of the way libp2p is architected, a lot of the needs and considerations that the web2 network was built on no longer apply.
-
-**[See the Implementations and Bundles](https://libp2p.io/implementations/)** for all of the libraries of modules you can use and bundles for different use cases available in various languages.
-
-![](<../../.gitbook/assets/image (10).png>)
-
-=======
->>>>>>> main:content/en/curriculum/libp2p/introduction.md
 Building large scale peer-to-peer systems has presented many complex difficulties, and libp2p is a way to fix that. The libp2p projects makes it possible for a [peer-to-peer](https://docs.libp2p.io/introduction/what-is-libp2p/#peer-to-peer-basics) applications to operate in an [interface that supports many Internet protocols](https://docs.libp2p.io/introduction/what-is-libp2p/#transport), with [secure identities](https://docs.libp2p.io/introduction/what-is-libp2p/#identity), [peer routing](https://docs.libp2p.io/introduction/what-is-libp2p/#peer-routing), and [content discovery](https://docs.libp2p.io/introduction/what-is-libp2p/#content-discovery).
 
 ### The libp2p Roadmap
