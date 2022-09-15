@@ -12,7 +12,7 @@ level:
 - deep
 ---
 
-Dags & Blocks
+### DAGs & Blocks | IPFS Camp 2019 - Mikeal Rogers 
 
 #### Merkle DAGs | IPFS Camp 2019
 
