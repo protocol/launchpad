@@ -33,7 +33,7 @@ In this tutorial, you can follow along to understand the basics of how you, as a
 ### Start and Stop an IPFS Node
 In the previous tutorial, you learned how to start and stop and IPFS node in the command line.
 
-* Run `ipfs daemon` in the CLI to start your new node.
+* Run `ipfs daemon` in the CLI to start your new node
 
 >  When you run `ipfs daemon`, if you get the error: `lock <path>/.ipfs/repo.lock: someone else has the lock`, it means there is another instance running on your machine. Use the command `killall ipfs` and try again
 
@@ -59,10 +59,10 @@ You should see a list of peers:
 ...
 ```
 
-> you can example peers by running `ipfs id <CID>`
+> you can examine peers by running `ipfs id <CID>`
 
 ### Read an IPFS File
-You can explore file on IPFS with the CLI tool as well. You can do this by [installing IPFS Desktop] or by using the URL for the web user interface (WebUI) at [http://127.0.0.1:5001/webui](http://127.0.0.1:5001/webui) which you should have seen when you ran `ipfs init`
+You can explore file on IPFS with the CLI tool as well. You can do this by [installing IPFS Desktop](https://docs.ipfs.tech/install/ipfs-desktop/) or by using the URL for the web user interface (WebUI) at [http://127.0.0.1:5001/webui](http://127.0.0.1:5001/webui) which you should have seen when you ran `ipfs init`
 
 ```
 ➜  ~ ipfs daemon
@@ -85,7 +85,7 @@ Daemon is ready
 
 Grab the CID of a file on IPFS and use it to read that file in the CLI (ideally a text file).
 
-* Run `ipfs cat <CID>` to read that file.
+* Run `ipfs cat <CID>` to read that file
 
 ### Download an IPFS File with a CID
 To grab a file (you can find it on IPFS Desktop or the WebUI) from the public IPFS network and store it on your local machine:
@@ -103,18 +103,39 @@ Examine the file (ideally a text file) using vim:
 
 ```
 
-> Take a minute to explore a file in IPFS Desktop, or in the WebUI to see what it contains. ![Webui](ipfs-webui.png)
+> Take a minute to explore a file in IPFS Desktop, or the [WebUI](http://127.0.0.1:5001/webui) to see different file on IPFS, and their structure. ![Webui](ipfs-webui.png)
 
 ### Add a File to your IPFS Node
-
+You can also take files shared on your local machine to your IPFS node, which is known as **pinning**. Simply use the command `ipfs add directory/filename.extension`. Make sure you have the correct path to the file from where you are working in the terminal.
 
 ### List Pinned Files on your Node
+Once you have started pinning files on your node, you can use the CLI to list them as well. You can [choose the type](https://docs.ipfs.tech/reference/kubo/cli/#ipfs-pin-ls) of files listed, as well as how it is output in the CLI.
 
-### Pin a File from the IPFS Network
+* List the files on your node with `ipfs pin ls --type=all`
 
-### List Specific Files from a CID
+### Inspect a DAG
+Now that you understand how the IPFS CLI works, take a minute to explore how data on IPFS is split up. Visit the [IPFS DAG Inspector at dag.ipfs.tech](https://dag.ipfs.tech/), and drop a file from your local machine (any folder, any file) and see how it is broken up into UnixFS leaves.
+
+### Pin a File to your Node
+You have already downloaded data from IPFS, added data to IPFS from your local machine, however, there is one more way you can share and store files. You can do this by **pinning** files from another node. What this does is make the file available to the public IPFS network, without having to download the file to your local directory/ system.
+
+When you pin a file, it only exists as a part of your IPFS node, and is not a part of other filesystems on your computer. First, use the [WebUI](http://127.0.0.1:5001/webui) or IPFS Desktop to locate the CID of a file on the network.
+
+* Pin a file from the IPFS network to your local node with the command `ipfs pin add <CID>`
+
+Now if you run the command with `ipfs pin ls --type=all` you should see the CID of the file you just pinned in the list.
+
+### List a Types of Pinned Files
+When you pin files, this can be done in different ways. There are **direct pins**, which pin just a single block and no others in relation to it. **Recursive pins** pin a given block and all of its children. **Indirect pins** are the result of a given block's parent being pinned recursively.  
+
+You can [list the hashes of all the links an IPFS or IPNS object contains:](https://docs.ipfs.tech/reference/kubo/cli/#ipfs-refs)
+
+* Use the command `ipfs refs -r <CID>` to see all the CIDs of objects that were recursively pinned from that object.
 
 #### Resources
+There are many additional tutorials and resources in the [IPFS Docs you can use to explore the IPFS CLI](https://docs.ipfs.tech/how-to/).
+
+**Additional Resources**
 * [Video Script](https://www.notion.so/protocollabs/Script-IPFS-Basics-Working-with-Files-in-IPFS-4102dc71f5dc4bf49b274bdfcee4c162)
 * [Docs](https://docs.ipfs.io/how-to/command-line-quick-start/#take-your-node-online)
 * Get a CID of a file by starting IPFS and visiting `localhost:5001/webui` in your browser, then checking out the _Explore_ section.
