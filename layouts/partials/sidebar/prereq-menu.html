@@ -14,7 +14,7 @@
         {{ range .Children -}}
           {{- $active := or ($currentPage.IsMenuCurrent "prereq" .) ($currentPage.HasMenuCurrent "prereq" .) -}}
           {{- $active = or $active (eq $currentPage.Section .Identifier) -}}
-          <li style="display: flex; align-items: center;" data-content-level="{{ .Page.Params.level }}">
+          <li style="display: flex; align-items: center;">
             <img src="/icons/prereq.png" width="20" height="20" />
             <a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}" style="margin-left: 0.4rem">{{ .Name }}</a>
           </li>

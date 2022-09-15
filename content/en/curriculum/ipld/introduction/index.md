@@ -16,6 +16,7 @@ level:
 
 ![](ipld-summary.png)
 
+
 ## Why IPLD?
 
 IPLD answers the question: Can we extract a re-usable data layer from IPFS that can be used to build other types of content-addressed data systems?
