@@ -148,7 +148,6 @@ Protocol Labs is a W3C Member. Current focus is to watch, learn, and participate
 
 #### IPFS and Igalia collaborate on dweb in browsers
 
-<<<<<<< HEAD:docs/ipfs/ipfs-gateways.md
 In 2020 IPFS and Igalia started a collaboration that continues to this day.
 =======
 In 2020 IPFS and [Igalia](https://www.igalia.com/) started a collaboration that continues to this day.
