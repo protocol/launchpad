@@ -14,13 +14,8 @@ level:
 
 [IPLD (InterPlanetary Linked Data) is **The Data Layer for content-addressed systems**](https://blog.ipfs.io/what-is-ipld/). It deals with all the heavy lifting in IPFS; it represents data as Merkle-DAGs with roots identified by content IDs called **CIDs**.
 
-<<<<<<< HEAD:docs/ipld/README.md
-[IPLD (InterPlanetary Linked Data) is **The Data Layer for content-addressed systems**](https://blog.ipfs.io/what-is-ipld/). It deals with all the heavy lifting in IPFS; it represents data as Merkle-DAGs with roots identified by content IDs called **CIDs**.
-
-![](<../../.gitbook/assets/ipld (1).png>)
-=======
 ![](ipld-summary.png)
->>>>>>> main:content/en/curriculum/ipld/introduction/index.md
+
 
 ## Why IPLD?
 
