@@ -50,8 +50,4 @@ The index at the end of the format provides information about what blocks are st
 
 #### Further Reading
 
-<<<<<<< HEAD:docs/ipld/the-car-format.md
 The CARv1 and CARv2 specifications, including specifications for CARv2 index formats, can be found on the IPLD specifications site: [ipld.io/specs/transport/car](https://ipld.io/specs/transport/car/)
-=======
-The CARv1 and CARv2 specifications, including specifications for CARv2 index formats, can be found on the IPLD specifications site: [ipld.io/specs/transport/car](https://ipld.io/specs/transport/car/)
->>>>>>> main:content/en/curriculum/ipld/the-car-format/index.md
