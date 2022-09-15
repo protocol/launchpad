@@ -42,7 +42,7 @@ Before you can run the ipfs daemon, you have to initialize and instance of IPFS 
 
 * Run `ipfs init` in the CLI
 
-In the folder where you have initialized your node, you should be able to see a config file which has data about your node. Run the command to list the directories as a long list (`-l`) where hidden (`-a`) files aren't ignored
+In the folder where you have initialized your node, you should be able to see a config file called `.ipfs`, which has data about your node. Run the command to list the directories as a long list (`-l`) where hidden (`-a`) files aren't ignored
 
 ```
 ls -la
