@@ -41,11 +41,7 @@ In the previous tutorial, you learned how to start and stop and IPFS node in the
 
 * You can stop your node by pressing `cntrl + c` twice in a row in the same terminal it's running in, or typing `killall ipfs` in another window.
 
-<<<<<<< HEAD
 ### See your IPFS Peers (Swarm)
-=======
-### See Your IPFS Peers (Swarm)
->>>>>>> main
 
 ### Read an IPFS File
 
@@ -57,17 +53,9 @@ In the previous tutorial, you learned how to start and stop and IPFS node in the
 
 ### Pin a File from the IPFS Network
 
-<<<<<<< HEAD
 ### List Specific Files from a CID
-=======
-### List Specific File from a CID
->>>>>>> main
 
 #### Resources
 * [Video Script](https://www.notion.so/protocollabs/Script-IPFS-Basics-Working-with-Files-in-IPFS-4102dc71f5dc4bf49b274bdfcee4c162)
 * [Docs](https://docs.ipfs.io/how-to/command-line-quick-start/#take-your-node-online)
-<<<<<<< HEAD
 * Get a CID of a file by starting IPFS and visiting `localhost:5001/webui` in your browser, then checking out the _Explore_ section.
-=======
-* Get a CID of a file by starting IPFS and visiting `localhost:5001/webui` in your browser, checking out _Explore_
->>>>>>> main
