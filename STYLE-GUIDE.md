@@ -111,6 +111,6 @@ To tag a section of a page, use the `level` shortcode. For example, the followin
 
 ```
 {{% level type="[deep]" %}}
-Text for shallow residents
+Text for deep residents
 {{% /level %}}
 ```
