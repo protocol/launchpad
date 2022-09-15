@@ -26,7 +26,7 @@ In this tutorial you can get started by installing go-ipfs (also known as kubo),
 ## Instructions
 
 ### Video – Getting Started with IPFS
-This video is the basic setup for ipfs-go on a linux machine, using [wget](https://www.tecmint.com/install-wget-in-linux/) to grab the resources. You will also `ipfs init` a node and get it running with `ipfs daemon`.
+This video is the basic setup for [kubo](https://github.com/ipfs/kubo) on a linux machine, using [wget](https://www.tecmint.com/install-wget-in-linux/) to grab the resources. You will also `ipfs init` a node and get it running with `ipfs daemon`.
 
 {{< youtube A7yZaYhrwyM >}}
 
