@@ -18,12 +18,11 @@ In this tutorial you can do some basic things with the public IPFS filesystem. T
 ## Prerequisites
 * The [latest version of Go (golang)](https://go.dev/doc/install)
 * A shell where you can run Unix-type commands either on a Mac, or (Li)Unix machine, or Windows [Powershell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2)
-  * Optional: [a Linux VM like Multipass](https://multipass.run/)
-* Install [wget](https://www.tecmint.com/install-wget-in-linux/) on the operating system (OS) you are using
+* IPFS [installed on the OS](https://docs.ipfs.tech/install/ipfs-desktop/#install-instructions) your are using
 * IPFS Docs' [kubo (go-ipfs) Command-line commands](https://docs.ipfs.tech/reference/kubo/cli/#ipfs)
 
 
-## Instructions – IPFS CLI Basics: Accessing Files
+## Instructions
 
 In this tutorial, you can follow along to understand the basics of how you, as a user, can access file in the pubilc IPFS network. Follow along with the examples to learn about pinning and adding files, how files from IPFS can be previewed and inspected, and learn a bit about how that data is created and stored on IPFS.
 
@@ -42,7 +41,7 @@ In the previous tutorial, you learned how to start and stop and IPFS node in the
 
 * You can stop your node by pressing `cntrl + c` twice in a row in the same terminal it's running in, or typing `killall ipfs` in another window.
 
-### See Your IPFS Peers (Swarm)
+### See your IPFS Peers (Swarm)
 
 ### Read an IPFS File
 
@@ -54,9 +53,9 @@ In the previous tutorial, you learned how to start and stop and IPFS node in the
 
 ### Pin a File from the IPFS Network
 
-### List Specific File from a CID
+### List Specific Files from a CID
 
 #### Resources
 * [Video Script](https://www.notion.so/protocollabs/Script-IPFS-Basics-Working-with-Files-in-IPFS-4102dc71f5dc4bf49b274bdfcee4c162)
 * [Docs](https://docs.ipfs.io/how-to/command-line-quick-start/#take-your-node-online)
-* Get a CID of a file by starting IPFS and visiting `localhost:5001/webui` in your browser, checking out _Explore_
+* Get a CID of a file by starting IPFS and visiting `localhost:5001/webui` in your browser, then checking out the _Explore_ section.
