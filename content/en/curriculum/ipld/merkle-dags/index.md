@@ -12,9 +12,7 @@ level:
 - deep
 ---
 
-### DAGs & Blocks | IPFS Camp 2019 - Mikeal Rogers 
-
-#### Merkle DAGs | IPFS Camp 2019
+#### Merkle DAGs | IPFS Camp 2019 - Mikeal Rogers
 
 This section on DAGs from IPFS Camp 2019 goes over how Merkle DAGs are created, read, and used in IPFS. Mikeal Rogers tells us what are the tradeoffs between different block sizes. .
 
