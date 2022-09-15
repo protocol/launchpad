@@ -25,7 +25,7 @@ In this tutorial you can do some basic things with the public IPFS filesystem. T
 
 ## Instructions – IPFS CLI Basics: Accessing Files
 
-In this tutorial, you can follow along to understand the basics of how you, as a user, can access file in the pubilc IPFS network. Follow along with the examples to learn about pinning and adding files, how files from IPFS can be previewed and inspected, and learn a bit about how that data is created and stored on IPFS.
+In this tutorial, you can follow along to understand the basics of how you, as a user, can access files in the public IPFS network. Follow along with the examples to learn about pinning and adding files, how files from IPFS can be previewed and inspected, and learn a bit about how that data is created and stored on IPFS.
 
 ### Video – IPFS CLI Basics: Accessing Files
 
