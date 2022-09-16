@@ -70,7 +70,7 @@ In this talk by led by Nicola or Protocol Labs, he discusses the basics of Filec
   * Actor Methods 0:12:35
   * The Execution Model 0:14:56
 
-<details>
+</details>
 
 
 
