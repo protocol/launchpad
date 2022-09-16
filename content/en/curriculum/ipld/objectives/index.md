@@ -6,7 +6,7 @@ menu:
     curriculum:
         parent: "curriculum-ipld"
         identifier: "IPLD-objectives"
-weight: 160
+weight: 175
 category: lecture
 level:
 - shallow
