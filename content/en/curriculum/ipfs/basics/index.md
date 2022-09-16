@@ -18,7 +18,7 @@ In this tutorial you can do some basic things with the public IPFS filesystem. T
 ## Prerequisites
 * The [latest version of Go (golang)](https://go.dev/doc/install)
 * A shell where you can run Unix-type commands either on a Mac, or (Li)Unix machine, or Windows [Powershell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2)
-* IPFS [installed on the OS](https://docs.ipfs.tech/install/ipfs-desktop/#install-instructions) your are using
+* IPFS [installed on the OS](https://docs.ipfs.tech/install/ipfs-desktop/#install-instructions) you are using
 * IPFS Docs' [kubo (go-ipfs) Command-line commands](https://docs.ipfs.tech/reference/kubo/cli/#ipfs)
 
 
