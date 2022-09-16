@@ -31,7 +31,7 @@ In this tutorial, you can follow along to understand the basics of how you, as a
 {{< youtube EkQfoQprA8s >}}
 
 ### Start and Stop an IPFS Node
-In the previous tutorial, you learned how to start and stop and IPFS node in the command line.
+In the previous tutorial, you learned how to start and stop an IPFS node in the command line.
 
 * Run `ipfs daemon` in the CLI to start your new node
 
