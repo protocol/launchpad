@@ -103,7 +103,7 @@ Examine the file (ideally a text file) using vim:
 
 ```
 
-> Take a minute to explore a file in IPFS Desktop, or the [WebUI](http://127.0.0.1:5001/webui) to see different file on IPFS, and their structure. ![Webui](ipfs-webui.png)
+> Take a minute to explore a file in IPFS Desktop, or the [WebUI](http://127.0.0.1:5001/webui) to see different files on IPFS, and their structure. ![Webui](ipfs-webui.png)
 
 ### Add a File to your IPFS Node
 You can also take files shared on your local machine to your IPFS node, which is known as **pinning**. Simply use the command `ipfs add directory/filename.extension`. Make sure you have the correct path to the file from where you are working in the terminal.
