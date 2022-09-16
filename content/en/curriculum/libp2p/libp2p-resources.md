@@ -39,7 +39,7 @@ You can also follow this [Getting Started with Rust and libp2p tutorial](https:/
 
 #### Examples
 
-If you want to get a feel for what's possible with libp2p, or just want to see some idiomatic usage, check out the [examples](https://github.com/protocol/launchpad/blob/main/examples/README.md). Each libp2p implementation maintains a set of working example projects that can illustrate key concepts and use cases.
+If you want to get a feel for what's possible with libp2p, or just want to see some idiomatic usage, check out the [examples](https://github.com/libp2p/go-libp2p/tree/master/examples). Each libp2p implementation maintains a set of working example projects that can illustrate key concepts and use cases. ([js examples](https://github.com/libp2p/js-libp2p/tree/master/examples), [rust examples](https://github.com/libp2p/rust-libp2p/tree/master/examples), [python examples](https://github.com/libp2p/py-libp2p/tree/master/examples))
 
 ### Reference
 
