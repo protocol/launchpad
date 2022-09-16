@@ -62,7 +62,7 @@ You should see a list of peers:
 > you can examine peers by running `ipfs id <CID>`
 
 ### Read an IPFS File
-You can explore file on IPFS with the CLI tool as well. You can do this by [installing IPFS Desktop](https://docs.ipfs.tech/install/ipfs-desktop/) or by using the URL for the web user interface (WebUI) at [http://127.0.0.1:5001/webui](http://127.0.0.1:5001/webui) which you should have seen when you ran `ipfs init`
+You can explore files on IPFS with the CLI tool as well. You can do this by [installing IPFS Desktop](https://docs.ipfs.tech/install/ipfs-desktop/) or by using the URL for the web user interface (WebUI) at [http://127.0.0.1:5001/webui](http://127.0.0.1:5001/webui) which you should have seen when you ran `ipfs init`
 
 ```
 ➜  ~ ipfs daemon
