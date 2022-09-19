@@ -78,7 +78,7 @@ _Forms Example_
 ### Video Embeds - YouTube
 A video embed requires it to be published to YouTube (typically as an unlisted video), and the URL to add it. Although you can use the general `embed` shortcode, there is one specifically for YouTube videos that you should use.
 
-Simply add in video ID with `{% youtube video-id %}`
+Simply add in video ID with `{{< youtube video-id >}}`
 
 _Example_
 
