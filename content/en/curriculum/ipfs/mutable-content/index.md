@@ -1,6 +1,6 @@
 ---
-title: "Mutable Content"
-description: "Mutable Content in IPFS"
+title: "Sharing Data on IPFS"
+description: "Mutable Content, the DHT, Graphsync, and Bitswap on IPFS"
 draft: false
 menu:
     curriculum:
@@ -11,13 +11,21 @@ level:
 - shallow
 - deep
 ---
+### Objectives
+
+** Be able to explain how content is shared on IPFS**
+PRE 1.21 Understand the challenges posed in a decentralized content sharing system
+PRE 1.22 Be able to explain what a peer, node, and swarm are in the context of IPFS
+PRE 1.23 Understand the basics of the public DHT
+PRE 1.24 Know the basics of what Bitswap and Graphsync do
+PRE 1.25 Understand garbage collection process on an IPFS node and how to keep data discoverable on IPFS
 
 ## Mutable Content
 One of the most powerful things about IPFS is that any piece of data or content you store on the network cannot be modified without changing the [Content Identifier (CID)](https://protocol-labs.gitbook.io/launchpad-curriculum/launchpad-learning-resources/ipld/content-addressing-and-cids) for that data, since the CID is created (in part) by hashing the content. There are various ways to create mutable data on top of IPFS and in this lesson we will learn what just a few of them are.
 
 ### Pinning and Immutability
 
-By default, content on IPFS is not _pinned_. That means when you add a file to IPFS, it will eventually stop being discoverable on the network. To mitigate this problem you must _pin_ your content to your [node](https://docs.ipfs.tech/concepts/nodes/#nodes) to ensure it persistents on IPFS. 
+By default, content on IPFS is not _pinned_. That means when you add a file to IPFS, it will eventually stop being discoverable on the network. To mitigate this problem you must _pin_ your content to your [node](https://docs.ipfs.tech/concepts/nodes/#nodes) to ensure it persistents on IPFS.
 
 Your options for pinning content are:
 1. You pin it locally to your own node. Note that if the content is only pinned to your local node, it must be online for peers to get that content.
@@ -35,7 +43,7 @@ _See the full set of resources [on the ResNetLab Tutorials page](https://researc
 
 Since IPFS uses CIDs, if you were to share an IPFS address such as `/ipfs/QmbezGequPwcsWo8UL4wDF6a8hYwM1hmbzYv2mnKkEWaUp` with someone, you would need to give the person a new link every time you update the content, because every change would result in a new CID.
 
-The [InterPlanetary Name System (IPNS)](https://docs.ipfs.io/concepts/ipns/#interplanetary-name-system-ipns) solves this issue by creating a link that can be updated. IPNS addresses a very important point, to help bridge the unfamiliarity gap to a new internet. For example, when you go to a users' website, you expect to find that same website with the same link or URL in the future. If that website is updated, you will see those updates as well. This "link" in IPNS is called a _name_, this _name_ is the hash of a public key. The name is associated with a record containing information about the hash that it points to and is signed by the public key’s corresponding private key. This allows new records to be signed and published at any time. Using IPNS means that when someone searches for your website using your _name_, they will receive the most up-to-date content as expected in today's internet. You can learn more about IPNS and [how to use it here](https://docs.ipfs.tech/concepts/ipns/#example-ipns-setup-with-cli). 
+The [InterPlanetary Name System (IPNS)](https://docs.ipfs.io/concepts/ipns/#interplanetary-name-system-ipns) solves this issue by creating a link that can be updated. IPNS addresses a very important point, to help bridge the unfamiliarity gap to a new internet. For example, when you go to a users' website, you expect to find that same website with the same link or URL in the future. If that website is updated, you will see those updates as well. This "link" in IPNS is called a _name_, this _name_ is the hash of a public key. The name is associated with a record containing information about the hash that it points to and is signed by the public key’s corresponding private key. This allows new records to be signed and published at any time. Using IPNS means that when someone searches for your website using your _name_, they will receive the most up-to-date content as expected in today's internet. You can learn more about IPNS and [how to use it here](https://docs.ipfs.tech/concepts/ipns/#example-ipns-setup-with-cli).
 
 When looking up an IPNS _name_ via an IPFS gateway, use the `/ipns/` prefix:
 
@@ -47,13 +55,13 @@ When looking up an IPNS _name_ via an IPFS gateway, use the `/ipns/` prefix:
 
 IPNS is a self-certifying mutable pointer. Meaning any name that gets published is signed by a private key and anyone else can verify that it was signed by that peer with just the _name_. This self-certifying nature gives IPNS a number of super-powers not present in consensus systems (DNS, blockchain identifiers, etc.), some notable ones include: mutable link information can come from anywhere, not just a particular service/system, and it is very fast and easy to confirm a link is authentic. IPNS names are encapsulated by a data structure called an _IPNS Record_ which contains the CID you are pointing to, the expiration date of a name and the sequence number which is incremented whenever the record is updated. Check out the [IPNS spec](https://github.com/ipfs/specs/blob/main/IPNS.md#ipns-record) to learn more about IPNS records.
 
-#### How it works
+#### How it Works
 
 * Publishing - When you first publish an IPNS name, you create a brand new record containing the CID to point to, validity timestamp, and a cryptographic signature of the record created with the private key to establish you are the owner and certify the name. This gets published to your local datastore, then the DHT.
 Whenever you update a record, including to refresh its validity, you create a new record based on the previous, update the CID pointer if needed, increment the sequence number, then sign and publish it to the network.
 * Searching - [Kubo](https://github.com/ipfs/kubo) uses the DHT to find peers that will have the queried record. This method has gotten faster over the years, but is still limited by the speed of DHT resolution itself. Alternative transports can be used to improve resolution speed (see [PubSub](#pubsub--ipns)).
 * Validity - A record is valid for 24 hours by default, but you can change its `validity` to be longer. When someone has your record, but it is expired, they will have to go to DHT to find a new, valid version of your record. Issues with validity don't arise if you're the original publisher of a record:  Kubo will periodically update validity and publish the updated IPNS records to the local record store and to DHT to keep it alive. DHT nodes will drop stored values after 24 hours, no matter what the validity. For this reason, for the IPNS name to be resolvable, the record needs to be continuously republished.
-* Keys - A _name_ is a hash of a public key in a key pair. By default, the first public key used by Kubo is the same as the one for identifying your peer ([PeerID](https://docs.ipfs.tech/concepts/glossary/#peer-id)). You can [generate new key pairs with Kubo](https://docs.ipfs.tech/reference/kubo/cli/#ipfs-key-gen) and use them to create additional IPNS records. 
+* Keys - A _name_ is a hash of a public key in a key pair. By default, the first public key used by Kubo is the same as the one for identifying your peer ([PeerID](https://docs.ipfs.tech/concepts/glossary/#peer-id)). You can [generate new key pairs with Kubo](https://docs.ipfs.tech/reference/kubo/cli/#ipfs-key-gen) and use them to create additional IPNS records.
 
 #### Common Pitfalls
 * Resolving IPNS over DHT may be slow. This is due to having the `sequence` number in a record. If there are multiple versions of a name, then you want to make sure that you have the latest version. And you do this by performing a time-bound search through the DHT for peers that hold your records and checking a quorum for  the latest one. Kubo will spend up to a minute to try to find at least 16 peers to form a quorum.
@@ -71,14 +79,14 @@ Sources: [Overview of IPNS by Adin](https://pl-strflt.notion.site/IPNS-Overview-
 
 The benefits of DNSLink include:
 - Human-readable mutable pointers, e.g. `/ipns/libp2p.io`.
-- DNSLink is that it leverages the distributed architecture of DNS to enable internet-scale mutable names or pointers which interoperate with IPFS. 
-- In many cases, resolving a DNSLink pointer is faster than IPNS. 
+- DNSLink is that it leverages the distributed architecture of DNS to enable internet-scale mutable names or pointers which interoperate with IPFS.
+- In many cases, resolving a DNSLink pointer is faster than IPNS.
 
 To create a mutable pointer with DNSLink, you need:
 - a DNS domain name you control
 - A CID or an IPNS name to link to
 
-> Note that while using DNSLink to link to an IPNS name is possible, it's often counterintuitive, because you are using a mutable pointer (DNS record) to point to another mutable pointer (IPNS name). 
+> Note that while using DNSLink to link to an IPNS name is possible, it's often counterintuitive, because you are using a mutable pointer (DNS record) to point to another mutable pointer (IPNS name).
 
 For example, `libp2p.io` has a TXT DNS record `_dnslink.libp2p.io` with the value `dnslink=/ipfs/bafybeibwlrl7olq5sggibzucp5s6y5n22numfpyjlzntnuvgs5zt2umjuu`. This DNS record can be _mutated_ at any point to point to a new CID.
 
@@ -99,7 +107,7 @@ Source: [Introduction to DNSlink](https://dnslink.dev/#introduction), [IPFS docs
 
 ### Pubsub + IPNS
 
-[**Publish/Subsribe (PubSub)**](https://docs.libp2p.io/concepts/publish-subscribe/) is a messaging protocol to quickly communicate with other peers. Whenever a peer Publishes a message, Subscribing peers will receive it almost instantly. This protocol is not specific to IPFS or IPNS, but to [Libp2p](https://docs.ipfs.tech/concepts/libp2p/); paired with IPNS, it allows for quick delivery of records over the network. With PubSub enabled on IPNS, updates to a record can be shared virtually instantly with subscribers. 
+[**Publish/Subsribe (PubSub)**](https://docs.libp2p.io/concepts/publish-subscribe/) is a messaging protocol to quickly communicate with other peers. Whenever a peer Publishes a message, Subscribing peers will receive it almost instantly. This protocol is not specific to IPFS or IPNS, but to [Libp2p](https://docs.ipfs.tech/concepts/libp2p/); paired with IPNS, it allows for quick delivery of records over the network. With PubSub enabled on IPNS, updates to a record can be shared virtually instantly with subscribers.
 
 To accomplish IPNS over PubSub, a [persistence layer had to be added](https://github.com/ipfs/specs/blob/main/naming/pubsub.md#layering-persistence-onto-libp2p-pubsub). Now when you ask for a name, you are subcribing to a PubSub topic based on that name, you create a connection with a peer that is following the same name, then they send you the latest version of the record. The key differentiating factor between IPNS-over-PubSub and IPNS-over-the-DHT (the default behavior) is opening a streaming connection between peers. This way, peers are sending the latest record directly from their local node, as opposed to the default behavior of searching the DHT for the peer with latest version of a record. This means records shared over Pubsub are not available on the DHT and vise versa, unless the publisher opts-in to publish records to both routing options. If you would like to activate IPNS over Pubsub on your Kubo node, you can check out the [`Ipns.UsePubsub` option](https://github.com/ipfs/kubo/blob/master/docs/config.md#ipns) in the config file.
 
