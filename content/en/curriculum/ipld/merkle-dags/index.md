@@ -16,7 +16,7 @@ level:
 
 This section on DAGs from IPFS Camp 2019 goes over how Merkle DAGs are created, read, and used in IPFS. Mikeal Rogers tells us what are the tradeoffs between different block sizes. .
 
-{% youtube [z9GmPIfqUbE](https://youtu.be/z9GmPIfqUbE) %}
+{{< youtube z9GmPIfqUbE >}}
 
 
 At a high level, the talk covered the following topics:

@@ -115,7 +115,7 @@ There is a [proposal](https://github.com/libp2p/go-libp2p-kad-dht/issues/584) to
 
 The DHT is a complex topic that involves understanding several concepts. The following video provides more information.
 
-{% youtube KMmiAnMJU-c %}
+{{< youtube KMmiAnMJU-c >}}
 
 If you want to get more information, refer to the following links:
 
