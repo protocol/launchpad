@@ -23,7 +23,7 @@ _Example_
 
 In this talk by Steven & Dietrich, they review some of the customs and best practices involved when becoming a part of an open source community.
 
-{% youtube GcvGc3pgOT8 %}
+{{< youtube GcvGc3pgOT8 >}}
 ```
 
 ## Embedding
@@ -83,7 +83,7 @@ Simply add in video ID with `{% youtube video-id %}`
 _Example_
 
 ```
-{% youtube 2RCwZDRwk48 %}
+{{< youtube 2RCwZDRwk48 >}}
 ```
 
 ## Tagging Content
