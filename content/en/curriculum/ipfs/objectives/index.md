@@ -6,7 +6,7 @@ menu:
     curriculum:
         parent: "curriculum-ipfs"
         identifier: "IPFS-objectives"
-weight: 60
+weight: 65
 category: lecture
 level:
 - shallow

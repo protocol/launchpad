@@ -1,6 +1,6 @@
 ---
 title: Open Source Stewardship
-description: Open Source Culture and Stewardship
+description: "Open Source Culture and Stewardship"
 draft: false
 menu:
     curriculum:
