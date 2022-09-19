@@ -27,7 +27,7 @@ The mission of **IPFS** is to create a resilient, upgradable, open network to pr
 ### Shallow Dive Goals
 * **1.0 –** Understand what web3 and peer-to-peer networking is, as well as how and why IPFS was started
 * **1.1 –** Know what Content Addressing, DAGs, and CIDs are and what advantages they presents over location-based addressing
-* **1.2 –** Understand how the fundamental mechanisms of communicating in web3 is very different from the client-server model, including connections, security protocols, routing, and more. 
+* **1.2 –** Be able to explain how content is shared on IPFS
 * **1.3 –** Know what a gateway is, how it helps to bridge users of web2 & web3, and be able to identify gateway providers
 
 ### Deep Dive Goals
