@@ -1,6 +1,6 @@
 ---
 title: Open Source Contribution
-description: Contributing to Protocol Labs Core Project
+description: "Contributing to Protocol Labs Core Projects"
 draft: false
 menu:
     curriculum:

@@ -46,7 +46,7 @@ Protocol Labs at its core consists of an organization (also referred to as Starf
 
 ### Protocol Labs Teams
 
-There are several core organization that make up the nucleus of the Protocol Labs organization. [EngRes](https://www.notion.so/pl-strflt/PL-EngRes-Public-b5086aea86ed4f81bc7d0721c6935e1e) has a constantly shifting portfolio of projects and efforts, which are arranged into working groups.
+There are several core organizations that make up the nucleus of the Protocol Labs organization. [EngRes](https://www.notion.so/pl-strflt/PL-EngRes-Public-b5086aea86ed4f81bc7d0721c6935e1e) has a constantly shifting portfolio of projects and efforts, which are arranged into working groups.
 
 There is also the Talent Funnel which includes recruiting, people ops, and Launchpad, as well as the Ecosystem which has a wide variety of organizations and efforts that expand the reach of Protocol Labs. [Network Services](https://airtable.com/shrMaFq3hWY4KZnka/tbliESOTOmIM1l0rt) sources and provides resources and high-quality services such as design, website development, security, financial, legal, and much more for the different organizations across Protocol Labs.
 
@@ -65,7 +65,7 @@ In order to support the growth of the projects and tooling build on and around P
 
 ## The Protocol Labs Network
 
-The PL Network is made up of 300+ projects, companies, and organizations. You can explore a number of those organizations, and the people that work on them, in the WIP [PL Network Directory](https://airtable.com/shrqUt3aQvZLs0fx7/tblceMFkdHORmuzl4).
+The PL Network is made up of 300+ projects, companies, and organizations. You can explore a number of those organizations, and the people that work on them, in the WIP [PL Network Directory](https://www.plnetwork.io/).
 
 The [PL Spaceport](https://protocol.almanac.io/docs/protocol-labs-spaceport-sFKNLxQKYdQOZfLTL4kL9uVha4TdGlYh) has many links to resources for PL Network members, including:
 
@@ -86,6 +86,6 @@ Learn about the cool projects, apps, and tooling that is being built using the P
 
 There are a number of Working Groups within the Protocol Labs Network that organize the work of multiple teams and align them with a central vision/mission. A Working Group (WG) like Ecosystem WG or EngRes WG is made up of multiple teams, which focus each on a specific topic (hackathons, IPFS<>Filecoin interoperations, etc) within the wider WG mission.
 
-In some cases, those WGs might span multiple organizations, or companies. For example Ecosystem WG spans the Filecoin Foundation, the PL Outercore team, the PL Starfleet team, and a number of other companies. We often use "organization" and "team" interchangably when we mean "top level team of teams".
+In some cases, those WGs might span multiple organizations, or companies. For example Ecosystem WG spans the Filecoin Foundation, the PL Outercore team, the PL Starfleet team, and a number of other companies. We often use "organization" and "team" interchangeably when we mean "top level team of teams".
 
-Teams are the reporting organization structure established by Protocol Labs. Though they establish Labbers' general focus of work, the nature of PL's collborative organization means that Labbers may end up working with many individuals outside their team, and often with those outside of Protocol Labs itself.
+Teams are the reporting organization structure established by Protocol Labs. Though they establish Labbers' general focus of work, the nature of PL's collaborative organization means that Labbers may end up working with many individuals outside their team, and often with those outside of Protocol Labs itself.

@@ -1,16 +1,23 @@
 ---
-title: "Libp2p Resources"
+title: "Quiz & Resources"
 description: "Explore beyond the curriculum"
 draft: false
 menu:
     curriculum:
         parent: "curriculum-libp2p"
+        identifier: "libp2p-resources"
 weight: 370
 category: lecture
 level:
 - shallow
 - deep
 ---
+
+## Libp2p Quiz
+
+Take the [**libp2p Quiz**](https://docs.google.com/forms/d/e/1FAIpQLSfAEZCeioMqvWe16zzH8du8ygi7rcgfqDbVHt8MVQbRq6iO4A/viewform?usp=sf_link) after covering the pre-requisite content to gauge your understanding.
+
+{{< embed src="https://docs.google.com/forms/d/e/1FAIpQLSfAEZCeioMqvWe16zzH8du8ygi7rcgfqDbVHt8MVQbRq6iO4A/viewform?usp=sf_link" width="100%" height="900px" >}}
 
 ### Main Resources
 
@@ -32,7 +39,7 @@ You can also follow this [Getting Started with Rust and libp2p tutorial](https:/
 
 #### Examples
 
-If you want to get a feel for what's possible with libp2p, or just want to see some idiomatic usage, check out the [examples](https://github.com/protocol/launchpad/blob/main/examples/README.md). Each libp2p implementation maintains a set of working example projects that can illustrate key concepts and use cases.
+If you want to get a feel for what's possible with libp2p, or just want to see some idiomatic usage, check out the [examples](https://github.com/libp2p/go-libp2p/tree/master/examples). Each libp2p implementation maintains a set of working example projects that can illustrate key concepts and use cases. ([js examples](https://github.com/libp2p/js-libp2p/tree/master/examples), [rust examples](https://github.com/libp2p/rust-libp2p/tree/master/examples), [python examples](https://github.com/libp2p/py-libp2p/tree/master/examples))
 
 ### Reference
 

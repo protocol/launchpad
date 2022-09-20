@@ -1,5 +1,5 @@
 ---
-title: "IPFS Resources"
+title: "Quiz & Resources"
 description: "Explore beyond the curriculum"
 draft: false
 menu:
@@ -11,6 +11,11 @@ level:
 - shallow
 - deep
 ---
+## IPFS Quiz
+
+Take the [**IPFS Quiz**](https://docs.google.com/forms/d/e/1FAIpQLSdtSvO0dCquXDs_Fr5t53wjiS3WIib-nro6gK3oI6S8pri7DQ/viewform?usp=sf_link) after covering the pre-requisite content to gauge your understanding.
+
+{{< embed src="https://docs.google.com/forms/d/e/1FAIpQLSdtSvO0dCquXDs_Fr5t53wjiS3WIib-nro6gK3oI6S8pri7DQ/viewform?usp=sf_link" width="100%" height="900px" >}}
 
 ## Discuss IPFS
 * IPFS [Discussion Forum](https://discuss.ipfs.io/)
@@ -56,6 +61,10 @@ Are you looking for inspiration? You can find a huge collection of awesome commu
 [Check out Awesome IPFS now →](https://awesome.ipfs.io/)
 
 ### [Getting Started with IPFS and Filecoin](https://protocollabs.notion.site/Getting-started-with-IPFS-Filecoin-173c73d4d8d64765a42058594bc46bb7)
+
+**Links**
+
+**IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs) - **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld) - **libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p) - **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)
 
 <!--
 ##IPFS Glossary Does this exist?-->
