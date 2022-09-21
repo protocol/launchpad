@@ -20,6 +20,8 @@ By the end of the exercise, you should be able to:
 * Configure the node at a basic level
 * Connect to another node
 
+![Application diagram](diagram.png)
+
 ## Prerequisites
 
 * You must have Go installed. In this exercise, version 1.18 is used.
@@ -31,9 +33,13 @@ If you want to install multiple versions of Go, refer to [this page](https://go.
 
 * Open the `libp2p-go-simple-code` folder of the `launchpad-tutorials` repository in an IDE of your preference. The `app` subfolder contains the template that you will complete.
 
+### Review the "main" Function
+
 * In the `main.go` file, review the code.
 There are several functions that you will implement in this tutorial.
 The `main()` function manages the flow of the program by calling different helper functions.
+
+### Create the Source Node
 
 * In the `createSourceNode` function, create a libp2p node by using the `libp2p.New()` function.
 This method returns a [host.Host](https://github.com/libp2p/go-libp2p/blob/master/core/host/host.go#L25) interface, which you can use to manage the node.
@@ -50,6 +56,8 @@ func createSourceNode() host.Host {
 ```
 
 By default, the node gets an ID and listens at a random TCP port.
+
+### Create the Target Node
 
 * Now, in the `createTargetNode` function, create a new node that listens at the `8007` TCP port. We can configure a node by passing several [Option](https://github.com/libp2p/go-libp2p/blob/master/libp2p.go#L13) structs to the `New(...)` method.
 
@@ -68,6 +76,8 @@ func createTargetNode() host.Host {
 }
 ```
 
+### Connect the Nodes
+
 * So far, you have created two nodes; now, let's connect `sourceNode` to `targetNode`.
 The `host.Host` interface contains a `Connect` method that you can use.
 The `Connect` method expects a `peer.AddrInfo` struct, which is an abstraction that represents the _location_ of a peer.
@@ -84,6 +94,8 @@ func connectToTargetNode(sourceNode host.Host, targetNode host.Host) {
 }
 ```
 
+### Count the Number of Peers of the Source Node
+
 * To verify that the connection works, you can list the peers connected to the node.
 
 ```go
@@ -91,6 +103,8 @@ func countSourceNodePeers(sourceNode host.Host) int {
 	return len(sourceNode.Network().Peers())
 }
 ```
+
+### Run the Program
 
 * Now, test that the two nodes are connected by running the application.
 
