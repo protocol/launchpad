@@ -18,9 +18,9 @@ Drand uses [cryptographic methods](https://drand.love/docs/cryptography/#setup-p
 
 {{< youtube ydwW2HFFxNI >}}
 
-#### [drand - The Distributed Randomness Beacon | ResNetLabs On Tour – Nicolas GAILLY](https://research.protocol.ai/tutorials/resnetlab-on-tour/modular-p2p-stack/)
+#### [Drand - The Distributed Randomness Beacon | ResNetLabs On Tour – Nicolas GAILLY](https://research.protocol.ai/tutorials/resnetlab-on-tour/modular-p2p-stack/)
 
-drand is a distributed randomness beacon. It provides publicly-verifiable, unpredictable, and bias-resistant random numbers as a public service. In this module, we’ll walk through:
+Drand is a distributed randomness beacon. It provides publicly-verifiable, unpredictable, and bias-resistant random numbers as a public service. In this module, we’ll walk through:
 
 * Threshold Cryptography & Randomness
 * Distributed Key Generation in drand
@@ -28,6 +28,10 @@ drand is a distributed randomness beacon. It provides publicly-verifiable, unpre
 * The League of Entropy
 
 {{< youtube NNfaQ__UFCE >}}
+
+### Drand Tutorial
+This example goes over how to use the Drand network to retrieve a random value in a key-pair list. 
+
 
 ## Drand Resources
 
