@@ -39,7 +39,7 @@ And things you don't want to eat as often, have smaller probability of being cho
 
 Check out this quick Javascript code:
 
-{{< code JS >}}
+{{< code javascript >}}
 
 import Client, { HTTP } from 'drand-client'
 import fetch from 'node-fetch'
@@ -98,11 +98,6 @@ async function weightedRandom(prob) {
 
 //runs code above
 weightedRandom(FoodOptions).then((lunch) => (console.log(lunch)))
-// Press Ctrl + C to stop example!
-
-/* 
-*/
-
 {{< /code >}}
 
 Things to note:

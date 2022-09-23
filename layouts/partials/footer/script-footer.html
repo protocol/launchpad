@@ -13,6 +13,7 @@
 {{ $mermaid := resources.Get "js/mermaid.js" | js.Build -}}
 
 {{ $app := resources.Get "js/app.js" -}}
+{{ $app := resources.Get "js/codemd.js" -}}
 
 {{ $slice := slice $app -}}
 
