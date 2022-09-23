@@ -38,7 +38,6 @@ You assign weights to your preferences such that items you would like to eat mos
 And things you don't want to eat as often, have smaller probability of being chosen.
 
 Check out this quick Javascript code:
-
 {{< code javascript >}}
 
 import Client, { HTTP } from 'drand-client'
@@ -99,7 +98,7 @@ async function weightedRandom(prob) {
 //runs code above
 weightedRandom(FoodOptions).then((lunch) => (console.log(lunch)))
 {{< /code >}}
-
+<br></br>
 Things to note:
 * Drand mainnet releases a random number every 30 seconds. The problem that arises is if you want to test if the biased randomness works or not, it would take a really long time to test.
 * There is work to shorten this time frame to 3 seconds, which is better, but its not as convenient as instant access of psuedo-random numbers like math.random() or crypto.getRandomValues().
