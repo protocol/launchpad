@@ -11,6 +11,16 @@ level:
 - deep
 ---
 
+## Learning Objectives
+
+This section covers the **1.4** learning objetive. By the end, you should be able to:
+
+* **1.41 –** Understand that Bitswap is a message-oriented protocol to exchange data.
+* **1.42 –** Understand how Bitswap works (message types and flow of the messages)
+* **1.43 –** Understand what is _the session_ and _the ledger_ in the context of Bitswap
+* **1.44 –** Understand the different components of Bitswap at a high level
+* **1.45 –** Understand what is Graphsync and what advantages it involves over Bitswap
+
 ## Introduction
 
 IPFS differs greatly in the way that it stores, shares, and retrieves files. Instead of having clients rely on servers, IPFS allows peers to connect and search for one another in an efficient manner to exchange data directly.
