@@ -1,11 +1,11 @@
 ---
-title: "IPFS Setup (Tutorial)"
-description: "Deep Dive Tutorial – Setup & Access Files with IPFS"
+title: "Title (Tutorial)"
+description: "Deep/Shallow Dive Tutorial – Subtitle"
 draft: false
 menu:
     curriculum:
-        parent: "curriculum-ipfs"
-weight: 80
+        parent: ""
+weight: 0
 category: tutorial
 level:
 - shallow
@@ -16,37 +16,40 @@ level:
 short ~1-2 paragraphs with context
 
 ## Prerequisites
-This video is the basic setup for ipfs-go on a [linux VM](https://multipass.run/), using [wget](https://www.tecmint.com/install-wget-in-linux/) to grab the resources. You will also `ipfs init` a node and get it running with `ipfs daemon`.
+Write about _all_ software and dependencies you will need to have installed, with relevant links to resources for where you can download/ read instruction on how to install
+* NodeJS vx.xx.xx
+* Go Version x.xx ^
+* Even things like Homebrew
 
-{{< youtube A7yZaYhrwyM >}}
 
 ## Instructions
 Sentence?
 
 ### Video
 
-{{< youtube A7yZaYhrwyM >}}
+{{< youtube i100RhwZUnQ >}}
+<!-- The URL to this video was: https://www.youtube.com/watch?v=i100RhwZUnQ -->
 
 
 ### Title 1 that describes what you will do
-Information
-* Specific to-do
+Information & context
+* Specific to-do `command`
 * Specific to-do
 ```
 some code
 
 ```
 ### Title 2 that describes what you will do
-Information
-* Specific to-do
+Information & context
+* Specific to-do `command`
 * Specific to-do
 ```
 some code
 
 ```
 ### Title 3 that describes what you will do
-Information
-* Specific to-do
+Information & context
+* Specific to-do `command`
 * Specific to-do
 ```
 some code
@@ -54,8 +57,8 @@ some code
 ```
 
 ### Title n that describes what you will do
-Information
-* Specific to-do
+Information & context
+* Specific to-do `command`
 * Specific to-do
 ```
 some code

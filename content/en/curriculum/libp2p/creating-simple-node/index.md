@@ -10,8 +10,8 @@ category: tutorial
 level:
 - deep
 ---
-
-In this tutorial, you will create two libp2p nodes and connect them.
+## Background
+In this tutorial, you will use a boilerplate go project to set up two libp2p nodes and connect them so you can begin to explore the capabilities of libp2p such as data transmission, peer identity, routing, and messaging, content discovery, and more.
 
 By the end of the exercise, you should be able to:
 
@@ -32,6 +32,9 @@ If you want to install multiple versions of Go, refer to [this page](https://go.
 ## Instructions
 
 * Open the `libp2p-go-simple-code` folder of the `launchpad-tutorials` repository in an IDE of your preference. The `app` subfolder contains the template that you will complete.
+
+### Video
+<!-- What is this video?  -->
 
 ### Review the "main" Function
 
