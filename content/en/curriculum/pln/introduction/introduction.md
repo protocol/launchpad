@@ -14,20 +14,23 @@ level:
 
 This section introduces Protocol Labs Network. Here you will find resources to learn about the goals and mission that unite us across organizations, the many teams and individuals that contribute to the new web3 primitives, protocols, and tools we're creating, and begin to learn about how we operate.
 
-![Protocol Labs Logo](/images/ARCHIV-protocol-labs-logo-horizontal-alt-black.png)
+![PLN](PL_Logo_Gradient.png)
 
-In this section, you will:
+### Learning Goals
+* **1.1 –** Know what the PL Network is, how Protocol Labs evolved from company to network, as well as the projects, tooling, and DApps being built on the PLN
+* **1.1 –** Understand what the resources and tools are within the PL Network to support teams, individuals, companies, and general growth of our mission 
+* **1.3 –** Understand the methods and philosophies about how work and communication is carried out in the Protocol Labs Network & within PLN open source communities
+
+After completing this section, you will also: 
 
 **Understand**
 
-* What the PL Network is, how Protocol Labs evolved from company to network, and what the resources and tools are within the PL Network to support teams, individuals, and companies
-* The methods and philosophies about how work and communication is carried out in the Protocol Labs Network & within PLN open source communities
-* The motivations and original goals that brought about IPFS, libp2p, Filecoin etc, and how these have evolved to the present day
-* What OSS projects that are part of the PL Stack and what other projects, tools, and resources are being created in the PLN ecosystem. Be able to describe what some of these other projects do and how they work together.
+* The motivations and original goals that brought about IPFS, libp2p, Filecoin etc, and how these have evolved to the present day.
+* What OSS projects are part of the PL Stack and what other projects, tools, and resources are being created in the PLN ecosystem. 
 
 **Be Able To**
 
-* Find where communication about different open source projects is carried out (IPFS, IPLD, LibP2P, and Filecoin) and how decisions are made about the work that will be done
+* Find where communication about different open source projects is carried out (IPFS, IPLD, LibP2P, and Filecoin) and how decisions are made about the work that will be done.
 * Communicate the core goals of Protocol Labs as an organization as a whole, as well as the goals of some of the projects they work on.
 * Demonstrate use of async and open source communication by establishing public facing methods to share the outputs of your work and appropriate outreach, documentation, & communication with other Launchpad Cadets & Labbers.
 
