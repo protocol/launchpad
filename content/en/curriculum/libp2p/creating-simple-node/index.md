@@ -1,5 +1,5 @@
 ---
-title: "Creating a simple libp2p node (Tutorial)"
+title: "Create A libp2p Node (Tutorial)"
 description: "Use libp2p-go to create to a libp2p node"
 draft: false
 menu:
