@@ -13,9 +13,7 @@ level:
 ---
 
 This section introduces Protocol Labs Network. Here you will find resources to learn about the goals and mission that unite us across organizations, the many teams and individuals that contribute to the new web3 primitives, protocols, and tools we're creating, and begin to learn about how we operate.
-
-![PLN](PL_Logo_Gradient.png)
-
+![PLN_Logo](PLN_Logo.png)
 ### Learning Goals
 * **1.1 –** Know what the PL Network is, how Protocol Labs evolved from company to network, as well as the projects, tooling, and DApps being built on the PLN
 * **1.1 –** Understand what the resources and tools are within the PL Network to support teams, individuals, companies, and general growth of our mission 
