@@ -33,7 +33,9 @@ By the end of the exercise, you should be able to:
 * Open the `/libp2p-go-simple-code` folder of the `launchpad-tutorials` repository in an IDE of your preference. The `app` subfolder contains the template that you will complete.
 
 ### Video
-<!-- What is this video?  -->
+This video will demonstrate how you can implement create simple libp2p node in a golang application.
+
+{{< youtube Qa-eAvXp6LY >}}
 
 ### Review the "main" Function
 
@@ -108,7 +110,9 @@ func countSourceNodePeers(sourceNode host.Host) int {
 
 ### Run the Program
 
-* Now, test that the two nodes are connected by running the application.
+* Now, test that the two nodes are connected by running the application. In your terminal, cd to the `/libp2p-go-simple-node/app` directory and run `go run .`
+
+You should see the following output, with the number of `source node peers`:
 
 ```bash
 > go run .
@@ -121,4 +125,6 @@ Multiaddresses: /ip4/192.168.0.10/tcp/8007, /ip4/127.0.0.1/tcp/8007
 Source node peers: 1
 ```
 
-Now that you have two nodes connected and communicating, you can start to implement the many (features available with libp2p)[https://libp2p.io/]. In a later tutorial, you will learn how to start a libp2p stream that you can send data through.
+You can see an example of the [completed code here](https://github.com/protocol/launchpad-tutorials/blob/lindsay/trying-libp2p/libp2p-go-simple-node/app/main.go)
+
+Now that you have two nodes connected and communicating, you can start to implement the many [features available with libp2p](https://libp2p.io/). In a later tutorial, you will learn how to start a libp2p stream.

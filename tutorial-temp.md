@@ -65,6 +65,9 @@ some code
 
 ```
 
+<!-- Summary -->
+Now you can ----- . Next you will/can learn to ... See an example of the completed code  **<Link to branch & file with completed code>**
+
 #### Resources
 * [Video Script]()
 * [Docs]()
