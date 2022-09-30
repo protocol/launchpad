@@ -11,7 +11,7 @@ level:
 - deep
 ---
 ## Background
-In this tutorial, you will use a boilerplate go project to set up two libp2p nodes and connect them so you can begin to explore the capabilities of libp2p such as data transmission, peer identification, routing, messaging, content discovery, and more.
+In this tutorial, you will use a boilerplate Go project to set up two libp2p nodes and connect them, so you can begin to explore the capabilities of libp2p, such as data transmission, peer identification, routing, messaging, content discovery, and more.
 
 By the end of the exercise, you should be able to:
 
@@ -33,13 +33,13 @@ By the end of the exercise, you should be able to:
 * Open the `/libp2p-go-simple-code` folder of the `launchpad-tutorials` repository in an IDE of your preference. The `app` subfolder contains the template that you will complete.
 
 ### Video
-This video will demonstrate how you can implement create simple libp2p node in a golang application.
+This video will demonstrate how you can create simple libp2p node in a Go application.
 
 {{< youtube Qa-eAvXp6LY >}}
 
 ### Review the "main" Function
 
-In the `main.go` file, review the cod, at about line 40.
+In the `main.go` file, review the code, at about line 40.
 There are several functions that are called which you will implement in this tutorial.
 The `main()` function manages the flow of the program by calling different helper functions.
 
@@ -63,7 +63,7 @@ By default, the node gets an ID and listens at a random TCP port.
 
 ### Create the Target Node
 
-* Now, in the `createTargetNode` function, create a new node that listens at the `8007` TCP port. We can configure a node by passing several [Option](https://github.com/libp2p/go-libp2p/blob/master/libp2p.go#L13) structs to the `New(...)` method.
+* Now, in the `createTargetNode` function, create a new node that listens at the `8007` TCP port. You can configure a node by passing several [Option](https://github.com/libp2p/go-libp2p/blob/master/libp2p.go#L13) structs to the `New(...)` method.
 
 ```go
 func createTargetNode() host.Host {
@@ -100,7 +100,7 @@ func connectToTargetNode(sourceNode host.Host, targetNode host.Host) {
 
 ### Count the Number of Peers of the Source Node
 
-* To verify that the connection works, you can list the peers connected to the node. In this example we will simply count the number of peers and return that number to verify that yoor libp2p node is connected to peers.
+* To verify that the connection works, you can list the peers connected to the node. In this example, you will simply count the number of peers and return that number to verify that your libp2p node is connected to peers.
 
 ```go
 func countSourceNodePeers(sourceNode host.Host) int {
@@ -110,9 +110,9 @@ func countSourceNodePeers(sourceNode host.Host) int {
 
 ### Run the Program
 
-* Now, test that the two nodes are connected by running the application. In your terminal, cd to the `/libp2p-go-simple-node/app` directory and run `go run .`
+* Now, test that the two nodes are connected by running the application. In your terminal, `cd` to the `/libp2p-go-simple-node/app` directory and run `go run .`
 
-You should see the following output, with the number of `source node peers`:
+You should see the following output, with the number of source node peers:
 
 ```bash
 > go run .
@@ -125,6 +125,6 @@ Multiaddresses: /ip4/192.168.0.10/tcp/8007, /ip4/127.0.0.1/tcp/8007
 Source node peers: 1
 ```
 
-You can see an example of the [completed code here](https://github.com/protocol/launchpad-tutorials/blob/lindsay/trying-libp2p/libp2p-go-simple-node/app/main.go)
+You can see an example of the [completed code here](https://github.com/protocol/launchpad-tutorials/blob/main/libp2p-go-simple-node/solution/main.go)
 
 Now that you have two nodes connected and communicating, you can start to implement the many [features available with libp2p](https://libp2p.io/). In a later tutorial, you will learn how to start a libp2p stream.
