@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-libp2p"
-weight: 312
+weight: 315
 category: lecture
 level:
 - deep
@@ -32,7 +32,7 @@ The mathematical explanation about the distance function is not trivial, and it 
 ## The Routing Table
 
 The distance metrics can be calculated not only between keys and peer IDs, but also between peer IDs themselves. In order to facilitate the discovery of peers in the network (i.e. be able to answer `FIND_NODES` operation), a peer keeps a list of peers divided into buckets depending on the distance to them. Buckets for close distances are bigger.
-Thus, a node may not be storing certain key, but it is usually able to provide a list of known nodes that are closer to the key than itself, thus helping in the lookup for the closest nodes. 
+Thus, a node may not be storing certain key, but it is usually able to provide a list of known nodes that are closer to the key than itself, thus helping in the lookup for the closest nodes.
 
 The internals of the routing table are beyond the outcomes of this lecture, but you can read more on the topic [here](https://en.wikipedia.org/wiki/Kademlia#Fixed-size_routing_tables). You can also take a look at the [Go implementation](https://github.com/libp2p/go-libp2p-kbucket/blob/f0be035294ac4f5e939af13ddc1dd24273b7d881/table.go#L25) of the routing table.
 
@@ -101,7 +101,7 @@ The nodes with the lowest distance to the key are selected: `Peer 6` and `Peer 7
 
 Note that the previous example is just a very **high-level** explanation of the algorithm. For a deeper look, refer to the [specification](https://github.com/libp2p/specs/tree/master/kad-dht#value-retrieval). For example, a validation strategy is needed because several peers might return different values for the same key.
 
-In storage systems (e.g., IPFS), a DHT key might represent a specific file's CID. Therefore, searching for a particular key means finding what peers hold a specific file. 
+In storage systems (e.g., IPFS), a DHT key might represent a specific file's CID. Therefore, searching for a particular key means finding what peers hold a specific file.
 
 ### Advertising Content
 
