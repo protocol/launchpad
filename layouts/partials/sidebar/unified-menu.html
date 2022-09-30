@@ -1,0 +1,46 @@
+{{ if .Site.Params.options.collapsibleSidebar -}}
+  <ul class="list-unstyled collapsible-sidebar">
+  {{ $currentPage := . -}}
+  {{ range $index, $element := .Site.Menus.curriculum -}}
+  {{- $active := or ($currentPage.IsMenuCurrent "curriculum" .) ($currentPage.HasMenuCurrent "curriculum" .) -}}
+  {{- $active = or $active (eq $currentPage.Section .Identifier) -}}
+    <li class="mb-1">
+      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-{{ .Identifier }}" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}">
+        {{ .Name }}
+      </button>
+      {{ if .HasChildren -}}
+      <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ .Identifier }}" id="section-{{ .Identifier }}">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+        {{ range .Children -}}
+          {{- $active := or ($currentPage.IsMenuCurrent "curriculum" .) ($currentPage.HasMenuCurrent "curriculum" .) -}}
+          {{- $active = or $active (eq $currentPage.Section .Identifier) -}}
+          <li style="display: flex; align-items: center;" data-content-level="{{ .Page.Params.level }}">
+            {{ if eq .Page.Params.category "lecture" }}
+              <img src="/icons/lecture.png" width="20" height="20" />
+            {{ else }}
+              <img src="/icons/tutorial.png" width="20" height="20" />
+            {{ end }}
+            <a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}" style="margin-left: 0.4rem">{{ .Name }}</a>
+          </li>
+        {{ end -}}
+        </ul>
+      </div>
+      {{ end -}}
+    </li>
+  {{ end -}}
+  </ul>
+{{ else -}}
+  {{ $currentPage := . -}}
+  {{ range .Site.Menus.curriculum -}}
+    <h3 class="h6 text-uppercase">{{ .Name }}</h3>
+    {{ if .HasChildren -}}
+    <ul class="list-unstyled">
+      {{ range .Children -}}
+        {{- $active := or ($currentPage.IsMenuCurrent "curriculum" .) ($currentPage.HasMenuCurrent "curriculum" .) -}}
+        {{- $active = or $active (eq $currentPage.Section .Identifier) -}}
+        <li><a class="docs-link{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+      {{ end -}}
+    </ul>
+    {{ end -}}
+  {{ end -}}
+{{ end -}}
