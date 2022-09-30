@@ -38,66 +38,9 @@ You assign weights to your preferences such that items you would like to eat mos
 And things you don't want to eat as often, have smaller probability of being chosen.
 
 Check out this quick Javascript code:
-{{< code javascript >}}
+ <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdotnet%2Fcorefx%2Fblob%2Fmaster%2Fsrc%2FSystem.ObjectModel%2Fsrc%2FSystem%2FWindows%2FInput%2FICommand.cs&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on">
+ </script>
 
-import Client, { HTTP } from 'drand-client'
-import fetch from 'node-fetch'
-import AbortController from 'abort-controller'
-
-global.fetch = fetch
-global.AbortController = AbortController
-const HEX = 16;
-const FoodOptions = { "pho": 0.3, "croquets": 0.29, "pizza": 0.28, "pasta": 0.07, "mole_verde": 0.03, "shrimp": .03 }
-
-const chainHash = '8990e7a9aaed2ffed73dbd7092123d6f289930540d7651336225dc172e51b2ce' // (hex encoded)
-const urls = [
-  'https://api.drand.sh',
-  'https://drand.cloudflare.com'
-]
-
-// This function takes in a list of items and the probablilty of them being selected.
-//    returns the number that is randomly selected 
-async function weightedRandom(prob) {
-
-  const options = { chainHash }
-
-  const client = await Client.wrap(HTTP.forURLs(urls, chainHash), options)
-
-  // e.g. use the client to get the latest randomness round:
-  const res = await client.get()
-  // console.log(res.round, res.randomness)
-
-  // assign randomness value as a string to a variable
-  const randomness = res.randomness
-
-  // grab the left most 12 digits
-  const drand = randomness.slice(0, 12)
-  // console.log("drand", drand)
-
-  // Convert hexadecimal randomness value to decimal (base16 -> base10)
-  var base10 = parseInt(drand, HEX)
-  // console.log("base10", base10)
-
-  // "normalize" rand value to be a percentage (between 0-1)
-  var normal = base10
-  while (normal > 1){
-    normal /= 10;
-  }
-  console.log("normalize", parseFloat(normal.toFixed(8)))
-
-  // This for loop selects which key:pair to return
-  let sum = 0, r = parseFloat(normal.toFixed(8));
-  for (let [key, value] of Object.entries(prob)) {
-    sum += value;
-    if (r <= sum) {
-      return key;
-    }
-  }
-}
-
-//runs code above
-weightedRandom(FoodOptions).then((lunch) => (console.log(lunch)))
-{{< /code >}}
 <br></br>
 Things to note:
 * Drand mainnet releases a random number every 30 seconds. The problem that arises is if you want to test if the biased randomness works or not, it would take a really long time to test.
