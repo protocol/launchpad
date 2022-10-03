@@ -14,7 +14,7 @@ level:
 ---
 ## PLN Quiz
 
-Take the [**PLN Quiz**](https://docs.google.com/forms/d/e/1FAIpQLSfin7rDiiBqV9ybs1gV-n4hEv4bXmhanmf13Czd_zvDEHIsLw/viewform?usp=sf_link) after covering the pre-requisite content to gauge your understanding.
+Take the [**PLN Quiz**](https://docs.google.com/forms/d/e/1FAIpQLSfin7rDiiBqV9ybs1gV-n4hEv4bXmhanmf13Czd_zvDEHIsLw/viewform?usp=sf_link) after covering the PLN module to gauge your understanding.
 
 {{< embed src="https://docs.google.com/forms/d/e/1FAIpQLSfin7rDiiBqV9ybs1gV-n4hEv4bXmhanmf13Czd_zvDEHIsLw/viewform?usp=sf_link" width="100%" height="900px" >}}
 
