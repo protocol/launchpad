@@ -1,6 +1,6 @@
 [[main]]
   name = "Curriculum"
-  url = "/curriculum"
+  url = "/"
   weight = 1000
   [main.params]
     identifier = "curriculum"
@@ -18,6 +18,13 @@
   weight = 3000
   [main.params]
     identifier = "dev-tools"
+
+[[main]]
+  name = "About"
+  url = "/about/"
+  weight = 3500
+  [main.params]
+    identifier = "about"
 
 [[main]]
   name = "Website"
@@ -90,7 +97,7 @@
   identifier = "curriculum-ipld"
   [curriculum.params]
     image = "/logos/ipld.png"
-    width = 97.3
+    width = 101
     height = 110.6
     section = "ipld"
     description = "IPLD includes a set of protocols and data structures that empower content addressing platforms, such as IPFS. Learn how can you use this tools in your own project!"
@@ -102,7 +109,7 @@
   [curriculum.params]
     image = "/logos/libp2p.png"
     width = 101.17
-    height = 116.47
+    height = 110.47
     section = "libp2p"
     description = "Libp2p is the networking stack of IPFS, which aims to provide reusable networking pieces for your project! Get to know the different modules of Libp2p"
 
