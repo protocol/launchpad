@@ -22,7 +22,7 @@ This example goes over how to use Drand as a client to retrieve a random value i
 
 ## Caveats
 * Drand mainnet releases a random number every 30 seconds. So if you run your results immediately after the other, you may get the exact same output. The problem that arises is if you want to test if the biased randomness works or not over time, it would take a really long time to test.
-* This "biased" algo is not sophisticated, weights are not changing every iteration to adjust for any external factors. 
+* This "biased" algo is not sophisticated, it takes a random number and compares it against the list of user provided items, the last number smaller than the random number is chosen.
 
 ## Instructions
 Imagine you are a full time L5 software engineer and have more important things to think about than what to get for lunch.
