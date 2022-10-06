@@ -13,12 +13,12 @@ level:
 ---
 ### Objectives
 
-**PRE 1.2 Be able to explain how content is shared on IPFS**
-* **PRE 1.21** Be able to describe what content identifiers and mutable data are
-* **PRE 1.22** Understand the challenges posed in a decentralized content sharing system
-* **PRE 1.23** Be able to explain what a peer, node, and swarm are in the context of IPFS
-* **PRE 1.24** Understand the basics of the public DHT
-* **PRE 1.25** Understand garbage collection process on an IPFS node and how to keep data discoverable on IPFS
+**IPFS 1.2 Be able to explain how content is shared on IPFS**
+* **IPFS 1.21** Be able to describe what content identifiers and mutable data are
+* **IPFS 1.22** Understand the challenges posed in a decentralized content sharing system
+* **IPFS 1.23** Be able to explain what a peer, node, and swarm are in the context of IPFS
+* **IPFS 1.24** Understand the basics of the public DHT
+* **IPFS 1.25** Understand garbage collection process on an IPFS node and how to keep data discoverable on IPFS
 
 ## Mutable Content
 One of the most powerful things about IPFS is that any piece of data or content you store on the network cannot be modified without changing the [Content Identifier (CID)](https://protocol-labs.gitbook.io/launchpad-curriculum/launchpad-learning-resources/ipld/content-addressing-and-cids) for that data, since the CID is created (in part) by hashing the content. There are various ways to create mutable data on top of IPFS and in this lesson we will learn what just a few of them are.
