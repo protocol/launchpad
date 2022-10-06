@@ -26,7 +26,7 @@ Web2 is the current version of the internet, where users are able to easily crea
 
 **Web 3 - Shared Ownership**
 
-Web3 is a new distributed, decentralized verion of the internet that reallocates decision-making and data ownership directly to users, giving them sovereign control over their data.
+Web3 is a new distributed, decentralized version of the internet that reallocates decision-making and data ownership directly to users, giving them sovereign control over their data.
 
 ![Decentralized and Distributed](media.png)
 
