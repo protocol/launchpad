@@ -14,12 +14,12 @@ level:
 ### Objectives
 
 **IPFS 1.0 Understand what web3 and peer-to-peer networking is, as well as how and why IPFS was started**
-* **IPFS 1.01** Understand what is a peer to peer network
+* **IPFS 1.01** Understand what is a peer to peer(p2p) network
 * **IPFS 1.02** Know the difference between centralized, decentralized, and distributed networks
 * **IPFS 1.03** Trade offs between centralized services & p2p systems
 * **IPFS 1.04** Understand how IPFS is trying to design systems that are future-proof
 
-
+IPFS is one of many different peer to peer networks. Peer to peer networks are groups of computers that share data amongst each other. In these systems, if I was looking for Beethoven's Für Elise, I would send out a request for it to a peer and that person will either respond with the piece or hand along the request to another peer.
 
 ## Why IPFS?
 
