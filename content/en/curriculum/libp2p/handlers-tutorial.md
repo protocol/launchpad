@@ -20,6 +20,8 @@ By the end of the exercise, you should be able to:
 * Send message through a stream
 * Read string data through a stream
 
+## Video: Creating libp2p Handlers
+
 ## Prerequisites
 
 * You must have Go installed. In this exercise, version 1.18 is used.
@@ -35,47 +37,29 @@ If you want to install multiple versions of Go, refer to [this page](https://go.
 There are several functions that you will implement in this tutorial.
 The `main()` function manages the flow of the program by calling different helper functions.
 
-* Let's understand the flow of the program. This program simulates two libp2p nodes running in different machines. The flow of the program works as follows:
-    - Create the _target node_ in a new [goroutine](https://gobyexample.com/goroutines) (this is handled by the `runTargetNode` function).
-    - The _source node_ needs to know the location of the _target node_ to establish a connection; therefore, a new [Go channel](https://gobyexample.com/channels) is created to pass this information.
-    - Create a _source node_ in a new _goroutine_, which receives the _target node_ information as a parameter.
+### Review the "main" Function
+
+* Let's understand the flow of the program. This program simulates creates two libp2p nodes. The flow of the program works as follows:
+    - Create the _target node_ (this is handled by the `runTargetNode` function).
+    - The _source node_ needs to know the location of the _target node_ to establish a connection. Therefore, the `runTargetNode` function returns a `peer.AddrInfo`, containing the multiaddress and ID of the node. 
+    - Create a _source node_, which receives the _target node_ information as a parameter.
 
 ```go
 func main() {
 	ctx, _ := context.WithCancel(context.Background())
-	ch := make(chan peer.AddrInfo)
 
-    // Create target node in a new goroutine
-	go runTargetNode(ch)
-
-    // Get target node information (id and multiaddresses) using a channel
-	info := <-ch
-
-    // Create source node and provide the target node information
-	go runSourceNode(info)
+	// Create target node
+	info := runTargetNode()
+	// Create source node and provide the target node information
+	runSourceNode(info)
 
 	<-ctx.Done()
 }
 ```
 
-* Review the `runTargetNode` function, which creates the target node and sends the target node's information through a Go channel, so that the source node can receive it.
+### Implement the Target Node
 
-```go
-func runTargetNode(nodeInfo chan peer.AddrInfo) {
-	ctx, _ := context.WithCancel(context.Background())
-	
-	log.Printf("Creating target node...")
-	targetNode := createNode()
-	log.Printf("Target node created with ID '%s'", targetNode.ID().String())
-
-	// TO BE IMPLEMENTED: Set stream handler for the "/hello/1.0.0" protocol
-
-	nodeInfo <- *host.InfoFromHost(targetNode)
-	<-ctx.Done()
-}
-```
-
-* Add a new stream handler for the `/hello/1.0.0` protocol. The stream handler of a protocol specifies what to do when a stream for that protocol is opened in the node.
+* In the `runTargetNode` function, add a new stream handler for the `/hello/1.0.0` protocol. The stream handler of a protocol specifies what to do when a stream for that protocol is opened in the node.
 The [SetStreamHandler](https://github.com/libp2p/go-libp2p/blob/master/core/host/host.go#L52) method expects the ID of the protocol and the function to execute when a new message is received.
 
 ```go
@@ -124,21 +108,9 @@ func readHelloProtocol(s network.Stream) error {
 
 In the function, a new reader is created and the content is read as a string until a line break (`\n`) is found. Then, the connection is used to find out which peer sent the message.
 
-* Let's move to the `runSourceNode` function. The source node is created and connected to the target node by using the information provided as a parameter.
+### Implement the Source Node
 
-```go
-func runSourceNode(targetNodeInfo peer.AddrInfo) {
-	log.Printf("Creating source node...")
-	sourceNode := createNode()
-	log.Printf("Source node created with ID '%s'", sourceNode.ID().String())
-
-	sourceNode.Connect(context.Background(), targetNodeInfo)
-
-	// TO BE IMPLEMENTED: Open stream and send message
-}
-```
-
-* Now, let's open a stream for the `/hello/1.0.0` protocol and send a message.
+* Let's move to the `runSourceNode` function. The source node is created and connected to the target node by using the information provided as a parameter. Let's open a stream for the `/hello/1.0.0` protocol and send a message.
 The [NewStream](https://github.com/libp2p/go-libp2p/blob/master/core/host/host.go#L66) method expects a context, the ID of the peer to open the stream, and the ID of the protocol.
 
 ```go
@@ -165,6 +137,8 @@ func runSourceNode(targetNodeInfo peer.AddrInfo) {
 ```
 
 You can read the code like "use the target node's connection to open a stream for the `/hello/1.0.0` protocol".
+
+### Test the Application
 
 * Let's test everything by running the Go application.
 
