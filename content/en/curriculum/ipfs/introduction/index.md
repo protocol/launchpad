@@ -15,13 +15,22 @@ level:
 
 **IPFS 1.0 Understand what IPFS is and why IPFS was started**
 * **IPFS 1.01** Understand what is a peer to peer(p2p) network
-* **IPFS 1.02** Know the difference between centralized, decentralized, and distributed networks
-* **IPFS 1.03** Trade offs between centralized services & p2p systems
+* **IPFS 1.02** Know the difference between centralised, decentralised, and distributed networks
+* **IPFS 1.03** Trade offs between centralised services & p2p systems
 * **IPFS 1.04** Understand how IPFS is trying to design systems that are future-proof
 
-IPFS is one of many [general purpose peer to peer (P2P) networks](https://en.wikipedia.org/wiki/Peer-to-peer#Other_P2P_applications). Peer to peer networks are groups of computers that share data amongst each other. In these systems, if we were looking for Beethoven's Für Elise, we would ask a peer and that person will either respond with the song or hand along the request to another peer. Eventually, someone will return with the song if they have it saved. We could instead ask for the [IPFS white paper](https://github.com/ipfs/papers/blob/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf) and it would go through the same process. 
+IPFS is one of many [general purpose peer to peer (P2P) networks](https://en.wikipedia.org/wiki/Peer-to-peer#Other_P2P_applications). Peer to peer networks are just everyday computer users that share data directly with each other. In these systems, you don't have to go through an intermediary like Google to share a file with someone. As an example, if we were looking for the [IPFS white paper](https://github.com/ipfs/papers/blob/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf), we would ask a peer and they will either respond with the paper or pass along the request to another peer. Eventually, someone will return with the paper if they have it saved.
 
-Peer to peer networks differ greatly from the world wide web. We can't go to a popular music streaming platform to ask for the IPFS white paper, where as in a p2p system we could.
+![Difference between Centralised, Decentralised, & Distributed Networks](difference_in_systems.png)
+Peer to peer systems are most synonymous with distributed networks. This is because we have direct connections with our peers as opposed to in centralised and decentralised networks, we often still have to go through a mediary to find content. 
+
+These different types of networks offer various tradeoffs. The world wide web is in essense a centralised network. We are familiar with the speed of receiving content, availability of data when we want it, the ease of discovering new things, and straight forward way of securing our accounts.
+
+On the other hand, peer to peer networks excel in everything that centralised networks don't. This includes owning our own data and censorship resistance against governments, corporations, or hackers. They allow us to trust that the data we recieve is the data we ask for, if it is available. And generally the more users sharing data with each other, the better the network will be.
+
+Decentralised networks maintain privacy and censorship resistance while being able to discover new content and maintain availability of data. Unfortunately, this comes at the cost of speed. Decentralised networks have to agree on all actions made by users because they save the actions on every computer in the network. Then in the future, all computers can reference any action taken by any single user. For this reason, decentralised networks are generally paid for by the user and use up large amounts of electricty.
+
+Sources: ["The Benefits of Decentralization" by @petkanics | Medium](https://petkanics.medium.com/the-benefits-of-decentralization-88a0b5d0fd39), ["Centralized, Decentralized & Distributed Networks" by Cryptopedia](https://www.gemini.com/cryptopedia/blockchain-network-decentralized-distributed-centralized)
 
 ## Why IPFS?
 
