@@ -5,12 +5,21 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-ipfs"
-weight: 120
+weight: 75
 category: lecture
 level:
 - shallow
 - deep
 ---
+
+## Objectives
+
+**IPFS 1.1 Understand Content Addressing, CIDs, and what advantages they present over location-based addressing**
+
+* **1.11 -** Be able to describe content in IPFS is immutable
+* **1.12 -** Know the difference between location addressing vs content addressing
+* **1.13 -** Fundamentally know what a CID is and its variations
+* **1.14 -** Understand that data on IPFS is pinned and made available to a distributed network
 
 #### How IPFS Works | Steve Allen
 In this video, Steve Allen describes how IPFS **Imports, Names, Finds** and **Fetches** content.
