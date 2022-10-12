@@ -14,26 +14,26 @@ level:
 ## Learning Objectives
 
 **IPFS 1.4 Be able to explain the basics of UnixFS**
-* **1.61 –** Understand what is UnixFS and what problem it solves.
-* **1.62 –** Understand how files with more than a single block are labeled.
+* **1.61 –** Understand what is UnixFS and what problem it solves
+* **1.62 –** Learn how files with more than a single block are labeled
 {{% level type="[deep]" %}}
-* **1.63 –** Understand the protobuf format, and its main fields.
+* **1.63 –** Go over the protobuf format, and its main fields
 {{% /level %}}
 
 ## Introducing UnixFS
-By now, you already know that files and directories in IPFS are represented as Merkle DAGs. This means that the data of large files is splited across several (or many) blocks. Every block needs to have some metadata that identifies what kind of data it holds. For example, consider the following diagram, which contains a directory with files.
+By now, you already know that files and directories in IPFS are represented as Merkle DAGs. This means that the data of large files are split across several blocks. Every block needs to have some metadata that identifies what kind of data it holds. For example, consider the following directory.
 
 ![File structure sample](file-structure.png)
 
-Usually, directories and small files fit into just one block. However, large files are splited across several blocks, which are linked.
+Usually, directories and small files fit into just one block. However, large files are split across several blocks, which are linked.
 
 ![Files and directories as blocks](blocks.png)
 
-The `animals` and `dogs` directories, as well as the `elephant.png` file, are small enough to fit into one block. However, the `cat.jpg` file requires three blocks. When you read the blocks, it is necessary to have some information about every block, such as type (directory, file...), size or data. IPFS uses [UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs) to provide information for every block.
+The two directories, and the `elephant.png` file, are small enough to fit into their own block. However, the `cat.jpg` file requires three blocks. When you read the blocks, it is necessary to have some information about every block, such as type (directory, file,...), size or data. IPFS uses [UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs) to provide information for every block.
 
 ![Detailed view of the blocks](blocks-detailed.png)
 
-The first block of the `cat.jpg` file is marked as `type: file` because it is the starting block of the file. The remaining blocks are marked as `type: raw` because they only contain data.
+The first block of the `cat.jpg` file is marked as `type: file`, because it is the starting block of the file. The remaining blocks are marked as `type: raw`, because they only contain data.
 
 {{% level type="[deep]" %}}
 ## Technical Implementation
