@@ -22,31 +22,31 @@
         localStorage.setItem(key, value);
         return
       }
-  
+
       document.cookie = key + " = " + value + "; path=/";
     },
     get: function(key) {
       if (this.isLocalStorageSupported()) {
         return localStorage.getItem(key);
       }
-  
+
       const cookies = document.cookie;
       for(const element of cookies.split(";")) {
         console.log(element)
         const elemSplit = element.split("=")
-  
+
         if (elemSplit[0] == key) {
           return elemSplit[1];
         }
       }
     }
   }
-  
+
   function setContentLevel(level) {
     window.store.set('content_level', level);
     location.reload()
   }
-  
+
   function getContentLevel() {
     return window.store.get('content_level');
   }
@@ -220,3 +220,4 @@
   const contentLevelSelector = document.getElementById("content-level-selector")
   contentLevelSelector.value = getContentLevel();
 </script>
+

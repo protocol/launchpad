@@ -1,6 +1,6 @@
 ---
 title: "Learning Objectives & Quiz"
-description: "Test your knowledge by taking a quiz"
+description: "PageNavigation your knowledge by taking a quiz"
 draft: false
 menu:
     prereq:
