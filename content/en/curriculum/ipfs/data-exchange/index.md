@@ -13,29 +13,30 @@ level:
 
 ## Learning Objectives
 
-This section covers the **1.4** learning objetive. By the end, you should be able to:
+**IPFS 1.4 Be able to explain the basics of data transfer in IPFS**
 
-* **1.41 –** Understand that Bitswap is a message-oriented protocol to exchange data.
-* **1.42 –** Understand how Bitswap works (message types and flow of the messages)
+* **1.41 –** Learn what is IPFS's message-oriented protocol to exchange data
+* **1.42 –** Know what are the different message types and their order of operations
 * **1.43 –** Understand what is _the session_ and _the ledger_ in the context of Bitswap
-* **1.44 –** Understand the different components of Bitswap at a high level
-* **1.45 –** Understand what is Graphsync and what advantages it involves over Bitswap
+* **1.44 –** Explain the different components of Bitswap at a high level
+* **1.45 –** Discover what advantages Graphsync has over Bitswap
 
 ## Introduction
 
 IPFS differs greatly in the way that it stores, shares, and retrieves files. Instead of having clients rely on servers, IPFS allows peers to connect and search for one another in an efficient manner to exchange data directly.
 
-Bitswap is a protocol to exchange blocks (i.e. data) in a peer-to-peer network. IPFS uses Bitswap to retrieve files from other peers in the network. At the interface level, the Bitswap protocol has two operations: `get(CID)` and `put(CID)`. The `get`operation is used to find a block with a specific CID, and the `put` operation is used to announce that the node is storing a block.
+Bitswap is a protocol to exchange blocks (i.e. data) in a peer-to-peer network. IPFS uses Bitswap to retrieve files from other peers in the network. At the interface level, the Bitswap protocol has two operations: `get(CID)` and `put(CID)`. The `get`operation is used to find a block with a specific CID, and the `put` operation is used to announce that the node is storing a block. 
 
 ## How Bitswap Works
 
 Bitswap is a message-oriented protocol, so communication happens by exchanging messages among peers (pubsub). The messages supported are:
-- `WANT-HAVE` (request): this message communicates to the network the interest in a specific block (e.g. `WANT-HAVE(CID)`).
-- `HAVE` (response): in response to the `WANT-HAVE` message, peers storing the block with the given CID, notify so.
-- `DONT-HAVE` (response): in response to the `WANT-HAVE` message, peers NOT storing the CID, notify so.
-- `CANCEL` (request): if the node sent a `WANT-HAVE` message and is no longer interested, it notifies the network.
-- `WANT-BLOCK` (request): the node asks peers storing a block to actually send the data. With the `WANT-HAVE` message, the node shows interest in the block, and the `WANT-BLOCK` message requests that the data of the block is sent.
-- `BLOCK` (response): in response to the `WANT-BLOCK` message, the peer sends the data of the block.
+- `WANT-HAVE`(**request**): this message communicates to the network the **interest** in a specific block
+- `HAVE`: peers storing the requested block, **respond** with a `HAVE` message
+- `DONT-HAVE`: peers NOT storing the requested block, **respond** with `DONT-HAVE`
+- `CANCEL`: if the node that sent a `WANT-HAVE` message is no longer **interested** in the block, it sends a `CANCEL` message to the network
+- `WANT-BLOCK`(**request**): this message is directed to a single peer that responded with `HAVE`, to now send the actual block data
+- `BLOCK`: the peer sends the requested block data along with a `BLOCK` message
+
 
 Let's say that you're running an IPFS node, and you want to retrieve a file, `notes.txt`, from the network, which has a root block with CID `CID1`.
 
@@ -50,16 +51,15 @@ The process of retrieving a file in Bitswap involves sending `WANT-HAVE` and `WA
 
 ### Getting the Root Block
 
-First, Bitswap checks if the node is hosting the CID in its local blockstore. When you download information from the IPFS network, the content is stored in your local blockstore, so if you requested the CID before, it could potentially be on your computer.
+First, Bitswap checks if the node is hosting the CID in its local blockstore. When you download information from the IPFS network, the content is stored in your local blockstore, so if you requested the CID before, it could already be on your computer.
 
-If the CID is not found locally, then Bitswap opens a _session_.
-In the context of Bitswap, a _session_ contains the nodes that might potentially store the blocks of the file. In the beginning, the _session_ is composed of the direct peers of your node (i.e. the peers that you are connected to).
+If the CID is not found locally, then Bitswap opens a _session_. In the context of Bitswap, a _session_ contains the nodes that might potentially store the blocks of the file. In the beginning, the _session_ is composed of the direct peers your node is connected to.
 
 Bitswap sends a `WANT-HAVE(CID1)` message to all the nodes in the session. In the following diagram, the message is sent to four nodes.
 
 ![WANT-HAVE messages sent to peers](want-have-flow.png)
 
-Two peers (`Node 1` and `Node 3`) have returned a `HAVE` message, which means that they are storing the block. However, Bitswap only asks one peer to actually **exchange the block's data**. This way, you avoid requesting the same content twice.
+Two peers (`Node 1` and `Node 3`) have returned a `HAVE` message, which means that they are storing the block corresponding to the CID. However, Bitswap only asks one peer to actually **exchange the block's data**. This way, you avoid requesting the same content twice.
 
 ![HAVE responses from peers](want-block-flow.png)
 
@@ -86,15 +86,15 @@ For example, consider the following diagram.
 
 ![Ledger after requesting a block](ledger.png)
 
-The `Node 7` node is looking for the `CID1` block, and the `Node 8` node is looking for the `CID4` block. The `Node 15` node does not store any of those blocks, however, keeps the information in its ledger.
-If in the future the `Node 15` node receives any of the blocks, it will send it straight away.
+The `Node 7` node is looking for the `CID1` block, and the `Node 8` node is looking for the `CID4` block. The `Node 15` node does not store any of those blocks, however, it will keep the information in its ledger.
+If in the future the `Node 15` node receives any of the blocks, it will send them straight away.
 
-### Bitswap architecture
+### Bitswap Architecture
 Bitswap is composed of several components:
 
 - Connection Manager: manages the connections with other peers to retrieve and announce blocks by interacting with the network interface. In the case of IPFS, the connection manager interacts with a libp2p node.
-- Ledger: tracks the interest of other peers for CIDs. It holds _WantLists_.
-- Session Manager: manages all the active sessions.
+- Ledger: tracks the interest of other peers for CIDs. It holds _WantLists_
+- Session Manager: manages all the active sessions
 
 You can get more information about Bitswap in the following videos:
 
