@@ -1,6 +1,6 @@
 ---
 title: "UnixFS"
-description: "IPFS Gateways and Browsers"
+description: "An introduction to UnixFS"
 draft: false
 menu:
     curriculum:
