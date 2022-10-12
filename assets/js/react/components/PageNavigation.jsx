@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react"
 import ReactDOM from "react-dom/client";
 import {useContentLevel, useCurrentPageId, useSidebarMenuElements} from "../services/hooks";
+import Spinner from 'react-bootstrap/Spinner';
 
 const PageNavigation = () => {
 
@@ -44,7 +45,7 @@ const PageNavigation = () => {
   }
 
   return <>
-    {(previous === null && next === null) && <div>Loading...</div>}
+    {(previous === null && next === null) && <Spinner animation="border" role="status" />}
     {(previous !== null || next !== null) && <div className="docs-navigation d-flex justify-content-between">
       {previous !== null && <a href={getHref(previous)}>
         <div className="card my-1">
