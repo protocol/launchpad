@@ -23,11 +23,11 @@ const PageNavigation = () => {
       const levelsAsString = element.getAttribute('data-content-level').replace("[", "").replace("]", "")
       const levels = Array.from(levelsAsString.split(" "))
 
-      if (findPrevious && id !== currentPageId && levels.includes(contentLevel)) {
+      if (findPrevious && id !== currentPageId && (levels.includes(contentLevel) || !contentLevel)) {
         setPrevious(sidebarMenuElements[i])
       }
 
-      if (findNext && levels.includes(contentLevel)) {
+      if (findNext && (levels.includes(contentLevel) || !contentLevel)) {
         setNext(sidebarMenuElements[i])
         break
       }
