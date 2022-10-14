@@ -38,7 +38,7 @@ In this 6 minute video, understand how Filecoin proves both replication, retriev
 
 ### [Storage Providers (Miners)](https://docs.filecoin.io/storage-provider/how-providing-works)
 
-* Anyone with the [minimum required hardware](https://docs.filecoin.io/storage-provider/hardware-requirements/) can create a storage Storage Provider
+* Anyone with the [minimum required hardware](https://docs.filecoin.io/storage-provider/hardware-requirements/) can be a storage Storage Provider
 * Storage Providers do not earn rewards until they onboard a minimum amount of sealed storage to the network
 * Deals are made trustlessly between a client and a provider
 * There are incentive structures such as _power_ that allow providers to earn Filecoin through _storage fees_ and _block rewards_. [More on provider rewards](https://docs.filecoin.io/storage-provider/storage-provider-rewards/#storage-fees)
