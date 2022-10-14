@@ -8,6 +8,7 @@ menu:
 weight: 155
 category: lecture
 level:
+- shallow
 - deep
 ---
 
@@ -16,6 +17,7 @@ level:
 **IPFS 1.4 Be able to explain the basics of UnixFS**
 * **1.61 –** Understand what is UnixFS and what problem it solves
 * **1.62 –** Learn how files with more than a single block are labeled
+
 {{% level type="[deep]" %}}
 * **1.63 –** Go over the protobuf format, and its main fields
 {{% /level %}}
