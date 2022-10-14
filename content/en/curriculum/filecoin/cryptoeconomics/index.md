@@ -38,8 +38,8 @@ In this 6 minute video, understand how Filecoin proves both replication, retriev
 
 ### [Storage Providers (Miners)](https://docs.filecoin.io/storage-provider/how-providing-works)
 
-* Anyone with the [minimum required hardware](https://docs.filecoin.io/storage-provider/hardware-requirements/) can create a storage miner
-* Miners do not earn rewards until they onboard a minimum amount of sealed storage to the network
+* Anyone with the [minimum required hardware](https://docs.filecoin.io/storage-provider/hardware-requirements/) can create a storage Storage Provider
+* Storage Providers do not earn rewards until they onboard a minimum amount of sealed storage to the network
 * Deals are made trustlessly between a client and a provider
 * There are incentive structures such as _power_ that allow providers to earn Filecoin through _storage fees_ and _block rewards_. [More on provider rewards](https://docs.filecoin.io/storage-provider/storage-provider-rewards/#storage-fees)
 
@@ -49,8 +49,8 @@ There are several special mechanisms that the Filecoin blockchain implements, su
 The Filecoin network uses upfront token collaterals, like those used in other proof-of-stake protocols, proportional to the storage hardware committed. Storage providers are give something called _power_ which increases their likelihood of winning block rewards, and their contribution to consensus. There are three types of collateral that Filecoin providers must provide in order to participate in the economy:
 
 * **Initial Pledge Collateral** – This consists of a storage pledge and a consensus pledge. The storage pledge provides tokens as a collateral that will be slashed if storage sectors are terminated, and the consensus pledge provides a mechanism for preventing consensus takeovers.
-* **Block Reward as Collateral** – Filecoin penalizes miners that fail to store files for the promised duration, balancing it with an overly high cost to join the network. Block rewards earned by a miner are slashed if a sector is terminated before its expiration.
-* **Storage Provider Deal Collateral** – Miners can offer a higher deal collateral to data providers (above the minimum specified by the protocol), implying a higher level of service and reliability. Given the increased stakes, clients may associate collateral beyond the minimum with an increased likelihood that their data will be reliably stored. This is returned to storage providers once sectors expire.
+* **Block Reward as Collateral** – Filecoin penalizes Storage Providers that fail to store files for the promised duration, balancing it with an overly high cost to join the network. Block rewards earned by a Storage Providers are slashed if a sector is terminated before its expiration.
+* **Storage Provider Deal Collateral** – Storage Providers can offer a higher deal collateral to data providers (above the minimum specified by the protocol), implying a higher level of service and reliability. Given the increased stakes, clients may associate collateral beyond the minimum with an increased likelihood that their data will be reliably stored. This is returned to storage providers once sectors expire.
 
 ### Verified Data Providers
 Using a network of verifiers, those who are storing data can apply to have their data categorized as verified (valuable) data. Once a data client is verified, they are given DataCap for a certain amount of approved data, that, when stored, rewards the storage provider with more power.
