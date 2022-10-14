@@ -8,14 +8,16 @@ menu:
 weight: 155
 category: lecture
 level:
+- shallow
 - deep
 ---
 
 ## Learning Objectives
 
-**IPFS 1.4 Be able to explain the basics of UnixFS**
+**IPFS 1.6 Be able to explain the basics of UnixFS**
 * **1.61 –** Understand what is UnixFS and what problem it solves.
 * **1.62 –** Understand how files with more than a single block are labeled.
+
 {{% level type="[deep]" %}}
 * **1.63 –** Understand the protobuf format, and its main fields.
 {{% /level %}}
