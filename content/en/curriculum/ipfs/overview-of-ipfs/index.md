@@ -1,6 +1,6 @@
 ---
 title: "Overview of How IPFS Works"
-description: "A start-to-finish description of How IPFS Works"
+description: "A start-to-finish description of how IPFS works"
 draft: false
 menu:
     curriculum:
@@ -79,18 +79,37 @@ At a high level, the talk covered the following concepts:
 * Paths – Paths are recursive unlike URLs and can refer to previous blocks.
 * [IPNS](https://docs.ipfs.io/concepts/ipns/#interplanetary-name-system-ipns) – Public keys are mapped to a CID and you use your private key to sign it. As you modify this content, you can use IPNS to point to the new CID.
 
+<!-- Mark as deep content -->
 #### Find
 * [Routing & DHT](https://docs.ipfs.io/concepts/dht/#distributed-hash-tables-dhts) – Content on IPFS uses a combination of a CID and routing systems that help identify the set of peers you can get the content from with a distributed routing table (or Distributed Hash Table).
 * [Kademlia](https://docs.ipfs.io/concepts/dht/#kademlia) – Kademlia is a distance metric + query algorithm that helps users find the peers with the most accessible pieces of data.
 
 #### Fetch
 * [Bitswap](https://docs.ipfs.io/concepts/bitswap/#how-bitswap-works) – Using wantlists of data, or CIDs, that specific users are looking for, and checks peers that a node is connected to first for those CIDs before querying the rest of the DHT.
+<!-- end deep content tag -->
+
+## Pinning Content on IPFS
+
+By default, content on IPFS is not _pinned_. That means when you add a file to IPFS, it will eventually stop being discoverable on the network. 
+
+This problem occurs because IPFS uses garbage collection to free disk space on your IPFS node by deleting data that it thinks is no longer needed. [Garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) is a form of automatic resource management widely used in software development. The garbage collector attempts to reclaim memory occupied by objects that are no longer in use.
+
+To mitigate this problem you must _pin_ your content to your [node](https://docs.ipfs.tech/concepts/nodes/#nodes) to ensure it persists on IPFS. Your options for pinning content are:
+1. You pin it locally to your own node. Note that if the content is only pinned to your local node, it must be online for peers to get that content.
+2. You use a [pinning service](https://docs.ipfs.io/concepts/persistence/#pinning-services). Some pinning services require payment for their services, others offer a [free storage allowance for new users](https://docs.ipfs.tech/concepts/persistence/#ipfs-filecoin-solutions).
+
+
+![Pinning IPFS](pinning.png)
+
+Check out this article to find out more about [permanence on IPFS](https://docs.ipfs.tech/concepts/persistence/).
 
 ## More IPFS Concepts
 _You can also [find this content in IPFS Docs](https://docs.ipfs.io/concepts/)_
 
 Because IPFS is a system that hopes to change how we use the Internet, it comes with many new concepts:
 
+<!-- Mark as deep content  -->
 #### Whiteboard Series with NEAR | Ep: 42 Adin Schmahmann
 
 {{< youtube J-drqD2UebM >}}
+<!-- end deep content tag -->
