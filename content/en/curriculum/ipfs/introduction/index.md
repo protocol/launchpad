@@ -24,13 +24,11 @@ IPFS is one of many [general purpose peer to peer (P2P) networks](https://en.wik
 ![Difference between Centralised, Decentralised, & Distributed Networks](IPFS_dist_cent.png)
 Peer to peer systems are most synonymous with distributed networks. This is because we have direct connections with our peers as opposed to in centralised and decentralised networks, we often still have to go through a mediary to find content. 
 
-These different types of networks offer various tradeoffs. The world wide web is in essense a centralised network. We are familiar with the speed of receiving content, availability of data when we want it, the ease of discovering new things, and straight forward way of securing our accounts.
+These [different types of networks](https://www.gemini.com/cryptopedia/blockchain-network-decentralized-distributed-centralized) offer various tradeoffs. The world wide web is in essense a centralised network. We are familiar with the speed of receiving content, availability of data when we want it, the ease of discovering new things, and straight forward way of securing our accounts.
 
 On the other hand, peer to peer networks excel in everything that centralised networks don't. This includes owning our own data and censorship resistance against governments, corporations, or hackers. They allow us to trust that the data we recieve is the data we ask for, if it is available. And generally the more users sharing data with each other, the better the network will be.
 
-Decentralised networks maintain privacy and censorship resistance while being able to discover new content and maintain availability of data. Unfortunately, this comes at the cost of speed. Decentralised networks have to agree on all actions made by users because they save the actions on every computer in the network. Then in the future, all computers can reference any action taken by any single user. For this reason, decentralised networks are generally paid for by the user and use up large amounts of electricty.
-
-Sources: ["The Benefits of Decentralization" by @petkanics | Medium](https://petkanics.medium.com/the-benefits-of-decentralization-88a0b5d0fd39), ["Centralized, Decentralized & Distributed Networks" by Cryptopedia](https://www.gemini.com/cryptopedia/blockchain-network-decentralized-distributed-centralized)
+[Decentralised networks](https://petkanics.medium.com/the-benefits-of-decentralization-88a0b5d0fd39) maintain privacy and censorship resistance while being able to discover new content and maintain availability of data. Unfortunately, this comes at the cost of speed. Decentralised networks have to agree on all actions made by users because they save the actions on every computer in the network. Then in the future, all computers can reference any action taken by any single user. For this reason, decentralised networks are generally paid for by the user and use up large amounts of electricty.
 
 ## Why IPFS?
 
