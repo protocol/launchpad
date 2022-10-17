@@ -12,27 +12,6 @@ level:
 - deep
 ---
 
-## Content Addressing
-
-### Why location addressing fails us
-
-* A URL only points to a single copy, stored in a single location.
-* If that copy disappears, there is no way to know where other copies are.
-* It is not possible for a user to validate the integrity of the content:
-  * A malicious actor can poison DNS, or change the copy’s location, without the end user noticing.
-  * HTTPS is an improvement, but only secures the transport, not the content.
-* No request aggregation, resulting in duplication of effort and bandwidth waste (i.e. no options for multicast in the wild).
-
-### Location- vs Content-Addressing
-
-![](location-vs-content.png)
-
-Location addressing asks exactly one remote host for content by name (which may or may not be related to the content).
-
-Content addressing can ask anyone for content by the fingerprint (hash) of that content since the relationship between the fingerprint and the content is immutable. Since we can verify the content we receive matches the fingerprint, it doesn't matter who we receive the content from.
-
-![](location-vs-content2.png)
-
 ## Content Identifiers (CIDs)
 
 CIDs are:

@@ -1,6 +1,6 @@
 ---
 title: "Overview of How IPFS Works"
-description: "A Deeper Dive Into How IPFS Works"
+description: "A start-to-finish description of How IPFS Works"
 draft: false
 menu:
     curriculum:
@@ -20,6 +20,47 @@ level:
 * **1.12 -** Know the difference between location addressing vs content addressing
 * **1.13 -** Fundamentally know what a CID is and its variations
 * **1.14 -** Understand that data on IPFS is pinned to be made available to the network
+
+{{< youtube dWq0GNbLtUI>}}
+
+At a high level, the talk covered the following concepts:
+
+**The Importance of Immutabilty**
+
+IPFS allows us to verify the content we received is the content we asked for using hashes.
+* Hashes are deterministic, meaning given an input, it will always have the same output. If the input data changes in any way, then the output generated hash will also change.
+* Since files are immutable, they can never change without generating a brand new hash and, by extension, CID.
+* IPFS enables fast caching and deduplication, this means you can save space by just communicating any changes to a file.
+* IPFS allows you to fetch the data you want from anyone, using the immutable CIDs.
+
+**Anatomy of a Content Identifier (CID)**
+
+CIDs are unique strings. There must be a way to future proof the seemingly infinite amount of data that will be added on to the network.
+* Metadata about a hash (aka a prefix) + the hash itself = CID
+* The collection of “metadata prefixes” used in CIDs are part of the [Multiformats](https://multiformats.io/) library.
+* Currently, there are 2 different versions of CIDs in IPFS, CIDv0 & CIDv1, the currently widely accepted one being v1 CIDs. The version is also prefixed in the CID itself.
+* The Multiformat protocols ensure future-proof compatibility and standards if any algorithm needs to change.
+
+## Content Addressing
+
+### Why location addressing fails us
+
+* A URL only points to a single copy, stored in a single location.
+* If that copy disappears, there is no way to know where other copies are.
+* It is not possible for a user to validate the integrity of the content:
+  * A malicious actor can poison DNS, or change the copy’s location, without the end user noticing.
+  * HTTPS is an improvement, but only secures the transport, not the content.
+* No request aggregation, resulting in duplication of effort and bandwidth waste (i.e. no options for multicast in the wild).
+
+### Location- vs Content-Addressing
+
+![location vs content](location-vs-content.png)
+
+Location addressing asks exactly one remote host for content by name (which may or may not be related to the content).
+
+Content addressing can ask anyone for content by the fingerprint (hash) of that content since the relationship between the fingerprint and the content is immutable. Since we can verify the content we receive matches the fingerprint, it doesn't matter who we receive the content from.
+
+![location vs content](location-vs-content2.png)
 
 #### How IPFS Works | Steve Allen
 In this video, Steve Allen describes how IPFS **Imports, Names, Finds** and **Fetches** content.
