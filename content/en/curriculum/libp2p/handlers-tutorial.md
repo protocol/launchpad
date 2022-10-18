@@ -1,6 +1,6 @@
 ---
 title: "Creating stream handlers in libp2p (Tutorial)"
-description: "Use libp2p-go to create a new stream of data"
+description: "Use go-libp2p to create a new stream of data"
 draft: false
 menu:
     curriculum:
@@ -41,7 +41,7 @@ The `main()` function manages the flow of the program by calling different helpe
 
 * Let's understand the flow of the program. This program simulates creates two libp2p nodes. The flow of the program works as follows:
     - Create the _target node_ (this is handled by the `runTargetNode` function).
-    - The _source node_ needs to know the location of the _target node_ to establish a connection. Therefore, the `runTargetNode` function returns a `peer.AddrInfo`, containing the multiaddress and ID of the node. 
+    - The _source node_ needs to know the location of the _target node_ to establish a connection. Therefore, the `runTargetNode` function returns a `peer.AddrInfo`, containing the multiaddress and ID of the node.
     - Create a _source node_, which receives the _target node_ information as a parameter.
 
 ```go
@@ -65,7 +65,7 @@ The [SetStreamHandler](https://github.com/libp2p/go-libp2p/blob/master/core/host
 ```go
 func runTargetNode(nodeInfo chan peer.AddrInfo) {
 	ctx, _ := context.WithCancel(context.Background())
-	
+
 	log.Printf("Creating target node...")
 	targetNode := createNode()
 	log.Printf("Target node created with ID '%s'", targetNode.ID().String())
