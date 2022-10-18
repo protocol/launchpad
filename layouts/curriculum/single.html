@@ -24,13 +24,16 @@
 					</ol>
 				</nav>
 			{{ end }}
-			<h1 data-page-id="{{ .File.UniqueID }}">{{ .Title }}</h1>
+			<h1 data-page-id="{{ .File.UniqueID }}">{{ .Title }} {{ .File.Path }}</h1>
 			<p class="lead">{{ .Params.lead | safeHTML }}</p>
 			{{ if ne .Params.toc false -}}
 			<nav class="d-xl-none" aria-label="Quaternary navigation">
 				{{ partial "sidebar/docs-toc.html" . }}
 			</nav>
 			{{ end -}}
+
+      <div id="goal1"></div>
+
 			{{ .Content }}
 			{{ if .Site.Params.editPage -}}
 				{{ partial "main/edit-page.html" . }}
@@ -45,4 +48,8 @@
 			-->
 		</main>
 	</div>
+  {{ $pageNavigationJS := resources.Get "js/react/components/curriculum/page/Goal.jsx" | babel }}
+  {{ $goals := dict "goal" .Params.Goal "sgoal" .Params.Subgoals "section" .Section }}
+  {{ $pageNavigationJS := $pageNavigationJS | js.Build (dict "params" $goals) }}
+  <script src="{{ $pageNavigationJS.RelPermalink }}"></script>
 {{ end }}

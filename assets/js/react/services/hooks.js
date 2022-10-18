@@ -1,3 +1,5 @@
+import goalsConfigs from "/Users/enolalvarezdeprado/Documents/projects/launchpad/launchpad/config/_default/goals.json"
+
 export const useStorage = key => {
   const store = window.store
 
@@ -32,4 +34,18 @@ export const useSidebarMenuElements = () => {
 export const useCurrentPageId = () => {
   const currentPageTitle = document.querySelector('[data-page-id]')
   return currentPageTitle.getAttribute('data-page-id')
+}
+
+export const useGoal = (section, goalId) => {
+  const sectionGoals = goalsConfigs[section]
+  if (!sectionGoals) {
+    return null
+  }
+
+  const goal = sectionGoals[goalId]
+  if (!goal) {
+    return  null
+  }
+
+  return goal
 }
