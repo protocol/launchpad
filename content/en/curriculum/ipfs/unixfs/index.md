@@ -14,7 +14,7 @@ level:
 
 ## Learning Objectives
 
-**IPFS 1.4 Be able to explain the basics of UnixFS**
+**IPFS 1.6 Be able to explain the basics of UnixFS**
 * **1.61 –** Understand what is UnixFS and what problem it solves
 * **1.62 –** Learn how files with more than a single block are labeled
 
