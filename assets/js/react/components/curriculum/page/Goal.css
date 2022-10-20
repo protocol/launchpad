@@ -1,0 +1,15 @@
+.learning-objectives {
+  width: 100%;
+}
+
+.learning-objectives .title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.learning-objectives .body {
+  background-color: #f8f8f8;
+  border: 1px solid #EAEAEAFF;
+  border-radius: 8px 8px 8px 8px;
+  align-content: flex-start;
+}

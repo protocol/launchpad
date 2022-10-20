@@ -1,4 +1,4 @@
-import goalsConfigs from "/Users/enolalvarezdeprado/Documents/projects/launchpad/launchpad/config/_default/goals.json"
+import goalsConfigs from "./config/_default/goals.json"
 
 export const useStorage = key => {
   const store = window.store
