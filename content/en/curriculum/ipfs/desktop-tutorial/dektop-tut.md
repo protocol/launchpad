@@ -33,8 +33,11 @@ Explore the best workflows and capabilities with IPFS Desktop
 
 #### Install IPFS Desktop
 If you haven't already, follow the [comprehensive tutorial at on ipfs.doc on installing IPFS Desktop](https://docs.ipfs.tech/install/ipfs-desktop/) onto your computer
+
 #### The Status Page
-[ ] huiewdn
+
+Try out the following on the Status
+[ ] Find your
 #### The Files Page
 #### The Explore Page
 #### The Peers Page
