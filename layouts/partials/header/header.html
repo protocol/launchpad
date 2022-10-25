@@ -52,6 +52,10 @@
   }
   </script>
 
+{{ $css := resources.Match "js/react/components/**.css" }}
+{{ $css = $css | resources.Concat "/js/react-components.css" | minify | resources.PostProcess }}
+<link href="{{ $css.RelPermalink }}" rel="stylesheet" type="text/css" />
+
 <header class="navbar navbar-expand-md navbar-light doks-navbar">
   <nav class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} flex-wrap flex-md-nowrap" aria-label="Main navigation">
     <a class="navbar-brand p-0 me-auto" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Params.Title }}">

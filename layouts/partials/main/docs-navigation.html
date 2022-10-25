@@ -1,5 +1,5 @@
 <div id="page-navigation"></div>
 
-{{ $pageNavigationJS := resources.Get "js/react/components/PageNavigation.jsx" | babel }}
+{{ $pageNavigationJS := resources.Get "js/react/components/curriculum/page/PageNavigation.jsx" | babel }}
 {{ $pageNavigationJS := $pageNavigationJS | js.Build }}
 <script src="{{ $pageNavigationJS.RelPermalink }}"></script>

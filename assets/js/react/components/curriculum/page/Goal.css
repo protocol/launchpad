@@ -1,0 +1,21 @@
+.learning-objectives {
+  width: 100%;
+}
+
+.learning-objectives .title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.learning-objectives .body {
+  background-color: #f8f8f8;
+  border: 1px solid #EAEAEAFF;
+  border-radius: 8px 8px 8px 8px;
+  align-content: flex-start;
+}
+
+[data-dark-mode] .learning-objectives .body {
+  background-color: #3d3d3d;
+  border: 1px solid #252525;
+  color: white;
+}
