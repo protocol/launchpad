@@ -10,10 +10,6 @@ category: lecture
 level:
 - shallow
 - deep
-goal: 1.4
-subgoals:
-- 1.41
-- 1.42
 ---
 
 ## Why IPFS?
