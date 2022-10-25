@@ -22,35 +22,39 @@
         localStorage.setItem(key, value);
         return
       }
-  
+
       document.cookie = key + " = " + value + "; path=/";
     },
     get: function(key) {
       if (this.isLocalStorageSupported()) {
         return localStorage.getItem(key);
       }
-  
+
       const cookies = document.cookie;
       for(const element of cookies.split(";")) {
         console.log(element)
         const elemSplit = element.split("=")
-  
+
         if (elemSplit[0] == key) {
           return elemSplit[1];
         }
       }
     }
   }
-  
+
   function setContentLevel(level) {
     window.store.set('content_level', level);
     location.reload()
   }
-  
+
   function getContentLevel() {
     return window.store.get('content_level');
   }
   </script>
+
+{{ $css := resources.Match "js/react/components/**.css" }}
+{{ $css = $css | resources.Concat "/js/react-components.css" | minify | resources.PostProcess }}
+<link href="{{ $css.RelPermalink }}" rel="stylesheet" type="text/css" />
 
 <header class="navbar navbar-expand-md navbar-light doks-navbar">
   <nav class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} flex-wrap flex-md-nowrap" aria-label="Main navigation">
@@ -220,3 +224,4 @@
   const contentLevelSelector = document.getElementById("content-level-selector")
   contentLevelSelector.value = getContentLevel();
 </script>
+
