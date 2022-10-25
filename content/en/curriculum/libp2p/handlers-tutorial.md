@@ -22,6 +22,8 @@ By the end of the exercise, you should be able to:
 
 ## Video: Creating libp2p Handlers
 
+{{< youtube 27fQqqqwYqY >}}
+
 ## Prerequisites
 
 * You must have Go installed. In this exercise, version 1.18 is used.
