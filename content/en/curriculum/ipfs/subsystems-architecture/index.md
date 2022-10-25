@@ -49,18 +49,6 @@ In turn, these yield properties for the system as a whole:
 - Networks can be partitioned and merged
 - Any datastructure can be modelled and distributed
 
-IPFS is a stack of network protocols that organize agent networks to create, publish, distribute, serve, and download merkledags. It is the authenticated, decentralized, permanent web.
-
-#### Nodes and Network Model
-The IPFS network uses PKI based identity. An "ipfs node" is a program that can find, publish, and replicate merkledag objects. Its identity is defined by a private key. Specifically:
-
-```
-privateKey, publicKey := keygen()
-nodeID := multihash(publicKey)
-```
-
-See more in the [IPFS keystore spec](https://github.com/ipfs/specs/blob/master/KEYSTORE.md).
-
 #### IPFS Cluster
 
 [IPFS Cluster](https://ipfscluster.io/) is a distributed application that works as a sidecar to IPFS peers, maintaining a global cluster pinset and intelligently allocating its items to the IPFS peers. IPFS Cluster powers large IPFS storage services like nft.storage and web3.storage
