@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react"
 import ReactDOM from "react-dom/client";
-import {useContentLevel, useCurrentPageId, useSidebarMenuElements} from "../services/hooks";
+import {useContentLevel, useCurrentPageId, useSidebarMenuElements} from "../../../services/hooks";
 import Spinner from 'react-bootstrap/Spinner';
 
 const PageNavigation = () => {
