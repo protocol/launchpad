@@ -10,17 +10,12 @@ category: lecture
 level:
 - shallow
 - deep
+goal: 1.6
+subgoals:
+- 1.61
+- 1.62
+- 1.63
 ---
-
-## Learning Objectives
-
-**IPFS 1.6 Be able to explain the basics of UnixFS**
-* **1.61 –** Understand what is UnixFS and what problem it solves
-* **1.62 –** Learn how files with more than a single block are labeled
-
-{{% level type="[deep]" %}}
-* **1.63 –** Go over the protobuf format, and its main fields
-{{% /level %}}
 
 ## Introducing UnixFS
 By now, you already know that files and directories in IPFS are represented as Merkle DAGs. This means that the data of large files are split across several blocks. Every block needs to have some metadata that identifies what kind of data it holds. For example, consider the following directory.

@@ -9,23 +9,20 @@ weight: 130
 category: lecture
 level:
 - deep
+goal: 1.4
+subgoals:
+- 1.41
+- 1.42
+- 1.43
+- 1.44
+- 1.45
 ---
-
-## Learning Objectives
-
-**IPFS 1.4 Be able to explain the basics of data transfer in IPFS**
-
-* **1.41 –** Learn what is IPFS's message-oriented protocol to exchange data
-* **1.42 –** Know what are the different message types and their order of operations
-* **1.43 –** Understand what is _the session_ and _the ledger_ in the context of Bitswap
-* **1.44 –** Explain the different components of Bitswap at a high level
-* **1.45 –** Discover what advantages Graphsync has over Bitswap
 
 ## Introduction
 
 IPFS differs greatly in the way that it stores, shares, and retrieves files. Instead of having clients rely on servers, IPFS allows peers to connect and search for one another in an efficient manner to exchange data directly.
 
-Bitswap is a protocol to exchange blocks (i.e. data) in a peer-to-peer network. IPFS uses Bitswap to retrieve files from other peers in the network. At the interface level, the Bitswap protocol has two operations: `get(CID)` and `put(CID)`. The `get`operation is used to find a block with a specific CID, and the `put` operation is used to announce that the node is storing a block. 
+Bitswap is a protocol to exchange blocks (i.e. data) in a peer-to-peer network. IPFS uses Bitswap to retrieve files from other peers in the network. At the interface level, the Bitswap protocol has two operations: `get(CID)` and `put(CID)`. The `get`operation is used to find a block with a specific CID, and the `put` operation is used to announce that the node is storing a block.
 
 ## How Bitswap Works
 
