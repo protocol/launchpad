@@ -1,5 +1,5 @@
 ---
-title: "Creating stream handlers in libp2p (Tutorial)"
+title: "Creating stream handlers (Tutorial)"
 description: "Use go-libp2p to create a new stream of data"
 draft: false
 menu:
