@@ -1,5 +1,5 @@
 ---
-title: "Creating stream handlers (Tutorial)"
+title: "Using Stream Handlers (Tutorial)"
 description: "Use go-libp2p to create a new stream of data"
 draft: false
 menu:
@@ -17,7 +17,7 @@ By the end of the exercise, you should be able to:
 
 * Set stream handlers for specific protocols
 * Open a new stream
-* Send message through a stream
+* Send messages through a stream
 * Read string data through a stream
 
 ## Video: Creating libp2p Handlers
@@ -65,9 +65,7 @@ func main() {
 The [SetStreamHandler](https://github.com/libp2p/go-libp2p/blob/master/core/host/host.go#L52) method expects the ID of the protocol and the function to execute when a new message is received.
 
 ```go
-func runTargetNode(nodeInfo chan peer.AddrInfo) {
-	ctx, _ := context.WithCancel(context.Background())
-
+func runTargetNode() peer.AddrInfo {
 	log.Printf("Creating target node...")
 	targetNode := createNode()
 	log.Printf("Target node created with ID '%s'", targetNode.ID().String())
@@ -83,8 +81,7 @@ func runTargetNode(nodeInfo chan peer.AddrInfo) {
 		}
 	})
 
-	nodeInfo <- *host.InfoFromHost(targetNode)
-	<-ctx.Done()
+	return *host.InfoFromHost(targetNode)
 }
 ```
 
