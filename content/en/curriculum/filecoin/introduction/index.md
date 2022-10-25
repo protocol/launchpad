@@ -40,13 +40,13 @@ _Filecoin is a data storage and retrieval marketplace that coordinates untrusted
 
 * **Verifiable storage** – Rather than needing to trust a cloud storage provider or rely on
 legal recourse, the Filecoin Protocol cryptographically verifies data storage.
-* **Open participation** – Anyone with sufficient hardware and an internet connection can be a stroage provider (and Filecoin miner) for the Filecoin Network.
+* **Open participation** – Anyone with sufficient hardware and an internet connection can be a stroage provider (Filecoin miner) for the Filecoin Network.
 * **Empowers local optimization** – Driven by open participation, market forces will enable more efficient and distributed data storage and communication than centralized storage platforms. The distributed network allows for a more local and resilient architecture and data availability.
 * **Flexible storage options** – As an open platform, the network has the flexibility for the creation & disseminations of tools and services provided by the community of developers improving and building on the protocol.
 * **A community network** – Filecoin provides participants the opportunity to have stake in the networkʼs success. Participants in the network benefit by working together to improve the Filecoin network as a whole.
 
 #### The Filecoin Economy
-Filecoin is more than a network; the protocol and infrastructure lays the groundwork for an economy built around a marketplace for the storage and retrieval of data. The growth of the network depends upon collaboration between researchers, engineers, stakeholders, miners, and clients in a market economy, as the network adapts and grows to accommodate additional use cases.
+Filecoin is more than a network; the protocol and infrastructure lays the groundwork for an economy built around a marketplace for the storage and retrieval of data. The growth of the network depends upon collaboration between researchers, engineers, stakeholders, storage providers, and clients in a market economy, as the network adapts and grows to accommodate additional use cases.
 
 The Filecoin token acts as a medium of exchange, facilitating transactions and production activities, somewhat similar to the in-game currencies of virtual economies in multiplayer online games. In addition, as a currency, the token also acts as a store of value; its minting is tied to adding utility in the form of data storage and other services to the network.
 
