@@ -7,25 +7,18 @@ menu:
         parent: "curriculum-ipfs"
 weight: 75
 category: lecture
-goals: 1.1
+level:
+- shallow
+- deep
+goal: 1.1
 subgoals:
 - 1.11
 - 1.12
 - 1.13
 - 1.14
-level:
-- shallow
-- deep
 ---
 
 ## Objectives
-
-**IPFS 1.1 Understand Content Addressing, CIDs, and what advantages they present over location-based addressing**
-
-* **1.11 -** Be able to describe why content in IPFS is immutable
-* **1.12 -** Know the difference between location addressing vs content addressing
-* **1.13 -** Fundamentally know what a CID is and its variations
-* **1.14 -** Understand that data on IPFS is pinned to be made available to the network
 
 {{< youtube dWq0GNbLtUI>}}
 
@@ -36,7 +29,7 @@ At a high level, the talk covered the following concepts:
 IPFS allows us to verify the content we received is the content we asked for using hashes.
 * Hashes are deterministic, meaning given an input, it will always have the same output. If the input data changes in any way, then the output generated hash will also change.
 * Since files are immutable, they can never change without generating a brand new hash and, by extension, CID.
-* IPFS enables fast caching and deduplication, this means you can save space by just communicating any changes to a file.
+* IPFS enables fast caching and deduplication, which means that you can save space by just communicating any changes to a file.
 * IPFS allows you to fetch the data you want from anyone, using the immutable CIDs.
 
 **Anatomy of a Content Identifier (CID)**
