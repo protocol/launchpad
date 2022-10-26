@@ -8,7 +8,7 @@ menu:
 weight: 80
 ---
 
-{{< gdocs "https://docs.google.com/presentation/d/11V_BA5A64lCY_wFsvuLO4je02zvzJwD5vf2kzONDWyc/embed" >}}
+{{< embed "https://docs.google.com/presentation/d/11V_BA5A64lCY_wFsvuLO4je02zvzJwD5vf2kzONDWyc/embed" >}}
 
 ## Markdown quick guide
 
