@@ -76,7 +76,7 @@ Executing messages, for example by including transactions or proofs in the chain
 * **_Overestimation burn_**: an additional amount of gas to burn that grows larger when the difference between _GasLimit_ and _GasUsage_ is large. (See [current implementation](https://github.com/filecoin-project/lotus/blob/v0.10.0/chain/vm/burn.go#L38)).
 
 ### [Actors](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#actors)
-Actors are a [software design pattern](https://en.wikipedia.org/wiki/Actor_model) for managing state. Accounts, Multisigs, Miners, and anything with a state, such as an account balance, are implemented as an _actor_.
+Actors are a [software design pattern](https://en.wikipedia.org/wiki/Actor_model) for managing state. Accounts, Multisigs, Storage Providers, and anything with a state, such as an account balance, are implemented as an _actor_.
 
 ### [Addresses](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#addresses)
 In Filecoin, addresses are used to identify actors. There are 4 address types:
@@ -89,7 +89,7 @@ In Filecoin, addresses are used to identify actors. There are 4 address types:
 ### [Filecoin Plus](https://plus.fil.org/)
 Filecion Plus is a mechanism for onboarding data into the Filecoin market that incentivizes the storage providers on the Filecoin network to store real, valuable, and usable data. It is a layer of social trust on top of the Filecoin Network to help incentivize this storage. Storage providers who store data that has been approved for DataCap have more power to win block rewards. The [Filecoin Plus Dashboard](https://filplus.info/) provides data about verification, storage, and more.
 
-There are a few ways one can get [approved to store data](https://plus.fil.org/landing) on the Filecoin network, and there are [governance processes and roles](https://github.com/filecoin-project/notary-governance), including root key-holders, notaries, clients, and miners who interact through the allocation and spending of DataCap, and help onboard that data to the network.
+There are a few ways one can get [approved to store data](https://plus.fil.org/landing) on the Filecoin network, and there are [governance processes and roles](https://github.com/filecoin-project/notary-governance), including root key-holders, notaries, clients, and storage providers who interact through the allocation and spending of DataCap, and help onboard that data to the network.
 
 ![Filcoin Plus Governance](notary.png)
 

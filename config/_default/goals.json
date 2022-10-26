@@ -1,0 +1,46 @@
+{
+  "ipfs": {
+    "1.4": {
+      "description": "Be able to explain the basics of data transfer in IPFS",
+      "subgoals": [
+        {
+          "id": "1.41",
+          "description": "Learn what is IPFS's message-oriented protocol to exchange data"
+        },
+        {
+          "id": "1.42",
+          "description": "Know what are the different message types and their order of operations"
+        },
+        {
+          "id": "1.43",
+          "description": "Understand what is the session and the ledger in the context of Bitswap"
+        },
+        {
+          "id": "1.44",
+          "description": "Explain the different components of Bitswap at a high level"
+        },
+        {
+          "id": "1.45",
+          "description": "Discover what advantages Graphsync has over Bitswap"
+        }
+      ]
+    },
+    "1.6": {
+      "description": "Be able to explain the basics of UnixFS",
+      "subgoals": [
+        {
+          "id": "1.61",
+          "description": "Understand what is UnixFS and what problem it solves"
+        },
+        {
+          "id": "1.62",
+          "description": "Learn how files with more than a single block are labeled"
+        },
+        {
+          "id": "1.63",
+          "description": "Go over the protobuf format, and its main field"
+        }
+      ]
+    }
+  }
+}
