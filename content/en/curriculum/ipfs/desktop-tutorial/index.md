@@ -78,18 +78,54 @@ The peers are the nodes in the IPFS network that you are connected to directly f
 ![Get your address](desktop6.png)
 
 #### The Settings Page
-There are several useful tools under the settings page of IPFS desktop. Here, you can change the _Gateway_ you use. A _Gateway_ allows you to access IPFS content-addressed content using the typical HTTP addressing that web2 applications use. With a gateway, you can access conent on IPFS from your web browser.
+There are several useful tools under the settings page of IPFS desktop. Here, you can change the _Gateway_ you use. A _Gateway_ allows you to access IPFS content-addressed content using the typical HTTP addressing that web2 applications use. With a gateway, you can access content on IPFS from your web browser.
 
 There are many gateways available to use, and you can choose a new one.
 * Go to the list of IPFS gateways at the Public Gateway Checker found at [https://ipfs.github.io/public-gateway-checker/](https://ipfs.github.io/public-gateway-checker/)
-* Choose one of the gateways and copy-paste it.
-* In the
+* Choose one of the gateways and copy it.
+* In the form box, type in `https://` then paste the public gateway that you copied from the Public Gateway Checker.
+
+![Use a Different Gateway](desktop7.png)
+
+You are now using a different gateway to access the same IPFS public network! All of the same pinned data is available, you are just entering IPFS from a different entry point.
 
 #### Publishing to IPNS with IPFS Desktop
+With IPFS, when you publish a new piece of content, it has a new CID, meaning the data is immutable. This is great when you want to identify a certain piece of data, and make sure you know what you are accessing. There is, however, a use case for mutable data, such as a website.
+
+You want to give people one address where they can access, say, a website, but want to be able to make updates to it, such as adding an event page, or updating a typo. This is where IPNS comes in.
+
+IPNS allows you to tie an address in IPFS with the 'latest' piece of data.
+
+To try this out, do the following steps
+* In the **Settings** page, under _IPNS Publishing Keys_, click the **+ Generate Key** button, and choose a name for the key.
+
+![IPNS Key](desktop8.png)
+
+* Create or add a folder on the _Files_ page and add at least one file.
+* Choose one file, and click on the three buttons on the left side of it, then choose **Publish to IPNS**, and select the key you just created to publish with.
+
+![Publish to IPNS(desktop9.png)
+
+* Once it is published, you can share this IPNS address with your neighbor by copy-pasting it
+
+![Copy IPNS Address](desktop10.png)
+
+<!-- Example IPNS Address _(copy-paste into your browser)_:
+```
+https://ipfs.fleek.co/ipns/k51qzi5uqu5dkb2z7inxiyvc7owjo1wc0mpnltijeizdco3qenov3xuzpop75j
+``` -->
+* Share the IPNS address you copy-pasted with a neighbor and see if they can retrieve it!
+
+Now, if you were to upload a modified file with the same name to IPFS desktop, you friend could access the new, fresh, updated version of that image with the same IPNS address.
+
 #### Using Pinning Services with IPFS Desktop
+When you add files and folders to IPFS, typically they are only available for retrieval from others when your own node is up and running, unless someone else just happens to pin your file on their node from the network.
+
+Pinning services provide the service of pinning and maintaining the availability of files on IPFS for you, even when your own node isn't running.
+
+You can sign up with one of the pinning services, and once you have, you an add the API key that is provided when you signed up to make your files permanently available on IPFS.
 
 
 
-
-<!-- Summary -->
-Now you can ----- . Next you will/can learn to ... See an example of the completed code  **<Link to branch & file with completed code>**
+### Summary
+Congratulations! You have officially used IPFS to pin files, share with your friends, and even used IPNS to create mutable content in web3, you are now ready to start storing and sharing on the distributed web! 
