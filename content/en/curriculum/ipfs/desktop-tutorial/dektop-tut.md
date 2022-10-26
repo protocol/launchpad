@@ -75,6 +75,8 @@ The peers are the nodes in the IPFS network that you are connected to directly f
 * Send your address to a friend. from the _Peers_ page, click the **+Add connection** button, and enter your friends address to connect as peers.
 
 #### The Settings Page
+
+
 #### Publishing to IPNS with IPFS Desktop
 #### Using Pinning Services with IPFS Desktop
 
