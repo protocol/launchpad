@@ -22,6 +22,8 @@ In this tutorial, you will need to have installed (or updated) IPFS Desktop
 * Kill any other nodes you may have started in the CLI with `killall ipfs`
 * Start IPFS Desktop on your computers
 
+### Video: IPFS Desktop Walkthrough
+{{< youtube bHJGMPJcu_U >}}
 
 ## Instructions
 Explore the best workflows and capabilities with IPFS Desktop
@@ -128,4 +130,4 @@ You can sign up with one of the pinning services, and once you have, you an add 
 
 
 ### Summary
-Congratulations! You have officially used IPFS to pin files, share with your friends, and even used IPNS to create mutable content in web3, you are now ready to start storing and sharing on the distributed web! 
+Congratulations! You have officially used IPFS to pin files, share with your friends, and even used IPNS to create mutable content in web3, you are now ready to start storing and sharing on the distributed web!
