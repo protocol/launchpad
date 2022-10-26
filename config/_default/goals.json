@@ -1,5 +1,26 @@
 {
   "ipfs": {
+    "1.1": {
+      "description": "Understand Content Addressing, CIDs, and what advantages they present over location-based addressing",
+      "subgoals": [
+        {
+          "id": "1.11",
+          "description": "Be able to describe why content in IPFS is immutable"
+        },
+        {
+          "id": "1.41",
+          "description": "Be able to describe why content in IPFS is immutable"
+        },
+        {
+          "id": "1.41",
+          "description": "Be able to describe why content in IPFS is immutable"
+        },
+        {
+          "id": "1.41",
+          "description": "Be able to describe why content in IPFS is immutable"
+        }
+      ]
+    },
     "1.4": {
       "description": "Be able to explain the basics of data transfer in IPFS",
       "subgoals": [
