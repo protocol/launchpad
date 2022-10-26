@@ -55,7 +55,25 @@ On this page, you can see all files and directories that are pinned to your ipfs
 ![Share an IPFS File](desktop3.png)
 
 #### The Explore Page
+With this page, you can select an IPFS file or directory, and explore how this files is broken down into UnixFS files.
+* Take a look at the CID, and the multihash
+* Pick a file, and check out its size, and the number of links to that file
+
+
+![Explore and IPFS File](desktop4.png)
+
 #### The Peers Page
+The peers are the nodes in the IPFS network that you are connected to directly for sharing content. On the peers page:
+* Identify how many peers you are connected to
+* Notice the location, the types of connections you have.
+
+> Activity: Identify your IPFS address, and connect with a friend
+
+* From the **Status** page click on the **Advanced** dropdown, and copy one of your addresses.
+![Get your address](desktop5.png)
+
+* Send your address to a friend. from the _Peers_ page, click the **+Add connection** button, and enter your friends address to connect as peers.
+
 #### The Settings Page
 #### Publishing to IPNS with IPFS Desktop
 #### Using Pinning Services with IPFS Desktop
