@@ -41,7 +41,7 @@ The `main()` function manages the flow of the program by calling different helpe
 
 ### Review the "main" Function
 
-* Let's understand the flow of the program. This program simulates creates two libp2p nodes. The flow of the program works as follows:
+* Let's understand the flow of the program. This program creates two libp2p nodes. The flow of the program works as follows:
     - Create the _target node_ (this is handled by the `runTargetNode` function).
     - The _source node_ needs to know the location of the _target node_ to establish a connection. Therefore, the `runTargetNode` function returns a `peer.AddrInfo`, containing the multiaddress and ID of the node.
     - Create a _source node_, which receives the _target node_ information as a parameter.
