@@ -38,6 +38,7 @@ If you haven't already, follow the [comprehensive tutorial at on ipfs.doc on ins
 
 Try out the following on the Status
 [ ] Find your
+
 #### The Files Page
 #### The Explore Page
 #### The Peers Page
