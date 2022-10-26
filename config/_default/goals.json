@@ -1,5 +1,26 @@
 {
   "ipfs": {
+    "1.0": {
+      "description": "Understand what IPFS is and why IPFS was started",
+      "subgoals": [
+        {
+          "id": "1.01",
+          "description": "Understand what is a peer to peer(p2p) network"
+        },
+        {
+          "id": "1.02",
+          "description": "Know the difference between centralised, decentralised, and distributed networks"
+        },
+        {
+          "id": "1.03",
+          "description": "Trade offs between centralised services & p2p systems"
+        },
+        {
+          "id": "1.04",
+          "description": "Understand how IPFS is trying to design systems that are future-proof"
+        }
+      ]
+    },
     "1.1": {
       "description": "Understand Content Addressing, CIDs, and what advantages they present over location-based addressing",
       "subgoals": [

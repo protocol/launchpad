@@ -7,17 +7,17 @@ menu:
         parent: "curriculum-ipfs"
 weight: 70
 category: lecture
+goal: 1.0
+subgoals:
+- 1.01
+- 1.02
+- 1.03
+- 1.04
 level:
 - shallow
 - deep
 ---
 ### Objectives
-
-**IPFS 1.0 Understand what IPFS is and why IPFS was started**
-* **1.01 -** Understand what is a peer to peer(p2p) network
-* **1.02 -** Know the difference between centralised, decentralised, and distributed networks
-* **1.03 -** Trade offs between centralised services & p2p systems
-* **1.04 -** Understand how IPFS is trying to design systems that are future-proof
 
 IPFS is one of many [general purpose peer to peer (P2P) networks](https://en.wikipedia.org/wiki/Peer-to-peer#Other_P2P_applications). Peer to peer networks are just everyday computer users that share data directly with each other. In these systems, you don't have to go through an intermediary like Google to share a file with someone. As an example, if we were looking for the [IPFS white paper](https://github.com/ipfs/papers/blob/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf), we would ask a peer and they will either respond with the paper or pass along the request to another peer. Eventually, someone will return with the paper if they have it saved.
 
