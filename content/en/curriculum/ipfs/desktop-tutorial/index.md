@@ -1,6 +1,6 @@
 ---
 title: "IPFS Desktop (Tutorial)"
-description: "Shallow Dive Tutorial – Usting the Graphical Interface for IPFS"
+description: "Shallow Dive Tutorial – Using the Graphical Interface for IPFS"
 draft: false
 menu:
     curriculum:
@@ -70,12 +70,20 @@ The peers are the nodes in the IPFS network that you are connected to directly f
 > Activity: Identify your IPFS address, and connect with a friend
 
 * From the **Status** page click on the **Advanced** dropdown, and copy one of your addresses.
+
 ![Get your address](desktop5.png)
 
 * Send your address to a friend. from the _Peers_ page, click the **+Add connection** button, and enter your friends address to connect as peers.
 
-#### The Settings Page
+![Get your address](desktop6.png)
 
+#### The Settings Page
+There are several useful tools under the settings page of IPFS desktop. Here, you can change the _Gateway_ you use. A _Gateway_ allows you to access IPFS content-addressed content using the typical HTTP addressing that web2 applications use. With a gateway, you can access conent on IPFS from your web browser.
+
+There are many gateways available to use, and you can choose a new one.
+* Go to the list of IPFS gateways at the Public Gateway Checker found at [https://ipfs.github.io/public-gateway-checker/](https://ipfs.github.io/public-gateway-checker/)
+* Choose one of the gateways and copy-paste it.
+* In the
 
 #### Publishing to IPNS with IPFS Desktop
 #### Using Pinning Services with IPFS Desktop
