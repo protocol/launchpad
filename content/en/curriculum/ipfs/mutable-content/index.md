@@ -25,7 +25,7 @@ One of the most powerful things about IPFS is that any piece of data or content 
 
 ### Pinning and Immutability
 
-By default, content on IPFS is not permanently _pinned_ on any node besides your own. That means when you add a file to IPFS, it will eventually stop being discoverable on the network. To mitigate this problem you must _pin_ your content to your [node](https://docs.ipfs.tech/concepts/nodes/#nodes) to ensure it persistents on IPFS.
+By default, content on IPFS is not _pinned_. That means when you add a file to IPFS, it will eventually stop being discoverable on the network. To mitigate this problem you must _pin_ your content to your [node](https://docs.ipfs.tech/concepts/nodes/#nodes) to ensure it persists on IPFS.
 
 Your options for pinning content are:
 1. You pin it locally to your own node. Note that if the content is only pinned to your local node, it must be online for peers to get that content.

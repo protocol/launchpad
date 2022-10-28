@@ -141,3 +141,7 @@ rel  = "sitemap"
     noClasses = true
     style = "dracula"
     tabWidth = 4
+
+[security]
+  [security.exec]
+    allow = ['^babel$', '^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']

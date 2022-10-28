@@ -23,7 +23,7 @@ _Example_
 
 In this talk by Steven & Dietrich, they review some of the customs and best practices involved when becoming a part of an open source community.
 
-{% youtube GcvGc3pgOT8 %}
+{{< youtube GcvGc3pgOT8 >}}
 ```
 
 ## Embedding
@@ -78,12 +78,12 @@ _Forms Example_
 ### Video Embeds - YouTube
 A video embed requires it to be published to YouTube (typically as an unlisted video), and the URL to add it. Although you can use the general `embed` shortcode, there is one specifically for YouTube videos that you should use.
 
-Simply add in video ID with `{% youtube video-id %}`
+Simply add in video ID with `{{< youtube video-id >}}`
 
 _Example_
 
 ```
-{% youtube 2RCwZDRwk48 %}
+{{< youtube 2RCwZDRwk48 >}}
 ```
 
 ## Tagging Content
