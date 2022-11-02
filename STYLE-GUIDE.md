@@ -54,25 +54,25 @@ You can use either the URL of the from the page where you access it (ending in `
 
 Simply add it with the embed tags:
 ```
-{% embed src="<link to document>" %}
+{{% embed src="<link to document>" %}}
 ```
 
 Example 1:
 
 ```
-{% embed src="https://docs.google.com/document/d/1EP6S8k-DNsDgIKmtrA_9YrCghq3F21IqhDh9THNuoOU/edit" width="500px" height="600px" %}
+{{% embed src="https://docs.google.com/document/d/1EP6S8k-DNsDgIKmtrA_9YrCghq3F21IqhDh9THNuoOU/edit" width="500px" height="600px" %}}
 ```
 
 Example 2:
 
 ```
-{% embed src="https://drive.google.com/file/d/1EHUXFm0SA4DiBlHTXnRQQ-vHXuQdyBCo/view?usp=sharing" width="100%" height="100%" %}
+{{% embed src="https://drive.google.com/file/d/1EHUXFm0SA4DiBlHTXnRQQ-vHXuQdyBCo/view?usp=sharing" width="100%" height="100%" %}}
 ```
 
 _Forms Example_
 
 ```
-{% embed src="https://docs.google.com/forms/d/e/1FAIpQLSfBhz3elo3K8U6MpMKeO1-0CfTdTQwPaMSYJPi3bSNyFLm0Dw/viewform?usp=sf_link" %}
+{{% embed src="https://docs.google.com/forms/d/e/1FAIpQLSfBhz3elo3K8U6MpMKeO1-0CfTdTQwPaMSYJPi3bSNyFLm0Dw/viewform?usp=sf_link" %}}
 ```
 
 ### Video Embeds - YouTube
