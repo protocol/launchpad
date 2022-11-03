@@ -49,18 +49,6 @@ _See the full set of resources [on the ResNetLab Tutorials page](https://researc
 
 {{< youtube 57guoGS53Bo >}}
 
-## The InterPlanetary Name System (IPNS)
-
-Since IPFS uses CIDs, if you were to share an IPFS address such as `/ipfs/QmbezGequPwcsWo8UL4wDF6a8hYwM1hmbzYv2mnKkEWaUp` with someone, you would need to give the person a new link every time you update the content, because every change would result in a new CID.
-
-The [InterPlanetary Name System (IPNS)](https://docs.ipfs.io/concepts/ipns/#interplanetary-name-system-ipns) solves this issue by creating a link that can be updated. IPNS addresses a very important point, to help bridge the unfamiliarity gap to a new internet. For example, when you go to a users' website, you expect to find that same website with the same link or URL in the future. If that website is updated, you will see those updates as well. This "link" in IPNS is called a _name_, this _name_ is the hash of a public key. The name is associated with a record containing information about the hash that it points to and is signed by the public key’s corresponding private key. This allows new records to be signed and published at any time. Using IPNS means that when someone searches for your website using your _name_, they will receive the most up-to-date content as expected in today's internet. You can learn more about IPNS and [how to use it here](https://docs.ipfs.tech/concepts/ipns/#example-ipns-setup-with-cli).
-
-When looking up an IPNS _name_ via an IPFS gateway, use the `/ipns/` prefix:
-
-```
-/ipns/k2k4r8jl0yz8qjgqbmc2cdu5hkqek5rj6flgnlkyywynci20j0iuyfuj
-```
-
 ## The DHT
 
 The public **D**istributed **H**ash **T**able is the record of content that is used, along with Kademlia, to discover content-addressed data in a peer-to-peer network. The DHT is the mechanism that allows a peer-to-peer network to work without the old [client-server model](https://en.wikipedia.org/wiki/Client%E2%80%93server_model) that the web2 internet runs on.
@@ -98,7 +86,7 @@ Along with Kademlia and the DHT, [Bitswap](https://docs.ipfs.io/concepts/bitswap
 
 ### Pinning and Immutability
 
-By default, content on IPFS is not _pinned_. That means when you add a file to IPFS, if you don't keep your node up an running at all times (assuming someone else doesn't pin and make the content available), it isn't permanentl discoverable on the network. To mitigate this problem you must _pin_ your content to your [node](https://docs.ipfs.tech/concepts/nodes/#nodes) to ensure it persists on IPFS.
+By default, content on IPFS is not _pinned_. That means when you add a file to IPFS, if you don't keep your node up an running at all times (assuming someone else doesn't pin and make the content available), it isn't permanently discoverable on the network. To mitigate this problem you must _pin_ your content to your [node](https://docs.ipfs.tech/concepts/nodes/#nodes) to ensure it persists on IPFS.
 
 Your options for pinning content are:
 1. You pin it locally to your own node. Note that if the content is only pinned to your local node, it must be online for peers to get that content.
@@ -147,7 +135,9 @@ _Watch the Mutable Content video above to learn more about IPNS over PubSub_
 <!--
 ### Deep Dive into IPNS
 
-IPNS is a self-certifying mutable pointer. Meaning any name that gets published is signed by a private key and anyone else can verify that it was signed by that peer with just the _name_. This self-certifying nature gives IPNS a number of super-powers not present in consensus systems (DNS, blockchain identifiers, etc.), some notable ones include: mutable link information can come from anywhere, not just a particular service/system, and it is very fast and easy to confirm a link is authentic. IPNS names are encapsulated by a data structure called an _IPNS Record_ which contains the CID you are pointing to, the expiration date of a name and the sequence number which is incremented whenever the record is updated. Check out the [IPNS spec](https://github.com/ipfs/specs/blob/main/IPNS.md#ipns-record) to learn more about IPNS records.
+IPNS is a self-certifying mutable pointer. Meaning any name that gets published is signed by a private key and anyone else can verify that it was signed by that peer with just the _name_. This self-certifying nature gives IPNS a number of super-powers not present in consensus systems (DNS, blockchain identifiers, etc.), some notable ones include: mutable link information can come from anywhere, not just a particular service/system, and it is very fast and easy to confirm a link is authentic.
+
+IPNS names are encapsulated by a data structure called an _IPNS Record_ which contains the CID you are pointing to, the expiration date of a name and the sequence number which is incremented whenever the record is updated. Check out the [IPNS spec](https://github.com/ipfs/specs/blob/main/IPNS.md#ipns-record) to learn more about IPNS records.
 
 #### How it works
 
