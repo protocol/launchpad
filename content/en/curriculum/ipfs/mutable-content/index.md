@@ -10,15 +10,21 @@ category: lecture
 level:
 - shallow
 - deep
+goal: 1.1
+subgoals:
+- 1.21
+- 1.22
+- 1.23
+- 1.24
 ---
 
-### Objectives
+<!-- ### Objectives
 
 **IPFS 1.2 – Be able to explain how content is shared on IPFS**
 * **IPFS 1.21 –** Be able to describe what content identifiers and mutable data are
 * **IPFS 1.22 –** Understand the challenges posed in a decentralized content sharing system
 * **IPFS 1.23 –** Be able to explain what a peer, node, and swarm are in the context of IPFS
-* **IPFS 1.24 –** Understand the basics of the public DHT
+* **IPFS 1.24 –** Understand the basics of the public DHT -->
 
 <!-- ## Content Identifiers
 with IPFS, instead of using a **URL** (**U**niform **R**esource **L**ocator) that the current world wide web uses to locate content, where it is located, stored in a server, and router to using the DNS (Domain Name Service), all content on the network is given a **C**ontent **ID**entifier (**CID**) that is able to locate any given unique piece of content according to _what_ it is instead of _where_ it is. This enables content to not only be universally identifiable, but also hosted by 1, 10, 100, or thousands of peers, and seeded from multiple sources. -->
