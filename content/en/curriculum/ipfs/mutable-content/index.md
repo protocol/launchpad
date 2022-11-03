@@ -32,10 +32,10 @@ By default, content on IPFS is not _pinned_ by any other node except your own. T
 
 Your options for pinning content are:
 1. You pin it locally to your own node. Note that if the content is only pinned to your local node, it must be online for peers to get that content.
-2. You use a [pinning service](https://docs.ipfs.io/concepts/persistence/#pinning-services). Some pinning services require payment for their services, others offer a [free storage allowance for new users](https://docs.ipfs.tech/concepts/persistence/#ipfs-filecoin-solutions). -->
+2. You use a [pinning service](https://docs.ipfs.io/concepts/persistence/#pinning-services). Some pinning services require payment for their services, others offer a [free storage allowance for new users](https://docs.ipfs.tech/concepts/persistence/#ipfs-filecoin-solutions).
 
 
-![Pinning IPFS](pinning.png)
+![Pinning IPFS](pinning.png) -->
 
 ### Mutable Content | ResNetLabs on Tour – David Dias
 _See the full set of resources [on the ResNetLab Tutorials page](https://research.protocol.ai/tutorials/resnetlab-on-tour)_
