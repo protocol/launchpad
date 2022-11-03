@@ -1,5 +1,5 @@
 ---
-title: "IPFS Subsystems & Architecture"
+title: "IPFS Architecture"
 description: "A Technical Guide to the IPFS architecture"
 draft: false
 menu:
