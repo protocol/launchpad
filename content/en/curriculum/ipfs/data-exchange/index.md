@@ -1,6 +1,6 @@
 ---
 title: "Data Exchange"
-description: "Learn How Bitswap Is Used to Exchange Data"
+description: "Learn How Bitswap and Graphsync are Used to Exchange Data"
 draft: false
 menu:
     curriculum:
