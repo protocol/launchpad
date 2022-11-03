@@ -1,10 +1,10 @@
 ---
-title: "Curio"
-description: "Simple, Open, Free Storage"
+title: "Title"
+description: "Description"
 draft: false
 menu:
     devtools:
-        parent: "resources-toolkits"
+        parent: 
 weight:
 ---
 <!-- Small description of tech company below. -->
