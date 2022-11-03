@@ -17,6 +17,15 @@ Take the [**IPFS Quiz**](https://docs.google.com/forms/d/e/1FAIpQLSdtSvO0dCquXDs
 
 {{< embed src="https://docs.google.com/forms/d/e/1FAIpQLSdtSvO0dCquXDs_Fr5t53wjiS3WIib-nro6gK3oI6S8pri7DQ/viewform?usp=sf_link" width="100%" height="900px" >}}
 
+## More IPFS Concepts
+_You can also [find this content in IPFS Docs](https://docs.ipfs.io/concepts/)_
+
+Because IPFS is a system that hopes to change how we use the Internet, it comes with many new concepts:
+
+#### Whiteboard Series with NEAR | Ep: 42 Adin Schmahmann
+
+{{< youtube J-drqD2UebM >}}
+
 ## Discuss IPFS
 * IPFS [Discussion Forum](https://discuss.ipfs.io/)
 * Matrix [chat](https://matrix.to/#/#lobby:ipfs.io)

@@ -13,7 +13,7 @@
         },
         {
           "id": "1.43",
-          "description": "Understand what is _the session_ and _the ledger_ in the context of Bitswap"
+          "description": "Understand what is the session and the ledger in the context of Bitswap"
         },
         {
           "id": "1.44",
@@ -22,6 +22,23 @@
         {
           "id": "1.45",
           "description": "Discover what advantages Graphsync has over Bitswap"
+        }
+      ]
+    },
+    "1.6": {
+      "description": "Be able to explain the basics of UnixFS",
+      "subgoals": [
+        {
+          "id": "1.61",
+          "description": "Understand what is UnixFS and what problem it solves"
+        },
+        {
+          "id": "1.62",
+          "description": "Learn how files with more than a single block are labeled"
+        },
+        {
+          "id": "1.63",
+          "description": "Go over the protobuf format, and its main field"
         }
       ]
     }

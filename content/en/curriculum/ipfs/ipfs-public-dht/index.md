@@ -8,7 +8,6 @@ menu:
 weight:
 category: lecture
 level:
-
 ---
 ### Objectives
 
