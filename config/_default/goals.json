@@ -18,10 +18,9 @@
         {
           "id": "1.24",
           "description": "Be able to explain what a peer, node, and swarm are in the context of IPFS"
-        },
+        }
       ]
     },
-  "ipfs": {
     "1.4": {
       "description": "Be able to explain the basics of data transfer in IPFS",
       "subgoals": [

@@ -1,5 +1,5 @@
 ---
-title: "Content Addressing"
+title: "Data Discovery & Connections"
 description: "Mutable Content in IPFS"
 draft: false
 menu:
@@ -10,7 +10,7 @@ category: lecture
 level:
 - shallow
 - deep
-goal: 1.1
+goal: 1.2
 subgoals:
 - 1.21
 - 1.22
