@@ -43,6 +43,41 @@ _See the full set of resources [on the ResNetLab Tutorials page](https://researc
 
 {{< youtube 57guoGS53Bo >}}
 
+## The DHT
+
+The public **D**istributed **H**ash **T**able is the record of content that is used, along with Kademlia, to discover content-addressed data in a peer-to-peer network. The DHT is the mechanism that allows a peer-to-peer network to work without the old [client-server model](https://en.wikipedia.org/wiki/Client%E2%80%93server_model) that the web2 internet runs on.
+
+## Nodes, Peers, and the Swarm
+
+A **[Peer](https://docs.ipfs.io/concepts/glossary/#peer)** is any connected node on IPFS that relays and/or stores information on the network. You can either search peers using the DHT and Kademlia, or be directly connected to a peer. The set of peers that you (as a peer) are connected to directly is called a **[Swarm](https://docs.ipfs.io/concepts/glossary/#swarm)**.
+
+![Peers and Swarms](peer-swarm.png)
+
+**[IPFS Nodes](https://docs.ipfs.io/concepts/nodes/)** are programs that run on a computer that can exchange data with other IPFS nodes. **[Bootstrap nodes](https://docs.ipfs.io/concepts/nodes/#bootstrap)** are used when a new node initially enters the IPFS network.
+
+### What does the DHT do for IPFS?
+The [DHT is a distributed system](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) for mapping keys to values. In IPFS, the DHT is used as the fundamental component of the content routing system. It maps what the user is looking for (a CID) to the peer that is actually storing the matching content. There are 3 types of key-value pairings that are mapped using the DHT:
+
+* **Provider Records –** These map a data identifier (i.e., a multihash) to a peer that has advertised that they have, and are willing, to provide you with that content. This is used by IPFS to find content, and IPNS to find pubsub peers
+
+* **IPNS Records –** These map an IPNS key (i.e., hash of a public key) to an IPNS record (i.e., a signed and versioned pointer to some path like `/ipfs/bafyXYZ`)
+
+* **Peer Records –** These map a peerID to a set of multiaddresses at which the peer may be reached. This is used by IPFS when we know of a peer with content, but do not know its address, and used for manual connections
+
+![DHT and Peers](dht-peers.png)
+
+[Read More in the docs](https://docs.ipfs.io/concepts/dht)
+
+### Kademlia
+
+[Kademlia](https://en.wikipedia.org/wiki/Kademlia) is a distributed hash table for decentralized peer-to-peer computer networks designed by Petar Maymounkov and David Mazières in 2002. It specifies the structure of the network and the exchange of information through node lookups.
+
+Kademlia makes it easier and quicker to find peers with content by, essentially, comparing how similar two nodes' content is and rank it by how similar or 'close' it is. [Read the paper](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) to learn about Kademlia more in-depth.
+
+### Bitswap
+Along with Kademlia and the DHT, [Bitswap](https://docs.ipfs.io/concepts/bitswap/#bitswap) is a message-based protocol that enables peers to exchange data. Bitswap enables a peer to create a want-list of content, then query connected peers (and the peers they are connected to) for that information.
+
+
 ## The InterPlanetary Name System (IPNS)
 
 ### Pinning and Immutability
@@ -88,8 +123,11 @@ IPNS is a self-certifying mutable pointer. Meaning any name that gets published 
 <!-- Whenever you update a record, including to refresh its validity, you create a new record based on the previous, update the CID pointer if needed, increment the sequence number, then sign and publish it to the network. -->
 * **Searching -** [Kubo](https://github.com/ipfs/kubo) uses the DHT to find peers that will have the queried record. This method has gotten faster over the years, but is still limited by the speed of DHT resolution itself. Alternative transports can be used to improve resolution speed (see [PubSub](#pubsub--ipns)).
 
-* **Validity -** A record is valid for 24 hours by default, but you can change its `validity` to be longer. When someone has your record, but it is expired, they will have to go to DHT to find a new, valid version of your record. Issues with validity don't arise if you're the original publisher of a record:  Kubo will periodically update validity and publish the updated IPNS records to the local record store and to DHT to keep it alive. DHT nodes will drop stored values after 24 hours, no matter what the validity. For this reason, for the IPNS name to be resolvable, the record needs to be continuously republished.
-* Keys - A _name_ is a hash of a public key in a key pair. By default, the first public key used by Kubo is the same as the one for identifying your peer ([PeerID](https://docs.ipfs.tech/concepts/glossary/#peer-id)). You can [generate new key pairs with Kubo](https://docs.ipfs.tech/reference/kubo/cli/#ipfs-key-gen) and use them to create additional IPNS records.
+* **Validity -** A record is valid for 24 hours by default, but you can change its `validity` to be longer. When someone has your record, but it is expired, they will have to go to DHT to find a new, valid version of your record.
+
+<!-- Issues with validity don't arise if you're the original publisher of a record:  Kubo will periodically update validity and publish the updated IPNS records to the local record store and to DHT to keep it alive. DHT nodes will drop stored values after 24 hours, no matter what the validity. For this reason, for the IPNS name to be resolvable, the record needs to be continuously republished. -->
+
+* **Keys -** A _name_ is a hash of a public key in a key pair. By default, the first public key used by Kubo is the same as the one for identifying your peer ([PeerID](https://docs.ipfs.tech/concepts/glossary/#peer-id)). You can [generate new key pairs with Kubo](https://docs.ipfs.tech/reference/kubo/cli/#ipfs-key-gen) and use them to create additional IPNS records.
 <!--
 #### Common Pitfalls
 * Resolving IPNS over DHT may be slow. This is due to having the `sequence` number in a record. If there are multiple versions of a name, then you want to make sure that you have the latest version. And you do this by performing a time-bound search through the DHT for peers that hold your records and checking a quorum for  the latest one. Kubo will spend up to a minute to try to find at least 16 peers to form a quorum.
@@ -133,55 +171,19 @@ Finally, there are several common ways to resolve DNSLink names:
 Source: [Introduction to DNSlink](https://dnslink.dev/#introduction), [IPFS docs on DNSLink](https://docs.ipfs.tech/concepts/dnslink/)
  -->
 
-### Pubsub + IPNS
+<!-- ### Pubsub + IPNS
 
 [**Publish/Subsribe (PubSub)**](https://docs.libp2p.io/concepts/publish-subscribe/) is a messaging protocol to quickly communicate with other peers. Whenever a peer Publishes a message, Subscribing peers will receive it almost instantly. This protocol is not specific to IPFS or IPNS, but to [Libp2p](https://docs.ipfs.tech/concepts/libp2p/); paired with IPNS, it allows for quick delivery of records over the network. With PubSub enabled on IPNS, updates to a record can be shared virtually instantly with subscribers.
 >>>>>>> feat/ipfs-update
 
-IPNS allows you to sign content and make a mutable version of your content available for users who want to access, say, an updated website according to a given name, much in the same way that you can access the most updated version of a website with the URL. Publishers sign the content on IPNS with their public key, enabling users to know that the particular, updated version of the content they want is from a trusted source.
+IPNS allows you to sign content and make a mutable version of your content available for users who want to access, say, an updated website according to a given name, much in the same way that you can access the most updated version of a website with the URL. Publishers sign the content on IPNS with their public key, enabling users to know that the particular, updated version of the content they want is from a trusted source. -->
 
-#### Subscribe to Content with IPNS  
+### Subscribe to Content with IPNS  
 
- To accomplish IPNS with PubSub, a [persistence layer is added](https://github.com/ipfs/specs/blob/main/naming/pubsub.md#layering-persistence-onto-libp2p-pubsub). Now when you ask for a name, you are subcribing to a PubSub topic based on that name, you create a connection with a peer that is following the same name, then they send you the latest version of the record. The key differentiating factor between IPNS-over-PubSub and IPNS-over-the-DHT (the default behavior) is opening a streaming connection between peers. This way, peers are sending the latest record directly from their local node, as opposed to the default behavior of searching the DHT for the peer with latest version of a record. This means records shared over Pubsub are not available on the DHT and vise versa, unless the publisher opts-in to publish records to both routing options. If you would like to activate IPNS over Pubsub on your Kubo node, you can check out the [`Ipns.UsePubsub` option](https://github.com/ipfs/kubo/blob/master/docs/config.md#ipns) in the config file.
+ To accomplish IPNS with PubSub, a [persistence layer is added](https://github.com/ipfs/specs/blob/main/naming/pubsub.md#layering-persistence-onto-libp2p-pubsub). Now when you ask for a name, you are subscribing to a PubSub topic based on that name, you create a connection with a peer that is following the same name, then they send you the latest version of the record.
+  <!-- The key differentiating factor between IPNS-over-PubSub and IPNS-over-the-DHT (the default behavior) is opening a streaming connection between peers. This way, peers are sending the latest record directly from their local node, as opposed to the default behavior of searching the DHT for the peer with latest version of a record. This means records shared over Pubsub are not available on the DHT and vise versa, unless the publisher opts-in to publish records to both routing options. If you would like to activate IPNS over Pubsub on your Kubo node, you can check out the [`Ipns.UsePubsub` option](https://github.com/ipfs/kubo/blob/master/docs/config.md#ipns) in the config file. -->
 
-
-<<<<<<< HEAD
 _Watch the Mutable Content video above to learn more about IPNS over PubSub_
-
-
-## The DHT
-
-The public **D**istributed **H**ash **T**able is the record of content that is used, along with Kademlia, to discover content-addressed data in a peer-to-peer network. The DHT is the mechanism that allows a peer-to-peer network to work without the old [client-server model](https://en.wikipedia.org/wiki/Client%E2%80%93server_model) that the web2 internet runs on.
-
-## Nodes, Peers, and the Swarm
-
-A **[Peer](https://docs.ipfs.io/concepts/glossary/#peer)** is any connected node on IPFS that relays and/or stores information on the network. You can either search peers using the DHT and Kademlia, or be directly connected to a peer. The set of peers that you (as a peer) are connected to directly is called a **[Swarm](https://docs.ipfs.io/concepts/glossary/#swarm)**.
-
-![Peers and Swarms](peer-swarm.png)
-
-**[IPFS Nodes](https://docs.ipfs.io/concepts/nodes/)** are programs that run on a computer that can exchange data with other IPFS nodes. **[Bootstrap nodes](https://docs.ipfs.io/concepts/nodes/#bootstrap)** are used when a new node initially enters the IPFS network.
-
-### What does the DHT do for IPFS?
-The [DHT is a distributed system](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) for mapping keys to values. In IPFS, the DHT is used as the fundamental component of the content routing system. It maps what the user is looking for (a CID) to the peer that is actually storing the matching content. There are 3 types of key-value pairings that are mapped using the DHT:
-
-* Provider Records – These map a data identifier (i.e., a multihash) to a peer that has advertised that they have, and are willing, to provide you with that content. This is used by IPFS to find content, and IPNS to find pubsub peers
-
-* IPNS Records – These map an IPNS key (i.e., hash of a public key) to an IPNS record (i.e., a signed and versioned pointer to some path like `/ipfs/bafyXYZ`)
-
-* Peer Records – These map a peerID to a set of multiaddresses at which the peer may be reached. This is used by IPFS when we know of a peer with content, but do not know its address, and used for manual connections
-
-![DHT and Peers](dht-peers.png)
-
-[Read More in the docs](https://docs.ipfs.io/concepts/dht)
-
-## Kademlia
-
-[Kademlia](https://en.wikipedia.org/wiki/Kademlia) is a distributed hash table for decentralized peer-to-peer computer networks designed by Petar Maymounkov and David Mazières in 2002. It specifies the structure of the network and the exchange of information through node lookups.
-
-Kademlia makes it easier and quicker to find peers with content by, essentially, comparing how similar two nodes' content is and rank it by how similar or 'close' it is. [Read the paper](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) to learn about Kademlia more in-depth.
-
-## Bitswap
-Along with Kademlia and the DHT, [Bitswap](https://docs.ipfs.io/concepts/bitswap/#bitswap) is a message-based protocol that enables peers to exchange data. Bitswap enables a peer to create a want-list of content, then query connected peers (and the peers they are connected to) for that information.
 
 #### The Public DHT | LabWeek 2021 <!-- Who Presented?  -->
 <!-- Add a context paragraph-- The DHT keeps the IPFS Network of Peers Connected... -->
@@ -189,6 +191,3 @@ Along with Kademlia and the DHT, [Bitswap](https://docs.ipfs.io/concepts/bitswap
 {{< youtube _3ee1_2rgKg >}}
 
 Learn more in [this presentation](https://docs.google.com/presentation/d/e/2PACX-1vRFnTRDresIb6g-mAv2dLxrYpUmbtfQFsX48OVxOzgiVs7JN6bBD7LDz0n36_rIUPb7W_I4t5l1gvTJ/pub?start=false&loop=true&delayms=3000)
-=======
-Source: _We highly recommend watching the [video above](https://protocol-labs.gitbook.io/launchpad-curriculum/launchpad-learning-resources/ipfs/mutable-content#the-inter-planetary-name-system-ipns) to learn more about IPNS over PubSub_
->>>>>>> feat/ipfs-update
