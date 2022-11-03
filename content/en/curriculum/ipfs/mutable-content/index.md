@@ -11,15 +11,24 @@ level:
 - shallow
 - deep
 ---
-## Content Identifiers
-with IPFS, instead of using a **URL** (**U**niform **R**esource **L**ocator) that the current world wide web uses to locate content, where it is located, stored in a server, and router to using the DNS (Domain Name Service), all content on the network is given a **C**ontent **ID**entifier (**CID**) that is able to locate any given unique piece of content according to _what_ it is instead of _where_ it is. This enables content to not only be universally identifiable, but also hosted by 1, 10, 100, or thousands of peers, and seeded from multiple sources.
+
+### Objectives
+
+**IPFS 1.2 – Be able to explain how content is shared on IPFS**
+* **IPFS 1.21 –** Be able to describe what content identifiers and mutable data are
+* **IPFS 1.22 –** Understand the challenges posed in a decentralized content sharing system
+* **IPFS 1.23 –** Be able to explain what a peer, node, and swarm are in the context of IPFS
+* **IPFS 1.24 –** Understand the basics of the public DHT
+
+<!-- ## Content Identifiers
+with IPFS, instead of using a **URL** (**U**niform **R**esource **L**ocator) that the current world wide web uses to locate content, where it is located, stored in a server, and router to using the DNS (Domain Name Service), all content on the network is given a **C**ontent **ID**entifier (**CID**) that is able to locate any given unique piece of content according to _what_ it is instead of _where_ it is. This enables content to not only be universally identifiable, but also hosted by 1, 10, 100, or thousands of peers, and seeded from multiple sources. -->
 
 ## Mutable Content
 One of the most powerful things about IPFS is that any piece of data or content you store on the network cannot be modified without changing the [Content Identifier (CID)](https://protocol-labs.gitbook.io/launchpad-curriculum/launchpad-learning-resources/ipld/content-addressing-and-cids) for that data, since the CID is created (in part) by hashing the content. There are various ways to create mutable data on top of IPFS and in this lesson we will learn what just a few of them are.
 
 ### Pinning and Immutability
 
-By default, content on IPFS is not _pinned_. That means when you add a file to IPFS, it will eventually stop being discoverable on the network. To mitigate this problem you must _pin_ your content to your [node](https://docs.ipfs.tech/concepts/nodes/#nodes) to ensure it persists on IPFS.
+By default, content on IPFS is not _pinned_ by any other node except your own. That means when you add a file to IPFS, it will probably stop being discoverable on the network once you take your node offline (unless another user happens to pin it as well).  To mitigate this problem you must _pin_ your content to your [node](https://docs.ipfs.tech/concepts/nodes/#nodes) to ensure it persists on IPFS.
 
 Your options for pinning content are:
 1. You pin it locally to your own node. Note that if the content is only pinned to your local node, it must be online for peers to get that content.
