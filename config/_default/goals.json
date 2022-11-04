@@ -1,5 +1,26 @@
 {
   "ipfs": {
+    "1.2": {
+      "description": "Be able to explain how content is shared on IPFS",
+      "subgoals": [
+        {
+          "id": "1.21",
+          "description": "Be able to describe what content identifiers and mutable data are"
+        },
+        {
+          "id": "1.22",
+          "description": "Understand the challenges posed in a decentralized content sharing system"
+        },
+        {
+          "id": "1.23",
+          "description": "Understand the basics of the public DHT"
+        },
+        {
+          "id": "1.24",
+          "description": "Be able to explain what a peer, node, and swarm are in the context of IPFS"
+        }
+      ]
+    },
     "1.4": {
       "description": "Be able to explain the basics of data transfer in IPFS",
       "subgoals": [
