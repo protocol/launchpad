@@ -21,7 +21,7 @@ In this tutorial, you will need to have installed (or updated) IPFS Desktop
 * Start IPFS Desktop on your computer
 
 ## Video: IPFS Desktop Walkthrough
-{{< youtube  >}}
+{{< youtube VGbbgYDVneQ >}}
 
 ## Instructions
 Explore the best workflows and capabilities with IPFS Desktop
