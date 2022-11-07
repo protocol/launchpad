@@ -40,6 +40,10 @@
           "id": "1.14",
           "description": "Understand that data on IPFS is pinned to be made available to the network"
         }
+                {
+          "id": "1.15",
+          "description": "Understand garbage collection process on an IPFS node and how to keep data discoverable on IPFS"
+        }
       ]
     },
     "1.4": {
