@@ -14,11 +14,9 @@ level:
 
 At its core, IPFS is best viewed as a suite of standards for storing, sharing, navigating and manipulating IPLD data. IPFS is particularly skilled at leading with structured file data, and is particularly good at performing peer to peer data sharing.
 
-### Files and Data with IPFS & IPLD
+#### How IPFS Deals With Files | IPFS Camp 2019 Workshop – Alan Shaw
 
-#### How IPFS Deals With Files | IPFS Camp 2019 Workshop – Alan Shaw & Mikeal Rogers
-
-In the following talk, Alan Shaw goes over a useful introduction to IPFS and file-based DAGs.
+In the following talk, Alan Shaw goes over theory and live examples of what happens with files added to IPFS. He highlights different variations to the underlying data structure created with a file added to IPFS and how it affects the CID. 
 
 {{< youtube SP1qMZA3UG8 >}}
 

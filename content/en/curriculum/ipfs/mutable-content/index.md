@@ -1,5 +1,5 @@
 ---
-title: "Content Addressing"
+title: "Mutable Content"
 description: "Mutable Content in IPFS"
 draft: false
 menu:
