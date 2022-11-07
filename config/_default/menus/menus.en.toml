@@ -6,21 +6,14 @@
     identifier = "curriculum"
 
 [[main]]
-  name = "Prerequisites"
-  url = "/prerequisites/objectives/"
+  name = "Tutorials"
+  url = "/tutorials/"
   weight = 2000
   [main.params]
     identifier = "prerequisites"
 
 [[main]]
-  name = "Dev-Tools"
-  url = "/dev-tools/toolkits/introduction/"
-  weight = 3000
-  [main.params]
-    identifier = "dev-tools"
-
-[[main]]
-  name = "About"
+  name = "Courses"
   url = "/about/"
   weight = 3500
   [main.params]
