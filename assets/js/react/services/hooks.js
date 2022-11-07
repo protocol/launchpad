@@ -49,3 +49,30 @@ export const useGoal = (section, goalId) => {
 
   return goal
 }
+
+export const useQuizQuestions = async (section, questionIds) => {
+  try {
+    const questionsJson = await import(`./config/_default/quizzes/${section}.json`)
+    console.log(questionsJson)
+
+    const questions = []
+
+    for (const questionId of questionIds) {
+      const question = questionsJson[questionId]
+      if (question) {
+        questions.push(question)
+      }
+    }
+
+    return questions
+  } catch (e) {
+    console.log(e)
+    return []
+  }
+}
+
+export const useProgress = (page) => {
+  const [progress, setProgress] = useStorage(`progress-${page}`)
+
+  return [progress, setProgress]
+}

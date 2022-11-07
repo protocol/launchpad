@@ -2,7 +2,12 @@
 {{ $section := replaceRE `(.+?)\/(.+?)\/(.+?)$` "$2" .File.Path }}
 {{ $goal := resources.Get "js/react/components/curriculum/page/Goal.jsx" | babel }}
 {{ $goal := $goal | js.Build }}
+
+{{ $quiz := resources.Get "js/react/components/curriculum/quiz/Quiz.jsx" | babel }}
+{{ $quiz := $quiz | js.Build }}
 <script src="{{ $goal.RelPermalink }}" defer></script>
+<script src="{{ $quiz.RelPermalink }}" defer></script>
+
 	<div class="row flex-xl-nowrap">
 		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
 			<nav class="docs-links" aria-label="Main navigation">
@@ -20,6 +25,7 @@
 		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"
           id="page"
           data-page-id="{{ .File.UniqueID }}"
+          data-page-name="{{ .File.TranslationBaseName }}"
           data-goal="{{ .Params.Goal }}"
           data-subgoals="{{ .Params.Subgoals }}"
           data-section="{{ $section }}">

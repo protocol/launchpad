@@ -7,6 +7,9 @@ menu:
         parent: "curriculum-ipfs"
 weight: 80
 category: tutorial
+goal: 1.4
+subgoals:
+- 1.41
 level:
 - shallow
 - deep

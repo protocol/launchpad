@@ -29,11 +29,19 @@ export const App = ({component, fetchData}) => {
       }
     }
 
-    fetchAsync()
+    if (fetchData) {
+      fetchAsync()
+    } else {
+      setFetchingData({
+        loading: false,
+        data: {},
+        error: null
+      })
+    }
   }, [])
 
   if (fetchingData.loading) {
-    return <Spinner animation="border" />
+    return "Loading.."
   }
 
   if (fetchingData.data) {

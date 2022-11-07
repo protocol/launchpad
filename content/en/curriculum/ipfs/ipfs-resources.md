@@ -17,6 +17,8 @@ Take the [**IPFS Quiz**](https://docs.google.com/forms/d/e/1FAIpQLSdtSvO0dCquXDs
 
 {{< embed src="https://docs.google.com/forms/d/e/1FAIpQLSdtSvO0dCquXDs_Fr5t53wjiS3WIib-nro6gK3oI6S8pri7DQ/viewform?usp=sf_link" width="100%" height="900px" >}}
 
+{{< quiz type="ipfs" questions="[0,1]" >}}
+
 ## Discuss IPFS
 * IPFS [Discussion Forum](https://discuss.ipfs.io/)
 * Matrix [chat](https://matrix.to/#/#lobby:ipfs.io)

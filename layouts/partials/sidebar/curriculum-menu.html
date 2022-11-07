@@ -1,7 +1,14 @@
+
+{{ $count := 0 }}
+
+{{ $icon := resources.Get "js/react/components/curriculum/menu/SidebarMenuIcon.jsx" | babel }}
+{{ $icon := $icon | js.Build }}
+<script src="{{ $icon.RelPermalink }}" defer></script>
+
 {{ if .Site.Params.options.collapsibleSidebar -}}
   <ul class="list-unstyled collapsible-sidebar">
   {{ $currentPage := . -}}
-  {{ range $index, $element := .Site.Menus.curriculum -}}
+  {{ range $menuIndex, $element := .Site.Menus.curriculum -}}
   {{- $active := or ($currentPage.IsMenuCurrent "curriculum" .) ($currentPage.HasMenuCurrent "curriculum" .) -}}
   {{- $active = or $active (eq $currentPage.Section .Identifier) -}}
     <li class="mb-1">
@@ -11,16 +18,19 @@
       {{ if .HasChildren -}}
       <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ .Identifier }}" id="section-{{ .Identifier }}">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-        {{ range .Children -}}
-          {{- $active := or ($currentPage.IsMenuCurrent "curriculum" .) ($currentPage.HasMenuCurrent "curriculum" .) -}}
-          {{- $active = or $active (eq $currentPage.Section .Identifier) -}}
-          <li style="display: flex; align-items: center;" data-content-level="{{ .Page.Params.level }}" data-id="{{ .Page.File.UniqueID }}">
-            {{ if eq .Page.Params.category "lecture" }}
+        {{ range $index, $element := .Children -}}
+          {{ $count = add $count 1 }}
+          {{- $active := or ($currentPage.IsMenuCurrent "curriculum" $element) ($currentPage.HasMenuCurrent "curriculum" $element) -}}
+          {{- $active = or $active (eq $currentPage.Section $element.Identifier) -}}
+
+          <li style="display: flex; align-items: center;" data-page-weight="{{ .Page.Params.weight }}" data-content-level="{{ .Page.Params.level }}" data-id="{{ .Page.File.UniqueID }}">
+            <!--<div data-render-id="sidebarmenuicon-{{ $count }}"></div>-->
+            {{ if eq $element.Page.Params.category "lecture" }}
               <img src="/icons/lecture.png" width="20" height="20" />
             {{ else }}
               <img src="/icons/tutorial.png" width="20" height="20" />
             {{ end }}
-            <a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}" style="margin-left: 0.4rem">{{ .Name }}</a>
+            <a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}" style="margin-left: 0.4rem">{{ $element.Name }}</a>
           </li>
         {{ end -}}
         </ul>
@@ -44,3 +54,4 @@
     {{ end -}}
   {{ end -}}
 {{ end -}}
+
