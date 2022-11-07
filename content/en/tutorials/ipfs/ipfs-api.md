@@ -5,6 +5,8 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-ipfs"
+    tutorials:
+        parent: "tutorials-ipfs"
 weight: 160
 category: tutorial
 level:

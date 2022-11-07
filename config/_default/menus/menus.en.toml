@@ -136,6 +136,17 @@
   identifier = "resources-other"
 
 
+[[tutorials]]
+  name = "IPFS"
+  weight = 10
+  identifier = "tutorials-ipfs"
+
+[[tutorials]]
+  name = "libp2p"
+  weight = 20
+  identifier = "tutorials-libp2p"
+
+
 # [[footer]]
 #   name = "Privacy"
 #   url = "/privacy-policy/"
