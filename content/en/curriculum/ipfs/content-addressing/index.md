@@ -1,5 +1,5 @@
 ---
-title: "Overview of How IPFS Works"
+title: "Content Addressing"
 description: "A start-to-finish description of how IPFS works"
 draft: false
 menu:
@@ -17,14 +17,7 @@ subgoals:
 - 1.13
 - 1.14
 ---
-
-## Objectives
-
-{{< youtube dWq0GNbLtUI>}}
-
-At a high level, the talk covered the following concepts:
-
-**The Importance of Immutabilty**
+## The Importance of Immutabilty
 
 IPFS allows us to verify the content we received is the content we asked for using hashes.
 * Hashes are deterministic, meaning given an input, it will always have the same output. If the input data changes in any way, then the output generated hash will also change.
@@ -32,13 +25,15 @@ IPFS allows us to verify the content we received is the content we asked for usi
 * IPFS enables fast caching and deduplication, which means that you can save space by just communicating any changes to a file.
 * IPFS allows you to fetch the data you want from anyone, using the immutable CIDs.
 
-**Anatomy of a Content Identifier (CID)**
+## Anatomy of a Content Identifier (CID)
 
 CIDs are unique strings. There must be a way to future proof the seemingly infinite amount of data that will be added on to the network.
 * Metadata about a hash (aka a prefix) + the hash itself = CID
 * The collection of “metadata prefixes” used in CIDs are part of the [Multiformats](https://multiformats.io/) library.
 * Currently, there are 2 different versions of CIDs in IPFS, CIDv0 & CIDv1, the currently widely accepted one being v1 CIDs. The version is also prefixed in the CID itself.
 * The Multiformat protocols ensure future-proof compatibility and standards if any algorithm needs to change.
+
+{{< youtube dWq0GNbLtUI>}}
 
 ## Content Addressing
 
@@ -60,7 +55,6 @@ Location addressing asks exactly one remote host for content by name (which may 
 Content addressing can ask anyone for content by the fingerprint (hash) of that content since the relationship between the fingerprint and the content is immutable. Since we can verify the content we receive matches the fingerprint, it doesn't matter who we receive the content from.
 
 ![location vs content](location-vs-content2.png)
-
 
 #### How IPFS Works | Steve Allen
 In this video, Steve Allen describes how IPFS **Imports, Names, Finds** and **Fetches** content.
@@ -92,7 +86,7 @@ At a high level, the talk covered the following concepts:
 
 By default, content on IPFS is not _pinned_. That means when you add a file to IPFS, it will eventually stop being discoverable on the network. 
 
-This problem occurs because IPFS uses garbage collection to free disk space on your IPFS node by deleting data that it thinks is no longer needed. [Garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) is a form of automatic resource management widely used in software development. The garbage collector attempts to reclaim memory occupied by objects that are no longer in use.
+This problem occurs because IPFS uses garbage collection to free disk space on your IPFS node by deleting data that is no longer needed. [Garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) is a form of automatic resource management widely used in software development.
 
 To mitigate this problem you must _pin_ your content to your [node](https://docs.ipfs.tech/concepts/nodes/#nodes) to ensure it persists on IPFS. Your options for pinning content are:
 1. You pin it locally to your own node. Note that if the content is only pinned to your local node, it must be online for peers to get that content.
