@@ -18,7 +18,6 @@ subgoals:
 - 1.04
 ---
 
-## Objectives
 
 IPFS is one of many [general purpose peer to peer (P2P) networks](https://en.wikipedia.org/wiki/Peer-to-peer#Other_P2P_applications). Peer to peer networks are just everyday computer users that share data directly with each other. In these systems, you don't have to go through an intermediary like Google to share a file with someone. As an example, if we were looking for the [IPFS white paper](https://github.com/ipfs/papers/blob/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf), we would ask a peer and they will either respond with the paper or pass along the request to another peer. Eventually, someone will return with the paper if they have it saved.
 
