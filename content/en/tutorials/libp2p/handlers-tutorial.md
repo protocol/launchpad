@@ -5,6 +5,8 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-libp2p"
+    tutorials:
+        parent: "tutorials-libp2p"
 weight: 316
 category: tutorial
 level:
