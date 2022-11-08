@@ -39,7 +39,7 @@
         },
         {
           "id": "1.14",
-          "description": "Understand why data on IPFS needs to be pinned to be made available to the network"
+          "description": "Learn why data on IPFS needs to be pinned to be made available to the network"
         }
       ]
     },
@@ -61,6 +61,23 @@
         {
           "id": "1.24",
           "description": "Be able to explain what a peer, node, and swarm are in the context of IPFS"
+        }
+      ]
+    },
+    "1.3":{
+      "description": "Learn about IPFS Gateways and how they bridge web2 and web3",
+      "subgoals":[
+        {
+          "id": "1.31",
+          "description": "Know the methods to address content in IPFS through Gateways"
+        },
+        {
+          "id": "1.32",
+          "description": "Get familiar with the work being done to bring native IPFS support to browsers"
+        },
+        {
+          "id": "1.33",
+          "description": "Learn about current public Gateways and how any node in the network can become one"
         }
       ]
     },
