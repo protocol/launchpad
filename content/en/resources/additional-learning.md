@@ -5,7 +5,7 @@ draft: false
 menu:
     resources:
         parent: "resources-other"
-weight: 80
+weight: 60
 ---
 
 #### The Lifecycle of Data in DWeb | IPFS Camp 2019

@@ -3,8 +3,9 @@ title: "Fleek"
 description: "An Easy-to-Use Web3 Hosting Service"
 draft: false
 menu:
-    curriculm:
-        parent: "curriculum-devtools"
+  curriculum:
+          parent: "curriculum-devtools"
+category: lecture
 weight: 40
 ---
 

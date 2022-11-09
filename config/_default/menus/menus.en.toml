@@ -144,7 +144,8 @@
 [[resources]]
   name = "Resources"
   weight = 20
-  identifier = "resources"
+  identifier = "resources-other"
+
 
 
 # [[footer]]

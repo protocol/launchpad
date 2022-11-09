@@ -3,8 +3,9 @@ title: "Introduction to toolkits"
 description: "Tools to make Web3 with PL Fun and Easy"
 draft: false
 menu:
-    curriculm:
-        parent: "curriculum-devtools"
+  curriculum:
+          parent: "curriculum-devtools"
+category: lecture
 weight: 10
 ---
 

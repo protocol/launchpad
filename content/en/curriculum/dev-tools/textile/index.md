@@ -3,8 +3,9 @@ title: "Textile"
 description: "Connecting and Extending PL Projects"
 draft: false
 menu:
-    curriculm:
-        parent: "curriculum-devtools"
+  curriculum:
+          parent: "curriculum-devtools"
+category: lecture
 weight: 20
 ---
 

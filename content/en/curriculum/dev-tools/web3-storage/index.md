@@ -3,8 +3,9 @@ title: "Web3.Storage"
 description: "Simple, Open, Free Storage"
 draft: false
 menu:
-    curriculm:
+    curriculum:
         parent: "curriculum-devtools"
+category: lecture
 weight: 60
 ---
 

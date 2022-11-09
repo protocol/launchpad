@@ -3,8 +3,9 @@ title: "Piñata"
 description: "The Piñata Pinning Service"
 draft: false
 menu:
-    curriculm:
-        parent: "curriculum-devtools"
+  curriculum:
+          parent: "curriculum-devtools"
+category: lecture
 weight: 50
 ---
 
