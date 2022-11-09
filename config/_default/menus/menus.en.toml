@@ -14,7 +14,7 @@
 
 [[main]]
   name = "Resources"
-  url = "/dev-tools/toolkits/resources"
+  url = "/resources/other-resources/"
   weight = 3000
   [main.params]
     identifier = "dev-tools"
