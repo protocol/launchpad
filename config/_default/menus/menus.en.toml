@@ -141,11 +141,6 @@
   weight = 10
   identifier = "prereq"
 
-[[devtools]]
-  name = "PL Toolkits and SDKs"
-  weight = 10
-  identifier = "resources-toolkits"
-
 [[resources]]
   name = "Other Resources"
   weight = 20
