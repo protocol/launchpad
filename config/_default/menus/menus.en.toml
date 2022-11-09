@@ -13,8 +13,8 @@
     identifier = "prerequisites"
 
 [[main]]
-  name = "Dev-Tools"
-  url = "/dev-tools/toolkits/introduction/"
+  name = "Resources"
+  url = "/dev-tools/toolkits/resources"
   weight = 3000
   [main.params]
     identifier = "dev-tools"
