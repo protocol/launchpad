@@ -20,11 +20,11 @@ subgoals:
 [IPFS Gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#http-gateways) are provided strictly for convenience: in other words, they help tools that speak HTTP but do not speak distributed protocols (such as IPFS) to communicate. They are the first stage of the upgrade path for bridging web2 and web3. 
 
 ### Centralization
-HTTP gateways have worked well since 2015, but they come with a significant set of limitations related both to the centralized nature of HTTP and some of HTTP's semantics. Location-based addressing of a gateway depends on both DNS and HTTPS/TLS, which relies on a trust in certificate authorities (CAs) and public key infrastructure (PKI). In the long term, these issues should be mitigated by use of opportunistic protocol upgrade schemes.
+HTTP gateways have worked well since 2015, but they come with a significant set of limitations related both to the centralized nature of HTTP and some of HTTP's semantics. Location-based addressing of a gateway depends on both the [Domain Name System (DNS)](https://www.cloudflare.com/learning/dns/what-is-dns/) and HTTPS with TLS Certificates, which relies on a trust in certificate authorities (CAs) and public key infrastructure (PKI). In the long term, these issues should be mitigated by use of opportunistic protocol upgrade schemes, encrypting communication channels and enabling safe peer-to-peer connections.
 
 
 ### Path gateway
-In the most basic scheme, a URL path used for content addressing is effectively a resource name without a canonical location. The HTTP server provides the location part, which makes it possible for browsers to interpret an IPFS content path as relative to the current server and just work without a need for any conversion:
+In the most basic scheme, a URL path used for content addressing is effectively a resource name without a location-based address. The HTTP server provides the location part, which makes it possible for browsers to interpret an IPFS content path  relative to the current server and work without a need for any conversion:
 
 ```
 https://<gateway-host>.tld/ipfs/<cid>/path/to/resource
@@ -32,7 +32,7 @@ https://<gateway-host>.tld/ipns/<ipnsid_or_dnslink>/path/to/resource
 ```
 
 ### Protocol upgrade
-Tools and browser extensions should detect IPFS content paths and resolve them directly over IPFS protocol. They should use HTTP gateway only as a fallback when no native implementation is available in order to ensure a smooth, backward-compatible transition.
+Tools and browser extensions can help detect IPFS content paths and resolve them directly over IPFS protocol. They should use HTTP gateway only as a fallback when no native implementation is available in order to ensure a smooth, backward-compatible transition.
 
 ## Native URLs
 
@@ -41,9 +41,9 @@ When searching for content on IPFS on the [command line](/curriculum/ipfs/basics
 ```
 ipfs://{cidv1}/path/to/resource
 ```
-The IPFS URL protocol scheme requires case-insensitive CIDv1 in Base32 encoding. This is necessary because it allows for a standard way to address content in browsers and in our local node.
+The IPFS URL protocol scheme requires case-insensitive (no capital letters) CIDv1 content identifiers with Base32 encoding. This is necessary because it allows for a standard way to address content in browsers and in our local node.
 
-An IPFS URL does not retain the original path, but instead requires a conversion step to/from URI representation:
+A Uniform Resource Identifier (URI) for IPFS has a different structure than a typical http URI that starts with `https:`, and when you create an IPFS URI, you will need to convert it to a new format that starts with `ipfs` or `ipns` :
 
 ``` 
 ipfs://{immutable-root}/path/to/resourceA → /ipfs/{immutable-root}/path/to/resourceA
@@ -51,7 +51,7 @@ ipfs://{immutable-root}/path/to/resourceA → /ipfs/{immutable-root}/path/to/res
 ipns://{mutable-root}/path/to/resourceB → /ipns/{mutable-root}/path/to/resourceB
 ```
 
-The first element after the double slash is an opaque identifier representing the content root. It is interpreted as an authority component used for origin calculation, which provides necessary isolation between security contexts of different content trees.
+The new identifier is made up of the CID of the IPFS or IPNS resource, then the path to the directory where that particular piece of content is, and the name of the file you are looking to retrieve: 
 
 Example:
 
@@ -61,7 +61,7 @@ ipfs://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/wiki/Vincent_
 
 > **Native URI requires the CID to be case-insensitive. Use of CIDv1 in Base32 is advised.**
 
-_Source: [docs.ipfs.io/native-URIs](https://docs.ipfs.io/how-to/address-ipfs-on-web/#native-urls)_
+Learn more in [docs.ipfs.tech/native-URIs](https://docs.ipfs.tech/how-to/address-ipfs-on-web/#native-urls)_
 
 ### Subdomain gateway
 
@@ -75,26 +75,20 @@ Example:
     https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.cf-ipfs.com/wiki/Vincent_van_Gogh.html
     https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.localhost:8080/wiki/
 
-_Source: [docs.ipfs.io/subdomain-gateway](https://docs.ipfs.io/how-to/address-ipfs-on-web/#subdomain-gateway)_
 
-### Current Projects
+## Current Projects
+There are many projects out there that help to bridge the gap between traditional, web2 HTTP-based URL and URIs, and the IPFS content-addressing system:
 
 - IPFS Companion browser extension
-- IPFS and the JavaScript ecosystem
-- How to address IPFS on the web
-- How to run own HTTP Gateway
-- DNSLink
-- Collaborations
-    - W3C
     - IPFS and Igalia collaborate on dweb in browsers
     - Brave
     - Opera
 
-### IPFS Companion browser extension
+### IPFS Companion Browser Extension
 
 [IPFS Companion](https://github.com/ipfs-shipyard/ipfs-companion#ipfs-companion) is a browser extension that simplifies access to IPFS resources and adds browser support for the IPFS protocol. It runs in <img src="https://unpkg.com/@browser-logos/firefox@2.0.0/firefox_16x16.png" width="16" height="16">Firefox (desktop and Android) and Chromium-based browsers including Chrome or Brave. Check out all of IPFS Companion's features and [**install it**](https://github.com/ipfs/ipfs-companion#install-ipfs-companion) today!
 
-### IPFS and the JavaScript ecosystem
+### IPFS and JavaScript
 
 At present, in order to interact with IPFS in a web browser, you must either bundle [`js-ipfs-core`](https://www.npmjs.com/package/ipfs-core) (a full IPFS node in JavaScript) with your client-side application or use the [`js-ipfs-http-client`](https://www.npmjs.com/package/ipfs-http-client) client library to connect to an external daemon running on a local or remote machine.
 
@@ -107,8 +101,8 @@ At present, in order to interact with IPFS in a web browser, you must either bun
 [DNSLink](https://dnslink.dev) enables you to map a domain name to an IPFS address (CID or IPNS libp2p-key) by means of a DNS TXT record.
 
 To create a mutable pointer with [DNSLink](https://docs.ipfs.io/concepts/dnslink/), you need:
-- a domain name you control
-- A CID or an IPNS name to link to
+- A domain name you control (e.g. `www.me.com`)
+- A CID or an IPNS name to link to, such as a website published with [Fleek.co](https://fleek.co/)
 
 ```
 ipfs.tech -> /ipfs/QmYyg8yU6k5Zxwugiy32UhzJabdNC2Yac2y9nSmPr4K5FS
@@ -122,7 +116,7 @@ Finally, you can use an IPFS gateway using the `/ipns/[DNSLink]` resolution sche
 
 Source: [Introduction to DNSlink](https://dnslink.dev/#introduction), [IPFS docs on DNSLink](https://docs.ipfs.tech/concepts/dnslink/)
 
-### Collaborations
+## Collaborations
 
 #### W3C
 
@@ -132,12 +126,10 @@ Protocol Labs is a [W3C](https://www.w3.org/Consortium/) Member. Current focus i
 
 In 2020 IPFS and [Igalia](https://www.igalia.com/), an open source company with expertise in browser development and the web platform, started a collaboration that continues to this day. This opportunity has started discussions and has risen awareness of the distributed web. Their effort has brought much needed progress to bringing IPFS to Firefox and Chromium-based browsers. For more information [take a look at the official announcement](https://blog.ipfs.io/2021-01-15-ipfs-and-igalia-collaborate-on-dweb-in-browsers/).
 
-#### Brave
 
 [Brave v1.19 has integrated IPFS into their desktop web browser](https://brave.com/brave-integrates-ipfs/) for Windows, macOS and Linux. When Brave detects an address which is an HTTP gateway URL to IPFS content or a native IPFS address such as `ipfs://` or `ipns://` it will prompt the user to install and enable the native IPFS node, or to use an HTTP gateway.
 Diagnostic UI can be found at `brave://ipfs`, we suggest enabling IPFS Companion for the best experience
 
-#### Opera
 
 Opera for Android 57 introduced support for resolving `ipfs://` or `ipns://` via a customizable gateway.
 For more information [take a look at the official announcement](https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/).
