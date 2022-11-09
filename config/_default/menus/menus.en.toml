@@ -142,9 +142,9 @@
   identifier = "prereq"
 
 [[resources]]
-  name = "Other Resources"
+  name = "Resources"
   weight = 20
-  identifier = "resources-other"
+  identifier = "resources"
 
 
 # [[footer]]
