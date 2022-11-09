@@ -3,7 +3,7 @@ title: "Built on IPFS and Filecoin"
 description: "Apps, Tooling, and Other Projects"
 draft: false
 menu:
-    devtools:
+    resources:
         parent: "resources-other"
 weight: 70
 ---

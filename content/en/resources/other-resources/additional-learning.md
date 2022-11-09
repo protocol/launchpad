@@ -3,7 +3,7 @@ title: "Additional Learning"
 description: "Deeper Learning and Context to Prepare you for Web3"
 draft: false
 menu:
-    devtools:
+    resources:
         parent: "resources-other"
 weight: 80
 ---
