@@ -37,6 +37,10 @@ If you want to dive in, check out our [collection of tutorials](https://docs.lib
 
 You can also follow this [Getting Started with Rust and libp2p tutorial](https://docs.rs/libp2p/latest/libp2p/tutorial/index.html) to build a small ping clone, sending a ping to a peer, expecting a pong as a response.
 
+* [Introduction to libp2p](https://proto.school/introduction-to-libp2p)
+* [Blogging on the Decentralized Web](https://proto.school/blog)
+* [ResNetLab on Tour – Content Routing](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/)
+
 #### Examples
 
 If you want to get a feel for what's possible with libp2p, or just want to see some idiomatic usage, check out the [examples](https://github.com/libp2p/go-libp2p/tree/master/examples). Each libp2p implementation maintains a set of working example projects that can illustrate key concepts and use cases. ([js examples](https://github.com/libp2p/js-libp2p/tree/master/examples), [rust examples](https://github.com/libp2p/rust-libp2p/tree/master/examples), [python examples](https://github.com/libp2p/py-libp2p/tree/master/examples))

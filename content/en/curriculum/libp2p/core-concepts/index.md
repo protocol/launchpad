@@ -12,29 +12,41 @@ level:
 - deep
 ---
 
-### Concepts
+## Concepts
 
 _This is an annotated version of_ [_this libp2p doc_](https://docs.libp2p.io/concepts/)
 
 libp2p covers a lot of ground, and may involve unfamiliar terminology and concepts. This section defines some basic vocabulary and links to to the core information about these concepts.
+libp2p allows you to create peer to peer networks in a modular way by choosing the protocols that you application needs.
 
-#### [Transport](https://docs.libp2p.io/concepts/transport/)
+### [Transport](https://docs.libp2p.io/concepts/transports/)
 
-To communicate on the internet, you need to use an agreed upon **T**ransport **P**rotocol (most of the internet uses a TCP/IP combination). With libp2p you can listen, dial, and provide addresses (which specify the transport). libp2p makes it possible to use multiaddresses to communicate with different protocols, in a peer-to-peer fashion.
+A key part of a network is the transport layer (consider the TCP/IP or OSI model). Most communications in the Internet happen by using the TCP transport protocol, although UDP is also widely used.
+libp2p allows you to choose the transport protocol that best fits your application.
 
-#### [NAT Traversal](https://docs.libp2p.io/concepts/nat/)
+At the transport network level, libp2p offers TCP or QUIC (a new transport protocol built on top of UDP). When we open a connection with other peers in the network, we use a transport protocol.
 
-NAT allows many machines with private addressed on a private network to use a single public address, however, it also comes with a firewall, which can make it difficult for two peers to connect.
+### [Stream Multiplexing](https://docs.libp2p.io/concepts/multiplex/)
 
-[NAT Traversal](https://tailscale.com/blog/how-nat-traversal-works/) is a strategy for making it possible for two peers behing NATs to connect.
+Once we have opened a connection by using a transport protocol, libp2p offers multiplexing out the box.
+Opening new connections is _expensive_ from a resources point of view, so libp2p uses stream multiplexing to exchange different types of data within the same connection.
+Basically, libp2p splits the connection into several logical _streams_. Every stream holds a different type of data.
 
-libp2p uses [STUN Hole-Punching and the TURN Circuit Relay Protocol](https://docs.libp2p.io/concepts/nat/) to give peers direct access to communicate with one another.  
+### [NAT Traversal](https://docs.libp2p.io/concepts/nat/)
 
+Consider the Internet router that you have at home. You probably have several devices connected to it (laptops, mobile phones, or even the fridge).
+When you join the Internet, you are given an address identifier, which is called IP.
+However, the number of IPs in the Internet is limited, so every device does not get a public IP address.
+Instead, your router creates a private network in your home and assigns a private IP to every device. Then, the router is responsible for managing the incoming and outgoing connection from the Internet.
+This is called NAT (Network Address Traversal). For example, consider the following diagram:
 
-#### [Circuit Relay](https://docs.libp2p.io/concepts/circuit-relay/)
+// image
 
-Circuit relay is a transport protocol that routes traffic between two peers over a third-party “relay” peer, when NAT Traversal and hole punching aren't an option, [the circuit relay can be used to connect them](https://blog.aira.life/understanding-ipfs-circuit-relay-ccc7d2a39).
+The router is connected to the Internet, and is assigned a public IP address. Three devices are connected to the route, which manages the incoming and outgoing data.
 
+Although this a great way of avoiding the waste of IP address, it brings a problem, especially in peer to peer network.
+The only part of our network is the router, so what happens if a computer from the Internet wants to connect a specific device in our private network?
+libp2p offers several NAT traversal methods to avoid this issue, such as hole-punching or circuit relays.
 
 #### [Protocols](https://docs.libp2p.io/concepts/protocols/#what-is-a-libp2p-protocol)
 
@@ -69,12 +81,6 @@ Publish/Subscribe is a system where peers congregate around topics they are inte
 Peers can send messages to topics. Each message gets delivered to all peers subscribed to the topic:
 
 ![peer messaging](peering.png)
-
-#### [Stream Multiplexing](https://docs.libp2p.io/concepts/stream-multiplexing/)
-
-Stream Multiplexing (_stream muxing_) is a way of sending multiple streams of data over one communication link. It combines multiple signals into one unified signal so it can be transported 'over the wires', then it is demulitiplexed (_demuxed_) so it can be output and used by separate applications.
-
-This is done to share the transmission bandwidth available between multiple sources to make transmission more efficient.
 
 
 **Where it Fits In**
