@@ -17,7 +17,7 @@
   url = "/resources/other-resources/"
   weight = 3000
   [main.params]
-    identifier = "dev-tools"
+    identifier = "resources"
 
 [[main]]
   name = "About"
@@ -125,6 +125,16 @@
     section = "filecoin"
     description = "Filecoin a decentralized storage network to store large datasets in an affordable and reliable way"
 
+[[curriculum]]
+  name = "Filecoin"
+  weight = 55
+  identifier = "curriculum-devtools"
+  [curriculum.params]
+    image = "/logos/filecoin.png"
+    width = 100
+    height = 100
+    section = "filecoin"
+    description = "Tools and projects"
 
 [[prereq]]
   name = "Pre-Requisites"

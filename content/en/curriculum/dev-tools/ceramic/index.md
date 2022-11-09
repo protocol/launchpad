@@ -3,8 +3,8 @@ title: "Ceramic"
 description: "Decentralized Identity Graph Network"
 draft: false
 menu:
-    devtools:
-        parent: "curriculm/"
+    curriculm:
+        parent: "curriculm-devtools"
 weight: 30
 ---
 

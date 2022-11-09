@@ -3,8 +3,8 @@ title: "Introduction to toolkits"
 description: "Tools to make Web3 with PL Fun and Easy"
 draft: false
 menu:
-    devtools:
-        parent: "resources-toolkits"
+    curriculm:
+        parent: "curriculm-devtools"
 weight: 10
 ---
 
