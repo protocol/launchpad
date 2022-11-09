@@ -4,7 +4,7 @@ description: "Decentralized Identity Graph Network"
 draft: false
 menu:
     curriculm:
-        parent: "curriculm-devtools"
+        parent: "curriculum-devtools"
 weight: 30
 ---
 

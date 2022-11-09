@@ -4,7 +4,7 @@ description: "Connecting and Extending PL Projects"
 draft: false
 menu:
     curriculm:
-        parent: "curriculm-devtools"
+        parent: "curriculum-devtools"
 weight: 20
 ---
 

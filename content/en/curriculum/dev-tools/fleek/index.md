@@ -4,7 +4,7 @@ description: "An Easy-to-Use Web3 Hosting Service"
 draft: false
 menu:
     curriculm:
-        parent: "curriculm-devtools"
+        parent: "curriculum-devtools"
 weight: 40
 ---
 

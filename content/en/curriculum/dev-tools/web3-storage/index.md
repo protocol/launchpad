@@ -3,8 +3,8 @@ title: "Web3.Storage"
 description: "Simple, Open, Free Storage"
 draft: false
 menu:
-    devtools:
-        parent: "resources-toolkits"
+    curriculm:
+        parent: "curriculum-devtools"
 weight: 60
 ---
 

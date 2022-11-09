@@ -4,7 +4,7 @@ description: "The Piñata Pinning Service"
 draft: false
 menu:
     curriculm:
-        parent: "curriculm-devtools"
+        parent: "curriculum-devtools"
 weight: 50
 ---
 

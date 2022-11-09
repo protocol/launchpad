@@ -4,7 +4,7 @@ description: "Tools to make Web3 with PL Fun and Easy"
 draft: false
 menu:
     curriculm:
-        parent: "curriculm-devtools"
+        parent: "curriculum-devtools"
 weight: 10
 ---
 
