@@ -25,5 +25,28 @@
         }
       ]
     }
+  },
+  "libp2p": {
+    "1.2": {
+      "description": "Understand the main building blocks of libp2p",
+      "subgoals": [
+        {
+          "id": "1.21",
+          "description": "Understand that libp2p offers several transport protocols"
+        },
+        {
+          "id": "1.22",
+          "description": "Understand that libp2p offers several NAT traversal solutions"
+        },
+        {
+          "id": "1.23",
+          "description": "Understand what stream multiplexing is, and what benefits it provides"
+        },
+        {
+          "id": "1.24",
+          "description": "Understand why libp2p uses multiaddresses"
+        }
+      ]
+    }
   }
 }
