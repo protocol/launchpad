@@ -18,12 +18,10 @@ subgoals:
 ## What are IPFS Gateways
 IPFS gateways are IPFS nodes that are hosted for the benefit of anyone who would like to access IPFS content from the HTTP-based web2 internet. Protocol Labs operates and is responsible for only two public gateways, those being `ipfs.io` and `dweb.link`. Regardless, they maintain a list of over 80 [known public gateways](https://ipfs.github.io/public-gateway-checker/). Some commonly used gateways are `gateway.pinata.cloud` and `cloudflare-ipfs.com`.
 
-[IPFS Gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#http-gateways) are provided strictly for convenience: in other words, they help tools that speak HTTP but do not speak distributed protocols (such as IPFS) to communicate. They are the first stage to bridging web2 and web3. To learn how to access the IPFS network through a gateway checkout the [Path Gateway](#get-files-through-an-ipfs-gateway) section below.
-
+[IPFS Gateways](https://docs.ipfs.io/how-to/address-ipfs-on-web/#http-gateways) are provided for convenience, but also for an owners own use cases. They help tools that speak HTTP but that do not speak to distributed protocols like IPFS's. They are the first stage to bridging web2 and web3. To learn how to access the IPFS network through a gateway checkout the [Get Files through an IPFS Gateway](#get-files-through-an-ipfs-gateway) section below.
 
 ### Centralization
 HTTP gateways have worked well since 2015, but they come with a significant set of limitations related both to the centralized nature of HTTP and some of HTTP's semantics. Location-based addressing of a gateway depends on both the [Domain Name System (DNS)](https://www.cloudflare.com/learning/dns/what-is-dns/) and HTTPS with TLS Certificates, which relies on a trust in certificate authorities (CAs) and public key infrastructure (PKI). In the long term, these issues should be mitigated by use of opportunistic protocol upgrade schemes, encrypting communication channels and enabling safe peer-to-peer connections.
-
 
 ### Get Files Through an IPFS Gateway
 In the most basic scheme, a URL path used for content addressing is effectively a resource name without a location-based address. The HTTP server provides the location part, which makes it possible for browsers to interpret an IPFS content path relative to the current server and work without a need for any conversion:
