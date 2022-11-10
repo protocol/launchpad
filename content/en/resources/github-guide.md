@@ -3,7 +3,7 @@ title: "Github Tips and Tricks"
 description: "Github usage for open source contribution"
 draft: false
 menu:
-    devtools:
+    resources:
         parent: "resources-other"
 weight: 80
 ---
@@ -12,7 +12,7 @@ weight: 80
 
 ## Markdown quick guide
 
-Every text input section in [GitHub uses Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/about-writing-and-formatting-on-github). Every Pull Request (PR), review, issue, and comment section supports markdown. Markdown is not specific to Github, but is it's own writing and formatting style. Github has added additional functionality to it that is only usable within Github like interacting with other users with @mentions, issue and PR references, and emoji's! 
+Every text input section in [GitHub uses Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/about-writing-and-formatting-on-github). Every Pull Request (PR), review, issue, and comment section supports markdown. Markdown is not specific to Github, but is it's own writing and formatting style. Github has added additional functionality to it that is only usable within Github like interacting with other users with @mentions, issue and PR references, and emoji's!
 
 If you are contributing to open source repositories and organizations, here are some common uses seen in the wild:
 
