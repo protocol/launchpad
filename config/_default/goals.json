@@ -31,19 +31,23 @@
       "subgoals": [
         {
           "id": "1.11",
-          "description": "Be able to describe why content in IPFS is immutable"
+          "description": "Be able to describe what mutable data is, and why content in IPFS is immutable"
         },
         {
           "id": "1.12",
-          "description": "Know the difference between location addressing vs content addressing"
+          "description": "Understand difference between location addressing vs content addressing"
         },
         {
           "id": "1.13",
-          "description": "Fundamentally know what a CID is and its variations"
+          "description": "Know the different types of CIDs, and what a CID is made up of"
         },
         {
           "id": "1.14",
           "description": "Understand why data on IPFS needs to be pinned to be made available to the network"
+        },
+        {
+          "id": "1.15",
+          "description": "Identify how a garbage collection process is done on an IPFS node and how to keep data discoverable on IPFS"
         }
       ]
     },
