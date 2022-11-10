@@ -40,6 +40,8 @@ You can also follow this [Getting Started with Rust and libp2p tutorial](https:/
 * [Introduction to libp2p](https://proto.school/introduction-to-libp2p)
 * [Blogging on the Decentralized Web](https://proto.school/blog)
 * [ResNetLab on Tour – Content Routing](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/)
+* [Crate libp2p](https://docs.rs/libp2p/0.40.0/libp2p/)
+* [Rust tutorial](https://docs.rs/libp2p/0.40.0/libp2p/tutorial/index.html)
 
 #### Examples
 
