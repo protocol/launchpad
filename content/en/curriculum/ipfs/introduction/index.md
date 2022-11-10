@@ -10,7 +10,7 @@ category: lecture
 level:
 - shallow
 - deep
-goal: 1.0
+goal: 1
 subgoals:
 - 1.01
 - 1.02
