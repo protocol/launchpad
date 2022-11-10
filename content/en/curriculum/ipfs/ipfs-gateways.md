@@ -24,7 +24,7 @@ IPFS gateways are IPFS nodes that are hosted for the benefit of anyone who would
 HTTP gateways have worked well since 2015, but they come with a significant set of limitations related both to the centralized nature of HTTP and some of HTTP's semantics. Location-based addressing of a gateway depends on both the [Domain Name System (DNS)](https://www.cloudflare.com/learning/dns/what-is-dns/) and HTTPS with TLS Certificates, which relies on a trust in certificate authorities (CAs) and public key infrastructure (PKI). In the long term, these issues should be mitigated by use of opportunistic protocol upgrade schemes, encrypting communication channels and enabling safe peer-to-peer connections.
 
 ### Get Files Through an IPFS Gateway
-In the most basic scheme, a URL path used for content addressing is effectively a resource name without a location-based address. The HTTP server provides the location part, which makes it possible for browsers to interpret an IPFS content path relative to the current server and work without a need for any conversion:
+In the most basic scheme, a URL path used for content addressing is effectively a resource name without a location-based address. The HTTP server provides the location part, which makes it possible for browsers to interpret an IPFS content path relative to the current server and work without a need for any conversion. There are various types of [IPFS gateways](https://docs.ipfs.tech/concepts/ipfs-gateway/#gateway-types), that each has security, performance, and other functional implications. The most common way to read data from gateways are with this pathing schema:
 
 ```
 https://<gateway-host>.tld/ipfs/<cid>/path/to/resource
