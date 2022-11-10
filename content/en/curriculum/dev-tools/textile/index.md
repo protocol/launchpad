@@ -7,6 +7,9 @@ menu:
           parent: "curriculum-devtools"
 category: lecture
 weight: 20
+level:
+- shallow
+- deep
 ---
 
 Learn more about textile on the website at [textile.io](https://linktr.ee/textileio) and in the [docs](https://docs.textile.io/)

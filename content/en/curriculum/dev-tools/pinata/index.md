@@ -7,6 +7,9 @@ menu:
           parent: "curriculum-devtools"
 category: lecture
 weight: 50
+level:
+- shallow
+- deep
 ---
 
 Piñata is a pinning service that allows applications, creators, and individuals to interact with blockchain in a simple, intuitive way. With Piñata you can secure and pin NFTs, as well as add and hide files to the IPFS network with a feature called [submarining](https://www.pinata.cloud/blog/introducing-submarining-what-it-is-why-you-need-it). They also provide [dedicated gateways](https://www.pinata.cloud/blog/the-power-of-dedicated-gateways) and storage servers, and easy upload through their UI.

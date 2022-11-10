@@ -14,7 +14,7 @@
 
 [[main]]
   name = "Resources"
-  url = "/resources/other-resources/"
+  url = "/resources/additional-learning/"
   weight = 3000
   [main.params]
     identifier = "resources"
@@ -117,7 +117,6 @@
   name = "Filecoin"
   weight = 50
   identifier = "curriculum-filecoin"
-  url = "/curriculum/get-started/what-is-lotus"
   [curriculum.params]
     image = "/logos/filecoin.png"
     width = 100
@@ -130,11 +129,11 @@
   weight = 55
   identifier = "curriculum-devtools"
   [curriculum.params]
-    image = "/logos/filecoin.png"
+    image = "/icons/devtools.png"
     width = 100
     height = 100
-    section = "devtools"
-    description = "Tools and projects"
+    section = "dev-tools"
+    description = "Learn about some of the most popular tools and projects built using Protocol Labs' technology"
 
 [[prereq]]
   name = "Pre-Requisites"
