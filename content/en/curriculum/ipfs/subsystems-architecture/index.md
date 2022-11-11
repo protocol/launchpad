@@ -65,14 +65,13 @@ Along with Kademlia and the DHT, [Bitswap](https://docs.ipfs.io/concepts/bitswap
 
 IPNS is a self-certifying mutable pointer. Meaning any _name_ that gets published is signed by a private key and anyone else can verify that it was signed by that peer with just the _name_. This self-certifying nature gives IPNS a number of super-powers not present in consensus systems (DNS, blockchain identifiers, etc.) like: mutable link information can come from anywhere, not just a particular service/system, and it is very fast and easy to confirm a link is authentic.
 
-IPNS _names_ are encapsulated by a data structure called an _IPNS Record_ which contains the CID you are pointing to, the expiration date of a name and the sequence number which is incremented whenever the record is updated.
+IPNS _names_ are encapsulated by a data structure called an _IPNS Record_ which contains the CID you are pointing to, the [expiration date](https://discuss.ipfs.tech/t/how-do-i-make-my-ipns-records-live-longer/14768/17?u=lidel) of a name and the sequence number which is incremented whenever the record is updated.
 
 ##### Issues with IPNS
-* Resolving IPNS over DHT is slow - There may potentially be multiple versions of a record, so Kubo will spend up to a minute to try to find at least 16 peers to form a quorum.
-* [JS-IPFS in browsers](https://github.com/ipfs/js-ipfs/blob/master/docs/BROWSERS.md) - Users trying to use JS-IPNS in browsers run into a variety of issues. A workaround is using [public gateways](https://docs.ipfs.tech/concepts/ipfs-gateway/#public-gateways) for resolving [IPNS records and CIDs](/curriculum/ipfs/ipfs-gateways).
+* [Resolving IPNS over DHT is slow](https://pl-strflt.notion.site/IPNS-Overview-and-FAQ-071b9b14f12045ea842a7d51cfb47dff) - There may potentially be multiple versions of a record, so Kubo will spend up to a minute to try to find at least 16 peers to form a quorum.
 * [Safe Vs. Old problem](https://github.com/ipfs/kubo/issues/1958#issuecomment-444201606) - If a record expires, do I want my users to fetch and resolve the data anyways (serve **old** data) or not at all (**safe**). This is an ongoing and situational conversation.
+* [JS-IPFS in browsers](https://github.com/ipfs/js-ipfs/blob/master/docs/BROWSERS.md) - Users trying to use JS-IPNS in browsers run into a variety of issues. A workaround is using [public gateways](https://docs.ipfs.tech/concepts/ipfs-gateway/#public-gateways) for resolving [IPNS records and CIDs](/curriculum/ipfs/ipfs-gateways).
 
-Sources: [Overview of IPNS by Adin](https://pl-strflt.notion.site/IPNS-Overview-and-FAQ-071b9b14f12045ea842a7d51cfb47dff#0963fe6b470a4c55b1929146c360dc95), [IPNS Spec](https://github.com/ipfs/specs/blob/main/IPNS.md), [Discuss forum for IPFS](https://discuss.ipfs.tech/t/how-do-i-make-my-ipns-records-live-longer/14768/17?u=lidel)
 
 Check out the [IPNS spec](https://github.com/ipfs/specs/tree/main/ipns) to gain a deeper understanding about IPNS records and how to use them.
 

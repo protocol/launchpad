@@ -100,13 +100,6 @@ _Watch the Mutable Content video above to learn more about IPNS over PubSub_
 {{< youtube _3ee1_2rgKg >}}
 
 <!--
-#### Common Pitfalls
-* Resolving IPNS over DHT may be slow. If there are multiple versions of a name, then you want to make sure that you have the latest version. And you do this by searching the DHT for peers that hold your records and Kubo will spend up to a minute to try to find at least 16 peers to form a quorum.
-* Safe Vs. Old problem. This is a question around practicality on IPNS content. If I accidentally let my record expire, do I want my users to fetch and resolve the data anyways (aka serve **old** data) or not at all (**safe**). Currently, the default is to be safe, and not serve any data. This is an ongoing and situational conversation, you can [read about it on GitHub](https://github.com/ipfs/kubo/issues/1958#issuecomment-444201606)
-
-Sources: [Overview of IPNS by Adin](https://pl-strflt.notion.site/IPNS-Overview-and-FAQ-071b9b14f12045ea842a7d51cfb47dff#0963fe6b470a4c55b1929146c360dc95), [IPNS Spec](https://github.com/ipfs/specs/blob/main/IPNS.md), [Discuss forum for IPFS](https://discuss.ipfs.tech/t/how-do-i-make-my-ipns-records-live-longer/14768/17?u=lidel)
-
-
 ### DNSLink
 
 [DNSLink](https://docs.ipfs.tech/concepts/glossary/#dnslink) is a standard for a mutable pointer system that stores its links in DNS TXT records corresponding to a given domain name. With DNSLink you can use a mutable pointer like a DNS domain name to point to content-addressed data in IPFS.
@@ -118,11 +111,7 @@ The benefits of DNSLink include:
 
 For example, `libp2p.io` has a TXT DNS record `_dnslink.libp2p.io` with the value `dnslink=/ipfs/bafybeibwlrl7olq5sggibzucp5s6y5n22numfpyjlzntnuvgs5zt2umjuu`. This DNS record can be _mutated_ at any point to point to a new CID.
 
-**You can follow tutorials and read more at [https://dnslink.dev](https://dnslink.dev/)**
-
 ### Pubsub + IPNS
-
-[**Publish/Subsribe (PubSub)**](https://docs.libp2p.io/concepts/publish-subscribe/) is a messaging protocol to quickly communicate with other peers. Whenever a peer Publishes a message, Subscribing peers will receive it almost instantly. This protocol is not specific to IPFS or IPNS, but to [Libp2p](https://docs.ipfs.tech/concepts/libp2p/); paired with IPNS, it allows for quick delivery of records over the network. With PubSub enabled on IPNS, updates to a record can be shared virtually instantly with subscribers.
 
 To accomplish IPNS over PubSub, a [persistence layer had to be added](https://github.com/ipfs/specs/blob/main/naming/pubsub.md#layering-persistence-onto-libp2p-pubsub). Now when you ask for a name, you are subcribing to a PubSub topic based on that name, you create a connection with a peer that is following the same name, then they send you the latest version of the record. The key differentiating factor between IPNS-over-PubSub and IPNS-over-the-DHT (the default behavior) is opening a streaming connection between peers. This way, peers are sending the latest record directly from their local node, as opposed to the default behavior of searching the DHT for the peer with latest version of a record. This means records shared over Pubsub are not available on the DHT and vise versa, unless the publisher opts-in to publish records to both routing options. If you would like to activate IPNS over Pubsub on your Kubo node, you can check out the [`Ipns.UsePubsub` option](https://github.com/ipfs/kubo/blob/master/docs/config.md#ipns) in the config file.
 
