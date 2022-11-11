@@ -65,7 +65,7 @@
       ]
     },
     "1.3":{
-      "description": "Learn about IPFS Gateways and how they bridge web2 and web3",
+      "description": "Learn about IPFS Gateways and how they help bridge information between web2 and web3",
       "subgoals":[
         {
           "id": "1.31",
@@ -77,7 +77,7 @@
         },
         {
           "id": "1.33",
-          "description": "Learn about current public Gateways and how any node in the network can become one"
+          "description": "Learn about current public Gateways and how any node in the network can provide this service"
         }
       ]
     },
