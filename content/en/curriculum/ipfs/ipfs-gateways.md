@@ -56,22 +56,9 @@ Example:
 ipfs://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/wiki/Vincent_van_Gogh.html
 ```
 
-> **Native URI requires the CID to be case-insensitive. Use of CIDv1 in Base32 is advised.**
+> **Native URIs must have a CID that is case-insensitive (no need for lower- or upper-cases) which is the format CIDv1 uses by default (as opposed to CIDv0 which _is_ case-sensitive).**
 
 Learn more in [docs.ipfs.tech/native-URIs](https://docs.ipfs.tech/how-to/address-ipfs-on-web/#native-urls)_
-
-### Subdomain gateway
-
-When [origin-based security](https://en.wikipedia.org/wiki/Same-origin_policy) is needed, CIDv1's case-insensitive encoding should be used in the subdomain:
-
-    https://<cidv1b32>.ipfs.<gateway-host>.tld/path/to/resource
-
-Example:
-
-    https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.dweb.link/wiki/
-    https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.cf-ipfs.com/wiki/Vincent_van_Gogh.html
-    https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.localhost:8080/wiki/
-
 
 ## Current Projects
 There are many projects out there that help bridge the gap between traditional web2 HTTP-based URLs and the IPFS content-addressing system:
