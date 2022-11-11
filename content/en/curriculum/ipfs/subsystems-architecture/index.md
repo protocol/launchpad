@@ -12,11 +12,11 @@ level:
 ---
 
 ### Subsystems
-_This is an [annotated version of the subsystems Repo](https://github.com/ipfs/go-ipfs/#map-of-go-ipfs-subsystems)_
+_This is an [annotated version of the subsystems Repo](https://github.com/ipfs/kubo/#map-of-go-ipfs-subsystems)_
 
 <!-- What else should we add in? -->
-**Map of go-ipfs Subsystems**
-_WIP: This is a high-level architecture diagram of the various sub-systems of go-ipfs. To be updated with how they interact._
+**Map of kubo (go-ipfs) Subsystems**
+_WIP: This is a high-level architecture diagram of the various sub-systems of kubo (go-ipfs). To be updated with how they interact._
 
 ![ipfs subsystem 1](go-ipfs-subsystems.png)
 

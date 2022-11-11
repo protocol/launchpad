@@ -15,7 +15,7 @@ level:
 Get started contributing to IPFS Projects, with these high-traffic repos
 
 ### PL Repos
-* [go-ipfs](https://github.com/ipfs/go-ipfs) is a high traffic project, with many contributors from outside PL.
+* [kubo](https://github.com/ipfs/kubo) (formerly go-ipfs) is a high traffic project, with many contributors from outside PL.
 * [libp2p](https://github.com/libp2p/go-libp2p-core) is the home of the OSS project that makes up the networking layer used by PL.
 * [ipfs-cluster](https://github.com/ipfs/ipfs-cluster) provides data orchestration across a swarm of IPFS daemons by allocating, replicating and tracking a global pinset distributed among multiple peers.
 * [js-ipfs](https://github.com/ipfs/js-ipfs) has multiple JS projects in a single repo. See the [what they each do](https://github.com/ipfs/js-ipfs#structure).
@@ -26,7 +26,7 @@ Get started contributing to IPFS Projects, with these high-traffic repos
 ### Graphical/ User Interfaces
 We often see issues being filled in these repos that end up getting moved elsewhere:
 * [IPFS Desktop](https://github.com/ipfs/ipfs-desktop/). Use [IPFS Desktop](https://docs.ipfs.io/install/ipfs-desktop/#ipfs-desktop) to get acquainted with IPFS without needing to touch the terminal — or, if you're already experienced, use the powerful menubar/taskbar shortcuts alongside the command line to make your IPFS workflow faster.
-* [IPFS Web UI](https://github.com/ipfs/ipfs-webui/) is [a web interface](https://webui.ipfs.io/#/welcome) to IPFS, shipped with go-ipfs, js-ipfs, and ipfs-desktop.
+* [IPFS Web UI](https://github.com/ipfs/ipfs-webui/) is [a web interface](https://webui.ipfs.io/#/welcome) to IPFS, shipped with kubo (go-ipfs), js-ipfs, and ipfs-desktop.
 * [IPFS Companion](https://github.com/ipfs/ipfs-companion/) is a browser extension for Firefox, Chrome, Brave, Opera, and Edge.
 
 ### Docs

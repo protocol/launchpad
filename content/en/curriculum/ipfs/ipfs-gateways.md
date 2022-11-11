@@ -74,7 +74,7 @@ https://<gateway-host>.tld/ipns/<ipnsid_or_dnslink>/path/to/resource
 
 **Gateway Recipes**
 
-_Read about [Gateway Recipes](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#gateway-recipes)_
+_Read about [Gateway Recipes](https://github.com/ipfs/kubo/blob/master/docs/config.md#gateway-recipes)_
 
 
 ## IPFS In Web Browsers
@@ -131,7 +131,7 @@ At present, in order to interact with IPFS in a web browser, you must either bun
 
 ### How to Run Your Own HTTP Gateway
 
-Use the latest [Kubo daemon](https://github.com/ipfs/go-ipfs) and follow [gateway recipes](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#gateway-recipes).
+Use the latest [Kubo daemon](https://github.com/ipfs/kubo) and follow [gateway recipes](https://github.com/ipfs/kubo/blob/master/docs/config.md#gateway-recipes).
 
 #### DNSLink
 
@@ -172,7 +172,7 @@ Diagnostic UI can be found at `brave://ipfs`, we suggest enabling IPFS Companion
 TLDR integration status:
 
 - Initial release (v1.19) is focused on daemon orchestration and on URI support (read [blogs and press](https://github.com/ipfs/in-web-browsers/issues/64#issuecomment-763016248))
-- Demo: Opening `ipfs://{cid}` will trigger install prompt for go-ipfs managed by Brave itself.
+- Demo: Opening `ipfs://{cid}` will trigger install prompt for kubo (go-ipfs) managed by Brave itself.
 - For the best experience enable IPFS Companion and switch it to IPFS Node Type ["Provided by Brave"](https://docs.ipfs.io/how-to/companion-node-types/#provided-by-brave).
  When Companion is enabled all IPFS resources will be resolved by the local node.
 
