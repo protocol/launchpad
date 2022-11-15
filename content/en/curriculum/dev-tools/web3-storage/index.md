@@ -3,9 +3,13 @@ title: "Web3.Storage"
 description: "Simple, Open, Free Storage"
 draft: false
 menu:
-    devtools:
-        parent: "resources-toolkits"
+    curriculum:
+        parent: "curriculum-devtools"
+category: lecture
 weight: 60
+level:
+- shallow
+- deep
 ---
 
 With **[Web3.Storage](https://web3.storage/)** you get all the benefits of decentralized storage technologies with the frictionless experience you expect in a modern dev workflow.

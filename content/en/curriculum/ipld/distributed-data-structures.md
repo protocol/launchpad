@@ -21,7 +21,7 @@ If files were enough for data storage, we would not need databases with sophstic
 
 **Persistent and immutable data structures are not new.** Functional Programming leans heavily on these concepts and research has been going on into these data structures for a very long time. Standard libraries for Scala, Clojure, Haskell, etc. are full of data structures that translate (almost) directly to the distributed, content-addressed world.
 
-The HAMT algorithm used for UnixFS filesystem sharding, as mentioned in the [IPLD & IPFS](ipfs.md) section, is an excellent example of such an algorithm and you'll find variations of this algorithm in the various "collections" implementations in many languages.
+The HAMT algorithm used for UnixFS filesystem sharding, as mentioned in the [IPLD & IPFS](/curriculum/ipld/ipld-and-ipfs) section, is an excellent example of such an algorithm and you'll find variations of this algorithm in the various "collections" implementations in many languages.
 
 Selecting algorithms for building, traversing and mutating content addressed data structures require careful consideration of the trade-offs. Algorithms that are efficient in memory-space, often don't translate well to a world where we need to deal with network latency.
 
