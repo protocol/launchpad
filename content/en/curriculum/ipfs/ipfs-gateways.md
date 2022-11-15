@@ -8,6 +8,7 @@ menu:
 weight: 95
 category: lecture
 level:
+- shallow
 - deep
 goal: 1.3
 subgoals:
@@ -80,6 +81,7 @@ For more information [take a look at the official announcement](https://blog.ipf
 [Puma](https://www.pumabrowser.com/) is a mobile-native browser that does not collect browsing cookies and integrates seamless peer-to-peer payments.
 
 ## Collaborations
+Collaborations make it easy for other to build applications and use standards that make it possible for users to access content on the distributed web.
 
 ### W3C
 
@@ -117,8 +119,10 @@ Finally, you can use an IPFS gateway using the `/ipns/[DNSLink]` resolution sche
 
 Source: [Introduction to DNSlink](https://dnslink.dev/#introduction), [IPFS docs on DNSLink](https://docs.ipfs.tech/concepts/dnslink/)
 
+{{% level type="[deep]" %}}
 ### How to Run Your Own HTTP Gateway | Devrel - Daniel Norman
 
 You can use the latest [Kubo daemon](https://github.com/ipfs/go-ipfs) and follow [gateway recipes](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#gateway-recipes) to turn your local node into a public gateway. Or checkout this step-by-step walkthrough tutorial to launch your own publicly available IPFS gateway to [Fly.io](https://fly.io/)
 
 {{< youtube k1Hcg3B43Q4 >}}
+{{% /level %}}
