@@ -11,6 +11,9 @@ category: lecture
 level:
 - shallow
 - deep
+objectives:
+  show: true
+  showTitle: false
 ---
 
 

@@ -1,7 +1,7 @@
 {
   "ipfs": {
 
-    "1": {
+    "1.0": {
       "description": "Understand what IPFS is and why IPFS was started",
       "subgoals": [
         {
@@ -24,7 +24,8 @@
           "id": "1.05",
           "description": "Describe, high level, some of the solutions posed by IPFS"
         }
-      ]
+      ],
+      "levels": ["shallow"]
     },
     "1.1": {
       "description": "Understand Content Addressing, CIDs, and what advantages they present over location-based addressing",

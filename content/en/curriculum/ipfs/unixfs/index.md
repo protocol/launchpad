@@ -10,11 +10,14 @@ category: lecture
 level:
 - shallow
 - deep
-goal: 1.6
-subgoals:
-- 1.61
-- 1.62
-- 1.63
+objectives:
+  show: true
+  goals:
+  - 1.6
+  subgoals:
+  - 1.61
+  - 1.62
+  - 1.63
 ---
 
 ## Introducing UnixFS

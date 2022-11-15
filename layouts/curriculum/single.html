@@ -17,12 +17,14 @@
 		{{ if .Params.toc -}}
 		<main class="docs-content col-lg-11 col-xl-9">
 		{{ else -}}
-		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"
-          id="page"
-          data-page-id="{{ .File.UniqueID }}"
-          data-goal="{{ .Params.Goal }}"
-          data-subgoals="{{ .Params.Subgoals }}"
-          data-section="{{ $section }}">
+      <main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"
+            id="page"
+            data-page-id="{{ .File.UniqueID }}"
+            data-obj-goals="{{ .Params.Objectives.Goals }}"
+            data-obj-subgoals="{{ .Params.Objectives.Subgoals }}"
+            data-obj-show-title="{{ .Params.Objectives.ShowTitle }}"
+            data-obj-show="{{ .Params.Objectives.Show }}"
+            data-section="{{ $section }}">
 		{{ end -}}
 			{{ if .Site.Params.options.breadCrumb -}}
 				<!-- https://discourse.gohugo.io/t/breadcrumb-navigation-for-highly-nested-content/27359/6 -->
