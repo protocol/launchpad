@@ -1,7 +1,7 @@
 {
   "ipfs": {
 
-    "1": {
+    "1.0": {
       "description": "Understand what IPFS is and why IPFS was started",
       "subgoals": [
         {
