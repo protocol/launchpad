@@ -1,5 +1,5 @@
 ---
-title: "Using Stream Handlers (Tutorial)"
+title: "Using Stream Handlers"
 description: "Use go-libp2p to create a new stream of data"
 draft: false
 menu:

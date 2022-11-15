@@ -1,5 +1,5 @@
 ---
-title: "IPFS CLI Setup (Tutorial)"
+title: "IPFS CLI Setup"
 description: "Deep Dive Tutorial – Setup the IPFS CLI"
 draft: false
 menu:

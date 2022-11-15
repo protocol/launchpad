@@ -1,5 +1,5 @@
 ---
-title: "IPFS Desktop (Tutorial)"
+title: "IPFS Desktop"
 description: "Shallow Dive Tutorial – Using the Graphical Interface for IPFS"
 draft: false
 menu:
