@@ -3,9 +3,9 @@ title: "Additional Learning"
 description: "Deeper Learning and Context to Prepare you for Web3"
 draft: false
 menu:
-    devtools:
+    resources:
         parent: "resources-other"
-weight: 80
+weight: 60
 ---
 
 #### The Lifecycle of Data in DWeb | IPFS Camp 2019
@@ -26,12 +26,14 @@ weight: 80
       * Course [Schedule & Resources](https://pdos.csail.mit.edu/6.824/schedule.html)
     * [Labs - Implementing distributed systems in Go](https://ipfs.io/ipfs/Qmcri6S86LuivUY4FDcM1phu5REXcFYootxn1GsRoqnFN4/)
 
-## Learn Golang
+## Learn Go
 
+* [A Tour of Go](https://go.dev/tour/welcome/1) is the comprehensive must-have first stop for learning golang
+* [Effective Go](https://go.dev/doc/effective_go) is a comprehensive manual
+* [Go Comments and Conventions](https://github.com/golang/go/wiki/CodeReviewComments) is a supplement
 * [Functional Options for friendly APIS](https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis)
-* [Go Comments and Conventions](https://github.com/golang/go/wiki/CodeReviewComments)
 * [Slice Tricks for Go](https://github.com/golang/go/wiki/SliceTricks)
-* PLs [Distributed Systems Curriculum (with Golang)](https://docs.google.com/document/d/18mlkt3JPHP2eSeDOeCE0wafnLKv95Taj0rDh0NIus3Y/edit#heading=h.l73q2rxlx59z). Includes a tutorial on debugging.Lots of good coding exercises.
+* PLs [Distributed Systems Curriculum (with Golang)](https://docs.google.com/document/d/18mlkt3JPHP2eSeDOeCE0wafnLKv95Taj0rDh0NIus3Y/edit#heading=h.l73q2rxlx59z). Includes a tutorial on debugging and lots of good coding exercises for leraning distributed systems with Go
 
 ## Computer Networks
 

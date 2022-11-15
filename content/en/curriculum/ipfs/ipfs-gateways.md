@@ -8,6 +8,7 @@ menu:
 weight: 95
 category: lecture
 level:
+- shallow
 - deep
 goal: 1.3
 subgoals:
@@ -42,13 +43,13 @@ The IPFS URL protocol scheme requires case-insensitive (no capital letters) CIDv
 
 A Uniform Resource Identifier (URI) for IPFS has a different structure than a typical http URI that starts with `https:`, and when you create an IPFS URI, you will need to convert it to a new format that starts with `ipfs` or `ipns` :
 
-``` 
+```
 ipfs://{immutable-root}/path/to/resourceA → /ipfs/{immutable-root}/path/to/resourceA
 
 ipns://{mutable-root}/path/to/resourceB → /ipns/{mutable-root}/path/to/resourceB
 ```
 
-The new identifier is made up of the CID of the IPFS or IPNS resource, then the path to the directory where that particular piece of content is, and the name of the file you are looking to retrieve: 
+The new identifier is made up of the CID of the IPFS or IPNS resource, then the path to the directory where that particular piece of content is, and the name of the file you are looking to retrieve:
 
 Example:
 
@@ -56,50 +57,39 @@ Example:
 ipfs://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/wiki/Vincent_van_Gogh.html
 ```
 
-> **Native URI requires the CID to be case-insensitive. Use of CIDv1 in Base32 is advised.**
+> Native URIs must have a CID that is case-insensitive (no need for lower- or upper-cases) which is the format CIDv1 uses by default (as opposed to CIDv0 which _is_ case-sensitive).
 
 Learn more in [docs.ipfs.tech/native-URIs](https://docs.ipfs.tech/how-to/address-ipfs-on-web/#native-urls)_
 
-### Subdomain gateway
-
-When [origin-based security](https://en.wikipedia.org/wiki/Same-origin_policy) is needed, CIDv1's case-insensitive encoding should be used in the subdomain:
-
-    https://<cidv1b32>.ipfs.<gateway-host>.tld/path/to/resource
-
-Example:
-
-    https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.dweb.link/wiki/
-    https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.cf-ipfs.com/wiki/Vincent_van_Gogh.html
-    https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.localhost:8080/wiki/
-
-
-## Current Projects
-There are many projects out there that help bridge the gap between traditional web2 HTTP-based URLs and the IPFS content-addressing system:
-
-- IPFS Companion browser extension
-    - IPFS and Igalia collaborate on dweb in browsers
-    - Brave
-    - Opera
+## Browsers
+Web browsers and tools in the browser make it easy to access content on the distributed web.
 
 ### IPFS Companion Browser Extension
 
 [IPFS Companion](https://github.com/ipfs-shipyard/ipfs-companion#ipfs-companion) is a browser extension that simplifies access to IPFS resources and adds browser support for the IPFS protocol. It runs in <img src="https://unpkg.com/@browser-logos/firefox@2.0.0/firefox_16x16.png" width="16" height="16">Firefox (desktop and Android) and Chromium-based browsers including Chrome or Brave. Check out all of IPFS Companion's features and [**install it**](https://github.com/ipfs/ipfs-companion#install-ipfs-companion) today!
 
-#### W3C
 
-Protocol Labs is a [W3C](https://www.w3.org/Consortium/) Member. Current focus is to watch, learn, and participate in [WebExtensions Community Group](https://www.w3.org/community/webextensions/).
-
-#### IPFS and Igalia team up
-
-In 2020 IPFS and [Igalia](https://www.igalia.com/), an open source company with expertise in browser development and the web platform, started a collaboration that continues to this day. This opportunity has started discussions and has risen awareness of the distributed web. Their effort has brought much needed progress to bringing IPFS to Firefox and Chromium-based browsers. For more information [take a look at the official announcement](https://blog.ipfs.io/2021-01-15-ipfs-and-igalia-collaborate-on-dweb-in-browsers/).
-
-#### Brave
+### Brave Browser
 [Brave v1.19 has integrated IPFS into their desktop web browser](https://brave.com/brave-integrates-ipfs/) for Windows, macOS and Linux. When Brave detects an address which is an HTTP gateway URL to IPFS content or a native IPFS address such as `ipfs://` or `ipns://` it will prompt the user to install and enable the native IPFS node, or to use an HTTP gateway.
 Diagnostic UI can be found at `brave://ipfs`, we suggest enabling IPFS Companion for the best experience
 
-#### Opera
+### Opera Browser
 Opera for Android 57 introduced support for resolving `ipfs://` or `ipns://` via a customizable gateway.
 For more information [take a look at the official announcement](https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/).
+
+### Puma Browser
+[Puma](https://www.pumabrowser.com/) is a mobile-native browser that does not collect browsing cookies and integrates seamless peer-to-peer payments.
+
+## Collaborations
+Collaborations make it easy for other to build applications and use standards that make it possible for users to access content on the distributed web.
+
+### W3C
+
+Protocol Labs is a [W3C](https://www.w3.org/Consortium/) Member. Current focus is to watch, learn, and participate in [WebExtensions Community Group](https://www.w3.org/community/webextensions/).
+
+### IPFS and Igalia team up
+
+In 2020 IPFS and [Igalia](https://www.igalia.com/), an open source company with expertise in browser development and the web platform, started a collaboration that continues to this day. This opportunity has started discussions and has risen awareness of the distributed web. Their effort has brought much needed progress to bringing IPFS to Firefox and Chromium-based browsers. For more information [take a look at the official announcement](https://blog.ipfs.io/2021-01-15-ipfs-and-igalia-collaborate-on-dweb-in-browsers/).
 
 ### IPFS and JavaScript
 
@@ -129,8 +119,10 @@ Finally, you can use an IPFS gateway using the `/ipns/[DNSLink]` resolution sche
 
 Source: [Introduction to DNSlink](https://dnslink.dev/#introduction), [IPFS docs on DNSLink](https://docs.ipfs.tech/concepts/dnslink/)
 
+{{% level type="[deep]" %}}
 ### How to Run Your Own HTTP Gateway | Devrel - Daniel Norman
 
 You can use the latest [Kubo daemon](https://github.com/ipfs/go-ipfs) and follow [gateway recipes](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#gateway-recipes) to turn your local node into a public gateway. Or checkout this step-by-step walkthrough tutorial to launch your own publicly available IPFS gateway to [Fly.io](https://fly.io/)
 
 {{< youtube k1Hcg3B43Q4 >}}
+{{% /level %}}

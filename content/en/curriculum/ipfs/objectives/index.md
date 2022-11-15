@@ -33,4 +33,4 @@ The mission of **IPFS** is to create a resilient, upgradable, open network to pr
 ### Deep Dive Goals
 * **1.4 –** IPFS data transfer: know what mechanisms act on control plane vs the data plane in IPFS & the tools we use for data transfer
 * **1.5 –** Understand the IPFS architecture, how things are verified on IPFS
- **1.6 –** Understand what UnixFS is, how it is structured & why it is built the way it is
+* **1.6 –** Understand what UnixFS is, how it is structured & why it is built the way it is

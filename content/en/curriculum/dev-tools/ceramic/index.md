@@ -3,9 +3,13 @@ title: "Ceramic"
 description: "Decentralized Identity Graph Network"
 draft: false
 menu:
-    devtools:
-        parent: "resources-toolkits"
+  curriculum:
+          parent: "curriculum-devtools"
+category: lecture
 weight: 30
+level:
+- shallow
+- deep
 ---
 
 Ceramic is a decentralized, open source platform for creating, hosting, and sharing streams of data. With Ceramic's permissionless data streaming network, you can store streams of information and ever-changing files directly on the decentralized web – and share updates with anyone in the world.
