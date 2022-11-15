@@ -6,4 +6,4 @@ In order to contribute, you should take first take a look at the **[Style Guide]
 
 If you are forking and making a PR, you can create a new branch from the 'main' [repository](https://github.com/protocol/launchpad/tree/main), then create a pull request, and ping the team (Lindsay, Marco, or Enol) in the #launchpad-community channel in Filecoin Slack.
 
-[Join Filecoin slack with this link]([https://join.slack.com/t/filecoinproject/shared_invite/zt-1b4n3vz4z-m0NHr2Yksgq7HZk5w5xv_g](https://filecoin.io/slack)) and search for the public channel `#launchpad-community`
+[Join Filecoin slack with this link](https://filecoin.io/slack) and search for the public channel `#launchpad-community`
