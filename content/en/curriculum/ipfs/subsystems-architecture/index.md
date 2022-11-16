@@ -18,50 +18,55 @@ subgoals:
 ---
 ## Architecture
 
-This lesson provides a digestible, top-level description of the IPFS protocol stack, the subsytems, and how they fit together. It delegates non-interface details to other specs as much as possible. 
+This lesson provides a digestible, top-level description of the IPFS protocol stack, the subsystems, and how they fit together. It delegates non-interface details to other specs as much as possible. 
 
-The oldest implementation of IPFS is Kubo (formerly go-ipfs), and in this lesson we lean into processes primarily related to Kubo.
+IPFS is not just one piece of software. It is a modular set of libraries and specifications that are designed to be used in various contexts. Not all [implementations of IPFS](https://docs.ipfs.tech/basics/ipfs-implementations/) will have the same diagram flow charts. Implementations are created for different use cases, so the different components they use will also vary.
 
 ## Subsystems diagram
-_WIP: This is a high-level architecture diagram of the various sub-systems of Kubo. To be updated with how they interact._
+_WIP: This is a high-level architecture diagram of the various sub-systems of **Kubo (go-ipfs)**. To be updated with how they interact._
 
 ![ipfs subsystem 1](go-ipfs-subsystems.png)
 
 ## Introduction to IPFS Subsystems 
 * [**CoreAPI**](#coreapi)
 * [**UnixFS**](#unixfs)
-    * Chunker
-    * MFS
-* [DAG Service & Block Service](#dag-service--block-service)
-* [Datastore](#datastore)
-* [FlatFS](#flatfs)
-* [Peer Routing](#dht)
-* [IPNS](#ipns)
+* [**Linked Data**](#linked-data)
+* [**Data Store**](#data-store)
+* [**Peer Routing**](#peer-routing)
+* [**Content Routing**](#content-routing)
+* [**IPNS**](#ipns)
 
 <!-- Give short primer of what happens when a file gets added to IPFS wrt Kubo -->
+When a file gets added to IPFS, it goes through many stages. Before a file can be shareable with other peers, it has to get broken down into smaller block sizes, links have to be created to tie all the blocks together, and the blocks themselves have to be written to storage. You can learn more about this process in our earlier lesson: [Introduction to IPFS](/curriculum/ipfs/introduction#how-ipfs-works--steve-allen).
 
-#### CoreAPI
-The CoreAPI is how we interact with IPFS. It contains common methods to interact with files on IPFS like adding and getting files. Additionally, this API contains methods to interact with the datastore, keystore, remote pinning services, along with many other features you can read more about on the docs page: [Kubo command line API](https://docs.ipfs.tech/reference/kubo/cli/).
+The oldest implementation of IPFS is Kubo (formerly go-ipfs), and in this lesson we lean into processes primarily related to Kubo. 
 
-#### UnixFS
-<!-- Talk about chunker, importer, mfs, unixfs -->
-I'm baby pickled mukbang gastropub meh kale chips umami. PBR&B williamsburg everyday carry venmo DSA drinking vinegar distillery master cleanse man braid mlkshk biodiesel hoodie hell of. Umami pitchfork disrupt health goth 3 wolf moon asymmetrical woke gastropub cornhole knausgaard shaman. Neutra viral tattooed mumblecore butcher sartorial hell of praxis, lo-fi lumbersexual chartreuse hexagon microdosing fit. Art party air plant kogi ennui artisan hell of, fingerstache mukbang unicorn succulents everyday carry PBR&B leggings pop-up.
+### CoreAPI
+The CoreAPI is how we interact with IPFS. It contains common methods like `add` and `get` files. Additionally, it contains methods to interact with the datastore, merkle DAGs, keystore, remote pinning services, and many other components. With respect to Kubo, you can read more in the [Kubo Command Line API](https://docs.ipfs.tech/reference/kubo/cli/) docs page.
 
-#### DAG Service & Block Service
+### UnixFS
+<!-- Talk about chunker, importer, mfs, UnixFS -->
+[UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs) is a data format for creating directory & file hierarchies. UnixFS is also responsible for breaking down a file into smaller pieces of data through a process called [_chunking_](https://docs.ipfs.tech/concepts/file-systems/#chunking). Then, UnixFS will add metadata to link those _chunks_ together. This allows users to navigate the hierarchy that gets created like a file system on an everyday computer. The navigation tooling is called [_Mutable File System(MFS)_](https://docs.ipfs.tech/concepts/file-systems/#mutable-file-system-mfs). Finally, every chunk in the hierarchy gets assigned a unique content identifier, thus creating a [_Merkle DAG_](/curriculum/ipld/merkle-dags).
+
+### Linked Data
 <!-- Talk about  -->
-Banh mi ugh thundercats forage organic prism you probably haven't heard of them keytar sriracha poke kale chips meditation gastropub portland taxidermy. Brooklyn ramps crucifix hammock sustainable, unicorn cray tbh. Intelligentsia 3 wolf moon iceland authentic narwhal hashtag, synth banjo banh mi. Chartreuse slow-carb gochujang, jianbing DIY la croix meh occupy. Messenger bag celiac snackwave, ascot post-ironic selvage stumptown hoodie.
+At the heart of IPFS is the Merkle DAG, a directed acyclic graph whose links are _hashes_. Hashes are the unique identifiers IPFS assigns every piece of data through a process called [_hashing_](https://docs.ipfs.tech/concepts/hashing/). This is what lets IPFS objects to be served by untrusted agents, data to be cached permanently, and even have networks be partitioned and merged. 
 
-#### Datastore
+The [InterPlanetary Linked Data](/curriculum/ipld/objectives) project does not concern itself with files or directories. Instead, as part of the **Dag Service** component of Kubo, it can interpret and navigate the resulting Merkle DAGs for any kind of content addressed system. If any non-file-based data type (image or video) are added to IPFS, IPLD will be able to grab every subsequent chunk of data to render the final product. Finally, IPLD, will interop with the data store to physically access and manipulate the Merkle DAG of blocks.
+
+### Data Store
 <!-- Talk about FlatFS -->
 Waistcoat edison bulb poutine roof party ugh actually. Lyft austin vegan hell of. Gatekeep cloud bread bitters wolf praxis chartreuse pop-up DSA 8-bit forage mixtape man braid cray DIY. Cray master cleanse bitters chia YOLO. PBR&B food truck YOLO venmo plaid adaptogen tumblr. Intelligentsia activated charcoal actually paleo you probably haven't heard of them.
 
-#### Peer Routing
+### Peer Routing
 <!-- Talk about DHT and bitswap -->
 Banjo keytar DSA, four dollar toast vibecession tacos jean shorts. Migas art party affogato food truck. Portland pug fingerstache readymade kitsch PBR&B, hella knausgaard lomo cliche fit bushwick blue bottle schlitz messenger bag. Mustache unicorn wolf hammock live-edge chia. Fingerstache umami chambray, lyft put a bird on it godard master cleanse seitan DIY offal.
 
+### Content Routing
+
 Along with Kademlia and the DHT, [Bitswap](https://docs.ipfs.io/concepts/bitswap/#bitswap) is a message-based protocol that enables peers to exchange data. Bitswap enables a peer to create a want-list of content, then query connected peers (and the peers they are connected to) for that information.
 
-#### IPNS
+## IPNS
 
 IPNS is a self-certifying mutable pointer. Meaning any _name_ that gets published is signed by a private key and anyone else can verify that it was signed by that peer with just the _name_. This self-certifying nature gives IPNS a number of super-powers not present in consensus systems (DNS, blockchain identifiers, etc.) like: mutable link information can come from anywhere, not just a particular service/system, and it is very fast and easy to confirm a link is authentic.
 
@@ -72,26 +77,10 @@ IPNS _names_ are encapsulated by a data structure called an _IPNS Record_ which 
 * [**Safe Vs. Old problem**](https://github.com/ipfs/kubo/issues/1958#issuecomment-444201606) - If a record expires, do I want my users to fetch and resolve the data anyways (serve **old** data) or not at all (**safe**). This is an ongoing and situational conversation.
 * [**JS-IPFS in browsers**](https://github.com/ipfs/js-ipfs/blob/master/docs/BROWSERS.md) - Users trying to use JS-IPNS in browsers run into a variety of issues. A workaround is using [public gateways](https://docs.ipfs.tech/concepts/ipfs-gateway/#public-gateways) for resolving [IPNS records and CIDs](/curriculum/ipfs/ipfs-gateways).
 
-
 Check out the [IPNS spec](https://github.com/ipfs/specs/tree/main/ipns) to gain a deeper understanding about IPNS records and how to use them.
 
-#### IPFS and the Merkle DAG
-At the heart of IPFS is the MerkleDAG, a directed acyclic graph whose links are hashes. This gives all objects in IPFS useful properties:
 
-- Authenticated: content can be hashed and verified against the link
-- Permanent: once fetched, objects can be cached forever
-- Universal: any data structure can be represented as a merkledag
-- Decentralized: objects can be created by anyone, without centralized writers
-
-In turn, these yield properties for the system as a whole:
-
-- Links are content addressed
-- Objects can be served by untrusted agents
-- Objects can be created and used offline
-- Networks can be partitioned and merged
-- Any data structure can be modelled and distributed
-
-<!-- Move this to Dev-tools. This is on a similar level to web3.storage & esturary 
+<!-- Move this to Dev-tools. This is on a similar level to web3.storage & Esturary 
 
 #### IPFS Cluster
 
@@ -102,8 +91,7 @@ IPFS Cluster:
 * Performs actions that make it simple to add pins at scale, utilizing a set of 'cluster peers'
 * The cluster peers take care of asking IPFS to pin things at a sustainable rate and retry pinning in case of failures -->
 
-## Futher Reading
-* [**Kubo Readme**](https://github.com/ipfs/go-ipfs/#map-of-go-ipfs-subsystems)
-* [**Architecture readme from the specs repo**](https://github.com/ipfs/specs/blob/master/ARCHITECTURE.md)
-* [**IPNS in the docs**](https://docs.ipfs.tech/concepts/ipns/#how-ipns-works)
-* [**IPNS specification**](https://github.com/ipfs/specs/blob/main/ipns/IPNS.md)
+## Further Reading
+* [**Implementations of IPFS**](https://docs.ipfs.tech/basics/ipfs-implementations/)
+* [**Architecture Readme**](https://github.com/ipfs/specs/blob/master/ARCHITECTURE.md)
+* [**IPNS Docs**](https://docs.ipfs.tech/concepts/ipns/#how-ipns-works)
