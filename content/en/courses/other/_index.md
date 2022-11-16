@@ -1,5 +1,5 @@
 ---
-title: "Working with IPLD structures"
+title: "Working with IPLD structures vamos un poco más largo"
 description: "Use libp2p-go to create to a libp2p node"
 draft: false
 weight: 312

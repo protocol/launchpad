@@ -7,7 +7,7 @@
 
 [[main]]
   name = "Tutorials"
-  url = "/tutorials/"
+  url = "/tutorials/ipfs/desktop-tutorial/"
   weight = 2000
   [main.params]
     identifier = "prerequisites"

@@ -4,6 +4,12 @@
   {{ range $index, $element := .Site.Menus.tutorials -}}
   <li class="mb-1">
     <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-{{ .Identifier }}" aria-expanded="true">
+      {{ if eq $element.Identifier "tutorials-ipfs" }}
+      <img src="/logos/ipfs.svg" width="24" height="24" style="margin-right: 4px;" />
+      {{ end }}
+      {{ if eq $element.Identifier "tutorials-libp2p" }}
+      <img src="/logos/libp2p.png" width="22" height="24" style="margin-right: 4px;" />
+      {{ end }}
       {{ .Name }}
     </button>
     {{ if .HasChildren -}}
