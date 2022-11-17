@@ -15,6 +15,7 @@ subgoals:
 - 1.31
 - 1.32
 - 1.33
+- 1.34
 ---
 ## What are IPFS Gateways
 IPFS gateways are IPFS nodes that are hosted for the benefit of anyone who would like to access IPFS content from the HTTP-based web2 internet. Protocol Labs operates and is responsible for only two public gateways, those being `ipfs.io` and `dweb.link`. Regardless, they maintain a list of over 80 [known public gateways](https://ipfs.github.io/public-gateway-checker/). Some commonly used gateways are `gateway.pinata.cloud` and `cloudflare-ipfs.com`.
