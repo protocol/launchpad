@@ -18,7 +18,7 @@ The Protocol Labs Summit was a great recap of the Impact that the PL Network cre
 
 {{< youtube b6tnt24cIIw >}}
 
-Check out the recording ([starting at 2:35:58]([url](https://youtu.be/b6tnt24cIIw?t=9358))) for an overview of the core offerings that make up the PL Network as a product:
+Check out the recording [starting at 2:35:58](https://youtu.be/b6tnt24cIIw?t=9358) for an overview of the core offerings that make up the PL Network as a product:
 * Network
 * Starting
 * Capital
