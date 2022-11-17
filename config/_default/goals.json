@@ -1,6 +1,5 @@
 {
   "ipfs": {
-
     "1.0": {
       "description": "Understand what IPFS is and why IPFS was started",
       "subgoals": [
@@ -25,7 +24,7 @@
           "description": "Describe, high level, some of the solutions posed by IPFS"
         }
       ],
-      "levels": ["shallow"]
+      "levels": ["shallow", "deep"]
     },
     "1.1": {
       "description": "Understand Content Addressing, CIDs, and what advantages they present over location-based addressing",
@@ -50,7 +49,8 @@
           "id": "1.15",
           "description": "Identify how a garbage collection process is done on an IPFS node and how to keep data discoverable on IPFS"
         }
-      ]
+      ],
+      "levels": ["shallow", "deep"]
     },
     "1.2": {
       "description": "Be able to explain how content is shared on IPFS",
@@ -71,7 +71,8 @@
           "id": "1.24",
           "description": "Be able to explain what a peer, node, and swarm are in the context of IPFS"
         }
-      ]
+      ],
+      "levels": ["shallow", "deep"]
     },
     "1.4": {
       "description": "Be able to explain the basics of data transfer in IPFS",
@@ -96,7 +97,8 @@
           "id": "1.45",
           "description": "Discover what advantages Graphsync has over Bitswap"
         }
-      ]
+      ],
+      "levels": ["deep"]
     },
     "1.6": {
       "description": "Be able to explain the basics of UnixFS",
@@ -113,7 +115,8 @@
           "id": "1.63",
           "description": "Go over the protobuf format, and its main field"
         }
-      ]
+      ],
+      "levels": ["deep"]
     }
   }
 }

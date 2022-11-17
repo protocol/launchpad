@@ -1,6 +1,6 @@
 import React from "react";
 import {useContentLevel, useGoal} from "../../../services/hooks";
-import {getDataAttribute, parseBoolean, parseList, renderComponent} from "../../../services/util";
+import {getDataAttribute, LEVELS, parseBoolean, parseList, renderComponent} from "../../../services/util";
 import {App} from "../../App";
 
 const GoalIcon = ({section}) => {
@@ -44,9 +44,60 @@ const GoalIcon = ({section}) => {
   return <img src={imageData.src} width={imageData.width} height={imageData.height} />
 }
 
-const Goal = ({section, goalIds, subgoalIds, show, showTitle}) => {
-  const sectionGoals = useGoal(section, goalIds)
+const GoalElement = ({section, goalId, goal, subgoalIds}) => {
+
+  return <div style={{padding: '0px'}}>
+    <div style={{display: 'flex', alignItems: 'center'}}>
+      <GoalIcon section={section} />
+      <span style={{fontSize: '19px', fontWeight: 'bold', marginLeft: '7px'}}><span style={{color: '#006e14'}}>{section.toUpperCase()} {goalId}</span> - {goal.description}</span>
+    </div>
+    <ul style={{marginBottom: '0px', listStyleType: 'none'}}>
+      {goal.subgoals.filter(subgoal => subgoalIds.includes(subgoal.id)).map(subgoal => <li style={{display: 'flex'}} key={subgoal.id}>
+        <img src="/icons/goal.png" width={20} height={20} style={{marginTop: '3px'}} />
+        <span style={{marginLeft: '5px'}}><b>{subgoal.id}</b> - {subgoal.description}</span>
+      </li>)}
+    </ul>
+  </div>
+}
+
+const IntroPageGoals = ({section, goals}) => {
+  const goalsByLevel = {}
+  for(const level of LEVELS) {
+    goalsByLevel[level] = {}
+  }
+
+  /* Categorize goals by level (e.g. shallow: [goal1, goal2], deep: [goal3, goal4])
+    For the moment, shallow goals also apply to deep residents, so both must be shown
+   */
+  Object.entries(goals).forEach(entry => {
+    const level = entry[1].levels && entry[1].levels.length > 0 ? entry[1].levels[0] : LEVELS[0]
+    goalsByLevel[level] = {
+      ...goalsByLevel[level],
+      [entry[0]]: entry[1]
+    }
+  })
+
+  const goalByLevelList = Object.entries(goalsByLevel)
+
+  return goalByLevelList.map((levelEntry, index) => <div style={{marginBottom: index < goalByLevelList.length - 1 ? '20px' : '0px'}}>
+      <div style={{fontSize: '24px', fontWeight: 'bold'}}>{levelEntry[0].toUpperCase()} DIVE</div>
+      {Object.entries(levelEntry[1]).map(entry => <GoalElement section={section} goalId={entry[0]} goal={entry[1]} subgoalIds={[]} />)}
+    </div>
+  )
+
+}
+
+const StandardPageGoals = ({section, goals, subgoalIds}) => {
   const [contentLevel, setContentLevel] = useContentLevel()
+
+  return Object.entries(goals).filter(entry => {
+    const levels = entry[1].levels
+    return !levels || levels.length === 0 || levels.includes(contentLevel)
+  }).map(entry => <GoalElement section={section} goalId={entry[0]} goal={entry[1]} subgoalIds={subgoalIds} />)
+}
+
+const Goal = ({section, goalIds, subgoalIds, show, showTitle, introPage}) => {
+  const sectionGoals = useGoal(section, goalIds)
 
   if (!sectionGoals) {
     return null
@@ -56,31 +107,13 @@ const Goal = ({section, goalIds, subgoalIds, show, showTitle}) => {
     return null
   }
 
-  console.log(showTitle)
-
   return <div className="learning-objectives">
     {showTitle && <div className="title">
-      LEARNING OBJECTIVES
+      LEARNING OBJECTIVES {introPage}
     </div>}
     <div className="body">
-      {Object.entries(sectionGoals).filter(entry => {
-        const levels = entry[1].levels
-        return !levels || levels.length === 0 || levels.includes(contentLevel)
-      }).map(entry => {
-        console.log(entry)
-        const goal = entry[1]
-        return <div style={{padding: '0px'}}>
-          <div style={{display: 'flex', alignItems: 'center'}}>
-            <GoalIcon section={section} />
-            <span style={{fontSize: '19px', fontWeight: 'bold', marginLeft: '7px'}}><span style={{color: '#006e14'}}>{section.toUpperCase()} {entry[0]}</span> - {goal.description}</span>
-          </div>
-          <ul style={{marginBottom: '0px', listStyleType: 'none'}}>
-            {goal.subgoals.filter(subgoal => subgoalIds.includes(subgoal.id)).map(subgoal => <li style={{display: 'flex'}} key={subgoal.id}>
-              <img src="/icons/goal.png" width={20} height={20} style={{marginTop: '3px'}} />
-              <span style={{marginLeft: '5px'}}><b>{subgoal.id}</b> - {subgoal.description}</span>
-            </li>)}
-          </ul>
-        </div>})}
+      {introPage && <IntroPageGoals section={section} goals={sectionGoals} />}
+      {!introPage && <StandardPageGoals section={section} goals={sectionGoals} subgoalIds={subgoalIds} />}
     </div>
   </div>
 }
@@ -90,6 +123,8 @@ const fetchData = async () => {
   const subgoalsDataAttribute = getDataAttribute('page', 'objSubgoals')
   const showDataAttribute = getDataAttribute('page', 'objShow')
   const showTitleDataAttribute = getDataAttribute('page', 'objShowTitle')
+  const introPageDataAttribute = getDataAttribute('page', 'objIntroPage')
+
 
   const sectionDataAttribute = getDataAttribute('page', 'section')
 
@@ -101,7 +136,8 @@ const fetchData = async () => {
     subgoalIds: subgoalsDataAttributeAsList,
     section: sectionDataAttribute,
     show: showDataAttribute ? parseBoolean(showDataAttribute) : false,
-    showTitle: showTitleDataAttribute ? parseBoolean(showTitleDataAttribute) : true
+    showTitle: showTitleDataAttribute ? parseBoolean(showTitleDataAttribute) : true,
+    introPage: introPageDataAttribute ? parseBoolean(introPageDataAttribute) : false
   }
 }
 
