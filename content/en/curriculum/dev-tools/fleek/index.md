@@ -3,9 +3,13 @@ title: "Fleek"
 description: "An Easy-to-Use Web3 Hosting Service"
 draft: false
 menu:
-    devtools:
-        parent: "resources-toolkits"
+  curriculum:
+          parent: "curriculum-devtools"
+category: lecture
 weight: 40
+level:
+- shallow
+- deep
 ---
 
 **Fleek** makes it easy to build on Open Web protocols and a base layer infrastructure powered by them. Build and host your sites, apps, Dapps, and other services on trustless, permissionless, and open technologies focused on creating user-controlled, encrypted, private, p2p experiences easily.

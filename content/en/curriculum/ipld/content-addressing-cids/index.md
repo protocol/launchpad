@@ -106,11 +106,25 @@ The different hash functions can be seen in the [multicodec table](https://githu
 * `z` - base58
 * `f` - base16
 
-The full list of bases and their mappings can be found in the Multibase registry at [github.com/multiformats/multibase](https://github.com/multiformats/multibase)
+The full list of bases and their mappings can be found in the Multibase registry at [github.com/multiformats/multibase](https://github.com/multiformats/multibase).
 
-Base32 is the most commonly used base encoding for version 1 CIDs, hence the `b` at the beginning. This character says that all the following characters can be passed through a base32 decoder to retrieve the raw bytes.
+While not the most compact string representation, _base32_ (b) is the preferred base encoding for CIDv1 because it only uses lower-case ASCII characters so is safe to use in DNS entries (and therefore URLs).
 
-Fun fact: while not the most compact string representation, base32 is the preferred base encoding for CIDv1 because it only uses lower-case ASCII characters so is safe to use in DNS entries (and therefore URLs).
+Fun fact: after [Kubo release 0.14](https://github.com/ipfs/kubo/blob/master/docs/changelogs/v0.14.md#-emoji-support-in-multibase), emoji support [(base256emoji)](https://github.com/multiformats/multibase/blob/master/rfcs/Base256Emoji.md) was included for testing Unicode support, as visual aid while explaining Multiformats, or just for fun. The Multibase character for _base256emoji_ is 🚀, so every emoji CID will start with 🚀.  
+```bash
+# Encode "test" in base256emoji
+$ echo -n "test" | ipfs multibase encode -b base256emoji -
+🚀😈✋🌈😈
+
+# Decode the emoji
+$ echo -n "🚀😈✋🌈😈" | ipfs multibase decode -
+test
+
+# Transform the base32 CIDv1 to base256emoji CIDv1
+$ ipfs cid format -v 1 -b base256emoji bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi
+🚀🪐⭐💻😅❓💎🌈🌸🌚💰💍🌒😵🐶💁🤐🌎👼🙃🙅☺🌚😞🤤⭐🚀😃✈🌕😚🍻💜🐷⚽✌😊
+```
+This Multibase character says that all the following characters can be passed through a base256 decoder to retrieve the raw bytes.
 
 ### Interpreting a CID
 

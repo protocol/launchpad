@@ -1,8 +1,8 @@
 {{ if .Site.Params.options.collapsibleSidebar -}}
   <ul class="list-unstyled collapsible-sidebar">
   {{ $currentPage := . -}}
-  {{ range $index, $element := .Site.Menus.devtools -}}
-  {{- $active := or ($currentPage.IsMenuCurrent "devtools" .) ($currentPage.HasMenuCurrent "devtools" .) -}}
+  {{ range $index, $element := .Site.Menus.resources -}}
+  {{- $active := or ($currentPage.IsMenuCurrent "resources" .) ($currentPage.HasMenuCurrent "resources" .) -}}
   {{- $active = or $active (eq $currentPage.Section .Identifier) -}}
     <li class="mb-1">
       <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#section-{{ .Identifier }}" aria-expanded="{{ if $active }}true{{ else }}false{{ end }}">
@@ -12,7 +12,7 @@
       <div class="collapse{{ if $active }} show{{ end }}" id="section-{{ .Identifier }}" id="section-{{ .Identifier }}">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
         {{ range .Children -}}
-          {{- $active := or ($currentPage.IsMenuCurrent "devtools" .) ($currentPage.HasMenuCurrent "devtools" .) -}}
+          {{- $active := or ($currentPage.IsMenuCurrent "resources" .) ($currentPage.HasMenuCurrent "resources" .) -}}
           {{- $active = or $active (eq $currentPage.Section .Identifier) -}}
           <li style="display: flex; align-items: center;">
             <img src="/icons/resource.png" width="20" height="20" />
@@ -27,12 +27,12 @@
   </ul>
 {{ else -}}
   {{ $currentPage := . -}}
-  {{ range .Site.Menus.devtools -}}
+  {{ range .Site.Menus.resources -}}
     <h3 class="h6 text-uppercase">{{ .Name }}</h3>
     {{ if .HasChildren -}}
     <ul class="list-unstyled">
       {{ range .Children -}}
-        {{- $active := or ($currentPage.IsMenuCurrent "devtools" .) ($currentPage.HasMenuCurrent "devtools" .) -}}
+        {{- $active := or ($currentPage.IsMenuCurrent "resources" .) ($currentPage.HasMenuCurrent "resources" .) -}}
         {{- $active = or $active (eq $currentPage.Section .Identifier) -}}
         <li><a class="docs-link{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
       {{ end -}}

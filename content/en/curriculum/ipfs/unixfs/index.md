@@ -8,7 +8,6 @@ menu:
 weight: 155
 category: lecture
 level:
-- shallow
 - deep
 objectives:
   show: true
@@ -35,7 +34,6 @@ The two directories, and the `elephant.png` file, are small enough to fit into t
 
 The first block of the `cat.jpg` file is marked as `type: file`, because it is the starting block of the file. The remaining blocks are marked as `type: raw`, because they only contain data.
 
-{{% level type="[deep]" %}}
 ## Technical Implementation
 In technical terms, UnixFS is a [protobuf-based](https://developers.google.com/protocol-buffers) format, which is represented by the following protobuf:
 
@@ -79,6 +77,5 @@ message UnixTime {
     - `DataType` is set to `File` in the first block, and `Raw` in he remaining blocks
     - `filesize` contains the total number of bytes of the file
     - `blocksizes` list of sizes of every child node
-{{% /level %}}
 
 Later in the curriculum, you will learn how UnixFS is related to IPLD. You can also get more information in the [official specification](https://github.com/ipfs/specs/blob/main/UNIXFS.md).
