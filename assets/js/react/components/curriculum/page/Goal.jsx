@@ -1,6 +1,6 @@
 import React from "react";
 import {useContentLevel, useGoal} from "../../../services/hooks";
-import {getDataAttribute, LEVELS, parseBoolean, parseList, renderComponent} from "../../../services/util";
+import {capitalize, getDataAttribute, LEVELS, parseBoolean, parseList, renderComponent} from "../../../services/util";
 import {App} from "../../App";
 
 const GoalIcon = ({section}) => {
@@ -49,7 +49,7 @@ const GoalElement = ({section, goalId, goal, subgoalIds}) => {
   return <div style={{padding: '0px'}}>
     <div style={{display: 'flex', alignItems: 'center'}}>
       <GoalIcon section={section} />
-      <span style={{fontSize: '19px', fontWeight: 'bold', marginLeft: '7px'}}><span style={{color: '#006e14'}}>{section.toUpperCase()} {goalId}</span> - {goal.description}</span>
+      <span style={{fontSize: '19px', marginLeft: '7px'}}><span style={{fontWeight: 'bold'}}>{section.toUpperCase()} {goalId}</span> - {goal.description}</span>
     </div>
     <ul style={{marginBottom: '0px', listStyleType: 'none'}}>
       {goal.subgoals.filter(subgoal => subgoalIds.includes(subgoal.id)).map(subgoal => <li style={{display: 'flex'}} key={subgoal.id}>
@@ -80,7 +80,7 @@ const IntroPageGoals = ({section, goals}) => {
   const goalByLevelList = Object.entries(goalsByLevel)
 
   return goalByLevelList.map((levelEntry, index) => <div style={{marginBottom: index < goalByLevelList.length - 1 ? '20px' : '0px'}}>
-      <div style={{fontSize: '24px', fontWeight: 'bold'}}>{levelEntry[0].toUpperCase()} DIVE</div>
+      <div style={{fontSize: '24px', fontWeight: 'bold'}}>{capitalize(levelEntry[0])} Dive</div>
       {Object.entries(levelEntry[1]).map(entry => <GoalElement section={section} goalId={entry[0]} goal={entry[1]} subgoalIds={[]} />)}
     </div>
   )
