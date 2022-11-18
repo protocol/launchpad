@@ -46,23 +46,34 @@ The CoreAPI is how we interact with IPFS. It contains common methods like `add` 
 
 ### UnixFS
 <!-- Talk about chunker, importer, mfs, UnixFS -->
-[UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs) is a data format for creating directory & file hierarchies. UnixFS is also responsible for breaking down a file into smaller pieces of data through a process called [_chunking_](https://docs.ipfs.tech/concepts/file-systems/#chunking). Then, UnixFS will add metadata to link those _chunks_ together. This allows users to navigate the hierarchy that gets created like a file system on an everyday computer. The navigation tooling is called [_Mutable File System(MFS)_](https://docs.ipfs.tech/concepts/file-systems/#mutable-file-system-mfs). Finally, every chunk in the hierarchy gets assigned a unique content identifier, thus creating a [_Merkle DAG_](/curriculum/ipld/merkle-dags).
+[UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs) is a data format for creating directory & file hierarchies. UnixFS is also responsible for breaking down a file into smaller pieces of data through a process called [_chunking_](https://docs.ipfs.tech/concepts/file-systems/#chunking). Then, UnixFS will add metadata to link those _chunks_ together. This allows users to navigate the hierarchy that gets created like a file system on an everyday computer. The navigation tooling is called [_Mutable File System(MFS)_](https://docs.ipfs.tech/concepts/file-systems/#mutable-file-system-mfs). Finally, every chunk in the hierarchy gets assigned a unique content identifier, thus creating a [_Merkle DAG_](/curriculum/ipld/merkle-dags). 
+
+![meme-to-cidv1](meme-to-cid1.png)
 
 ### Linked Data
 <!-- Talk about  -->
-At the heart of IPFS is the Merkle DAG, a directed acyclic graph whose links are _hashes_. Hashes are the unique identifiers IPFS assigns every piece of data through a process called [_hashing_](https://docs.ipfs.tech/concepts/hashing/). This is what lets IPFS objects to be served by untrusted agents, data to be cached permanently, and even have networks be partitioned and merged. 
+At the heart of IPFS is the Merkle DAG, a directed acyclic graph whose links are _hashes_. Hashes are the unique identifiers IPFS assigns every piece of data through a process called [_hashing_](https://docs.ipfs.tech/concepts/hashing/). This is what lets IPFS objects to be served by untrusted agents, data to be cached permanently, and have any data structure to be represented as a Merkle DAG. 
 
-The [InterPlanetary Linked Data](/curriculum/ipld/objectives) project does not concern itself with files or directories. Instead, as part of the **Dag Service** component of Kubo, it can interpret and navigate the resulting Merkle DAGs for any kind of content addressed system. If any non-file-based data type (image or video) are added to IPFS, IPLD will be able to grab every subsequent chunk of data to render the final product. Finally, IPLD, will interop with the data store to physically access and manipulate the Merkle DAG of blocks.
+The [InterPlanetary Linked Data](/curriculum/ipld/objectives) (IPLD) project does not concern itself with files or directories; rather the blocks themselves that get created out of these files. As part of the **Dag Service** component of Kubo, it can interpret and navigate the resulting Merkle DAGs for [**any** kind of content addressed system](https://ipld.io/). With any file type that's added to IPFS, IPLD will be able to grab every subsequent chunk of data to return the final product. 
+
+![root](root-cid.png)
+
 
 ### Data Store
 <!-- Talk about FlatFS -->
-Waistcoat edison bulb poutine roof party ugh actually. Lyft austin vegan hell of. Gatekeep cloud bread bitters wolf praxis chartreuse pop-up DSA 8-bit forage mixtape man braid cray DIY. Cray master cleanse bitters chia YOLO. PBR&B food truck YOLO venmo plaid adaptogen tumblr. Intelligentsia activated charcoal actually paleo you probably haven't heard of them.
+[Every implementation of IPFS](https://docs.ipfs.tech/basics/ipfs-implementations/) will have different constraints or needs. But they will always need a place to store the blocks of data that IPLD references. The default storing mechanism in Kubo is called **FlatFS**. This [Flat File System](https://www.techtarget.com/searchdatamanagement/definition/flat-file), will make every block its own file and distribute them into various subdirectories, through a process called [sharding](https://docs.ipfs.tech/concepts/glossary/#sharding), to create a manageable level of organization on disk.
+
+## ResNetLab: Content Routing
+{{< youtube KMmiAnMJU-c >}}
 
 ### Peer Routing
-<!-- Talk about DHT and bitswap -->
-Banjo keytar DSA, four dollar toast vibecession tacos jean shorts. Migas art party affogato food truck. Portland pug fingerstache readymade kitsch PBR&B, hella knausgaard lomo cliche fit bushwick blue bottle schlitz messenger bag. Mustache unicorn wolf hammock live-edge chia. Fingerstache umami chambray, lyft put a bird on it godard master cleanse seitan DIY offal.
+<!-- Talk about libp2p transport protocol: This is HOW we find peers to share data-->
+
 
 ### Content Routing
+<!-- talk about common ways to get information from IPFS network: gateways, ipfs node, bitswap, dht. This is WHAT we do to send data-->
+
+
 
 Along with Kademlia and the DHT, [Bitswap](https://docs.ipfs.io/concepts/bitswap/#bitswap) is a message-based protocol that enables peers to exchange data. Bitswap enables a peer to create a want-list of content, then query connected peers (and the peers they are connected to) for that information.
 
