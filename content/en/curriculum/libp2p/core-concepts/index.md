@@ -80,7 +80,7 @@ You can read more in the [libp2p docs](https://docs.libp2p.io/concepts/peer-id/)
 In order to establish connections with a peer, it is necessary to know its location.
 For example, when you access `https://127.0.0.1:8080/my-image.png`, you are requesting access to the `127.0.0.1` IP address, at the `8080` port by using the HTTPs protocol.
 
-Although this is a valid system, you have to infer some data: what protocol is behind `127.0.0.1`? or what protocol is behind `8080`?
+Although this is a valid system, you have to infer some data about what protocol is behind `127.0.0.1`? And what protocol is behind `8080`?
 Of course, you know that `127.0.0.1` is an IPv4 address, and you know that `8080` is a TCP port because HTTP is used.
 
 libp2p uses a different addressing system, which is called [multiaddresses](https://github.com/multiformats/multiaddr). Multiaddresses are self-describing:
