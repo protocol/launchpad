@@ -121,32 +121,6 @@
       ],
       "levels": ["deep"]
     },
-    "1.5": {
-      "description": "Understand the IPFS architecture, as well as the different IPFS components and services",
-      "subgoals": [
-        {
-          "id": "1.51",
-          "description": "Learn "
-        },
-        {
-          "id": "1.52",
-          "description": "Know"
-        },
-        {
-          "id": "1.53",
-          "description": "Understand "
-        },
-        {
-          "id": "1.54",
-          "description": "Explain "
-        },
-        {
-          "id": "1.55",
-          "description": "Discover "
-        }
-      ],
-      "levels": ["deep"]
-    },
     "1.5":{
       "description": "Gain knowledge of the IPFS architecture and the different components and services",
       "subgoals":[
