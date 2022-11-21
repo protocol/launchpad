@@ -1,6 +1,6 @@
 ---
 title: "Building Blocks"
-description: "The main component of the libp2p modular architecture"
+description: "The main components of the libp2p modular architecture"
 draft: false
 menu:
     curriculum:
