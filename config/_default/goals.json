@@ -93,7 +93,8 @@
           "id": "1.34",
           "description": "Be able to name projects that use or build upon IPFS, and what those projects do"
         }
-      ]
+      ],
+      "levels":["shallow", "deep"]
     },
     "1.4": {
       "description": "Be able to explain the basics of data transfer in IPFS",
@@ -140,7 +141,8 @@
           "id":"1.54",
           "description": "Lean into technical details of mutable data on IPFS"
         }
-      ]
+      ],
+      "levels":["deep"]
     },
     "1.6": {
       "description": "Be able to explain the basics of UnixFS",
