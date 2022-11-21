@@ -43,7 +43,7 @@ You can read more in the [libp2p docs](https://docs.libp2p.io/concepts/multiplex
 ### NAT Traversal
 
 Consider the Internet router that you have at home. You probably have several devices connected to it (laptops, mobile phones, or even the fridge).
-When you join the Internet, you are given an address identifier, which is called IP.
+When you join the Internet, you are given an address identifier, called an _IP Address_.
 However, the number of IPs in the Internet is limited, so every device does not get a public IP address.
 Instead, your router creates a private network in your home and assigns a private IP to every device. Then, the router is responsible for managing the incoming and outgoing connection from the Internet.
 This is called **NAT (Network Address Traversal)**. For example, consider the following diagram:
