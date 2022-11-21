@@ -47,7 +47,7 @@ const GoalIcon = ({section}) => {
 const GoalElement = ({section, goalId, goal, subgoalIds}) => {
 
   return <div style={{padding: '0px'}}>
-    <div style={{display: 'flex', alignItems: 'center'}}>
+    <div style={{display: 'flex', alignItems: 'flex-start'}}>
       <GoalIcon section={section} />
       <span style={{fontSize: '19px', marginLeft: '7px'}}><span style={{fontWeight: 'bold'}}>{section.toUpperCase()} {goalId}</span> - {goal.description}</span>
     </div>
@@ -80,7 +80,7 @@ const IntroPageGoals = ({section, goals}) => {
   const goalByLevelList = Object.entries(goalsByLevel)
 
   return goalByLevelList.map((levelEntry, index) => <div style={{marginBottom: index < goalByLevelList.length - 1 ? '20px' : '0px'}}>
-      <div style={{fontSize: '24px', fontWeight: 'bold'}}>{capitalize(levelEntry[0])} Dive</div>
+      <div style={{fontSize: '24px', fontWeight: 'bold'}}>{capitalize(levelEntry[0])} Dive Goals</div>
       {Object.entries(levelEntry[1]).map(entry => <GoalElement section={section} goalId={entry[0]} goal={entry[1]} subgoalIds={[]} />)}
     </div>
   )
