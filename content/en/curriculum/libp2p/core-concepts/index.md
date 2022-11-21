@@ -106,7 +106,7 @@ libp2p also offers publish/subscribe capabilities by using the _topic_ abstracti
 You can consider that a _topic_ is a bucket where messages for a specific use case are sent.
 For example, in a chat, you can create a "animals" topic, where only messages related to animals are sent.
 
-To receive messages, peers subscribe to topics they are interested in. Peer only receive messages from topics they are subscribed to.
+To receive messages, peers subscribe to topics they are interested in.
 
 ![peer messaging](peering.png)
 
