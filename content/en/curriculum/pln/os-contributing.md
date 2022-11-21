@@ -8,11 +8,14 @@ menu:
 weight: 60
 category: lecture
 level:
+- shallow
 - deep
 ---
 
 ## The Projects
-Get started contributing to IPFS Projects, with these high-traffic repos
+Open Source Software is at the core of protocol labes. You can explore the repos here to get a sense of what the core technologies and repositories behind Protocol Labs are, how these projects operate.
+
+For those who want to dive in deep, get started contributing to IPFS Projects, with these high-traffic repos
 
 ## The Protocol Labs OSS Projects
 
@@ -57,6 +60,9 @@ Contribute while you learn more about PL projects:
 
 ### Dashboards
 * See this [dashboard for go-ipfs projects and tickets](https://github.com/orgs/ipfs/projects/16/views/1)
+
+
+{{% level type="[deep]" %}}
 
 ## How to Contribute
 
@@ -125,3 +131,5 @@ See all the sections below for a comprehensive picture. The pages in these secti
 * [Handling Pushback in Code Reviews](https://google.github.io/eng-practices/review/reviewer/pushback.html)
 
 See also the [CL Author’s Guide](https://google.github.io/eng-practices/review/developer/), which gives detailed guidance to developers whose CLs are undergoing review.
+
+{{% /level %}}
