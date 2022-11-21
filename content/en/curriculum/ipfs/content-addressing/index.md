@@ -24,9 +24,9 @@ objectives:
 ## The Importance of Immutabilty
 
 IPFS allows us to verify the content we received is the content we asked for using hashes.
-* Hashes are deterministic, meaning given an input, it will always have the same output. If the input data changes in any way, then the output generated hash will also change.
+* Hashes are deterministic, meaning given an input, it will always have the same output. If the input data changes in any way, then the output will also change.
 * Since files are immutable, they can never change without generating a brand new hash and, by extension, CID.
-* IPFS enables fast caching and deduplication, which means that you can save space by just communicating any changes to a file.
+* IPFS enables fast caching and deduplication, which means that you can save space by just communicating file changes.
 * IPFS allows you to fetch the data you want from anyone, using the immutable CIDs.
 
 ## Anatomy of a Content Identifier (CID)
@@ -34,7 +34,7 @@ IPFS allows us to verify the content we received is the content we asked for usi
 CIDs are unique strings. There must be a way to future proof the seemingly infinite amount of data that will be added on to the network.
 * Metadata about a hash (aka a prefix) + the hash itself = CID
 * The collection of “metadata prefixes” used in CIDs are part of the [Multiformats](https://multiformats.io/) library.
-* Currently, there are 2 different versions of CIDs in IPFS, CIDv0 & CIDv1, the currently widely accepted one being v1 CIDs. The version is also prefixed in the CID itself.
+* Currently, there are 2 different versions of CIDs in IPFS, CIDv0 & CIDv1, the currently widely accepted one being v1 CIDs.
 * The Multiformat protocols ensure future-proof compatibility and standards if any algorithm needs to change.
 
 {{< youtube dWq0GNbLtUI>}}

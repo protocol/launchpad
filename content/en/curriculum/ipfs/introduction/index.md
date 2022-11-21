@@ -41,7 +41,6 @@ IPFS as an organization is trying to look ahead to the next 10, 100, 1000 years 
 
 {{< youtube zE_WSLbqqvo >}}
 
-<br></br>
 Though it gets difficult to predict what is going to happen in the next, say, 100 years, we can start to invest in it now with Web3.
 
 Computation has gone through so many phases; from the first computers, to machines that can timeshare, to multiprocessing and sandboxed VMs, to user terminals, to networked computers with multiprocessing, now with personal computers networked across a worldwide internet that all came from a relatively simple set of functions and data transmission. Now, IPFS is on the front lines of the Web3 evolution that will bring us to the next stage in computing.
@@ -63,13 +62,14 @@ At a high level, the talk covered the following concepts:
 * Paths – Paths are recursive unlike URLs and can refer to previous blocks.
 * [IPNS](https://docs.ipfs.io/concepts/ipns/#interplanetary-name-system-ipns) – Public keys are mapped to a path, and you use your private key to sign it- as you modify this content, you can use IPNS to point to a new version of a previous piece of content that is signed by your private key.
 
+{{% level type="[deep]" %}}
 #### Find
 * [Routing & DHT](https://docs.ipfs.io/concepts/dht/#distributed-hash-tables-dhts) – Content on IPFS uses a combination of a CID and routing systems that help identify the set of peers you can get the content from with a distributed routing table (or Distributed Hash Table).
 * [Kademlia](https://docs.ipfs.io/concepts/dht/#kademlia) – Kademlia is a distance metric + query algorithm that helps users find the peers with the most accessible pieces of data.
 
 #### Fetch
 * [Bitswap](https://docs.ipfs.io/concepts/bitswap/#how-bitswap-works) – Using wantlists of data, or CIDs, that specific users are looking for, and checks peers that a node is connected to first for those CIDs before querying the rest of the DHT.
-
+{{% /level %}}
 
 <!--
 
