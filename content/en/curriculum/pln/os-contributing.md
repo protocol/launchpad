@@ -13,7 +13,7 @@ level:
 ---
 
 ## The Projects
-Open Source Software is at the core of protocol labes. You can explore the repos here to get a sense of what the core technologies and repositories behind Protocol Labs are, how these projects operate.
+Open Source Software is at the core of Protocol Labs. You can explore the repos here to get a sense of what the core technologies and repositories behind Protocol Labs are, how these projects operate.
 
 For those who want to dive in deep, get started contributing to IPFS Projects, with these high-traffic repos
 

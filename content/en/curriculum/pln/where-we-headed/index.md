@@ -8,6 +8,7 @@ menu:
 weight: 40
 category: lecture
 level:
+- shallow
 - deep
 ---
 
