@@ -17,6 +17,15 @@ Take the [**IPFS Quiz**](https://docs.google.com/forms/d/e/1FAIpQLSdtSvO0dCquXDs
 
 {{< embed src="https://docs.google.com/forms/d/e/1FAIpQLSdtSvO0dCquXDs_Fr5t53wjiS3WIib-nro6gK3oI6S8pri7DQ/viewform?usp=sf_link" width="100%" height="900px" >}}
 
+## More IPFS Concepts
+_You can also [find this content in IPFS Docs](https://docs.ipfs.io/concepts/)_
+
+Because IPFS is a system that hopes to change how we use the Internet, it comes with many new concepts:
+
+#### Whiteboard Series with NEAR | Ep: 42 Adin Schmahmann
+
+{{< youtube J-drqD2UebM >}}
+
 ## Discuss IPFS
 * IPFS [Discussion Forum](https://discuss.ipfs.io/)
 * Matrix [chat](https://matrix.to/#/#lobby:ipfs.io)
@@ -59,6 +68,16 @@ These tools can help you use and build on IPFS more quickly and efficiently — 
 Are you looking for inspiration? You can find a huge collection of awesome community projects over at Awesome IPFS.
 
 [Check out Awesome IPFS now →](https://awesome.ipfs.io/)
+
+### The Ecosystem Directory
+
+Explore the world of projects and products built on IPFS.
+
+**[The Ecosystem Directory](https://ecosystem.ipfs.io/)**
+
+Use the filters on the ecosystem directory page to explore projects by what they do, the industry, and which tooling (such as IPFS, FIlecoin, go-ipfs) to better understand what makes up the ecosystem.
+
+![Ecosystem Directory Filter](ecosystem.png)
 
 ### [Getting Started with IPFS and Filecoin](https://protocollabs.notion.site/Getting-started-with-IPFS-Filecoin-173c73d4d8d64765a42058594bc46bb7)
 

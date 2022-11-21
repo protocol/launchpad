@@ -36,16 +36,28 @@ export const useCurrentPageId = () => {
   return currentPageTitle.getAttribute('data-page-id')
 }
 
-export const useGoal = (section, goalId) => {
+export const useGoal = (section, goalIds) => {
   const sectionGoals = goalsConfigs[section]
+
   if (!sectionGoals) {
     return null
   }
 
-  const goal = sectionGoals[goalId]
-  if (!goal) {
-    return  null
+  if (!goalIds || goalIds.length === 0) {
+    return sectionGoals
   }
 
-  return goal
+  let goals = {}
+  for (const goalId of goalIds) {
+    const goal = sectionGoals[goalId]
+
+    if (goal) {
+      goals = {
+        ...goals,
+        [goalId]: goal
+      }
+    }
+  }
+
+  return goals
 }
