@@ -34,7 +34,7 @@ You can read more in the [libp2p docs](https://docs.libp2p.io/concepts/transport
 
 ### Stream Multiplexing
 
-Once we have opened a connection by using a transport protocol, libp2p offers multiplexing out the box.
+Once we have opened a connection by using a transport protocol, libp2p offers multiplexing out of the box.
 Opening new connections is _expensive_ from a resources point of view, so libp2p uses stream multiplexing to exchange different types of data within the same connection.
 Basically, libp2p splits the connection into several logical _streams_. Every stream holds a different type of data.
 
