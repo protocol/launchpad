@@ -50,7 +50,7 @@ This is called **NAT (Network Address Traversal)**. For example, consider the fo
 
 ![NAT example](nat.png)
 
-The router is connected to the Internet, and is assigned a public IP address. Three devices are connected to the route, which manages the incoming and outgoing data.
+The router is connected to the Internet, and is assigned a public IP address. Three devices are connected to the router, which manages the incoming and outgoing data.
 
 Although this is a great way of avoiding the waste of IP address, it brings a problem, especially in peer to peer networks.
 The only public part of our network is the router, so what happens if a computer from the Internet wants to connect to a specific device in our private network?
