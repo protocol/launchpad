@@ -82,7 +82,7 @@ Opera for Android 57 introduced support for resolving `ipfs://` or `ipns://` via
 For more information [take a look at the official announcement](https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/).
 
 ### Puma Browser
-[Puma](https://www.pumabrowser.com/) is a mobile-native browser that does not collect browsing cookies and integrates seamless peer-to-peer payments.
+[Puma](http://pumabrowser.com/) is a mobile browser and wallet for the Web3 ecosystem. Private by design. Today, they support native IPFS, HNS & ENS support and enable seamless payments for creators and developers. You can use the `ipfs://` protocol to access content from the address bar via a customizable gateway.
 
 ## Collaborations
 Collaborations make it easy for other to build applications and use standards that make it possible for users to access content on the distributed web.
@@ -93,7 +93,7 @@ Protocol Labs is a [W3C](https://www.w3.org/Consortium/) Member. Current focus i
 
 ### IPFS and Igalia team up
 
-In 2020 IPFS and [Igalia](https://www.igalia.com/), an open source company with expertise in browser development and the web platform, started a collaboration that continues to this day. This opportunity has started discussions and has risen awareness of the distributed web. Their effort has brought much needed progress to bringing IPFS to Firefox and Chromium-based browsers. For more information [take a look at the official announcement](https://blog.ipfs.io/2021-01-15-ipfs-and-igalia-collaborate-on-dweb-in-browsers/).
+In 2020 IPFS and [Igalia](https://www.igalia.com/), an open source company with expertise in browser development and the web platform, started a collaboration that continues to this day. This opportunity has started discussions and has risen awareness of the distributed web. Their effort has brought much needed progress to bringing IPFS to Firefox and Chromium-based browsers. One years later, [after their official announcement](https://blog.ipfs.io/2021-01-15-ipfs-and-igalia-collaborate-on-dweb-in-browsers/), this collaboration effort has brought `ipfs://` [support to Chromium browsers](https://blog.ipfs.tech/14-11-2022-igalia-chromium/)!
 
 ### IPFS and JavaScript
 
