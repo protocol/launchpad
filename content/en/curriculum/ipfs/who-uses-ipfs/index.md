@@ -7,6 +7,7 @@ menu:
         parent: "curriculum-ipfs"
 weight: 165
 category: lecture
+draft: true
 level:
 - shallow
 - deep
