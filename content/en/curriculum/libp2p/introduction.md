@@ -50,13 +50,6 @@ In this talk by Max Inden, learn about the purpose of libp2p, which networking p
 
 {{< youtube 7OZLImVRvro >}}
 
-### Tutorials
-For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/tutorials). Tutorials you should complete include:
-
-* [Introduction to libp2p](https://proto.school/introduction-to-libp2p)
-* [Blogging on the Decentralized Web](https://proto.school/blog)
-* [ResNetLab on Tour – Content Routing](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/)
-
 #### Publish Subscribe (Pubsub) with IPFS & libp2p
 In this tutorial video, you will see how you can use the publish-subscribe functionality (using the libp2p Gossipsub routing algorithm) with an IPFS node.  Follow along to start an IPFS node with pubsub enabled, and send and recieve messages.
 
