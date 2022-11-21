@@ -147,6 +147,27 @@
       ],
       "levels": ["deep"]
     },
+    "1.5":{
+      "description": "Gain knowledge of the IPFS architecture and the different components and services",
+      "subgoals":[
+        {
+          "id":"1.51",
+          "description": "Understand the flow of files that go through IPFS"
+        },
+        {
+          "id":"1.52",
+          "description": "Gain an introductory understanding of Linked Data"
+        },
+        {
+          "id":"1.53",
+          "description": "Demystify the core components that purely make up IPFS"
+        },
+        {
+          "id":"1.54",
+          "description": "Lean into technical details of mutable data on IPFS"
+        }
+      ]
+    },
     "1.6": {
       "description": "Be able to explain the basics of UnixFS",
       "subgoals": [
