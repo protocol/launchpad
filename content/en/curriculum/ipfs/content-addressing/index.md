@@ -10,13 +10,16 @@ category: lecture
 level:
 - shallow
 - deep
-goal: 1.1
-subgoals:
-- 1.11
-- 1.12
-- 1.13
-- 1.14
-- 1.15
+objectives:
+  show: true
+  goals:
+  - 1.1
+  subgoals:
+  - 1.11
+  - 1.12
+  - 1.13
+  - 1.14
+  - 1.15
 ---
 ## The Importance of Immutabilty
 

@@ -1,6 +1,5 @@
 {
   "ipfs": {
-
     "1.0": {
       "description": "Understand what IPFS is and why IPFS was started",
       "subgoals": [
@@ -24,7 +23,8 @@
           "id": "1.05",
           "description": "Describe, high level, some of the solutions posed by IPFS"
         }
-      ]
+      ],
+      "levels": ["shallow", "deep"]
     },
     "1.1": {
       "description": "Understand Content Addressing, CIDs, and what advantages they present over location-based addressing",
@@ -49,7 +49,8 @@
           "id": "1.15",
           "description": "Identify how a garbage collection process is done on an IPFS node and how to keep data discoverable on IPFS"
         }
-      ]
+      ],
+      "levels": ["shallow", "deep"]
     },
     "1.2": {
       "description": "Be able to explain how content is shared on IPFS",
@@ -70,7 +71,8 @@
           "id": "1.24",
           "description": "Be able to explain what a peer, node, and swarm are in the context of IPFS"
         }
-      ]
+      ],
+      "levels": ["shallow", "deep"]
     },
     "1.3":{
       "description": "Learn about IPFS Gateways and how they help bridge information between web2 and web3",
@@ -116,7 +118,34 @@
           "id": "1.45",
           "description": "Discover what advantages Graphsync has over Bitswap"
         }
-      ]
+      ],
+      "levels": ["deep"]
+    },
+    "1.5": {
+      "description": "Understand the IPFS architecture, as well as the different IPFS components and services",
+      "subgoals": [
+        {
+          "id": "1.51",
+          "description": "Learn "
+        },
+        {
+          "id": "1.52",
+          "description": "Know"
+        },
+        {
+          "id": "1.53",
+          "description": "Understand "
+        },
+        {
+          "id": "1.54",
+          "description": "Explain "
+        },
+        {
+          "id": "1.55",
+          "description": "Discover "
+        }
+      ],
+      "levels": ["deep"]
     },
     "1.6": {
       "description": "Be able to explain the basics of UnixFS",
@@ -133,7 +162,8 @@
           "id": "1.63",
           "description": "Go over the protobuf format, and its main field"
         }
-      ]
+      ],
+      "levels": ["deep"]
     }
   }
 }

@@ -10,13 +10,16 @@ category: lecture
 level:
 - shallow
 - deep
-goal: 1.2
-subgoals:
-- 1.21
-- 1.22
-- 1.23
-- 1.24
-- 1.25
+objectives:
+  show: true
+  goals:
+  - 1.2
+  subgoals:
+  - 1.21
+  - 1.22
+  - 1.23
+  - 1.24
+  - 1.25
 ---
 
 <!-- ### Objectives
@@ -121,7 +124,7 @@ IPNS is a self-certifying mutable pointer. Meaning any name that gets published 
 
 * **Keys -** A _name_ is a hash of a public key in a key pair. By default, the first public key used by Kubo is the same as the one for identifying your peer ([PeerID](https://docs.ipfs.tech/concepts/glossary/#peer-id)). You can [generate new key pairs with Kubo](https://docs.ipfs.tech/reference/kubo/cli/#ipfs-key-gen) and use them to create additional IPNS records.
 
-### Subscribe to Content with IPNS  
+### Subscribe to Content with IPNS
 
  To accomplish IPNS with PubSub, a [persistence layer is added](https://github.com/ipfs/specs/blob/main/naming/pubsub.md#layering-persistence-onto-libp2p-pubsub). Now when you ask for a name, you are subscribing to a PubSub topic based on that name, you create a connection with a peer that is following the same name, then they send you the latest version of the record.
 
