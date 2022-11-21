@@ -25,7 +25,7 @@ This section presents the main _building blocks_ of the libp2p architecture, whi
 
 ### Transport
 
-A key part of a network is the transport layer (consider the TCP/IP or OSI model). Most communications in the Internet happen by using the TCP transport protocol, although UDP is also widely used.
+A key part of a network is the transport layer (consider the TCP/IP or OSI model). Most communications on the Internet happen by using the TCP transport protocol, although UDP is also widely used.
 libp2p allows you to choose the transport protocol that best fits your application.
 
 At the transport network level, libp2p offers TCP or QUIC (a new transport protocol built on top of UDP). When we open a connection with other peers in the network, we use a transport protocol.
