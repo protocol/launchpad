@@ -118,7 +118,7 @@
       "levels": ["deep"]
     },
     "1.5": {
-      "description": "Understand the IPFS architecture, as well as the ipfs different components and services",
+      "description": "Understand the IPFS architecture, as well as the different IPFS components and services",
       "subgoals": [
         {
           "id": "1.51",
