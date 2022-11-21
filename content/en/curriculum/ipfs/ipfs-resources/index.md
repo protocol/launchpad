@@ -43,14 +43,14 @@ Because IPFS is a system that hopes to change how we use the Internet, it comes 
 ### [JS-IPFS Examples](https://github.com/ipfs-examples)
 
 ### [IPFS Projects](https://github.com/ipfs)
-* [go-ipfs](https://github.com/ipfs/go-ipfs)
+* [kubo](https://github.com/ipfs/kubo) (formerly go-ipfs)
 * [js-ipfs](https://github.com/ipfs/js-ipfs)
 
 ## Tutorials
 
 * [Command-Line Quick Start](https://docs.ipfs.io/how-to/command-line-quick-start/#prerequisites)
 * [Command Line installation instructions](https://docs.ipfs.io/install/command-line/#system-requirements)
-* [IPFS Distributions](https://dist.ipfs.io/#go-ipfs)
+* [IPFS Distributions](https://dist.ipfs.io/#kubo)
 * [IPFS CLI reference](https://docs.ipfs.io/reference/cli/#ipfs)
 
 ## IPFS Tools
