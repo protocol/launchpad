@@ -20,7 +20,7 @@ level:
 
 ## Concepts
 
-libp2p is a framework that allows you to create peer to peer networks in a modular way by choosing the protocols that you application needs.
+libp2p is a framework that allows you to create peer to peer networks in a modular way by choosing the protocols that your application needs.
 This section presents the main _building blocks_ of the libp2p architecture, which will be covered in detail later in the Launchpad curriculum.
 
 ### Transport
