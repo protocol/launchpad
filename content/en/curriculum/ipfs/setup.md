@@ -13,7 +13,7 @@ level:
 ---
 
 ## Background
-In this tutorial you can get started by installing go-ipfs (also known as kubo), and starting & stopping a node
+In this tutorial you can get started by installing kubo (formerly go-ipfs), and starting & stopping a node
 
 ## Prerequisites
 * The [latest version of Go (golang)](https://go.dev/doc/install)
@@ -30,7 +30,7 @@ This video is the basic setup for [kubo](https://github.com/ipfs/kubo) on a linu
 
 {{< youtube A7yZaYhrwyM >}}
 
-### Install go-ipfs (kubo)
+### Install kubo (go-ipfs)
 Refer to the [IPFS Docs' installation instructions](https://docs.ipfs.io/install/command-line/#system-requirements) for the operating system you are using.
 
 ### Initialize an IPFS Node

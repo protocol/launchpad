@@ -125,7 +125,7 @@ class SuperLargeArrayBlock {
       const childIndex = Math.floor(index / (width ** (this.height - 1)))
       const newIndex = index % (width ** (this.height - 1))
       // load and traverse into a child
-      return this.getChildAt(childIndex).getElementAt(index)
+      return this.getChildAt(childIndex).getElementAt(newIndex)
     }
     // read directly from this node's data array
     return this.elements[index]

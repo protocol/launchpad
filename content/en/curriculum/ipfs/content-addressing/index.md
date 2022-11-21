@@ -10,20 +10,23 @@ category: lecture
 level:
 - shallow
 - deep
-goal: 1.1
-subgoals:
-- 1.11
-- 1.12
-- 1.13
-- 1.14
-- 1.15
+objectives:
+  show: true
+  goals:
+  - 1.1
+  subgoals:
+  - 1.11
+  - 1.12
+  - 1.13
+  - 1.14
+  - 1.15
 ---
 ## The Importance of Immutabilty
 
 IPFS allows us to verify the content we received is the content we asked for using hashes.
-* Hashes are deterministic, meaning given an input, it will always have the same output. If the input data changes in any way, then the output generated hash will also change.
+* Hashes are deterministic, meaning given an input, it will always have the same output. If the input data changes in any way, then the output will also change.
 * Since files are immutable, they can never change without generating a brand new hash and, by extension, CID.
-* IPFS enables fast caching and deduplication, which means that you can save space by just communicating any changes to a file.
+* IPFS enables fast caching and deduplication, which means that you can save space by just communicating file changes.
 * IPFS allows you to fetch the data you want from anyone, using the immutable CIDs.
 
 ## Anatomy of a Content Identifier (CID)

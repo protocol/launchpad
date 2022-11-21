@@ -7,6 +7,7 @@ menu:
         parent: "curriculum-ipfs"
 weight: 165
 category: lecture
+draft: true
 level:
 - shallow
 - deep
@@ -18,7 +19,7 @@ level:
 
 **[The Ecosystem Directory](https://ecosystem.ipfs.io/)**
 
-Use the filters on the ecosystem directory page to explore projects by what they do, the industry, and which tooling (such as IPFS, FIlecoin, go-ipfs) to better understand what makes up the ecosystem.
+Use the filters on the ecosystem directory page to explore projects by what they do, the industry, and which tooling (such as IPFS, Filecoin, kubo) to better understand what makes up the ecosystem.
 
 ![Ecosystem Directory Filter](ecosystem.png)
 

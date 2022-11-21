@@ -43,14 +43,14 @@ Because IPFS is a system that hopes to change how we use the Internet, it comes 
 ### [JS-IPFS Examples](https://github.com/ipfs-examples)
 
 ### [IPFS Projects](https://github.com/ipfs)
-* [go-ipfs](https://github.com/ipfs/go-ipfs)
+* [kubo](https://github.com/ipfs/kubo) (formerly go-ipfs)
 * [js-ipfs](https://github.com/ipfs/js-ipfs)
 
 ## Tutorials
 
 * [Command-Line Quick Start](https://docs.ipfs.io/how-to/command-line-quick-start/#prerequisites)
 * [Command Line installation instructions](https://docs.ipfs.io/install/command-line/#system-requirements)
-* [IPFS Distributions](https://dist.ipfs.io/#go-ipfs)
+* [IPFS Distributions](https://dist.ipfs.io/#kubo)
 * [IPFS CLI reference](https://docs.ipfs.io/reference/cli/#ipfs)
 
 ## IPFS Tools
@@ -68,6 +68,16 @@ These tools can help you use and build on IPFS more quickly and efficiently — 
 Are you looking for inspiration? You can find a huge collection of awesome community projects over at Awesome IPFS.
 
 [Check out Awesome IPFS now →](https://awesome.ipfs.io/)
+
+### The Ecosystem Directory
+
+Explore the world of projects and products built on IPFS.
+
+**[The Ecosystem Directory](https://ecosystem.ipfs.io/)**
+
+Use the filters on the ecosystem directory page to explore projects by what they do, the industry, and which tooling (such as IPFS, FIlecoin, go-ipfs) to better understand what makes up the ecosystem.
+
+![Ecosystem Directory Filter](ecosystem.png)
 
 ### [Getting Started with IPFS and Filecoin](https://protocollabs.notion.site/Getting-started-with-IPFS-Filecoin-173c73d4d8d64765a42058594bc46bb7)
 

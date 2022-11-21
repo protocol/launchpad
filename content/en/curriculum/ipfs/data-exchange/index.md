@@ -9,13 +9,16 @@ weight: 130
 category: lecture
 level:
 - deep
-goal: 1.4
-subgoals:
-- 1.41
-- 1.42
-- 1.43
-- 1.44
-- 1.45
+objectives:
+  show: true
+  goals:
+  - 1.4
+  subgoals:
+  - 1.41
+  - 1.42
+  - 1.43
+  - 1.44
+  - 1.45
 ---
 
 ## Introduction
