@@ -69,6 +69,16 @@ Are you looking for inspiration? You can find a huge collection of awesome commu
 
 [Check out Awesome IPFS now →](https://awesome.ipfs.io/)
 
+### The Ecosystem Directory
+
+Explore the world of projects and products built on IPFS.
+
+**[The Ecosystem Directory](https://ecosystem.ipfs.io/)**
+
+Use the filters on the ecosystem directory page to explore projects by what they do, the industry, and which tooling (such as IPFS, FIlecoin, go-ipfs) to better understand what makes up the ecosystem.
+
+![Ecosystem Directory Filter](ecosystem.png)
+
 ### [Getting Started with IPFS and Filecoin](https://protocollabs.notion.site/Getting-started-with-IPFS-Filecoin-173c73d4d8d64765a42058594bc46bb7)
 
 **Links**
