@@ -21,6 +21,10 @@ In this tutorial you can do some basic things with the public IPFS filesystem. T
 * IPFS [installed on the OS](https://docs.ipfs.tech/install/ipfs-desktop/#install-instructions) you are using
 * IPFS Docs' [kubo (go-ipfs) Command-line commands](https://docs.ipfs.tech/reference/kubo/cli/#ipfs)
 
+> Use the ipfs-update package to easily update to the latest version of ipfs.
+> * [Download and install ipfs-update](https://dist.ipfs.tech/#ipfs-update)
+> * Run the command `ipfs-update install v<0.00.00>`.
+> * See more in the [ipfs-update repo](https://github.com/ipfs/ipfs-update).
 
 ## Instructions
 

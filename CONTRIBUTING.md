@@ -1,5 +1,9 @@
-Please create your own branch or fork for any changes that you would like to make, then create a PR to the appropriate branch, `gitbook` .
+We appreciate feedback and updates to the Launchpad curriculum! You have two options for making changes:
+1. [Submit an Issue](https://github.com/protocol/launchpad/issues) on Github
+2. Create a [Fork and make a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
 
-## Steps
-1) Request access from an admin of this site
-2) To create changes to the curriculum and content, create a branch from the `gh-pages`, and to update the functionality and features of this site, update the `main` branch
+In order to contribute, you should take first take a look at the **[Style Guide](https://github.com/protocol/launchpad/blob/main/STYLE-GUIDE.md)** to understand the formatting and conventions that we use in the curriculum.
+
+If you are forking and making a PR, you can create a new branch from the 'main' [repository](https://github.com/protocol/launchpad/tree/main), then create a pull request, and ping the team (Lindsay, Marco, or Enol) in the #launchpad-community channel in Filecoin Slack.
+
+[Join Filecoin slack with this link](https://filecoin.io/slack) and search for the public channel `#launchpad-community`
