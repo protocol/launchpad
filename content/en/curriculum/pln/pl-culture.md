@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-pln"
-weight: 30
+weight: 35
 category: lecture
 level:
 - shallow
@@ -57,7 +57,7 @@ Discord, Email, and Zoom are our workplace: in interacting with other Labbers, r
 * Written communication is long-lasting: remember that written communication lasts longer than verbal communications so others will come back to it time and time again.
 * Mind the audience: in communicating with others, pause and think about who your message is intended for and whether the medium is appropriate.
 
-## External Facing Teams
+## Community Facing Teams
 
 ### Ecosystem
 
