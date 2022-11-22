@@ -50,6 +50,23 @@ In this talk by Max Inden, learn about the purpose of libp2p, which networking p
 
 {{< youtube 7OZLImVRvro >}}
 
+
+### libp2p Users
+
+The users of the libp2p protocol suite include, and is a list that is always being added to:
+
+* [Prysmaticlabs.com](http://prysmaticlabs.com)
+* [onflow.org](http://onflow.org)
+* [minaprotocol.com](http://minaprotocol.com)
+* [polygon.technology](http://polygon.technology)
+* [celestia.org](http://celestia.org)
+* [elrond.com](http://elrond.com)
+* [0x.org](http://0x.org)
+* [filecoin.io](http://filecoin.io)
+* [ipfs.io](http://ipfs.io)
+* [ethereum.org](https://ethereum.org/en/eth2/)
+* [polkadot.network](https://polkadot.network)
+
 #### Publish Subscribe (Pubsub) with IPFS & libp2p
 In this tutorial video, you will see how you can use the publish-subscribe functionality (using the libp2p Gossipsub routing algorithm) with an IPFS node.  Follow along to start an IPFS node with pubsub enabled, and send and recieve messages.
 
