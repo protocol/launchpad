@@ -1,5 +1,5 @@
 ---
-title: "Connections and Users"
+title: "Connecting Peers"
 description: "Understand how a libp2p connection is established"
 draft: false
 menu:
@@ -97,7 +97,7 @@ func main() {
 }
 ```
 
-Nodes establish connections with other nodes, so we need a way to locate those nodes. Multiaddresses specify the location of a node (e.g. which IP address and which port) and peer identifiers specify the identity of the node (e.g. once you get to the node, you can check if this is indeed the node you were looking for). 
+Nodes establish connections with other nodes, so we need a way to locate those nodes. Multiaddresses specify the location of a node (e.g. which IP address and which port) and peer identifiers specify the identity of the node (e.g. once you get to the node, you can check if this is indeed the node you were looking for).
 
 ### Peer Identity
 
