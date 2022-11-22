@@ -183,7 +183,26 @@
           "id": "1.24",
           "description": "Understand why libp2p uses multiaddresses"
         }
-      ]
+      ],
+      "levels": ["shallow", "deep"]
+    },
+    "1.4": {
+      "description": "Understand how the DHT works internally",
+      "subgoals": [
+        {
+          "id": "1.41",
+          "description": "Understand what is the distance metric"
+        },
+        {
+          "id": "1.42",
+          "description": "Understand what is the routing table"
+        },
+        {
+          "id": "1.43",
+          "description": "Understand the basic operations of the DHT"
+        }
+      ],
+      "levels": ["deep"]
     }
   }
 }
