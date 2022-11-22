@@ -16,7 +16,7 @@ This section introduces Protocol Labs Network. Here you will find resources to l
 ![PLN_Logo](PLN_Logo.png)
 ### Learning Goals
 * **1.1 –** Know what the PL Network is, how Protocol Labs evolved from company to network, as well as the projects, tooling, and DApps being built on the PLN
-* **1.1 –** Understand what the resources and tools are within the PL Network to support teams, individuals, companies, and general growth of our mission 
+* **1.2 –** Understand what the resources and tools are within the PL Network to support teams, individuals, companies, and general growth of our mission 
 * **1.3 –** Understand the methods and philosophies about how work and communication is carried out in the Protocol Labs Network & within PLN open source communities
 
 After completing this section, you will also: 
