@@ -20,7 +20,7 @@
         {{ range $index, $element := .Site.Menus.curriculum -}}
         {{ $lecturesKey := print $element.Identifier "-" "lecture" }}
         {{ $tutorialsKey := print $element.Identifier "-" "tutorial" }}
-        <a href="/curriculum/{{ .Params.Section }}/introduction">
+        <a href="/curriculum/{{ .Params.Section }}/objectives">
             <div class="curriculum-listing-card">
                 <div style="padding: 10px;">
                     <div style="display: flex; margin-top: 12px; padding: 8px; align-items: center;">

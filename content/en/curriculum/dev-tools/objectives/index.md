@@ -1,15 +1,20 @@
 ---
-title: "Introduction to toolkits"
-description: "Tools to make Web3 with PL Fun and Easy"
+title: "Learning Objectives"
+description: "Simple, Open, Free Storage"
 draft: false
 menu:
   curriculum:
-          parent: "curriculum-devtools"
+    parent: "curriculum-devtools"
+    identifier: "devtools-objectives"
 category: lecture
-weight: 10
+weight: 1
 level:
 - shallow
 - deep
+objectives:
+  show: true
+  showTitle: false
+  introPage: true
 ---
 
 There is a large set of tools that are being built on IPFS, IPLD, Libp2p and Filecoin.

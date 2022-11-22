@@ -6,6 +6,12 @@ import {App} from "../../App";
 const GoalIcon = ({section}) => {
   const getImageData = () => {
     switch (section) {
+      case "pln":
+        return {
+          "src": "/logos/pl.png",
+          "width": 25,
+          "height": 25
+        }
       case "ipfs":
         return {
           "src": "/logos/ipfs.svg",
@@ -27,6 +33,12 @@ const GoalIcon = ({section}) => {
       case "filecoin":
         return {
           "src": "/logos/filecoin.png",
+          "width": 25,
+          "height": 25
+        }
+      case "dev-tools":
+        return {
+          "src": "/icons/devtools.png",
           "width": 25,
           "height": 25
         }
@@ -77,10 +89,10 @@ const IntroPageGoals = ({section, goals}) => {
     }
   })
 
-  const goalByLevelList = Object.entries(goalsByLevel)
+  const goalByLevelList = Object.entries(goalsByLevel).filter(goalByLevel => Object.keys(goalByLevel[1]).length > 0)
 
   return goalByLevelList.map((levelEntry, index) => <div style={{marginBottom: index < goalByLevelList.length - 1 ? '20px' : '0px'}}>
-      <div style={{fontSize: '24px', fontWeight: 'bold'}}>{capitalize(levelEntry[0])} Dive Goals</div>
+      {goalByLevelList.length > 1 && <div style={{fontSize: '24px', fontWeight: 'bold'}}>{capitalize(levelEntry[0])} Dive Goals</div>}
       {Object.entries(levelEntry[1]).map(entry => <GoalElement section={section} goalId={entry[0]} goal={entry[1]} subgoalIds={[]} />)}
     </div>
   )
