@@ -1,5 +1,5 @@
 ---
-title: "Introduction to the PL Network"
+title: "Learning Objectives"
 description: "Understand what is the Protocol Labs Network (PLN)"
 draft: false
 menu:
@@ -12,15 +12,16 @@ level:
 - deep
 ---
 
-This section introduces Protocol Labs Network. Here you will find resources to learn about the goals and mission that unite us across organizations, the many teams and individuals that contribute to the new web3 primitives, protocols, and tools we're creating, and begin to learn about how we operate.
 
+
+This section of the curriculum is all about who Protocol Labs is, as an oganization, and the different pieces that make up our network. Here you will find resources to learn about the goals and mission that unite us across organizations, the many teams and individuals that contribute to the new web3 primitives, protocols, and tools we're creating, and begin to learn about how we operate.
 ![PLN_Logo](PLN_Logo.png)
 
-## Vision & Mission
+### Protocol Labs Vision & Mission
 
 Protocol Labs drives breakthroughs in computing to push humanity forward.
 
-### How?
+**How?**
 
 * Ideas to super-powers **pipeline.**
 * A **network** capable of repeatable innovation.

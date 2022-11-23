@@ -1,5 +1,5 @@
 ---
-title: "Teams in the PL Network"
+title: "The Protocol Labs Network"
 description: The many projects and organizations that make up the PL Network
 draft: false
 menu:
@@ -12,39 +12,35 @@ level:
 - deep
 ---
 
-Protocol Labs exists to enable a network of projects, tools, startups, research, communities (and more) that are springing up and evolving around the protocols being developed. As this ecosystem grows, these projects invest in the network itself, and the network grows along with it, which in turn benefits and incentivizes this ongoing evolution.
+Protocol Labs is a constantly evolving network is made up of 450+ projects, companies, and organizations. Understanding the landscape of organization, projects, and teams can be complex, and this section presents tools that can help you understand and navigate these systems and organizations.
 
-![](companies.png)
+### Protocol Labs Portal
+This portal is the central point of reference for all the resources available to PLN members. This portal includes information about Network Services from Mosaia, the network directory, communication channesl as well.
 
-## The Protocol Labs OSS Projects
+**[Protocol Labs Portal](https://www.plnetwork.io/)**
 
-### IPFS, IPLD, libp2p, and Filecoin
+![Network Resources and Services](pln-page.png)
 
-The four main projects we will be focusing on in this curriculum are IPFS, IPLD, Libp2p, and Filecoin. Most of the information and interaction can be found on docs and GitHub organizations:
+### Directories and Key Resources
 
-![](projects.png)
-
-* **IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs)
-
-* **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld)
-
-* **Libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p)
-
-* **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)
-
-Note that these are not the only projects in the core Protocol Labs stack, and there are many more, such as [Multiformats](https://multiformats.io/), [Drand](https://drand.love/), [Bacalhau](https://github.com/filecoin-project/bacalhau), and more that are continually being added and updated to contribute to the PLN.
+* [Spaceport](https://coda.io/d/Protocol-Labs-Spaceport_dDpJBnYeqJb/What-is-Spaceport_suSQ9#_luhKz) is a network-wide directory and guide for those navigating the Protocol Labs web3 space with many links to resources for PL Network members, including:
+* The [PLN Member Directory](https://www.plnetwork.io/directory/teams) is a listing of all the companies, projects, and teams in the wider PLN
+* The [PLN Code of Conduct](https://protocol.almanac.io/docs/pln-code-of-conduct-ymBUYyonmhfvizGu6yOpXH1qkuWYce96) outlines the expectations and code of conduct for all members of our network
+* The [Glossary](https://protocol.almanac.io/docs/glossary-ycx3uRbXUM3d7uf1EBz89msUmb1UjzR7) provides a comprehensive list of terms to help you navigate web3
 
 
-#### The Project Stack
+### Protocol Labs Ecosystem Directories
+To explore the various projects and tools building in the IPFS & Filecoin ecosystems, use the explorable ecosystem directories:
+* IPFS Ecosystem Explorer [https://ecosystem.ipfs.io/](https://ecosystem.ipfs.io)
+* Filecoin Ecosystem Explorer [https://ecosystem.filecoin.io/](https://ecosystem.filecoin.io)
 
-![Web3 Stack](web3-stack.png)
 
-## Protocol Labs
-_Teams, Network Services, and Working Groups_
+Use the filters on the ecosystem directory page to explore projects by what they do, the industry, and which tooling (such as IPFS, Filecoin, kubo) to better understand what makes up the ecosystem.
 
-Protocol Labs at its core consists of an organization (also referred to as Starfleet) that supports open source projects, as well as the network of organizations that builds upon and expands the capabilities of the core technologies.
+![Ecosystem Directory](ecosystem.png)
 
-### Protocol Labs Teams
+## Protocol Labs Teams
+_Teams, OSS Projects, Network Companies, and Working Groups_
 
 There are several core organizations that make up the nucleus of the Protocol Labs organization. [EngRes](https://www.notion.so/pl-strflt/PL-EngRes-Public-b5086aea86ed4f81bc7d0721c6935e1e) has a constantly shifting portfolio of projects and efforts, which are arranged into working groups.
 
@@ -63,20 +59,8 @@ In order to support the growth of the projects and tooling build on and around P
 - Talent Funnel
 - Network Member Services
 
-## The Protocol Labs Network
 
-The PL Network is made up of 300+ projects, companies, and organizations. You can explore a number of those organizations, and the people that work on them, in the WIP [PL Network Directory](https://www.plnetwork.io/).
-
-The [PL Spaceport](https://protocol.almanac.io/docs/protocol-labs-spaceport-sFKNLxQKYdQOZfLTL4kL9uVha4TdGlYh) has many links to resources for PL Network members, including:
-
-* [PLN Member Directory](https://protocol.almanac.io/docs/pln-member-directory-84TYCGFm9s07JuPfNqpvCXWDLgK1EAhU)
-  * [Teams & Labbers](https://airtable.com/shrjVQx04qtYUwvgZ/tblpTKZo66tbYIxH4)
-* [PLN Code of Conduct](https://protocol.almanac.io/docs/pln-code-of-conduct-ymBUYyonmhfvizGu6yOpXH1qkuWYce96)
-* [Glossary](https://protocol.almanac.io/docs/glossary-ycx3uRbXUM3d7uf1EBz89msUmb1UjzR7)
-
-To explore the various projects and tools building in the IPFS & Filecoin ecosystems, use the explorable ecosystem directories at [https://ecosystem.ipfs.io/](https://ecosystem.ipfs.io) & [https://ecosystem.filecoin.io/](https://ecosystem.filecoin.io)
-
-## Built and Building On
+### Built and Building On
 
 You can see projects and tools that have been developed to make creating in web3 with Protocol Labs projects easier under [Protocol Labs Toolkits and SDKs](https://protocol-labs.gitbook.io/launchpad-curriculum/other-resources/protocol-labs-toolkits-sdks)
 
