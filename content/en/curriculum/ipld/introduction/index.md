@@ -10,6 +10,14 @@ category: lecture
 level:
 - shallow
 - deep
+objectives:
+  show: true
+  goals:
+  - "1.0"
+  subgoals:
+  - 1.01
+  - 1.02
+  - 1.03
 ---
 
 ## Why IPLD?
@@ -47,12 +55,11 @@ At its most fundamental, **IPFS** is a collection of:
 1. Binary blobs of data - "blocks"
 2. Their associated content identifiers - CIDs
 
-These are both the core concerns of IPLD. IPFS builds on these primitives to provide a sophsticated peer to peer content addressing data stack, with a mature suite of tooling to deal with files.
+These are both the core concerns of IPLD. IPFS builds on these primitives to provide a sophisticated peer to peer content addressing data stack, with a mature suite of tooling to deal with files.
 
 Only the smallest files in IPFS are stored as a single blob ("block"): to keep block size practical, files are split up into chunks and spread across multiple blocks and linked together into a single graph.
 
 Directories are graphs of named links pointing to files, forming graphs that address other graphs
-
 
 ### Tutorials
 

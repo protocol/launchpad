@@ -105,12 +105,13 @@ The different hash functions can be seen in the [multicodec table](https://githu
 * `b` - base32
 * `z` - base58
 * `f` - base16
+* 🚀 - base256emoji
 
 The full list of bases and their mappings can be found in the Multibase registry at [github.com/multiformats/multibase](https://github.com/multiformats/multibase).
 
 While not the most compact string representation, _base32_ (b) is the preferred base encoding for CIDv1 because it only uses lower-case ASCII characters so is safe to use in DNS entries (and therefore URLs).
 
-Fun fact: after [Kubo release 0.14](https://github.com/ipfs/kubo/blob/master/docs/changelogs/v0.14.md#-emoji-support-in-multibase), emoji support [(base256emoji)](https://github.com/multiformats/multibase/blob/master/rfcs/Base256Emoji.md) was included for testing Unicode support, as visual aid while explaining Multiformats, or just for fun. The Multibase character for _base256emoji_ is 🚀, so every emoji CID will start with 🚀.  
+After [Kubo release 0.14](https://github.com/ipfs/kubo/blob/master/docs/changelogs/v0.14.md#-emoji-support-in-multibase), emoji support [(base256emoji)](https://github.com/multiformats/multibase/blob/master/rfcs/Base256Emoji.md) was included for testing Unicode support, as visual aid while explaining Multiformats, or just for fun.  
 ```bash
 # Encode "test" in base256emoji
 $ echo -n "test" | ipfs multibase encode -b base256emoji -
@@ -139,6 +140,8 @@ Beyond CIDv0, there is only one currently valid CID version `1`, but a CIDv1 in 
 * Base64: `mAXASIDdmmyANeytvXUriuy4BO0lfd2eR0UjygabF6CAzfsD1`
 * Base8: `7002700221003354646620015366255572724534256627001166445373566362164244362403233057202006337540365`
 * Base2: `0000000010111000000010010001000000011011101100110100110110010000000001101011110110010101101101111...` (you get the idea...)
+
+{{% embed src="https://cid.ipfs.io/#🚀🪐⭐💻😅❓💎🌈🌸🌚💰💍🌒😵🐶💁🤐🌎👼🙃🙅☺🌚😞🤤⭐🚀😃✈🌕😚🍻💜🐷⚽✌😊" width="100%" height="500px" %}}
 
 ## Further Reading
 

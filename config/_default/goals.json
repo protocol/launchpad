@@ -177,6 +177,49 @@
       "levels": ["deep"]
     }
   },
+  "ipld": {
+    "1.0": {
+      "description": "Understand how and why IPLD was created",
+      "subgoals":[
+        {
+        "id": "1.01",
+        "description": "Know what separates IPFS from IPLD"
+        },
+        {
+          "id": "1.02",
+          "description": "Know some of the use cases of IPLD"
+        },
+        {
+          "id":"1.03",
+          "description": "Have a basic background knowledge of what makes a CID"
+        }
+    ],
+      "levels": ["shallow", "deep"]
+    },
+    "1.1": {
+      "description": "Understand how IPLD addresses data in a Content-Addressed system",
+      "subgoals": [
+        {
+          "id": "1.11",
+          "description": "Identify the differences between CID versions and their properties"
+        },
+        {
+          "id": "1.12",
+          "description": "Understand the multiformats involved in generating a CID"
+        },
+        {
+          "id":"1.13",
+          "description": "Use the CID Inspector to break down and analyze CIDs"
+        }
+      ],
+      "levels":["shallow", "deep"]
+    },
+    "1.2": {
+      "description": "Be able to describe graph data structures and Merkle Trees",
+      "subgoals": [],
+      "levels":["shallow", "deep"]
+    }
+  },
   "dev-tools": {
     "1.1": {
       "description": "Understand what are Dev-Tools and why they are important for developers.",
