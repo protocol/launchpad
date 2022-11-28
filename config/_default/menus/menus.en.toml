@@ -1,23 +1,32 @@
 [[main]]
   name = "Curriculum"
-  url = "/"
+  url = "/curriculum"
   weight = 1000
   [main.params]
     identifier = "curriculum"
+    image = "https://cdn-icons-png.flaticon.com/128/9041/9041299.png"
+    width = 21
+    height = 21
 
 [[main]]
   name = "Tutorials"
-  url = "/tutorials/ipfs/desktop-tutorial/"
+  url = "/tutorials"
   weight = 2000
   [main.params]
-    identifier = "prerequisites"
+    identifier = "tutorials"
+    image = "https://cdn-icons-png.flaticon.com/128/6988/6988166.png"
+    width = 26
+    height = 26
 
 [[main]]
-  name = "Courses"
-  url = "/about/"
+  name = "Resources"
+  url = "/resources/"
   weight = 3500
   [main.params]
-    identifier = "about"
+    identifier = "resources"
+    image = "https://cdn-icons-png.flaticon.com/128/2563/2563002.png"
+    width = 24
+    height = 24
 
 [[main]]
   name = "Website"
@@ -25,6 +34,9 @@
   weight = 4000
   [main.params]
     identifier = "website"
+    image = "https://cdn-icons-png.flaticon.com/512/4302/4302080.png"
+    width = 24
+    height = 24
 
 # [[main]]
 #   name = "Get Started"
@@ -137,15 +149,28 @@
 
 
 [[tutorials]]
-  name = "IPFS"
+  name = "Introduction to IPFS"
   weight = 10
   identifier = "tutorials-ipfs"
+  [tutorials.params]
+    category = "ipfs"
+    image = "https://blog.ipfs.tech/assets/img/2022-ipfs-gateways-2.8f5be3fd.png"
+
 
 [[tutorials]]
-  name = "libp2p"
+  name = "Building libp2p applications"
   weight = 20
   identifier = "tutorials-libp2p"
+  [tutorials.params]
+    category = "libp2p"
+    image = "https://blog.ipfs.tech/assets/img/171434584-f53b2b7b-16f8-4a4f-99aa-867a50b9b48a.9cf21f80.png"
 
+[[tutorials]]
+  name = "Working with IPLD structures"
+  weight = 30
+  identifier = "tutorials-libp2p1"
+  [tutorials.params]
+    image = "https://ipld.io/img/ipld-illustration.svg"
 
 # [[footer]]
 #   name = "Privacy"

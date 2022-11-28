@@ -84,26 +84,26 @@
             {{- $active = or $active (and (eq .Name ($section | humanize)) (eq $current.Section $section)) -}}
             {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "contributors")) -}}
             {{- $active = or $active (and (eq .Params.Identifier $section)) -}}
-            {{ if or (and (eq $isHome true) (not (eq .Name "Curriculum"))) (eq $isHome false) }}
-              {{ if .HasChildren }}
-                <li class="lp-nav dropdown">
-                  <a class=" dropdown-toggle ps-0 py-1" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="dropdown-caret"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby="navbarDropdownMenuLink">
-                    {{ range .Children -}}
-                    {{- $active = eq .Name $current.Title -}}
-                      <li>
-                        <a class="dropdown-item{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}"{{ if $active }} aria-current="true"{{ end }}>{{ .Name }}</a>
-                      </li>
-                    {{ end -}}
-                  </ul>
-                </li>
-              {{ else }}
-                <li class="nav-item">
-                  <a class="nav-link lp ps-0 py-1{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
-                </li>
-              {{ end }}
+            {{ if .HasChildren }}
+              <li class="lp-nav dropdown">
+                <a class=" dropdown-toggle ps-0 py-1" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="dropdown-caret"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby="navbarDropdownMenuLink">
+                  {{ range .Children -}}
+                  {{- $active = eq .Name $current.Title -}}
+                    <li style="display: flex; align-items: center;">
+                      <a class="dropdown-item{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}"{{ if $active }} aria-current="true"{{ end }}>{{ .Name }}</a>
+                      <img src="https://cdn-icons-png.flaticon.com/128/2815/2815429.png" width="23" height="23" />
+                    </li>
+                  {{ end -}}
+                </ul>
+              </li>
+            {{ else }}
+              <li class="nav-item" style="display: flex; align-items: center; font-size: 19px;">
+                <img src="{{ .Params.Image }}" width="{{ .Params.Width }}" height="{{ .Params.Height }}" style="margin-right: 5px;" />
+                <a class="nav-link lp ps-0 py-1{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+              </li>
             {{ end }}
           {{ end -}}
         </ul>
@@ -164,7 +164,7 @@
 </div>
 {{ end -}}
 
-{{ if not .IsHome -}}
+{{ if and (not .IsHome) (eq .Section "curriculum") -}}
 <nav class="doks-subnavbar py-2 sticky-lg-top{{ if eq .Site.Params.options.flexSearch false }} d-lg-none{{ end }}" aria-label="Secondary navigation">
   <div class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} d-flex align-items-md-center">
 
