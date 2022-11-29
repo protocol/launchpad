@@ -190,7 +190,7 @@
       "subgoals": [
         {
           "id": "1.31",
-          "description": "Understand what is a node/peer"
+          "description": "Define concepts of nodes, peers, and peer identities in an independent peer to peer network"
         },
         {
           "id": "1.32",
