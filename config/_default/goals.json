@@ -187,7 +187,7 @@
       "levels": ["shallow", "deep"]
     },
     "1.4": {
-      "description": "Understand how the DHT works internally",
+      "description": "Understand the content routing mechanisms used in a Distributed Hash Table ",
       "subgoals": [
         {
           "id": "1.41",
