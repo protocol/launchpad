@@ -198,7 +198,7 @@
         },
         {
           "id": "1.33",
-          "description": "Understand the steps involved in opening a connection (handshake, security, multiplexing)"
+          "description": "Describe the steps involved in opening a connection including handshakes, security, and multiplexing"
         },
         {
           "id": "1.34",
