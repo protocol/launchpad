@@ -1,5 +1,5 @@
 ---
-title: "The DHT"
+title: "The Distributed Hash Table"
 description: "Understand how the libp2p DHT works"
 draft: false
 menu:
@@ -9,9 +9,15 @@ weight: 315
 category: lecture
 level:
 - deep
+objectives:
+  show: true
+  goals:
+  - 1.4
+  subgoals:
+  - 1.41
+  - 1.42
+  - 1.43
 ---
-
-# The Distributed Hash Table
 
 ## Introduction
 
