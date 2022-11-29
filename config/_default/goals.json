@@ -187,7 +187,7 @@
       "levels": ["shallow", "deep"]
     },
     "1.4": {
-      "description": "Understand the content routing mechanisms used in a Distributed Hash Table ",
+      "description": "Understand the content routing mechanisms used in a Distributed Hash Table",
       "subgoals": [
         {
           "id": "1.41",
