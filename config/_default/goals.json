@@ -191,7 +191,7 @@
       "subgoals": [
         {
           "id": "1.41",
-          "description": "Understand what is the distance metric"
+          "description": "Describe the distance metric used by the DHT"
         },
         {
           "id": "1.42",
