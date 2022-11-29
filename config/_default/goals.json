@@ -183,7 +183,8 @@
           "id": "1.24",
           "description": "Understand why libp2p uses multiaddresses"
         }
-      ]
+      ],
+      "levels": ["shallow", "deep"]
     },
     "1.3": {
       "description": "Understand how libp2p establishes connections",
@@ -204,7 +205,26 @@
           "id": "1.34",
           "description": "Identify how multiplexing is useful to use several application protocols over the same connection"
         }
-      ]
+      ],
+      "levels": ["shallow", "deep"]
+    },
+    "1.4": {
+      "description": "Understand the content routing mechanisms used in a Distributed Hash Table",
+      "subgoals": [
+        {
+          "id": "1.41",
+          "description": "Describe the distance metric used by the DHT"
+        },
+        {
+          "id": "1.42",
+          "description": "Understand how the routing table facilitates peer discovery"
+        },
+        {
+          "id": "1.43",
+          "description": "Be able to describe the basic operations of the DHT"
+        }
+      ],
+      "levels": ["deep"]
     }
   }
 }
