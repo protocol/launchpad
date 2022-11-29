@@ -205,7 +205,8 @@
           "id": "1.34",
           "description": "Identify how multiplexing is useful to use several application protocols over the same connection"
         }
-      ]
+      ],
+      "levels": ["shallow", "deep"]
     },
     "1.4": {
       "description": "Understand the content routing mechanisms used in a Distributed Hash Table",
