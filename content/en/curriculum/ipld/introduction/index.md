@@ -46,7 +46,7 @@ Treating the data layer as a discrete system provides developers working on cont
 
 {{< youtube Sgf6j_mCdjI >}}
 
-### IPLD and File Data
+## IPLD and File Data
 
 At its most fundamental, **IPFS** is a collection of:
 
@@ -59,7 +59,7 @@ These are both the core concerns of IPLD. IPFS builds on these primitives to pro
 
 Directories are graphs of links that are named; the links point to the blocks of the files within the directory. This forms graphs that address other graphs.
 
-### Prequel to IPLD
+## Prequel to IPLD
 
 The CID that is returned to you when you add a file to IPFS is the entry point to these graph structures. **Graphs** are data structures to organize all the blocks of data pertaining to the respective file. This organization is handled by **"links"**; links help create a logical order of blocks for IPLD to address every subsequent block of data. There will be more on graphs in a later lesson. 
 
