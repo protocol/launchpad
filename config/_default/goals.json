@@ -1,5 +1,115 @@
 {
+  "pln": {
+    "1.1": {
+      "description": "Know what the PL Network is, how Protocol Labs evolved from company to network, as well as the projects, tooling, and DApps being built on the PLN",
+      "subgoals": []
+    },
+    "1.2": {
+      "description": "Understand what the resources and tools are within the PL Network to support teams, individuals, companies, and general growth of our mission",
+      "subgoals": []
+    },
+    "1.3": {
+      "description": "Understand the methods and philosophies about how work and communication is carried out in the Protocol Labs Network & within PLN open source communities",
+      "subgoals": []
+    }
+  },
   "ipfs": {
+    "1.0": {
+      "description": "Understand what IPFS is and why IPFS was started",
+      "subgoals": [
+        {
+          "id": "1.01",
+          "description": "Understand what is a peer to peer (p2p) network"
+        },
+        {
+          "id": "1.02",
+          "description": "Know the difference between centralised, decentralised, and distributed networks"
+        },
+        {
+          "id": "1.03",
+          "description": "Describe limitations and challenges with centralized services versus p2p systems"
+        },
+        {
+          "id": "1.04",
+          "description": "Understand how IPFS is trying to design systems that are future-proof"
+        },
+        {
+          "id": "1.05",
+          "description": "Describe, high level, some of the solutions posed by IPFS"
+        }
+      ],
+      "levels": ["shallow", "deep"]
+    },
+    "1.1": {
+      "description": "Understand Content Addressing, CIDs, and what advantages they present over location-based addressing",
+      "subgoals": [
+        {
+          "id": "1.11",
+          "description": "Be able to describe what mutable data is, and why content in IPFS is immutable"
+        },
+        {
+          "id": "1.12",
+          "description": "Understand difference between location addressing vs content addressing"
+        },
+        {
+          "id": "1.13",
+          "description": "Know the different types of CIDs, and what a CID is made up of"
+        },
+        {
+          "id": "1.14",
+          "description": "Understand why data on IPFS needs to be pinned to be made available to the network"
+        },
+        {
+          "id": "1.15",
+          "description": "Identify how a garbage collection process is done on an IPFS node and how to keep data discoverable on IPFS"
+        }
+      ],
+      "levels": ["shallow", "deep"]
+    },
+    "1.2": {
+      "description": "Be able to explain how content is shared on IPFS",
+      "subgoals": [
+        {
+          "id": "1.21",
+          "description": "Be able to describe what content identifiers and mutable data are"
+        },
+        {
+          "id": "1.22",
+          "description": "Understand the challenges posed in a decentralized content sharing system"
+        },
+        {
+          "id": "1.23",
+          "description": "Understand the basics of the public DHT"
+        },
+        {
+          "id": "1.24",
+          "description": "Be able to explain what a peer, node, and swarm are in the context of IPFS"
+        }
+      ],
+      "levels": ["shallow", "deep"]
+    },
+    "1.3":{
+      "description": "Learn about IPFS Gateways and how they help bridge information between web2 and web3",
+      "subgoals":[
+        {
+          "id": "1.31",
+          "description": "Know the methods to address content in IPFS through Gateways"
+        },
+        {
+          "id": "1.32",
+          "description": "Get familiar with the work being done to bring native IPFS support to browsers"
+        },
+        {
+          "id": "1.33",
+          "description": "Learn about current public Gateways and how any node in the network can provide this service"
+        },
+        {
+          "id": "1.34",
+          "description": "Be able to name projects that use or build upon IPFS, and what those projects do"
+        }
+      ],
+      "levels":["shallow", "deep"]
+    },
     "1.4": {
       "description": "Be able to explain the basics of data transfer in IPFS",
       "subgoals": [
@@ -13,7 +123,7 @@
         },
         {
           "id": "1.43",
-          "description": "Understand what is _the session_ and _the ledger_ in the context of Bitswap"
+          "description": "Understand what is the session and the ledger in the context of Bitswap"
         },
         {
           "id": "1.44",
@@ -23,7 +133,62 @@
           "id": "1.45",
           "description": "Discover what advantages Graphsync has over Bitswap"
         }
-      ]
+      ],
+      "levels": ["deep"]
+    },
+    "1.5":{
+      "description": "Gain knowledge of the IPFS architecture and the different components and services",
+      "subgoals":[
+        {
+          "id":"1.51",
+          "description": "Understand the flow of files that go through IPFS"
+        },
+        {
+          "id":"1.52",
+          "description": "Gain an introductory understanding of Linked Data"
+        },
+        {
+          "id":"1.53",
+          "description": "Demystify the core components that purely make up IPFS"
+        },
+        {
+          "id":"1.54",
+          "description": "Lean into technical details of mutable data on IPFS"
+        }
+      ],
+      "levels":["deep"]
+    },
+    "1.6": {
+      "description": "Be able to explain the basics of UnixFS",
+      "subgoals": [
+        {
+          "id": "1.61",
+          "description": "Understand what is UnixFS and what problem it solves"
+        },
+        {
+          "id": "1.62",
+          "description": "Learn how files with more than a single block are labeled"
+        },
+        {
+          "id": "1.63",
+          "description": "Go over the protobuf format, and its main field"
+        }
+      ],
+      "levels": ["deep"]
+    }
+  },
+  "dev-tools": {
+    "1.1": {
+      "description": "Understand what are Dev-Tools and why they are important for developers.",
+      "subgoals": []
+    },
+    "1.2": {
+      "description": "Get to know the main Dev-Tools available in the IPFS and Filecoin ecosystem.",
+      "subgoals": []
+    },
+    "1.3": {
+      "description": "Know how you can add you own Dev-Tools to the Launchpad curriculum, so that other people can learn about them.",
+      "subgoals": []
     }
   }
 }

@@ -15,14 +15,22 @@
     {{ if .HasChildren -}}
     <div class="collapse show" id="section-{{ .Identifier }}" id="section-{{ .Identifier }}">
       <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+        {{- $active := or ($currentPage.IsMenuCurrent "tutorials" .) ($currentPage.HasMenuCurrent "tutorials" .) -}}
+        {{- $active = or $active (eq $currentPage.Section "gitpod") -}}
+        <li style="display: flex; align-items: center;">
+          <img src="https://cdn-icons-png.flaticon.com/128/5683/5683325.png" width="20" height="20" />
+          <a class="docs-link rounded{{ if $active }} active{{ end }}" href="/tutorials/gitpod" style="margin-left: 0.4rem; font-size: 17.5px;">Setting up the environment {{ .Identifier }}</a>
+        </li>
         {{ range .Children -}}
         {{- $active := or ($currentPage.IsMenuCurrent "tutorials" .) ($currentPage.HasMenuCurrent "tutorials" .) -}}
         {{- $active = or $active (eq $currentPage.Section .Identifier) -}}
         <li style="display: flex; align-items: center;" data-id="{{ .Page.File.UniqueID }}">
           {{ if eq .Page.Params.category "lecture" }}
           <img src="/icons/lecture.png" width="20" height="20" />
-          {{ else }}
+          {{ else if eq .Page.Params.category "tutorial" }}
           <img src="/icons/tutorial.png" width="20" height="20" />
+          {{ else if eq .Page.Params.category "info" }}
+          <img src="https://cdn-icons-png.flaticon.com/128/5683/5683325.png" width="20" height="20" />
           {{ end }}
           <a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}" style="margin-left: 0.4rem; font-size: 17.5px;">{{ .Name }}</a>
         </li>

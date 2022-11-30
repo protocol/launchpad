@@ -45,7 +45,7 @@ In this 4 minute talk by Jeromy Johnson & Juan Benet, understand how Filecoin, w
 
 {{< youtube TzfcqPzSR0s >}}
 
-### [Deals]((https://docs.filecoin.io/about-filecoin/how-filecoin-works/#deals))
+### [Deals](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#deals)
 
 There are two main types of deals in Filecoin: storage deals and retrieval deals.
 

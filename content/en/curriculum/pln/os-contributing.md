@@ -8,14 +8,35 @@ menu:
 weight: 60
 category: lecture
 level:
+- shallow
 - deep
 ---
 
 ## The Projects
-Get started contributing to IPFS Projects, with these high-traffic repos
+Open Source Software is at the core of Protocol Labs. You can explore the repos here to get a sense of what the core technologies and repositories behind Protocol Labs are, how these projects operate.
+
+For those who want to dive in deep, get started contributing to IPFS Projects, with these high-traffic repos
+
+## The Protocol Labs OSS Projects
+
+### IPFS, IPLD, libp2p, and Filecoin
+
+The four main projects focused on in this curriculum are IPFS, IPLD, Libp2p, and Filecoin. Most of the information and interaction can be found on docs and GitHub organizations:
+
+![](projects.png)
+
+* **IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs)
+
+* **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld)
+
+* **Libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p)
+
+* **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)
+
+Note that these are not the only projects in the core Protocol Labs stack, and there are many more, such as [Multiformats](https://multiformats.io/), [Drand](https://drand.love/), [Bacalhau](https://github.com/filecoin-project/bacalhau), and more that are continually being added and updated to contribute to the PLN.
 
 ### PL Repos
-* [go-ipfs](https://github.com/ipfs/go-ipfs) is a high traffic project, with many contributors from outside PL.
+* [kubo](https://github.com/ipfs/kubo) (formerly go-ipfs) is a high traffic project, with many contributors from outside PL.
 * [libp2p](https://github.com/libp2p/go-libp2p-core) is the home of the OSS project that makes up the networking layer used by PL.
 * [ipfs-cluster](https://github.com/ipfs/ipfs-cluster) provides data orchestration across a swarm of IPFS daemons by allocating, replicating and tracking a global pinset distributed among multiple peers.
 * [js-ipfs](https://github.com/ipfs/js-ipfs) has multiple JS projects in a single repo. See the [what they each do](https://github.com/ipfs/js-ipfs#structure).
@@ -26,7 +47,7 @@ Get started contributing to IPFS Projects, with these high-traffic repos
 ### Graphical/ User Interfaces
 We often see issues being filled in these repos that end up getting moved elsewhere:
 * [IPFS Desktop](https://github.com/ipfs/ipfs-desktop/). Use [IPFS Desktop](https://docs.ipfs.io/install/ipfs-desktop/#ipfs-desktop) to get acquainted with IPFS without needing to touch the terminal — or, if you're already experienced, use the powerful menubar/taskbar shortcuts alongside the command line to make your IPFS workflow faster.
-* [IPFS Web UI](https://github.com/ipfs/ipfs-webui/) is [a web interface](https://webui.ipfs.io/#/welcome) to IPFS, shipped with go-ipfs, js-ipfs, and ipfs-desktop.
+* [IPFS Web UI](https://github.com/ipfs/ipfs-webui/) is [a web interface](https://webui.ipfs.io/#/welcome) to IPFS, shipped with kubo (go-ipfs), js-ipfs, and ipfs-desktop.
 * [IPFS Companion](https://github.com/ipfs/ipfs-companion/) is a browser extension for Firefox, Chrome, Brave, Opera, and Edge.
 
 ### Docs
@@ -39,6 +60,9 @@ Contribute while you learn more about PL projects:
 
 ### Dashboards
 * See this [dashboard for go-ipfs projects and tickets](https://github.com/orgs/ipfs/projects/16/views/1)
+
+
+{{% level type="[deep]" %}}
 
 ## How to Contribute
 
@@ -107,3 +131,5 @@ See all the sections below for a comprehensive picture. The pages in these secti
 * [Handling Pushback in Code Reviews](https://google.github.io/eng-practices/review/reviewer/pushback.html)
 
 See also the [CL Author’s Guide](https://google.github.io/eng-practices/review/developer/), which gives detailed guidance to developers whose CLs are undergoing review.
+
+{{% /level %}}

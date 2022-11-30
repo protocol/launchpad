@@ -7,11 +7,11 @@ assignees: ''
 
 ---
 
-** Describe the use case**
- What were you trying to do?
+**Describe the use case**
+<!-- What were you trying to do? -->
 
-** Describe the problem**
-What issue are you trying to solve
+**Describe the problem**
+<!-- What issue are you trying to solve -->
 
 **Proposed Solution**
-How can this Problem be solved?
+<!-- How can this Problem be solved? -->
