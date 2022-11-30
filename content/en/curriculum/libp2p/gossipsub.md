@@ -1,5 +1,5 @@
 ---
-title: "Gossipsub"
+title: "Publish/Subscribe"
 description: "A Publish / Subscribe Message Delivery Network"
 draft: false
 menu:
@@ -11,16 +11,29 @@ level:
 - deep
 ---
 
-### What is Gossipsub?
+A PubSub (Publish/Subscribe) system allows peers to only receive messages of a specific type. A _publisher_ sends messages of a specific type to _subscribers_ of that type. For example, consider a chat application with a chat group called `music`. Users interested subscribe to the group; when someone sends a message to the group, only those subscribed receive the message.
 
-Gossipsub is a pubsub (publish/subscribe) protocol that provides the routing for messaging that can be used in blockchain environments for transaction messages that transfer value, and block messaging that update the status of the blockchain, along with other applications.
+In libp2p, peers subscribe and send messages to _topics_. The concept is pretty similar to messaging systems (e.g., Kafka), but libp2p allows this behavior in a decentralized way. The main implementations of the protocol are Floodsub and Gossipsub.
 
-Before Gossibpsub, permissionless networks like Ethereum and Fliecoin used a messaging layer called flooding (or floodsub) to help protect against malicious attacks that would slow down or stop messaging on that network, however flooding can create a lot of redundancy because it floods the nodes in the network with messages.
+## FloodSub
 
-Gossipsub uses a different method of communication, forwarding metadata to peers in the network, using a **lazy pull** that limits the number of peers a node communicates with, but directly sharing nodes in their network (known as an **Eager Push**), and uses a **score function** to highlight good behavior or nodes, and help flag malicious activity.
+In Floodsub, the first implementation of the pub/sub protocol, messages are delivered to all the connected nodes of a peer. For example, consider the following diagram.
 
-Learn more in the [GossipSub paper](https://arxiv.org/pdf/2007.02754.pdf)
+![Floodsub message delivery](floodsub.png)
 
+1. `Peer 1` is connected to `Peer 2` and `Peer 3`; `Peer 2` and `Peer 3` are connected to `Peer 4`.
+2. `Peer 1` publishes a message, which is sent to `Peer 2` and `Peer 3`.
+3. Both `Peer 2` and `Peer 3` forward the message to `Peer 4`.
+
+FloodSub is simple, reliable, and highly resistant to malicious actors and censors, but the main problem of FloodSub is that it duplicates messages, thus using a lot of bandwidth. In the previous example, `Peer 4` receives the message twice.
+
+[Gossipsub](https://arxiv.org/pdf/2007.02754.pdf), the protocol developed after FloodSub, tries to reduce the number of duplicate messages (i.e., bandwidth) by taking a different approach. Gossipsub is covered later in the Launchpad curriculum.
+
+## Gossipsub
+
+
+
+You can get more information about PubSub in the [libp2p documentation](https://docs.libp2p.io/concepts/publish-subscribe/).
 
 ### Videos
 
