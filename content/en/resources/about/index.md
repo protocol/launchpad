@@ -1,0 +1,11 @@
+---
+title: "About Launchpad"
+description: "The What and Why of Web3"
+draft: false
+menu:
+resources:
+parent: "resources-prerequisites"
+weight: 20
+---
+
+{{< aboutpage >}}
