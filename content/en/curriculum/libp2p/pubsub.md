@@ -1,6 +1,6 @@
 ---
 title: "Publish/Subscribe"
-description: "A Publish / Subscribe Message Delivery Network"
+description: "Learn about the pub/sub capabilities of libp2p"
 draft: false
 menu:
     curriculum:
@@ -31,9 +31,19 @@ FloodSub is simple, reliable, and highly resistant to malicious actors and censo
 
 ## Gossipsub
 
+The main goal of Gossipsub is to reduce the bandwith used in delivering messages.
+In the Gossipsub, peers can connect by setting up a _full-message connection_ or a _metadata-only connection_.
+Full-message peers exchange all the information about the message; metadata-only peers exchange only data identifying the message, but not the full message itself.
 
+With this approach, Gossipsub tries to reduce the number duplicates that a peer receives.
+When a _metadata-only_ peer receives information (remember, not the full message) about a message that would like to fully receive, the connection type is changed.
 
-You can get more information about PubSub in the [libp2p documentation](https://docs.libp2p.io/concepts/publish-subscribe/).
+**Grafting:** a _medata-only_ peer converts to a _full-message_ peer. This happens when a peer is interested in receiving full messages from a peer (mainly because the peer holds messages that are relevant).
+**Pruning:** a _full-message_ peer converts to a _medata-only_ peer. This happens when a peer is receiving too many full messages that are not relevant.
+
+The number of _full-message_ peers that a node is connected to, depends on a parameter, _network peering degree_, `D`, which is customizable.
+
+You can get more information about PubSub in the [libp2p documentation](https://docs.libp2p.io/concepts/publish-subscribe/) and the in the following videos, which extensively cover the Gossipsub protocol.
 
 ### Videos
 
