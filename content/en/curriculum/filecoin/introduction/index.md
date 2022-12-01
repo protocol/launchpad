@@ -40,7 +40,7 @@ _Filecoin is a data storage and retrieval marketplace that coordinates untrusted
 
 * **Verifiable storage** – Rather than needing to trust a cloud storage provider or rely on
 legal recourse, the Filecoin Protocol cryptographically verifies data storage.
-* **Open participation** – Anyone with sufficient hardware and an internet connection can be a stroage provider (Filecoin miner) for the Filecoin Network.
+* **Open participation** – Anyone with sufficient hardware and an internet connection can be a storage provider (Filecoin miner) for the Filecoin Network.
 * **Empowers local optimization** – Driven by open participation, market forces will enable more efficient and distributed data storage and communication than centralized storage platforms. The distributed network allows for a more local and resilient architecture and data availability.
 * **Flexible storage options** – As an open platform, the network has the flexibility for the creation & disseminations of tools and services provided by the community of developers improving and building on the protocol.
 * **A community network** – Filecoin provides participants the opportunity to have stake in the networkʼs success. Participants in the network benefit by working together to improve the Filecoin network as a whole.
