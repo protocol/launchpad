@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-ipld"
-weight: 210
+weight: 220
 category: lecture
 level:
 - shallow

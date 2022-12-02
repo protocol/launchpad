@@ -208,15 +208,28 @@
           "description": "Understand the multiformats involved in generating a CID"
         },
         {
-          "id":"1.13",
+          "id": "1.13",
           "description": "Use the CID Inspector to break down and analyze CIDs"
         }
       ],
       "levels": ["shallow", "deep"]
     },
     "1.2": {
-      "description": "Be able to describe graph data structures and Merkle Trees",
-      "subgoals": [{}],
+      "description": "Be able to describe graph data structures and Merkle DAG",
+      "subgoals": [
+        {
+          "id": "1.21",
+          "description": "Understand how a Merkle DAG is different from other type of graphs"
+        },
+        {
+          "id": "1.22",
+          "description": "Learn how files get broken down to DAGs"
+        },
+        {
+          "id": "1.23",
+          "description": "Learn what happens when a Merkle Dag is mutated"
+        }
+    ],
       "levels": ["shallow", "deep"]
     },
     "1.3": {
