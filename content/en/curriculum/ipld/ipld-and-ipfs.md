@@ -14,7 +14,7 @@ level:
 
 At its core, IPFS is best viewed as a suite of standards for storing, sharing, navigating and manipulating IPLD data. IPFS is particularly skilled at leading with structured file data, and is particularly good at performing peer to peer data sharing.
 
-#### How IPFS Deals With Files | IPFS Camp 2019 Workshop – Alan Shaw
+## How IPFS Deals With Files | IPFS Camp 2019 Workshop – Alan Shaw
 
 In the following talk, Alan Shaw goes over theory and live examples of what happens with files added to IPFS. He highlights different variations to the underlying data structure created with a file added to IPFS and how it affects the CID. 
 
@@ -77,16 +77,6 @@ UnixFS data also includes additional information about the form that the graph t
 
 
 More information about UnixFS can be found in the [**IPFS docs**](https://docs.ipfs.io/concepts/file-systems/#unix-file-system-unixfs) or in the UnixFS [**specification**](https://github.com/ipfs/specs/blob/master/UNIXFS.md).
-
-### Sharding
-
-Sharding of IPFS file graphs is an important concept because we use similar approaches in different ways to scale our various data structures, including the Filecoin blockchain (which is _not_ file data and uses DAG-CBOR codec).
-
-UnixFS uses a sharding technique called a HAMT, or [Hash Array Mapped Trie](https://en.wikipedia.org/wiki/Hash_array_mapped_trie). This is a common algorithm used in many programming languages to provide efficient associative arrays (maps), and it turns out to be particularly useful in the content addressed world due to its stability and balanced nature. With a HAMT, we can build an arbitrarily large data structure from linked IPLD blocks that store `Name:Link` mappings. Consider the challenge of storing Wikipedia on IPFS, where almost all pages are under a single root&mdash;Wikipedia is like a single directory with millions of HTML files. A single DAG-PB block with a `"Links"` list that large would produce a block far too large to store and transfer efficiently. So we use a HAMT to spread it over many blocks, where their `"Links"` lists are made up of links whose names are part of a hash digest of each name of the file.
-
-For an in-depth description on a generalized HAMT as it applies to IPLD, read the [**specification**](https://ipld.io/specs/advanced-data-layouts/hamt/), which also has links to various implementations. (Note that this specification is not *exactly* the same as the implementation used in UnixFS sharding; although it is used heavily throughout the Filecoin chain for its various scalable associative arrays).
-
-More discussion on using IPLD to build distributed data structures can be found in the [Data Structures](distributed-data-structures.md) section.
 
 ## Limitations of File Data
 
