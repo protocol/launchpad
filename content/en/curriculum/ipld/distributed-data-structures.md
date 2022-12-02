@@ -30,6 +30,9 @@ Selecting algorithms for building, traversing and mutating content addressed dat
 
 Directional and acyclic graphs of immutable pieces of data can be challenging to wrangle but scale powerfully.
 
+## HAMTS & Distributed Data Structs by Rod Vagg | IPFS Camp 2022 
+{{% youtube dvd2IMernQQ %}}
+
 ## Example: Super-large array
 
 Let's build an algorithm for storing a scalable distributed *array*. We want to be able to store a few to a few billion elements in our array, and do so with IPLD. Our array could be distributed across many parties, and we shouldn't need to have *all* of the blocks that make up our array just to access a single element. Accessing one element in a super-large array should require minimal block loads from our storage system (or distributed network).
