@@ -10,6 +10,16 @@ category: lecture
 level:
 - shallow
 - deep
+objectives:
+  show: true
+  goals:
+  - "1.3"
+  subgoals:
+  - 1.31
+  - 1.32
+  - 1.33
+  - 1.34
+  - 1.35
 ---
 
 At its core, IPFS is best viewed as a suite of standards for storing, sharing, navigating and manipulating IPLD data. IPFS is particularly skilled at leading with structured file data, and is particularly good at performing peer to peer data sharing.
@@ -22,14 +32,9 @@ In the following talk, Alan Shaw goes over theory and live examples of what happ
 
 At a high level, the talk covered the following concepts:
 
-**Importing files to IPFS**
-
-Files are broken down into smaller pieces. These chunks of data and how they link up, are how we get self-describing and data verification properties of CIDs. 
-* Chunks of a file are strung together into DAGs by IPFS; oftentimes the links create a “parent-children” tree structure.
-* Customizing the DAG in any way, shape, or form, can yield a different “parent-children” relationship.
-* The highest (top) level node is also known as the “root node” or root CID. This is the CID returned to you when you add a file to IPFS!
-* The Directed Acyclic Graphs (DAGs) structures in IPFS are customizable. The default in IPFS is DAG-PB.
-* Customizing the chunk size also yields a different DAG, but has many tradeoffs. Find out more in the [merkle dag section](/curriculum/ipld/merkle-dags/#merkle-dags--ipfs-camp-2019---mikeal-rogers).
+* Files are broken down into smaller blobs (chunks) of data
+* Chunks of a file are strung together into DAGs by UnixFS processes
+* Customizing the DAG in any way, shape, or form, yields a different CID
 * Every chunk is wrapped in UnixFS metadata. This helps IPFS distinguish directories from files. As well as, help link chunks together.
 
 
