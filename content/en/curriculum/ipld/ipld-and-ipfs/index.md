@@ -43,6 +43,7 @@ At a high level, the talk covered the following concepts:
 * Customizing the DAG in any way, shape, or form, yields a different CID
 * Every chunk is wrapped in UnixFS metadata. This helps IPFS distinguish directories from files. As well as, help link chunks together.
 
+You can access and experiment with the same DAG builder from the video at [https://dag.ipfs.tech/](https://dag.ipfs.tech/)
 
 ## A Brief DAG-PB Primer
 
@@ -101,4 +102,10 @@ _Codecs are how IPLD moves data between the raw byte representation and their eq
 ### Codecs in Production
 The Filecoin chain is probably the most sophisticated example of DAG-CBOR IPLD blocks used to represent a very large and scalable graph of structured data. Instead of having to load complete files, decode their contents and find individual pieces of data, an IPLD graph like the Filecoin chain can be navigated, transferred and reasoned about using IPLD [paths or selectors](paths-selectors.md).
 
-<!-- ## Intro to Schemas -->
+## Intro to Schemas
+Schemas are an important tool for extending IPLD’s scope into the application layer where coherent and useful data structures are important; IPLD's primary focus is the storage and transmission of data. Schemas introduce additional Kinds to the Data Model to support application developers' reasoning about the shape of data that we expect to flow through an IPLD based system.
+
+## Further Reading
+* [**IPLD Data Model**](https://ipld.io/docs/data-model/)
+* [**IPLD Codecs**](https://ipld.io/docs/codecs/)
+* [**IPLD Schemas**](https://ipld.io/docs/schemas/)
