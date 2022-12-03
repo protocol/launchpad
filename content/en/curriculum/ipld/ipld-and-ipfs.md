@@ -21,7 +21,13 @@ objectives:
   - 1.34
   - 1.35
 ---
+## Background Information
+In order to understand the pieces that tie IPFS and IPLD together, you will need to understand the following fundamental concepts:
+* [**JSON**](https://www.w3schools.com/whatis/whatis_json.asp) - An acronym for "JavaScript Object Notation". This is an industry standard for formatting different types of data in a human-readable way.
+* [**Protobuf**](https://developers.google.com/protocol-buffers/docs/overview) - Is an industry standard for declaring just one way on how to format data that will be streamed over the internet for storage or processing. This uses a JSON formatting.
+* [**Merkle DAGs**](/curriculum/ipld/merkle-dags) - Built from the bottom up, impossible to have circular references, and parents’ hashes are built from the hashes of its children nodes.
 
+### The Core of IPFS
 At its core, IPFS is best viewed as a suite of standards for storing, sharing, navigating and manipulating IPLD data. IPFS is particularly skilled at leading with structured file data, and is particularly good at performing peer to peer data sharing.
 
 #### How IPFS Deals With Files | IPFS Camp 2019 Workshop – Alan Shaw
@@ -51,8 +57,8 @@ A typical DAG-PB block, represented as JSON, might look something like this:
     "Data": "... binary data",
     "Links": [
         {
-            "Name": "link name",
-            "Tsize": X,
+            "Name": "named link of file or directory",
+            "Tsize": <number>, "(size of graph from this link, down to leaves)"
             "Hash": CID
         },
         {
@@ -61,24 +67,19 @@ A typical DAG-PB block, represented as JSON, might look something like this:
     ]
 }
 ```
-
-Both the `"Data"` and `"Links"` fields are optional, as are `"Name"` and `"Tsize"` fields in each of the `"Links"` elements, but they are generally all present. Each `"Links"` element contains:
-
-* A `"Name"` field which is typically the name of the file or directory data being linked to
-* A `"Tsize"` field which provides a _hint_ at the size of the graph from this link down to its leaves. We don't have assurances of this value so we treat it as _hint_.
-* A `"Hash"` field which contains a CID for this link.
-
-The `"Name"` field is particularly important because it is used for a special form of pathing. When you request file data as a `<CID>/<path>` pair from an IPFS node or gateway, the path is usually interpreted by looking for that name in the `"Name"` fields of the `"Links"` list.
-
-The `"Data"` field can be used to store arbirary bytes, _but_ it's typically used for **UnixFS** metadata. This is how we layer some additional features to the storage, retrieval and navigation of file-based data.
+Things to note:
+* Both the `"Data"` and `"Links"` fields are optional, as are `"Name"` and `"Tsize"`, but they are generally all present.
+* `"Tsize"` - We don't have assurances of this value so we treat it as _hint_.
+* The `"Name"` field is particularly important because when you request file data from IPFS, the path is usually interpreted by looking for that name in the `"Name"` field.
+* The `"Data"` field can be used to store arbitrary bytes, _but_ it's typically used for **UnixFS** metadata.
 
 Read more about the DAG-PB codec in the [**specification**](https://ipld.io/specs/codecs/dag-pb/).
 
 ## UnixFS
 
-UnixFS is an additional encoding layer _above_ the DAG-PB codec that is applied to serialize filesystem metadata. Metadata can include file timestamps, permissions, mime types and whether this object is a file, directory or even a symlink. This data is all encoded in a second protobuf format within the `"Data"` field of a DAG-PB block. This means that a single block may incur a double Protobuf decode to retrieve complete information about the filesystem.
+[UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs) is a data format for creating directory & file hierarchies and Merkle DAGs. UnixFS is an additional encoding layer _above_ the DAG-PB codec that is applied to serialize filesystem metadata. Metadata can include file timestamps, file permissions, mime (file) types and whether this object is a file, directory or even a symlink. This data is all encoded in a second protobuf format within the `"Data"` field of a DAG-PB block. This means that a single block may incur a double Protobuf decode to retrieve complete information about the filesystem.
 
-UnixFS data also includes additional information about the form that the graph takes as it maps to filesystem data. For particularly large numbers of files, (or a large number of chunks if the files are too big), the graphs must be organised in a way that scales. This introduces the need for a "sharding" system to ensure that we don't bloat single blocks. Too many links will make the blocks themselves unmanageably large (there is also a practical limit to block size, we prefer to try and keep them below 1Mb).
+UnixFS data also includes additional information about the form that the graph takes as it maps to filesystem data. For particularly large numbers of files, (or a large number of chunks if the files are too big), the graphs must be organized in a way that scales. This introduces the need for a "sharding" system to ensure that we don't bloat single blocks. Too many links will make the blocks themselves unmanageably large (there is also a practical limit to block size, we prefer to try and keep them below 1Mb).
 
 
 More information about UnixFS can be found in the [**IPFS docs**](https://docs.ipfs.io/concepts/file-systems/#unix-file-system-unixfs) or in the UnixFS [**specification**](https://github.com/ipfs/specs/blob/master/UNIXFS.md).
