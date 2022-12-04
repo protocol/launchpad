@@ -19,7 +19,6 @@ objectives:
   - 1.32
   - 1.33
   - 1.34
-  - 1.35
 ---
 ## Background Information
 In order to understand the pieces that tie IPFS and IPLD together, you will need to understand the following fundamental concepts:
