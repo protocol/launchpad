@@ -7,6 +7,14 @@ menu:
         parent: "curriculum-libp2p"
 weight: 330
 category: lecture
+objectives:
+  show: true
+  goals:
+  - 1.5
+  subgoals:
+  - 1.51
+  - 1.52
+  - 1.53
 level:
 - deep
 ---
