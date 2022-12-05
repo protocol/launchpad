@@ -225,6 +225,19 @@
         }
       ],
       "levels": ["deep"]
+    },
+    "1.6": {
+      "description": "Learn what is NAT Traversal and what different methods are available",
+      "subgoals": [
+        {
+          "id": "1.61",
+          "description": "Describe how a Circuit Relay works"
+        },
+        {
+          "id": "1.62",
+          "description": "Identify the main differences between Circuit Relay and Hole Punching"
+        }
+      ]
     }
   }
 }
