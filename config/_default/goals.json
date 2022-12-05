@@ -276,14 +276,40 @@
       ],
       "levels": ["deep"]
     },
-    "1.5": {
-      "description": "Know how distributed data structures bring improvements to decentralized networks",
-      "subgoals": [{}],
+    "1.6": {
+      "description": "Gain a conceptual understanding on what algorithms we use with Merkle DAGs to build distributed data structures",
+      "subgoals": [
+        {
+          "id": "1.61",
+          "description": "Understand what makes distributed data structures so powerful"
+        },
+        {
+          "id": "1.62",
+          "description": "Learn the basics of the HAMT algorithm operations"
+        },
+        {
+          "id": "1.63",
+          "description": "How to traverse a Merkle DAG with IPLD pathing"
+        }
+      ],
       "levels":["deep"]
     },
-    "1.6": {
+    "1.7": {
       "description": "Learn about the CAR format and how it helps data distribution",
-      "subgoals": [{}],
+      "subgoals": [
+        {
+          "id":"1.71",
+          "description": "fdsa"
+        },
+        {
+          "id": "1.72",
+          "description": "fdsa"
+        },
+        {
+          "id": "1.73",
+          "description": "dsa"
+        }
+      ],
       "levels": ["deep"]
     }
   },
