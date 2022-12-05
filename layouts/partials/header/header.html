@@ -164,7 +164,7 @@
 </div>
 {{ end -}}
 
-{{ if and (not .IsHome) (eq .Section "curriculum") -}}
+{{ if and (not .IsHome) (not .IsSection) -}}
 <nav class="doks-subnavbar py-2 sticky-lg-top{{ if eq .Site.Params.options.flexSearch false }} d-lg-none{{ end }}" aria-label="Secondary navigation">
   <div class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} d-flex align-items-md-center">
 
@@ -214,7 +214,9 @@
     <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
       {{ if eq .Section "curriculum" -}}
         {{ partial "sidebar/curriculum-menu.html" . }}
-      {{ end -}}
+      {{ else if eq .Section "tutorials" -}}
+        {{ partial "sidebar/tutorials-menu.html" . }}
+      {{ end }}
     </nav>
   </aside>
 </div>

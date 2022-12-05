@@ -20,14 +20,7 @@
 
 [[main]]
   name = "Resources"
-  url = "/resources/additional-learning/"
-  weight = 3000
-  [main.params]
-    identifier = "resources"
-
-[[main]]
-  name = "Resources"
-  url = "/resources/"
+  url = "/resources/about/"
   weight = 3500
   [main.params]
     identifier = "resources"

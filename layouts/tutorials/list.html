@@ -4,7 +4,7 @@
     <div>
       <div style="font-size: 38px; font-weight: bold;">Tutorials</div>
       <div style="margin-top: -11px">Learn by completing hands-on exercises</div>
-      <div style="display: flex; flex-wrap: wrap;" class="tutorials-container">
+      <div style="display: flex; flex-wrap: wrap; margin-top: 20px;" class="tutorials-container">
         {{ range $index, $element := .Site.Menus.tutorials -}}
           {{ $count := 0 }}
           {{ $link := "" }}

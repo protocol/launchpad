@@ -17,10 +17,10 @@
       <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
         {{- $active := or ($currentPage.IsMenuCurrent "tutorials" .) ($currentPage.HasMenuCurrent "tutorials" .) -}}
         {{- $active = or $active (eq $currentPage.Section "gitpod") -}}
-        <li style="display: flex; align-items: center;">
+        <!--<li style="display: flex; align-items: center;">
           <img src="https://cdn-icons-png.flaticon.com/128/5683/5683325.png" width="20" height="20" />
           <a class="docs-link rounded{{ if $active }} active{{ end }}" href="/tutorials/gitpod" style="margin-left: 0.4rem; font-size: 17.5px;">Setting up the environment {{ .Identifier }}</a>
-        </li>
+        </li>-->
         {{ range .Children -}}
         {{- $active := or ($currentPage.IsMenuCurrent "tutorials" .) ($currentPage.HasMenuCurrent "tutorials" .) -}}
         {{- $active = or $active (eq $currentPage.Section .Identifier) -}}
