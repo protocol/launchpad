@@ -12,11 +12,11 @@ level:
 objectives:
   show: true
   goals:
-  - "1.6"
+  - "1.5"
   subgoals:
-  - 1.61
-  - 1.62
-  - 1.63
+  - 1.51
+  - 1.52
+  - 1.53
 ---
 
 ## Beyond File Data

@@ -276,19 +276,19 @@
       ],
       "levels": ["deep"]
     },
-    "1.6": {
+    "1.5": {
       "description": "Gain a conceptual understanding on what algorithms we use with Merkle DAGs to build distributed data structures",
       "subgoals": [
         {
-          "id": "1.61",
+          "id": "1.51",
           "description": "Understand what makes distributed data structures so powerful"
         },
         {
-          "id": "1.62",
+          "id": "1.52",
           "description": "Learn the basics of the HAMT algorithm operations"
         },
         {
-          "id": "1.63",
+          "id": "1.53",
           "description": "How to traverse a Merkle DAG with IPLD pathing"
         }
       ],
