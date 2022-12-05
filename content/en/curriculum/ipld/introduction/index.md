@@ -64,25 +64,6 @@ Directories are graphs of links that are named; the links point to the blocks of
 The CID that is returned to you when you add a file to IPFS is the entry point to these graph structures. **Graphs** are data structures to organize all the blocks of data pertaining to the respective file. This organization is handled by **"links"**; links help create a logical order of blocks for IPLD to address every subsequent block of data. There will be more on graphs in a later lesson. 
 
 ![Picture of a graph](tree_graph.png)
-
-{{% level type="[deep]" %}}
-### Tutorials
-s
-For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/ipld). Tutorials you should complete include:
-
-* [Merkle DAGs: Structuring Data for the Distributed Web](https://proto.school/merkle-dags)
-* [Anatomy of a CID](https://proto.school/anatomy-of-a-cid)
-* [P2P Data Links with Content Addressing](https://proto.school/basics)
-
-
-#### [IPLD Tutorial - DAGs, Roots, and UnixFS | Rod Vagg](https://youtu.be/nLgxTYoF-K4)
-
-[Follow along with this activity](https://www.notion.so/pl-strflt/Explaining-DAGs-Roots-and-UnixFS-to-newbies-ff89ed883f1b4c5da8af13cd8ad07de9) in the CLI that will help you understand the Merkle DAG structure, Merkle Roots, and the UnixFS file format
-
-{{< youtube nLgxTYoF-K4 >}}
-
-{{% /level %}}
-
 ### Further Introductory Reading:
 
 * [**A Terse, Quick IPLD Primer for the Engineer**](https://ipld.io/docs/intro/primer/)
