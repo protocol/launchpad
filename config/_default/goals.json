@@ -255,8 +255,25 @@
       "levels": ["shallow", "deep"]
     },
     "1.4": {
-      "description": "Go over the underlying data formats and layouts in IPLD",
-      "subgoals":[{}],
+      "description": "Go over the underlying data types and formats in IPLD",
+      "subgoals":[
+        {
+          "id": "1.41",
+          "description": "Understand the different types of data used with IPLD"
+        },
+        {
+          "id": "1.42",
+          "description": "Discover the default codec in IPFS and how it differs from other IPLD-native codecs"
+        },
+        {
+          "id": "1.43",
+          "description": "Describe how IPLD is interoperable with other addressed systems"
+        },
+        {
+          "id": "1.44",
+          "description": "Understand how Schemas provide encoding and storage convenience for application developers"
+        }
+      ],
       "levels": ["deep"]
     },
     "1.5": {
