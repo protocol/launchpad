@@ -67,7 +67,6 @@ The CID that is returned to you when you add a file to IPFS is the entry point t
 
 {{% level type="[deep]" %}}
 ### Tutorials
-s
 For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/ipld). Tutorials you should complete include:
 
 * [Merkle DAGs: Structuring Data for the Distributed Web](https://proto.school/merkle-dags)
