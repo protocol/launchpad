@@ -1,4 +1,4 @@
-not---
+---
 title: "The Protocol Labs Network"
 description: The many projects and organizations that make up the PL Network
 draft: false
@@ -12,7 +12,7 @@ level:
 - deep
 ---
 
-Protocol Labs is a constantly evolving network is made up of 450+ projects, companies, and organizations. Understanding the landscape of organization, projects, and teams can be complex, and this section presents tools that can help you understand and navigate these systems and organizations.
+Protocol Labs is a constantly evolving network is made up of 450+ projects, companies, and organizations. Uginderstanding the landscape of organization, projects, and teams can be complex, and this section presents tools that can help you understand and navigate these systems and organizations.
 
 ### Protocol Labs Portal
 This portal is the central point of reference for all the resources available to PLN members. This portal includes information about Network Services from Mosaia, the network directory, communication channesl as well.
