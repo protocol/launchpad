@@ -10,17 +10,29 @@ category: lecture
 level:
 - shallow
 - deep
+objectives:
+  show: true
+  goals:
+  - "1.1"
+  subgoals:
+  - 1.11
+  - 1.12
+  - 1.13
 ---
+## Background Information
+In order to understand the pieces that make up a CID, you will need to understand the following fundamental concepts:
+
+* [**Binary vs Bits vs Bytes**]() - When we refer to something as **Binary** (**binary format** or **binary data**) it is easily identified by consisting of only ones or zeros. **Bits**, in a computer, are ones or zeros. **Bytes**, in a computer, are groups of 8 *bits*.
+* [**Hashing**](https://www.sentinelone.com/cybersecurity-101/hashing/) – When we refer to a 'hash', we are refering to the output of a mathematical process called 'hashing'. This hashing process converts one value to another of a fixed length and is unique. This hash is generally in a binary format.
+* [**Base Encodings**](https://skorks.com/2009/08/different-types-of-encoding-schemes-a-primer/) – This is basically the process of converting binary numbers into a compressed set of characters. For example, Base 10 encoding says that 0001 1010 = 26, but that same number in base64 = MDAwMSAxMDEw. [Play around with different encoding here](https://cryptii.com/pipes/binary-to-base64)
+* [**Varints**](https://carlmastrangelo.com/blog/lets-make-a-varint) – Variable length integers, or Varints, are numbers optimized for saving space. The idea is to use the smallest amount of bytes needed to represent a number. For example, small numbers don't need as many bytes to represent them (0000 0010 == 2), so we would only use one byte as opposed to traditionally using 8 bytes.
+* [**CIDs (Content Identifiers)**](https://mikeal.notion.site/what-is-web3-994f2d4cf1944e99a898643cb704d9a6#e34e81fc76b0404ab20f55f0940dfbcd) –  CIDs are how we address things in the distributed web. A CID is a binary address format where [varints](https://carlmastrangelo.com/blog/lets-make-a-varint) are used to describe details of the binary address.
+
+For a more in depth look at these topics, refer to the [Content Addressing](/curriculum/ipfs/content-addressing) in IPFS section. 
 
 ## Content Identifiers (CIDs)
 
-CIDs are:
-
-* _the most fundamental ingredient of the IPFS architecture_
-* used for **content addressing**
-* a **hash** digest with some metadata
-* **self describing**
-* used to name every piece of data in IPFS
+CIDs are _the most fundamental ingredient of the IPFS architecture_. They are used for finding any content in a content addressed system. They consist of a **hash** followed by some **metadata**. This metadata tells the user various details about the hash itself, thus creating a **self describing** property. CIDs are used to name every piece of data in IPFS.
 
 ![](cids.png)
 

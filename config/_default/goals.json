@@ -212,12 +212,32 @@
           "description": "Use the CID Inspector to break down and analyze CIDs"
         }
       ],
-      "levels":["shallow", "deep"]
+      "levels": ["shallow", "deep"]
     },
     "1.2": {
       "description": "Be able to describe graph data structures and Merkle Trees",
-      "subgoals": [],
-      "levels":["shallow", "deep"]
+      "subgoals": [{}],
+      "levels": ["shallow", "deep"]
+    },
+    "1.3": {
+      "description": "Understand the different data types used in IPLD",
+      "subgoals": [{}],
+      "levels": ["deep"]
+    },
+    "1.4": {
+      "description": "Go over the underlying data formats and layouts in IPLD",
+      "subgoals":[{}],
+      "levels": ["deep"]
+    },
+    "1.5": {
+      "description": "Know how distributed data structures bring improvements to decentralized networks",
+      "subgoals": [{}],
+      "levels":["deep"]
+    },
+    "1.6": {
+      "description": "Learn about the CAR format and how it helps data distribution",
+      "subgoals": [{}],
+      "levels": ["deep"]
     }
   },
   "dev-tools": {
