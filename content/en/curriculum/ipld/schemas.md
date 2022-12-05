@@ -19,8 +19,9 @@ objectives:
 
 IPLD concerns itself with the data layer of the distributed web. Its scope begins above the data storage and transmission layer, only interested in how data elements are encoded and decoded to a particular storage format and then presented in a consistent and usable form when above this encoding layer.
 
-Schemas are an important tool for extending IPLD’s scope into the application layer, where coherent and useful data structures are important, rather than disjointed and atomized data elements. In this way, IPLD Schemas provide a barrier to prevent data encoding and storage concerns from leaking too heavily into the application layer. Instead, IPLD can present a clear data abstraction to distributed web developers, a strong separation of concerns. Further, IPLD Schemas contain tools to embed advanced logic able to power bi-directional transformations, further pushing data representation concerns out of the application layer.
+Schemas are an important tool for extending IPLD’s scope into the application layer, where coherent and useful data structures are important, rather than disjointed and atomized data elements. In this way, IPLD Schemas provide a barrier to prevent data encoding and storage concerns from leaking too heavily into the application layer. Instead, IPLD can present a clear data abstraction to distributed web developers, a strong separation of concerns. Furthermore, IPLD Schemas contain tools to embed advanced logic, able to power bi-directional transformations, further pushing data representation concerns out of the application layer.
 
+Example of a schema:
 ```
 type Message struct {
   msg String
