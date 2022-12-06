@@ -93,6 +93,8 @@ There are a few ways one can get [approved to store data](https://plus.fil.org/l
 
 ![Filcoin Plus Governance](notary.png)
 
+{{% level type="[deep]" %}}
+
 ### Filecoin Deep Dive (Optional)
 
 #### Filecoin for Developers & Builders | Pooja Shah
@@ -124,5 +126,4 @@ In this talk by Pooja Shah of Protocol Labs, learn about the basic functioning a
 
 **Lotus Common Architecture** Currently for those using lotus directly, it is recommended that you have a hardware configuration with 32GB of RAM, an 8-core CPU, and at least 200 GB of SSD storage. See the [Filecoin docs on Hardware requirements](https://docs.filecoin.io/storage-provider/hardware-requirements/)
 
-<!-- ## Getting Started with a Filecoin Node
-Add Tutorial here -->
+{{% /level %}}
