@@ -64,7 +64,7 @@ As mentioned above, storage providers must prove that they are storing the data 
 
 ### [Gas](https://docs.filecoin.io/about-filecoin/how-filecoin-works/#gas-fees)
 
-Executing messages, for example by including transactions or proofs in the chain, consumes both computation and storage resources on the network. Gas is a measure of resources consumed by messages. The gas consumed by a message directly affects the cost that the sender has to pay for it to be included in a new block by a storage provider.
+Executing messages, for example, by including transactions or proofs in the chain, consumes both computation and storage resources on the network. Gas is a measure of resources consumed by messages. The gas consumed by a message directly affects the cost that the sender has to pay for it to be included in a new block by a storage provider.
 
 **Important Gas Concepts**
 
