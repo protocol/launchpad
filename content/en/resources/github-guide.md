@@ -10,7 +10,39 @@ weight: 80
 
 {{< embed src="https://docs.google.com/presentation/d/11V_BA5A64lCY_wFsvuLO4je02zvzJwD5vf2kzONDWyc/embed" width="100%" height="30%">}}
 
-## Markdown quick guide
+## Protocol Labs on Github
+There are a number of different Open Source Software (OSS) organizations and projects that are used to manage the code that makes up what we maintain at Protocol Labs. Everything created at PL is open source. To get to the organization or repo, just type in `github.com/<organization>/<repo>`
+
+## Tutorial – Make a PR
+In this tutorial, you will learn how to use the GUI to make a PR
+
+
+## Guides
+### Github Orgs & Repos
+
+* **Protocol Labs**
+  * /protocol – [https://github.com/protocol](https://github.com/protocol)
+    * thing
+    * /.github – [https://github.com/protocol/.github](https://github.com/protocol/.github)
+* IPFS
+  * /
+* **IPLD**
+  * /ipld – [https://github.com/ipld](https://github.com/ipld)
+* **libp2p**
+  * /libp2p – [https://github.com/libp2p](https://github.com/libp2p)
+* **Filecoin**
+  * /filecoin-project – [https://github.com/filecoin-project](https://github.com/filecoin-project)
+    * /community – [https://github.com/filecoin-project/community](https://github.com/filecoin-project/community)
+    * /bacalhau – [https://github.com/filecoin-project/bacalhau](https://github.com/filecoin-project/bacalhau)
+    * /FIPs – [https://github.com/filecoin-project/FIPs](https://github.com/filecoin-project/FIPs)
+    * /lotus – [https://github.com/filecoin-project/lotus](https://github.com/filecoin-project/lotus)
+* **Other PLN Projects**
+  * /filecoin-saturn – [https://github.com/filecoin-saturn](https://github.com/filecoin-saturn)
+  * /drand - https://github.com/drand
+  * * /boost –
+
+
+### Markdown Guide
 
 Every text input section in [GitHub uses Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/about-writing-and-formatting-on-github). Every Pull Request (PR), review, issue, and comment section supports markdown. Markdown is not specific to Github, but is it's own writing and formatting style. Github has added additional functionality to it that is only usable within Github like interacting with other users with @mentions, issue and PR references, and emoji's!
 
