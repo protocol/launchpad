@@ -24,7 +24,7 @@ Issues are super easy ways for you to make a suggestion to an OSS team, without 
 * Click on the 'Issues' tab to go to the page to submit Issues:
 ![Issues Tab](issue-1.png)
 
-* Click on New Issue, then choose an Issue type to open up a template
+* Click on New Issue, choose an issue templata, and click the **Get started** button to open up a template
 ![New Issue](issue-2.png)
 ![Issue Type](issue-3.png)
 
@@ -34,7 +34,7 @@ Issues are super easy ways for you to make a suggestion to an OSS team, without 
 
 * Click submit Issue and you can go back the the issues tab and see it on the list!
 
-Now the team who maintains that repo can see any problems you want to report, assign, and track who can see it. You will also get e-mail notifications for any responses people have to you. Using `@username` will notify a particular person.
+Now the team who maintains that repo can see any problems you want to report, assign, and track who can see it. You will also get e-mail notifications for any responses people have to you. Using `@username` in a comment in an Issue or PR will notify a particular person.
 
 ![Issues Tab](issue-5.png)  
 
@@ -89,7 +89,7 @@ The maintainers of this repos only need to push a button to confirm the merge, m
 Adding a new file is simple in the Github CLI. You can test this out in the fork you created. Lets add a new Dev Tool (any project or company you know of in PLN) to the Dev Tools section!
  ![Forks](forkfile-1.png)
 
-* First, remember to sync with the main branch!
+* First, remember to sync with the original repo!
  ![Forks](fork-3.png)
 
 * Now, you can navigate into `/content/en/curriculum/dev-tools` and click **Add file**. From here you can add a new markdown file (like `spice.md`) about the Dev Tool you know about.
