@@ -96,6 +96,11 @@ Adding a new file is simple in the Github CLI. You can test this out in the fork
 ![Forks](forkfile-2.png)
 
 See the Markdown guide below for how to author. Remember you will have to follow the same workflow as above where you first push to your own fork, then open a PR in the [original Launchpad curriculum repo that you forked from](https://github.com/protocol/launchpad).
+
+You can also take a look at the [tutorial-temp.md file](https://github.com/protocol/launchpad/blob/main/tutorial-temp.md). Click the **Raw** button to see a markdown template that you can copy-paste into a new file.
+![Forks](forkfile-4.png)
+
+
 <!-- ### Part 3: Make a PR using the CLI -->
 
 ## Guides
