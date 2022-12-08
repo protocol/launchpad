@@ -44,6 +44,8 @@ Take the [**Filecoin Quiz - Protocol Labs Launchpad**](https://docs.google.com/f
 ### [Storage Provider Bootcamp](https://www.youtube.com/watch?v=T-TgPILQD3c)
 In this bootcamp from March 2022, get all the information you will need to start down the path of becoming a Filecoin storage provider.
 
+I like cows
+
 ### Discussions / Messaging
   * [Filecoin Slack](http://filecoin.io/slack): #fil-lotus-dev, #fil-lotus-help, #fil-actors, #fil-fips, etc - active discussion with a large and broad community
   * PL Slack #fil, #project-lotus, #fil-protocol-dev
