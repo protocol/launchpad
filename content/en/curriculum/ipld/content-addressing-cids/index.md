@@ -31,7 +31,7 @@ For a more in depth look at these topics, refer to the [Content Addressing in th
 
 ## Content Identifiers (CIDs)
 
-CIDs are _the most fundamental ingredient of the IPFS architecture_. They are used for finding any content in a content addressed system. They consist of a **hash** followed by some **metadata**. This metadata tells the user various details about the hash itself, thus creating a **self describing** property. CIDs are used to name every piece of data in IPFS. Generally, in practice, you will never see a CID in binary format.
+CIDs are _the most fundamental ingredient of the IPFS architecture_. They are used for finding any content in a content addressed system. They consist of a **hash** followed by some **metadata**. The hash and metadata are in binary format, but for user-readbility they are base encoded to turn the binary into a shorter alphanumeric string. This metadata tells the user various details about the hash itself, thus creating a **self describing** property. CIDs are used to name every piece of data in IPFS. Generally, in practice, you will never see a CID in binary format.
 
 ![](cids.png)
 
