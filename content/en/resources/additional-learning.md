@@ -37,6 +37,8 @@ weight: 60
 
 ## Computer Networks
 
+i like cows
+
 * [Coursea on _The Bits and Bytes of Computer Networking_](https://www.coursera.org/learn/computer-networking)
 * MIT Press book on [_Designing an Internet_](https://mitpress.mit.edu/books/designing-internet)
   *   **Summary:** _Why the Internet was designed to be the way it is, and how it could be different, now and in the future._
