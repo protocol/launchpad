@@ -24,7 +24,7 @@ Issues are super easy ways for you to make a suggestion to an OSS team, without 
 * Click on the 'Issues' tab to go to the page to submit Issues:
 ![Issues Tab](issue-1.png)
 
-* Click on New Issue, choose an issue templata, and click the **Get started** button to open up a template
+* Click on `New Issue`, choose an issue templata, and click the **Get started** button to open up a template
 ![New Issue](issue-2.png)
 ![Issue Type](issue-3.png)
 
