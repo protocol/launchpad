@@ -161,7 +161,7 @@ When represented as a string (e.g. `bafyrei....`), the Multibase character is pr
 ```
 <algorithm><length><hash-digest>
 ```
-CIDv0 exclusively use the SHA2-256 hash function, and because the digest length is 256 bits (32 bytes), we end up with the Multibase prefix being represented as `Qm` in string form.
+CIDv0 exclusively uses the SHA2-256 hash function, and because the digest length is 256 bits (32 bytes), we end up with the Multibase prefix being represented as `Qm` in string form.
 
 Beyond CIDv0, there is only one currently valid CID version 1, but a CIDv1 in string form can use any base encoding in the Multibase table and represent the same CID:
 
