@@ -35,7 +35,7 @@ CIDs are _the most fundamental ingredient of the IPFS architecture_. They are us
 
 ![](cids.png)
 
-Example of two CID versions currently in use in IPFS:
+Currently in IPFS, there are only two CID verions. Here is an example of how they both look like:
 
 * **CIDv0**: [**`Qm`**`S4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv`](https://ipfs.io/ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv)
 * **CIDv1**: [**`bafybei`**`bxm2nsadl3fnxv2sxcxmxaco2jl53wpeorjdzidjwf5aqdg7wa6u`](https://ipfs.io/ipfs/bafybeibxm2nsadl3fnxv2sxcxmxaco2jl53wpeorjdzidjwf5aqdg7wa6u)
