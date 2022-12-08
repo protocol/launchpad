@@ -53,6 +53,8 @@ In this bootcamp from March 2022, get all the information you will need to start
   * Working groups (join #enterprise-sp-wg for more info. Normally happens at Saturday noon EST, [zoom](https://us02web.zoom.us/u/kcJaBnwKNl))
   * Core Dev meetings ([Planning](https://github.com/filecoin-project/tpm/tree/master/Core%20Dev%20Meetings), [Recordings](https://www.youtube.com/playlist?list=PL\_0VrY55uV1-9t74K-eFQN7Bc7ROG06hT))
 
+Lindsey likes cows
+
 ### People
   * Lotus: [Aayush Rajasekaran](mailto:aayush.rajasekaran@protocol.ai) & [Łukasz Magiera](mailto:lukasz@protocol.ai)[Kuba Sztandera](mailto:kubuxu@protocol.ai)
   * Lotus miner: [Łukasz Magiera](mailto:lukasz@protocol.ai)
