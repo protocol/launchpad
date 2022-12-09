@@ -23,7 +23,7 @@ objectives:
 
 In order to understand the pieces that tie IPFS and IPLD together, you will need to understand the following fundamental concepts:
 
-* [**Content Addressed Systems**]() - These are generally peer to peer networks, like IPFS, where users find content by its [CID or hash](/curriculum/ipfs/content-addressing). Other popular Content Addressed networks are: **Git, Bittorrent, and even blockchains**.
+* [**Content Addressed Systems**](https://www.techtarget.com/searchstorage/definition/content-addressed-storage) - These are generally peer to peer networks, like IPFS, where users find content by its [CID or hash](/curriculum/ipfs/content-addressing). Other popular Content Addressed networks are: **Git, Bittorrent, and even blockchains**.
 * [**Hash**](https://www.sentinelone.com/cybersecurity-101/hashing/) – The output of a mathematical process called **hashing**. This hashing process converts some arbitrary content to a unique binary number of fixed length.
 * [**Data Structures**](https://www.geeksforgeeks.org/data-structures/) - Are core computer science paradigms used heavily in IPLD. **Data structures** are used to provide the reader (and computers) with nicely formatted and organized data points. Common structures are: graphs, trees, blocks, and other "classes" of grouping techniques. We will talk more on these structures later in this module.
 * **Data Layer** - This is the part of IPFS (or any _content addressed system_) that breaks down files and other content to be stored in an **optimal way**. With a focus on **the specifics of how to address that content**.
@@ -64,25 +64,6 @@ Directories are graphs of links that are named; the links point to the blocks of
 The CID that is returned to you when you add a file to IPFS is the entry point to these graph structures. **Graphs** are data structures to organize all the blocks of data pertaining to the respective file. This organization is handled by **"links"**; links help create a logical order of blocks for IPLD to address every subsequent block of data. There will be more on graphs in a later lesson. 
 
 ![Picture of a graph](tree_graph.png)
-
-{{% level type="[deep]" %}}
-### Tutorials
-s
-For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/ipld). Tutorials you should complete include:
-
-* [Merkle DAGs: Structuring Data for the Distributed Web](https://proto.school/merkle-dags)
-* [Anatomy of a CID](https://proto.school/anatomy-of-a-cid)
-* [P2P Data Links with Content Addressing](https://proto.school/basics)
-
-
-#### [IPLD Tutorial - DAGs, Roots, and UnixFS | Rod Vagg](https://youtu.be/nLgxTYoF-K4)
-
-[Follow along with this activity](https://www.notion.so/pl-strflt/Explaining-DAGs-Roots-and-UnixFS-to-newbies-ff89ed883f1b4c5da8af13cd8ad07de9) in the CLI that will help you understand the Merkle DAG structure, Merkle Roots, and the UnixFS file format
-
-{{< youtube nLgxTYoF-K4 >}}
-
-{{% /level %}}
-
 ### Further Introductory Reading:
 
 * [**A Terse, Quick IPLD Primer for the Engineer**](https://ipld.io/docs/intro/primer/)
