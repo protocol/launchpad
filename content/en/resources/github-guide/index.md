@@ -14,7 +14,7 @@ _[Github Deck Link](https://docs.google.com/presentation/d/11V_BA5A64lCY_wFsvuLO
 
 
 ## Tutorial – Contributing to OSS on Github
-In this tutorial, you will learn how to use the GUI to open an issue on any repo, and fork and make a PR in the GUI.
+In this tutorial, you will learn how to use the GUI to open an issue, create a fork, and make a PR to any repo on Github.
 
 ### Part 1: Create an Issue
 Issues are super easy ways for you to make a suggestion to an OSS team, without having to ping them personally. These issues are then housed in a place that makes it easy for them to organize, review, and assign to others.
