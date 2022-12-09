@@ -34,7 +34,7 @@ Issues are super easy ways for you to make a suggestion to an OSS team, without 
 
 * Click `Submit new Issue` and you can go back the the issues tab and see it on the list!
 
-Now the team who maintains that repo can see any problems you want to report, assign, and track who can see it. You will also get e-mail notifications for any responses people have to you. Using `@username` in a comment in an Issue or PR will notify a particular person.
+Now the team who maintains that repo can see any problems you want to report, assign, and track who can see it. You will also get e-mail notifications for any responses people have to you. Using `@username` in a comment, Issue, or PR will notify that particular person.
 
 ![Issues Tab](issue-5.png)  
 
