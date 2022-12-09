@@ -50,7 +50,7 @@ If you want to take your changes to the next step, and make it as easy as the cl
 
 ![Forks](fork-2a.png)
 
-> Note that any time you go in and make changes, you will want to make sure that your repository is up to date with the original repo. You can do this from the main page of your repository fork with the **Sync fork** button. ![Forks](fork-3.png)
+> Note that any time you go in and make changes, you will want to make sure that your repository is up to date with the original repo. You can do this from the main page of your repository fork with the **Sync fork** button. ![Forks](fork-3a.png)
 
 * Now you have to find which file you want to modify. In the repository used in this example, `launchpad`, all of the content is in the directory `content/en`.
 ![Forks](fork-4.png)
@@ -90,7 +90,7 @@ Adding a new file is simple in the Github CLI. You can test this out in the fork
  ![Forks](forkfile-1.png)
 
 * First, remember to sync with the original repo!
- ![Forks](fork-3.png)
+ ![Forks](fork-3a.png)
 
 * Now, you can navigate into `/content/en/curriculum/dev-tools` and click **Add file**. From here you can add a new markdown file (like `spice.md`) about the Dev Tool you know about.
 ![Forks](forkfile-2.png)
