@@ -24,7 +24,7 @@ Issues are super easy ways for you to make a suggestion to an OSS team, without 
 * Click on the 'Issues' tab to go to the page to submit Issues:
 ![Issues Tab](issue-1.png)
 
-* Click on `New Issue`, choose an issue templata, and click the **Get started** button to open up a template
+* Click on the **New Issue** button, choose an issue template, and click the **Get started** button to open up a template.
 ![New Issue](issue-2.png)
 ![Issue Type](issue-3.png)
 
@@ -32,7 +32,7 @@ Issues are super easy ways for you to make a suggestion to an OSS team, without 
 
 ![Create Issue](issue-4.png)
 
-* Click `Submit new Issue` and you can go back the the issues tab and see it on the list!
+* Click **Submit new Issue** and you can go back the the issues tab and see it on the list!
 
 Now the team who maintains that repo can see any problems you want to report, assign, and track who can see it. You will also get e-mail notifications for any responses people have to you. Using `@username` in a comment, Issue, or PR will notify that particular person.
 
@@ -61,7 +61,7 @@ If you want to take your changes to the next step, you can fork the repo and mak
 * Now you have to find which file you want to modify. In the repository used in this example, `launchpad`, all of the content is in the directory `content/en`.
 ![Forks](fork-4.png)
 
-* Compare the directory structure with the URL of the curriculum and find a page you would like to make a small edit on. Note that the file you need to edit will either have the same name as the file in the URL (e.g. how-filecoin-works.md), or be and `index.md` inside of a directory with the same name as you see in the URL.
+* Compare the directory structure with the URL of the curriculum and find a page you would like to make a small edit on. Note that the file you need to edit will either have the same name as the file in the URL (e.g. how-filecoin-works.md), or be an `index.md` file inside of a directory with the same name as you see in the URL.
 
 ![Forks](fork-7a.png)
 
@@ -142,7 +142,11 @@ If you are contributing to open source repositories and organizations, here are 
 Source: [Github Writing Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax), [Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
 
 ### Github Orgs & Repos
-There are a number of different Open Source Software (OSS) organizations and projects that are used to manage the code that makes up what we maintain at Protocol Labs. Everything created at PL is open source. To get to the organization or repo, just type in `github.com/<organization>/<repo>`
+There are a number of different Open Source Software (OSS) organizations and projects that are used to manage the code that makes up what we maintain at Protocol Labs.
+
+Everything created at PL is open source. To get to the organization or repo, just type in `github.com/<organization>/<repo>`.
+
+Explore some of the most active repositories below to learn about the projects.
 
 * **Protocol Labs** – /protocol: [https://github.com/protocol](https://github.com/protocol)
   * Repos: [specs](https://github.com/ipfs/specs), [CI Workflows](https://github.com/protocol/.github), [launchpad](https://github.com/protocol/launchpad), [Infrastructure](https://github.com/protocol/launchpad), [Research](https://github.com/filecoin-project/devgrants), [/bifrost-infra](https://github.com/protocol/bifrost-infra), [/monitoring-infra](https://github.com/protocol/monitoring-infra), [/netops](https://github.com/protocol/netops)
@@ -150,13 +154,15 @@ There are a number of different Open Source Software (OSS) organizations and pro
   * Repos: [/kubo](https://github.com/ipfs/kubo) , [/ipfs-desktop](https://github.com/ipfs/ipfs-desktop),[specs](https://github.com/ipfs/specs), [ipfs-companion](https://github.com/ipfs/ipfs-companion)
 * **IPLD** – /ipld: [https://github.com/ipld](https://github.com/ipld)
 * **libp2p** – /libp2p: [https://github.com/libp2p](https://github.com/libp2p)
-  * Repos:
+  * Repos: [/specs](https://github.com/libp2p/specs), [/rust-libp2p](https://github.com/libp2p/rust-libp2p), [/js-libp2p](https://github.com/libp2p/js-libp2p)
 * **Filecoin** – /filecoin-project: [https://github.com/filecoin-project](https://github.com/filecoin-project)
   * Repos: [/bacalhau](https://github.com/filecoin-project/bacalhau), [/FIPs](https://github.com/filecoin-project/FIPs), [/lotus](https://github.com/filecoin-project/lotus), [/devgrants](https://github.com/filecoin-project/devgrants), [/community](https://github.com/filecoin-project/community)
 * **Other PLN Projects**
-  * /testground -[https://github.com/testground](https://github.com/testground)
-  * /filecoin-saturn – [https://github.com/filecoin-saturn](https://github.com/filecoin-saturn)
-  * /drand - [https://github.com/drand](https://github.com/drand)
-  * /boost – [https://github.com/filecoin-project/boost](https://github.com/filecoin-project/boost)
-  * /CryptoNetLab – [https://github.com/protocol/CryptoNetLab](https://github.com/protocol/CryptoNetLab)
-  * /CryptoEconLab – [https://github.com/protocol/CryptoEconLab](https://github.com/protocol/CryptoEconLab)
+  * Testground -[https://github.com/testground](https://github.com/testground)
+  * Saturn – [https://github.com/filecoin-saturn](https://github.com/filecoin-saturn)
+  * Drand - [https://github.com/drand](https://github.com/drand)
+  * Boost – [https://github.com/filecoin-project/boost](https://github.com/filecoin-project/boost)
+  * CryptoNet Lab – [https://github.com/protocol/CryptoNetLab](https://github.com/protocol/CryptoNetLab)
+  * CryptoEcon Lab – [https://github.com/protocol/CryptoEconLab](https://github.com/protocol/CryptoEconLab)
+  * Bacalhau / COD – [https://github.com/filecoin-project/bacalhau](https://github.com/filecoin-project/bacalhau)
+  * Network Indexer – [https://github.com/ipni/storetheindex](https://github.com/ipni/storetheindex)
