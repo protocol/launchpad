@@ -43,6 +43,8 @@ If you want to take your changes to the next step, you can fork the repo and mak
 
 ### Modify an Existing File
 
+#### Make a Fork
+
 * First, go to the repo and choose the **Fork** button on the top right
 ![Forks](fork-1.png)
 
@@ -54,33 +56,42 @@ If you want to take your changes to the next step, you can fork the repo and mak
 
 ![Forks](fork-3a.png)
 
+#### Make an Edit
+
 * Now you have to find which file you want to modify. In the repository used in this example, `launchpad`, all of the content is in the directory `content/en`.
 ![Forks](fork-4.png)
 
 * Compare the directory structure with the URL of the curriculum and find a page you would like to make a small edit on. Note that the file you need to edit will either have the same name as the file in the URL (e.g. how-filecoin-works.md), or be and `index.md` inside of a directory with the same name as you see in the URL.
 
-![Forks](fork-7.png)
+![Forks](fork-7a.png)
 
 * Click the Pencil Icon at the top of the page preview. From here you can make the edits you would like to that page.
 
 ![Forks](fork-6.png)
 
-* Once you have completed your edits, you should click the **Commit changes** button, add a short description, and choose **Create a new Branch**. and click the **Propose changes** button. You'll be taken through two additional pages to create the pull request.
-![Forks](fork-8.png)
+* Once you have completed your edits, you should click the **Commit changes** button, add a short description, and choose **Commit Directly to the main branch** then click the **Propose changes** button. You'll be taken through two additional pages to create the pull request.
+![Forks](fork-8a.png)
 
-To complete this process, you have to first approve the pull request, then you have to make a Pull Request to the orignal repo.
-* First, merge the Pull request on your own fork, clicking the green merge button, then **Confirm Merge** on the next screen.
-![Forks](fork-9.png)
+When you go back to the home page for the repo, you should see your commit listed:
 
-* Next, you can propose those changes (make a pull request) to the original Launchpad curriculum repo that you forked from. Go back to the [original Launchpad repo](), and go to the Pull Requests tab.
+![Forks](fork-15.png)
+
+#### Make a PR
+
+Now that you have these changes on _your_ remote Github repo 'packaged up', you are ready to make a Pull Request to the _original_ remote repo.
+
+* You can propose those changes (make a pull request) to the original Launchpad curriculum repo that you forked from. Go back to the [original Launchpad repo](), and go to the Pull Requests tab.
 ![Forks](fork-10.png)
 
 * Now you can create a PR! In the Pull requests page, choose **New pull request**, then choose **compare across forks**
  ![Forks](fork-11.png)
  ![Forks](fork-12.png)
 
-* In the Comparing Change page, choose your head repository (and `main` branch) on the right side of the comparison, the click **Create Pull Request**, adding a descriptive title and comments in the following screen.
- ![Forks](fork-13.png)
+* In the Comparing Change page, choose your head repository (and `main` branch) on the right side of the comparison, the click **Create Pull Request**.
+
+ ![Forks](fork-13a.png)
+
+* On the next screen, you should see the same details show up for the commit you had made on your remote repo. Add more details if you wish, then click **Create Pull Request**.
 
 * Now when you check the [Pull Request for the Launchpad repo](https://github.com/protocol/launchpad/pulls) you can see your new Pull request, and make it easy for maintainers to explore and commit the changes!
  ![Forks](fork-14.png)
