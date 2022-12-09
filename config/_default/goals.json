@@ -249,7 +249,16 @@
     },
     "1.6": {
       "description": "Learn about the CAR format and how it helps data distribution",
-      "subgoals": [{}],
+      "subgoals": [
+        {
+          "id": "1.61",
+          "description": "Get an idea of how the CAR format is beneficial to IPLD and how it is used today"
+        },
+        {
+          "id": "1.62",
+          "description": "See the differences between the two CAR version formats"
+        }
+      ],
       "levels": ["deep"]
     }
   },
