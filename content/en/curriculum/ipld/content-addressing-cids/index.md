@@ -26,17 +26,16 @@ In order to understand the pieces that make up a CID, you will need to understan
 * [**Hashing**](https://www.sentinelone.com/cybersecurity-101/hashing/) – When we refer to a 'hash', we are refering to the output of a mathematical process called 'hashing' (interchangeable with 'hash function'). This hashing process converts one value to another of a fixed length and is unique. This hash is generally in a binary format.
 * [**Base Encodings/Codec**](https://skorks.com/2009/08/different-types-of-encoding-schemes-a-primer/) – This is basically the process of converting binary numbers into a compressed set of characters. For example, Base 10 encoding says that 0001 1010 = 26, but that same number in base64 = MDAwMSAxMDEw. [Play around with different encoding here](https://cryptii.com/pipes/binary-to-base64)
 * [**Varints**](https://carlmastrangelo.com/blog/lets-make-a-varint) – Variable length integers, or Varints, are numbers optimized for saving space. The idea is to use the smallest amount of bytes needed to represent a number. For example, small numbers don't need as many bytes to represent them (0000 0010 == 2), so we would only use one byte as opposed to traditionally using 8 bytes.
-* [**CIDs (Content Identifiers)**](https://mikeal.notion.site/what-is-web3-994f2d4cf1944e99a898643cb704d9a6#e34e81fc76b0404ab20f55f0940dfbcd) –  CIDs are how we address things in the distributed web. A CID is a binary address format where [varints](https://carlmastrangelo.com/blog/lets-make-a-varint) are used to describe details of the binary address. 
 
 For a more in depth look at these topics, refer to the [Content Addressing in the IPFS](/curriculum/ipfs/content-addressing) section. 
 
 ## Content Identifiers (CIDs)
 
-CIDs are _the most fundamental ingredient of the IPFS architecture_. They are used for finding any content in a content addressed system. They consist of a **hash** followed by some **metadata**. This metadata tells the user various details about the hash itself, thus creating a **self describing** property. CIDs are used to name every piece of data in IPFS. Generally, in practice, you will never see a CID in binary format.
+CIDs are _the most fundamental ingredient of the IPFS architecture_. They are used for finding any content in a content addressed system. They consist of a **hash** followed by some **metadata**. The hash and metadata are in binary format, but for user-readbility they are base encoded to turn the binary into a shorter alphanumeric string. This metadata tells the user various details about the hash itself, thus creating a **self describing** property. CIDs are used to name every piece of data in IPFS. Generally, in practice, you will never see a CID in binary format.
 
 ![](cids.png)
 
-Example of two CID versions currently in use in IPFS:
+Currently in IPFS, there are only two CID verions. Here is an example of how they both look like:
 
 * **CIDv0**: [**`Qm`**`S4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv`](https://ipfs.io/ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv)
 * **CIDv1**: [**`bafybei`**`bxm2nsadl3fnxv2sxcxmxaco2jl53wpeorjdzidjwf5aqdg7wa6u`](https://ipfs.io/ipfs/bafybeibxm2nsadl3fnxv2sxcxmxaco2jl53wpeorjdzidjwf5aqdg7wa6u)
@@ -161,7 +160,7 @@ When represented as a string (e.g. `bafyrei....`), the Multibase character is pr
 ```
 <algorithm><length><hash-digest>
 ```
-CIDv0 exclusively use the SHA2-256 hash function, and because the digest length is 256 bits (32 bytes), we end up with the Multibase prefix being represented as `Qm` in string form.
+CIDv0 exclusively uses the SHA2-256 hash function, and because the digest length is 256 bits (32 bytes), we end up with the Multibase prefix being represented as `Qm` in string form.
 
 Beyond CIDv0, there is only one currently valid CID version 1, but a CIDv1 in string form can use any base encoding in the Multibase table and represent the same CID:
 
