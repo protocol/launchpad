@@ -50,7 +50,9 @@ If you want to take your changes to the next step, you can fork the repo and mak
 
 ![Forks](fork-2a.png)
 
-> Note that any time you go in and make changes, you will want to make sure that your repository is up to date with the original repo. You can do this from the main page of your repository fork with the **Sync fork** button. ![Forks](fork-3a.png)
+> Note that any time you go in and make changes, you will want to make sure that your repository is up to date with the original repo. You can do this from the main page of your repository fork with the **Sync fork** button.
+
+![Forks](fork-3a.png)
 
 * Now you have to find which file you want to modify. In the repository used in this example, `launchpad`, all of the content is in the directory `content/en`.
 ![Forks](fork-4.png)
