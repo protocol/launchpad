@@ -48,7 +48,7 @@ If you want to take your changes to the next step, and make it as easy as the cl
 
 * A new fork (version with the same history) of that repo will be created under your organization or username.
 
-![Forks](fork-2.png)
+![Forks](fork-2a.png)
 
 > Note that any time you go in and make changes, you will want to make sure that your repository is up to date with the original repo. You can do this from the main page of your repository fork with the **Sync fork** button. ![Forks](fork-3.png)
 
