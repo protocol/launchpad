@@ -69,7 +69,7 @@ If you want to take your changes to the next step, you can fork the repo and mak
 
 ![Forks](fork-6.png)
 
-* Once you have completed your edits, you should click the **Commit changes** button, add a short description, and choose **Commit Directly to the main branch** then click the **Propose changes** button. You'll be taken through two additional pages to create the pull request.
+* Once you have completed your edits, you should click the **Commit changes** button, add a short description, and choose **Commit Directly to the main branch** then click the **Propose changes** button to merge the change into your remote repository.
 ![Forks](fork-8a.png)
 
 When you go back to the home page for the repo, you should see your commit listed:
