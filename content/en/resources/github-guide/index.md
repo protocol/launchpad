@@ -39,7 +39,7 @@ Now the team who maintains that repo can see any problems you want to report, as
 ![Issues Tab](issue-5.png)  
 
 ### Part 2: Make a PR in the GUI
-If you want to take your changes to the next step, and make it as easy as the click of a button for repo maintainers to add a change that you suggest, you can fork the repo and make a PR.
+If you want to take your changes to the next step, you can fork the repo and make a Pull Request (PR). This will make it as easy as the click of a button for repo maintainers to add in your suggestions.
 
 ### Modify an Existing File
 
