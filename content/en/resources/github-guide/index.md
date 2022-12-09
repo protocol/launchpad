@@ -65,7 +65,7 @@ If you want to take your changes to the next step, you can fork the repo and mak
 
 ![Forks](fork-6.png)
 
-* Once you have completed your edits, you should click the **Commit changes** button, add a short description, and choose **Create a new Branch.** and click the **Propose changes** button. You'll be taken through two additional pages to create the pull request.
+* Once you have completed your edits, you should click the **Commit changes** button, add a short description, and choose **Create a new Branch**. and click the **Propose changes** button. You'll be taken through two additional pages to create the pull request.
 ![Forks](fork-8.png)
 
 To complete this process, you have to first approve the pull request, then you have to make a Pull Request to the orignal repo.
