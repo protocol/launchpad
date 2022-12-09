@@ -85,7 +85,7 @@ To complete this process, you have to first approve the pull request, then you h
 * Now when you check the [Pull Request for the Launchpad repo](https://github.com/protocol/launchpad/pulls) you can see your new Pull request, and make it easy for maintainers to explore and commit the changes!
  ![Forks](fork-14.png)
 
-The maintainers of this repos only need to push a button to confirm the merge, making it much more likely (and easier for the maintainers) to get changes added.
+The maintainers of these repos only need to push a button to confirm the merge, making it much more likely (and easier for the maintainers) to get changes added.
 
 ### Add a new File
 Adding a new file is simple in the Github CLI. You can test this out in the fork you created. Lets add a new Dev Tool (any project or company you know of in PLN) to the Dev Tools section!
