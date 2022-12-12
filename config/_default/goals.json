@@ -226,6 +226,24 @@
       ],
       "levels": ["deep"]
     },
+    "1.5": {
+      "description": "Understand what is Pub/Sub and its main implementations in libp2p",
+      "subgoals": [
+        {
+          "id": "1.51",
+          "description": "Understand what is Floodsub"
+        },
+        {
+          "id": "1.52",
+          "description": "Analyze the main differences between FloodSub and Gossipsub"
+        },
+        {
+          "id": "1.53",
+          "description": "Describe the benefits of Gossipsub over Floodsub"
+        }
+      ],
+      "levels": ["deep"]
+    },
     "1.6": {
       "description": "Learn what is NAT Traversal and what different methods are available",
       "subgoals": [
