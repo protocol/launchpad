@@ -51,13 +51,18 @@ At a high level, the talk covered the following topics:
 ## Different Components of Merkle DAGs
 ### Merkle Roots
 
-![](<../../.gitbook/assets/ipld\_merkle\_roots (1).png>)
-
 The tip of any Merkle DAG is called its "root". The hash of that root can be said to authenticate (and "link to") all of the other content below it in the graph simply because each point in that graph includes hashes of content below it (i.e. hashes of hashes, all the way down).
 
-Merkle DAGs are not specific to IPLD or IPFS. In the content addressed system called Git, a **Git commit** is the hash digest of the root of a large graph. This root "block" is a concatenation of various pieces of data, including the author of the commit, the timestamp, the _previous_ commit hash digest and the hash digest of the filesystem "tree". 
+Merkle DAGs are not specific to IPLD or IPFS. In the content addressed system called Git, a **Git commit** is the hash digest of the root of a large graph. This root "block" is a concatenation of various pieces of data, including:
 
-The filesystem tree is built by hashing files, then concatenating the hashes of files within a directory to form a directory node which is then hashed and included in the parent of that directory, etc. i.e. a Git commit hash digest only hashes a small piece of data, but that data includes hashes of other data, forming a large tree spanning the files in that commit and all previous commits in the history of the Git repository.
+* the author of the commit
+* the timestamp
+* the _previous_ commit hash digest
+* the hash digest of the filesystem "tree"
+
+The filesystem tree, in Git, is built by hashing files, then concatenating the hashes of files within a directory. This forms a directory node which is then hashed and included in the parent of that directory, etc. 
+
+For example, a Git commit hash digest only hashes a small piece of data, but that data includes hashes of other data, forming a large tree spanning the files in that commit and all previous commits in the history of the Git repository.
 
 ![git tree](overview.png)
 
@@ -73,7 +78,9 @@ A graph of immutable data can said to be "mutable" if we accept that the hashes 
 
 Mutating content addressed data in this way provides some interesting properties, we can add, remove or modify data at any point in the graph and generate a new root each time.
 
-Mutating a graph will give us a new root. We call these new roots **snapshots**, because they _capture_ the differences between two graphs. Different snapshots (roots) may address much of the same data, since only small parts of the graph may have changed, this gives us **de-duplication**.  Deduplication is the process of reusing common chunks of data between two versions of the same file. Going back to Git, one of the ways that Git is efficient is that only the changes need to be stored, and only those changed parts of a tree need be re-hashed to generate a new root (a commit hash).
+Mutating a graph will give us a new root. We call these new roots **snapshots**, because they _capture_ the differences between two graphs. Different snapshots (roots) may address much of the same data, since only small parts of the graph may have changed, this gives us deduplication.
+
+**Deduplication** is the process of reusing common chunks of data between two versions of the same file. Going back to Git, one of the ways that Git is efficient is that only the changes need to be stored, and only those changed parts of a tree need be re-hashed to generate a new root (a commit hash).
 
 ## Merkle DAGs in IPFS
 
