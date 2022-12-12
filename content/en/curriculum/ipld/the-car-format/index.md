@@ -9,6 +9,13 @@ weight: 270
 category: lecture
 level:
 - deep
+objectives:
+  show: true
+  goals:
+  - "1.6"
+  subgoals:
+  - 1.61
+  - 1.62
 ---
 
 ![](intro.png)
@@ -47,6 +54,14 @@ CARv2 is an incremental upgrade to CARv1 in that it _wraps_ a CARv1 in an outer 
 CARv2 has a flexible approach to index formats. The header provides details about where the various pieces of data are located: offsets and padding. The CARv1 format data payload being the most important component to identify (a CARv2 implementation can provide a CARv1 format reader that reads strictly from the bytes within this section).
 
 The index at the end of the format provides information about what blocks are stored within the CARv1 data payload and _where_ they exist within the archive. A CARv2 reader implementation can load the index and then use its CID->offset mapping information to seek directly to the requested block and not have to hunt for it. The index _format_ is flexible, in that the first byte of the index identifies the format (which a given CARv2 implementation may or may not understand how to read) and the rest of the bytes conform to that format. There are currently two well-specified index formats, but there are a number of additional experimental index formats. Index formats may be selected depending on the suitability for a particular application or set of data - generation speed, usage performance, size, etc. Indexes typically only store the _Multihash_ of a block, rather than the entire CID, for efficiency reasons (but there are other interesting characteristics enabled by being able to look up a block by multihash rather than the entire CID, even if the _Multicodec_ is useful for decoding the block once it's found).
+
+## Performance
+Some considerations regarding performance:
+
+* Streaming: the CAR format is ideal for dumping blocks via streaming reads as the Header can be loaded first and minimal state is required for ongoing parsing.
+* Individual block reads: as the CAR format contains no index information, reads require either a partial scan to discover the location of a required block or an external index must be maintained and referenced for a seek and partial read of that data. See below regarding indexing.
+* DAG traversal: without an external index, traversal of a DAG specified by a "root" CID is not possible without dumping all blocks into a more convenient data store or by partial scans to find each block as required, which will likely be too inefficient to be practical.
+* Modification: CARs may be appended after initial write as there is no constraint in the Header regarding total length. Care must be taken in appending if a CAR is intended to contain coherent DAG data.
 
 #### Further Reading
 
