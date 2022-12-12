@@ -6,6 +6,8 @@ menu:
     resources:
         parent: "resources-prerequisites"
 weight: 10
+aliases:
+    - /prerequisites/objectives/
 ---
 
 # Pre-Requisites

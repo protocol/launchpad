@@ -101,7 +101,6 @@
               </li>
             {{ else }}
               <li class="nav-item" style="display: flex; align-items: center; font-size: 19px;">
-                <img src="{{ .Params.Image }}" width="{{ .Params.Width }}" height="{{ .Params.Height }}" style="margin-right: 5px;" />
                 <a class="nav-link lp ps-0 py-1{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
               </li>
             {{ end }}

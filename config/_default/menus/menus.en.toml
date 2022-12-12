@@ -167,7 +167,7 @@
   identifier = "tutorials-ipfs"
   [tutorials.params]
     category = "ipfs"
-    image = "https://blog.ipfs.tech/assets/img/2022-ipfs-gateways-2.8f5be3fd.png"
+    image = "/tutorials/intro-ipfs.png"
 
 
 [[tutorials]]
@@ -176,16 +176,16 @@
   identifier = "tutorials-libp2p"
   [tutorials.params]
     category = "libp2p"
-    image = "https://blog.ipfs.tech/assets/img/171434584-f53b2b7b-16f8-4a4f-99aa-867a50b9b48a.9cf21f80.png"
+    image = "/tutorials/libp2p.png"
 
 [[tutorials]]
   name = "Working with IPLD structures"
   weight = 30
-  identifier = "tutorials-libp2p1"
+  identifier = "tutorials-ipld"
   [tutorials.params]
-    image = "https://ipld.io/img/ipld-illustration.svg"
+    image = "/tutorials/ipld.svg"
 
-# [[footer]]
-#   name = "Privacy"
-#   url = "/privacy-policy/"
-#   weight = 10
+[[footer]]
+  name = "About Launchpad"
+  url = "/resources/about/"
+  weight = 10
