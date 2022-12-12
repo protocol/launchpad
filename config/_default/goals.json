@@ -169,11 +169,11 @@
       "subgoals": [
         {
           "id": "1.21",
-          "description": "Understand that libp2p offers several transport protocols"
+          "description": "Identify the main transport protocols offered"
         },
         {
           "id": "1.22",
-          "description": "Understand that libp2p offers several NAT traversal solutions"
+          "description": "Learn about the several NAT traversal options available"
         },
         {
           "id": "1.23",
@@ -181,7 +181,7 @@
         },
         {
           "id": "1.24",
-          "description": "Understand why libp2p uses multiaddresses"
+          "description": "Be able to explain the benefits of Multiaddresses"
         }
       ],
       "levels": ["shallow", "deep"]
@@ -255,7 +255,8 @@
           "id": "1.62",
           "description": "Identify the main differences between Circuit Relay and Hole Punching"
         }
-      ]
+      ],
+      "levels": ["deep"]
     }
   }
 }

@@ -11,6 +11,8 @@ category: lecture
 level:
 - shallow
 - deep
+aliases:
+- /curriculum/libp2p/decentralized-messaging/
 ---
 
 ## Libp2p Quiz
@@ -42,6 +44,13 @@ You can also follow this [Getting Started with Rust and libp2p tutorial](https:/
 * [ResNetLab on Tour – Content Routing](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/)
 * [Crate libp2p](https://docs.rs/libp2p/0.40.0/libp2p/)
 * [Rust tutorial](https://docs.rs/libp2p/0.40.0/libp2p/tutorial/index.html)
+
+
+### Decentralized Messaging?
+
+**Intro to Decentralized Messaging | ETHGlobal – Jacob Heun**
+
+{{< youtube 69h1zhIdCN0 >}}
 
 #### Examples
 

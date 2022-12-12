@@ -9,10 +9,16 @@ weight: 300
 category: lecture
 goal: 1.2
 subgoals:
-- 1.21
-- 1.22
-- 1.23
-- 1.24
+
+objectives:
+  show: true
+  goals:
+  - 1.2
+  subgoals:
+  - 1.21
+  - 1.22
+  - 1.23
+  - 1.24
 level:
 - shallow
 - deep

@@ -17,6 +17,9 @@ objectives:
   - 1.53
 level:
 - deep
+aliases:
+- /curriculum/libp2p/distributed-networking-solutions/
+- /curriculum/libp2p/gossipsub/
 ---
 
 A PubSub (Publish/Subscribe) system allows peers to only receive messages of a specific type. A _publisher_ sends messages of a specific type to _subscribers_ of that type. For example, consider a chat application with a chat group called `music`. Users interested subscribe to the group; when someone sends a message to the group, only those subscribed receive the message.
