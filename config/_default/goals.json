@@ -164,6 +164,19 @@
     }
   },
   "libp2p": {
+    "1.1": {
+      "description": "Learn what is libp2p and its main objectives",
+      "subgoals": [
+        {
+          "id": "1.11",
+          "description": "Understand what is libp2p"
+        },
+        {
+          "id": "1.12",
+          "description": "Identify the main objectives of the project"
+        }
+      ]
+    },
     "1.2": {
       "description": "Understand the main building blocks of libp2p",
       "subgoals": [

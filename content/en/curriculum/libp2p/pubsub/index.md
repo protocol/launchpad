@@ -56,7 +56,18 @@ The number of _full-message_ peers that a node is connected to, depends on a par
 
 You can get more information about PubSub in the [libp2p documentation](https://docs.libp2p.io/concepts/publish-subscribe/) and the in the following videos, which extensively cover the Gossipsub protocol.
 
-### Videos
+## Tutorial: Publish Subscribe (Pubsub) with IPFS & libp2p
+In this tutorial video, you will see how you can use the publish-subscribe functionality (using the libp2p Gossipsub routing algorithm) with an IPFS node.  Follow along to start an IPFS node with pubsub enabled, and send and recieve messages.
+
+{{< youtube 9pUqOhORsYI >}}
+
+**Resources:**
+* [Blog with Pubsub instructions](https://bitly.protocol.ai/pubsub-blog)
+* [Other Pubsub Options](https://bitly.protocol.ai/pusub-flags)
+* [lipbp2p Docs – Publish/Subscribe](https://docs.libp2p.io/concepts/publish-subscribe/)
+
+
+## Expand Your Knowledge
 
 #### Demystifying libp2p Gossipsub | Ethereum Foundation - Raúl Kripalani
 
