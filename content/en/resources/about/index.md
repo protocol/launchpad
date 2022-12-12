@@ -6,6 +6,8 @@ menu:
     resources:
         parent: "resources-other"
 weight: 20
+aliases:
+    - /about/
 ---
 
 {{< aboutpage >}}
