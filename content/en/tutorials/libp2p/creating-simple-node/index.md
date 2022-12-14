@@ -1,10 +1,12 @@
 ---
-title: "Create a libp2p Node (Tutorial)"
+title: "Create a libp2p Node"
 description: "Use libp2p-go to create to a libp2p node"
 draft: false
 menu:
     curriculum:
         parent: "curriculum-libp2p"
+    tutorials:
+        parent: "tutorials-libp2p"
 weight: 312
 category: tutorial
 level:

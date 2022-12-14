@@ -6,6 +6,8 @@ menu:
     resources:
         parent: "resources-other"
 weight: 70
+aliases:
+- /resources/built-on-ipfs/
 ---
 
 IPFS and Filecoin have made it possible for a number of Dapps and tooling to be built for Web3.

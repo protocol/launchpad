@@ -6,6 +6,8 @@ menu:
     resources:
         parent: "resources-other"
 weight: 80
+aliases:
+- /resources/github-guide/
 ---
 
 {{< embed src="https://docs.google.com/presentation/d/11V_BA5A64lCY_wFsvuLO4je02zvzJwD5vf2kzONDWyc/embed" width="100%" height="600px">}}
@@ -36,7 +38,7 @@ Issues are super easy ways for you to make a suggestion to an OSS team, without 
 
 Now the team who maintains that repo can see any problems you want to report, assign, and track who can see it. You will also get e-mail notifications for any responses people have to you. Using `@username` in a comment, Issue, or PR will notify that particular person.
 
-![Issues Tab](issue-5.png)  
+![Issues Tab](issue-5.png)
 
 ### Part 2: Make a PR in the GUI
 If you want to take your changes to the next step, you can fork the repo and make a Pull Request (PR). This will make it as easy as the click of a button for repo maintainers to add in your suggestions.

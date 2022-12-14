@@ -1,10 +1,12 @@
 ---
-title: "IPFS CLI Setup (Tutorial)"
+title: "IPFS CLI Setup"
 description: "Deep Dive Tutorial – Setup the IPFS CLI"
 draft: false
 menu:
     curriculum:
         parent: "curriculum-ipfs"
+    tutorials:
+        parent: "tutorials-ipfs"
 weight: 80
 category: tutorial
 level:

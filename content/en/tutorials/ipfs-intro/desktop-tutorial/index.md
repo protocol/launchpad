@@ -1,10 +1,12 @@
 ---
-title: "IPFS Desktop (Tutorial)"
+title: "IPFS Desktop"
 description: "Shallow Dive Tutorial – Using the Graphical Interface for IPFS"
 draft: false
 menu:
     curriculum:
         parent: "curriculum-ipfs"
+    tutorials:
+        parent: "tutorials-ipfs"
 weight: 75
 category: tutorial
 level:

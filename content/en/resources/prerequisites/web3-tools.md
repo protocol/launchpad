@@ -3,8 +3,8 @@ title: "Web3 Tools"
 description: "The Basic Tools and Mechanisms"
 draft: false
 menu:
-    prereq:
-        parent: "prereq"
+    resources:
+        parent: "resources-prerequisites"
 weight: 30
 ---
 

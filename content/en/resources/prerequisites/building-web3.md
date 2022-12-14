@@ -3,8 +3,8 @@ title: "Building Web3"
 description: "The What and Why of Web3"
 draft: false
 menu:
-    prereq:
-        parent: "prereq"
+    resources:
+        parent: "resources-prerequisites"
 weight: 20
 ---
 

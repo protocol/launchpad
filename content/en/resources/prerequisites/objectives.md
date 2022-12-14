@@ -3,9 +3,11 @@ title: "Learning Objectives & Quiz"
 description: "Test your knowledge by taking a quiz"
 draft: false
 menu:
-    prereq:
-        parent: "prereq"
+    resources:
+        parent: "resources-prerequisites"
 weight: 10
+aliases:
+    - /prerequisites/objectives/
 ---
 
 # Pre-Requisites

@@ -3,8 +3,8 @@ title: "Web3 & Protocol Labs"
 description: "What is Web3, and How the Protocol Labs Network is Contributing"
 draft: false
 menu:
-    prereq:
-        parent: "prereq"
+    resources:
+        parent: "resources-prerequisites"
 weight: 10
 ---
 

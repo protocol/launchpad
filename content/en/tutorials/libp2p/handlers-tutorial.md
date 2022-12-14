@@ -1,10 +1,12 @@
 ---
-title: "Using Stream Handlers (Tutorial)"
+title: "Using Stream Handlers"
 description: "Use go-libp2p to create a new stream of data"
 draft: false
 menu:
     curriculum:
         parent: "curriculum-libp2p"
+    tutorials:
+        parent: "tutorials-libp2p"
 weight: 316
 category: tutorial
 level:
