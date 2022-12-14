@@ -336,16 +336,12 @@
       "1.2": {
         "description": "Get to know the main Dev-Tools available in the IPFS and Filecoin ecosystem.",
         "subgoals": [],
-        "levels": [
-          "shallow/ deep"
-        ]
+        "levels": ["shallow/ deep"]
       },
       "1.3": {
         "description": "Know how you can add you own Dev-Tools to the Launchpad curriculum, so that other people can learn about them.",
         "subgoals": [],
-        "levels": [
-          "shallow/ deep"
-        ]
+        "levels": ["shallow/ deep"]
       }
     },
     "example-section": {
