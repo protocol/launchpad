@@ -31,7 +31,7 @@ At its core, IPFS is best viewed as a suite of standards for storing, sharing, n
 
 #### How IPFS Deals With Files | IPFS Camp 2019 Workshop – Alan Shaw
 
-In the following talk, Alan Shaw goes over theory and live examples of what happens with files added to IPFS. He highlights different variations to the underlying data structure created with a file added to IPFS and how it affects the CID. 
+In the following talk, Alan Shaw goes over theory and live examples of what happens with files added to IPFS. He highlights different variations to the underlying data structure created with a file added to IPFS and how it affects the CID.
 
 {{< youtube SP1qMZA3UG8 >}}
 
@@ -44,11 +44,13 @@ At a high level, the talk covered the following concepts:
 
 You can access and experiment with the same DAG builder from the video at [https://dag.ipfs.tech/](https://dag.ipfs.tech/)
 
-## A Brief DAG-PB Primer
+## The DAG-PB Format
 
-The majority of data that passes through kubo (go-ipfs), js-ipfs, the IPFS gateways and various other IPFS nodes in existence, will be file data. This data uses the [**DAG-PB**](https://ipld.io/specs/codecs/dag-pb/) codec and **raw** block encoding to form graphs of IPLD blocks to represent the file data.
+DAG-PB is a codec that describes the way that file data (binary) can be structured, similar to a JSON file, in a way that is built to be compatible with all data formats.
 
-DAG-PB is a protobuf based format that can only contain two things: a Byte array, and a list of named and sized links to other blocks. Those links are almost always to other DAG-PB blocks or raw leaf blocks.
+The majority of data that passes through kubo (go-ipfs), js-ipfs, the IPFS gateways and various other IPFS nodes in existence uses the [**DAG-PB**](https://ipld.io/specs/codecs/dag-pb/) codec and **raw** block encoding to form graphs of IPLD blocks to represent the file data.
+
+DAG-PB is a [protobuf based format](https://developers.google.com/protocol-buffers/docs/overview) that can only contain two things: a Byte array, and a list of named and sized links to other blocks. Those links are almost always to other DAG-PB blocks or raw leaf blocks.
 
 A typical DAG-PB block, represented as JSON, might look something like this:
 
@@ -91,7 +93,7 @@ The IPLD Data Model is how we reason about data moving through the various state
 
 ### Limitations of File Data
 
-Files are a great abstraction, but can have limitations. Often, users store structured file data with IPFS, such as JSON files. These file types don't scale well and it also prevents the use of IPLD's sophisticated graph tooling from working on the data itself. They also rely on smart file chunking algorithms to de-duplicate files as they are modified and re-stored over time, which can be a hit-or-miss process. 
+Files are a great abstraction, but can have limitations. Often, users store structured file data with IPFS, such as JSON files. These file types don't scale well and it also prevents the use of IPLD's sophisticated graph tooling from working on the data itself. They also rely on smart file chunking algorithms to de-duplicate files as they are modified and re-stored over time, which can be a hit-or-miss process.
 
 ### Intro to Codecs
 IPLD is ambitious in its aims to be able to represent many, varied types of content addressed data. IPLD-native codecs that support the full IPLD Data Model, in particular [**DAG-CBOR**](https://ipld.io/specs/codecs/dag-cbor/), _allow for the storage of structured data within IPLD blocks_ in a way that the _data itself forms nodes within the full graph._ Commonly used codecs are Protobuf, JSON, and JOSE. They have different use cases because of the way they organize their data. But IPLD will build on those codecs to include the Data Model's Bytes, Links, and data Kinds, thus converting it to an IPLD-native Codec.
