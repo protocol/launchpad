@@ -1,5 +1,5 @@
 ---
-title: "What is Protocol Labs"
+title: "Introduction to Protocol Labs"
 description: Understand what is the Protocol Labs Network
 draft: false
 menu:
@@ -10,6 +10,14 @@ category: lecture
 level:
 - shallow
 - deep
+objectives:
+  show: true
+  goals:
+  - "1.1"
+  subgoals:
+  - 1.11
+  - 1.12
+  - 1.13
 ---
 ## Protocol Labs
 Protocol Labs exists to enable a network of projects, tools, startups, research, communities (and more) that are springing up and evolving around new protocols and web3 technologies. As this ecosystem grows, these projects invest in the network itself, and the network grows along with it, which in turn benefits and incentivizes this ongoing evolution.
