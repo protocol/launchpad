@@ -23,7 +23,7 @@ objectives:
 
 In order to understand the pieces that tie IPFS and IPLD together, you will need to understand the following fundamental concepts:
 
-* [**Content Addressed Systems**](https://www.techtarget.com/searchstorage/definition/content-addressed-storage) - These are generally peer to peer networks, like IPFS, where users find content by its [CID or hash](/curriculum/ipfs/content-addressing). Other popular Content Addressed networks are: **Git, BitTorrent, and even blockchains**.
+* [**Content Addressed Systems**](https://www.techtarget.com/searchstorage/definition/content-addressed-storage) - These are generally peer to peer networks, like IPFS, where users find content by its [CID or hash](/curriculum/ipfs/content-addressing). Other popular Content Addressed networks are: [Git](https://en.wikipedia.org/wiki/Git#Data_structures), [BitTorrent](https://en.wikipedia.org/wiki/BitTorrent), and even blockchains.
 * [**Hash**](https://www.sentinelone.com/cybersecurity-101/hashing/) – The output of a mathematical process called **hashing**. This hashing process converts some arbitrary content to a unique binary number of fixed length.
 * [**Data Structures**](https://www.geeksforgeeks.org/data-structures/) - Are core computer science paradigms used heavily in IPLD. **Data structures** are used to provide the reader (and computers) with nicely formatted and organized data points. Common structures are: graphs, trees, blocks, and other "classes" of grouping techniques. We will talk more on these structures later in this module.
 * **Data Layer** - This is the part of IPFS (or any _content addressed system_) that breaks down files and other content to be stored in an optimal way. With a focus on _the specifics of how to address that content_.
