@@ -28,26 +28,29 @@ libp2p is a network framework that allows you to write decentralized peer-to-pee
 The libp2p project works on solving many of the networking and communications problems presented in building a distributed network.  Building large scale peer-to-peer systems has presented many complex difficulties, and libp2p is a way to fix that. The libp2p projects makes it possible for a [peer-to-peer](https://docs.libp2p.io/introduction/what-is-libp2p/#peer-to-peer-basics) applications to operate in an [interface that supports many Internet protocols](https://docs.libp2p.io/introduction/what-is-libp2p/#transport), with [secure identities](https://docs.libp2p.io/introduction/what-is-libp2p/#identity), [peer routing](https://docs.libp2p.io/introduction/what-is-libp2p/#peer-routing), and [content discovery](https://docs.libp2p.io/introduction/what-is-libp2p/#content-discovery).
 
 Read more about _why libp2p in this [blog by Pierre Kreiger on parity.io](https://www.parity.io/blog/why-libp2p)_
-### The libp2p Roadmap
+
+### The libp2p Roadmap & Dashboard
 
 See **[The libp2p long term roadmap](https://github.com/libp2p/specs/blob/master/ROADMAP.md)** to understand the plan of how this project will move the libp2p project from a networking toolbox to build P2P applications to the thing that fundamentally reshapes the architecture of the Internet.
 
-[Node data dashboard](https://kademlia-exporter.max-inden.de/d/-avwMhsik/kademlia-exporter?orgId=1)
+You can also explore the [node data dashboard](https://kademlia-exporter.max-inden.de/d/-avwMhsik/kademlia-exporter?orgId=1) to see data about the libp2p nodes that are running today.
 
 ### Introduction to libp2p | David Dias
 
 {{< youtube CRe_oDtfRLw >}}
 
-### Objectives
+### Objective
 
 All distributed peer-to-peer networks have a set of challenges that are distinct from traditional networks. libp2p is a generalized toolkit so that developers can use plug-and-play networking with their distributed application.
 
-A fundamental shift in distributed computing is that the “client/server” paradigm no longer holds up. Let’s take a look at what your home router does.
+A fundamental shift in distributed computing is that the “client/server” paradigm no longer holds up.
 
-Every device in your home network has a **private** IP address. When you request data from a server, your router replaces your device’s private address with your home’s **public** IP address, and remembers which device to send the response to.
+#### Routing
+Every device in your home network has a **private** IP address. When you request data from a server, the router on your home network replaces your device’s private address with your home’s **public** IP address, and remembers which device to send the response to.
 
 That works fine if all your devices are clients, but what about when a request from the outside world shows up at your router? It’s not a response to a request, it is a request, so the requestor thinks that you are a server. One of your devices is acting as a server, but your router doesn’t know which one. This is a problem called NAT traversal, and libp2p provides tools to help handle it.
 
+#### Peer Discovery
 libp2p also handles peer discovery and handshake protocols. In a world where clients act as servers too, there will inevitably be a variety of hardware, operating systems, and communication protocols between nodes. Encryption and security underpin Web3 design, and libp2p supports both unencrypted (e.g. TCP, UDP) and encrypted protocols (e.g. TLS, Noise) out of the box.
 
 ### Intro to libp2p | Encode Filecoin Club - Max Inden
