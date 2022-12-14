@@ -17,27 +17,26 @@ objectives:
   subgoals:
   - 1.11
   - 1.12
+  - 1.13
 ---
+## Why libp2p?
 
-Building large scale peer-to-peer systems has presented many complex difficulties, and libp2p is a way to fix that. The libp2p projects makes it possible for a [peer-to-peer](https://docs.libp2p.io/introduction/what-is-libp2p/#peer-to-peer-basics) applications to operate in an [interface that supports many Internet protocols](https://docs.libp2p.io/introduction/what-is-libp2p/#transport), with [secure identities](https://docs.libp2p.io/introduction/what-is-libp2p/#identity), [peer routing](https://docs.libp2p.io/introduction/what-is-libp2p/#peer-routing), and [content discovery](https://docs.libp2p.io/introduction/what-is-libp2p/#content-discovery).
+The libp2p project was created out of IPFS to provide solutions to the many problems that are presented when we try and break free from the client-server model. Typical web2 applications rely on sending messages to and from a central server. This means, when you send e-mails, post on social media sites, and make purchases online, you are relying on a centralized server run by Amazon, Google, or Facebook (to name a few). Relying on the client-server model means that these companies not only have control over what is served, and to whom, but also the data that goes along with it. Read this article to learn more about [breaking free from the client-server model](https://hackernoon.com/the-client-server-model-breaking-free-with-ipfs).
 
+libp2p is a network framework that allows you to write decentralized peer-to-peer applications. Originally the networking protocol of IPFS, it has since been extracted to become its own first-class project
+
+The libp2p project works on solving many of the networking and communications problems presented in building a distributed network.  Building large scale peer-to-peer systems has presented many complex difficulties, and libp2p is a way to fix that. The libp2p projects makes it possible for a [peer-to-peer](https://docs.libp2p.io/introduction/what-is-libp2p/#peer-to-peer-basics) applications to operate in an [interface that supports many Internet protocols](https://docs.libp2p.io/introduction/what-is-libp2p/#transport), with [secure identities](https://docs.libp2p.io/introduction/what-is-libp2p/#identity), [peer routing](https://docs.libp2p.io/introduction/what-is-libp2p/#peer-routing), and [content discovery](https://docs.libp2p.io/introduction/what-is-libp2p/#content-discovery).
+
+Read more about _why libp2p in this [blog by Pierre Kreiger on parity.io](https://www.parity.io/blog/why-libp2p)_
 ### The libp2p Roadmap
 
-**[Our long term roadmap](https://github.com/libp2p/specs/blob/master/ROADMAP.md)**
-
-This is the stuff that moves libp2p from "a networking toolbox to build P2P applications" to the thing that fundamentally reshapes the architecture of the Internet; our dreams and aspirations, the North star we should always keep in sight; this is what motivates us and it's speaks intimately to our mission statement; the libp2p analogy of IPFS working on Mars.
+See **[The libp2p long term roadmap](https://github.com/libp2p/specs/blob/master/ROADMAP.md)** to understand the plan of how this project will move the libp2p project from a networking toolbox to build P2P applications to the thing that fundamentally reshapes the architecture of the Internet.
 
 [Node data dashboard](https://kademlia-exporter.max-inden.de/d/-avwMhsik/kademlia-exporter?orgId=1)
 
 ### Introduction to libp2p | David Dias
 
 {{< youtube CRe_oDtfRLw >}}
-
-## Why libp2p?
-
-Read more about _why libp2p in this [blog by Pierre Kreiger on parity.io](https://www.parity.io/blog/why-libp2p)_
-
-libp2p is a network framework that allows you to write decentralized peer-to-peer applications. Originally the networking protocol of IPFS, it has since been extracted to become its own first-class project.
 
 ### Objectives
 

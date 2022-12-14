@@ -193,15 +193,19 @@
   },
   "libp2p": {
     "1.1": {
-      "description": "Learn what is libp2p and its main objectives",
+      "description": "Understand what libp2p is and the benefits it provides",
       "subgoals": [
         {
           "id": "1.11",
-          "description": "Understand what is libp2p"
+          "description": "Understand the difference between the p2p and client-server model"
         },
         {
           "id": "1.12",
-          "description": "Identify the main objectives of the project"
+          "description": "Describe the technical & political benefits and challenges of peer-to-peer architectures"
+        },
+        {
+          "id": "1.13",
+          "description": "Describe the technical & political benefits and challenges of peer-to-peer architectures"
         }
       ]
     },
