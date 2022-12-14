@@ -79,7 +79,8 @@ Read more about the DAG-PB codec in the [**specification**](https://ipld.io/spec
 
 ## UnixFS
 
-[UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs) is a data format for creating directory & file hierarchies and Merkle DAGs. UnixFS does this by adding an encoding layer _above_ the DAG-PB codec that is applied to serialize filesystem metadata. Metadata can include file timestamps, file permissions, mime types and whether an object is a file, directory or even a symlink. This means that a single block may incur a double Protobuf decode to retrieve complete information about the filesystem.
+[UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs) is a data format for creating directory & file hierarchies and Merkle DAGs. UnixFS does this by adding an encoding layer _above_ the DAG-PB codec that takes the file metadata, such as timestamps, permissions, and labels for types of data (mime types), and converts it into bytes that make it easier to transfer data to other files, databases, or memory storage.
+After the byte data is sent over the wire, a UnixFS block may incur a double Protobuf decode to retrieve complete information about the filesystem.
 
 ![Unixfs_addon](unixfs_addon.png)
 
