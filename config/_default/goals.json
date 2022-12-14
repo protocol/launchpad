@@ -177,20 +177,6 @@
       "levels": ["deep"]
     }
   },
-  "dev-tools": {
-    "1.1": {
-      "description": "Understand what are Dev-Tools and why they are important for developers.",
-      "subgoals": []
-    },
-    "1.2": {
-      "description": "Get to know the main Dev-Tools available in the IPFS and Filecoin ecosystem.",
-      "subgoals": []
-    },
-    "1.3": {
-      "description": "Know how you can add you own Dev-Tools to the Launchpad curriculum, so that other people can learn about them.",
-      "subgoals": []
-    }
-  },
   "libp2p": {
     "1.1": {
       "description": "Learn what is libp2p and its main objectives",
@@ -299,5 +285,95 @@
       ],
       "levels": ["deep"]
     }
-  }
+  },
+  "filecoin": {
+    "1.1": {
+      "description": "Know what...",
+      "subgoals": [
+        {
+          "id": "1.11",
+          "description": "Understand ..."
+        },
+        {
+          "id": "1.12",
+          "description": "Be able to ..."
+        },
+        {
+          "id": "1.13",
+          "description": "Be able to ..."
+        }
+      ],
+      "levels": ["shallow"]
+    },
+    "1.2": {
+      "description": "Understand ...",
+      "subgoals": [],
+      "levels": ["shallow"]
+    },
+    "1.3": {
+      "description": "Describe ...",
+      "subgoals": [],
+      "levels": ["shallow"]
+    },
+    "1.4": {
+      "description": "Describe ...",
+      "subgoals": [],
+      "levels": ["deep"]
+    },
+    "1.5": {
+      "description": "Describe ...",
+      "subgoals": [],
+      "levels": ["deep"]
+    }
+  },
+  "dev-tools": {
+    "1.1": {
+      "description": "Understand what are Dev-Tools and why they are important for developers.",
+      "subgoals": []
+    },
+    "1.2": {
+      "description": "Get to know the main Dev-Tools available in the IPFS and Filecoin ecosystem.",
+      "subgoals": []
+    },
+    "1.3": {
+      "description": "Know how you can add you own Dev-Tools to the Launchpad curriculum, so that other people can learn about them.",
+      "subgoals": []
+    }
+  },
+  "example-section": {
+      "1.1": {
+        "description": "Know what...",
+        "subgoals": [
+          {
+            "id": "1.11",
+            "description": "Understand ..."
+          },
+          {
+            "id": "1.12",
+            "description": "Be able to ..."
+          },
+          {
+            "id": "1.13",
+            "description": "Be able to ..."
+          }
+        ],
+        "levels": [
+          "shallow/deep"
+        ]
+      },
+      "1.2": {
+        "description": "Understand ...",
+        "subgoals": [],
+        "levels": [
+          "shallow/deep"
+        ]
+      },
+      "1.3": {
+        "description": "Describe ...",
+        "subgoals": [],
+        "levels": [
+          "shallow/deep"
+        ]
+      }
+    }
 }
