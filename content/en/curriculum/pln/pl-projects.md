@@ -1,5 +1,5 @@
 ---
-title: Open Source Contribution
+title: Projects of Protocol Labs
 description: "Contributing to Protocol Labs Core Projects"
 draft: false
 menu:
@@ -10,6 +10,13 @@ category: lecture
 level:
 - shallow
 - deep
+objectives:
+  show: true
+  goals:
+  - "1.3"
+  subgoals:
+  - 1.31
+  - 1.32
 ---
 
 ## The Projects

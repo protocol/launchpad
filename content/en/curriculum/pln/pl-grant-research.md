@@ -1,5 +1,5 @@
 ---
-title: Open Source Stewardship
+title: Grants/Research at Protocol Labs
 description: "Open Source Culture and Stewardship"
 draft: false
 menu:
@@ -8,7 +8,15 @@ menu:
 weight: 50
 category: lecture
 level:
+- shallow
 - deep
+objectives:
+  show: true
+  goals:
+  - "1.4"
+  subgoals:
+  - 1.41
+  - 1.42
 ---
 
 ## Protocol Labs: An Open Source Organization
