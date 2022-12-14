@@ -1,7 +1,7 @@
 {
   "pln": {
     "1.1": {
-      "description": "Understand what the Protocol Lab Network is, how Protocol Labs evolved from a company to a network, and where it is headed.",
+      "description": "Learn what the Protocol Lab Network is, how Protocol Labs evolved from a company to a network, and where it is headed.",
       "subgoals": [
 
       {
@@ -21,13 +21,17 @@
     ]
     },
     "1.2": {
-      "description": "Understand what the resources and tools are within the PL Network to support teams, individuals, companies, and general growth of our mission",
+      "description": "Identify the culture and philosophy of Protocol Labs and what it means to be an asynchronous–first remote company",
       "subgoals": []
     },
     "1.3": {
-      "description": "Understand the methods and philosophies about how work and communication is carried out in the Protocol Labs Network & within PLN open source communities",
+      "description": "Discover what projects, tools, resources, and decentralized applications are built in the Protocol Lab Network",
       "subgoals": []
     }
+  },
+    "1.4": {
+      "description": "Understand the research organizations, network goods, and grants distributed in the Protocol Lab Network",
+      "subgoals": []
   },
   "ipfs": {
     "1.0": {
