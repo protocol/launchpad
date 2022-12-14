@@ -4,8 +4,10 @@ description: "Deeper Learning and Context to Prepare you for Web3"
 draft: false
 menu:
     resources:
-        parent: "resources-sdks"
+        parent: "resources-other"
 weight: 60
+aliases:
+- /resources/additional-learning/
 ---
 
 #### The Lifecycle of Data in DWeb | IPFS Camp 2019

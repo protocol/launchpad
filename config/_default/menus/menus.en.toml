@@ -140,13 +140,8 @@
     section = "dev-tools"
     description = "Learn about some of the most popular tools and projects built using Protocol Labs' technology"
 
-[[prereq]]
-  name = "Pre-Requisites"
-  weight = 10
-  identifier = "prereq"
-
 [[resources]]
-  name = "Other Resources"
+  name = "Resources"
   weight = 20
   identifier = "resources-other"
 
@@ -156,9 +151,9 @@
   identifier = "resources-prerequisites"
 
 [[resources]]
-  name = "PL Toolkits and SDKs"
+  name = "About"
   weight = 20
-  identifier = "resources-sdks"
+  identifier = "resources-about"
 
 
 [[tutorials]]
