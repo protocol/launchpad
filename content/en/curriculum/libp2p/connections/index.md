@@ -1,5 +1,5 @@
 ---
-title: "Connections and Users"
+title: "Connecting Peers"
 description: "Understand how a libp2p connection is established"
 draft: false
 menu:
@@ -10,6 +10,15 @@ category: lecture
 level:
 - shallow
 - deep
+objectives:
+  show: true
+  goals:
+  - 1.3
+  subgoals:
+  - 1.31
+  - 1.32
+  - 1.33
+  - 1.34
 ---
 
 ## Understanding Nodes
@@ -97,7 +106,7 @@ func main() {
 }
 ```
 
-Nodes establish connections with other nodes, so we need a way to locate those nodes. Multiaddresses specify the location of a node (e.g. which IP address and which port) and peer identifiers specify the identity of the node (e.g. once you get to the node, you can check if this is indeed the node you were looking for). 
+Nodes establish connections with other nodes, so we need a way to locate those nodes. Multiaddresses specify the location of a node (e.g. which IP address and which port) and peer identifiers specify the identity of the node (e.g. once you get to the node, you can check if this is indeed the node you were looking for).
 
 ### Peer Identity
 
@@ -194,19 +203,3 @@ The are two main implementations: mDNS and the Kademlia Distributed Hash Table. 
 To get more information on these concepts, watch the following video.
 
 {{< youtube bWY0op7FmJ8 >}}
-
-## libp2p Users
-
-The users of the libp2p protocol suite include, and is a list that is always being added to:
-
-* [Prysmaticlabs.com](http://prysmaticlabs.com)
-* [onflow.org](http://onflow.org)
-* [minaprotocol.com](http://minaprotocol.com)
-* [polygon.technology](http://polygon.technology)
-* [celestia.org](http://celestia.org)
-* [elrond.com](http://elrond.com)
-* [0x.org](http://0x.org)
-* [filecoin.io](http://filecoin.io)
-* [ipfs.io](http://ipfs.io)
-* [ethereum.org](https://ethereum.org/en/eth2/)
-* [polkadot.network](https://polkadot.network)
