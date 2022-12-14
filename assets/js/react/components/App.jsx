@@ -29,7 +29,16 @@ export const App = ({component, fetchData}) => {
       }
     }
 
-    fetchAsync()
+
+    if (fetchData) {
+      fetchAsync()
+    } else {
+      setFetchingData({
+        loading: false,
+        data: {},
+        error: null
+      })
+    }
   }, [])
 
   if (fetchingData.loading) {
