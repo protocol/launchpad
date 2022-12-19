@@ -294,7 +294,7 @@
       ],
       "levels":["deep"]
     },
-    "1.7": {
+    "1.6": {
       "description": "Learn about the CAR format and how it helps data distribution",
       "subgoals": [
         {
