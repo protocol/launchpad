@@ -46,7 +46,7 @@ After completing this section, you will also:
 
 * Find where communication about different open source projects is carried out (IPFS, IPLD, LibP2P, and Filecoin) and how decisions are made about the work that will be done.
 * Communicate the core goals of Protocol Labs as an organization as a whole, as well as the goals of some of the projects they work on.
-* Demonstrate use of async and open source communication by establishing public facing methods to share the outputs of your work and appropriate outreach, documentation, & communication with other Launchpad Cadets & Labbers.
+* Demonstrate use of async and open source communication by establishing public facing methods to share the outputs of your work and appropriate outreach, documentation, and communication with other Launchpad Cadets and Labbers.
 
 #### Links
 

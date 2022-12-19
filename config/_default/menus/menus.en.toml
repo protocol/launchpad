@@ -1,30 +1,32 @@
 [[main]]
   name = "Curriculum"
-  url = "/"
+  url = "/curriculum"
   weight = 1000
   [main.params]
     identifier = "curriculum"
+    image = "https://cdn-icons-png.flaticon.com/128/9041/9041299.png"
+    width = 21
+    height = 21
 
 [[main]]
-  name = "Prerequisites"
-  url = "/prerequisites/objectives/"
+  name = "Tutorials"
+  url = "/tutorials"
   weight = 2000
   [main.params]
-    identifier = "prerequisites"
+    identifier = "tutorials"
+      image = "https://cdn-icons-png.flaticon.com/128/6988/6988166.png"
+      width = 26
+      height = 26
 
 [[main]]
   name = "Resources"
-  url = "/resources/additional-learning/"
-  weight = 3000
-  [main.params]
-    identifier = "resources"
-
-[[main]]
-  name = "About"
-  url = "/about/"
+  url = "/resources/about/"
   weight = 3500
   [main.params]
-    identifier = "about"
+    identifier = "resources"
+    image = "https://cdn-icons-png.flaticon.com/128/2563/2563002.png"
+    width = 24
+    height = 24
 
 [[main]]
   name = "Website"
@@ -32,6 +34,9 @@
   weight = 4000
   [main.params]
     identifier = "website"
+    image = "https://cdn-icons-png.flaticon.com/512/4302/4302080.png"
+    width = 24
+    height = 24
 
 # [[main]]
 #   name = "Get Started"
@@ -135,19 +140,47 @@
     section = "dev-tools"
     description = "Learn about some of the most popular tools and projects built using Protocol Labs' technology"
 
-[[prereq]]
-  name = "Pre-Requisites"
-  weight = 10
-  identifier = "prereq"
-
 [[resources]]
   name = "Resources"
   weight = 20
   identifier = "resources-other"
 
+[[resources]]
+  name = "Prerequisites"
+  weight = 20
+  identifier = "resources-prerequisites"
+
+[[resources]]
+  name = "About"
+  weight = 20
+  identifier = "resources-about"
 
 
-# [[footer]]
-#   name = "Privacy"
-#   url = "/privacy-policy/"
-#   weight = 10
+[[tutorials]]
+  name = "Introduction to IPFS"
+  weight = 10
+  identifier = "tutorials-ipfs"
+  [tutorials.params]
+    category = "ipfs"
+    image = "/tutorials/intro-ipfs.png"
+
+
+[[tutorials]]
+  name = "Building libp2p applications"
+  weight = 20
+  identifier = "tutorials-libp2p"
+  [tutorials.params]
+    category = "libp2p"
+    image = "/tutorials/libp2p.png"
+
+# [[tutorials]]
+#   name = "Working with IPLD structures"
+#   weight = 30
+#   identifier = "tutorials-ipld"
+#   [tutorials.params]
+#     image = "/tutorials/ipld.svg"
+
+[[footer]]
+  name = "About Launchpad"
+  url = "/resources/about/"
+  weight = 10
