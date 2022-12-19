@@ -32,7 +32,7 @@ In order to understand the pieces that tie IPFS and IPLD together, you will need
 
 IPLD answers the question: Can we extract a re-usable data layer from IPFS that can be used to build other types of content-addressed data systems?
 
-Every content addressed system reinvents the data layer, typically in non-reusable ways.  IPLD aims to be an off-the-shelf content addressed data layer, with associated libraries, documentation and tooling that makes it easy to build system like Git in a short period of time.
+Every content addressed system reinvents the data layer, typically in non-reusable ways. IPLD aims to be an off-the-shelf content addressed data layer, with associated libraries, documentation and tooling that makes it easy to build a system like Git in a short period of time.
 
 ## How can we use IPLD?
 
