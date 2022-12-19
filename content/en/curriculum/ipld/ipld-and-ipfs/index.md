@@ -46,7 +46,7 @@ You can access and experiment with the same DAG builder from the video at [https
 
 ## The DAG-PB Format
 
-DAG-PB is a codec that describes the way that file data (binary) can be structured, similar to a JSON file, in a way that is compatible with all data formats.
+The majority of data that passes through kubo (go-ipfs), js-ipfs, the IPFS gateways and various other IPFS nodes in existence, will be file data. This data uses the [**DAG-PB**](https://ipld.io/specs/codecs/dag-pb/) encoding to transform binary file data into human-readable structures (see below) that helps IPLD form Merkle DAGs.
 
 The majority of data that passes through kubo (go-ipfs), js-ipfs, the IPFS gateways and various other IPFS nodes in existence uses the [**DAG-PB**](https://ipld.io/specs/codecs/dag-pb/) codec and **raw** block encoding to form graphs of IPLD blocks to represent the file data.
 
