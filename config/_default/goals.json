@@ -255,16 +255,46 @@
       "levels": ["shallow", "deep"]
     },
     "1.4": {
-      "description": "Go over the underlying data formats and layouts in IPLD",
-      "subgoals":[{}],
+      "description": "Go over the underlying data types and formats in IPLD",
+      "subgoals":[
+        {
+          "id": "1.41",
+          "description": "Understand the different types of data used with IPLD"
+        },
+        {
+          "id": "1.42",
+          "description": "Discover the default codec in IPFS and how it differs from other IPLD-native codecs"
+        },
+        {
+          "id": "1.43",
+          "description": "Describe how IPLD is interoperable with other addressed systems"
+        },
+        {
+          "id": "1.44",
+          "description": "Understand how Schemas provide encoding and storage convenience for application developers"
+        }
+      ],
       "levels": ["deep"]
     },
     "1.5": {
-      "description": "Know how distributed data structures bring improvements to decentralized networks",
-      "subgoals": [{}],
+      "description": "Gain a conceptual understanding on what algorithms we use with Merkle DAGs to build distributed data structures",
+      "subgoals": [
+        {
+          "id": "1.51",
+          "description": "Understand what makes distributed data structures so powerful"
+        },
+        {
+          "id": "1.52",
+          "description": "Learn the basics of the HAMT algorithm operations"
+        },
+        {
+          "id": "1.53",
+          "description": "How to traverse a Merkle DAG with IPLD pathing"
+        }
+      ],
       "levels":["deep"]
     },
-    "1.6": {
+    "1.7": {
       "description": "Learn about the CAR format and how it helps data distribution",
       "subgoals": [
         {
