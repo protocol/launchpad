@@ -28,6 +28,8 @@ If files were enough for data storage, we would not need databases with sophisti
 The IPLD Data Model and the suite of IPLD tooling and libraries are intended to meet this challenge.
 
 ## HAMTs & Distributed Data Structs | IPFS Camp 2022 - by Rod Vagg
+UnixFS uses a sharding technique called a **HAMT**, or [Hash Array Mapped Trie](https://en.wikipedia.org/wiki/Hash_array_mapped_trie). This algorithm turns out to be particularly useful in the content addressed world due to its stability and balanced nature. With a HAMT, we can build an arbitrarily large data structures.
+
 {{% youtube dvd2IMernQQ %}}
 At a high level, the talk covered the following concepts:
 
@@ -71,7 +73,7 @@ Algorithms for **mutation** operations that require new hashes for changed block
 
 The word shard can be thought of as _a small part of a whole_. Hence [**Sharding**](https://www.geeksforgeeks.org/what-is-sharding/) means breaking up a larger part into smaller pieces. Sharding of IPFS file graphs is an important concept because we use similar approaches in different ways to scale our various data structures, including the Filecoin blockchain (which is _not_ file data and uses DAG-CBOR codec).
 
-UnixFS uses a sharding technique called a **HAMT**, or [Hash Array Mapped Trie](https://en.wikipedia.org/wiki/Hash_array_mapped_trie). This algorithm turns out to be particularly useful in the content addressed world due to its stability and balanced nature. With a HAMT, we can build an arbitrarily large data structure from linked IPLD blocks that store `Name:Link` mappings. 
+The **HAMT**, algorithm turns out to be particularly useful for linking blocks together and forming a DAG according to predetermined constraints to optimize for latency of block transfers. With a HAMT, we can build an arbitrarily large data structure from linked IPLD blocks that store `Name:Link` mappings. 
 
 Consider the challenge of storing Wikipedia on IPFS, where almost all pages are under a single root. Wikipedia is like a single directory with millions of HTML files. A single DAG-PB block with a `"Links"` list that large would produce a block far too large to store and transfer efficiently. So we use a HAMT to spread it over many blocks, where their `"Links"` lists are made up of links whose names are part of a hash digest of each name of the file.
 
