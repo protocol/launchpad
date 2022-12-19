@@ -20,10 +20,11 @@ objectives:
   - 1.23
 ---
 ## Background Information
+In order to understand the pieces that tie IPFS and IPLD together, you will need to understand the following fundamental concepts:
 - [**Trees vs Graphs**](https://towardsdatascience.com/graph-theory-introduction-to-trees-a34ab267fc28) - Trees are a type of Graph data structure to help organize data in a logical format. Graphs and trees are, in essence, synonymous; they look similar, but differ in the ways they are used. Graphs also have stricter presence ordering than trees (visually identified by arrows). Therefore, all trees are graphs, but not all graphs are trees. A common example of a Tree structure that may also be a Graph, is one's own family tree.
 - [**Nodes**](https://stackoverflow.com/questions/28762037/what-is-node-in-a-tree) - Are data points in a tree or graph. Visually represented as a block or circle when drawing a tree. In IPFS, it is common to hear a 'block' be referred to as a 'node' or vise versa. 
 - [**Family and Nature References**](https://en.wikipedia.org/wiki/Tree_%28data_structure%29#Terminology) - Family references are often used in explanations of tree and graph structures. Common terms are: child node, parent node, or sibling node. Additionally, leaf nodes (in reference to the leafs of a tree), are the nodes all the way at the bottom of a graph. And a root node is the single node all the way at the top.
-- **Cylces** - Are specific to graphs; this refers to when there is a set of arrows that start and end at the same node. Note: w.r.t the image below, a cycle does not have to occur solely between a parent and child node.
+- **Cycles** - Are specific to graphs; this refers to when there is a set of arrows that start and end at the same node. Note: w.r.t the image below, a cycle does not have to occur solely between a parent and child node.
 
 ![Graph next to a nature tree](treevstree.png)
 
