@@ -86,8 +86,7 @@ CIDs are the native link format for IPLD that distinguishes it from a simple dat
 
 ## UnixFS
 
-[UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs) is a data format for creating directory & file hierarchies and Merkle DAGs. UnixFS does this by adding an encoding layer _above_ the DAG-PB codec that takes the file metadata, such as timestamps, permissions, and labels for types of data (mime types), and converts it into bytes that make it easier to transfer data to other files, databases, or memory storage.
-After the byte data is sent over the wire, a UnixFS block may incur a double Protobuf decode to retrieve complete information about the filesystem.
+[UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs) is a data format for creating directory & file hierarchies and Merkle DAGs. UnixFS does this by adding an encoding layer _above_ the DAG-PB codec that takes the file metadata, such as timestamps, permissions, and labels for types of data (mime types), and converts it into bytes that make it easier to transfer data to other files, databases, or memory storage. This means that a single block may be encoded twice into Protobuf format and therefore decoded twice to retrieve complete information about the filesystem.
 
 ![Unixfs_addon](unixfs_addon.png)
 
@@ -109,10 +108,10 @@ IPLD is ambitious in its aims to be able to represent many, varied types of cont
 _Codecs are how IPLD moves data between the raw byte representation and their equivalent Data Model form._
 
 ### Codecs in Production
-The Filecoin chain is probably the most sophisticated example of DAG-CBOR IPLD blocks used to represent a very large and scalable graph of structured data. Instead of having to load complete files, decode their contents and find individual pieces of data, an IPLD graph like the Filecoin chain can be navigated, transferred and reasoned about using IPLD [paths or selectors](paths-selectors.md).
+The Filecoin chain is probably the most sophisticated example of DAG-CBOR IPLD blocks used to represent a very large and scalable graph of structured data. Instead of having to load complete files, decode their contents and find individual pieces of data; an IPLD graph like the Filecoin chain can be navigated, transferred and reasoned about using IPLD [paths or selectors](paths-selectors.md).
 
 ## Intro to Schemas
-Schemas are an important tool for extending IPLD’s scope into the application layer where coherent and useful data structures are important; IPLD's primary focus is the storage and transmission of data. Schemas introduce additional Kinds to the Data Model to support application developers' reasoning about the shape of data that we expect to flow through an IPLD based system.
+Schemas are an important tool for extending IPLD’s scope into the application layer where coherent and useful data structures are important; without Schemas, IPLD's primary focus is the storage and transmission of data, making working with IPLD that much harder. Schemas introduce additional Kinds to the Data Model to support application developers' reasoning about the shape of data that we expect to flow through an IPLD based system.
 
 ## Further Reading
 * [**IPLD Data Model**](https://ipld.io/docs/data-model/)
