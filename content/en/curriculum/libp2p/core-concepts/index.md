@@ -1,97 +1,119 @@
 ---
-title: "Core Concepts"
-description: "The Building Blocks of libp2p"
+title: "Building Blocks"
+description: "The main components of the libp2p modular architecture"
 draft: false
 menu:
     curriculum:
         parent: "curriculum-libp2p"
 weight: 300
 category: lecture
+goal: 1.2
+subgoals:
+
+objectives:
+  show: true
+  goals:
+  - 1.2
+  subgoals:
+  - 1.21
+  - 1.22
+  - 1.23
+  - 1.24
 level:
 - shallow
 - deep
 ---
 
-### Concepts
+## Concepts
 
-_This is an annotated version of_ [_this libp2p doc_](https://docs.libp2p.io/concepts/)
+libp2p is a framework that allows you to create peer to peer networks in a modular way by choosing the protocols that your application needs.
+This section presents the main _building blocks_ of the libp2p architecture, which will be covered in detail later in the Launchpad curriculum.
 
-libp2p covers a lot of ground, and may involve unfamiliar terminology and concepts. This section defines some basic vocabulary and links to to the core information about these concepts.
+### Transport
 
-#### [Transport](https://docs.libp2p.io/concepts/transport/)
+A key part of a network is the transport layer (consider the TCP/IP or OSI model). Most communications on the Internet happen by using the TCP transport protocol, although UDP is also widely used.
+libp2p allows you to choose the transport protocol that best fits your application.
 
-To communicate on the internet, you need to use an agreed upon **T**ransport **P**rotocol (most of the internet uses a TCP/IP combination). With libp2p you can listen, dial, and provide addresses (which specify the transport). libp2p makes it possible to use multiaddresses to communicate with different protocols, in a peer-to-peer fashion.
+At the transport network level, libp2p offers TCP or QUIC (a new transport protocol built on top of UDP). When we open a connection with other peers in the network, we use a transport protocol.
 
-#### [NAT Traversal](https://docs.libp2p.io/concepts/nat/)
+You can read more in the [libp2p docs](https://docs.libp2p.io/concepts/transports/) or later in the Launchpad curriculum.
 
-NAT allows many machines with private addressed on a private network to use a single public address, however, it also comes with a firewall, which can make it difficult for two peers to connect.
+### Stream Multiplexing
 
-[NAT Traversal](https://tailscale.com/blog/how-nat-traversal-works/) is a strategy for making it possible for two peers behing NATs to connect.
+Once we have opened a connection by using a transport protocol, libp2p offers multiplexing out of the box.
+Opening new connections is _expensive_ from a resources point of view, so libp2p uses _stream multiplexing_ to exchange different types of data within the same connection.
+Basically, libp2p splits the connection into several logical _streams_. Every stream holds a different type of data.
 
-libp2p uses [STUN Hole-Punching and the TURN Circuit Relay Protocol](https://docs.libp2p.io/concepts/nat/) to give peers direct access to communicate with one another.  
+You can read more in the [libp2p docs](https://docs.libp2p.io/concepts/multiplex/) or later in the Launchpad curriculum.
 
+### NAT Traversal
 
-#### [Circuit Relay](https://docs.libp2p.io/concepts/circuit-relay/)
+Consider the Internet router that you have at home. You probably have several devices connected to it (laptops, mobile phones, or even the fridge).
+When you join the Internet, you are given an address identifier, called an _IP Address_.
+However, the number of IPs in the Internet is limited, so every device does not get a public IP address.
+Instead, your router creates a private network in your home and assigns a private IP to every device. Then, the router is responsible for managing the incoming and outgoing connections from the Internet.
+This is called **NAT (Network Address Traversal)**. For example, consider the following diagram:
 
-Circuit relay is a transport protocol that routes traffic between two peers over a third-party “relay” peer, when NAT Traversal and hole punching aren't an option, [the circuit relay can be used to connect them](https://blog.aira.life/understanding-ipfs-circuit-relay-ccc7d2a39).
+![NAT example](nat.png)
 
+The router is connected to the Internet, and is assigned a public IP address. Three devices are connected to the router, which manages the incoming and outgoing data.
 
-#### [Protocols](https://docs.libp2p.io/concepts/protocols/#what-is-a-libp2p-protocol)
+Although this is a great way of avoiding the waste of IP address, it brings a problem, especially in peer to peer networks.
+The only public part of our network is the router, so what happens if a computer from the Internet wants to connect to a specific device in our private network?
+libp2p offers several NAT traversal methods to avoid this issue, such as **[hole-punching](https://docs.libp2p.io/concepts/nat/hole-punching/) or [circuit relays](https://docs.libp2p.io/concepts/nat/circuit-relay/)**.
 
-Protocols define an application you are using with libp2p and provide the core funcitonality. [The libp2p Protocol](https://docs.libp2p.io/concepts/protocols/#what-is-a-libp2p-protocol) uses Protocol Ids to identify them, Handler Functions to accept connections, and Binary Streams as a medium.
+You can read more in the [libp2p docs](https://docs.libp2p.io/concepts/nat/) or later in the Launchpad curriculum.
 
-There are some [key defining features of a libp2p protocol](https://docs.libp2p.io/concepts/protocols/#what-is-a-libp2p-protocol), including a [protocol negotiation processes](https://docs.libp2p.io/concepts/protocols/#protocol-negotiation), and [libp2p uses other protocols defined here](https://docs.libp2p.io/concepts/protocols/#core-libp2p-protocols) to define itself.
+### Protocols
 
-#### [Peer Identity](https://docs.libp2p.io/concepts/peer-id/)
+As we mentioned before, libp2p provides stream multiplexing (i.e. reusing a connection to exchange different types of data through logical streams).
+Every stream is identified by the _protocol_ that it handles. In libp2p, a _protocol_ is simply a string that represents what kind of data is flowing through the stream.
 
-A Peer Identity (often written `PeerId`) is a unique multihash identifier for each peer with a link to their public key.
+Consider that your have two peers, _Peer A_ and _Peer B_. _Peer A_ wants to send random words to _Peer B_, so it opens a stream attached to the protocol `random-words`.
+To get the random words, Peer B creates a _handler_, which receives and manages the random words.
 
+You can read more in the [libp2p docs](https://docs.libp2p.io/concepts/protocols/#what-is-a-libp2p-protocol) or later in the Launchpad curriculum.
 
-#### [Addressing](https://docs.libp2p.io/concepts/addressing/)
+### Peer Identity
 
-Flexible networks need flexible addressing systems. Since libp2p is designed to work across a wide variety of networks, we need a way to work with a lot of different addressing schemes in a consistent way.
+In a peer to peer network, it is necessary to identify every peer uniquely.
+libp2p identifies every peer by using a _peer id_, which is a multihash identifier derived from the peer's private key.
 
-libp2p uses a flexible addressing system that can work in many different networks and interact with many different addressing schemes. libp2p uses known as a `multiaddress` (aka `multiaddr`), which is a convention for encoding multiple layers of addressing information into a single "future-proof" path structure.
+You can read more in the [libp2p docs](https://docs.libp2p.io/concepts/peer-id/) or later in the Launchpad curriculum.
 
-#### [Security](https://docs.libp2p.io/concepts/security-considerations/)
+### Addressing
 
-libp2p makes it simple to establish [encrypted, authenticated communication channels](https://github.com/protocol/launchpad/blob/main/docs/secure-comms/README.md) between two peers, but there are other important security issues to consider when building robust peer-to-peer systems.
+In order to establish connections with a peer, it is necessary to know its location.
+For example, when you access `https://127.0.0.1:8080/my-image.png`, you are requesting access to the `127.0.0.1` IP address, at the `8080` port by using the HTTPs protocol.
 
+Although this is a valid system, you have to infer some data about what protocol is behind `127.0.0.1`? And what protocol is behind `8080`?
+Of course, you know that `127.0.0.1` is an IPv4 address, and you know that `8080` is a TCP port because HTTP is used.
 
-**Identity and Trust**
+libp2p uses a different addressing system, which is called [multiaddresses](https://github.com/multiformats/multiaddr). Multiaddresses are self-describing:
 
-Every libp2p peer is uniquely identified by their [peer id](https://github.com/protocol/launchpad/blob/main/docs/peer-id/README.md), which is derived from a private cryptographic key. Peer ids and their corresponding keys allow us to _authenticate_ remote peers, but it does not provide a authorization out-of-the-box.
+`/ip4/127.0.0.1/tcp/8080/http/my-image.png`
 
-#### [Publish/Subscribe](https://docs.libp2p.io/concepts/publish-subscribe/)
+In the previous example, you do not have to guess any data. Every parameter is preceded by its protocol, which removes ambiguity.
 
-Publish/Subscribe is a system where peers congregate around topics they are interested in. Peers interested in a topic are said to be subscribed to that topic
+You can read more in the [libp2p docs](https://docs.libp2p.io/concepts/addressing/) or later in the Launchpad curriculum.
 
-Peers can send messages to topics. Each message gets delivered to all peers subscribed to the topic:
+### Security
+
+A libp2p connection is encrypted by default. At the same time, the peer id is derived from the peer's private cryptographic key.
+This allows you to _authenticate_ the peer and make sure you are connected to the correct peer.
+
+More complex systems will also require authorization (i.e. whether the peer is allowed to do a specific task). libp2p does not provide authorization out of the box.
+
+You can read more in the [libp2p docs](https://docs.libp2p.io/concepts/security/security-considerations/) or later in the Launchpad curriculum.
+
+### Publish/Subscribe
+
+libp2p also offers publish/subscribe capabilities by using the _topic_ abstraction.
+You can consider that a _topic_ is a bucket where messages for a specific use case are sent.
+For example, in a chat, you can create a "animals" topic, where only messages related to animals are sent.
+
+To receive messages, peers subscribe to topics they are interested in.
 
 ![peer messaging](peering.png)
 
-#### [Stream Multiplexing](https://docs.libp2p.io/concepts/stream-multiplexing/)
-
-Stream Multiplexing (_stream muxing_) is a way of sending multiple streams of data over one communication link. It combines multiple signals into one unified signal so it can be transported 'over the wires', then it is demulitiplexed (_demuxed_) so it can be output and used by separate applications.
-
-This is done to share the transmission bandwidth available between multiple sources to make transmission more efficient.
-
-
-**Where it Fits In**
-
-libp2p's multiplexing happens at the application layer, meaning it's not provided by the operating system's network stack.
-
-**[Multiplex Implementations](https://docs.libp2p.io/concepts/stream-multiplexing/#implementations)**
-
-Implementations of the multiplexing module include mplex protocol developer for libp2p, yamux by Hashicorp, quic transport protocol which includes a multiplexer, SPDY by Google, and more.
-
-
-### Other Resources
-
-Use [Crate libp2p](https://docs.rs/libp2p/0.40.0/libp2p/) to understand the modules, macros, structs, enums, traits, and functions used for the libp2p implementations
-
-#### Rust libp2p Tutorial (Optional)
-
-_Find the_ [_full tutorial here_](https://docs.rs/libp2p/0.40.0/libp2p/tutorial/index.html)
-
-This tutorial aims to give newcomers a hands-on overview on how to use the Rust libp2p implementation.
+You can read more in the [libp2p docs](https://docs.libp2p.io/concepts/publish-subscribe/) or later in the Launchpad curriculum.

@@ -25,7 +25,7 @@ In order to understand the pieces that make up a CID, you will need to understan
 * [**Binary vs Bits vs Bytes**]() - When we refer to something as **Binary** (**binary format** or **binary data**) it is easily identified by consisting of only ones or zeros. **Bits**, in a computer, are ones or zeros. **Bytes**, in a computer, are groups of 8 *bits*.
 * [**Hashing**](https://www.sentinelone.com/cybersecurity-101/hashing/) – When we refer to a 'hash', we are refering to the output of a mathematical process called 'hashing' (interchangeable with 'hash function'). This hashing process converts one value to another of a fixed length and is unique. This hash is generally in a binary format.
 * [**Base Encodings/Codec**](https://skorks.com/2009/08/different-types-of-encoding-schemes-a-primer/) – This is basically the process of converting binary numbers into a compressed set of characters. For example, Base 10 encoding says that 0001 1010 = 26, but that same number in base64 = MDAwMSAxMDEw. [Play around with different encoding here](https://cryptii.com/pipes/binary-to-base64)
-* [**Varints**](https://carlmastrangelo.com/blog/lets-make-a-varint) – Variable length integers, or Varints, are numbers optimized for saving space. The idea is to use the smallest amount of bytes needed to represent a number. For example, small numbers don't need as many bytes to represent them (0000 0010 == 2), so we would only use one byte as opposed to traditionally using 8 bytes.
+* [**Varints**](https://carlmastrangelo.com/blog/lets-make-a-varint) – Variable length integers, or Varints, are numbers optimized for saving space. The idea is to use the smallest amount of bytes needed to represent a number. For example, small numbers don't need as many bytes to represent them (0000 0010 == 2), so we would only use one byte as opposed to traditionally using 4 bytes.
 
 For a more in depth look at these topics, refer to the [Content Addressing in the IPFS](/curriculum/ipfs/content-addressing) section. 
 
@@ -60,14 +60,6 @@ CIDs give us many properties in content addressed systems:
 * **Security/Integrity**: Thanks to the immutability property, maliscious files can be avoided because it can be identified, by the CID, when a requested file has been tampered with.
 
 Also: Change Tracking, Cacheability, Efficient Syncability, Scalability, Offline-first Architectures, Resilience, and more!
-
-## Links – The Heart of IPLD
-
-CIDs are the native link format for IPLD that distinguishes it from a simple data representation system. They are how we can connect graphs of data in flexible ways.
-
-* Most data serialization formats, such as JSON and CBOR, don’t have a native way of representing links to content addressed data, so they don’t have a built-in way to form graphs of linked data.
-* IPLD brings its own formats that represent CIDs natively in the encoded bytes.
-* IPLD can also be used as a lens through which to view other content addressed formats, such as Git, or Bitcoin from which we can derive CIDs by assumption.
 
 ## Anatomy of a CID
 

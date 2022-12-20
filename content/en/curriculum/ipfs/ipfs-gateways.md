@@ -82,7 +82,7 @@ Opera for Android 57 introduced support for resolving `ipfs://` or `ipns://` via
 For more information [take a look at the official announcement](https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/).
 
 ### Puma Browser
-[Puma](http://pumabrowser.com/) is a mobile browser and wallet for the Web3 ecosystem. Private by design. Today, they support native IPFS, HNS & ENS support and enable seamless payments for creators and developers. You can use the `ipfs://` protocol to access content from the address bar via a customizable gateway.
+[Puma](http://pumabrowser.com/) is a mobile browser and wallet for the Web3 ecosystem. Private by design. Today, they support native IPFS, HNS & ENS protocols and enable seamless payments for creators and developers. You can use the `ipfs://` protocol to access content from the address bar via a customizable gateway.
 
 ## Collaborations
 Collaborations make it easy for other to build applications and use standards that make it possible for users to access content on the distributed web.

@@ -11,6 +11,8 @@ category: lecture
 level:
 - shallow
 - deep
+aliases:
+- /curriculum/libp2p/decentralized-messaging/
 ---
 
 ## Libp2p Quiz
@@ -36,6 +38,19 @@ Take the [**libp2p Quiz**](https://docs.google.com/forms/d/e/1FAIpQLSfAEZCeioMqv
 If you want to dive in, check out our [collection of tutorials](https://docs.libp2p.io/tutorials/), which will help guide you through your explorations of libp2p.
 
 You can also follow this [Getting Started with Rust and libp2p tutorial](https://docs.rs/libp2p/latest/libp2p/tutorial/index.html) to build a small ping clone, sending a ping to a peer, expecting a pong as a response.
+
+* [Introduction to libp2p](https://proto.school/introduction-to-libp2p)
+* [Blogging on the Decentralized Web](https://proto.school/blog)
+* [ResNetLab on Tour – Content Routing](https://research.protocol.ai/tutorials/resnetlab-on-tour/content-routing/)
+* [Crate libp2p](https://docs.rs/libp2p/0.40.0/libp2p/)
+* [Rust tutorial](https://docs.rs/libp2p/0.40.0/libp2p/tutorial/index.html)
+
+
+### Decentralized Messaging?
+
+**Intro to Decentralized Messaging | ETHGlobal – Jacob Heun**
+
+{{< youtube 69h1zhIdCN0 >}}
 
 #### Examples
 

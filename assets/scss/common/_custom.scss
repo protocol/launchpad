@@ -312,3 +312,92 @@ iframe {
 [data-dark-mode] .landing-colo {
     color: white;
 }
+
+.tutorials-container {
+  width: 100%;
+}
+
+.tutorials-container a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+[data-dark-mode] .tutorials-container a {
+  color: white;
+}
+
+.tutorials-card {
+  margin-right: 20px;
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid #d5d5d5;
+  margin-bottom: 20px;
+}
+
+[data-dark-mode] .tutorials-card {
+  color: white;
+  border-color: #8a8a8a;
+}
+
+.tutorials-card .info {
+  width: auto;
+  background-color: #f5f5f5;
+  opacity: 0.95; display: flex;
+  justify-content: space-between;
+  border-radius: 3px 3px 0px 0px;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+[data-dark-mode] .tutorials-card .info {
+  background-color: #3d3d3d;
+  border-color: #8a8a8a;
+}
+
+.tutorials-card .mainback {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.tutorials-card .mainback .title {
+  background-color: #f5f5f5;
+  border-top: 4px solid #a4a4a4;
+  border-radius: 0px 0px 4px 4px;
+  align-self: flex-end;
+  width: 100%;
+  font-size: 26px;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+[data-dark-mode] .tutorials-card .mainback .title {
+  background-color: #3d3d3d;
+  border-color: #8a8a8a;
+}
+
+@media (min-width: 1088px) {
+  .tutorials-card {
+    width: calc(33.3% - 20px);
+    max-width:400px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1087px) {
+  .tutorials-card {
+    min-width: calc(50% - 20px);
+    width: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (min-width: 0px) and (max-width: 649px) {
+  .tutorials-card {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+}

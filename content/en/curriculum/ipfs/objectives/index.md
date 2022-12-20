@@ -27,4 +27,3 @@ IPFS aims to [decentralize the web](https://docs.ipfs.io/concepts/what-is-ipfs/#
 The mission of **IPFS** is to create a resilient, upgradable, open network to preserve and grow humanity's knowledge.
 
 ![PL Logo](ipfs-logo.png)
-

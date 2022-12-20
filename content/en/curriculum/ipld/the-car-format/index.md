@@ -9,17 +9,24 @@ weight: 270
 category: lecture
 level:
 - deep
+objectives:
+  show: true
+  goals:
+  - "1.6"
+  subgoals:
+  - 1.61
+  - 1.62
 ---
 
 ![](intro.png)
 
-### The CAR Format
+## The CAR Format
 
 **CAR**, or Content Addressable aRchives, is a format for bundling IPLD blocks into a large bundle. These bundles can be stored as files, typically with a `.car` extension, or transferred over the wire. We categorize CAR as a "transport" for IPLD.
 
 ![](summary.png)
 
-#### CARv1
+### CARv1
 
 The CARv1 format comprises a sequence of length-prefixed IPLD block data. The first block in the CAR is the **Header** encoded as DAG-CBOR and the remaining blocks form the **Data** component of the format and are each additionally prefixed with their CIDs. The length prefix of each block in a CAR is encoded as a "varint"—an unsigned LEB128 integer. This integer specifies the number of remaining bytes for that block entry—excluding the bytes used to encode the integer, but including the CID for non-header blocks.
 
@@ -30,13 +37,13 @@ The CARv1 format comprises a sequence of length-prefixed IPLD block data. The fi
 
 There is no strict limits on the number of blocks a CAR may contain, nor how large they can be. It is also not strictly required that the blocks in a CAR be related. However, a typical CAR contains a single, complete DAG of blocks, whose root block's CID is recorded in the Header of the CAR.
 
-#### Example Use-cases
+### Example Use-cases
 
 An example use-case: [**Web3.storage**](https://web3.storage) allows users to upload IPLD data in bundles (instead of block-by-block) using the CAR format via [an HTTP API end-point](https://docs.web3.storage/how-tos/work-with-car-files/). Web3.storage has fairly relaxed restrictions on the layout or contents of a CAR that a user supplies.
 
 Another example use-case: **Filecoin** deals are typically performed using the CAR format to package a DAG as specified by an IPLD Selector (typically a selector that defines a complete DAG). These CARs have a single root, and the DAG's blocks are deterministically ordered according to the depth-first walk that a selector traversal performs.
 
-#### CARv2
+### CARv2
 
 CARv2 is an incremental upgrade to CARv1 in that it _wraps_ a CARv1 in an outer layer of data that provides some extra descriptive elements about the data in the CAR and a means for attaching an **index** of blocks within the CAR to the end of the archive. These improvements allow CARv2 to be used as an efficient IPLD block store (efficient on read operations, write operations are a little more complex due to the trailing index).
 
@@ -48,6 +55,14 @@ CARv2 has a flexible approach to index formats. The header provides details abou
 
 The index at the end of the format provides information about what blocks are stored within the CARv1 data payload and _where_ they exist within the archive. A CARv2 reader implementation can load the index and then use its CID->offset mapping information to seek directly to the requested block and not have to hunt for it. The index _format_ is flexible, in that the first byte of the index identifies the format (which a given CARv2 implementation may or may not understand how to read) and the rest of the bytes conform to that format. There are currently two well-specified index formats, but there are a number of additional experimental index formats. Index formats may be selected depending on the suitability for a particular application or set of data - generation speed, usage performance, size, etc. Indexes typically only store the _Multihash_ of a block, rather than the entire CID, for efficiency reasons (but there are other interesting characteristics enabled by being able to look up a block by multihash rather than the entire CID, even if the _Multicodec_ is useful for decoding the block once it's found).
 
-#### Further Reading
+## Performance
+Some considerations regarding performance:
+
+* Streaming: the CAR format is ideal for dumping blocks via streaming reads as the Header can be loaded first and minimal state is required for ongoing parsing.
+* Individual block reads: as the CAR format contains no index information, reads require either a partial scan to discover the location of a required block or an external index must be maintained and referenced for a seek and partial read of that data. See below regarding indexing.
+* DAG traversal: without an external index, traversal of a DAG specified by a "root" CID is not possible without dumping all blocks into a more convenient data store or by partial scans to find each block as required, which will likely be too inefficient to be practical.
+* Modification: CARs may be appended after initial write as there is no constraint in the Header regarding total length. Care must be taken in appending if a CAR is intended to contain coherent DAG data.
+
+## Further Reading
 
 The CARv1 and CARv2 specifications, including specifications for CARv2 index formats, can be found on the IPLD specifications site: [ipld.io/specs/transport/car](https://ipld.io/specs/transport/car/)

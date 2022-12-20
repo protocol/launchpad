@@ -20,7 +20,7 @@
             {{ else }}
               <img src="/icons/tutorial.png" width="20" height="20" />
             {{ end }}
-            <a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}" style="margin-left: 0.4rem">{{ .Name }}</a>
+            <a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}" style="margin-left: 0.4rem" target='{{ if eq .Page.Params.category "tutorial" }}_blank{{ end }}'>{{ .Name }} {{ if eq .Page.Params.category "tutorial" }}(Tutorial){{ end }}</a>
           </li>
         {{ end -}}
         </ul>

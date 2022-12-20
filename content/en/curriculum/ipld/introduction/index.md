@@ -23,16 +23,16 @@ objectives:
 
 In order to understand the pieces that tie IPFS and IPLD together, you will need to understand the following fundamental concepts:
 
-* [**Content Addressed Systems**](https://www.techtarget.com/searchstorage/definition/content-addressed-storage) - These are generally peer to peer networks, like IPFS, where users find content by its [CID or hash](/curriculum/ipfs/content-addressing). Other popular Content Addressed networks are: **Git, Bittorrent, and even blockchains**.
+* [**Content Addressed Systems**](https://www.techtarget.com/searchstorage/definition/content-addressed-storage) - These are generally peer to peer networks, like IPFS, where users find content by its [CID or hash](/curriculum/ipfs/content-addressing). Other popular Content Addressed networks are: [Git](https://en.wikipedia.org/wiki/Git#Data_structures), [BitTorrent](https://en.wikipedia.org/wiki/BitTorrent), and even blockchains.
 * [**Hash**](https://www.sentinelone.com/cybersecurity-101/hashing/) – The output of a mathematical process called **hashing**. This hashing process converts some arbitrary content to a unique binary number of fixed length.
 * [**Data Structures**](https://www.geeksforgeeks.org/data-structures/) - Are core computer science paradigms used heavily in IPLD. **Data structures** are used to provide the reader (and computers) with nicely formatted and organized data points. Common structures are: graphs, trees, blocks, and other "classes" of grouping techniques. We will talk more on these structures later in this module.
-* **Data Layer** - This is the part of IPFS (or any _content addressed system_) that breaks down files and other content to be stored in an **optimal way**. With a focus on **the specifics of how to address that content**.
+* **Data Layer** - This is the part of IPFS (or any _content addressed system_) that breaks down files and other content to be stored in an optimal way. With a focus on _the specifics of how to address that content_.
 
 ## Why IPLD?
 
 IPLD answers the question: Can we extract a re-usable data layer from IPFS that can be used to build other types of content-addressed data systems?
 
-Every content addressed system reinvents the data layer, typically in non-reusable ways. But we think that **building the next Git should take hours, not days!** so IPLD aims to be an off-the-shelf content addressed data layer, with associated libraries, documentation and tooling.
+Every content addressed system reinvents the data layer, typically in non-reusable ways. IPLD aims to be an off-the-shelf content addressed data layer, with associated libraries, documentation and tooling that makes it easy to build a system like Git in a short period of time.
 
 ## How can we use IPLD?
 
@@ -42,7 +42,7 @@ Treating the data layer as a discrete system provides developers working on cont
 2. Can we unify disparate content addressed formats and link between them? Git, blockchains, IPFS, etc.
 3. Can we build distributed data structures that we can interact with like we do with hosted databases, while taking advantage of the benefits of content addressing?
 
-### [**ResNetLab: Course Module - InterPlanetary Linked Data (IPLD)**](https://research.protocol.ai/tutorials/resnetlab-on-tour/ipld/)
+### [ResNetLab: Course Module - InterPlanetary Linked Data (IPLD)](https://research.protocol.ai/tutorials/resnetlab-on-tour/ipld/)
 
 {{< youtube Sgf6j_mCdjI >}}
 
@@ -61,7 +61,7 @@ Directories are graphs of links that are named; the links point to the blocks of
 
 ## Prequel to IPLD
 
-The CID that is returned to you when you add a file to IPFS is the entry point to these graph structures. **Graphs** are data structures to organize all the blocks of data pertaining to the respective file. This organization is handled by **"links"**; links help create a logical order of blocks for IPLD to address every subsequent block of data. There will be more on graphs in a later lesson. 
+The CID that is returned to you when you add a file to IPFS is the entry point to these graph structures. **Graphs** are data structures to organize all the blocks of data pertaining to the respective file. This organization is handled by **"links"**; links help create a logical order of blocks for IPLD to address every subsequent block of data. There will be more on graphs in a later lesson.
 
 ![Picture of a graph](tree_graph.png)
 ### Further Introductory Reading:

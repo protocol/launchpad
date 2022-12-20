@@ -46,9 +46,7 @@ You can access and experiment with the same DAG builder from the video at [https
 
 ## The DAG-PB Format
 
-DAG-PB is a codec that describes the way that file data (binary) can be structured, similar to a JSON file, in a way that is compatible with all data formats.
-
-The majority of data that passes through kubo (go-ipfs), js-ipfs, the IPFS gateways and various other IPFS nodes in existence uses the [**DAG-PB**](https://ipld.io/specs/codecs/dag-pb/) codec and **raw** block encoding to form graphs of IPLD blocks to represent the file data.
+The majority of data that passes through kubo (go-ipfs), js-ipfs, the IPFS gateways and various other IPFS nodes in existence, will be file data. This data uses the [**DAG-PB**](https://ipld.io/specs/codecs/dag-pb/) encoding to transform binary file data into human-readable structures (see below) that helps IPLD form Merkle DAGs.
 
 DAG-PB is a [protobuf based format](https://developers.google.com/protocol-buffers/docs/overview) that can only contain two things: a Byte array, and a list of named and sized links to other blocks. Those links are almost always to other DAG-PB blocks or raw leaf blocks.
 
@@ -76,6 +74,15 @@ Things to note:
 * The `"Data"` field can be used to store arbitrary bytes, _but_ it's typically used for **UnixFS** metadata.
 
 Read more about the DAG-PB codec in the [**specification**](https://ipld.io/specs/codecs/dag-pb/).
+
+## Links – The Heart of IPLD
+
+CIDs are the native link format for IPLD that distinguishes it from a simple data representation system. They are how we can connect graphs of data in flexible ways.
+
+* Most data serialization formats, such as JSON and CBOR, don’t have a native way of representing links to content addressed data, so they don’t have a built-in way to form graphs of linked data.
+* IPLD brings its own formats that represent CIDs natively in the encoded bytes.
+* IPLD can also be used as a lens through which to view other content addressed formats, such as Git, or Bitcoin from which we can derive CIDs by assumption.
+
 
 ## UnixFS
 
@@ -111,10 +118,10 @@ IPLD is ambitious in its aims to be able to represent many, varied types of cont
 _Codecs are how IPLD moves data between the raw byte representation and their equivalent Data Model form._
 
 ### Codecs in Production
-The Filecoin chain is probably the most sophisticated example of DAG-CBOR IPLD blocks used to represent a very large and scalable graph of structured data. Instead of having to load complete files, decode their contents and find individual pieces of data, an IPLD graph like the Filecoin chain can be navigated, transferred and reasoned about using IPLD [paths or selectors](paths-selectors.md).
+The Filecoin chain is probably the most sophisticated example of DAG-CBOR IPLD blocks used to represent a very large and scalable graph of structured data. Instead of having to load complete files, decode their contents and find individual pieces of data; an IPLD graph like the Filecoin chain can be navigated, transferred and reasoned about using IPLD [paths or selectors](paths-selectors.md).
 
 ## Intro to Schemas
-Schemas are an important tool for extending IPLD’s scope into the application layer where coherent and useful data structures are important; IPLD's primary focus is the storage and transmission of data. Schemas introduce additional Kinds to the Data Model to support application developers' reasoning about the shape of data that we expect to flow through an IPLD based system.
+Schemas are an important tool for extending IPLD’s scope into the application layer where coherent and useful data structures are important; without Schemas, IPLD's primary focus is the storage and transmission of data, making working with IPLD that much harder. Schemas introduce additional Kinds to the Data Model to support application developers' reasoning about the shape of data that we expect to flow through an IPLD based system.
 
 ## Further Reading
 * [**IPLD Data Model**](https://ipld.io/docs/data-model/)
