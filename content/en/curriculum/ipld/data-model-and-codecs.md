@@ -6,6 +6,9 @@ menu:
     curriculum:
         parent: "curriculum-ipld"
 weight: 230
+aliases:
+- /curriculum/ipld/codecs/
+- /curriculum/ipld/data-model
 category: lecture
 level:
 - deep

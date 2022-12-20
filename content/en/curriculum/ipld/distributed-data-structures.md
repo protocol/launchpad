@@ -6,6 +6,8 @@ menu:
     curriculum:
         parent: "curriculum-ipld"
 weight: 260
+aliases:
+- /curriculum/ipld/paths-and-selectors/
 category: lecture
 level:
 - deep
