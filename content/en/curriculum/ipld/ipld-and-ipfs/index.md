@@ -48,8 +48,6 @@ You can access and experiment with the same DAG builder from the video at [https
 
 The majority of data that passes through kubo (go-ipfs), js-ipfs, the IPFS gateways and various other IPFS nodes in existence, will be file data. This data uses the [**DAG-PB**](https://ipld.io/specs/codecs/dag-pb/) encoding to transform binary file data into human-readable structures (see below) that helps IPLD form Merkle DAGs.
 
-The majority of data that passes through kubo (go-ipfs), js-ipfs, the IPFS gateways and various other IPFS nodes in existence uses the [**DAG-PB**](https://ipld.io/specs/codecs/dag-pb/) codec and **raw** block encoding to form graphs of IPLD blocks to represent the file data.
-
 DAG-PB is a [protobuf based format](https://developers.google.com/protocol-buffers/docs/overview) that can only contain two things: a Byte array, and a list of named and sized links to other blocks. Those links are almost always to other DAG-PB blocks or raw leaf blocks.
 
 A typical DAG-PB block, represented as JSON, might look something like this:
@@ -76,6 +74,15 @@ Things to note:
 * The `"Data"` field can be used to store arbitrary bytes, _but_ it's typically used for **UnixFS** metadata.
 
 Read more about the DAG-PB codec in the [**specification**](https://ipld.io/specs/codecs/dag-pb/).
+
+## Links – The Heart of IPLD
+
+CIDs are the native link format for IPLD that distinguishes it from a simple data representation system. They are how we can connect graphs of data in flexible ways.
+
+* Most data serialization formats, such as JSON and CBOR, don’t have a native way of representing links to content addressed data, so they don’t have a built-in way to form graphs of linked data.
+* IPLD brings its own formats that represent CIDs natively in the encoded bytes.
+* IPLD can also be used as a lens through which to view other content addressed formats, such as Git, or Bitcoin from which we can derive CIDs by assumption.
+
 
 ## UnixFS
 

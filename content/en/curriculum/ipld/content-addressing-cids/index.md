@@ -61,14 +61,6 @@ CIDs give us many properties in content addressed systems:
 
 Also: Change Tracking, Cacheability, Efficient Syncability, Scalability, Offline-first Architectures, Resilience, and more!
 
-## Links – The Heart of IPLD
-
-CIDs are the native link format for IPLD that distinguishes it from a simple data representation system. They are how we can connect graphs of data in flexible ways.
-
-* Most data serialization formats, such as JSON and CBOR, don’t have a native way of representing links to content addressed data, so they don’t have a built-in way to form graphs of linked data.
-* IPLD brings its own formats that represent CIDs natively in the encoded bytes.
-* IPLD can also be used as a lens through which to view other content addressed formats, such as Git, or Bitcoin from which we can derive CIDs by assumption.
-
 ## Anatomy of a CID
 
 ![](cid-anatomy.png)
