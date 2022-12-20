@@ -1,17 +1,22 @@
 ---
 title: "Learning Objectives"
-description: "Summary and Learning Goals"
+description: "Filecoin Summary and Learning Goals"
 draft: false
 menu:
-    curriculum:
-        parent: "curriculum-filecoin"
-        identifier: "filecoin-objectives"
+  curriculum:
+    parent: "curriculum-filecoin"
+    identifier: "filecoin-objectives"
 weight: 375
 category: lecture
 level:
 - shallow
 - deep
+objectives:
+  show: true
+  showTitle: false
+  introPage: true
 ---
+
 
 # Filecoin
 
@@ -25,20 +30,4 @@ Available storage and the price of that storage is not controlled by any single 
 
 
 
-## Learning Objectives
 
-### Shallow Dive Goals
-* **1.0 –** Understand how and why Filecoin was created, what it’s used for, and the different sub projects that have evolved to improve it’s usability & functionality
-* **1.1 –**  Gain a basic understanding of account-based blockchain state model and economic mechanisms (shared with Ethereum and many others)
-* **1.2 –** Have a conceptual understanding of the sector sealing and proving process (unique replication, proof of replication, ongoing proof of space-time)
-* **1.3 –** Have a process understanding of deal-making, including data preparation and transport, and retrieval deals
-
-### Deep Dive Goals
-* **1.4 –** Understand the Filecoin state tree as a piece of structured IPLD, and actors as state transitions
-* **1.5 –** Be able to explain and give examples of the concepts of storage-powered consensus, secret leader elections
-* **1.6 –** Understand the operation of an over-collateralized lending market on Ethereum (e.g. Aave), as an analogy to basic platform possibilities on the FVM
-
-
-### Links
-
-**IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs) - **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld) - **libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p) - **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)

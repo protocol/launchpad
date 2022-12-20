@@ -287,6 +287,24 @@
     }
   },
   "filecoin": {
+    "1.0": {
+      "description": "Understand how and why Filecoin was created, how it relates to IPFS, and different ways it is growing and expanding for different use cases",
+      "subgoals": [
+        {
+          "id": "1.01",
+          "description": "Understand ..."
+        },
+        {
+          "id": "1.02",
+          "description": "Be able to ..."
+        },
+        {
+          "id": "1.03",
+          "description": "Be able to ..."
+        }
+      ],
+      "levels": ["shallow"]
+    },
     "1.1": {
       "description": "Understand how and why Filecoin was created, how it relates to IPFS, and different ways it is growing and expanding for different use cases",
       "subgoals": [
@@ -307,22 +325,66 @@
     },
     "1.2": {
       "description": "Understand ...",
-      "subgoals": [],
+      "subgoals": [{
+        "id": "1.21",
+        "description": "Understand ..."
+      },
+        {
+          "id": "1.22",
+          "description": "Be able to ..."
+        },
+        {
+          "id": "1.23",
+          "description": "Be able to ..."
+        }],
       "levels": ["shallow"]
     },
     "1.3": {
       "description": "Describe ...",
-      "subgoals": [],
+      "subgoals": [{
+        "id": "1.31",
+        "description": "Understand ..."
+      },
+        {
+          "id": "1.32",
+          "description": "Be able to ..."
+        },
+        {
+          "id": "1.33",
+          "description": "Be able to ..."
+        }],
       "levels": ["shallow"]
     },
     "1.4": {
       "description": "Describe ...",
-      "subgoals": [],
+      "subgoals": [{
+        "id": "1.41",
+        "description": "Understand ..."
+      },
+        {
+          "id": "1.42",
+          "description": "Be able to ..."
+        },
+        {
+          "id": "1.43",
+          "description": "Be able to ..."
+        }],
       "levels": ["deep"]
     },
     "1.5": {
       "description": "Describe ...",
-      "subgoals": [],
+      "subgoals": [{
+        "id": "1.51",
+        "description": "Understand ..."
+      },
+        {
+          "id": "1.52",
+          "description": "Be able to ..."
+        },
+        {
+          "id": "1.53",
+          "description": "Be able to ..."
+        }],
       "levels": ["deep"]
     }
   },
@@ -341,39 +403,40 @@
     }
   },
   "example-section": {
-      "1.1": {
-        "description": "Know what...",
-        "subgoals": [
-          {
-            "id": "1.11",
-            "description": "Understand ..."
-          },
-          {
-            "id": "1.12",
-            "description": "Be able to ..."
-          },
-          {
-            "id": "1.13",
-            "description": "Be able to ..."
-          }
-        ],
-        "levels": [
-          "shallow/deep"
-        ]
-      },
-      "1.2": {
-        "description": "Understand ...",
-        "subgoals": [],
-        "levels": [
-          "shallow/deep"
-        ]
-      },
-      "1.3": {
-        "description": "Describe ...",
-        "subgoals": [],
-        "levels": [
-          "shallow/deep"
-        ]
-      }
+    "1.1": {
+      "description": "Know what...",
+      "subgoals": [
+        {
+          "id": "1.11",
+          "description": "Understand ..."
+        },
+        {
+          "id": "1.12",
+          "description": "Be able to ..."
+        },
+        {
+          "id": "1.13",
+          "description": "Be able to ..."
+        }
+      ],
+      "levels": [
+        "shallow/deep"
+      ]
+    },
+    "1.2": {
+      "description": "Understand ...",
+      "subgoals": [],
+      "levels": [
+        "shallow/deep"
+      ]
+    },
+    "1.3": {
+      "description": "Describe ...",
+      "subgoals": [],
+      "levels": [
+        "shallow/deep"
+      ]
     }
+  }
 }
+
