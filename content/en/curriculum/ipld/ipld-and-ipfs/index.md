@@ -86,17 +86,27 @@ CIDs are the native link format for IPLD that distinguishes it from a simple dat
 
 ## UnixFS
 
-[UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs) is a data format for creating directory & file hierarchies and Merkle DAGs. UnixFS does this by adding an encoding layer _above_ the DAG-PB codec that takes the file metadata, such as timestamps, permissions, and labels for types of data (mime types), and converts it into bytes that make it easier to transfer data to other files, databases, or memory storage. This means that a single block may be encoded twice into Protobuf format and therefore decoded twice to retrieve complete information about the filesystem.
+[UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs) is a data format for creating directory & file hierarchies and Merkle DAGs. UnixFS does this by adding an encoding layer _above_ the DAG-PB codec that takes the file metadata, such as timestamps, permissions, and labels for types of data (mime types), and converts it into bytes that make it easier to transfer data to other files, databases, or memory storage.
+
+This means that a single block may be encoded twice into Protobuf format and therefore decoded twice after the bytes are sent over the wire, for the other database or filesystem to retrieve complete information about the filesystem.
 
 ![Unixfs_addon](unixfs_addon.png)
 
-UnixFS data also includes additional information about the form of the graph as it maps to filesystem data. For particularly large numbers of files, or a large number of chunks for files that are very big, the graphs must be organized in a way that scales. This introduces the need for a "sharding" system to ensure that we balance block size, graph height, and graph density vs block transfer latency. Too many links in a block will make the blocks themselves unmanageably large (in practice, we try to keep block sizes below 1Mb).
+UnixFS data also includes additional information about the form of the graph as it maps to filesystem data. For particularly large numbers of files, or a large number of chunks for files that are very big, the graphs must be organized in a way that scales.
+
+### Sharding
+To achieve this you will need a **sharding** system that will break the data up into blocks that balances block size, graph height, and graph density with block transfer latency (the time it takes to send all the blocks of data about a UnixFS file). If you break up and place too many links in a single block, the blocks can become unmanageably large, so we want to try to keep block sizes below 1Mb in size.
 
 More information about UnixFS can be found in the [**IPFS docs**](https://docs.ipfs.io/concepts/file-systems/#unix-file-system-unixfs) or in the UnixFS [**specification**](https://github.com/ipfs/specs/blob/master/UNIXFS.md).
 
 ## IPLD Data Types and Formats
 ### Intro to IPLD Data Model
-The IPLD Data Model is how we reason about data moving through the various states—in-memory, programmatic access and manipulation, and serialization to and from bytes for storage or transfers. It defines the different **Kinds** of data fundamentals; these fundamentals are Integers, Booleans, Strings, and other common data fundamentals similar to the JSON data model. But it adds **Bytes** and **Links** (as shown above).
+The IPLD Data Model exists to give structure to how data is structured, organized, and moved through the various states it can be accessed and manipulated in. This includes:
+* In-memory data, for short or long term
+* In states where programs and applications can access and manipulate the data
+* The serialization (breaking down into bytes) that can be used for data storage or transfers.
+
+It also defines the different **Kinds** of data fundamentals; these fundamentals include the typical Integers, Booleans, and Strings data types, as well as other common data fundamentals similar to the JSON data model. THe IPLD Data model also adds **Bytes** and **Links**.
 
 ### Limitations of File Data
 
