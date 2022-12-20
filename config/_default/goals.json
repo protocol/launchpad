@@ -288,7 +288,7 @@
   },
   "filecoin": {
     "1.1": {
-      "description": "Know what...",
+      "description": "Understand how and why Filecoin was created, how it relates to IPFS, and different ways it is growing and expanding for different use cases",
       "subgoals": [
         {
           "id": "1.11",
