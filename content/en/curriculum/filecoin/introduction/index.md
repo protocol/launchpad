@@ -67,7 +67,3 @@ For those who are newer to the world of Filecoin, Web3, and storage verification
 * [https://stats.filecoin.io/](https://stats.filecoin.io)
 * [https://dashboard.starboard.ventures/deals](https://dashboard.starboard.ventures/deals)
 * [https://status.filecoin.io/](https://status.filecoin.io)
-
-### Links
-
-**IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs) - **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld) - **libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p) - **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)
