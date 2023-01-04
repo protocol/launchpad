@@ -18,7 +18,7 @@ At the end of 2022, Protocol Labs consists of 450+ companies and projects buildi
 
 From core OSS contribution, to Radius grants distributed systems engineers, to network researchers, to community managers, to startup operators, there are a vast number of exciting opportunities across PLN teams and companies.
 
-#### The next Internet Revolution | Juan Benet | TEDxSanFrancisco
+### The next Internet Revolution | Juan Benet | TEDxSanFrancisco
 
 {{< youtube 2RCwZDRwk48 >}}
 
@@ -35,7 +35,6 @@ _This is an_ [_annotated version of a blog_](https://protocol.ai/blog/protocol-l
 The advent of computing radically transformed humanity, and so has the flourishing of our global nervous system: the Internet. This still-nascent medium of communication, of digital existence, will connect us and empower us in ways we've only begun to understand. In just a few short decades we've acquired tremendous, almost magical superpowers: we can speak to half the planet, at any time and from almost anywhere; we can explore and search the most complete compendium of human knowledge in seconds; we can reason about and solve tremendously difficult problems; we can work, play, and be together at a distance; we can conjure systems of digital and mechanical agents to do our bidding; we can change the world, we can save lives, we can wield all the powers of our species, for good and bad, with a sequence of keystrokes.
 
 ![The PL Universe](network.png)
-
 
 Long term, universal computation will transform us more than language has, which is indeed saying something. But it is important to realize we will see radical changes in the short term too: computing and the internet will grant us even greater superpowers, as we fuse ever tighter with our technology.
 
@@ -77,8 +76,8 @@ The cryptocurrency can be used to incentivize individuals, and other groups outs
 <!--
 The PL Network is funded by, and derives funding from, **Market Protocol assets**. A Market Protocol is a system that mediates some economic activity, and settles value exchanges using a cryptographic asset. This structure solves economic problems in asymmetric peer-to-peer resource sharing, scaling, services, maintenance, and development. In the case of the PL Network, a portion of that network-aligning asset is funneled back into [protocol public goods funding](https://fundingthecommons.io) to reward research, development, and product teams across the network. -->
 
-
 #### Welcome to Web 3 | David Diaz | ResNetLab
+
 _See the full set of resources [on the ResNetLab Tutorials page](https://research.protocol.ai/tutorials/resnetlab-on-tour)_
 
 [_From ResNetLab On Tour_](https://research.protocol.ai/tutorials/resnetlab-on-tour/welcome-to-web-3/)

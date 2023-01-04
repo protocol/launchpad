@@ -23,7 +23,7 @@ objectives:
 
 Working at a company in the Protocol Labs Network (PLN) is a fairly unique experience. For many Labbers, your work will often require contributing to one or many open source projects. IPFS, libp2p, Filecoin, Multiformats, IPLD, and others are all projects created and sponsored by the PL Network. Each of these projects is an independent open source project, and each of them has needs and goals that span multiple organizations within and outside the PL Network.
 
-#### Open Source Culture | Steven Allen & Dietrich Ayala
+### Open Source Culture | Steven Allen & Dietrich Ayala
 
 In this talk by Steven & Dietrich, they review some of the customs and best practices involved when becoming a part of an open source community.
 

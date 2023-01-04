@@ -22,7 +22,28 @@
     },
     "1.2": {
       "description": "Identify the culture and philosophy of Protocol Labs and what it means to be an asynchronous–first remote company",
-      "subgoals": []
+      "subgoals": [
+        {
+          "id": "1.21",
+          "description": "Understand the culture of asynchronous work and its processes."
+        },
+
+        {
+          "id": "1.22",
+          "description": "Understand how communication works at Protocol Labs."
+        },
+
+        {
+          "id": "1.23",
+          "description": "Understand the philosophy in the Protocol Lab Network and what it means to be a decentralized entity."
+        },
+
+        {
+          "id": "1.24",
+          "description": "Understand the philosophy of diversity, equity, and inclusion at Protocol Labs."
+        }
+
+      ]
     },
     "1.3": {
       "description": "Discover what projects, tools, resources, and decentralized applications are built in the Protocol Lab Network",
