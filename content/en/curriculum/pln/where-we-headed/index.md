@@ -1,5 +1,5 @@
 ---
-title: Where We are Headed
+title: Future of Protocol Labs
 description: Where are Are Headed with Web3
 draft: false
 menu:
