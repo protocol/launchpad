@@ -62,7 +62,23 @@
   },
     "1.4": {
       "description": "Understand the research organizations, network goods, and grants distributed in the Protocol Lab Network",
-      "subgoals": []
+      "subgoals": [
+        {
+          "id": "1.41",
+          "description": "Understand the team of Network Goods and the role they play in supporting PLN."
+        },
+
+        {
+          "id": "1.42",
+          "description": "Understand the types of grants available and how to utilize the grant process in the PLN." 
+          
+        },
+
+        {
+          "id": "1.43",
+          "description": "Understand what research is happening in the PLN."
+        }
+      ]
   },
   "ipfs": {
     "1.0": {

@@ -38,13 +38,13 @@ Here you will find resources to learn about the goals, mission, and philosophies
 
 #### After completing this section, you will also
 
-**Understand**
+# Understand
 
 * The culture of Protocol Labs and how its mission and goals brought about IPFS, libp2p, Filecoin, etc., have evolved and continue to evolve.
 * The projects, tools, and resources are being created in the Protocol Labs Network ecosystem.
 
 
-**Be Able To**
+# Be Able To
 
 * Find where communication about different open source projects is carried out and how to collaborate with those teams.
 * Communicate the core goals of Protocol Labs as a whole and the projects' goals in the process.
@@ -52,6 +52,6 @@ Here you will find resources to learn about the goals, mission, and philosophies
 * Understand how to share the outputs of your work, documentation, and progress with other members of Protocol Labs.
 
 
-#### Links
+## Links
 
 **IPFS** | [Docs](https://docs.ipfs.io) | [GitHub](https://github.com/ipfs) - **IPLD** | [Docs](https://ipld.io/docs/) | [GitHub](https://github.com/ipld) - **libp2p** | [Docs](https://docs.libp2p.io) | [GitHub](https://github.com/libp2p) - **Filecoin** | [Docs](https://docs.filecoin.io) | [GitHub](https://github.com/filecoin-project)
