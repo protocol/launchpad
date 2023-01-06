@@ -18,7 +18,8 @@
         "id": "1.13",
         "description": "Identify the different teams/groups of PL and PLN that helps move the organization into the future"
       }
-    ]
+    ],
+    "levels": ["shallow", "deep"]
     },
     "1.2": {
       "description": "Identify the culture and philosophy of Protocol Labs and what it means to be an asynchronous–first remote company",
@@ -43,7 +44,8 @@
           "description": "Understand the philosophy of diversity, equity, and inclusion at Protocol Labs."
         }
 
-      ]
+      ],
+      "levels": ["shallow", "deep"]
     },
     "1.3": {
       "description": "Discover what projects, tools, resources, and decentralized applications are built in the Protocol Lab Network.",
@@ -57,9 +59,9 @@
           "id": "1.32",
           "description": " Understand the tools used in the PL ecosystem."
         }
-      ]
-    }
-  },
+      ],
+      "levels": ["shallow", "deep"]
+    },
     "1.4": {
       "description": "Understand the research organizations, network goods, and grants distributed in the Protocol Lab Network",
       "subgoals": [
@@ -67,18 +69,17 @@
           "id": "1.41",
           "description": "Understand the team of Network Goods and the role they play in supporting PLN."
         },
-
         {
           "id": "1.42",
           "description": "Understand the types of grants available and how to utilize the grant process in the PLN." 
-          
         },
-
         {
           "id": "1.43",
           "description": "Understand what research is happening in the PLN."
         }
-      ]
+      ],
+      "levels": ["shallow", "deep"]
+    }
   },
   "ipfs": {
     "1.0": {

@@ -15,8 +15,9 @@ objectives:
   goals:
   - "1.4"
   subgoals:
-  - 1.41
-  - 1.42
+  - "1.41"
+  - "1.42"
+  - "1.43"
 ---
 
 ## Protocol Labs: An Open Source Organization
