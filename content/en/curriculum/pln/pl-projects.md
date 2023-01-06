@@ -18,11 +18,13 @@ objectives:
   - 1.31
   - 1.32
 ---
+# PLN 1.31
 
 ## The Projects
-Open Source Software is at the core of Protocol Labs. You can explore the repos here to get a sense of what the core technologies and repositories behind Protocol Labs are, how these projects operate.
 
-For those who want to dive in deep, get started contributing to IPFS Projects, with these high-traffic repos
+Open Source Software is at the core of Protocol Labs. You can explore the repos here to get a sense of what the core technologies and repositories behind Protocol Labs are, and how these projects operate.
+
+For those who want to dive in deep, get started contributing to IPFS Projects, with these high-traffic repos.
 
 ## The Protocol Labs OSS Projects
 
@@ -43,6 +45,7 @@ The four main projects focused on in this curriculum are IPFS, IPLD, Libp2p, and
 Note that these are not the only projects in the core Protocol Labs stack, and there are many more, such as [Multiformats](https://multiformats.io/), [Drand](https://drand.love/), [Bacalhau](https://github.com/filecoin-project/bacalhau), and more that are continually being added and updated to contribute to the PLN.
 
 ### PL Repos
+
 * [kubo](https://github.com/ipfs/kubo) (formerly go-ipfs) is a high traffic project, with many contributors from outside PL.
 * [libp2p](https://github.com/libp2p/go-libp2p-core) is the home of the OSS project that makes up the networking layer used by PL.
 * [ipfs-cluster](https://github.com/ipfs/ipfs-cluster) provides data orchestration across a swarm of IPFS daemons by allocating, replicating and tracking a global pinset distributed among multiple peers.
@@ -52,13 +55,19 @@ Note that these are not the only projects in the core Protocol Labs stack, and t
 * [Filecoin Improvement Requests (FIPs)](https://github.com/filecoin-project/FIPs) contains the set of fundamental governing principles for the Filecoin Network. It outlines the vision for Filecoin and it also describes how improvements to these rules can be proposed and ratified.
 
 ### Graphical/ User Interfaces
+
 We often see issues being filled in these repos that end up getting moved elsewhere:
+
 * [IPFS Desktop](https://github.com/ipfs/ipfs-desktop/). Use [IPFS Desktop](https://docs.ipfs.io/install/ipfs-desktop/#ipfs-desktop) to get acquainted with IPFS without needing to touch the terminal — or, if you're already experienced, use the powerful menubar/taskbar shortcuts alongside the command line to make your IPFS workflow faster.
+
 * [IPFS Web UI](https://github.com/ipfs/ipfs-webui/) is [a web interface](https://webui.ipfs.io/#/welcome) to IPFS, shipped with kubo (go-ipfs), js-ipfs, and ipfs-desktop.
+
 * [IPFS Companion](https://github.com/ipfs/ipfs-companion/) is a browser extension for Firefox, Chrome, Brave, Opera, and Edge.
 
 ### Docs
+
 Contribute while you learn more about PL projects:
+
 * [IPFS docs](https://github.com/ipfs/ipfs-docs)
 * [libp2p docs](https://github.com/libp2p/docs)
 * [IPLD docs](https://github.com/ipld/docs)
@@ -66,14 +75,16 @@ Contribute while you learn more about PL projects:
 * [Lotus docs](https://github.com/filecoin-project/lotus-docs)
 
 ### Dashboards
-* See this [dashboard for go-ipfs projects and tickets](https://github.com/orgs/ipfs/projects/16/views/1)
 
+* See this [dashboard for go-ipfs projects and tickets](https://github.com/orgs/ipfs/projects/16/views/1)
 
 {{% level type="[deep]" %}}
 
+# PLN 1.32
+
 ## How to Contribute
 
-#### Contributing and Maintaining in Open Source | Steven Allen & Raul Kripalani
+### Contributing and Maintaining in Open Source | Steven Allen & Raul Kripalani
 
 In This talk Steven Allen & Raul Kripalani will give tips and advice on how to make sure contributing to your open source project is effective, and maintains the spirit of positive communication and working together as a community to build great software in a way that teaches and elevates all member of a community.
 
@@ -96,7 +107,7 @@ Code reviews should look at:
 * Style: Does the code follow our style guides?
 * Documentation: Did the developer also update relevant documentation?
 
-**Standards for Review**
+## Standards for Review
 
 The primary purpose of code review is to make sure that the overall code health of the code base is improving over time. All of the tools and processes of code review are designed to this end.
 
@@ -106,7 +117,7 @@ First, developers must be able to make progress on their tasks. If you never sub
 
 On the other hand, it is the duty of the reviewer to make sure that each CL is of such a quality that the overall code health of their codebase is not decreasing as time goes on.
 
-**Principles**
+## Principles
 
 Technical facts and data overrule opinions and personal preferences.
 
@@ -116,17 +127,17 @@ Aspects of software design are almost never a pure style issue or just a persona
 
 If no other rule applies, then the reviewer may ask the author to be consistent with what is in the current codebase, as long as that doesn’t worsen the overall code health of the system
 
-**Resolving Conflicts**
+## Resolving Conflicts
 
 In any conflict on a code review, the first step should always be for the developer and reviewer to try to come to consensus, based on the contents of this document and the other documents in [The CL Author’s Guide](https://google.github.io/eng-practices/review/developer/) and this [Reviewer Guide](https://google.github.io/eng-practices/review/reviewer/).
 
 When coming to consensus becomes especially difficult, it can help to have a face-to-face meeting or a video conference between the reviewer and the author, instead of just trying to resolve the conflict through code review comments. (If you do this, though, make sure to record the results of the discussion as a comment on the CL, for future readers.)
 
-**Mentoring**
+## Mentoring
 
 Code review can have an important function of teaching developers something new about a language, a framework, or general software design principles. It’s always fine to leave comments that help a developer learn something new. Sharing knowledge is part of improving the code health of a system over time.
 
-**The Complete Guide**
+## The Complete Guide
 
 See all the sections below for a comprehensive picture. The pages in these section contain recommendations on the best way to do code reviews, based on long experience. All together they represent one complete document, broken up into many separate sections. You don’t have to read them all, but many people have found it very helpful to themselves and their team to read the entire set.
 
