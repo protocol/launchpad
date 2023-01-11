@@ -1,18 +1,23 @@
 <div class="row flex-l-nowrap" style="justify-content: center;">
   <div style="height: 0px;"></div>
 
-  {{ $gent := dict }}
+  {{ $countMap := dict }}
 
   {{ range $index, $element := .Site.Menus.curriculum -}}
-  {{ $gent = merge $gent (dict (print $element.Identifier "-lecture") 0) }}
-  {{ $gent = merge $gent (dict (print $element.Identifier "-tutorial") 0) }}
+    {{ $countMap = merge $countMap (dict (print $element.Identifier "-lecture") 0) }}
+    {{ $countMap = merge $countMap (dict (print $element.Identifier "-tutorial") 0) }}
   {{ end }}
 
   {{ range .Site.RegularPages }}
-  {{ if eq .Section "curriculum"}}
-  {{ $menu := print .Params.Menu.Curriculum.Parent "-" .Params.category}}
-  {{ $gent = merge $gent (dict $menu (add (index $gent $menu) 1) )  }}
-  {{ end }}
+    {{ $parentMenu := .Params.Menu.Curriculum.Parent }}
+    {{ if eq .Section "curriculum"}}
+      {{ $menu := print $parentMenu "-" .Params.category}}
+      {{ $countMap = merge $countMap (dict $menu (add (index $countMap $menu) 1) )  }}
+    {{ end }}
+    {{ if and (eq .Section "tutorials") (ne $parentMenu nil) }}
+      {{ $menu := print .Params.Menu.Curriculum.Parent "-tutorial" }}
+      {{ $countMap = merge $countMap (dict $menu (add (index $countMap $menu) 1) )  }}
+    {{ end }}
   {{ end }}
 
   <div class="curriculum-listing">
@@ -36,11 +41,11 @@
           <div style="display: flex; padding: 5px; justify-content: end; bottom: 0px;">
             <div style="display: flex; align-items: center; color: rgb(51, 51, 51);">
               <div><img src="/icons/lecture.png" width="23" height="23" style="margin-top: -7px;" /></div>
-              <div class="curriculum-listing-info">{{ index $gent $lecturesKey }} lectures</div>
+              <div class="curriculum-listing-info">{{ index $countMap $lecturesKey }} lectures</div>
             </div>
             <div style="display: flex; align-items: center; color: rgb(51, 51, 51); margin-left: 10px;">
               <div><img src="/icons/tutorial.png" width="28" height="28" /></div>
-              <div class="curriculum-listing-info">{{ index $gent $tutorialsKey }} tutorials</div>
+              <div class="curriculum-listing-info">{{ index $countMap $tutorialsKey }} tutorials</div>
             </div>
           </div>
         </div>
