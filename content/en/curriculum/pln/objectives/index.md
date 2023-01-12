@@ -16,7 +16,6 @@ objectives:
   showTitle: false
   introPage: true
 ---
-
 This section of the curriculum is focused on who and what Protocol Labs is, how it operates, how the culture is defined, and the different pieces that make up the Protocol Labs Network.
 
 Here you will find resources to learn about the goals, mission, and philosophies that unite us across the organization. You will find the directories of the many teams within the organization and how they contribute to the web3 ecosystem.
@@ -36,21 +35,19 @@ Here you will find resources to learn about the goals, mission, and philosophies
 * Tremendous opportunities to create, support, and grow **projects & protocols**.
 * **Open source** everything.
 
-#### After completing this section, you will also
+### After completing this section, you will also
 
-# Understand
+## Understand
 
 * The culture of Protocol Labs and how its mission and goals brought about IPFS, libp2p, Filecoin, etc., have evolved and continue to evolve.
 * The projects, tools, and resources are being created in the Protocol Labs Network ecosystem.
 
-
-# Be Able To
+## Be Able To
 
 * Find where communication about different open source projects is carried out and how to collaborate with those teams.
 * Communicate the core goals of Protocol Labs as a whole and the projects' goals in the process.
 * Demonstrate the use of asynchronous and open-source communication of Protocol Labs.
 * Understand how to share the outputs of your work, documentation, and progress with other members of Protocol Labs.
-
 
 ## Links
 

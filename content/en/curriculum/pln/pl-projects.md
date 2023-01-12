@@ -18,8 +18,8 @@ objectives:
   - 1.31
   - 1.32
 ---
-# PLN 1.31
 
+# PLN 1.31
 ## The Projects
 
 Open Source Software is at the core of Protocol Labs. You can explore the repos here to get a sense of what the core technologies and repositories behind Protocol Labs are, and how these projects operate.
