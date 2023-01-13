@@ -3,12 +3,10 @@ title: "Project Name"
 description: "Project Name – Brief Description"
 draft: false
 menu:
-
-[//]: # (    curriculum:)
-
-[//]: # (        parent: "")
+  curriculum:
+    parent: "curriculum-devtools"
 weight: 0
-category: tutorial
+category: lecture
 level:
 - shallow
 - deep
