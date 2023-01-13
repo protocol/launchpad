@@ -37,7 +37,7 @@ Definitions
          curriculum:
            parent: "curriculum-ipfs"
        ```
-
+If your tutorial does not fit in any of the current categories, then you can create a new category module:
 
 ### Create a new Module
 To create a new set of tutorials or Module, follow these steps:
