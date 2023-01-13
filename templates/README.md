@@ -75,6 +75,7 @@ To create a new set of tutorials or Module, follow these steps:
 * Create a new directory
 * Add .md Files
 * Update `config/_default/menus/menus.en.toml`
+
 ```
 [[curriculum]]
 name = "<New Curriculum Name>"
