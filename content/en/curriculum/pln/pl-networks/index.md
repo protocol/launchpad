@@ -10,6 +10,12 @@ category: lecture
 level:
 - shallow
 - deep
+objectives:
+  show: true
+  goals:
+  - "1.1"
+    subgoals:
+  - 1.13
 ---
 
 Protocol Labs is a constantly evolving network is made up of 450+ projects, companies, and organizations. Understanding the landscape of organization, projects, and teams can be complex, and this section presents tools that can help you understand and navigate these systems and organizations.

@@ -17,7 +17,6 @@ objectives:
   subgoals:
   - 1.11
   - 1.12
-  - 1.13
 ---
 
 # PLN 1.11: Understand the history of Protocol Labs (PL) and its evolution.
@@ -151,7 +150,7 @@ Under the Network Goods category, we have:
 
 #### Spaceport (Member Services)
 
-Protocol Labs is an open-source R&D lab that builds protocols, tools, and services to improve the internet radically. Within the Protocol Labs Network, there are many independent teams and organizations, each with unique objectives that further this mission. 
+Protocol Labs is an open-source R&D lab that builds protocols, tools, and services to improve the internet radically. Within the Protocol Labs Network, there are many independent teams and organizations, each with unique objectives that further this mission.
 
 Spaceport’s mission is to provide PLN teams and members with curated resources, connections, and services to help them build and scale web3 enterprises.
 
