@@ -14,7 +14,7 @@ objectives:
   show: true
   goals:
   - "1.1"
-    subgoals:
+  subgoals:
   - 1.13
 ---
 
