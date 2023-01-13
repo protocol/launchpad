@@ -46,22 +46,6 @@ const PageNavigation = () => {
     return link.href
   }
 
-  const composePreviousButton = previous => {
-    return <div className="card my-1">
-      <div className="card-body py-2">
-        {getDataAttributeFromContainer(previous, "title")}
-      </div>
-    </div>
-  }
-
-  const composeNextButton = previous => {
-    return <div className="card my-1">
-      <div className="card-body py-2">
-        {getDataAttributeFromContainer(previous, "title")}
-      </div>
-    </div>
-  }
-
   const composeButton = previous => {
     const title = getDataAttributeFromContainer(previous, "title")
 
