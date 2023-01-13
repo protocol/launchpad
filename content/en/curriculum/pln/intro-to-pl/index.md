@@ -32,7 +32,7 @@ Protocol Labs enables a network of projects, tools, startups, research, communit
 
 Protocol Labs, at its core, is an organization (also referred to internally as Starfleet) that supports open-source software projects, engineering research in multiple fields related to computation, communication, and knowledge, as well as other services. PL also supports the network of organizations that builds upon and expands the capabilities of its core technologies.
 
-Protocol Labs is building the next generation of the internet. We are an open-source Network that spans the research-to-development pipeline to create new protocols, tools, and services to improve the internet radically. Our products serve thousands of organizations and millions of people.
+Protocol Labs is building the next generation of the internet. We are an open-source network that spans the research-to-development pipeline to create new protocols, tools, and services to improve the internet radically. Our products serve thousands of organizations and millions of people.
 
 Many teams in the PL Network are fully distributed and follow a standard set of open-source practices to grow and flourish together. This distributed, open-source philosophy is at the core of how PL operates.
 
