@@ -34,7 +34,7 @@ Protocol Labs, at its core, is an organization (also referred to internally as S
 
 Protocol Labs is building the next generation of the internet. We are an open-source network that spans the research-to-development pipeline to create new protocols, tools, and services to improve the internet radically. Our products serve thousands of organizations and millions of people.
 
-Many teams in the PL Network are fully distributed and follow a standard set of open-source practices to grow and flourish together. This distributed, open-source philosophy is at the core of how PL operates.
+Many [teams in the PL Network](https://www.plnetwork.io/directory/teams)  are fully distributed and follow a standard set of open-source practices to grow and flourish together. This distributed, open-source philosophy is at the core of how PL operates.
 
 We also believe in connecting and bringing people together to inspire innovation. That’s why we have yearly PL Network “Lab Weeks” to gather our community of “labbers” (contributors and members of PL Network teams) together and align on the following year’s opportunities and challenges.
 
