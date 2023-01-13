@@ -2,7 +2,7 @@ import React from "react";
 import {useEffect, useState} from "react";
 import Spinner from "react-bootstrap/Spinner";
 
-export const App = ({component, fetchData}) => {
+export const App = ({component, fetchData, container = null}) => {
 
   const [fetchingData, setFetchingData] = useState({
     loading: true,
@@ -13,7 +13,7 @@ export const App = ({component, fetchData}) => {
   useEffect(() => {
     const fetchAsync = async () => {
       try {
-        const data = await fetchData()
+        const data = await fetchData(container)
 
         setFetchingData({
           loading: false,
@@ -51,4 +51,8 @@ export const App = ({component, fetchData}) => {
   }
 
   return <div>Error</div>
+}
+
+export const buildAppComponent = (component, fetchData, container) => {
+  return <App component={component} container={container} fetchData={fetchData} />
 }
