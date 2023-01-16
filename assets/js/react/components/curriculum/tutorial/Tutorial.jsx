@@ -18,9 +18,9 @@ const Tutorial = () => {
   }, [])
 
   return <>
-    {tutorialData !== null && <div style={{width: '100%', height: '100%', zIndex: 10000}}>
-      <div style={{display: 'flex', alignItems: 'center', backgroundColor: '#f5f5f5', color: 'black', padding: '12px', border: '1px solid #E8E8E8FF', borderRadius: '4px 4px 4px 4px', marginTop: '20px'}}>
-        <img src="https://cdn-icons-png.flaticon.com/128/8635/8635319.png" width="35" height="35" />
+    {tutorialData !== null && <div className="dynamic-tutorial">
+      <div className="notice">
+        <img src="/icons/tutorial-book.png" width="35" height="35" />
         <span style={{marginLeft: '10px', fontSize: '19px'}}>This tutorial was originally posted in the <a href="/tutorials" target="__blank">Launchpad Tutorials</a> section.</span>
       </div>
       <h1>{tutorialData.title}</h1>
