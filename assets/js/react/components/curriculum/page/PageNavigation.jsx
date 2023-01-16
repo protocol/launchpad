@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react"
 import ReactDOM from "react-dom/client";
 import {useContentLevel, useCurrentPageId, useSidebarMenuElements} from "../../../services/hooks";
 import Spinner from 'react-bootstrap/Spinner';
-import {getDataAttribute, getDataAttributeFromContainer} from "../../../services/util";
+import {getDataAttribute, getDataAttributeFromContainer, renderComponent} from "../../../services/util";
 import {TutorialTrigger} from "../tutorial/TutorialTrigger";
 
 const PageNavigation = () => {
@@ -76,6 +76,4 @@ const PageNavigation = () => {
   </>
 }
 
-const container = document.getElementById('page-navigation');
-const root = ReactDOM.createRoot(container);
-root.render(<PageNavigation />)
+renderComponent(<PageNavigation />, "page-navigation")

@@ -20,14 +20,10 @@ export const TutorialTrigger = ({title, content, button = undefined}) => {
 
   const trigger = () => {
     const activeElements = document.getElementsByClassName("docs-link rounded active");
-    console.log(activeElements.length)
-    for (let i = 0; i < activeElements.length; i++) {
-      console.log('------ taken')
-      const activeElement = activeElements[i]
-      console.log(activeElement.classList)
-      activeElement.classList.toggle('active')
-      console.log(activeElement.classList)
 
+    for (let i = 0; i < activeElements.length; i++) {
+      const activeElement = activeElements[i]
+      activeElement.classList.toggle('active')
     }
 
     window.dispatchEvent(new CustomEvent('showDynamicTutorial', {detail: {title, content}}))

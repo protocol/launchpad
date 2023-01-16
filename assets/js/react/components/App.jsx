@@ -29,7 +29,6 @@ export const App = ({component, fetchData, container = null}) => {
       }
     }
 
-
     if (fetchData) {
       fetchAsync()
     } else {
@@ -41,16 +40,20 @@ export const App = ({component, fetchData, container = null}) => {
     }
   }, [])
 
+  let renderComponent = <div>Error rendering component</div>
+
   if (fetchingData.loading) {
-    return <Spinner animation="border" />
+    renderComponent = <Spinner animation="border" />
   }
 
   if (fetchingData.data) {
     const Component = component
-    return <Component {...fetchingData.data} />
+    renderComponent = <Component {...fetchingData.data} />
   }
 
-  return <div>Error</div>
+  return <div>
+    {renderComponent}
+  </div>
 }
 
 export const buildAppComponent = (component, fetchData, container) => {
