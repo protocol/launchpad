@@ -13,7 +13,7 @@ level:
 ---
 
 ## <Dev Tool> Introdution
-The network indexer is a project created and maintained by Protocol Labs that is designed to index the data on the Filecoin and IPFS networks, and work alongside the DHT to enable the fast and efficient of data.
+The network indexer is a project created and maintained by Protocol Labs that is designed to index the data on the Filecoin and IPFS networks, and work alongside the Distributed Hash Table (DHT) employed by IPFS and Filecoin to enable the fast and efficient retrieval of content-addressed data.
 
 
 ## Why Use/ Who Uses <Dev Tool>
@@ -39,7 +39,7 @@ Information about a specific tool or functionality
 Information about a specific tool or functionality
 
 ## Tutorial: Search the Index
-In this simple tutorial, we are going to 
+In this simple tutorial, we are going to
 
 ## Up Next
 Describe any exciting in-development features and projects, roadmaps (and links to them), as well as information about new
