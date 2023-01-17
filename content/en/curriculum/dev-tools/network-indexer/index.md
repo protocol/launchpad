@@ -26,8 +26,6 @@ Give some real-world use-cases and examples
 ### Sizzle Video Name | Event if Applicable
 If a sizzle or demo video exists, from, say IPFS Camp, add it here with a short 2-3 sentence description
 
-### Video
-
 {{< youtube i100RhwZUnQ >}}
 <!-- The URL to this video was: https://www.youtube.com/watch?v=i100RhwZUnQ -->
 
