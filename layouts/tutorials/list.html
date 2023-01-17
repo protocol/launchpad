@@ -28,6 +28,16 @@
                   <div class="curriculum-listing-info">
                     libp2p
                   </div>
+                  {{ else if eq $element.Params.category "fvm" }}
+                  <img src="/logos/fvm.png" width="14.71" height="22.30" />
+                  <div class="curriculum-listing-info">
+                    FVM
+                  </div>
+                  {{ else if eq $element.Params.category "web3" }}
+                  <img src="https://cdn-icons-png.flaticon.com/128/1674/1674883.png" width="23.5" height="23.5" />
+                  <div class="curriculum-listing-info">
+                    Web3
+                  </div>
                   {{ else }}
                   <img src="/logos/ipld.png" width="23.17" height="26.34" />
                   <div class="curriculum-listing-info">

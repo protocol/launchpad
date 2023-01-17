@@ -164,7 +164,6 @@
     category = "ipfs"
     image = "/tutorials/intro-ipfs.png"
 
-
 [[tutorials]]
   name = "Building libp2p applications"
   weight = 20
@@ -172,6 +171,22 @@
   [tutorials.params]
     category = "libp2p"
     image = "/tutorials/libp2p.png"
+
+[[tutorials]]
+  name = "Building on the FVM"
+  weight = 30
+  identifier = "tutorials-fvm"
+  [tutorials.params]
+    category = "fvm"
+    image = "https://user-images.githubusercontent.com/310223/150189748-ed673f1a-6a5f-4746-a1b3-0d8b1a3f5fd2.png"
+
+[[tutorials]]
+  name = "Introduction to Metamask"
+  weight = 40
+  identifier = "tutorials-metamask-intro"
+  [tutorials.params]
+    category = "web3"
+    image = "https://st.depositphotos.com/60692670/57535/i/600/depositphotos_575356850-stock-photo-ukraine-odessa-october-2021-hand.jpg"
 
 # [[tutorials]]
 #   name = "Working with IPLD structures"
