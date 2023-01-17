@@ -10,7 +10,7 @@ The default branch for this repository is **main** for the curriculum published 
 
 ## Contributing to the Launchpad Curriculum
 We highly encourage collboration & contributions from others who are creating content! Adding tutorials to the Tutorials page of the platform, and Dev Tools pages are super helpful!
-* See the {Style Guide](https://github.com/protocol/launchpad/blob/main/STYLE-GUIDE.md) for information on how to format the markdown and add content like images and videos
+* See the [Style Guide](https://github.com/protocol/launchpad/blob/main/STYLE-GUIDE.md) for information on how to format the markdown and add content like images and videos
 * See the [directions for creating tutorials and dev tools pages](https://github.com/protocol/launchpad/blob/templates/STYLE-GUIDE.md)
 
 * We would love to make a PR To help get you started! [ping the core contributors](https://github.com/protocol/launchpad/graphs/contributors) to this repository, or open an [Issue](https://github.com/protocol/launchpad/issues).
