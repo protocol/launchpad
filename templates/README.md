@@ -66,7 +66,7 @@ To create a new set of tutorials or Module, follow these steps:
 
 ## How to Create a Dev Tools Page
 
- * Create a Markdown file or a directory with a markddown file in `content/en/curriculum/dev-tools`
+ * Copy the markdown fil from `templates/dev-tool-temp.md` to a new `.md` file, or  or a directory with a markdown file named `index.md` in `content/en/curriculum/dev-tools`
  * Update the `weight` field to be 10 after the very last dev-tools page
    ![Weight](weight-example.png)
   _in this example, the last page is currently spice.md, and you would want to make the next page havea  weight of 80_
