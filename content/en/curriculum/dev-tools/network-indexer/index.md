@@ -12,29 +12,43 @@ level:
 - deep
 ---
 
-## <Dev Tool> Introdution
-The network indexer is a project created and maintained by Protocol Labs that is designed to index the data on the Filecoin and IPFS networks, and work alongside the Distributed Hash Table (DHT) employed by IPFS and Filecoin to enable the fast and efficient retrieval of content-addressed data.
+## <Dev Tool> Introduction
+The network indexer is a project created and maintained by Protocol Labs that is designed to index the data on the Filecoin and IPFS networks, and work alongside the Distributed Hash Table (DHT) employed by both the IPFS and Filecoin networks to enable the fast and efficient retrieval of content-addressed data.
 
 
-## Why Use/ Who Uses <Dev Tool>
+## Why Use Index Content Routing?
 Protocol Labs' Network Indexer enables any user or developer to query both the IPFS and Filecoin public nodes to find content-addresses data using the [CID](../ipfs/content-addressing/#content-addressing).
-Since IPFS and Filecoin use different protocols to retrieve data (IPFS uses Bitsawp, and Filecion uses Graphsync), there is a need for a solution that makes it possible for anyone who would want to retrieve and use that data to locate and understand which protocol they can use to retrieve that data and use it in other applications.
-Describe who uses the dev tool (L0 Developer? L2 Developers) and what they work on.
-Give some real-world use-cases and examples
+
+Since IPFS and Filecoin use different protocols to retrieve data (IPFS uses Bitswap, and Filecion uses Graphsync), there is a need for a solution that makes it possible for anyone who would want to retrieve and use that data to locate and understand which protocol they can use to retrieve that data and use it in other applications.
+
+With versions of kubo 16 and above, a feature was implemented that makes it possible to use HTTP to send and receive information about IP addresses of peers that have certain content (CIDs) and publish IPNS records.
+
+The Indexer also makes it possible, in a way not achieved before, for people to retrieve data from the Filecoin network, as there is a lot of data stored across Filecoin nodes, but  no way to search and retrieve that data
+
+Though the DHT is an amazing, distributed way to advertise and discover content, the IPFS indexer adds another layer that can leverage the speed and <why else?> , with an open protocol that anyone can use, as seen here in the [go-delgated-routing](https://github.com/ipfs/go-delegated-routing) library on their server.
+to enable faster discovery and routing, along with load balancing and <what else?>
 
 
-### Sizzle Video Name | Event if Applicable
-If a sizzle or demo video exists, from, say IPFS Camp, add it here with a short 2-3 sentence description
-
-{{< youtube i100RhwZUnQ >}}
-<!-- The URL to this video was: https://www.youtube.com/watch?v=i100RhwZUnQ -->
+### Indexed Content Routing | IPFS Camp Lisbon 2022
+{{< youtube aN7fGturjzA >}}
 
 
-### Sub Project 1
-Information about a specific tool or functionality
+### Reframe
+[Reframe](https://github.com/ipfs/go-delegated-routing) is a Request-response Protocol (RPC) that kicks off a procedure or subroutine to execute on the IPFS network that stores the data in an index, and allows others to retrieve information related to that CID.
+With versions of kubo 16+, the Refame RPC is integrated as a feature
+* Reframe adds an additional way to discover peers, content, and IPNS records
+* With Reframe, you can configure your IPFS kubo node to publish a snapshot of all of the CIDs on your node at whatever frequency you would like
+* Reframe uses HTTP transport to store this information on an indexer node
+* Reframe is an alternative to the DHT
+* Content can be published to both the IPFS DHT and Reframe with a tool called parallel
+Reframe was created from a [kubo spec](https://github.com/ipfs/specs/blob/main/reframe/REFRAME_PROTOCOL.md) (the IPFS go implementation) that allows IPFS nodes to advertise their content to other systems besides the DHT.
 
-### Sub Project 2
-Information about a specific tool or functionality
+### Indexers Implementations
+
+#### Filecoin
+
+#### IPFS Indexers
+
 
 ## Tutorial: Search the Index
 In this simple tutorial, we are going to
@@ -44,7 +58,9 @@ Describe any exciting in-development features and projects, roadmaps (and links 
 
 #### Resources
 * [Blog: Introducing the Network Indexer](https://filecoin.io/blog/posts/introducing-the-network-indexer/)
+* [Blog: Introducing Reframe](https://blog.ipfs.tech/2022-09-02-introducing-reframe/)
 * [CID Contact](https://cid.contact/) a web user interface (webUI) you can use to access data.
 * [Github ipni/storetheindex](https://github.com/ipni/storetheindex)
+* [Github ipfs/go-delegated-routing](https://github.com/ipfs/go-delegated-routing)
 * [Filecoin Slack Channel #storetheindex](https://cid.contact/)
 * [Weekly Status Report](https://www.notion.so/pl-strflt/Weekly-Status-Report-30699cbe5a99473ea98b4ea4f9a3619b)
