@@ -1,11 +1,11 @@
 ---
-title: "Project Name"
-description: "Project Name – Brief Description"
+title: "Network Indexer"
+description: "Indexing and enabling Faster retrieval for IPFS and Filecoin"
 draft: false
 menu:
   curriculum:
     parent: "curriculum-devtools"
-weight: 0
+weight: 80
 category: lecture
 level:
 - shallow
@@ -13,7 +13,8 @@ level:
 ---
 
 ## <Dev Tool> Introdution
-short ~1-2 paragraphs with context
+The network indexer is a project created and maintained by Protocol Labs that is designed to index the data on the Filecoin and IPFS networks, and work alongside the DHT to enable the fast and efficient of data.
+
 
 ## Why Use/ Who Uses <Dev Tool>
 Describe who uses the dev tool (L0 Developer? L2 Developers) and what they work on.
