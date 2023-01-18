@@ -61,8 +61,8 @@ In order to participate in this activity you will need:
 * [Go Version 1.18 or later](https://go.dev/doc/install) installed
 * kubo (IPFS go) version 16 or above installed
   * [Tutorial](https://curriculum.pl-launchpad.io/tutorials/ipfs-intro/setup/)
-  * [Docs Instructions](http://docs.ipfs.tech.ipns.localhost:8080/install/command-line/#install-official-binary-distributions
-  * [Distributions](https://dist.ipfs.tech/#kubo))
+  * [Docs Instructions](http://docs.ipfs.tech.ipns.localhost:8080/install/command-line/#install-official-binary-distributions)
+  * [Distributions](https://dist.ipfs.tech/#kubo)
 
 ### Tutorial
 Follow the instructions at [https://github.com/ischasny/ipfs-camp-routing](https://github.com/ischasny/ipfs-camp-routing)
