@@ -43,18 +43,30 @@ With versions of kubo 16+, the Refame RPC is integrated as a feature
 * Content can be published to both the IPFS DHT and Reframe with a tool called parallel
 Reframe was created from a [kubo spec](https://github.com/ipfs/specs/blob/main/reframe/REFRAME_PROTOCOL.md) (the IPFS go implementation) that allows IPFS nodes to advertise their content to other systems besides the DHT.
 
-### Indexers Implementations
+### Indexer Implementations
 
-#### Filecoin
+#### Filecoin Indexers
 
 #### IPFS Indexers
 
+### Up Next/ Coming Soon
+Describe any exciting in-development features and projects, roadmaps (and links to them), as well as information about new
 
 ## Tutorial: Search the Index
-In this simple tutorial, we are going to
+In this simple tutorial, we are going to ... <description>
 
-## Up Next
-Describe any exciting in-development features and projects, roadmaps (and links to them), as well as information about new
+
+### Prerequisites
+In order to participate in this activity you will need:
+* [Go Version 1.18 or later](https://go.dev/doc/install) installed
+* kubo (IPFS go) version 16 or above installed
+  * [Tutorial](https://curriculum.pl-launchpad.io/tutorials/ipfs-intro/setup/)
+  * [Docs Instructions](http://docs.ipfs.tech.ipns.localhost:8080/install/command-line/#install-official-binary-distributions
+  * [Distributions](https://dist.ipfs.tech/#kubo))
+
+### Tutorial
+Follow the instructions at [https://github.com/ischasny/ipfs-camp-routing](https://github.com/ischasny/ipfs-camp-routing)
+
 
 #### Resources
 * [Blog: Introducing the Network Indexer](https://filecoin.io/blog/posts/introducing-the-network-indexer/)
