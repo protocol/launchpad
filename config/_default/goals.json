@@ -257,47 +257,47 @@
       "description": "Understand the content routing mechanisms used in a Distributed Hash Table",
       "subgoals": [
         {
-          "id": "1.41",
+          "id": "1.31",
           "description": "Describe the distance metric used by the DHT"
         },
         {
-          "id": "1.42",
+          "id": "1.32",
           "description": "Understand how the routing table facilitates peer discovery"
         },
         {
-          "id": "1.43",
+          "id": "1.33",
           "description": "Be able to describe the basic operations of the DHT"
         }
       ],
       "levels": ["deep"]
     },
-    "1.5": {
+    "1.4": {
       "description": "Understand what is Pub/Sub and its main implementations in libp2p",
       "subgoals": [
         {
-          "id": "1.51",
+          "id": "1.41",
           "description": "Understand what is Floodsub"
         },
         {
-          "id": "1.52",
+          "id": "1.42",
           "description": "Analyze the main differences between FloodSub and Gossipsub"
         },
         {
-          "id": "1.53",
+          "id": "1.43",
           "description": "Describe the benefits of Gossipsub over Floodsub"
         }
       ],
       "levels": ["deep"]
     },
-    "1.6": {
+    "1.5": {
       "description": "Learn what is NAT Traversal and what different methods are available",
       "subgoals": [
         {
-          "id": "1.61",
+          "id": "1.51",
           "description": "Describe how a Circuit Relay works"
         },
         {
-          "id": "1.62",
+          "id": "1.52",
           "description": "Identify the main differences between Circuit Relay and Hole Punching"
         }
       ],
