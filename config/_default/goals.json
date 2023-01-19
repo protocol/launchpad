@@ -196,15 +196,15 @@
       "description": "Understand what libp2p is and the benefits it provides",
       "subgoals": [
         {
-          "id": "1.11",
+          "id": "1.01",
           "description": "Understand the difference between the p2p and client-server model"
         },
         {
-          "id": "1.12",
+          "id": "1.02",
           "description": "Describe the technical & political benefits and challenges of peer-to-peer architectures"
         },
         {
-          "id": "1.13",
+          "id": "1.03",
           "description": "Discover resources to understand the long term objectives and use cases for libp2p"
         }
       ]
@@ -213,19 +213,19 @@
       "description": "Understand the main building blocks of libp2p",
       "subgoals": [
         {
-          "id": "1.21",
+          "id": "1.11",
           "description": "Identify the main transport protocols offered"
         },
         {
-          "id": "1.22",
+          "id": "1.12",
           "description": "Learn about the several NAT traversal options available"
         },
         {
-          "id": "1.23",
+          "id": "1.13",
           "description": "Understand what stream multiplexing is, and what benefits it provides"
         },
         {
-          "id": "1.24",
+          "id": "1.14",
           "description": "Be able to explain the benefits of Multiaddresses"
         }
       ],
@@ -235,19 +235,19 @@
       "description": "Understand how libp2p establishes connections",
       "subgoals": [
         {
-          "id": "1.31",
+          "id": "1.21",
           "description": "Define concepts of nodes, peers, and peer identities in an independent peer to peer network"
         },
         {
-          "id": "1.32",
+          "id": "1.22",
           "description": "Understand how peer identity is generated"
         },
         {
-          "id": "1.33",
+          "id": "1.23",
           "description": "Describe the steps involved in opening a connection including handshakes, security, and multiplexing"
         },
         {
-          "id": "1.34",
+          "id": "1.24",
           "description": "Identify how multiplexing is useful to use several application protocols over the same connection"
         }
       ],
