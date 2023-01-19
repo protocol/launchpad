@@ -17,36 +17,40 @@ objectives:
   introPage: true
 ---
 
-This section of the curriculum is all about who Protocol Labs is, as an oganization, and the different pieces that make up our network. Here you will find resources to learn about the goals and mission that unite us across organizations, the many teams and individuals that contribute to the new web3 primitives, protocols, and tools we're creating, and begin to learn about how we operate.
+This section of the curriculum is focused on who and what Protocol Labs is, how it operates, how the culture is defined, and the different pieces that make up the Protocol Labs Network.
+
+Here you will find resources to learn about the goals, mission, and philosophies that unite us across the organization. You will find the directories of the many teams within the organization and how they contribute to the web3 ecosystem.
+
 ![PLN_Logo](PLN_Logo.png)
 
 ### Protocol Labs Vision & Mission
 
-Protocol Labs drives breakthroughs in computing to push humanity forward.
+*Protocol Labs drives breakthroughs in computing to push humanity forward.*
 
 **How?**
 
-* Ideas to super-powers **pipeline.**
-* A **network** capable of repeatable innovation.
-* World-class **teams** & **network**.
-* Network **enables** teams to be super effective.
-* Create, support, and grow **projects & protocols**.
-* Build **crypto networks** and **businesses**.
-* **Open Source** all the things \o/.
-* **Collaborate** openly with many groups.
+* Generating ideas to ideations to super-power **pipelines**.
+* A **network** that is capable of repeated iterations and innovations.
+* World-class **teams** & **networks** from all over the world and different sectors of working professionals.
+* Asynchronous and decentralized work **enables** teams to be effective and collaborative across the network.
+* Tremendous opportunities to create, support, and grow **projects & protocols**.
+* **Open source** everything.
 
-After completing this section, you will also:
+#### After completing this section, you will also
 
 **Understand**
 
-* The motivations and original goals that brought about IPFS, libp2p, Filecoin etc, and how these have evolved to the present day.
-* What OSS projects are part of the PL Stack and what other projects, tools, and resources are being created in the PLN ecosystem.
+* The culture of Protocol Labs and how its mission and goals brought about IPFS, libp2p, Filecoin, etc., have evolved and continue to evolve.
+* The projects, tools, and resources are being created in the Protocol Labs Network ecosystem.
+
 
 **Be Able To**
 
-* Find where communication about different open source projects is carried out (IPFS, IPLD, LibP2P, and Filecoin) and how decisions are made about the work that will be done.
-* Communicate the core goals of Protocol Labs as an organization as a whole, as well as the goals of some of the projects they work on.
-* Demonstrate use of async and open source communication by establishing public facing methods to share the outputs of your work and appropriate outreach, documentation, and communication with other Launchpad Cadets and Labbers.
+* Find where communication about different open source projects is carried out and how to collaborate with those teams.
+* Communicate the core goals of Protocol Labs as a whole and the projects' goals in the process.
+* Demonstrate the use of asynchronous and open-source communication of Protocol Labs.
+* Understand how to share the outputs of your work, documentation, and progress with other members of Protocol Labs.
+
 
 #### Links
 
