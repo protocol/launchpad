@@ -3,8 +3,8 @@ title: "Title (Tutorial)"
 description: "Deep/Shallow Dive Tutorial – Subtitle"
 draft: false
 menu:
-    curriculum:
-        parent: ""
+  tutorials:
+    parent: "<identifier of tutorial module>"
 weight: 0
 category: tutorial
 level:
