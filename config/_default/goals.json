@@ -276,7 +276,7 @@
       "subgoals": [
         {
           "id": "1.41",
-          "description": "Understand what is Floodsub"
+          "description": "Understand what Floodsub is and how it transmit messages"
         },
         {
           "id": "1.42",
@@ -290,7 +290,7 @@
       "levels": ["deep"]
     },
     "1.5": {
-      "description": "Learn what is NAT Traversal and what different methods are available",
+      "description": "Learn what NAT Traversal is, and what different methods are available",
       "subgoals": [
         {
           "id": "1.51",
