@@ -214,11 +214,11 @@
       "subgoals": [
         {
           "id": "1.11",
-          "description": "Identify the main transport protocols offered"
+          "description": "Identify the main transport protocols supported with the libp2p stack"
         },
         {
           "id": "1.12",
-          "description": "Learn about the several NAT traversal options available"
+          "description": "Learn about the several NAT traversal with libp2p"
         },
         {
           "id": "1.13",
