@@ -38,20 +38,11 @@ We also believe in connecting and bringing people together to inspire innovation
 
 A part of PL’s evolution is its ability to have smaller groups within, go through nucleation (think of it as an internal incubator) and become its team and company. Aligned with the philosophy of Bell Labs, PL is very much about supporting numerous groups with research.
 
-
-## **The Protocol Labs Network in Q1 2022 | Molly Mackinlay **
-
-
-## In this talk by Molly Mackinlay, understand where Protocol Labs is an organization in 2022, where we are headed, the trajectory, evolving landscape, and how we are accelerating the PL network. Initially given in Feb 2022.
-
-[https://youtu.be/RXt65xbyq6c](https://youtu.be/RXt65xbyq6c)
-
-
-## **PL Summit | October 2022**
+#### PL Summit | October 2022
 
 The Protocol Labs Summit was a great recap of the Impact that the PL Network created in 2022 and how the PL Network is structured today: as an Innovation Network that drives breakthroughs in computing to push humanity forward.
 
-[https://youtu.be/b6tnt24cIIw](https://youtu.be/b6tnt24cIIw) 
+{{< youtube b6tnt24cIIw >}}
 
 Check out the recording [starting at 2:35:58](https://youtu.be/b6tnt24cIIw?t=9358) for an overview of the core offerings that make up the PL Network as a product:
 
@@ -82,12 +73,6 @@ Check out the recording [starting at 2:35:58](https://youtu.be/b6tnt24cIIw?t=935
 _In Protocol Labs, new projects and technologies are being invented every day. Remember that this may not be a comprehensive list of all important projects growing in our network._
 
 
-#### **The Project Stack**
+#### The Project Stack
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
+![Web3 Stack](web3-stack.png)
