@@ -13,12 +13,12 @@ subgoals:
 objectives:
   show: true
   goals:
-  - 1.2
+  - 1.1
   subgoals:
-  - 1.21
-  - 1.22
-  - 1.23
-  - 1.24
+  - 1.11
+  - 1.12
+  - 1.13
+  - 1.14
 level:
 - shallow
 - deep
