@@ -1,5 +1,5 @@
 ---
-title: "Network Indexer"
+title: "Network Indexer (IPNI)"
 description: "Indexing and enabling Faster retrieval for IPFS and Filecoin"
 draft: false
 menu:
@@ -13,11 +13,11 @@ level:
 ---
 
 ## <Dev Tool> Introduction
-The network indexer is a project created and maintained by Protocol Labs that is designed to index the data on the Filecoin and IPFS networks, and work alongside the Distributed Hash Table (DHT) employed by both the IPFS and Filecoin networks to enable the fast and efficient retrieval of content-addressed data.
+The [IPNI network indexer](https://github.com/ipni) is a project created and maintained by Protocol Labs that is designed to index the data on the Filecoin and IPFS networks, and work alongside the Distributed Hash Table (DHT) employed by both the IPFS and Filecoin networks to enable the fast and efficient retrieval of content-addressed data.
 
 
 ## Why Use Index Content Routing?
-Protocol Labs' Network Indexer enables any user or developer to query both the IPFS and Filecoin public nodes to find content-addresses data using the [CID](../ipfs/content-addressing/#content-addressing).
+Protocol Labs' Network Indexer (IPNI) enables any user or developer to query both the IPFS and Filecoin public nodes to find content-addresses data using the [CID](../ipfs/content-addressing/#content-addressing).
 
 Since IPFS and Filecoin use different protocols to retrieve data (IPFS uses Bitswap, and Filecion uses Graphsync), there is a need for a solution that makes it possible for anyone who would want to retrieve and use that data to locate and understand which protocol they can use to retrieve that data and use it in other applications.
 
@@ -29,9 +29,8 @@ Though the DHT is an amazing, distributed way to advertise and discover content,
 to enable faster discovery and routing, along with load balancing and <what else?>
 
 
-### Indexed Content Routing | IPFS Camp Lisbon 2022
-{{< youtube aN7fGturjzA >}}
-
+### State of Content Routing| IPFS Camp Lisbon 2022
+{{< youtube DLCTEXbF1Es >}}
 
 ### Reframe
 [Reframe](https://github.com/ipfs/go-delegated-routing) is a Request-response Protocol (RPC) that kicks off a procedure or subroutine to execute on the IPFS network that stores the data in an index, and allows others to retrieve information related to that CID.
@@ -46,14 +45,12 @@ Reframe was created from a [kubo spec](https://github.com/ipfs/specs/blob/main/r
 ### Indexer Implementations
 
 #### Filecoin Indexers
+IPNI
 
 #### IPFS Indexers
 
-### Up Next/ Coming Soon
-Describe any exciting in-development features and projects, roadmaps (and links to them), as well as information about new
-
 ## Tutorial: Search the Index
-In this simple tutorial, we are going to ... <description>
+In this simple tutorial, we are going to configure and run an IPFS node to communicate data to the indexer and take a look at what that data looks like.
 
 
 ### Prerequisites
@@ -64,7 +61,10 @@ In order to participate in this activity you will need:
   * [Docs Instructions](http://docs.ipfs.tech.ipns.localhost:8080/install/command-line/#install-official-binary-distributions)
   * [Distributions](https://dist.ipfs.tech/#kubo)
 
-### Tutorial
+### Tutorial Instructions
+You can see the Video of the workshop called **[Indexed Content Routing](https://www.youtube.com/watch?v=aN7fGturjzA&t=121s)** from IPFS Camp Lisbon 2022
+> You will probably want to create (`ipfs init`) a new IPFS node for this tutorial, so either make a backup copy of the `with cp ~/.ipfs ~/..ipfs` config file, or initialize a new node in a sandboxed vm or container.
+
 Follow the instructions at [https://github.com/ischasny/ipfs-camp-routing](https://github.com/ischasny/ipfs-camp-routing)
 
 
