@@ -1,14 +1,14 @@
 {
   "pln": {
-    "1.0": {
+    "1.1": {
       "description": "Know what the PL Network is, how Protocol Labs evolved from company to network, as well as the projects, tooling, and DApps being built on the PLN",
       "subgoals": []
     },
-    "1.1": {
+    "1.2": {
       "description": "Understand what the resources and tools are within the PL Network to support teams, individuals, companies, and general growth of our mission",
       "subgoals": []
     },
-    "1.2": {
+    "1.3": {
       "description": "Understand the methods and philosophies about how work and communication is carried out in the Protocol Labs Network & within PLN open source communities",
       "subgoals": []
     }
@@ -177,18 +177,136 @@
       "levels": ["deep"]
     }
   },
-  "dev-tools": {
+  "ipld": {
     "1.0": {
-      "description": "Understand what are Dev-Tools and why they are important for developers.",
-      "subgoals": []
+      "description": "Understand how and why IPLD was created",
+      "subgoals":[
+        {
+          "id": "1.01",
+          "description": "Know what separates IPFS from IPLD"
+        },
+        {
+          "id": "1.02",
+          "description": "Describe use cases of IPLD"
+        },
+        {
+          "id":"1.03",
+          "description": "Have a basic background knowledge of what makes a CID"
+        }
+      ],
+      "levels": ["shallow", "deep"]
     },
     "1.1": {
-      "description": "Get to know the main Dev-Tools available in the IPFS and Filecoin ecosystem.",
-      "subgoals": []
+      "description": "Understand how IPLD addresses data in a Content-Addressed system",
+      "subgoals": [
+        {
+          "id": "1.11",
+          "description": "Identify the differences between CID versions and their properties"
+        },
+        {
+          "id": "1.12",
+          "description": "Understand the multiformats involved in generating a CID"
+        },
+        {
+          "id": "1.13",
+          "description": "Use the CID Inspector to break down and analyze CIDs"
+        }
+      ],
+      "levels": ["shallow", "deep"]
     },
     "1.2": {
-      "description": "Know how you can add you own Dev-Tools to the Launchpad curriculum, so that other people can learn about them.",
-      "subgoals": []
+      "description": "Be able to describe graph data structures and Merkle DAG",
+      "subgoals": [
+        {
+          "id": "1.21",
+          "description": "Understand how a Merkle DAG is different from other type of graphs"
+        },
+        {
+          "id": "1.22",
+          "description": "Learn how files get broken down to DAGs"
+        },
+        {
+          "id": "1.23",
+          "description": "Learn what happens when a Merkle Dag is mutated"
+        }
+      ],
+      "levels": ["shallow", "deep"]
+    },
+    "1.3": {
+      "description": "Understand how IPLD operates in the context of IPFS",
+      "subgoals": [
+        {
+          "id": "1.31",
+          "description": "Understand the complete picture of adding a file to IPFS"
+        },
+        {
+          "id": "1.32",
+          "description": "Make sense of how UnixFS interoperates with DAG structures"
+        },
+        {
+          "id": "1.33",
+          "description": "Identify what kind of data types can you use with IPLD"
+        },
+        {
+          "id": "1.34",
+          "description": "Define the various encodings and data formats used in IPLD"
+        }
+      ],
+      "levels": ["shallow", "deep"]
+    },
+    "1.4": {
+      "description": "Go over the underlying data types and formats in IPLD",
+      "subgoals":[
+        {
+          "id": "1.41",
+          "description": "Understand the different types of data used with IPLD"
+        },
+        {
+          "id": "1.42",
+          "description": "Discover the default codec in IPFS and how it differs from other IPLD-native codecs"
+        },
+        {
+          "id": "1.43",
+          "description": "Describe how IPLD is interoperable with other addressed systems"
+        },
+        {
+          "id": "1.44",
+          "description": "Understand how Schemas provide encoding and storage convenience for application developers"
+        }
+      ],
+      "levels": ["deep"]
+    },
+    "1.5": {
+      "description": "Gain a conceptual understanding on what algorithms we use with Merkle DAGs to build distributed data structures",
+      "subgoals": [
+        {
+          "id": "1.51",
+          "description": "Understand what makes distributed data structures so powerful"
+        },
+        {
+          "id": "1.52",
+          "description": "Learn the basics of the HAMT algorithm operations"
+        },
+        {
+          "id": "1.53",
+          "description": "How to traverse a Merkle DAG with IPLD pathing"
+        }
+      ],
+      "levels":["deep"]
+    },
+    "1.6": {
+      "description": "Learn about the CAR format and how it helps data distribution",
+      "subgoals": [
+        {
+          "id": "1.61",
+          "description": "Get an idea of how the CAR format is beneficial to IPLD and how it is used today"
+        },
+        {
+          "id": "1.62",
+          "description": "See the differences between the two CAR version formats"
+        }
+      ],
+      "levels": ["deep"]
     }
   },
   "libp2p": {
@@ -303,5 +421,97 @@
       ],
       "levels": ["deep"]
     }
+  },
+  "filecoin": {
+    "1.1": {
+      "description": "Know what...",
+      "subgoals": [
+        {
+          "id": "1.11",
+          "description": "Understand ..."
+        },
+        {
+          "id": "1.12",
+          "description": "Be able to ..."
+        },
+        {
+          "id": "1.13",
+          "description": "Be able to ..."
+        }
+      ],
+      "levels": ["shallow"]
+    },
+    "1.2": {
+      "description": "Understand ...",
+      "subgoals": [],
+      "levels": ["shallow"]
+    },
+    "1.3": {
+      "description": "Describe ...",
+      "subgoals": [],
+      "levels": ["shallow"]
+    },
+    "1.4": {
+      "description": "Describe ...",
+      "subgoals": [],
+      "levels": ["deep"]
+    },
+    "1.5": {
+      "description": "Describe ...",
+      "subgoals": [],
+      "levels": ["deep"]
+    }
+  },
+  "dev-tools": {
+    "1.1": {
+      "description": "Understand what are Dev-Tools and why they are important for developers.",
+      "subgoals": []
+    },
+    "1.2": {
+      "description": "Get to know the main Dev-Tools available in the IPFS and Filecoin ecosystem.",
+      "subgoals": []
+    },
+    "1.3": {
+      "description": "Know how you can add you own Dev-Tools to the Launchpad curriculum, so that other people can learn about them.",
+      "subgoals": []
+    }
+  },
+  "example-section": {
+    "1.1": {
+      "description": "Know what...",
+      "subgoals": [
+        {
+          "id": "1.11",
+          "description": "Understand ..."
+        },
+        {
+          "id": "1.12",
+          "description": "Be able to ..."
+        },
+        {
+          "id": "1.13",
+          "description": "Be able to ..."
+        }
+      ],
+      "levels": [
+        "shallow/deep"
+      ]
+    },
+    "1.2": {
+      "description": "Understand ...",
+      "subgoals": [],
+      "levels": [
+        "shallow/deep"
+      ]
+    },
+    "1.3": {
+      "description": "Describe ...",
+      "subgoals": [],
+      "levels": [
+        "shallow/deep"
+      ]
+    }
   }
 }
+
+
