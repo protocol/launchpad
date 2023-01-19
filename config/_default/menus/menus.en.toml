@@ -162,6 +162,9 @@
   identifier = "tutorials-ipfs"
   [tutorials.params]
     category = "ipfs"
+    icon = "/logos/ipfs.svg"
+    iconWidth = 23
+    iconHeight = 23
     image = "/tutorials/intro-ipfs.png"
 
 [[tutorials]]
@@ -170,6 +173,9 @@
   identifier = "tutorials-libp2p"
   [tutorials.params]
     category = "libp2p"
+    icon = "/logos/libp2p.png"
+    iconWidth = 22.9
+    iconHeight = 26.4
     image = "/tutorials/libp2p.png"
 
 [[tutorials]]
@@ -178,6 +184,9 @@
   identifier = "tutorials-fvm"
   [tutorials.params]
     category = "fvm"
+    icon = "/logos/fvm.png"
+    iconWidth = 14.71
+    iconHeight = 22.30
     image = "https://user-images.githubusercontent.com/310223/150189748-ed673f1a-6a5f-4746-a1b3-0d8b1a3f5fd2.png"
 
 [[tutorials]]
@@ -186,6 +195,9 @@
   identifier = "tutorials-metamask-intro"
   [tutorials.params]
     category = "web3"
+    icon = "https://cdn-icons-png.flaticon.com/128/616/616519.png"
+    iconWidth = 22
+    iconHeight = 22
     image = "https://st.depositphotos.com/60692670/57535/i/600/depositphotos_575356850-stock-photo-ukraine-odessa-october-2021-hand.jpg"
 
 # [[tutorials]]

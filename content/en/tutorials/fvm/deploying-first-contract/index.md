@@ -1,5 +1,5 @@
 ---
-title: "Deploying your first smart contract"
+title: "Deploying A Smart Contract"
 description: "Building a Go Application with the IPFS API – Deep Dive Tutorial"
 draft: false
 menu:
@@ -9,10 +9,10 @@ weight: 10
 category: tutorial
 ---
 
-{{% beforepages
-  text="This tutorial expects you to be familiar with Metamask. You can learn about Metamask in the following tutorials:"
-
-%}}
+{{< beforepages text="This tutorial expects you to be familiar with Metamask. You can learn about Metamask in the following tutorials:">}}
+  {{< beforepages-element page="/tutorials/ipfs-intro/basics" >}}
+  {{< beforepages-element page="/tutorials/metamask-intro/create-wallet" >}}
+{{< /beforepages >}}
 
 We're going to be creating an ERC-20 token in this quickstart. The ERC-20 contract is used a lot in representing a massive array of tokens across multiple blockchains, primarily the Ethereum blockchain.
 

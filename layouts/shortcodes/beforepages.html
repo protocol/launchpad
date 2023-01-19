@@ -1,11 +1,9 @@
-<div style="background-color: #f5f5f5; border: 1px solid #eaeaea; padding-left: 10px; padding-right: 10px; border-radius: 8px 8px 8px 8px">
-  <div style="font-size: 25px; font-weight: bold;">Before You Begin</div>
-  <div>
+<div style="background-color: #f5f5f5; border-top: 1px solid #eaeaea; border-left: 1px solid #eaeaea; border-right: 1px solid #eaeaea; border-radius: 8px 8px 0px 0px; margin-bottom: 20px;">
+  <div style="padding: 10px;">
+    <div style="font-size: 28px; font-weight: bold; color: #3a3a3a;">Before You Begin</div>
     {{ .Get "text" }}
   </div>
-  <div>
-    {{ with .Site.GetPage "/tutorials/metamask-intro/create-wallet" }}
-      {{ .Title }}
-    {{ end }}
+  <div style="border-top: 1px solid #DEDEDEFF; border-radius: 0px 0px 6px 6px">
+    {{ .Inner }}
   </div>
 </div>
