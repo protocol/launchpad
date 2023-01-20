@@ -325,7 +325,8 @@
           "id": "1.03",
           "description": "Discover resources to understand the long term objectives and use cases for libp2p"
         }
-      ]
+      ],
+      "levels": ["shallow", "deep"]
     },
     "1.1": {
       "description": "Understand the main building blocks of libp2p",
@@ -443,7 +444,7 @@
           "description": "Define the basic building blocks of the Filecoin network such as Providers, Deals, Sectors, and …"
         }
       ],
-      "levels": ["shallow"]
+      "levels": ["shallow", "deep"]
     },
     "1.1": {
       "description": "Know what...",
