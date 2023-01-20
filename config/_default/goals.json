@@ -177,109 +177,245 @@
       "levels": ["deep"]
     }
   },
-  "libp2p": {
+  "ipld": {
+    "1.0": {
+      "description": "Understand how and why IPLD was created",
+      "subgoals":[
+        {
+          "id": "1.01",
+          "description": "Know what separates IPFS from IPLD"
+        },
+        {
+          "id": "1.02",
+          "description": "Describe use cases of IPLD"
+        },
+        {
+          "id":"1.03",
+          "description": "Have a basic background knowledge of what makes a CID"
+        }
+      ],
+      "levels": ["shallow", "deep"]
+    },
     "1.1": {
-      "description": "Learn what is libp2p and its main objectives",
+      "description": "Understand how IPLD addresses data in a Content-Addressed system",
       "subgoals": [
         {
           "id": "1.11",
-          "description": "Understand what is libp2p"
+          "description": "Identify the differences between CID versions and their properties"
         },
         {
           "id": "1.12",
-          "description": "Identify the main objectives of the project"
+          "description": "Understand the multiformats involved in generating a CID"
+        },
+        {
+          "id": "1.13",
+          "description": "Use the CID Inspector to break down and analyze CIDs"
         }
-      ]
+      ],
+      "levels": ["shallow", "deep"]
     },
     "1.2": {
-      "description": "Understand the main building blocks of libp2p",
+      "description": "Be able to describe graph data structures and Merkle DAG",
       "subgoals": [
         {
           "id": "1.21",
-          "description": "Identify the main transport protocols offered"
+          "description": "Understand how a Merkle DAG is different from other type of graphs"
         },
         {
           "id": "1.22",
-          "description": "Learn about the several NAT traversal options available"
+          "description": "Learn how files get broken down to DAGs"
         },
         {
           "id": "1.23",
-          "description": "Understand what stream multiplexing is, and what benefits it provides"
-        },
-        {
-          "id": "1.24",
-          "description": "Be able to explain the benefits of Multiaddresses"
+          "description": "Learn what happens when a Merkle Dag is mutated"
         }
       ],
       "levels": ["shallow", "deep"]
     },
     "1.3": {
-      "description": "Understand how libp2p establishes connections",
+      "description": "Understand how IPLD operates in the context of IPFS",
       "subgoals": [
         {
           "id": "1.31",
-          "description": "Define concepts of nodes, peers, and peer identities in an independent peer to peer network"
+          "description": "Understand the complete picture of adding a file to IPFS"
         },
         {
           "id": "1.32",
-          "description": "Understand how peer identity is generated"
+          "description": "Make sense of how UnixFS interoperates with DAG structures"
         },
         {
           "id": "1.33",
-          "description": "Describe the steps involved in opening a connection including handshakes, security, and multiplexing"
+          "description": "Identify what kind of data types can you use with IPLD"
         },
         {
           "id": "1.34",
-          "description": "Identify how multiplexing is useful to use several application protocols over the same connection"
+          "description": "Define the various encodings and data formats used in IPLD"
         }
       ],
       "levels": ["shallow", "deep"]
     },
     "1.4": {
-      "description": "Understand the content routing mechanisms used in a Distributed Hash Table",
-      "subgoals": [
+      "description": "Go over the underlying data types and formats in IPLD",
+      "subgoals":[
         {
           "id": "1.41",
-          "description": "Describe the distance metric used by the DHT"
+          "description": "Understand the different types of data used with IPLD"
         },
         {
           "id": "1.42",
-          "description": "Understand how the routing table facilitates peer discovery"
+          "description": "Discover the default codec in IPFS and how it differs from other IPLD-native codecs"
         },
         {
           "id": "1.43",
-          "description": "Be able to describe the basic operations of the DHT"
+          "description": "Describe how IPLD is interoperable with other addressed systems"
+        },
+        {
+          "id": "1.44",
+          "description": "Understand how Schemas provide encoding and storage convenience for application developers"
         }
       ],
       "levels": ["deep"]
     },
     "1.5": {
-      "description": "Understand what is Pub/Sub and its main implementations in libp2p",
+      "description": "Gain a conceptual understanding on what algorithms we use with Merkle DAGs to build distributed data structures",
       "subgoals": [
         {
           "id": "1.51",
-          "description": "Understand what is Floodsub"
+          "description": "Understand what makes distributed data structures so powerful"
         },
         {
           "id": "1.52",
-          "description": "Analyze the main differences between FloodSub and Gossipsub"
+          "description": "Learn the basics of the HAMT algorithm operations"
         },
         {
           "id": "1.53",
+          "description": "How to traverse a Merkle DAG with IPLD pathing"
+        }
+      ],
+      "levels":["deep"]
+    },
+    "1.6": {
+      "description": "Learn about the CAR format and how it helps data distribution",
+      "subgoals": [
+        {
+          "id": "1.61",
+          "description": "Get an idea of how the CAR format is beneficial to IPLD and how it is used today"
+        },
+        {
+          "id": "1.62",
+          "description": "See the differences between the two CAR version formats"
+        }
+      ],
+      "levels": ["deep"]
+    }
+  },
+  "libp2p": {
+    "1.0": {
+      "description": "Understand what libp2p is and the benefits it provides",
+      "subgoals": [
+        {
+          "id": "1.01",
+          "description": "Understand the difference between the p2p and client-server model"
+        },
+        {
+          "id": "1.02",
+          "description": "Describe the technical & political benefits and challenges of peer-to-peer architectures"
+        },
+        {
+          "id": "1.03",
+          "description": "Discover resources to understand the long term objectives and use cases for libp2p"
+        }
+      ]
+    },
+    "1.1": {
+      "description": "Understand the main building blocks of libp2p",
+      "subgoals": [
+        {
+          "id": "1.11",
+          "description": "Identify the main transport protocols supported with the libp2p stack"
+        },
+        {
+          "id": "1.12",
+          "description": "Learn about the several NAT traversal with libp2p"
+        },
+        {
+          "id": "1.13",
+          "description": "Understand what stream multiplexing is, and what benefits it provides"
+        },
+        {
+          "id": "1.14",
+          "description": "Be able to explain the benefits of Multiaddresses"
+        }
+      ],
+      "levels": ["shallow", "deep"]
+    },
+    "1.2": {
+      "description": "Understand how libp2p establishes connections",
+      "subgoals": [
+        {
+          "id": "1.21",
+          "description": "Define concepts of nodes, peers, and peer identities in an independent peer to peer network"
+        },
+        {
+          "id": "1.22",
+          "description": "Understand how peer identity is generated"
+        },
+        {
+          "id": "1.23",
+          "description": "Describe the steps involved in opening a connection including handshakes, security, and multiplexing"
+        },
+        {
+          "id": "1.24",
+          "description": "Identify how multiplexing is useful to use several application protocols over the same connection"
+        }
+      ],
+      "levels": ["shallow", "deep"]
+    },
+    "1.3": {
+      "description": "Understand the content routing mechanisms used in a Distributed Hash Table",
+      "subgoals": [
+        {
+          "id": "1.31",
+          "description": "Describe the distance metric used by the DHT"
+        },
+        {
+          "id": "1.32",
+          "description": "Understand how the routing table facilitates peer discovery"
+        },
+        {
+          "id": "1.33",
+          "description": "Be able to describe the basic operations of the DHT"
+        }
+      ],
+      "levels": ["deep"]
+    },
+    "1.4": {
+      "description": "Understand what is Pub/Sub and its main implementations in libp2p",
+      "subgoals": [
+        {
+          "id": "1.41",
+          "description": "Understand what Floodsub is and how it transmit messages"
+        },
+        {
+          "id": "1.42",
+          "description": "Analyze the main differences between FloodSub and Gossipsub"
+        },
+        {
+          "id": "1.43",
           "description": "Describe the benefits of Gossipsub over Floodsub"
         }
       ],
       "levels": ["deep"]
     },
-    "1.6": {
-      "description": "Learn what is NAT Traversal and what different methods are available",
+    "1.5": {
+      "description": "Learn what NAT Traversal is, and what different methods are available",
       "subgoals": [
         {
-          "id": "1.61",
+          "id": "1.51",
           "description": "Describe how a Circuit Relay works"
         },
         {
-          "id": "1.62",
+          "id": "1.52",
           "description": "Identify the main differences between Circuit Relay and Hole Punching"
         }
       ],
@@ -287,26 +423,8 @@
     }
   },
   "filecoin": {
-    "1.0": {
-      "description": "Understand how and why Filecoin was created, how it relates to IPFS, and different ways it is growing and expanding for different use cases",
-      "subgoals": [
-        {
-          "id": "1.01",
-          "description": "Understand ..."
-        },
-        {
-          "id": "1.02",
-          "description": "Be able to ..."
-        },
-        {
-          "id": "1.03",
-          "description": "Be able to ..."
-        }
-      ],
-      "levels": ["shallow"]
-    },
     "1.1": {
-      "description": "Understand how and why Filecoin was created, how it relates to IPFS, and different ways it is growing and expanding for different use cases",
+      "description": "Know what...",
       "subgoals": [
         {
           "id": "1.11",
@@ -325,66 +443,22 @@
     },
     "1.2": {
       "description": "Understand ...",
-      "subgoals": [{
-        "id": "1.21",
-        "description": "Understand ..."
-      },
-        {
-          "id": "1.22",
-          "description": "Be able to ..."
-        },
-        {
-          "id": "1.23",
-          "description": "Be able to ..."
-        }],
+      "subgoals": [],
       "levels": ["shallow"]
     },
     "1.3": {
       "description": "Describe ...",
-      "subgoals": [{
-        "id": "1.31",
-        "description": "Understand ..."
-      },
-        {
-          "id": "1.32",
-          "description": "Be able to ..."
-        },
-        {
-          "id": "1.33",
-          "description": "Be able to ..."
-        }],
+      "subgoals": [],
       "levels": ["shallow"]
     },
     "1.4": {
       "description": "Describe ...",
-      "subgoals": [{
-        "id": "1.41",
-        "description": "Understand ..."
-      },
-        {
-          "id": "1.42",
-          "description": "Be able to ..."
-        },
-        {
-          "id": "1.43",
-          "description": "Be able to ..."
-        }],
+      "subgoals": [],
       "levels": ["deep"]
     },
     "1.5": {
       "description": "Describe ...",
-      "subgoals": [{
-        "id": "1.51",
-        "description": "Understand ..."
-      },
-        {
-          "id": "1.52",
-          "description": "Be able to ..."
-        },
-        {
-          "id": "1.53",
-          "description": "Be able to ..."
-        }],
+      "subgoals": [],
       "levels": ["deep"]
     }
   },
@@ -439,4 +513,5 @@
     }
   }
 }
+
 

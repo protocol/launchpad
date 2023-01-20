@@ -12,11 +12,11 @@ level:
 objectives:
   show: true
   goals:
-  - 1.4
+  - 1.3
   subgoals:
-  - 1.41
-  - 1.42
-  - 1.43
+  - 1.31
+  - 1.32
+  - 1.33
 ---
 
 ## Introduction
