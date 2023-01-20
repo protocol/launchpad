@@ -423,6 +423,28 @@
     }
   },
   "filecoin": {
+    "1.0": {
+      "description": "Understand how and why Filecoin was created, how it relates to IPFS, and how it is growing and expanding for different use cases",
+      "subgoals": [
+        {
+          "id": "1.01",
+          "description": "Understand the basics of how Filecoin leverages and implements IPFS and libp2p technologies"
+        },
+        {
+          "id": "1.02",
+          "description": "Describe how Filecoin provides and alternative to the client server model, and the key traits of the blockchain that make this possible"
+        },
+        {
+          "id": "1.03",
+          "description": "Identify the different implementation of the Filecoin protocol, and the resources available to use them"
+        },
+        {
+          "id": "1.04",
+          "description": "Define the basic building blocks of the Filecoin network such as Providers, Deals, Sectors, and …"
+        }
+      ],
+      "levels": ["shallow"]
+    },
     "1.1": {
       "description": "Know what...",
       "subgoals": [

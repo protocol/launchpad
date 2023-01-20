@@ -13,8 +13,15 @@ level:
 - deep
 objectives:
   show: true
-  showTitle: false
-  introPage: true
+  goals:
+  - "1.0"
+  subgoals:
+  - 1.01
+  - 1.02
+  - 1.03
+  - 1.04
+  - 1.05
+
 ---
 
 
