@@ -500,38 +500,45 @@
     }
   },
   "example-section": {
-    "1.1": {
+    "1.0": {
       "description": "Know what...",
       "subgoals": [
         {
-          "id": "1.11",
+          "id": "1.01",
           "description": "Understand ..."
         },
         {
-          "id": "1.12",
+          "id": "1.02",
           "description": "Be able to ..."
         },
         {
-          "id": "1.13",
+          "id": "1.03",
           "description": "Be able to ..."
         }
       ],
       "levels": [
-        "shallow/deep"
+        "shallow", "deep"
       ]
     },
+    "1.1": {
+    "description": "Understand ...",
+    "subgoals": [],
+    "levels": [
+      "shallow", "deep"
+    ]
+  },
     "1.2": {
       "description": "Understand ...",
       "subgoals": [],
       "levels": [
-        "shallow/deep"
+        "shallow", "deep"
       ]
     },
     "1.3": {
       "description": "Describe ...",
       "subgoals": [],
       "levels": [
-        "shallow/deep"
+        "shallow", "deep"
       ]
     }
   }

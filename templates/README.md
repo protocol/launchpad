@@ -91,23 +91,23 @@ description = "<Short description>"
 ```
 
 ### How to add Objectives to Curriculum Modules
-First, you will need to add your goals to the `content/_defaultgoals.json` file, like so
+First, you will need to add your goals to the `content/_default/goals.json` file, like so
 
 ```json
- "example-section": {
-    "1.1": {
+ "filecoin": {
+    "1.0": {
       "description": "Know what...",
       "subgoals": [
         {
-          "id": "1.11",
+          "id": "1.01",
           "description": "Understand ..."
         },
         {
-          "id": "1.12",
+          "id": "1.02",
           "description": "Be able to ..."
         },
         {
-          "id": "1.13",
+          "id": "1.03",
           "description": "Be able to ..."
         }
       ],
