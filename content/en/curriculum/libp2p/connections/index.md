@@ -13,12 +13,12 @@ level:
 objectives:
   show: true
   goals:
-  - 1.3
+  - 1.2
   subgoals:
-  - 1.31
-  - 1.32
-  - 1.33
-  - 1.34
+  - 1.21
+  - 1.22
+  - 1.23
+  - 1.24
 ---
 
 ## Understanding Nodes

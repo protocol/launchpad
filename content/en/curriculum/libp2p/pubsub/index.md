@@ -10,11 +10,11 @@ category: lecture
 objectives:
   show: true
   goals:
-  - 1.5
+  - 1.4
   subgoals:
-  - 1.51
-  - 1.52
-  - 1.53
+  - 1.41
+  - 1.42
+  - 1.43
 level:
 - deep
 aliases:

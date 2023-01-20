@@ -12,10 +12,10 @@ level:
 objectives:
   show: true
   goals:
-  - 1.6
+  - 1.5
   subgoals:
-  - 1.61
-  - 1.62
+  - 1.51
+  - 1.52
 ---
 
 Consider the Internet router that you have at home. You probably have several devices connected to it (laptops, mobile phones, or even the fridge).
