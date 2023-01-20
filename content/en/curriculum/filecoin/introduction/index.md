@@ -21,59 +21,42 @@ objectives:
   - 1.04
   - 1.05
 ---
+[Filecoin](https://docs.filecoin.io/) is a peer-to-peer network that stores files, with built-in economic incentives and cryptography to ensure files are stored reliably over time. Filecoin includes a blockchain and native cryptocurrency (FIL) to create a network and a market that both provides services to users who want to store data on the Filecoin network, and for storage providers who can participate in mining block rewards, while providing the data storage and (soon to come) compute capabilities over that data.
 
-# Filecoin
 
-Filecoin is an independent organization that collaborates with the Protocol Labs Network, and is the token behind decentralized storage. Filecoin uses IPFS, libp2p, IPLD, and many other technologies to create protocols, tools, and services to help radically improve the network and drive breakthroughs in computing.
+## Filecoin Technology
 
-On the Filecoin network, users pay in Filecoin tokens to store their files with storage providers. Storage providers earn units of Filecoin (FIL) for storing files, and they are responsible for storing files and proving they have stored the files correctly over time.
+Filecoin is an independent organization that collaborates with the Protocol Labs Network, and is the token for decentralized storage. Filecoin uses IPFS, libp2p, IPLD, and many other technologies to create protocols, tools, and services to help radically improve the network and drive breakthroughs in computing.
 
-Available storage and the price of that storage is not controlled by any single company. Instead, the Filecoin network facilitates open markets for storing and retrieving files (by making storage deals between clients and providers) that anyone can participate in. At any time, users can verify that their files are being stored correctly by looking at proofs on Filecoin’s blockchain.
-#### IPFS & Filecoin: The building blocks of an open, decentralized web | Ally Haire
 
-In this talk by DeveloperAlly, she gives a quick overview of the history of IPFS and Filecoin, information about the organizations today, and gives an intro about why Filecoin exists, how it's connected to IPFS, and (at 12:46) the basics of how it works to provide a decentralized and reliable storage system.
+### IPFS & Filecoin: The Building Blocks of an Open, Decentralized Web | Ally Haire
+In this talk by DeveloperAlly, get a quick overview of the history of IPFS and Filecoin, information about the organizations today, and gives an intro about why Filecoin exists, how it’s connected to IPFS, and the basics of how it works to provide a decentralized and reliable storage system.
 
 {{< youtube XZqhfE1mJ_k >}}
 </br>
 
+## The Filecoin Economy
 
-In Filecoin, users can pay to store their files on storage providers (They can also apply for to be verified clients and allocated DataCap, which incentivizes storage providers to store their data for free & reduced prices). Storage providers are computers responsible for storing files and proving they have stored the files correctly over time. Anyone who wants to store their files or get paid for storing other users’ files can join the Filecoin network.
+Filecoin facilitates open markets for storing and retrieving files that anyone can participate in. On the Filecoin network, users pay in Filecoin tokens to store their files with storage providers. Storage providers earn units of Filecoin (FIL) for storing files, and they are responsible for storing files and proving they have stored the files correctly over time.
 
-![](intro.png)
+Available storage and the price of that storage is not controlled by any single entity. Instead, the Filecoin network facilitates open markets for storing and retrieving files (by making storage deals between clients and providers) that anyone can participate in. At any time, users can verify that their files are being stored correctly by looking at proofs on Filecoin’s blockchain.
 
-Available storage, and the price of that storage, is not controlled by any single entity. Instead, Filecoin facilitates open markets for storing and retrieving files that anyone can participate in, and recieve FIL for their participation in the network.
-
-[Read More](https://docs.filecoin.io/about-filecoin/what-is-filecoin/#for-users)
-
-![](data-storage.png)
-
-_Filecoin is a data storage and retrieval marketplace that coordinates untrusted parties to buy and sell provable storage._
-
-### Filecoin Features
-
-* **Verifiable storage** – Rather than needing to trust a cloud storage provider or rely on
-legal recourse, the Filecoin Protocol cryptographically verifies data storage.
-* **Open participation** – Anyone with sufficient hardware and an internet connection can be a storage provider (Filecoin miner) for the Filecoin Network.
-* **Empowers local optimization** – Driven by open participation, market forces will enable more efficient and distributed data storage and communication than centralized storage platforms. The distributed network allows for a more local and resilient architecture and data availability.
-* **Flexible storage options** – As an open platform, the network has the flexibility for the creation & disseminations of tools and services provided by the community of developers improving and building on the protocol.
-* **A community network** – Filecoin provides participants the opportunity to have stake in the networkʼs success. Participants in the network benefit by working together to improve the Filecoin network as a whole.
-
-#### The Filecoin Economy
-Filecoin is more than a network; the protocol and infrastructure lays the groundwork for an economy built around a marketplace for the storage and retrieval of data. The growth of the network depends upon collaboration between researchers, engineers, stakeholders, storage providers, and clients in a market economy, as the network adapts and grows to accommodate additional use cases.
-
-The Filecoin token acts as a medium of exchange, facilitating transactions and production activities, somewhat similar to the in-game currencies of virtual economies in multiplayer online games. In addition, as a currency, the token also acts as a store of value; its minting is tied to adding utility in the form of data storage and other services to the network.
-
-### Tutorials
-For those who are newer to the world of Filecoin, Web3, and storage verification, check out the [Protoschool tutorials](https://proto.school/course/filecoin). Tutorials you should complete include:
-
-* [Verifying Storage on Filecoin](https://proto.school/verifying-storage-on-filecoin)
+Storage providers are able to leverage the Filecoin technology to store content-addressed data using the APIs and data onboarding solutions such as [Boost](https://boost.filecoin.io/) for Lotus, and new functionality that will expands the potential for earning Filecoin such as:
 
 
-### Data & Information About Filecoin
 
-* [Filecoin Docs](https://docs.filecoin.io/)
-* [Filecoin Spec](https://spec.filecoin.io/#section-intro)
-* [Lotus Docs](https://lotus.filecoin.io/)
-* [https://stats.filecoin.io/](https://stats.filecoin.io)
-* [https://dashboard.starboard.ventures/deals](https://dashboard.starboard.ventures/deals)
-* [https://status.filecoin.io/](https://status.filecoin.io)
+* [Saturn CDN](https://strn.network/) where participants can earn Filecoin caching and serving content
+* [Bacalhau ](https://strn.network/)compute, building services to compute over data that are stored using IPFS technology
+* [FVM](https://fvm.filecoin.io/) smart contracts, adding programmability to the Filecoin blockchain
+
+
+## Filecoin Features
+
+Filecoin Features
+
+* **Verifiable Storage** – Rather than needing to trust a cloud storage provider or rely on legal recourse, the Filecoin Protocol cryptographically verifies data storage.
+* **Open Participation** – Anyone with sufficient hardware and an internet connection can be a storage provider (Filecoin miner) for the Filecoin Network.
+* **Empowers Local Optimization** – Driven by open participation, market forces will enable more efficient and distributed data storage and communication than centralized storage platforms. The distributed network allows for a more local and resilient architecture and data availability.
+* **Flexible Storage Options** – As an open platform, the network has the flexibility for the creation & disseminations of tools and services provided by the community of developers improving and building on the protocol.
+* **A Community Network** – Filecoin provides participants the opportunity to have stake in the networkʼs success. Participants in the network benefit by working together to improve the Filecoin network as a whole.
+
