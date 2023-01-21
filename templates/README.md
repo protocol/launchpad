@@ -26,18 +26,23 @@ Definitions
        tutorials:
          parent: "<identifier of tutorial module>"
      ```
+     
      * For example, to add to the **Introduction to IPFS** module, you would replace`"<identifier of tutorial module>"`that with `"tutorials-ipfs"` found on here in the [menus.en.toml file](https://github.com/protocol/launchpad/blob/main/config/_default/menus/menus.en.toml#L159)
      
      
-![Tutorial Identifier](tutorial-identifier.png)
-     * To add the tutorial within a curriculum module as well, under the `menu` field, add an additional two lines with a `curriculm` field witht he correct file from [menus.en.toml](https://github.com/protocol/launchpad/blob/main/config/_default/menus/menus.en.toml#L91):
-       ```
+  ![Tutorial Identifier](tutorial-identifier.png)
+     
+     
+     * To add the tutorial within a curriculum module as well, under the `menu` field, add an additional two lines with a `curriculm` field with the correct file from [menus.en.toml](https://github.com/protocol/launchpad/blob/main/config/_default/menus/menus.en.toml#L91):
+     
+    
+    ```
        menu:
          tutorials:
            parent: "tutorials-ipfs"
          curriculum:
            parent: "curriculum-ipfs"
-       ```
+     ```
 
 
 ### Create a new Module
