@@ -75,7 +75,7 @@ To create a new set of tutorials or Module, follow these steps:
  * Create a Markdown file or a directory with a markddown file in `content/en/curriculum/dev-tools`
  * Update the `weight` field to be 10 after the very last dev-tools page
    ![Weight](weight-example.png)
-  _in this example, the last page is currently spice.md, and you would want to make the next page havea  weight of 80_
+  _in this example, the last page is currently spice.md, and you would want to make the next page have a weight of 80_
 
 ## How to Create a new Curriculum Module
 * Create a new directory
