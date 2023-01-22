@@ -25,8 +25,8 @@ Fleek.co can display a static website whose code is hosted on Github. So wheneve
 * Download jq on the command line:
     * Linux or WSL: `sudo apt-get install jq` 
     * Mac: `brew install jq`
-* Open the[ ipld.io](https://ipld.io/) website
-* Have the[ IPLD Gitub Repo](https://github.com/ipld/ipld) on hand
+* Open the [ipld.io](https://ipld.io/) website
+* Have the [IPLD Gitub Repo](https://github.com/ipld/ipld) on hand
 
 # video goes here 
 
