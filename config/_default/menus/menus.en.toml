@@ -173,12 +173,12 @@
     category = "libp2p"
     image = "/tutorials/libp2p.png"
 
-# [[tutorials]]
-#   name = "Working with IPLD structures"
-#   weight = 30
-#   identifier = "tutorials-ipld"
-#   [tutorials.params]
-#     image = "/tutorials/ipld.svg"
+[[tutorials]]
+  name = "Working with IPLD structures"
+  weight = 30
+  identifier = "tutorials-ipld"
+  [tutorials.params]
+    image = "/tutorials/ipld.svg"
 
 [[footer]]
   name = "About Launchpad"
