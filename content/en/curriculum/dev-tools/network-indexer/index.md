@@ -27,9 +27,8 @@ The Indexer also makes it possible, in a way not achieved before, for people to 
 Though the DHT is an amazing, distributed way to advertise and discover content, the IPFS indexer adds another layer that can give you other options for retrieving files for your applicaitons. With an open protocol that anyone can use, as seen here in the [go-delgated-routing](https://github.com/ipfs/go-delegated-routing) library on their server.
 to enable faster discovery and routing, along with load balancing and an alternative market where routing is done, besides the DHT.
 
+Laern more about IPFS Indexer, the motivations behind it, and potential use cases, see the video **[State of Content Routing| IPFS Camp Lisbon 2022](https://www.youtube.com/watch?v=DLCTEXbF1Es)**
 
-### State of Content Routing| IPFS Camp Lisbon 2022
-{{< youtube DLCTEXbF1Es >}}
 
 ## Indexer Implementations
 Since Filecoin and IPFS store data on separate networks, using different methods of data transfer, there are who different ways that the information about the CIDs are communicated to IPNI.
@@ -54,6 +53,10 @@ With versions of kubo 16+, the Refame RPC is integrated as a feature
 ## Tutorial: Search the Index
 In this simple tutorial, we are going to configure and run an IPFS node to communicate data to the indexer and take a look at what that data looks like.
 
+#### Workshop: Indexed Content Routing| IPFS Camp Lisbon 2022
+See how to set up a local indexer and index-provider in this workshop from IPFS Camp 2022.
+
+{{< youtube aN7fGturjzA >}}
 
 ### Prerequisites
 In order to participate in this activity you will need:
@@ -72,13 +75,14 @@ $ export PATH=$PATH:$GOPATH/bin
 - Install a [JSON formatter extensio](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en)n for your web browser
 
 ### Tutorial Instructions
-You can see the video of the workshop called **[Indexed Content Routing](https://www.youtube.com/watch?v=aN7fGturjzA&t=121s)** from IPFS Camp Lisbon 2022
+You can see the video of the workshop called **[Indexed Content Routing](https://www.youtube.com/watch?v=aN7fGturjzA&t=121s)** from IPFS Camp Lisbon 2022. The original instructions are at [https://github.com/ischasny/ipfs-camp-routing](https://github.com/ischasny/ipfs-camp-routing).
 
 First, lets take a look at an example IPNI record.
 * Check out the Filecion Saturn website, [located at the CID bafybeia57mwbxw3csprt72a6bd6o4uedazn3vo6tv64xken6fgmaxtiugy](https://bafybeia57mwbxw3csprt72a6bd6o4uedazn3vo6tv64xken6fgmaxtiugy.ipfs.dweb.l).
 * Now, look up this CID on [CID contact](https://cid.contact/)
   ![CID Contact](cid-contact2.png)
 * You can also see that same information by constructing the cid.contact url like so `https://cid.contact/cid/<CID>` this one is located at [https://cid.contact/cid/bafybeia57mwbxw3csprt72a6bd6o4uedazn3vo6tv64xken6fgmaxtiugy](https://cid.contact/cid/bafybeia57mwbxw3csprt72a6bd6o4uedazn3vo6tv64xken6fgmaxtiugy)
+* Take a look at the providers wha=o are broadcasting CIDs to the network at [https://cid.contact/providers](https://cid.contact/providers)
 
 ### Set up a Local Indexer
 You can see the documentation, CLI commands, and thorough instructions at [https://github.com/filecoin-project/storetheindex/#install](https://github.com/filecoin-project/storetheindex/#install).
@@ -106,76 +110,123 @@ $ storetheindex daemon
 
 [Install Kubo v0.16.0](https://curriculum.pl-launchpad.io/tutorials/ipfs-intro/setup/) or use already configired node. _It's important to make sure that you are on v0.16.0+ version of Kubo or otherwise Reframe won't work._ Initialize a node with `ipfs init`.
 
-> If you already have an ipfs node running on your machine, you can configure the existing `.ipfs/config` foile, or else create (`ipfs init`) a new IPFS node for this tutorial, and make a backup copy of the `with cp ~/.ipfs ~/..ipfs` config file, or initialize a new node in a sandboxed vm or container.
+> If you already have an ipfs node running on your machine, you can configure the existing `.ipfs/config` file, or else create (`ipfs init`) a new IPFS node for this tutorial, and make a backup copy of the `with cp ~/.ipfs ~/..ipfs` config file, or initialize a new node in a sandboxed vm or container.
 
 
-Set up custom routing by adding the following configuration block into `~/.ipfs/config`
+Set up custom routing. In a new terminal window, rung this command to configure custom routing:
 
 ```
-ipfs config Routing --json
-```
-You should get an output that confirms you have added a routing configuration field to `~/.ipfs/config`.
-
-![Routing Configuration](routing-config.png)
-
-Now if you look in your `.ipfs/config` file, you should see a `Routing` object, which you can add to:
-
-```json
-"Routing": {
-    "Routers": null,
-    "Type": "custom"
-    "Methods": {
-        "find-peers": {
-          "RouterName": "WanDHT"
-        },
-        "find-providers": {
-          "RouterName": "ParallelHelper"
-        },
-        "get-ipns": {
-          "RouterName": "WanDHT"
-        },
-        "provide": {
-          "RouterName": "ParallelHelper"
-        },
-        "put-ipns": {
-          "RouterName": "WanDHT"
-        }
-      },
-      "Routers": {
-        "CidContact": {
-          "Parameters": {
-            "Endpoint": "http://127.0.0.1:50617"
-          },
-          "Type": "reframe"
-        },
-        "ParallelHelper": {
-          "Parameters": {
-            "Routers": [
-              {
-                "IgnoreErrors": true,
-                "RouterName": "CidContact",
-                "Timeout": "30m"
-              },
-              {
-                "ExecuteAfter": "2s",
-                "IgnoreErrors": true,
-                "RouterName": "WanDHT",
-                "Timeout": "30m"
-              }
-            ]
-          },
-          "Type": "parallel"
-        },
-        "WanDHT": {
-          "Parameters": {
-            "AcceleratedDHTClient": true,
-            "Mode": "dhtserver",
-            "PublicIPNetwork": true
-          },
-          "Type": "dht"
-        }
-      }
+ipfs config Routing --json  '{
+  "Type": "custom",
+  "Methods": {
+    "find-peers": {
+      "RouterName": "WanDHT"
+    },
+    "find-providers": {
+      "RouterName": "ParallelHelper"
+    },
+    "get-ipns": {
+      "RouterName": "WanDHT"
+    },
+    "provide": {
+      "RouterName": "ParallelHelper"
+    },
+    "put-ipns": {
+      "RouterName": "WanDHT"
     }
+  },
+  "Routers": {
+    "CidContact": {
+      "Parameters": {
+        "Endpoint": "http://127.0.0.1:50617"
+      },
+      "Type": "reframe"
+    },
+    "ParallelHelper": {
+      "Parameters": {
+        "Routers": [
+          {
+            "IgnoreErrors": true,
+            "RouterName": "CidContact",
+            "Timeout": "30m"
+          },
+          {
+            "ExecuteAfter": "2s",
+            "IgnoreErrors": true,
+            "RouterName": "WanDHT",
+            "Timeout": "30m"
+          }
+        ]
+      },
+      "Type": "parallel"
+    },
+    "WanDHT": {
+      "Parameters": {
+        "AcceleratedDHTClient": true,
+        "Mode": "dhtserver",
+        "PublicIPNetwork": true
+      },
+      "Type": "dht"
+    }
+  }
+}'
+```
+
+Now if you look in your `.ipfs/config` file, you should see a `Routing` object, which you can modify for a custom setup:
+```json
+ "Routing": {
+    "Methods": {
+      "find-peers": {
+        "RouterName": "WanDHT"
+      },
+      "find-providers": {
+        "RouterName": "ParallelHelper"
+      },
+      "get-ipns": {
+        "RouterName": "WanDHT"
+      },
+      "provide": {
+        "RouterName": "ParallelHelper"
+      },
+      "put-ipns": {
+        "RouterName": "WanDHT"
+      }
+    },
+    "Routers": {
+      "CidContact": {
+        "Parameters": {
+          "Endpoint": "http://127.0.0.1:50617"
+        },
+        "Type": "reframe"
+      },
+      "ParallelHelper": {
+        "Parameters": {
+          "Routers": [
+            {
+              "IgnoreErrors": true,
+              "RouterName": "CidContact",
+              "Timeout": "30m"
+            },
+            {
+              "ExecuteAfter": "2s",
+              "IgnoreErrors": true,
+              "RouterName": "WanDHT",
+              "Timeout": "30m"
+            }
+          ]
+        },
+        "Type": "parallel"
+      },
+      "WanDHT": {
+        "Parameters": {
+          "AcceleratedDHTClient": true,
+          "Mode": "dhtserver",
+          "PublicIPNetwork": true
+        },
+        "Type": "dht"
+      }
+    },
+    "Type": "custom"
   },
 ```
 
@@ -185,8 +236,9 @@ Start the IPFS node:
 $ ipfs daemon
 ```
 
-Take a note of the `Identity.PeerID` from the Kubo config.
+In the`.ipfs/config` file, find the "Identity" field and write down the `PeerID`:
 
+![Peer ID](ipfspeerid.png)
 
 ### Set Up an index-provider Node
 
@@ -238,25 +290,27 @@ Start the index-provider:
 $ provider daemon
 ```
 
-### See all in action
+### See It In Action
 
-Make sure `ipfs daemon` is running and open up a WebUI at http://127.0.0.1:5001/webui and upload a file.
+Make sure `ipfs daemon` is running and open up a WebUI at [http://127.0.0.1:5001/webui](http://127.0.0.1:5001/webui) and upload a file.
 
-Take a note of its CID.
+Take a note of it's CID.
 
 Once upoloaded you should see logs start rolling in `storetheindex` and `indexprovider` command lines.
 
-Check whether your cid got indexed by executing
+Open a new terminal window and check whether your cid got indexed by executing
 
 ```
-$ storetheindex find --cid
+$ storetheindex find --cid <CID>
 ```
 
 Or look it up in Kubo
 
 ```
-ipfs routing findprovs YOUR_CID
+ipfs routing findprovs <CID>
 ```
+![Index CID](indexcid.png)
+
 
 #### Resources
 * [Blog: Introducing the Network Indexer](https://filecoin.io/blog/posts/introducing-the-network-indexer/)
