@@ -178,7 +178,14 @@ Now that you have learned the basics of IPLD pathing options, we challenge you t
 
 {{% embed src=https://docs.google.com/forms/d/e/1FAIpQLSejZokLiXjhecn6Aqr7VXhafsZVOeUeDM1sm76ykiAHtV4SRA/viewform?usp=sf_link width="100%" height="800px" %}}
 
-Here is 1 possible answer:
-```bash
-* $ ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/3/Hash/Links/1/Hash/Links/1/Hash/Links/2/Hash/Links/0/Hash
+Here are 4 possible answers:
+```
+Traverse dag into the “docs” branch like below:
+$ ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/3/Hash/Links/1/Hash/Links/1/Hash/Links/2/Hash/Links/0/Hash
+Traverse dag into the “notebooks” branch:
+$ ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/11/Hash/Links/0/Hash/Links/0/Hash/Links/0/Hash
+Traverse dag into the “design” branch:
+$ ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/2/Hash/Links/0/Hash/Links/1/Hash/
+Traverse dag into the “specs” branch:
+$ ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/12/Hash/Links/1/Hash/Links/1/Hash/Links/0/Hash
 ```
