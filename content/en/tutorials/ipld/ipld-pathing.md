@@ -110,7 +110,7 @@ DAG-PB has two top-level properties: `Data` and `Links`. We’re interested in t
 When a client (i.e a website/a browser via an IPFS gateway) loads a root like in the following manner and doesn’t find a single page, it will look for an `index.html` link, which [ipld.io](http://ipld.io/) has. In this case, the `Links` field is empty, but the `Data` field contains a lot of bytes so the client will load those in. The bytes are Base64 encoded. 
 
 ```bash
-$ ipfs dag get Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/index.html | jq 
+$ ipfs dag get QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/index.html | jq 
 {
     "Data": { 
         "/": { "bytes": "CAIS0s4BPCFET0NUWVBF... "}
@@ -122,7 +122,7 @@ $ ipfs dag get Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/index.html | jq
 **If you want to navigate to any other block using IPFS pathing, just add the name of the link in the path, similar to what you would do in a linux filesystem. EX:**
 
 ```bash
-$ ipfs dag get Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/docs/codecs/known | jq
+$ ipfs dag get QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/docs/codecs/known | jq
 ```
 
 You can find the name of children blocks by inspecting the block first, then choosing another path, and then another, so on and so forth until you reach the end or you reach the data you were looking for.
@@ -132,7 +132,7 @@ You can find the name of children blocks by inspecting the block first, then cho
 DAG-PB is a special case within ipfs, because when supplying a path attached to a CID, it will interpret the blocks and look for named links for us. This isn’t the case for blocks of any other codec (e.g. DAG-CBOR). We can switch out of this special-case mode and explicitly say that we want to use raw-IPLD pathing by prefixing our root block CID with `/ipld/` so we can _path_ through the DAG-PB’s block properties for ourselves. 
 
 ```bash
-$ ipfs dag get /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/7/Hash | jq 
+$ ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/7/Hash | jq 
 { 
     "Data": { 
         "/": { "bytes": "CAIS0s4BPCFET0NUWVBF..." }
@@ -144,7 +144,7 @@ $ ipfs dag get /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/7/Hash
 `Links` is an array field, so we use the number 7 to identify which child block we want to access. In this case, we’re going to navigate into the `Hash` and that will load the block with that CID. Now we can also move into accessing only the _raw_ bytes by adding `Data` to the end of the path, as opposed to accessing the DAG-PB formatted block:
 
 ```bash
-$ ipfs dag get /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/7/Hash/Data | jq 
+$ ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/7/Hash/Data | jq 
 { 
     "/": {  "bytes": "CAIS0s4BPCFET0NUWVBF... "}
 }
@@ -155,7 +155,7 @@ $ ipfs dag get /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/7/Hash
 We are now at a simple byte array, it looks complex because DAG-JSON has to present bytes in this way, but we can change the codec to view the `RAW` codec and view the bytes _as they are_.
 
 ```bash
-$ ipfs dag get --output-codec=raw /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/7/Hash/Data
+$ ipfs dag get --output-codec=raw /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/7/Hash/Data
 
 ��<!DOCTYPE html>
 <html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
@@ -180,5 +180,5 @@ Now that you have learned the basics of IPLD pathing options, we challenge you t
 
 Here is 1 possible answer:
 ```bash
-* $ ipfs dag get /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/3/Hash/Links/1/Hash/Links/1/Hash/Links/2/Hash/Links/0/Hash
+* $ ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/3/Hash/Links/1/Hash/Links/1/Hash/Links/2/Hash/Links/0/Hash
 ```
