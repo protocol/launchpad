@@ -50,7 +50,7 @@ With versions of kubo 16+, the Refame RPC is integrated as a feature
   Reframe was created from a [kubo spec](https://github.com/ipfs/specs/blob/main/reframe/REFRAME_PROTOCOL.md) (the IPFS go implementation) that allows IPFS nodes to advertise their content to other systems besides the DHT.
 
 
-## Tutorial: Search the Index
+## Tutorial: IPNI
 In this simple tutorial, we are going to configure and run an IPFS node to communicate data to the indexer and take a look at what that data looks like.
 
 #### Workshop: Indexed Content Routing| IPFS Camp Lisbon 2022
@@ -71,12 +71,13 @@ $ export PATH=$PATH:$GOPATH/bin
   * IPFS install [Tutorial](https://curriculum.pl-launchpad.io/tutorials/ipfs-intro/setup/)
   * [Docs Instructions](http://docs.ipfs.tech.ipns.localhost:8080/install/command-line/#install-official-binary-distributions)
   * [Distributions](https://dist.ipfs.tech/#kubo)
-* - [IPFS companion](https://chrome.google.com/webstore/detail/ipfs-companion/nibjojkomfdiaoajekhjakgkdhaomnch?hl=en) browser extension or [Brave browser](https://brave.com/download/) to view websites published on IPFS
+* [IPFS companion](https://chrome.google.com/webstore/detail/ipfs-companion/nibjojkomfdiaoajekhjakgkdhaomnch?hl=en) browser extension or [Brave browser](https://brave.com/download/) to view websites published on IPFS
 - Install a [JSON formatter extensio](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en)n for your web browser
 
-### Tutorial Instructions
+## Tutorial Instructions
 You can see the video of the workshop called **[Indexed Content Routing](https://www.youtube.com/watch?v=aN7fGturjzA&t=121s)** from IPFS Camp Lisbon 2022. The original instructions are at [https://github.com/ischasny/ipfs-camp-routing](https://github.com/ischasny/ipfs-camp-routing).
 
+### Explore IPNI Records
 First, lets take a look at an example IPNI record.
 * Check out the Filecion Saturn website, [located at the CID bafybeia57mwbxw3csprt72a6bd6o4uedazn3vo6tv64xken6fgmaxtiugy](https://bafybeia57mwbxw3csprt72a6bd6o4uedazn3vo6tv64xken6fgmaxtiugy.ipfs.dweb.l).
 * Now, look up this CID on [CID contact](https://cid.contact/)
@@ -113,7 +114,7 @@ $ storetheindex daemon
 > If you already have an ipfs node running on your machine, you can configure the existing `.ipfs/config` file, or else create (`ipfs init`) a new IPFS node for this tutorial, and make a backup copy of the `with cp ~/.ipfs ~/..ipfs` config file, or initialize a new node in a sandboxed vm or container.
 
 
-Set up custom routing. In a new terminal window, rung this command to configure custom routing:
+To set up custom routing. In a new terminal window, run this command to configure custom routing:
 
 ```
 ipfs config Routing --json  '{
@@ -312,7 +313,7 @@ ipfs routing findprovs <CID>
 ![Index CID](indexcid.png)
 
 
-#### Resources
+## Resources
 * [Blog: Introducing the Network Indexer](https://filecoin.io/blog/posts/introducing-the-network-indexer/)
 * [Blog: Introducing Reframe](https://blog.ipfs.tech/2022-09-02-introducing-reframe/)
 * [CID Contact](https://cid.contact/) a web user interface (webUI) you can use to access data.
