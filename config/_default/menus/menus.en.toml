@@ -187,7 +187,7 @@
     icon = "/logos/fvm.png"
     iconWidth = 14.71
     iconHeight = 22.30
-    image = "https://user-images.githubusercontent.com/310223/150189748-ed673f1a-6a5f-4746-a1b3-0d8b1a3f5fd2.png"
+    image = "/tutorials/fvm.png"
 
 [[tutorials]]
   name = "Introduction to Metamask"
@@ -195,10 +195,10 @@
   identifier = "tutorials-metamask-intro"
   [tutorials.params]
     category = "web3"
-    icon = "https://cdn-icons-png.flaticon.com/128/616/616519.png"
+    icon = "/logos/metamask.png"
     iconWidth = 22
     iconHeight = 22
-    image = "https://st.depositphotos.com/60692670/57535/i/600/depositphotos_575356850-stock-photo-ukraine-odessa-october-2021-hand.jpg"
+    image = "/tutorials/metamask.jpeg"
 
 # [[tutorials]]
 #   name = "Working with IPLD structures"

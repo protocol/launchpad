@@ -10,70 +10,24 @@ category: tutorial
 ---
 
 {{< beforepages text="This tutorial expects you to be familiar with Metamask. You can learn about Metamask in the following tutorials:">}}
-  {{< beforepages-element page="/tutorials/ipfs-intro/basics" >}}
   {{< beforepages-element page="/tutorials/metamask-intro/create-wallet" >}}
+  {{< beforepages-element page="/tutorials/metamask-intro/switch-networks" >}}
 {{< /beforepages >}}
 
 We're going to be creating an ERC-20 token in this quickstart. The ERC-20 contract is used a lot in representing a massive array of tokens across multiple blockchains, primarily the Ethereum blockchain.
 
-## Accounts and assets
+## Prerequisites
 
-We're going to be using MetaMask, a cryptocurrency wallet that lives in your browser making it very easy for users to interact with web3-based sites!
+* You must have a **Metamask wallet ready** to use in your browser.
+Learn how [here](/tutorials/metamask-intro/create-wallet/).
+* You must be connected to the **Filecoin Wallaby Testnet**.
+Learn how [here](/tutorials/metamask-intro/switch-networks/).
 
-### Create a wallet
-
-Before we can interact with the Filecoin network, we need funds. But before we can get any funds, we need somewhere to put them!
-
-1. Open your browser and visit the [MetaMask website](https://metamask.io/).
-1. Install the wallet by clicking the **Download for** button. MetaMask is available for Brave, Chrome, Edge, Firefox, and Opera.
-1. Once you have installed MetaMask, it will open a **Get started** window.
-
-   ![Get started with MetaMask.](metamask-get-started.png)
-
-1. Follow the prompts until you MetaMask asks if you are **New to MetaMask**.
-1. Because you still need an account on the Filecoin network, select **Create a wallet**.
-
-   ![Create a wallet in MetaMask.](metamask-create-new-wallet.png)
-
-1. Enter a secure password. You will use this password every time you want to open this wallet in this browser.
-1. Click **Next** until you get to the **Secret Recovery Phrase** window. Read the information about what this _recovery phrase_ is on this page.
-1. Once you've followed the instructions and saved your recovery phrase, click **Next**.
-1. Confirm that you saved the recovery phrase correctly by clicking on the words in order.
-1. Once you've done that, you should have your account set up!
-
-### Switch networks
-
-You may notice that we are currently connected to the **Ethereum Mainnet**. We need to point MetaMask to the Filecoin network, specifically the _Wallaby testnet_. We'll use a website called [chainlist.org](https://chainlist.org/) to give MetaMask the information it needs quickly.
-
-1. Go to [chainlist.org](https://chainlist.org/).
-1. Enable the **Testnets** toggle and enter `Filecoin` into the search bar.
-
-   ![Select a testnet in Chainlist.](chainlist-select-test-networks.png)
-
-1. Scroll down to find the **Filecoin -- Wallaby** testnet:
-
-   ![Find the Filecoin Wallaby testnet in Chainlist.](chainlist-filecoin-wallaby.png)
-
-1. In MetaMask click **Next** and then **Continue** when prompted to connect Chainlist.org to MetaMask:
-
-   ![Connect Chainlist to MetaMask.](chainlist-connect-with-metamask.png)
-
-1. Back on the Chainlist.org page, click the **Filecoin -- Wallaby** testnet connect button again.
-1. In MetaMask click **Approve** when prompted to _Allow this site to add a network_:
-
-   ![Allow Chainlist to change networks.](chainlist-allow-site-to-add-a-network.png)
-
-1. Click **Switch network** when prompted by MetaMask:
-
-   ![Switch networks with Chainlist.](chainlist-switch-network.png)
-
-1. Open MetaMask, and you should see that you're now on the Filecoin Wallaby testnet:
-
-   ![Complete the process with Chainlist.](chainlist-complete.png)
-
-Nice! Now we've got the Filecoin Wallaby testnet set up within MetaMask. You'll notice that our MetaMask window shows `0 TFIL`. Test-filecoin (`TFIL`) is `FIL` that has no value in the _real world_, and developers use it for testing. We'll grab some `TFIL` next.
+## Instructions
 
 ### Get some funds
+
+Before you can operate in the Filecoin test network, you need funds to pay for gas fees.
 
 1. Open your browser and open MetaMask.
 1. Click your account to copy the address to your clipboard:
@@ -96,11 +50,11 @@ Nice! Now we've got the Filecoin Wallaby testnet set up within MetaMask. You'll 
 
 That's all there is to it! Getting `tFil` is easy!
 
-## Contract creation
+### Contract creation
 
 The development environment we're going to be using is called Remix, viewable at [remix.ethereum.org](https://remix.ethereum.org/). Remix is an incredibly sophisticated tool, and there's a lot you can play around with! In this tutorial however, we're going to stick to the very basics. If you want to learn more, check out [the Remix documentation](https://remix-ide.readthedocs.io/en/latest/).
 
-### Create a workspace
+#### Create a workspace
 
 In Remix, workspaces are siloed environments where you can create a contract, or group of contracts, for each project. Let's create a new workspace to create our new ERC-20 token.
 
@@ -117,7 +71,7 @@ In Remix, workspaces are siloed environments where you can create a contract, or
 
 1. Click **OK** to create your new workspace.
 
-### Customize the contract
+#### Customize the contract
 
 The contract template we're using is pretty simple; we just need to modify a couple of variables.
 
@@ -129,14 +83,14 @@ The contract template we're using is pretty simple; we just need to modify a cou
 
 That's all we need to change within this contract. You can see on line 4 that this contract is importing another contract from `@openzeppelin` for us, meaning that we can keep our custom token contract simple.
 
-### Compile
+#### Compile
 
 1. Click the green play symbol at the top of the workspace to compile your contract. You can also press `CMD` + `s` on MacOS or `CTRL` + `s` on Linux and Windows.
 1. Remix automatically fetches the two `import` contracts from the top of our `.sol` contract. You can see these imported contracts under the `.deps` directory. You can browse the contracts there, but Remix will not save any changes you make.
 
 ![Remix showing imported contracts.](remix-imported-contracts.png)
 
-### Deploy
+#### Deploy
 
 Now that we've successfully compiled our contract, we need to deploy it somewhere! This is where our previous MetaMask setup comes into play.
 
@@ -171,11 +125,11 @@ Now that we've successfully compiled our contract, we need to deploy it somewher
 
 On the Filecoin network, a new set of blocks, also called a tipset, is created every thirty seconds. When deploying a contract, the transaction needs to be received by the network, and then the network needs to confirm the contract. This process takes around one to two tipsets to process -- or around 60 to 90 seconds.
 
-## Use your contract
+### Use your contract
 
 Now that we've compiled and deployed the contract, it's time to actually interact with it!
 
-### Mint your tokens
+#### Mint your tokens
 
 Let's call a method within the deployed contract to mint some tokens.
 
@@ -203,7 +157,7 @@ Let's call a method within the deployed contract to mint some tokens.
 
    ![Remix pending the minting of a contract.](remix-mint-pending.png)
 
-### Add to MetaMask
+#### Add to MetaMask
 
 Currently, MetaMask has no idea what our token is or what it even does. We can fix this by explicitly telling MetaMask the address of our contract.
 
@@ -228,6 +182,6 @@ Currently, MetaMask has no idea what our token is or what it even does. We can f
 
    ![Final token import page in MetaMask.](metamask-tokens-finished.png)
 
-### Share your tokens
+#### Share your tokens
 
-Having a bunch of tokens in your personal MetaMask is nice, but why not send some tokens to a friend? Your friend needs to create a wallet in MetaMask as we did in the [Create a wallet](#create-a-wallet) and [Switch networks](#switch-networks) sections. They will also need to import your contract deployment address like you did in the [Add your tokens to MetaMask](#add-your-tokens-to-metamask) section. Remember, you need to pay gas for every transaction that you make! If your friend tries to send some of your tokens to someone else but can't, it might be because they [don't have any `tFil`](#get-some-funds).
+Having a bunch of tokens in your personal MetaMask is nice, but why not send some tokens to a friend? Your friend needs to create a wallet in MetaMask as we did in the [Create a wallet](/tutorials/metamask-intro/create-wallet/) and [Switch networks](/tutorials/metamask-intro/switch-networks) tutorials. They will also need to import your contract deployment address like you did in the [Add your tokens to MetaMask](#add-to-metamask) section. Remember, you need to pay gas for every transaction that you make! If your friend tries to send some of your tokens to someone else but can't, it might be because they [don't have any `tFil`](#get-some-funds).

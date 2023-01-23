@@ -9,10 +9,16 @@ weight: 10
 category: tutorial
 ---
 
-Before we can interact with the Filecoin network, we need funds. But before we can get any funds, we need somewhere to put them!
+{{< beforepages text="This tutorial expects you to know what is Metamask and the main aspects of the app. Learn about Metamask in the following introduction page.">}}
+  {{< beforepages-element page="/tutorials/metamask-intro/what-is-metamask" >}}
+{{< /beforepages >}}
+
+In this tutorial, we will install Metamask and set up a wallet.
+
+## Instructions
 
 1. Open your browser and visit the [MetaMask website](https://metamask.io/).
-1. Install the wallet by clicking the **Download for** button. MetaMask is available for Brave, Chrome, Edge, Firefox, and Opera.
+1. Install the wallet by clicking the **Download for** button.
 1. Once you have installed MetaMask, it will open a **Get started** window.
 
    ![Get started with MetaMask.](metamask-get-started.png)
