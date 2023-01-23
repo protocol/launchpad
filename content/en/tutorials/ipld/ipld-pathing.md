@@ -184,8 +184,6 @@ Traverse dag into the “docs” branch like below:
 $ ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/3/Hash/Links/1/Hash/Links/1/Hash/Links/2/Hash/Links/0/Hash
 Traverse dag into the “notebooks” branch:
 $ ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/11/Hash/Links/0/Hash/Links/0/Hash/Links/0/Hash
-Traverse dag into the “design” branch:
-$ ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/2/Hash/Links/0/Hash/Links/1/Hash/
 Traverse dag into the “specs” branch:
 $ ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/12/Hash/Links/1/Hash/Links/1/Hash/Links/0/Hash
 ```
