@@ -1,3 +1,25 @@
+---
+title: "Introduction to Filecoin"
+description: "Incentivizing Decentralized Storage"
+draft: false
+menu:
+  curriculum:
+    parent: "curriculum-filecoin"
+weight: 380
+category: lecture
+level:
+- shallow
+- deep
+objectives:
+  show: true
+  goals:
+  - "1.0"
+  subgoals:
+  - 1.01
+  - 1.02
+  - 1.03
+  - 1.04
+---
 
 [Filecoin](https://docs.filecoin.io/) is a peer-to-peer network that stores files, with built-in economic incentives and cryptography to ensure files are stored reliably over time. Filecoin includes a blockchain and native cryptocurrency (FIL) to create a network and a market that both provides services to users who want to store data on the Filecoin network, and for storage providers who can participate in mining block rewards, while providing the data storage and (soon to come) compute capabilities over that data.
 
