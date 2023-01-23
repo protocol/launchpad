@@ -1,3 +1,8 @@
+{{ $tutorialTrigger := resources.Get "js/react/components/curriculum/tutorial/TutorialTrigger.jsx" | babel }}
+{{ $tutorialTrigger := $tutorialTrigger | js.Build }}
+
+<script src="{{ $tutorialTrigger.RelPermalink }}" defer></script>
+
 {{ if .Site.Params.options.collapsibleSidebar -}}
   <ul class="list-unstyled collapsible-sidebar">
   {{ $currentPage := . -}}
@@ -14,13 +19,17 @@
         {{ range .Children -}}
           {{- $active := or ($currentPage.IsMenuCurrent "curriculum" .) ($currentPage.HasMenuCurrent "curriculum" .) -}}
           {{- $active = or $active (eq $currentPage.Section .Identifier) -}}
-          <li style="display: flex; align-items: center;" data-content-level="{{ .Page.Params.level }}" data-id="{{ .Page.File.UniqueID }}">
+          {{ $test := ("aa *bold*" | markdownify) }}
+          <li style="display: flex; align-items: center;" data-category="{{ .Page.Params.Category }}" data-content-level="{{ .Page.Params.level }}" data-id="{{ .Page.File.UniqueID }}" data-title="{{ .Page.Title }}"  data-content="{{ $test }}" >
+            {{ if eq .Page.Params.category "tutorial" }}
+              <div id="content-curriculum-tutorial-trigger-{{ .Page.File.UniqueID }}" style="display: none;">{{ .Page.Content | markdownify }}</div>
+            {{ end }}
             {{ if eq .Page.Params.category "lecture" }}
               <img src="/icons/lecture.png" width="20" height="20" />
+              <a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}" style="margin-left: 0.4rem" target='{{ if eq .Page.Params.category "tutorial" }}_blank{{ end }}'>{{ .Name }} {{ if eq .Page.Params.category "tutorial" }}(Tutorial){{ end }}</a>
             {{ else }}
-              <img src="/icons/tutorial.png" width="20" height="20" />
+              <div id="curriculum-tutorial-trigger-{{ .Page.File.UniqueID }}"></div>
             {{ end }}
-            <a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}" style="margin-left: 0.4rem" target='{{ if eq .Page.Params.category "tutorial" }}_blank{{ end }}'>{{ .Name }} {{ if eq .Page.Params.category "tutorial" }}(Tutorial){{ end }}</a>
           </li>
         {{ end -}}
         </ul>

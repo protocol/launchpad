@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom/client";
 import React from "react";
+import {App, buildAppComponent} from "../components/App";
 
 export const LEVELS = ['shallow', 'deep']
 
@@ -8,11 +9,30 @@ export const getDataAttribute = (id, attribute) => {
   return element.dataset[attribute]
 }
 
+export const hideElement = id => {
+  const content = document.getElementById(id)
+  content.style.display = "none"
+}
+
+export const getDataAttributeFromContainer = (container, attribute) => {
+  return container.dataset[attribute]
+}
+
 export const renderComponent = (component, containerId) => {
   const container = document.getElementById(containerId);
 
   const root = ReactDOM.createRoot(container);
   root.render(component)
+}
+
+export const renderComponents = (component, fetchData, containerIdPrefix) => {
+  const containers = document.querySelectorAll('[id^="' + containerIdPrefix + '"]');
+
+  for (let i = 0; i < containers.length; i++) {
+    const container = containers[i]
+    const root = ReactDOM.createRoot(container);
+    root.render(buildAppComponent(component, fetchData, container))
+  }
 }
 
 export const parseList = (listAsString) => {
