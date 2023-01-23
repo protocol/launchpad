@@ -14,3 +14,9 @@
   border-radius: 4px 4px 4px 4px;
   margin-top: 20px;
 }
+
+[data-dark-mode] .dynamic-tutorial .notice {
+  background-color: #3d3d3d;
+  border: 1px solid #252525;
+  color: white;
+}
