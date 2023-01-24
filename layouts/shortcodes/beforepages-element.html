@@ -1,17 +1,16 @@
 {{ with .Site.GetPage (.Get "page") }}
-<!-- background-color: #d6f4ff; border-bottom: 1px solid #a5ebff; -->
-    {{ $pageMenuId := .Params.Menu.Tutorials.Parent }}
-    {{ $pageMenu := "" }}
-    {{ range $index, $element := where .Site.Menus.tutorials "Identifier" $pageMenuId -}}
-      {{ $pageMenu = $element }}
-    {{ end }}
-      <div style="background-color: #fafafa; border-bottom: 1px solid #DEDEDEFF; color: #313131; font-weight: bold; font-size: 20px; align-items: center; width: 100%; height: auto; padding: 6px;">
-        <div style="color: #525252; text-transform: uppercase; font-size: 14px;">{{ $pageMenu.Name }}</div>
-        <a href="{{ .Permalink }}" target="_blank">
-        <div style="display: flex; align-items: center;">
-          <img src="{{ $pageMenu.Params.Icon }}" width="{{ $pageMenu.Params.IconWidth }}" height="{{ $pageMenu.Params.IconHeight }}" style="margin-right: 4px;" />
-          <div>{{ .Title }}</div>
-        </div>
-        </a>
-      </div>
+  {{ $pageMenuId := .Params.Menu.Tutorials.Parent }}
+  {{ $pageMenu := "" }}
+  {{ range $index, $element := where .Site.Menus.tutorials "Identifier" $pageMenuId -}}
+    {{ $pageMenu = $element }}
+  {{ end }}
+  <div class="before-begin-element">
+    <div class="title">{{ $pageMenu.Name }}</div>
+    <a href="{{ .Permalink }}" target="_blank">
+    <div style="display: flex; align-items: center;">
+      <img src="{{ $pageMenu.Params.Icon }}" width="{{ $pageMenu.Params.IconWidth }}" height="{{ $pageMenu.Params.IconHeight }}" style="margin-right: 4px;" />
+      <div>{{ .Title }}</div>
+    </div>
+    </a>
+  </div>
 {{ end }}
