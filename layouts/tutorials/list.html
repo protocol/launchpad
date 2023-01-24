@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $context := . }}
 <div class="row flex-l-nowrap" style="justify-content: center;">
   <div style="padding: 30px">
     <div>
@@ -17,24 +18,8 @@
           <div class="tutorials-card">
             <a href="{{ $link }}">
               <div class="info">
-                <div style="display: flex; align-items: center; color: rgb(51, 51, 51); padding: 6px;">
-                  {{ if eq $element.Params.category "ipfs" }}
-                  <img src="/logos/ipfs.svg" width="23" height="23" />
-                  <div class="curriculum-listing-info">
-                    IPFS
-                  </div>
-                  {{ else if eq $element.Params.category "libp2p" }}
-                  <img src="/logos/libp2p.png" width="22.9" height="26.4" />
-                  <div class="curriculum-listing-info">
-                    libp2p
-                  </div>
-                  {{ else }}
-                  <img src="/logos/ipld.png" width="23.17" height="26.34" />
-                  <div class="curriculum-listing-info">
-                    IPLD
-                  </div>
-                  {{ end }}
-                </div>
+                {{ $context.Scratch.Set "category" $element.Params.category }}
+                {{ partial "icons/tutorials-category-icon.html" $context }}
                 <div style="display: flex; align-items: center; color: rgb(51, 51, 51); padding: 6px;">
                   <div><img src="/icons/tutorial.png" width="23" height="23" style="margin-top: -7px;" /></div>
                   <div class="curriculum-listing-info">
