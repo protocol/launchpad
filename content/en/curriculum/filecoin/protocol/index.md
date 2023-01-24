@@ -24,6 +24,7 @@ This video is an overview of the general mining process, as well as the data sea
 
 * [Filecoin Docs](https://docs.filecoin.io/)
 * [Filecoin Spec](https://spec.filecoin.io/)
+* [Engineering Filecoin's Economy](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)
 * [Lotus Docs](https://lotus.filecoin.io/)
 * [Lotus versioning scheme](https://github.com/filecoin-project/lotus/discussions/7053)​
 * [Piece logistics](https://spec.filecoin.io/#section-systems.filecoin\_files.piece)​
