@@ -60,6 +60,7 @@ For those who are newer to the world of Filecoin, Web3, and storage verification
 
 * [Filecoin Docs](https://docs.filecoin.io/)
 * [Filecoin Spec](https://spec.filecoin.io/#section-intro)
+* [Engineering Filecoin's Economy](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)
 * [Lotus Docs](https://lotus.filecoin.io/)
 * [https://stats.filecoin.io/](https://stats.filecoin.io)
 * [https://dashboard.starboard.ventures/deals](https://dashboard.starboard.ventures/deals)
