@@ -141,7 +141,7 @@ Let's call a method within the deployed contract to mint some tokens.
 
    ![Remix showing the mint method of a contract.](remix-expand-mint-method.png)
 
-1. The `to` field specifies where address you want these initial tokens sent to. Open MetaMask, copy your address, and paste it into this field.
+1. The `to` field specifies what address you want these initial tokens sent to. Open MetaMask, copy your address, and paste it into this field.
 
    ![Add an address into Remix.](remix-add-address.png)
 
