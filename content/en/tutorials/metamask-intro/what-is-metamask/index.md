@@ -9,7 +9,7 @@ weight: 1
 category: lecture
 ---
 
-**Metamask** is a crypto wallet and a gateway to blockchain apps.
+**Metamask** is a crypto wallet and a gateway to blockchain apps. A crypto wallet is an address on the blockchain the points to an account that can be used to store and exchange cryptocurrency. There are different things you can use to manage your wallet, and Metamask is an application that makes it easy for applications in your browser to send and receive funds, NFTs, and more to the wallet.
 The main feature of Metamask is its browser extension, which is available for Brave, Chrome, Edge, Firefox, and Opera.
 
 ## The Wallet
