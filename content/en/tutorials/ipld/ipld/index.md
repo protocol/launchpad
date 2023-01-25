@@ -119,7 +119,7 @@ DAG-PB has two top-level properties: `Data` and `Links`. We’re interested in t
 The links (called `"Hash"` in the DAG-PB) can also be inspected, leading you another level down in the tree.
 
 
-### Load a Page
+### Load a Page With File Path
 
 When a client (i.e a website/a browser via an IPFS gateway) loads a root like in the following manner and doesn’t find a single page, it will look for an `index.html` link, which [ipld.io](http://ipld.io/) has. In this case, the `Links` field is empty, but the `Data` field contains a lot of bytes so the client will load those in. The bytes are Base64 encoded.
 
@@ -152,7 +152,7 @@ $ ipfs dag get Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/docs/codecs/known 
 
 You can find the name of children blocks by inspecting the block first, then choosing another path, and then another, so on and so forth until you reach the end or you reach the data you were looking for.
 
-### Loading a page with IPLD Pathing
+### Loading a Page with IPLD Pathing
 
 DAG-PB is a special case within ipfs, because when supplying a path attached to a CID, it will interpret the blocks and look for named links for us. This isn’t the case for blocks of any other codec (e.g. DAG-CBOR). We can switch out of this special-case mode and explicitly say that we want to use raw-IPLD pathing by prefixing our root block CID with `/ipld/` so we can _path_ through the DAG-PB’s block properties for ourselves.
 
