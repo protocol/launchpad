@@ -74,4 +74,4 @@ The IPFS folder with CID `QmfKJT13h5k1b23ja3ZCVg5nFL9oKz2bVXc8oXgtwiwhjz` is mou
 2. The `QmfKJT13h5k1b23ja3ZCVg5nFL9oKz2bVXc8oXgtwiwhjz` IPFS folder is mounted to the `/files` directory inside the container.
 3. The file is read by using the `cat` command.
 
-Now that you understand the basics of Bacalhau, check out the great examples in [official documentation](https://docs.bacalhau.org/examples/).
+Now that you understand the basics of Bacalhau, check out the great examples in the [official documentation](https://docs.bacalhau.org/examples/).
