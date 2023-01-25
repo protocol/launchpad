@@ -20,7 +20,7 @@ Protocol Labs' Network Indexer (IPNI) enables any user or developer to query bot
 
 Since IPFS and Filecoin use different protocols to retrieve data (IPFS uses Bitswap, and Filecion uses Graphsync), there is a need for a solution that makes it possible for anyone who would want to retrieve and use that data to locate and understand which protocol they can use to retrieve that data and use it in other applications.
 
-Kubo 16 introduced Delegated Routing protocol that allows a node to publish its CIDs to alternative routing systems alongside the DHT and be used for subsequent content-addressed data lookups. 
+Kubo 16 introduced Delegated Routing protocol that allows a node to publish its CIDs to alternative routing systems alongside the DHT and be used for subsequent content-addressed data lookups.
 
 The Indexer also makes it possible, in a way not achieved before, for people to retrieve data from the Filecoin network, as there is a lot of data stored across Filecoin nodes, but  no way to search and retrieve that data searching either by the CID of multihash of that data.
 
@@ -35,17 +35,17 @@ Laern more about IPFS Indexer, the motivations behind it, and potential use case
 IPNI builds its index by processing [Advertisements](https://github.com/ipni/storetheindex/blob/main/api/v0/ingest/schema/schema.ipldsch#L40). The Advertisement construct allows a Storage Provider to offer their CIDs to IPNI, which would make these CIDs available for fast lookups once the Advertisement has been processed. Since Filecoin and IPFS store data on separate networks, using different methods of data transfer, there are who different ways that the information about the CIDs are communicated to IPNI.
 
 ### Advertising Filecoin CIDs
-Storage providers such as [Estuary](https://estuary.tech/) who store on Filecion can publish their content to the indexer using [index-provider](https://github.com/ipni/index-provider) library. When a deal is made and data is published to Filecoin, the would also [advertise](https://github.com/ipni/storetheindex/blob/main/api/v0/ingest/schema/schema.ipldsch#L40) to IPNI. An update is made available on a libp2p to a topic that IPNI follows and then reaches out to the Storage Providers for an update when sees it. 
+Storage providers such as [Estuary](https://estuary.tech/) who store on Filecion can publish their content to the indexer using [index-provider](https://github.com/ipni/index-provider) library. When a deal is made and data is published to Filecoin, the would also [advertise](https://github.com/ipni/storetheindex/blob/main/api/v0/ingest/schema/schema.ipldsch#L40) to IPNI. An update is made available on a libp2p to a topic that IPNI follows and then reaches out to the Storage Providers for an update when sees it.
 
 ### Advertising IPFS CIDs
 When data is added to the IPFS network via kubo version 16 and above, there is an API used with the Reframe or [go-delegated-routing](https://github.com/ipfs/go-delegated-routing) that is used to send data about those CIDs to IPNI. Anyone who published to ipfs using Kubo can configure their node to advertise CIDs into both the DHT and IPNI.
 
 #### Reframe
-[Reframe](https://github.com/ipfs/go-delegated-routing) is a Request-response Protocol (RPC) used by IPFS Kubo 16+ that allows the node to publish its own CIDs as well as to look up other CIDs in an alternative routing system such as IPNI alongside the DHT. That doesn't have to be either / or choice - content can be looked up or published to both in the same time. 
+[Reframe](https://github.com/ipfs/go-delegated-routing) is a Request-response Protocol (RPC) used by IPFS Kubo 16+ that allows the node to publish its own CIDs as well as to look up other CIDs in an alternative routing system such as IPNI alongside the DHT. That doesn't have to be either / or choice - content can be looked up or published to both in the same time.
 
-Kubo doesn't know how to speak to IPNI by itself. Instead it relies on someone translating reframe messages into the IPNI protocol. That is done to enable alternative routing systems market without being bound to the DHT or IPNI protocols. 
+Kubo doesn't know how to speak to IPNI by itself. Instead it relies on someone translating reframe messages into the IPNI protocol. That is done to enable alternative routing systems market without being bound to the DHT or IPNI protocols.
 
-That job is done by Index Provider process that can be run alongside a Kubo node as a bridge to IPNI. 
+That job is done by Index Provider process that can be run alongside a Kubo node as a bridge to IPNI.
 With versions of kubo 16+, the Refame RPC is integrated as a feature
 * Reframe adds an additional way to discover peers, content, and IPNS records
 * With Reframe, you can configure your IPFS kubo node to publish a snapshot of all of the CIDs on your node at whatever frequency you would like
@@ -87,8 +87,14 @@ First, lets take a look at an example IPNI record.
 * Check out the [Filecion Saturn website](https://strn.network/), published with the CID `bafybeia57mwbxw3csprt72a6bd6o4uedazn3vo6tv64xken6fgmaxtiugy`.
 * Now, look up this CID on [CID contact](https://cid.contact/)
   ![CID Contact](cid-contact2.png)
-* You can also see that same information by constructing the cid.contact url like so `https://cid.contact/cid/<CID>` this one is located at [https://cid.contact/cid/bafybeia57mwbxw3csprt72a6bd6o4uedazn3vo6tv64xken6fgmaxtiugy](https://cid.contact/cid/bafybeia57mwbxw3csprt72a6bd6o4uedazn3vo6tv64xken6fgmaxtiugy)
-* Take a look at the providers wha=o are broadcasting CIDs to the network at [https://cid.contact/providers](https://cid.contact/providers)
+* You can also see that same information by constructing the cid.contact url like so:
+```
+https://cid.contact/cid/<CID>
+```
+
+> This one is located at [https://cid.contact/cid/bafybeia57mwbxw3csprt72a6bd6o4uedazn3vo6tv64xken6fgmaxtiugy](https://cid.contact/cid/bafybeia57mwbxw3csprt72a6bd6o4uedazn3vo6tv64xken6fgmaxtiugy)
+
+* Take a look at the providers who are broadcasting CIDs to the network at [https://cid.contact/providers](https://cid.contact/providers)
 
 ### Set up a Local Indexer
 Installing and running the indexer on your local machine makes it possible for your kubo node to communicate with the indexer, by creating the advertisements in a format the indexer can ingest.
@@ -268,32 +274,32 @@ Initialise the index-provider repository and configuration:
 $ provider init
 ```
 
-Add a direct http announcement (optional) and Reframe configuration:
 
+
+
+In the provider config, under the `"Router"` object, update the `""ProviderID": "<KUBO_NODE_PEERID>","` with the PeerID from your kubo node that you noted in the previous step:
+
+Open the index-provider config
 ```
 $ vim ~/.index-provider/config
 ```
+Add in your ipfs `PeerID` to the `.index-provider/config` `"ProviderID":` like so:
 
-Add the following configuration block replacing the ProviderID with the kubo node peer ID grabbed at the previous step:
-
-```
- "DirectAnnounce": {
-    "URLs": [
-      "http://127.0.0.1:3001"
-    ]
-  },
-  "Reframe": {
-    "ListenMultiaddr": "/ip4/127.0.0.1/tcp/50617",
-    "ChunkSize": 1,
-    "SnapshotSize": 100,
-    "ProviderID": "KUBO_NODE_PEER_ID",
-    "Addrs": [
-      "/ip4/0.0.0.0/tcp/4001",
-      "/ip6/::/tcp/4001",
-      "/ip4/0.0.0.0/udp/4001/quic",
-      "/ip6/::/udp/4001/quic"
-    ]
-  }
+```json
+...
+    "Reframe": {
+      "ListenMultiaddr": "/ip4/127.0.0.1/tcp/50617",
+      "ChunkSize": 1,
+      "SnapshotSize": 100,
+      "ProviderID": "12D3KooWBEQR33uW1T6axtpspeyJo6m8Sy531fQ8mzQbW1JBnWxJ",
+      "Addrs": [
+        "/ip4/0.0.0.0/tcp/4001",
+        "/ip6/::/tcp/4001",
+        "/ip4/0.0.0.0/udp/4001/quic",
+        "/ip6/::/udp/4001/quic"
+      ]
+    }
+}
 ```
 
 Start the index-provider:
@@ -304,14 +310,18 @@ $ provider daemon
 
 ### See It In Action
 
-Make sure `ipfs daemon` is running and open up a WebUI at [http://127.0.0.1:5001/webui](http://127.0.0.1:5001/webui) and upload a file.
+Make sure `ipfs daemon`, the `provider daemon`, and `storetheindex daemon` are all running. You should also have another terminal window open to add & check to see if store-the-index is working.
+
+![IIPNI Commands](ipni-commands.png)
+
+#### Add a File
+Open up a WebUI at [http://127.0.0.1:5001/webui](http://127.0.0.1:5001/webui) and upload a file, then copy the CID (right click on the file).
 
 You can also add a file using the `ipfs add path/to/local/file` command and take note of the CID output in the terminal
 
-Take a note of it's CID.
-
 Once upoloaded you should see logs start rolling in `storetheindex` and `indexprovider` command lines.
 
+#### Check the Index
 Open a new terminal window and check whether your cid got indexed by executing
 
 ```
@@ -323,8 +333,8 @@ Or look it up in Kubo
 ```
 ipfs routing findprovs <CID>
 ```
-![Index CID](indexcid.png)
 
+![IIPNI Index](ipni-index.png)
 
 ## Resources
 * [Blog: Introducing the Network Indexer](https://filecoin.io/blog/posts/introducing-the-network-indexer/)
