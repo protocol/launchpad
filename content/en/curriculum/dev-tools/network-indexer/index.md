@@ -38,7 +38,7 @@ IPNI builds its index by processing [Advertisements](https://github.com/ipni/sto
 Storage providers such as [Estuary](https://estuary.tech/) who store on Filecion can publish their content to the indexer using [index-provider](https://github.com/ipni/index-provider) library. When a deal is made and data is published to Filecoin, the would also [advertise](https://github.com/ipni/storetheindex/blob/main/api/v0/ingest/schema/schema.ipldsch#L40) to IPNI. An update is made available on a libp2p to a topic that IPNI follows and then reaches out to the Storage Providers for an update when sees it. 
 
 ### Advertising IPFS CIDs
-When data is added to the IPFS network via kubo version 16 and above, there is an API used with the Reframe or [go-delegated-routing](https://github.com/ipfs/go-delegated-routing) that is used to send data about those CIDs in IPNI. Anyone who published to ipfs using Kubo can configure their node to advertise CIDs into both the DHT and IPNI.
+When data is added to the IPFS network via kubo version 16 and above, there is an API used with the Reframe or [go-delegated-routing](https://github.com/ipfs/go-delegated-routing) that is used to send data about those CIDs to IPNI. Anyone who published to ipfs using Kubo can configure their node to advertise CIDs into both the DHT and IPNI.
 
 #### Reframe
 [Reframe](https://github.com/ipfs/go-delegated-routing) is a Request-response Protocol (RPC) used by IPFS kubo 16+ that kicks off a procedure or subroutine to execute on the IPFS network that stores the data in an index, and allows others to retrieve information related to that CID.
