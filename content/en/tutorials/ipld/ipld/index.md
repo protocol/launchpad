@@ -53,7 +53,7 @@ This command can help you find the root CID for any website that is hosted on IP
 
 ### Inspect the Root
 
-Now that you have the root CID for the website ipld.io, you can inspect the DAG that makes up the data stored on IPFS
+Now that you have the root CID for the website ipld.io, you can inspect the DAG that makes up the data stored on IPFS.
 
 
 ```
@@ -105,21 +105,21 @@ You should see the following output in your CLI, which is a list of the CIDs bel
 }
 ```
 
-This has pulled in the next level of blocks connected to the root CID onto your local ipfs node, printed in DAG-JSON format. We use the `jq` command to print the json in an easy-to-read layout.
+This has pulled in the next level of blocks connected to the root CID, and printed it in DAG-JSON format. We use the `jq` command to print the json in an easy-to-read layout.
 
 > The original block is actually DAG-PB format which is used to construct UnixFS file data in IPFS.  If you inspect the binary format of the data with `ipfs block get QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEq` you will get illegible information, since it is raw DAG-PB bytes.
 
-DAG-PB has two top-level properties: `Data` and `Links`. The data field has the actual bytes contained in a block. Each `Link` in DAG-PB has a name, a CID and a size. The links contain the `Hash` or CID for the data below. The links (called `"Hash"` in the DAG-PB) can also be inspected, leading you another level down (to the children) of content in that Merkle tree.
+DAG-PB has two top-level properties: `Data` and `Links`. The data field has the actual bytes contained in a block. Each `Link` in DAG-PB has a name, a CID and a size. The links contain the `Hash` or CID for the data in the next level below. The links (called `"Hash"`) can also be inspected, leading you another level down (to the children) of content in that Merkle tree.
 
 ![data and links](data-links.png)
 
-You can see here the has of the `"Hash"` or CID of the index.html page for the website.
+You can see here the `"Hash"` or CID of the index.html page for the website.
 
 ![index.html hash](index-hash.png)
 
 
 
-### Load a Page With a File Path
+### Load a Page With an IPFS Path
 
 When a client (i.e a website/a browser via an IPFS gateway) loads a root like in the following manner and doesn’t find a single page, it will look for an `index.html` link, which [ipld.io](http://ipld.io/) has. In this case, the `Links` field is empty, but the `Data` field contains a lot of bytes so the client will load those in. The bytes are Base64 encoded.
 
@@ -154,10 +154,24 @@ This command traverses the IPLD structure & finds the CID of the root of the `/d
 
 ### Loading a Page with IPLD Pathing
 
-DAG-PB is a special case within ipfs, because when supplying a path attached to a CID, it will interpret the blocks and look for named links for us. This isn’t the case for blocks of any other codec (e.g. DAG-CBOR). We can switch out of this special-case mode and explicitly say that we want to use raw-IPLD pathing by prefixing our root block CID with `/ipld/` so we can _path_ through the DAG-PB’s block properties for ourselves.
+DAG-PB is the default data format for IPFS, and has some special properties that make it possible to traverse the graph in the same way you can traverse other filesystems.
+
+When inspecting a CID, you can both look for named "Links" or specify which node you would like to traverse by identifying the link by the number.
+
+To do this, with the `ipfs get command` you add `/ipld` to the CID, and then specify which ordinal Link you want to retreiev by appending `/Links?<number/Hash>
+
+For example the command
+
+
 
 ```bash
-ipfs dag get /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/7/Hash | jq
+ipfs dag get /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/3/Hash | jq
+```
+it will retrieve the information about the 4th link listed under the root CID of ``
+
+![link 4](link4.png)
+
+```json
 {
     "Data": {
         "/": { "bytes": "CAIS0s4BPCFET0NUWVBF..." }
@@ -166,16 +180,22 @@ ipfs dag get /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/7/Hash |
 }
 ```
 
-`Links` is an array field, so we use the number 7 to identify which child block we want to access. In this case, we’re going to navigate into the `Hash` and that will load the block with that CID. Now we can also move into accessing only the _raw_ bytes by adding `Data` to the end of the path, as opposed to accessing the DAG-PB formatted block:
+`Links` is an array field, so we use the number 3 to identify which child block we want to access. In this case, we’re going to navigate into the `Hash` for `"docs"` that will load the block with that CID.
+
+If you add `Data` to the end of the path, it will access the raw bytes, as opposed to accessing the DAG-PB formatted block:
 
 ```bash
-ipfs dag get /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/7/Hash/Data | jq
+ipfs dag get /ipld/<CID>/Links/3/Hash/Data | jq
+```
+You should see something like the following in your CLI:
+
+```
 {
     "/": {  "bytes": "CAIS0s4BPCFET0NUWVBF... "}
 }
 ```
 
-### Switching codecs
+### Switching Codecs
 
 We are now at a simple byte array, it looks complex because DAG-JSON has to present bytes in this way, but we can change the codec to view the `RAW` codec and view the bytes _as they are_.
 
