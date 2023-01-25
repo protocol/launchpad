@@ -20,7 +20,7 @@ Protocol Labs' Network Indexer (IPNI) enables any user or developer to query bot
 
 Since IPFS and Filecoin use different protocols to retrieve data (IPFS uses Bitswap, and Filecion uses Graphsync), there is a need for a solution that makes it possible for anyone who would want to retrieve and use that data to locate and understand which protocol they can use to retrieve that data and use it in other applications.
 
-With versions of kubo 16 and above, a feature was implemented that makes it possible to use HTTP to send and receive information about IP addresses of peers that have certain content (CIDs) and publish IPNS records.
+Kubo 16 introduced Delegated Routing protocol that allows a node to publish its CIDs to alternative routing systems alongside the DHT and be used for subsequent content-addressed data lookups. 
 
 The Indexer also makes it possible, in a way not achieved before, for people to retrieve data from the Filecoin network, as there is a lot of data stored across Filecoin nodes, but  no way to search and retrieve that data searching either by the CID of multihash of that data.
 
