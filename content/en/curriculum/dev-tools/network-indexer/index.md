@@ -34,7 +34,7 @@ Laern more about IPFS Indexer, the motivations behind it, and potential use case
 ## Indexer Implementations
 IPNI builds its index by processing [Advertisements](https://github.com/ipni/storetheindex/blob/main/api/v0/ingest/schema/schema.ipldsch#L40). The Advertisement construct allows a Storage Provider to offer their CIDs to IPNI, which would make these CIDs available for fast lookups once the Advertisement has been processed. Since Filecoin and IPFS store data on separate networks, using different methods of data transfer, there are who different ways that the information about the CIDs are communicated to IPNI.
 
-### Filecoin Indexers
+### Advertising Filecoin CIDs
 Storage providers such as [Estuary](https://estuary.tech/) who store on Filecion can publish their content to the indexer using [index-provider](https://github.com/ipni/index-provider) library. When a deal is made and data is published to Filecoin, the would also [advertise](https://github.com/ipni/storetheindex/blob/main/api/v0/ingest/schema/schema.ipldsch#L40) to IPNI. This means that the CIDs and the information about the data in that CID is published on libp2p to a topic that IPNI follows.
 
 ### Advertising IPFS CIDs
