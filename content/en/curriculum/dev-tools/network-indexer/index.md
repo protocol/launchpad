@@ -84,7 +84,7 @@ You can see the video of the workshop called **[Indexed Content Routing](https:/
 
 ### Explore IPNI Records
 First, lets take a look at an example IPNI record.
-* Check out the Filecion Saturn website, [located at the CID bafybeia57mwbxw3csprt72a6bd6o4uedazn3vo6tv64xken6fgmaxtiugy](https://bafybeia57mwbxw3csprt72a6bd6o4uedazn3vo6tv64xken6fgmaxtiugy.ipfs.dweb.l).
+* Check out the Filecion Saturn website, located at the CID `bafybeia57mwbxw3csprt72a6bd6o4uedazn3vo6tv64xken6fgmaxtiugy`.
 * Now, look up this CID on [CID contact](https://cid.contact/)
   ![CID Contact](cid-contact2.png)
 * You can also see that same information by constructing the cid.contact url like so `https://cid.contact/cid/<CID>` this one is located at [https://cid.contact/cid/bafybeia57mwbxw3csprt72a6bd6o4uedazn3vo6tv64xken6fgmaxtiugy](https://cid.contact/cid/bafybeia57mwbxw3csprt72a6bd6o4uedazn3vo6tv64xken6fgmaxtiugy)
