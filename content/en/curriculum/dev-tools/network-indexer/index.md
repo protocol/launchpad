@@ -91,6 +91,8 @@ First, lets take a look at an example IPNI record.
 * Take a look at the providers wha=o are broadcasting CIDs to the network at [https://cid.contact/providers](https://cid.contact/providers)
 
 ### Set up a Local Indexer
+Installing and running the indexer on your local machine makes it possible for your kubo node to communicate with the indexer, by creating the advertisements in a format the indexer can ingest.
+
 You can see the documentation, CLI commands, and thorough instructions at [https://github.com/filecoin-project/storetheindex/#install](https://github.com/filecoin-project/storetheindex/#install).
 
 Install storetheindex:
@@ -113,6 +115,7 @@ $ storetheindex daemon
 
 
 ### Set Up Kubo
+The next thing you will need to do is modify the configuration file for kubo with the methods from the reframe protocol or HTTP delegated routing, sending queries to both the DHT and the cidContact router, allowing kubo to make queries on CIDs to both places.
 
 [Install Kubo v0.16.0](https://curriculum.pl-launchpad.io/tutorials/ipfs-intro/setup/) or use already configired node. _It's important to make sure that you are on v0.16.0+ version of Kubo or otherwise Reframe won't work._ Initialize a node with `ipfs init`.
 
@@ -247,6 +250,9 @@ In the`.ipfs/config` file, find the "Identity" field and write down the `PeerID`
 ![Peer ID](ipfspeerid.png)
 
 ### Set Up an index-provider Node
+
+The index-provider should be run as a sidecar to both post an announcements on libp2p that they have new data (the CID and other metadata), and make it possible for the indexer to make a connection & transmit the data from your local machine behind a firewall without having to set up port forwarding.
+
 
 See [https://github.com/ipni/index-provider#install](https://github.com/filecoin-project/index-provider#install) for full instructions on run a standalone provider daemon instance.
 
