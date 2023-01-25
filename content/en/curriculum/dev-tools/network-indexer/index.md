@@ -300,6 +300,8 @@ $ provider daemon
 
 Make sure `ipfs daemon` is running and open up a WebUI at [http://127.0.0.1:5001/webui](http://127.0.0.1:5001/webui) and upload a file.
 
+You can also add a file using the `ipfs add path/to/local/file` command and take note of the CID output in the terminal
+
 Take a note of it's CID.
 
 Once upoloaded you should see logs start rolling in `storetheindex` and `indexprovider` command lines.
