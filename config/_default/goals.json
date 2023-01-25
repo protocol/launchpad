@@ -4,9 +4,22 @@
       "description": "Know what the PL Network is, how Protocol Labs evolved from company to network, as well as the projects, tooling, and DApps being built on the PLN",
       "subgoals": []
     },
-    "1.2": {
-      "description": "Understand what the resources and tools are within the PL Network to support teams, individuals, companies, and general growth of our mission",
-      "subgoals": []
+    "1.1": {
+      "description": "Identify the culture and philosophy of Protocol Labs and what it means to be an asynchronous–first remote company.",
+      "subgoals": [
+        {
+          "id": "1.11",
+          "description": "Understand the culture of asynchronous work and its processes"
+        },
+        {
+          "id": "1.12",
+          "description": "Understand how communication works at Protocol Labs"
+        },
+        {
+          "id": "1.13",
+          "description": "Understand the philosophy of the Protocol Lab Network and what it means to be a decentralized entity"
+        }
+      ]
     },
     "1.3": {
       "description": "Understand the methods and philosophies about how work and communication is carried out in the Protocol Labs Network & within PLN open source communities",
