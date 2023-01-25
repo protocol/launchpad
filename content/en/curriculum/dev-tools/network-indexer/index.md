@@ -41,7 +41,11 @@ Storage providers such as [Estuary](https://estuary.tech/) who store on Filecion
 When data is added to the IPFS network via kubo version 16 and above, there is an API used with the Reframe or [go-delegated-routing](https://github.com/ipfs/go-delegated-routing) that is used to send data about those CIDs to IPNI. Anyone who published to ipfs using Kubo can configure their node to advertise CIDs into both the DHT and IPNI.
 
 #### Reframe
-[Reframe](https://github.com/ipfs/go-delegated-routing) is a Request-response Protocol (RPC) used by IPFS kubo 16+ that kicks off a procedure or subroutine to execute on the IPFS network that stores the data in an index, and allows others to retrieve information related to that CID.
+[Reframe](https://github.com/ipfs/go-delegated-routing) is a Request-response Protocol (RPC) used by IPFS Kubo 16+ that allows the node to publish its own CIDs as well as to look up other CIDs in an alternative routing system such as IPNI alongside the DHT. That doesn't have to be either / or choice - content can be looked up or published to both in the same time. 
+
+Kubo doesn't know how to speak to IPNI by itself. Instead it relies on someone translating reframe messages into the IPNI protocol. That is done to enable alternative routing systems market without being bound to the DHT or IPNI protocols. 
+
+That job is done by Index Provider process that can be run alongside a Kubo node as a bridge to IPNI. 
 With versions of kubo 16+, the Refame RPC is integrated as a feature
 * Reframe adds an additional way to discover peers, content, and IPNS records
 * With Reframe, you can configure your IPFS kubo node to publish a snapshot of all of the CIDs on your node at whatever frequency you would like
