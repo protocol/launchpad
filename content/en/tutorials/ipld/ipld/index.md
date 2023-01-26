@@ -125,7 +125,6 @@ When a client (i.e a website/a browser via an IPFS gateway) loads a root like in
 
 ```bash
 ipfs dag get Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/index.html | jq
-
 ```
 
 You should see the following output in your CLI:
