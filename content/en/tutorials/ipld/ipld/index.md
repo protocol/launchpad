@@ -187,7 +187,7 @@ The `Links` is an array field, so we use the number 3 to identify which child bl
 If you add `/Hash/Data` to the end of a CID you are accessing certain fields in the DAG-PB data structure, it will inspecting the raw bytes of a block. In this example, we are examining the block at an index of 7, which happens to be the `index.html` page:
 
 ```bash
-ipfs dag get /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/7/Hash/Data | jq
+ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/7/Hash/Data | jq
 ```
 You should see something like the following in your CLI:
 
