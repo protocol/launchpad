@@ -50,7 +50,7 @@ With versions of kubo 16+, the Refame RPC is integrated as a feature
 * Reframe adds an additional way to discover peers, content, and IPNS records
 * With Reframe, you can configure your IPFS kubo node to publish a snapshot of all of the CIDs on your node at whatever frequency you would like
 * Reframe uses HTTP transport to store this information on an indexer node
-* Reframe is an alternative to the DHT
+* Reframe makes alternative routing systems other than DHT possible
 * Content can be published to both the IPFS DHT and Reframe with a tool called parallel
   Reframe was created from a [kubo spec](https://github.com/ipfs/specs/blob/main/reframe/REFRAME_PROTOCOL.md) (the IPFS go implementation) that allows IPFS nodes to advertise their content to other systems besides the DHT.
 
