@@ -180,7 +180,7 @@ it will retrieve the information about the 4th link listed under the root CID of
 }
 ```
 
-`Links` is an array field, so we use the number 3 to identify which child block we want to access. In this case, we’re going to navigate into the `Hash` for `"docs"` that will load the block with that CID.
+The `Links` is an array field, so we use the number 3 to identify which child block we want to access. In this case, it's going to navigate into the `Hash` for `"docs"` that will load the block with that CID.
 
 If you add `Data` to the end of the path, it will access the raw bytes, as opposed to accessing the DAG-PB formatted block:
 
