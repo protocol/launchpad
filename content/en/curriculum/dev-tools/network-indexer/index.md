@@ -103,6 +103,8 @@ https://cid.contact/cid/<CID>
 ### Set up a Local Indexer
 Installing and running the indexer on your local machine makes it possible for your kubo node to communicate with the indexer, by creating the advertisements in a format the indexer can ingest.
 
+In this tutorial we are going to run an indexer locally, however it's also possible to advertise your data to cid.contact directly. Running a local node makes it possible for cid.contact to dial back into your node to fetch a chain of advertisements. This is possible without extra firewall configurations because of the provider-node setup in the next sections.
+
 You can see the documentation, CLI commands, and thorough instructions at [https://github.com/filecoin-project/storetheindex/#install](https://github.com/filecoin-project/storetheindex/#install).
 
 Install storetheindex:
