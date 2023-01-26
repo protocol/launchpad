@@ -28,7 +28,7 @@ Though the DHT is an amazing, distributed way to advertise and discover content,
 With an open protocol that anyone can use on their server, as seen here in the [go-delgated-routing](https://github.com/ipfs/go-delegated-routing) library.
 to enable faster discovery and routing, along with load balancing and an alternative market where routing is done, besides the DHT
 
-Laern more about IPFS Indexer, the motivations behind it, and potential use cases, see the video **[State of Content Routing| IPFS Camp Lisbon 2022](https://www.youtube.com/watch?v=DLCTEXbF1Es)**
+Laern more about IPNI, the motivations behind it, and potential use cases, see the video **[State of Content Routing| IPFS Camp Lisbon 2022](https://www.youtube.com/watch?v=DLCTEXbF1Es)**
 
 
 ## Indexer Implementations
