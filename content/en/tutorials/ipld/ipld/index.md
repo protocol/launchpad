@@ -166,7 +166,7 @@ Try the command
 ```bash
 ipfs dag get /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/3/Hash | jq
 ```
-it will retrieve the information about the 4th link listed under the root CID of `Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ`, which has a name of `"docs"`.
+This will retrieve the information about the 4th link listed under the root CID of `Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ`, which has a name of `"docs"`.
 
 ![link 4](link4.png)
 
