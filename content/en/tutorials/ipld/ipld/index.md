@@ -37,7 +37,7 @@ Once you have installed kubo (formerly go-ipfs) and initiated and ipfs node, sta
 
 Jq is a tool to help the user view json text easier on the command line. You can go to [stedolan.github.io/jq/download](https://stedolan.github.io/jq/download) to find instructions for your operating system.
 
-### Find CID for ipld.io website
+### Find the CID for ipld.io website
 
 ```
 ipfs resolve /ipns/ipld.io
@@ -179,7 +179,7 @@ This will retrieve the information about the 4th link listed under the root CID 
 }
 ```
 
-The `Links` is an array field, so we use the number 3 to identify which child block we want to access. In this case, it's going to navigate into the `Hash` for `"docs"` (since its at an index of 3) that will load the block with that CID. You can see that you get the same block you would with IPFS pathing referring to the same block:
+The `Links` is an array field, so we use the number 3 to identify which child block we want to access. In this case, it's going to navigate into the `Hash` for `"docs"` (since it's at an index of 3) that will load the block with that CID. You can see that you get the same block you would with IPFS pathing referring to the same block:
 
 ![IPLD and IPFS Pathing](ipfs-ipld-pathing.png)
 
