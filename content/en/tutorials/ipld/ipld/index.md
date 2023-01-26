@@ -109,7 +109,7 @@ This has pulled in the next level of blocks connected to the root CID, and print
 
 > The original block is actually DAG-PB format which is used to construct UnixFS file data in IPFS.  If you inspect the binary format of the data with `ipfs block get QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEq` you will get illegible information, since it is raw DAG-PB bytes.
 
-DAG-PB has two top-level properties: `Data` and `Links`. The data field has the actual bytes contained in a block. Each `Link` in DAG-PB has a name, a CID and a size. The links contain the `Hash` or CID for the data in the next level below. The links (called `"Hash"`) can also be inspected, leading you another level down (to the children) of content in that Merkle tree.
+DAG-PB has two top-level properties: `Data` and `Links`. The `Data` field has the actual bytes contained in a block. Each `Link` in DAG-PB has a name, a CID and a size. The `Links` contain the `Hash` or CID for the data in the next level below. The `Hash` property can also be inspected, leading you another level down (to the children) of content in that Merkle tree.
 
 ![data and links](data-links.png)
 
