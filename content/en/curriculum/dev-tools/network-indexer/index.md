@@ -325,7 +325,7 @@ Once upoloaded you should see logs start rolling in `storetheindex` and `indexpr
 Open a new terminal window and check whether your cid got indexed by executing
 
 ```
-$ storetheindex find --cid <CID>
+storetheindex find --cid <CID>
 ```
 
 Or look it up in Kubo
