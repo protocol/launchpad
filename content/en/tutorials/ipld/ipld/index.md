@@ -219,13 +219,19 @@ ipfs dag get --output-codec=raw /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrL
 …
 ```
 
-### Exercise: Using IPLD Pathing to go deep into the DAG
+[//]: # (### Exercise: Using IPLD Pathing to go deep into the DAG)
 
-Now that you have learned the basics of IPLD pathing options, we challenge you to navigate to a block **at least** 4 layers deep or more into the ipld.io dag and submit the command you used to reach that point.
+[//]: # ()
+[//]: # (Now that you have learned the basics of IPLD pathing options, we challenge you to navigate to a block **at least** 4 layers deep or more into the ipld.io dag and submit the command you used to reach that point.)
 
-{{% embed src=https://docs.google.com/forms/d/e/1FAIpQLSejZokLiXjhecn6Aqr7VXhafsZVOeUeDM1sm76ykiAHtV4SRA/viewform?usp=sf_link width="100%" height="800px" %}}
+[//]: # ()
+[//]: # ({{% embed src=https://docs.google.com/forms/d/e/1FAIpQLSejZokLiXjhecn6Aqr7VXhafsZVOeUeDM1sm76ykiAHtV4SRA/viewform?usp=sf_link width="100%" height="800px" %}})
 
-Here is 1 possible answer:
-```bash
-* ipfs dag get /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/3/Hash/Links/1/Hash/Links/1/Hash/Links/2/Hash/Links/0/Hash
-```
+[//]: # ()
+[//]: # (Here is 1 possible answer:)
+
+[//]: # (```bash)
+
+[//]: # (* ipfs dag get /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/3/Hash/Links/1/Hash/Links/1/Hash/Links/2/Hash/Links/0/Hash)
+
+[//]: # (```)
