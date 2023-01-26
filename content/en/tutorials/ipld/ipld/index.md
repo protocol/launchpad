@@ -150,7 +150,9 @@ You can inspect this by simply adding the filepath on the end of the root CID li
 ipfs dag get Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/docs/codecs/known | jq
 ```
 
-This command traverses the IPLD structure & finds the CID of the root of the `/docs/codec/known` directory on Github.
+This command traverses the IPLD structure & finds the CID of the root of the `/docs/codec/known` directory on Github. The output that you see should match the file structure of the Github repo above.
+
+![Deeper IPLD structure](docs-codecs-known.png)
 
 ### Loading a Page with IPLD Pathing
 
@@ -158,11 +160,9 @@ DAG-PB is the default data format for IPFS, and has some special properties that
 
 When inspecting a CID, you can both look for named "Links" or specify which node you would like to traverse by identifying the link by the number.
 
-To do this, with the `ipfs get command` you add `/ipld` to the CID, and then specify which ordinal Link you want to retreiev by appending `/Links?<number/Hash>
+To do this, with the `ipfs get command` you add `/ipld` to the CID, and then specify which ordinal Link you want to retrieve by appending `/Links/<number>/Hash`.
 
-For example the command
-
-
+Try the command
 
 ```bash
 ipfs dag get /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/3/Hash | jq
@@ -180,7 +180,9 @@ it will retrieve the information about the 4th link listed under the root CID of
 }
 ```
 
-The `Links` is an array field, so we use the number 3 to identify which child block we want to access. In this case, it's going to navigate into the `Hash` for `"docs"` that will load the block with that CID.
+The `Links` is an array field, so we use the number 3 to identify which child block we want to access. In this case, it's going to navigate into the `Hash` for `"docs"` (since its at an index of 3) that will load the block with that CID. You can see that you get the same block you would with IPFS pathing referring to the same block:
+
+![IPLD and IPFS Pathing](ipfs-ipld-pathing.png)
 
 If you add `Data` to the end of the path, it will access the raw bytes, as opposed to accessing the DAG-PB formatted block:
 
