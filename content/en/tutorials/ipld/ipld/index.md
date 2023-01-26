@@ -164,7 +164,7 @@ To do this, with the `ipfs get command` you add `/ipld` to the CID, and then spe
 Try the command
 
 ```bash
-ipfs dag get /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/3/Hash | jq
+ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/3/Hash | jq
 ```
 This will retrieve the information about the 4th link listed under the root CID of `Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ`, which has a name of `"docs"`.
 
