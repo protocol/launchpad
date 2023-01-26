@@ -139,7 +139,7 @@ You should see the following output in your CLI:
 ```
 If you want to navigate to any other block using IPFS pathing, just add the name of the link in the path, similar to what you would do in a linux filesystem.
 
-As an example, take a look at this directory in the [IPLD website github repo](https://github.com/ipld/ipld/tree/master/docs/codecs/known):
+As an example, if you take a look at this directory in the [IPLD website github repo](https://github.com/ipld/ipld/tree/master/docs/codecs/known):
 
 ![IPLD Repo](ipld-repo.png)
 
