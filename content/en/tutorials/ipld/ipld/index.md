@@ -155,7 +155,7 @@ This command traverses the IPLD structure & finds the CID of the root of the `/d
 
 ### Load a Page with IPLD Pathing
 
-DAG-PB is the default data format for IPFS, and has some special properties that make it possible to traverse the graph in the same way you can traverse other filesystems.
+DAG-PB is the default data format for IPFS and has some special properties that make it possible to traverse the graph in the same way you would other filesystems.
 
 When inspecting a CID, you can both look for named "Links" or specify which node you would like to traverse by identifying the link by the number.
 
