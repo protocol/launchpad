@@ -143,7 +143,7 @@ As an example, if you take a look at this directory in the [IPLD website github 
 
 ![IPLD Repo](ipld-repo.png)
 
-You can inspect this by simply adding the filepath on the end of the root CID like so:
+You can reach this same directory on the CLI by simply adding the filepath on the end of the root CID like so:
 
 ```bash
 ipfs dag get Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/docs/codecs/known | jq
