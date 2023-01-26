@@ -22,7 +22,7 @@ Since IPFS and Filecoin use different protocols to retrieve data (IPFS uses Bits
 
 Kubo 16 introduced Delegated Routing protocol that allows a node to publish its CIDs to alternative routing systems alongside the DHT and be used for subsequent content-addressed data lookups.
 
-IPNI also makes it possible, in a way not achieved before, for people to retrieve data from the Filecoin network, as there is a lot of data stored across Filecoin nodes, but  no way to search and retrieve that data searching either by the CID of multihash of that data.
+IPNI also makes it possible, in a way not achieved before, for people to retrieve data from the Filecoin network, as there is a lot of data stored across Filecoin nodes, but  no way to search and retrieve that data searching either by the CID of multihash of that data. The API calls return json objects that contain information about where and how the data represented with a CID such as `bafybeia57mwbxw3csprt72a6bd6o4uedazn3vo6tv64xken6fgmaxtiugy` can be fetched from.
 
 Though the DHT is an amazing, distributed way to advertise and discover content, IPNI adds another layer that can give you other options for retrieving files for your applications. With an open protocol that anyone can use, as seen here in the [go-delgated-routing](https://github.com/ipfs/go-delegated-routing) library on their server.
 With an open protocol that anyone can use on their server, as seen here in the [go-delgated-routing](https://github.com/ipfs/go-delegated-routing) library.
