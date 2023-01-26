@@ -181,10 +181,10 @@ This will retrieve the information about the 4th link listed under the root CID 
 
 The `Links` is an array field, so we use the number 3 to identify which child block we want to access. In this case, it's going to navigate into the `Hash` for `"docs"` (since it's at an index of 3) that will load the block with that CID. You can see that you get the same block you would with IPFS pathing referring to the same block:
 
-![IPLD and IPFS Pathing](ipfs-ipld-pathing.png)
+![IPLD and IPFS Pathing](ipfs-ipld-pathing2.png)
 
 ### Inspect the Data in a Block
-If you add `/Hash/Data` to the end of the path, it will access the DAG-JSON bytes that were transformed into a CID, as opposed to accessing the DAG-PB formatted block. In this example, we are examining the block at an index of 7, which happens to be the `index.html` page:
+If you add `/Hash/Data` to the end of a CID you are accessing certain fields in the DAG-PB data structure, it will inspecting the raw bytes of a block. In this example, we are examining the block at an index of 7, which happens to be the `index.html` page:
 
 ```bash
 ipfs dag get /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/7/Hash/Data | jq
@@ -198,14 +198,9 @@ You should see something like the following in your CLI:
 ```
 
 ### Switching Codecs
-IPLD pathing, by default, allows you to inspect data in DAG-JSON format, and not the raw byte array. We are going to use a couple commands to inspect the data of the `index.html` page (the `"Link"` at an index of 7) in it's original format.
+IPLD pathing, by default, allows you to inspect data in DAG-JSON format (kubo transforms DAG-PB into DAG-JSON in the CLI), and not the raw byte array. We are going to use a command to inspect the data of the `index.html` page in it's original format.
 
-This command is made up of three parts
-* The Pathing command `ipfs dag get`, with the flag `--output-codec=raw `, to inspect the raw data
-* The CID of the block, using the block at an idex of 7 under the root block, `Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/7`
-* A pointer to the data inside the block (in this case, it's the bytes inside index.html), so you will need to append `/Hash/Data` to the end of the CID to access that data.
-
-Using the flag `--output-codec=raw`  has changed the codec you use to view the data from DAG-JSON to the `RAW` codec and you are able to view the bytes _as they are_.
+This command uses the pathing command `ipfs dag get`, with the flag `--output-codec=raw`  to change the codec you use to view the data from DAG-JSON to the `RAW` codec and you are able to view the bytes _as they are_.
 
 ```bash
 ipfs dag get --output-codec=raw /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/7/Hash/Data
