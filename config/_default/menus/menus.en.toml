@@ -166,7 +166,7 @@
 
 
 [[tutorials]]
-  name = "Building libp2p applications"
+  name = "libp2p Networking Applications"
   weight = 20
   identifier = "tutorials-libp2p"
   [tutorials.params]
@@ -174,7 +174,7 @@
     image = "/tutorials/libp2p.png"
 
 [[tutorials]]
-  name = "Working with IPLD structures"
+  name = "IPLD Data Structures"
   weight = 30
   identifier = "tutorials-ipld"
   [tutorials.params]
