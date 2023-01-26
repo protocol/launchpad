@@ -203,7 +203,7 @@ IPLD pathing, by default, allows you to inspect data in DAG-JSON format (kubo tr
 This command uses the pathing command `ipfs dag get`, with the flag `--output-codec=raw`  to change the codec you use to view the data from DAG-JSON to the `RAW` codec and you are able to view the bytes _as they are_.
 
 ```bash
-ipfs dag get --output-codec=raw /ipld/Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ/Links/7/Hash/Data
+ipfs dag get --output-codec=raw /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/7/Hash/Data
 
 ��<!DOCTYPE html>
 <html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
