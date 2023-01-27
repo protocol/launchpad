@@ -43,19 +43,19 @@ You can read everything about the Bacalhau architecture in the [official documen
 ## Tutorial
 
 ### Prerequisites
-You will need to set up an environment to run Bacalhau. There are three different options
+You will need to set up an environment to run Bacalhau. There are three different options you can use:
 
-**Option 1 –** Install Bacalhau on your local machine
-* Install [Python](https://www.python.org/downloads/) & [Pip](https://pip.pypa.io/en/stable/installation/) – If you have a Mac, it should be installed already
-* Install [The Bacalhau CLI](https://docs.bacalhau.org/getting-started/installation/#installing-the-bacalhau-cli-locally)
+* **Option 1 –** Install Bacalhau on your local machine
+  * Install [Python](https://www.python.org/downloads/) & [Pip](https://pip.pypa.io/en/stable/installation/) – If you have a Mac, it should be installed already
+  * Install [The Bacalhau CLI](https://docs.bacalhau.org/getting-started/installation/#installing-the-bacalhau-cli-locally)
 
-**Option 2 –** Use a Docker Container
-* Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) on your machine
-* Run [Bacalhau in Docker](https://www.docker.com/products/docker-desktop/)
+* **Option 2 –** Use a Docker Container
+  * Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) on your machine
+  * Run [Bacalhau in Docker](https://www.docker.com/products/docker-desktop/)
 
-**Option 3 –** Run Bacalhau in a Web Browser
-* Use [Gitpod](https://gitpod.io/#https://github.com/protocol/launchpad-tutorials) in a web browser
-* Run you jobs in the terminal of
+* **Option 3 –** Run Bacalhau in a Web Browser
+  * Use [Gitpod](https://gitpod.io/#https://github.com/protocol/launchpad-tutorials) in a web browser
+  * Run you jobs in the terminal of
 
 ### Tutorials
 * [Install the Bacalhau Client](https://docs.bacalhau.org/getting-started/installation/#install-the-bacalhau-client) - Summary
