@@ -5,7 +5,7 @@ draft: false
 menu:
   curriculum:
     parent: "curriculum-devtools"
-weight: 80
+weight: 30
 category: lecture
 level:
 - shallow
@@ -59,7 +59,7 @@ With versions of kubo 16+, the Refame RPC is integrated as a feature
 In this simple tutorial, we are going to configure and run an IPFS node to communicate data to the indexer and take a look at what that data looks like.
 
 #### Workshop: Indexed Content Routing| IPFS Camp Lisbon 2022
-See how to set up a local indexer and index-provider in this workshop from IPFS Camp 2022. In this tutorial you will: 
+See how to set up a local indexer and index-provider in this workshop from IPFS Camp 2022. In this tutorial you will:
 * Modify the config for your kubo IPFS node
 * Set up a local network indexer that the IPFS node is going to advertise its contents to
 * Set up index-provider that is going to be used as a bridge between IPNI and IPFS

@@ -17,16 +17,35 @@ objectives:
   introPage: true
 ---
 
-There is a large set of tools that are being built on IPFS, IPLD, Libp2p and Filecoin.
+There is a large set of tools that are being built on IPFS, IPLD, libp2p, Filecoin, and more. There are a number of projects that are directly supported and maintained by Protocol Labs, as well as the wide range pf projects that exist in the PLN ecosystem.
 
-This section is a constant work in progress, and highlights just _some_ of the tools being built on the Protocol Labs network that make it easier for you to use IPFS, IPLD, Filecoin, Libp2p, and more.
+Note that all of these projects are a part of the Protocol Labs Network and an important part of our ecosystem and tooling, providing important solutions for the technology across the Protocol Labs stack.
 
-* **[Textile](/curriculum/dev-tools/textile/)**: A suite of developer tools, including Powergate, Buckets, and ThreadDB, and more
+
+## Technology and Projects
+* **[IPNI Network Indexer](/curriculum/dev-tools/network-indexer)**:
+* **[Bacalhau/ Compute over Data](/curriculum/dev-tools/bacalhau)**:
+
+**Other Project Links**
+* **[Saturn](https://strn.network/)**: The web3 open-source Content Delivery Network (CDN). Run your own node and earn Filecoin
+* **[FVM](https://fvm.filecoin.io/)**: Leveraging EVM compatible smart contracts
+* **[Lotus](https://lotus.filecoin.io/)**: The Go implementation of the Filecoin Protocol
+* **[Boost](https://boost.filecoin.io/)**: A tool for Storage Providers to manage data onboarding and retrieval on the Filecoin network [docs](https://github.com/filecoin-project/boost-docs)
+
+### PLN Companies and Tools
+
+* **[Fleek](/curriculum/dev-tools/fleek/)**: For hosting and building DApps on web3
+* **[Piñata](/curriculum/dev-tools/pinata/)**: A pinning service for individuals and creators
+* **[Web3.Storage](/curriculum/dev-tools/web3-storage/)**: The data layer for uploading and storing content on IPFS and Filecoin
+* * **[Spice.ai]()**
+* * **[Textile](/curriculum/dev-tools/textile/)**: A suite of developer tools, including Powergate, Buckets, and ThreadDB, and more
 * **[Ceramic](/curriculum/dev-tools/ceramic/)**: Identity-based storage & indexing
+
+**Other Project Links**
 * **[Chainsafe](https://chainsafe.io/)**: Protocol engineering, research, and software teams
 * **[Estuary](https://docs.estuary.tech/tutorial-get-an-api-key)**: Public data storage tool for Filecoin & IPFS
-* **[Fleek](/curriculum/dev-tools/fleek/)**: For hosting and building DApps on web3
 * **[Fission](https://dev.to/fission/fission-on-the-ipfs-community-call-nof)**: SDK for web3-native apps to help you build web3 products & services
 * **[Web3.storage](/curriculum/dev-tools/web3-storage/)**: A pinning service for Filecoin & IPFS storage
-* **[Piñata](/curriculum/dev-tools/pinata/)**: A pinning service for individuals and creators
-* **[FVM](https://fvm.filecoin.io/)**: Leveraging EVM compatible smart contracts.
+:
+
+
