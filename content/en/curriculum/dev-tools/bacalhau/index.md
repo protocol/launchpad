@@ -45,43 +45,29 @@ You can read everything about the Bacalhau architecture in the [official documen
 ### Prerequisites
 You will need to set up an environment to run Bacalhau. There are three different options you can use:
 
-* **Option 1 –** Install Bacalhau on your local machine
-  * Install [Python](https://www.python.org/downloads/) & [Pip](https://pip.pypa.io/en/stable/installation/) – If you have a Mac, it should be installed already
-  * Install [The Bacalhau CLI](https://docs.bacalhau.org/getting-started/installation/#installing-the-bacalhau-cli-locally)
+* **Option 1 –** [Install Bacalhau](https://docs.bacalhau.org/getting-started/installation/#installing-the-bacalhau-cli-locally) on your local machine and Install [Python](https://www.python.org/downloads/) & [Pip](https://pip.pypa.io/en/stable/installation/)
 
-* **Option 2 –** Use a Docker Container
-  * Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) on your machine
-  * Run [Bacalhau in Docker](https://www.docker.com/products/docker-desktop/)
+* **Option 2 –** Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) and run [Bacalhau in Docker](https://www.docker.com/products/docker-desktop/)
 
-* **Option 3 –** Run Bacalhau in a Web Browser
-  * Use [Gitpod](https://gitpod.io/#https://github.com/protocol/launchpad-tutorials) in a web browser
-  * Run you jobs in the terminal of
+* **Option 3 –** Run Bacalhau in [Gitpod](https://gitpod.io/#https://github.com/protocol/launchpad-tutorials) in a web browser
 
 ### Tutorials
-* [Install the Bacalhau Client](https://docs.bacalhau.org/getting-started/installation/#install-the-bacalhau-client) - Summary
-* [Submit a Hello World Job](https://docs.bacalhau.org/getting-started/installation/#install-the-bacalhau-client) - Summary
+* [Install the Bacalhau Client](https://docs.bacalhau.org/getting-started/installation/#install-the-bacalhau-client) - See instructions for installing Bacalhau on your local machine
+* [Running Oandas in Bacalhau](https://docs.bacalhau.org/examples/workload-onboarding/python-pandas/) – In this tutorial, you will deploy a Python script on Bacalhau. The script a basic application that uses the Pandas Python library
 * [Tutorial Name](URL)
-* [Tutorial Name](URL)
-*
+
+
 ### The Bacalhau CLI: Cheat Sheet
 
-#### Run Hello World
-Sending your computations and communicating with the Bacalhau network is pretty easy by using the Bacalhau CLI.
-The `bacalhau` command installed on your computer allows you to send a new job (computation), retrieve its status, or get its results.
+| Name | Command | Description |
+|--|----------|----------|
+| Install Bacalhau CLI |`bacalhau docker run ubuntu echo Hello World`   | Creates an Ubuntu Docker conatiner in the Bacalhau and run a progam the prints 'Hello World'    |
+| Check Job ID | `bacalhau list --id-filter=${JOB_ID}`  | Get the status of a certain job in Bacalhau |
+|Run Bacalhau in Docker|`bacalhau docker run -v QmfKJT13h5k1b23ja3ZCVg5nFL9oKz2bVXc8oXgtwiwhjz:files ubuntu cat /files/read_csv.py`|Creates a bacalhau container and mount a volume from IPFS using a CID, then prints the content of the file|
+| Item 1 | Item 2   | Item 3   |
+| Item 1a | Item 2a  | Item 3a  |
 
-```bash
-> bacalhau docker run ubuntu echo Hello World
-```
-
-#### Check Job ID
-The previous command creates a new job in Bacalhau network by using a Docker image.
-Specifically, it runs an Ubuntu container and executes `echo Hello World` inside the container.
-
-You can then verify the status of the job by executing the following command.
-
-```bash
-> bacalhau list --id-filter=${JOB_ID}
-```
+`
 
 #### Run Bacalhau in Docker
 If you are familiar with Docker, you should identify the `docker run` command, which allows you to execute Docker containers.
