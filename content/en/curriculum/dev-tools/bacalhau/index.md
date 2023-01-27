@@ -40,8 +40,32 @@ Compute nodes are responsible for performing the actual computation.
 The lifecycle of a job in Bacalhau is a complex task that includes several steps and verifications.
 You can read everything about the Bacalhau architecture in the [official documentation](https://docs.bacalhau.org/about-bacalhau/architecture).
 
-## The Bacalhau CLI
+## Tutorial
 
+### Prerequisites
+You will need to set up an environment to run Bacalhau. There are three different options
+
+**Option 1 –** Install Bacalhau on your local machine
+* Install [Python](https://www.python.org/downloads/) & [Pip](https://pip.pypa.io/en/stable/installation/) – If you have a Mac, it should be installed already
+* Install [The Bacalhau CLI](https://docs.bacalhau.org/getting-started/installation/#installing-the-bacalhau-cli-locally)
+
+**Option 2 –** Use a Docker Container
+* Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) on your machine
+* Run [Bacalhau in Docker](https://www.docker.com/products/docker-desktop/)
+
+**Option 3 –** Run Bacalhau in a Web Browser
+* Use [Gitpod](https://gitpod.io/#https://github.com/protocol/launchpad-tutorials) in a web browser
+* Run you jobs in the terminal of
+
+### Tutorials
+* [Install the Bacalhau Client](https://docs.bacalhau.org/getting-started/installation/#install-the-bacalhau-client) - Summary
+* [Submit a Hello World Job](https://docs.bacalhau.org/getting-started/installation/#install-the-bacalhau-client) - Summary
+* [Tutorial Name](URL)
+* [Tutorial Name](URL)
+*
+### The Bacalhau CLI: Cheat Sheet
+
+#### Run Hello World
 Sending your computations and communicating with the Bacalhau network is pretty easy by using the Bacalhau CLI.
 The `bacalhau` command installed on your computer allows you to send a new job (computation), retrieve its status, or get its results.
 
@@ -49,6 +73,7 @@ The `bacalhau` command installed on your computer allows you to send a new job (
 > bacalhau docker run ubuntu echo Hello World
 ```
 
+#### Check Job ID
 The previous command creates a new job in Bacalhau network by using a Docker image.
 Specifically, it runs an Ubuntu container and executes `echo Hello World` inside the container.
 
@@ -58,6 +83,7 @@ You can then verify the status of the job by executing the following command.
 > bacalhau list --id-filter=${JOB_ID}
 ```
 
+#### Run Bacalhau in Docker
 If you are familiar with Docker, you should identify the `docker run` command, which allows you to execute Docker containers.
 The Bacalhau CLI adds several options on top of this command.
 
