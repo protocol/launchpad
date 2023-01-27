@@ -30,7 +30,7 @@ All of these projects are a part of the Protocol Labs Network and an important p
 * **[Saturn](https://strn.network/)**: The web3 open-source Content Delivery Network (CDN). Run your own node and earn Filecoin
 * **[FVM](https://fvm.filecoin.io/)**: Leveraging EVM compatible smart contracts
 * **[Lotus](https://lotus.filecoin.io/)**: The Go implementation of the Filecoin Protocol
-* **[Boost](https://boost.filecoin.io/)**: A tool for Storage Providers to manage data onboarding and retrieval on the Filecoin network [docs](https://github.com/filecoin-project/boost-docs)
+* **[Boost](https://boost.filecoin.io/)**: A tool for Storage Providers to manage data onboarding and retrieval on the Filecoin network
 
 ## PLN Companies and Tools
 
