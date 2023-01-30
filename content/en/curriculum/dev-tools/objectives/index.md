@@ -40,7 +40,6 @@ All of these projects are a part of the Protocol Labs Network and an important p
 * **[Spice.ai](/curriculum/dev-tools/spice/)**: Web3 and blockchain solutions that are enabling developers to build the next generation of apps
 * **[Textile](/curriculum/dev-tools/textile/)**: A suite of developer tools, including Powergate, Buckets, and ThreadDB, and more
 * **[Ceramic](/curriculum/dev-tools/ceramic/)**: Identity-based storage & indexing
-* **[Web3.storage](/curriculum/dev-tools/web3-storage/)**: A pinning service for Filecoin & IPFS storage
 
 **Other Project Links**
 * **[Chainsafe](https://chainsafe.io/)**: Protocol engineering, research, and software teams
