@@ -52,8 +52,8 @@ You will need to set up an environment to run Bacalhau. There are three differen
 * **Option 3 –** Run Bacalhau in [Gitpod](https://gitpod.io/#https://github.com/protocol/launchpad-tutorials) in a web browser
 
 ### Tutorials
-* [Install the Bacalhau Client](https://docs.bacalhau.org/getting-started/installation/#install-the-bacalhau-client) - See instructions for installing Bacalhau on your local machine
-* [Running Oandas in Bacalhau](https://docs.bacalhau.org/examples/workload-onboarding/python-pandas/) – In this tutorial, you will deploy a Python script on Bacalhau. The script a basic application that uses the Pandas Python library
+* [Install the Bacalhau Client](https://docs.bacalhau.org/getting-started/installation/#install-the-bacalhau-client) - See instructions for installing Bacalhau on your local machine.
+* [Running Pandas in Bacalhau](https://docs.bacalhau.org/examples/workload-onboarding/python-pandas/) – In this tutorial, you will deploy a Python script on Bacalhau. The script is a basic application that uses the Pandas Python library.
 * [Tutorial Name](URL)
 
 
@@ -61,13 +61,10 @@ You will need to set up an environment to run Bacalhau. There are three differen
 
 | Name | Command | Description |
 |--|----------|----------|
-| Install Bacalhau CLI |`bacalhau docker run ubuntu echo Hello World`   | Creates an Ubuntu Docker conatiner in the Bacalhau and run a progam the prints 'Hello World'    |
-| Check Job ID | `bacalhau list --id-filter=${JOB_ID}`  | Get the status of a certain job in Bacalhau |
-|Run Bacalhau in Docker|`bacalhau docker run -v QmfKJT13h5k1b23ja3ZCVg5nFL9oKz2bVXc8oXgtwiwhjz:files ubuntu cat /files/read_csv.py`|Creates a bacalhau container and mount a volume from IPFS using a CID, then prints the content of the file|
-| Item 1 | Item 2   | Item 3   |
-| Item 1a | Item 2a  | Item 3a  |
-
-`
+| Run a Docker container on Bacalhau |`bacalhau docker run ubuntu echo Hello World` | Creates an Ubuntu Docker container in the Bacalhau network and runs a program that prints 'Hello World'. |
+| Check job status by its ID | `bacalhau list --id-filter=${JOB_ID}`  | Gets the status of a certain job in Bacalhau. |
+| Mount a volume in the Docker container | `bacalhau docker run -v ${CID}:myfiles ubuntu cat /files/numbers.txt`| Mounts an IPFS file/folder (identified by the `${CID}` variable) to the `myfiles` directory. Then a file inside the folder is read. |
+| Get full information of a job | `bacalhau describe ${JOB_ID}`   | Prints a full description of the job deployed on Bacalhau. |
 
 #### Run Bacalhau in Docker
 If you are familiar with Docker, you should identify the `docker run` command, which allows you to execute Docker containers.
