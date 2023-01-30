@@ -6,7 +6,7 @@ menu:
   curriculum:
     parent: "curriculum-devtools"
 category: lecture
-weight: 80
+weight: 20
 level:
 - shallow
 - deep
