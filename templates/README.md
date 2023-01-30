@@ -26,17 +26,23 @@ Definitions
        tutorials:
          parent: "<identifier of tutorial module>"
      ```
+     
      * For example, to add to the **Introduction to IPFS** module, you would replace`"<identifier of tutorial module>"`that with `"tutorials-ipfs"` found on here in the [menus.en.toml file](https://github.com/protocol/launchpad/blob/main/config/_default/menus/menus.en.toml#L159)
-<br>
+     
+     
   ![Tutorial Identifier](tutorial-identifier.png)
-     * To add the tutorial within a curriculum module as well, under the `menu` field, add an additional two lines with a `curriculm` field witht he correct file from [menus.en.toml](https://github.com/protocol/launchpad/blob/main/config/_default/menus/menus.en.toml#L91):
-       ```
+     
+     
+     * To add the tutorial within a curriculum module as well, under the `menu` field, add an additional two lines with a `curriculm` field with the correct file from [menus.en.toml](https://github.com/protocol/launchpad/blob/main/config/_default/menus/menus.en.toml#L91):
+     
+    
+    ```
        menu:
          tutorials:
            parent: "tutorials-ipfs"
          curriculum:
            parent: "curriculum-ipfs"
-       ```
+     ```
 
 
 ### Create a new Module
@@ -66,10 +72,10 @@ To create a new set of tutorials or Module, follow these steps:
 
 ## How to Create a Dev Tools Page
 
- * Create a Markdown file or a directory with a markddown file in `content/en/curriculum/dev-tools`
+ * Copy the markdown file from `templates/dev-tool-temp.md` to a new `.md` file, or  or a directory with a markdown file named `index.md` in `content/en/curriculum/dev-tools`
  * Update the `weight` field to be 10 after the very last dev-tools page
    ![Weight](weight-example.png)
-  _in this example, the last page is currently spice.md, and you would want to make the next page havea  weight of 80_
+  _in this example, the last page is currently spice.md, and you would want to make the next page have a weight of 80_
 
 ## How to Create a new Curriculum Module
 * Create a new directory

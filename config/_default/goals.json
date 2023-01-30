@@ -464,15 +464,15 @@
   },
   "dev-tools": {
     "1.1": {
-      "description": "Understand what are Dev-Tools and why they are important for developers.",
+      "description": "Understand the different types of projects in the PLN",
       "subgoals": []
     },
     "1.2": {
-      "description": "Get to know the main Dev-Tools available in the IPFS and Filecoin ecosystem.",
+      "description": "Get to know some of the major projects in the PLN that are contributing and building on the PL OSS stack",
       "subgoals": []
     },
     "1.3": {
-      "description": "Know how you can add you own Dev-Tools to the Launchpad curriculum, so that other people can learn about them.",
+      "description": "Learn about how different projects and companies are leveraging PL technology",
       "subgoals": []
     }
   },
@@ -513,5 +513,4 @@
     }
   }
 }
-
 

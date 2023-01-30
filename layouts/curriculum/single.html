@@ -2,7 +2,13 @@
 {{ $section := replaceRE `(.+?)\/(.+?)\/(.+?)$` "$2" .File.Path }}
 {{ $goal := resources.Get "js/react/components/curriculum/page/Goal.jsx" | babel }}
 {{ $goal := $goal | js.Build }}
+
+{{ $tutorial := resources.Get "js/react/components/curriculum/tutorial/Tutorial.jsx" | babel }}
+{{ $tutorial := $tutorial | js.Build }}
+
 <script src="{{ $goal.RelPermalink }}" defer></script>
+<script src="{{ $tutorial.RelPermalink }}" defer></script>
+
 	<div class="row flex-xl-nowrap">
 		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
 			<nav class="docs-links" aria-label="Main navigation">
@@ -14,7 +20,8 @@
 			{{ partial "sidebar/docs-toc.html" . }}
 		</nav>
 		{{ end -}}
-		{{ if .Params.toc -}}
+
+    {{ if .Params.toc -}}
 		<main class="docs-content col-lg-11 col-xl-9">
 		{{ else -}}
       <main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"
@@ -36,28 +43,31 @@
 					</ol>
 				</nav>
 			{{ end }}
-      <h1>{{ .Title }}</h1>
-			<p class="lead">{{ .Params.lead | safeHTML }}</p>
-			{{ if ne .Params.toc false -}}
-			<nav class="d-xl-none" aria-label="Quaternary navigation">
-				{{ partial "sidebar/docs-toc.html" . }}
-			</nav>
-			{{ end -}}
+      <div id="dynamic-tutorial"></div>
+      <div id="page-content">
+        <h1>{{ .Title }}</h1>
+        <p class="lead">{{ .Params.lead | safeHTML }}</p>
+        {{ if ne .Params.toc false -}}
+        <nav class="d-xl-none" aria-label="Quaternary navigation">
+          {{ partial "sidebar/docs-toc.html" . }}
+        </nav>
+        {{ end -}}
 
-      <div id="goal"></div>
+        <div id="goal"></div>
 
-			{{ .Content }}
-			{{ if .Site.Params.editPage -}}
-				{{ partial "main/edit-page.html" . }}
-			{{ end -}}
-			{{ partial "main/docs-navigation.html" . }}
-			<!--
-			{{ if not .Site.Params.options.collapsibleSidebar -}}
-				{{ partial "main/docs-navigation.html" . }}
-			{{ else -}}
-				<div class="my-n3"></div>
-			{{ end -}}
-			-->
+        {{ .Content }}
+        {{ if .Site.Params.editPage -}}
+          {{ partial "main/edit-page.html" . }}
+        {{ end -}}
+        {{ partial "main/docs-navigation.html" . }}
+        <!--
+        {{ if not .Site.Params.options.collapsibleSidebar -}}
+          {{ partial "main/docs-navigation.html" . }}
+        {{ else -}}
+          <div class="my-n3"></div>
+        {{ end -}}
+        -->
+      </div>
 		</main>
 	</div>
 {{ end }}

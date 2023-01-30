@@ -162,8 +162,10 @@
   identifier = "tutorials-ipfs"
   [tutorials.params]
     category = "ipfs"
+    icon = "/logos/ipfs.svg"
+    iconWidth = 23
+    iconHeight = 23
     image = "/tutorials/intro-ipfs.png"
-
 
 [[tutorials]]
   name = "libp2p Networking Applications"
@@ -171,14 +173,39 @@
   identifier = "tutorials-libp2p"
   [tutorials.params]
     category = "libp2p"
+    icon = "/logos/libp2p.png"
+    iconWidth = 22.9
+    iconHeight = 26.4
     image = "/tutorials/libp2p.png"
 
 [[tutorials]]
-  name = "IPLD Data Structures"
+  name = "Building on the FVM"
   weight = 30
-  identifier = "tutorials-ipld"
+  identifier = "tutorials-fvm"
   [tutorials.params]
-    image = "/tutorials/ipld.svg"
+    category = "fvm"
+    icon = "/logos/fvm.png"
+    iconWidth = 14.71
+    iconHeight = 22.30
+    image = "/tutorials/fvm.png"
+
+[[tutorials]]
+  name = "Introduction to Metamask"
+  weight = 40
+  identifier = "tutorials-metamask-intro"
+  [tutorials.params]
+    category = "web3"
+    icon = "/logos/metamask.png"
+    iconWidth = 22
+    iconHeight = 22
+    image = "/tutorials/metamask.jpeg"
+
+# [[tutorials]]
+#   name = "Working with IPLD structures"
+#   weight = 30
+#   identifier = "tutorials-ipld"
+#   [tutorials.params]
+#     image = "/tutorials/ipld.svg"
 
 [[footer]]
   name = "About Launchpad"

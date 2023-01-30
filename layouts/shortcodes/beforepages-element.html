@@ -1,0 +1,16 @@
+{{ with .Site.GetPage (.Get "page") }}
+  {{ $pageMenuId := .Params.Menu.Tutorials.Parent }}
+  {{ $pageMenu := "" }}
+  {{ range $index, $element := where .Site.Menus.tutorials "Identifier" $pageMenuId -}}
+    {{ $pageMenu = $element }}
+  {{ end }}
+  <div class="before-begin-element">
+    <div class="title">{{ $pageMenu.Name }}</div>
+    <a href="{{ .Permalink }}" target="_blank">
+    <div style="display: flex; align-items: center;">
+      <img src="{{ $pageMenu.Params.Icon }}" width="{{ $pageMenu.Params.IconWidth }}" height="{{ $pageMenu.Params.IconHeight }}" style="margin-right: 4px;" />
+      <div>{{ .Title }}</div>
+    </div>
+    </a>
+  </div>
+{{ end }}
