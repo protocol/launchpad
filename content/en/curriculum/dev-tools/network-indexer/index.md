@@ -345,6 +345,7 @@ ipfs routing findprovs <CID>
 ## Resources
 * [Blog: Introducing the Network Indexer](https://filecoin.io/blog/posts/introducing-the-network-indexer/)
 * [Blog: Introducing Reframe](https://blog.ipfs.tech/2022-09-02-introducing-reframe/)
+* [Blog: How to be an Index Provider](https://filecoin.io/blog/posts/how-to-be-an-index-provider/)
 * [CID Contact](https://cid.contact/) a web user interface (webUI) you can use to access data.
 * [Github ipni/storetheindex](https://github.com/ipni/storetheindex)
 * [Github ipfs/go-delegated-routing](https://github.com/ipfs/go-delegated-routing)
