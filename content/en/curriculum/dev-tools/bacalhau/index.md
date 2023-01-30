@@ -54,8 +54,6 @@ You will need to set up an environment to run Bacalhau. There are three differen
 ### Tutorials
 * [Install the Bacalhau Client](https://docs.bacalhau.org/getting-started/installation/#install-the-bacalhau-client) - See instructions for installing Bacalhau on your local machine.
 * [Running Pandas in Bacalhau](https://docs.bacalhau.org/examples/workload-onboarding/python-pandas/) – In this tutorial, you will deploy a Python script on Bacalhau. The script is a basic application that uses the Pandas Python library.
-* [Tutorial Name](URL)
-
 
 ### The Bacalhau CLI: Cheat Sheet
 
