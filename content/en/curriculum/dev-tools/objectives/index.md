@@ -19,7 +19,7 @@ objectives:
 
 This page is a reference for **Technology and Projects** directly supported and maintained by Protocol Labs, as well as the wide range of **PLN Companies and Tools** that exist in the PLN ecosystem.
 
-All of these projects are a part of the Protocol Labs Network and an important part of our ecosystem and tooling, providing important solutions for the technology across the Protocol Labs stack, whether they are Open Source Software (OSS), Protocols, or tools and services that are a part of the ecosystem of companies and projects that are working together to power the distributed web.
+All of these projects are a part of the Protocol Labs Network and an important part of our ecosystem and tooling, providing important solutions for the technology across the Protocol Labs stack, whether they are Open Source Software (OSS), protocols, or tools and services that are a part of the ecosystem of companies and projects that are working together to power the distributed web.
 
 
 ## Technology and Projects
