@@ -23,12 +23,14 @@ Fleek.co can display a static website whose code is hosted on Github. So wheneve
 
 * Install IPFS on the command line, if you have not done that yet, [check out this tutorial](https://curriculum.pl-launchpad.io/curriculum/ipfs/setup/)
 * Download jq on the command line:
-    * Linux or WSL: `sudo apt-get install jq` 
+    * Linux or WSL: `sudo apt-get install jq`
     * Mac: `brew install jq`
 * Open the [ipld.io](https://ipld.io/) website
 * Have the [IPLD Gitub Repo](https://github.com/ipld/ipld) on hand
 
-# video goes here 
+## Video: IPLD Pathing
+
+{{< youtube N5y3gtDBwdQ >}}
 
 ## Instructions
 
@@ -51,7 +53,7 @@ $ ipfs resolve /ipns/ipld.io
 /ipfs/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg
 ```
 
-This command can help you find the CID for any website that is hosted on IPFS through DNSLink. Fleek makes websites readily available on IPFS by auto-updating the DNSLink with the most recent CID. 
+This command can help you find the CID for any website that is hosted on IPFS through DNSLink. Fleek makes websites readily available on IPFS by auto-updating the DNSLink with the most recent CID.
 
 ### Inspect the root of the site
 
@@ -78,9 +80,9 @@ $ ipfs dag get QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg | jq
       "Name": "css",
       "Tsize": 85864
     },
-… 
+…
 
-… 
+…
   {
       "Hash": {
         "/": "QmPNReXtnq8rDGJEbGGdYRxbiaZa7du1TZ782syYJodQM1"
@@ -101,21 +103,21 @@ $ ipfs dag get QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg | jq
 
 This will allow you to pull in the next level of blocks onto your local ipfs node, printed in DAG-JSON format. We use the `jq` command to print the json in an easy-to-read layout.
 
-> Note: The original block is actually DAG-PB format which is used to construct UnixFS file data in IPFS. If we switch to the `ipfs block get` command and provide the CID then we’ll get the raw DAG-PB bytes, but they’re not as easy to read! 
+> Note: The original block is actually DAG-PB format which is used to construct UnixFS file data in IPFS. If we switch to the `ipfs block get` command and provide the CID then we’ll get the raw DAG-PB bytes, but they’re not as easy to read!
 
-DAG-PB has two top-level properties: `Data` and `Links`. We’re interested in the DAG structure so the `Links` array is the most useful. Each `Link` in DAG-PB has a name, a CID and a size. The links are named `Hash`. 
+DAG-PB has two top-level properties: `Data` and `Links`. We’re interested in the DAG structure so the `Links` array is the most useful. Each `Link` in DAG-PB has a name, a CID and a size. The links are named `Hash`.
 
 ### Loading a page with IPFS Pathing
 
-When a client (i.e a website/a browser via an IPFS gateway) loads a root like in the following manner and doesn’t find a single page, it will look for an `index.html` link, which [ipld.io](http://ipld.io/) has. In this case, the `Links` field is empty, but the `Data` field contains a lot of bytes so the client will load those in. The bytes are Base64 encoded. 
+When a client (i.e a website/a browser via an IPFS gateway) loads a root like in the following manner and doesn’t find a single page, it will look for an `index.html` link, which [ipld.io](http://ipld.io/) has. In this case, the `Links` field is empty, but the `Data` field contains a lot of bytes so the client will load those in. The bytes are Base64 encoded.
 
 ```bash
-$ ipfs dag get QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/index.html | jq 
+$ ipfs dag get QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/index.html | jq
 {
-    "Data": { 
+    "Data": {
         "/": { "bytes": "CAIS0s4BPCFET0NUWVBF... "}
     },
-    "Links": [] 
+    "Links": []
 }
 ```
 
@@ -129,23 +131,23 @@ You can find the name of children blocks by inspecting the block first, then cho
 
 ### Loading a page with IPLD Pathing
 
-DAG-PB is a special case within ipfs, because when supplying a path attached to a CID, it will interpret the blocks and look for named links for us. This isn’t the case for blocks of any other codec (e.g. DAG-CBOR). We can switch out of this special-case mode and explicitly say that we want to use raw-IPLD pathing by prefixing our root block CID with `/ipld/` so we can _path_ through the DAG-PB’s block properties for ourselves. 
+DAG-PB is a special case within ipfs, because when supplying a path attached to a CID, it will interpret the blocks and look for named links for us. This isn’t the case for blocks of any other codec (e.g. DAG-CBOR). We can switch out of this special-case mode and explicitly say that we want to use raw-IPLD pathing by prefixing our root block CID with `/ipld/` so we can _path_ through the DAG-PB’s block properties for ourselves.
 
 ```bash
-$ ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/7/Hash | jq 
-{ 
-    "Data": { 
+$ ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/7/Hash | jq
+{
+    "Data": {
         "/": { "bytes": "CAIS0s4BPCFET0NUWVBF..." }
     },
-    "Links": [] 
+    "Links": []
 }
 ```
 
 `Links` is an array field, so we use the number 7 to identify which child block we want to access. In this case, we’re going to navigate into the `Hash` and that will load the block with that CID. Now we can also move into accessing only the _raw_ bytes by adding `Data` to the end of the path, as opposed to accessing the DAG-PB formatted block:
 
 ```bash
-$ ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/7/Hash/Data | jq 
-{ 
+$ ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/7/Hash/Data | jq
+{
     "/": {  "bytes": "CAIS0s4BPCFET0NUWVBF... "}
 }
 ```
