@@ -28,9 +28,10 @@ Fleek.co can display a static website whose code is hosted on Github. So wheneve
 * Open the [ipld.io](https://ipld.io/) website
 * Have the [IPLD Gitub Repo](https://github.com/ipld/ipld) on hand
 
-# video goes here
+## Video: IPLD Pathing
 
-## Instructions
+{{< youtube N5y3gtDBwdQ >}}
+
 ## Instructions
 Once you have installed kubo (formerly go-ipfs) and initiated and ipfs node, start up ipfs with the command`ipfs daemon`, then open a second terminal window to follow the instructions below.
 ### Install jq
