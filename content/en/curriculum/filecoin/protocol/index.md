@@ -8,12 +8,26 @@ menu:
 weight: 390
 category: lecture
 level:
+- shallow
 - deep
+objectives:
+  show: true
+  goals:
+  - 1.1
+  subgoals:
+  - 1.11
+  - 1.12
+  - 1.13
+  - 1.14
+  - 1.15
+
 ---
 
 
 
-The Filecoin Protocol is a complex and ever evolving technology that involves mining, sealing and proving, consensus, and much more. In this section you will get an overview of the process that occurs to create the Protocol which includes both a _decentralized storage market_ (the storing of data on filecoin storage providers) and a _storage based consensus_, the process of mining Filecoin blocks.
+The Filecoin Protocol is a complex and ever evolving technology that involves mining, sealing and proving, consensus, and much more.
+
+In this section you will get an overview of the process that occurs to create a protocol which includes both a _decentralized storage market_ (the storing of data on filecoin storage providers) and a _storage based consensus_, the process of mining Filecoin blocks.
 
 ![The Filecoin Blockchain](chain-components.png)
 
@@ -50,7 +64,7 @@ This talk given in July of 2022 takes a deep dive into the Actors that make up t
 
 Learn about why Filecoin uses actors, the different types of actors and what the current 11 Filecoin actors do, and understand the upgrades that have occured since mainnet launch. As the [Filecoin Virtual Machine (FVM) is developed](https://fvm.filecoin.io/#roadmap-4), the capabilities of Filecoin actors will greatly expand along with the potential for the Filecoin Protocol, by decoupling adding functionality from protocol upgrades and allowing for independent user actors.
 
-{{&lt; youtube 9JbwbTPonv0 >}}
+{{< youtube 9JbwbTPonv0 >}}
 
 In Filecoin, addresses are used to identify actors. There are 4 address types:
 
@@ -74,7 +88,9 @@ Peers communicate over secure channels to distribute information around the netw
 
 Learn about mining, sealing, sector types, Collateral, making deals, Filecoin+, offline deals.
 
-https://www.youtube.com/watch?v=Sz2OQc2WOdA
+[//]: # (https://www.youtube.com/watch?v=Sz2OQc2WOdA)
+
+{{< youtube Sz2OQc2WOdA>}}
 
 
 ### Filecoin Nodes
@@ -93,7 +109,7 @@ The storage providers provide services to the network by executing different typ
 
 In this 4 minute talk by Jeromy Johnson & Juan Benet, understand how Filecoin, which differs from most blockchains in how it incentivizes storage, interacts with both storage and retrieval markets.
 
-{{&lt; youtube TzfcqPzSR0s >}}
+{{< youtube TzfcqPzSR0s >}}
 
 
 ### Deals
@@ -115,11 +131,11 @@ Sectors are the units of proven storage which can either be 32GiB or 64Gib. When
 Drand is a distributed, bias-resistant, unpredictable, and publicly verifiable randomness generator that is key to the Filecoin implementation in how it provides unpredictable, decentralized and publicly verifiable random values for the blockchain. [Learn more about how Drand works in the docs](https://drand.love/docs/overview/#how-drand-works)
 
 
-### Drand: Distributed, Bias Resistant, Unpredictable and Publicly Verifiable Randomness | Nicolas Gailly
+#### Drand: Distributed, Bias Resistant, Unpredictable and Publicly Verifiable Randomness | Nicolas Gailly
 
 [Drand](https://drand.love/) uses [cryptographic methods](https://drand.love/docs/cryptography/#setup-phase), collective public keys, and a private key share of a collective private key to generate randomness in a distributed manner.
 
-{{&lt; youtube ydwW2HFFxNI >}}
+{{< youtube ydwW2HFFxNI >}}
 
 drand is a distributed randomness beacon. It provides publicly-verifiable, unpredictable, and bias-resistant random numbers as a public service. Some of the featuresinclude:
 
@@ -131,7 +147,7 @@ drand is a distributed randomness beacon. It provides publicly-verifiable, unpre
 * The League of Entropy
 
 
-## Filecoin Data Retrieval \
+## Filecoin Data Retrieval
 Currently, Filecoin node (Lotus) supports direct retrieval from the storage miners which originally stored the data. Clients can directly send retrieval requests to a storage provider to retrieve their data by paying some FIL for retrieval. \
 Clients need to provide enough information to storage provider for the data retrieval request, including:
 

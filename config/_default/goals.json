@@ -447,22 +447,30 @@
       "levels": ["shallow", "deep"]
     },
     "1.1": {
-      "description": "Describe how Filecoin protocol is both a state machine that uses consensus and proofs and a distributed storage network",
+      "description": "Describe the basic building blocks and mechanisms of the Filecoin Protocol",
       "subgoals": [
         {
           "id": "1.11",
-          "description": "Define the basic building blocks of the Filecoin network such as Providers, Deals,, and other features"
+          "description": "Understand how is both a state machine that uses consensus and proofs and a distributed storage network"
         },
         {
           "id": "1.12",
-          "description": "Gain a basic understanding of account-based blockchain state model and economic mechanisms"
+          "description": "Define the basic building blocks of the Filecoin network such as actors and addresses, Filecoin nodes, storage providers"
         },
         {
           "id": "1.13",
-          "description": "Be able to ..."
+          "description": "Have a conceptual understanding of the role that storage providers play, from sealing to proving and retrieval"
+        },
+        {
+          "id": "1.14",
+          "description": "Be able to describe what the different kind of Filecoin actors are, the different types of actors used by Filecoin, and how they operate  differently that machines that use the standard client-server model"
+        },
+        {
+          "id": "1.15",
+          "description": "Understand the different types of implementations that exist on the Filecoin blockchain, types of nodes, and identify some of the testnets that are available"
         }
       ],
-      "levels": ["shallow"]
+      "levels": ["shallow", "deep"]
     },
     "1.2": {
       "description": "Understand ...",
