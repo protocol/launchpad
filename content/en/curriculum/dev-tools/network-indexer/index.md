@@ -283,7 +283,7 @@ $ provider init
 
 
 
-In the provider config, under the `"Router"` object, update the `""ProviderID": "<KUBO_NODE_PEERID>","` with the PeerID from your kubo node that you noted in the previous step:
+In the provider config, under the `"Reframe"` object, update the `""ProviderID": "<KUBO_NODE_PEERID>","` with the PeerID from your kubo node that you noted in the previous step:
 
 Open the index-provider config
 ```
