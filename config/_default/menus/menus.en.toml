@@ -168,7 +168,7 @@
     image = "/tutorials/intro-ipfs.png"
 
 [[tutorials]]
-  name = "libp2p Networking Applications"
+  name = "libp2p Networking"
   weight = 20
   identifier = "tutorials-libp2p"
   [tutorials.params]
@@ -200,12 +200,12 @@
     iconHeight = 22
     image = "/tutorials/metamask.jpeg"
 
-# [[tutorials]]
-#   name = "Working with IPLD structures"
-#   weight = 30
-#   identifier = "tutorials-ipld"
-#   [tutorials.params]
-#     image = "/tutorials/ipld.svg"
+[[tutorials]]
+  name = "IPLD structures"
+  weight = 30
+  identifier = "tutorials-ipld"
+  [tutorials.params]
+    image = "/tutorials/ipld.svg"
 
 [[footer]]
   name = "About Launchpad"
