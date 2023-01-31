@@ -168,7 +168,7 @@
     image = "/tutorials/intro-ipfs.png"
 
 [[tutorials]]
-  name = "Building libp2p applications"
+  name = "libp2p Networking Applications"
   weight = 20
   identifier = "tutorials-libp2p"
   [tutorials.params]
