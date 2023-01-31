@@ -33,21 +33,24 @@ It is important to note that IPFS and Filecoin are separate networks, though und
 
 #### IPFS & Filecoin: The Building Blocks of an Open, Decentralized Web | Ally Haire
 
-In this talk by DeveloperAlly, get a quick overview of the history of IPFS and Filecoin, information about the organizations today, and gives an intro about why Filecoin exists, how it’s connected to IPFS, and the basics of how it works to provide a decentralized and reliable storage system.
+In this talk by DeveloperAlly from July of 2002, get a quick overview of the technological basics of IPFS and Filecoin, an intro about why Filecoin exists, how it’s connected to IPFS, and the basics of how it works to provide a decentralized and reliable storage system.
 
-
+{{< youtube XZqhfE1mJ_k >}}
 
 ### A New Storage Model
 
 The internet that we are all familiar with, we rely on large, centralized companies to store our data and make it available to the websites, online stores, email servers, and other services that make up the internet. With the Filecoin economy, you have a network of smaller storage providers you can leverage to make storage deals, and back up data on several different servers.
 
-Because data is content addresses with CIDs, instead of location-addressed with URLs, it is possible for anyone to be able to host that data, and solving some problems that come along with a single entity owning content, such as censorship and single ownership of data that is intended to be freely available, overall making a network that is more resilient.
+Because data on Filecion is content addresses with CIDs, instead of location-addressed with URLs, it is possible for anyone to be able to host that data. With the Filecoin network, those who are storing data have the ability to control the permanence of your data, along with flexibility to choose who will store that data.
+
+This model solves many problems that come along with a single entity owning content, such as censorship and single ownership of data that is intended to be freely available, overall making a network that is more resilient.
 
 
-#### Introduction to IPFS and Filecoin | Discording
+#### Introduction to IPFS and Filecoin | Discordian
 
-In this video, Discordian gives an overview of the key features and differences between the IPFS and Filecoin networks, and explains the special value the Filecoin adds, and reviews some of the technology and tools you can use to build on the Filecoin and IPFS networks.
+In this video from March of 2022, Discordian gives an overview of the key features and differences between the IPFS and Filecoin networks, and explains the special value the Filecoin adds, and reviews some of the technology and tools you can use to build on the Filecoin and IPFS networks.
 
+{{< youtube 5-0_DqXGY-M >}}
 
 ## The Filecoin Economy
 
@@ -55,7 +58,7 @@ Filecoin facilitates open markets for storing and retrieving files that anyone c
 
 Available storage and the price of that storage is not controlled by any single entity. Instead, the Filecoin network facilitates open markets for storing and retrieving files (by making storage deals between clients and providers) that anyone can participate in. At any time, users can verify that their files are being stored correctly by looking at proofs on Filecoin’s blockchain.
 
-Storage providers are able to leverage the Filecoin technology to store content-addressed data using the APIs and data onboarding solutions such as [Boost](https://boost.filecoin.io/) for Lotus, and new functionality that will expands the potential for earning Filecoin such as:
+Storage providers are able to leverage the Filecoin technology to store content-addressed data using the APIs and data onboarding solutions such as [Boost](https://boost.filecoin.io/) for the [Lotus](https://lotus.filecoin.io/) Filecoin implementation, and new functionality that will expands the potential for earning Filecoin such as:
 
 * [Saturn CDN](https://strn.network/) where participants can earn Filecoin caching and serving content
 * [Bacalhau ](https://strn.network/)compute, building services to compute over data that are stored using IPFS technology
@@ -71,9 +74,9 @@ There are also data onboarding services for those who don’t want to run their 
 
 ## Filecoin Features
 
-* **Verifiable Storage** – Rather than needing to trust a cloud storage provider or rely on legal recourse, the Filecoin Protocol cryptographically verifies data storage.
-* **Open Participation** – Anyone with sufficient hardware and an internet connection can be a storage provider (Filecoin miner) for the Filecoin Network.
-* **Empowers Local Optimization** – Driven by open participation, market forces will enable more efficient and distributed data storage and communication than centralized storage platforms. The distributed network allows for a more local and resilient architecture and data availability.
+* **Verifiable Storage** – Rather than needing to trust a cloud storage provider or rely on legal recourse, the Filecoin Protocol cryptographically verifies data storage
+* **Open Participation** – Anyone with sufficient hardware and an internet connection can be a storage provider (Filecoin miner) for the Filecoin Network
+* **Empowers Local Optimization** – Driven by open participation, market forces will enable more efficient and distributed data storage and communication than centralized storage platforms, which allows for a more local and resilient architecture and data availability
 * **Flexible Storage Options** – As an open platform, the network has the flexibility for the creation & disseminations of tools and services provided by the community of developers improving and building on the protocol
 * **A Community Network** – Filecoin provides participants the opportunity to have stake in the networkʼs success. Participants in the network benefit by working together to improve the Filecoin network as a whole
 
