@@ -25,7 +25,6 @@ objectives:
 
 Filecoin includes a blockchain and native cryptocurrency (FIL) to create a network and a market that both provides services to users who want to store data on the Filecoin network, and for storage providers who can participate in mining block rewards, while providing the data storage and (soon to come) compute capabilities over that data.
 
-
 ## Filecoin Technology
 
 Filecoin is an independent organization that collaborates with the Protocol Labs Network, and is the token for decentralized storage. Filecoin uses IPFS to power a peer-to-peer network, libp2p as the networking layer to enable things like peer discovery and secure connections, IPLD to work with data models and schemas that can operate with any systems, and many other technologies to create protocols, tools, and services to help radically improve the network and drive breakthroughs in computing.
