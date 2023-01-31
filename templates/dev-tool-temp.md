@@ -12,30 +12,53 @@ level:
 - deep
 ---
 
-## <Dev Tool> Introdution
-short ~1-2 paragraphs with context
+## <Dev Tool> #### Introduction
 
-## Why Use/ Who Uses <Dev Tool>
-Describe who uses the dev tool (L0 Developer? L2 Developers) and what they work on.
-Give some real-world use-cases and examples
+Two paragraphs or so, brief intro
 
 
-#### Sizzle or Presentation Video Name | Event if Applicable
-If a sizzle or demo video exists, from, say IPFS Camp, add it here with a short 2-3 sentence description
-{{< youtube i100RhwZUnQ >}}
-<!-- The URL to this video was: https://www.youtube.com/watch?v=i100RhwZUnQ -->
+### Why <Dev Tool>?
+
+Paragraph or two about benefits and use cases
 
 
-### Sub Project 1
-Information about a specific tool or functionality
+### Details/ Sub Projects
+**Sub-Project 1**
 
-### Sub Project 2
-Information about a specific tool or functionality
+**Sub-Project 2**
 
-## Up Next
-Describe any exciting in-development features and projects, roadmaps (and links to them), as well as information about new
+**Sub-Project 3**
 
-#### Resources
-* [Landing Page]()
-* [Docs]()
-* [Github Repo]()
+Add in more in-depth information about the technology, digrams, sub-projects and tools
+
+
+## Tutorials
+
+**_A written tutorial, or a list of Prerequisites and a curated list of suggested tutorials. We should also make a google form for collecting evidence of doing this tutorial_**
+
+
+## Cheat Sheet (optional)
+
+
+### _Common commands_
+
+
+## Resources
+
+
+_A list of_
+* blogs
+* websites
+* videos
+* github repos
+
+
+
+Resources
+
+
+
+* Links to docs
+* Tutorials
+* Talks & Videos
+* Contact info (github repos, Slack Channels, forums, etc)
