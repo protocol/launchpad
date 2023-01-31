@@ -447,15 +447,15 @@
       "levels": ["shallow", "deep"]
     },
     "1.1": {
-      "description": "Know what...",
+      "description": "Describe how Filecoin protocol is both a state machine that uses consensus and proofs and a distributed storage network",
       "subgoals": [
         {
           "id": "1.11",
-          "description": "Understand ..."
+          "description": "Define the basic building blocks of the Filecoin network such as Providers, Deals,, and other features"
         },
         {
           "id": "1.12",
-          "description": "Be able to ..."
+          "description": "Gain a basic understanding of account-based blockchain state model and economic mechanisms"
         },
         {
           "id": "1.13",

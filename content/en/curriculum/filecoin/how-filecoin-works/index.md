@@ -1,7 +1,7 @@
 ---
 title: "How Filecoin Works"
 description: "The Peer-to-peer Network for Sharing Files"
-draft: false
+draft: true
 menu:
     curriculum:
         parent: "curriculum-filecoin"
