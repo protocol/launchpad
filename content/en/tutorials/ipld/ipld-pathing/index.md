@@ -33,7 +33,7 @@ Fleek.co can display a static website whose code is hosted on Github. So wheneve
 {{< youtube N5y3gtDBwdQ >}}
 
 ## Instructions
-Once you have installed kubo (formerly go-ipfs) and initiated and ipfs node, start up ipfs with the command`ipfs daemon`, then open a second terminal window to follow the instructions below.
+Once you have installed kubo (formerly go-ipfs) and initiated and ipfs node, start up ipfs with the command `ipfs daemon`, then open a second terminal window to follow the instructions below.
 ### Install jq
 
 Jq is a tool to help the user view json text easier on the command line. You can go to [stedolan.github.io/jq/download](https://stedolan.github.io/jq/download) to find instructions for your operating system.
@@ -55,7 +55,6 @@ This command can help you find the root CID for any website that is hosted on IP
 ### Inspect the Root
 
 Now that you have the root CID for the website ipld.io, you can inspect the DAG that makes up the data stored on IPFS.
-
 
 ```
 ipfs dag get QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg | jq
@@ -108,7 +107,7 @@ You should see the following output in your CLI, which is a list of the CIDs bel
 
 This has pulled in the next level of blocks connected to the root CID, and printed it in DAG-JSON format. We use the `jq` command to print the json in an easy-to-read layout.
 
-> The original block is actually DAG-PB format which is used to construct UnixFS file data in IPFS.  If you inspect the binary format of the data with `ipfs block get QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEq` you will get illegible information, since it is raw DAG-PB bytes.
+> The original block is actually DAG-PB format which is used to construct UnixFS file data in IPFS. If you inspect the binary format of the data with `ipfs block get QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEq` you will get illegible information, since it is raw DAG-PB bytes.
 
 DAG-PB has two top-level properties: `Data` and `Links`. The `Data` field has the actual bytes contained in a block. Each `Link` in DAG-PB has a name, a CID and a size. The `Links` contain the `Hash` or CID for the data in the next level below. The `Hash` property can also be inspected, leading you another level down (to the children) of content in that Merkle tree.
 
@@ -117,8 +116,6 @@ DAG-PB has two top-level properties: `Data` and `Links`. The `Data` field has th
 You can see here the `"Hash"` or CID of the index.html page for the website.
 
 ![index.html hash](index-hash.png)
-
-
 
 ### Load a Page With an IPFS Path
 
@@ -150,13 +147,13 @@ You can reach this same directory on the CLI by simply adding the filepath on th
 ipfs dag get QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/docs/codecs/known | jq
 ```
 
-This command traverses the IPLD structure & finds the CID of the root of the `/docs/codec/known` directory on Github. The output that you see should match the file structure of the Github repo above.
+This command traverses the IPLD structure & finds the CID of the `/docs/codec/known` directory on Github. The output that you see should match the file structure of the Github repo above.
 
 ![Deeper IPLD structure](docs-codecs-known.png)
 
 ### Load a Page with IPLD Pathing
 
-DAG-PB is the default data format for IPFS and has some special properties that make it possible to traverse the graph in the same way you would other filesystems.
+DAG-PB is the default data format for IPFS and has some special properties that makes IPFS pathing possible.
 
 When inspecting a CID, you can both look for named "Links" or specify which node you would like to traverse by identifying the link by the number.
 
@@ -167,7 +164,7 @@ Try the command
 ```bash
 ipfs dag get /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/3/Hash | jq
 ```
-This will retrieve the information about the 4th link listed under the root CID of `Qmb2TK3N6M2SQj3JaLJhGWPcpmtyvuHhZdSMADMGrLnpnQ`, which has a name of `"docs"`.
+This will retrieve the information about the 4th link listed under the root CID of `QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg`, which has a name of `"docs"`.
 
 ![link 4](link4.png)
 
@@ -201,7 +198,7 @@ You should see something like the following in your CLI:
 ### Switching Codecs
 IPLD pathing, by default, allows you to inspect data in DAG-JSON format (kubo transforms DAG-PB into DAG-JSON in the CLI), and not the raw byte array. We are going to use a command to inspect the data of the `index.html` page in it's original format.
 
-This command uses the pathing command `ipfs dag get`, with the flag `--output-codec=raw`  to change the codec you use to view the data from DAG-JSON to the `RAW` codec and you are able to view the bytes _as they are_.
+This command uses the pathing command `ipfs dag get`, with the flag `--output-codec=raw`  to change the codec you use to view the data from DAG-JSON to the `RAW` codec and you are able to view the bytes as they are.
 
 ```bash
 ipfs dag get --output-codec=raw /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWmAEqg/Links/7/Hash/Data
@@ -217,8 +214,8 @@ ipfs dag get --output-codec=raw /ipld/QmQ2ocFLq6d7ZiVEQfuEGEr4niJmdSscoyLkgTKRWm
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"/>
 
 <title>IPLD - The data model of the content-addressable web</title>
-…
-…
+...
+...
 ```
 
 
