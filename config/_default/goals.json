@@ -429,11 +429,11 @@
       "subgoals": [
         {
           "id": "1.01",
-          "description": "Understand the basics of how Filecoin leverages and implements IPFS and libp2p technologies"
+          "description": "Understand the basics of how Filecoin leverages and implements other technologies such as IPFS, libp2p, Saturn, FVM, and Bacalhau"
         },
         {
           "id": "1.02",
-          "description": "Describe how Filecoin provides and alternative to the client server model, and the key traits of the blockchain that make this possible"
+          "description": " Describe how Filecoin provides and alternative to the client server model, and the key traits of the network that make that possible"
         },
         {
           "id": "1.03",
