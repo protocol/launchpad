@@ -17,11 +17,13 @@ objectives:
   introPage: true
 ---
 
-This page is a reference for Technology and Projects supported and maintained by Protocol Labs, including a wide range of **PLN Companies and Tools** that exist in the PLN ecosystem.
+This page is a reference for Technology and Projects supported and maintained by Protocol Labs, including a wide range of PLN Companies and Tools that exist in the PLN ecosystem.
 
-All of these projects are a part of the Protocol Labs Network and an important part of our ecosystem and tooling, providing important solutions for the technology across the Protocol Labs stack, whether they are Open Source Software (OSS), protocols, or tools and services , these are all a part of the ecosystem of companies and projects that are working together to power the distributed web.
+All of these projects are a part of the Protocol Labs Network and contribute to our ecosystem of tooling.
 
-To learn more about the team members and maintainers of different projects, see the [PLN team directory](https://www.plnetwork.io/directory/teams).
+The wide range of projects across the PLN provide important solutions for the technology across the Protocol Labs stacks, whether they are Open Source Software (OSS), protocols, or tools and services offered for a subscription or fee, these companies and projects are all a part of our efforts working together to power the distributed web.
+
+To learn more about the team members and maintainers of different projects, see the **[PLN Team Directory](https://www.plnetwork.io/directory/teams)**.
 
 ## Technology & Projects
 * **[IPNI Network Indexer](/curriculum/dev-tools/network-indexer)**: A project designed to index the data on the Filecoin and IPFS networks
