@@ -312,6 +312,14 @@ Add in your ipfs `PeerID` to the `.index-provider/config` `"ProviderID":` like s
     }
 ```
 
+Add Direct Announce URL so that announcements are done directly via HTTP instead of going via libp2p pubsub:
+
+```
+"DirectAnnounce": {
+  "URLs": ["http://0.0.0.0:3001"]
+}
+```
+
 Start the index-provider:
 
 ```
