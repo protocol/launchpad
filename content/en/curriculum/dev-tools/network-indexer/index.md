@@ -129,7 +129,7 @@ $ storetheindex daemon
 ### Set Up Kubo
 The next thing you will need to do is modify the configuration file for kubo with the methods from the reframe protocol or HTTP delegated routing, sending queries to both the DHT and the cidContact router, allowing kubo to make queries on CIDs to both places.
 
-[Install Kubo v0.16.0](https://curriculum.pl-launchpad.io/tutorials/ipfs-intro/setup/) or use already configired node. _It's important to make sure that you are on v0.16.0+ version of Kubo or otherwise Reframe won't work._ Initialize a node with `ipfs init`.
+[Install Kubo v0.18.1](https://curriculum.pl-launchpad.io/tutorials/ipfs-intro/setup/) or use already configired node. _It's important to make sure that you are on v0.16.0+ version of Kubo or otherwise Reframe won't work._ Initialize a node with `ipfs init`.
 
 > If you already have an ipfs node running on your machine, you can configure the existing `.ipfs/config` file, or else create (`ipfs init`) a new IPFS node for this tutorial, and make a backup copy of the `with cp ~/.ipfs ~/..ipfs` config file, or initialize a new node in a sandboxed vm or container.
 
@@ -271,7 +271,7 @@ See [https://github.com/ipni/index-provider#install](https://github.com/filecoin
 Install index-provider:
 
 ```
-$ go install github.com/filecoin-project/index-provider/cmd/provider@v0.9.0
+$ go install github.com/filecoin-project/ipni/cmd/provider@v0.10.2
 ```
 
 Initialise the index-provider repository and configuration:
@@ -293,18 +293,30 @@ Add in your ipfs `PeerID` to the `.index-provider/config` `"ProviderID":` like s
 
 ```json
 ...
+  
     "Reframe": {
       "ListenMultiaddr": "/ip4/127.0.0.1/tcp/50617",
+      "ReadTimeout": "10m0s",
+      "WriteTimeout": "10m0s",
+      "CidTtl": "24h0m0s",
       "ChunkSize": 1,
       "SnapshotSize": 100,
       "ProviderID": "12D3KooWBEQR33uW1T6axtpspeyJo6m8Sy531fQ8mzQbW1JBnWxJ",
+      "DsPageSize": 5000,
       "Addrs": [
-        "/ip4/0.0.0.0/tcp/4001",
-        "/ip6/::/tcp/4001",
-        "/ip4/0.0.0.0/udp/4001/quic",
-        "/ip6/::/udp/4001/quic"
+          "/ip4/0.0.0.0/tcp/4001",
+          "/ip6/::/tcp/4001",
+          "/ip4/0.0.0.0/udp/4001/quic",
+          "/ip6/::/udp/4001/quic"
       ]
     }
+```
+
+Add Direct Announce URL so that announcements are done directly via HTTP instead of going via libp2p pubsub:
+
+```
+"DirectAnnounce": {
+  "URLs": ["http://0.0.0.0:3001"]
 }
 ```
 
