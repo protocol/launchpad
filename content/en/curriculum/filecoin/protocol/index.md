@@ -23,13 +23,39 @@ objectives:
 
 ---
 
-The Filecoin Protocol is a complex and ever evolving technology that involves mining, sealing and proving, consensus, and much more. In this section you will get an overview of the process that occurs to create the Protocol which includes both a _decentralized storage market_ (the storing of data on filecoin storage providers) and a _storage based consensus_, the process of mining Filecoin blocks.
+The Filecoin Protocol is a complex and ever evolving technology that involves mining, sealing and proving, consensus, and much more. In this section you will get an overview of the protocol which includes both a _decentralized storage market_ (the storing of data on filecoin storage providers) and a _storage based consensus_, the process of mining Filecoin blocks.
 
-Filecoin is considered a utility token since it is a cryptocurrency that manages the storage of data with the storage providers. Most blockchains only utility is that they are a currency, and the only role of the miners on that network is to reach consensus about the state of the blockchain.
+Filecoin is considered a utility token since it is a cryptocurrency that manages the storage of data with the storage providers. Most blockchains’ only utility is that they are a currency, and the only role of the miners on that network is to reach consensus about the state of the blockchain. Filecoin also has core design features and economic mechanisms that make it a blockchain that ensures the storage of data in a decentralized marketplace
 
+
+### Filecoin Use Cases
+* Filecoin for Data Storage- Filecoin is used to manage data storage in a decentralized network of data storage. Note that this data is not stored _on_ the blockchain.
+* Filecoin for Payments - Filecoin can be used like any other token, as a currency for payment.
+* Emerging Use Cases
+  * [Data Retrieval Markets](https://retrieval.market/) that retrieve and deliver data stored with Filecoin storage providers
+  * [Compute over Data](https://www.cod.cloud/) to process
+
+
+### Filecoin Storage Market Features
+Filecoin offers several advantages over typical, centralized data storage solutions, by creating a marketplace with a wide range of options for storing your data. Those who store their data on the Filecoin network have the advantage of:
+* Granular control over parameters for data Storage
+* Storage receipts
+* Control over storage pricing (and what you will pay)
+* Content addressing
+* Data persistence for the amount of time that you can choose & negotiate with those providing the storage
 
 ## The Filecoin Blockchain
+Essentially, a blockchain is a database shared over many different nodes, or peers, in a network. The blockchain acts as a ledger that keeps track of transactions that occur on the blockchain, and come to an agreed upon state (consensus) of that ledger.
+
+Examples of the type of things a blockchain can track is the balance in a given account, and a record of the transactions that occurred between the peers on the network.
+
 ![The Filecoin Blockchain](chain-components.png)
+
+The Filecoin blockchain is defined with a set of specifications about actors, messages, blocks in the black chain, the message pool, and how new nodes synchronize and join the Filecoin network. The blockchain is a tree of different changes made to that ledger over time.
+
+An implementation of the Filecoin blockchain runs according to these specifications, and has a virtual machine in which actors send messages about the state of the blockchain, which will be added to the blockchain ledger.
+
+![Blockchain Implementation](blockchain.png)
 
 ### Consensus
 
