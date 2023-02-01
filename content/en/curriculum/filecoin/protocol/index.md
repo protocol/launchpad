@@ -23,25 +23,20 @@ objectives:
 
 ---
 
+The Filecoin Protocol is a complex and ever evolving technology that involves mining, sealing and proving, consensus, and much more. In this section you will get an overview of the process that occurs to create the Protocol which includes both a _decentralized storage market_ (the storing of data on filecoin storage providers) and a _storage based consensus_, the process of mining Filecoin blocks.
 
-
-The Filecoin Protocol is a complex and ever evolving technology that involves mining, sealing and proving, consensus, and much more.
-
-In this section you will get an overview of the process that occurs to create a protocol which includes both a _decentralized storage market_ (the storing of data on filecoin storage providers) and a _storage based consensus_, the process of mining Filecoin blocks.
-
-![The Filecoin Blockchain](chain-components.png)
+Filecoin is considered a utility token since it is a cryptocurrency that manages the storage of data with the storage providers. Most blockchains only utility is that they are a currency, and the only role of the miners on that network is to reach consensus about the state of the blockchain.
 
 
 ## The Filecoin Blockchain
-
+![The Filecoin Blockchain](chain-components.png)
 
 ### Consensus
 
-
-
 * https://spec.filecoin.io/#section-algorithms.expected\_consensus
 
-Leaders
+
+### Leaders
 
 
 ### Proofs
@@ -51,6 +46,53 @@ The storage providers who mine and provide the data storage services must prove 
 - They must store all the data submitted by the client
 
 - They must store it during the whole lifetime of the deal
+
+
+## Filecoin Storage Basics
+
+The Filecoin network is a distributed, peer-to-peer network formed by Filecoin Storage Providers. The storage providers do two basic things for the Filecoin network; the nodes that the storage providers contribute to the blockchain consensus in a process known as mining, and also provide data storage. There are different kinds of proofs that the Filecoin protocols employ that data providers must satisfy to participate as a storage provider on the network.
+
+One key thing to understand is that with Filecoin, data is not stored on the blockchain, but in order to win block rewards it requires those who help mine  the token to prove that they are storing data under terms agreed to (such as the length of time they store that data for)
+
+
+#### Filecoin Storage Basics | Rod Vagg
+
+Learn about mining, sealing, sector types, Collateral, making deals, Filecoin+, offline deals.
+
+{{< youtube Sz2OQc2WOdA >}}
+
+
+### Filecoin Nodes
+
+Filecoin Nodes or Filecoin clients are peers that sync the Filecoin blockchain and validate the messages in every block, which once applied, provide a global state.
+
+Filecoin Nodes can also publish different types of messages to the network by broadcasting them.
+
+
+### Storage and Retrieval
+
+The storage providers provide services to the network by executing different types of deals and appending new blocks to the chain (every 30 seconds), for which they collect FIL rewards.
+
+
+#### Storage & Retrieval Markets | Filecoin Research - Juan Benet and Jeromy Johnson
+
+In this 4 minute talk by Jeromy Johnson & Juan Benet, understand how Filecoin, which differs from most blockchains in how it incentivizes storage, interacts with both storage and retrieval markets.
+
+{{< youtube TzfcqPzSR0s >}}
+
+
+### Deals
+
+There are two main types of deals in Filecoin: storage deals and retrieval deals.
+
+Storage deals are agreements between clients and storage providers to store some data in the network. Once a deal is initiated, and the storage provider has received the data to store, it will repeatedly prove to the chain that it is still storing the data per the agreement so that it can collect rewards. If not, the storage provider will be slashed and lose FIL.
+
+![Anatomy of a Filecoin Deal](anatomy.png)
+
+
+#### Sectors
+
+Sectors are the units of proven storage which can either be 32GiB or 64Gib. When storage providers make a deal, they submit proof of these sectors of storage, and make a deal, for which they are paid out over time
 
 
 ## Actors and Addresses
@@ -77,55 +119,6 @@ In Filecoin, addresses are used to identify actors. There are 4 address types:
 * `3` - BLS Public Key
 
 
-## Filecoin Storage Basics
-
-The Filecoin network is a distributed, peer-to-peer network formed by Filecoin Storage Providers. The storage providers do two basic things for the Filecoin network; the nodes that the storage providers contribute to the blockchain consensus in a process known as mining, and also provide data storage. There are different kinds of proofs that the Filecoin protocols employ that data providers must satisfy to participate as a storage provider on the network.
-
-Peers communicate over secure channels to distribute information around the network (gossiping). They transfer data among themselves, discover other peers, and maintain a well-connected swarm; information like blocks and messages flow swiftly even when thousands of peers participate.
-
-
-### Filecoin Storage Basics | Rod Vagg
-
-Learn about mining, sealing, sector types, Collateral, making deals, Filecoin+, offline deals.
-
-[//]: # (https://www.youtube.com/watch?v=Sz2OQc2WOdA)
-
-{{< youtube Sz2OQc2WOdA>}}
-
-
-### Filecoin Nodes
-
-Filecoin Nodes or Filecoin clients are peers that sync the Filecoin blockchain and validate the messages in every block, which once applied, provide a global state.
-
-Filecoin Nodes can also publish different types of messages to the network by broadcasting them.
-
-
-### Storage and Retrieval
-
-The storage providers provide services to the network by executing different types of deals and appending new blocks to the chain (every 30 seconds), for which they collect FIL rewards.
-
-
-### Storage & Retrieval Markets | Filecoin Research - Juan Benet and Jeromy Johnson
-
-In this 4 minute talk by Jeromy Johnson & Juan Benet, understand how Filecoin, which differs from most blockchains in how it incentivizes storage, interacts with both storage and retrieval markets.
-
-{{< youtube TzfcqPzSR0s >}}
-
-
-### Deals
-
-There are two main types of deals in Filecoin: storage deals and retrieval deals.
-
-Storage deals are agreements between clients and storage providers to store some data in the network. Once a deal is initiated, and the storage provider has received the data to store, it will repeatedly prove to the chain that it is still storing the data per the agreement so that it can collect rewards. If not, the storage provider will be slashed and lose FIL.
-
-![Anatomy of a Filecoin Deal](anatomy.png)
-
-
-#### Sectors
-
-Sectors are the units of proven storage which can either be 32GiB or 64Gib. When storage providers make a deal, they submit proof of these sectors of storage, and make a deal, for which they are paid out over time
-
-
 ## DRAND
 
 Drand is a distributed, bias-resistant, unpredictable, and publicly verifiable randomness generator that is key to the Filecoin implementation in how it provides unpredictable, decentralized and publicly verifiable random values for the blockchain. [Learn more about how Drand works in the docs](https://drand.love/docs/overview/#how-drand-works)
@@ -137,7 +130,7 @@ Drand is a distributed, bias-resistant, unpredictable, and publicly verifiable r
 
 {{< youtube ydwW2HFFxNI >}}
 
-drand is a distributed randomness beacon. It provides publicly-verifiable, unpredictable, and bias-resistant random numbers as a public service. Some of the featuresinclude:
+Drand is a distributed randomness beacon. It provides publicly-verifiable, unpredictable, and bias-resistant random numbers as a public service. Some of the featuresinclude:
 
 
 
@@ -167,8 +160,6 @@ The active [Mainnet](https://docs.filecoin.io/developers/infrastructure/networks
 
 ### Testnets
 
-
-
 * [Calibration](https://docs.filecoin.io/developers/infrastructure/networks/#calibration), a test network for storage providers to test their node configuration.
 * [Hyperspace](https://docs.filecoin.io/developers/infrastructure/networks/#hyperspace), the primary test network for smart-contract and actor developers.
 * [Wallaby](https://docs.filecoin.io/developers/infrastructure/networks/#wallaby), an early smart-contract and actor test network for bleeding edge [Filecoin Virtual Machine](https://docs.filecoin.io/developers/smart-contracts/filecoin-virtual-machine/) deployments.
@@ -186,7 +177,7 @@ Currently for those using lotus directly, it is recommended that you have a hard
 {{% level type="[deep]" %}}
 
 
-### Filecoin for Developers & Builders | Pooja Shah
+#### Filecoin for Developers & Builders | Pooja Shah
 
 In this talk by Pooja Shah of Protocol Labs, learn about the basic functioning and purpose of Filecoin. The Core features and use cases of Filecoin will be covered, and Pooja will also go over some of the activity going on in the ecosystem, including the core developer projects that make it possible to implement, develop, and use Filecoin.
 
@@ -203,5 +194,11 @@ In this talk by Pooja Shah of Protocol Labs, learn about the basic functioning a
 * Content addressing
 * Data persistence
 
-{{% /level %}}
 
+### Filecoin Use Cases
+
+* Filecoin for data storage
+* Filecoin for payments
+* Ancillary tools and services
+
+{{% /level %}}
