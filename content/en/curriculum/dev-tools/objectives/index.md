@@ -28,7 +28,7 @@ To learn more about the team members and maintainers of different projects, see 
 ## Technology & Projects
 * **[IPNI Network Indexer](/curriculum/dev-tools/network-indexer)**: A project designed to index the data on the Filecoin and IPFS networks
 * **[Bacalhau](/curriculum/dev-tools/bacalhau)**: A framework that allows you to perform distributed computations on IPFS
-* * **[Fleek](/curriculum/dev-tools/fleek/)**: For hosting and building DApps on web3
+* **[Fleek](/curriculum/dev-tools/fleek/)**: For hosting and building DApps on web3
 * **[Piñata](/curriculum/dev-tools/pinata/)**: A pinning service for individuals and creators
 * **[Web3.Storage](/curriculum/dev-tools/web3-storage/)**: The data layer for uploading and storing content on IPFS and Filecoin
 * **[Spice.ai](/curriculum/dev-tools/spice/)**: Web3 and blockchain solutions that are enabling developers to build the next generation of apps
