@@ -72,8 +72,6 @@ There are also data onboarding services for those who don’t want to run their 
 
 Filecoin offers several advantages over typical, centralized data storage solutions, by creating a marketplace with a wide range of options for storing your data. Those who store their data on the Filecoin network have the advantage of:
 
-
-
 * **Verifiable Storage** – Rather than needing to trust a cloud storage provider or rely on legal recourse, the Filecoin Protocol cryptographically verifies data storage.
 * **Open Participation** – Anyone with sufficient hardware and an internet connection can be a storage provider (Filecoin miner) for the Filecoin Network.
 * **Empowers Local Optimization** – Driven by open participation, market forces will enable more efficient and distributed data storage and communication than centralized storage platforms. The distributed network allows for a more local and resilient architecture and data availability.
@@ -86,7 +84,7 @@ Filecoin offers several advantages over typical, centralized data storage soluti
 
 ### Filecoin Use Cases
 
-Filecoin is used to manage data storage in a decentralized network of data storage. Note that this data is not stored _on_ the blockchain, but the protocol is used to verify and incentivize storage on this network..  Filecoin also be used like any other token, as a currency for payment.
+Filecoin is used to manage data storage in a decentralized network of data storage. Note that this data is not stored _on_ the blockchain, but the protocol is used to verify and incentivize storage on this network. Filecoin can also be used like any other token, as a currency for payment.
 
 In addition to the current uses and markets for Filecoin, there is development going on in other exciting areas:
 * [Data Retrieval Markets](https://retrieval.market/) that retrieve and deliver data stored with Filecoin storage providers
