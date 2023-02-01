@@ -29,6 +29,17 @@ First, you provide the CID of the Python script to the Bacalhau network.
 The script is fetched from IPFS, and is executed by one or several Bacalhau nodes.
 After the computation is finished, the results (the numbers printed) are published to IPFS, with a new CID, `QmFH...`.
 
+## Why Is It Important?
+
+* Sometimes, **you need to perform tasks that are heavy in computational terms**, and you may not have the right hardware to execute them.
+The Bacalhau network **provides you with a wide range of machines and resources** that you can use to run your computations.
+
+* Bacalhau offers **built-in integration** with IPFS.
+You can use IPFS files and folders as an input in your computations, and the results are stored in IPFS.
+
+* In the future, running heavy computations might not be free.
+However, Bacalhau **nodes have the ability to bid for executing computations**, thus creating a market where supply and demand can offer really competitive prices.
+
 ## Architecture
 
 Every node in the Bacalhau network can act as a _requester node_ or a _compute node_.
@@ -75,3 +86,9 @@ The IPFS folder with CID `QmfKJT13h5k1b23ja3ZCVg5nFL9oKz2bVXc8oXgtwiwhjz` is mou
 3. The file is read by using the `cat` command.
 
 Now that you understand the basics of Bacalhau, check out the great examples in the [official documentation](https://docs.bacalhau.org/examples/).
+
+## Resources
+
+* [Bacalhau Examples](https://docs.bacalhau.org/examples/)
+* [Running a Bacalhau Node](https://docs.bacalhau.org/running-node/quick-start)
+* [Bacalhau CLI Reference](https://docs.bacalhau.org/all-flags)
