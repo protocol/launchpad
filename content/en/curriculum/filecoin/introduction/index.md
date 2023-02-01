@@ -59,11 +59,7 @@ Filecoin facilitates open markets for storing and retrieving files that anyone c
 
 Available storage and the price of that storage is not controlled by any single entity. Instead, the Filecoin network facilitates open markets for storing and retrieving files (by making storage deals between clients and providers) that anyone can participate in. At any time, users can verify that their files are being stored correctly by looking at proofs on Filecoin’s blockchain.
 
-Storage providers are able to leverage the Filecoin technology to store content-addressed data using the APIs and data onboarding solutions such as [Boost](https://boost.filecoin.io/) for the [Lotus](https://lotus.filecoin.io/) Filecoin implementation, and new functionality that will expands the potential for earning Filecoin such as:
-
-* [Saturn CDN](https://strn.network/) where participants can earn Filecoin caching and serving content
-* [Bacalhau ](https://strn.network/)compute, building services to compute over data that are stored using IPFS technology
-* [FVM](https://fvm.filecoin.io/) smart contracts, adding programmability to the Filecoin blockchain
+Storage providers are able to leverage the Filecoin technology to store content-addressed data using the APIs and data onboarding solutions such as [Boost](https://boost.filecoin.io/) for the [Lotus](https://lotus.filecoin.io/) Filecoin implementation, and new functionality that is expanding the potential for Filecoin markets.
 
 There are also data onboarding services for those who don’t want to run their own Filecoin node, but want to upload data onto Filecoin. Because formatting & uploading the data can be a a complex process, there are several other services that can do this, either using a simpler interface, or working closely with those who have large amounts of data to store.
 
@@ -72,20 +68,35 @@ There are also data onboarding services for those who don’t want to run their 
 * [NFT.Storage](https://nft.storage/) is similar to web3.storage, but specially designed for NFTs
 * [Lighthouse.Storage](https://www.lighthouse.storage/) Provides storage for a one-time price on the IPFS and Filecoin networks
 
+## Features and Use Cases
 
-## Filecoin Features
+Filecoin offers several advantages over typical, centralized data storage solutions, by creating a marketplace with a wide range of options for storing your data. Those who store their data on the Filecoin network have the advantage of:
 
-* **Verifiable Storage** – Rather than needing to trust a cloud storage provider or rely on legal recourse, the Filecoin Protocol cryptographically verifies data storage
-* **Open Participation** – Anyone with sufficient hardware and an internet connection can be a storage provider (Filecoin miner) for the Filecoin Network
-* **Empowers Local Optimization** – Driven by open participation, market forces will enable more efficient and distributed data storage and communication than centralized storage platforms, which allows for a more local and resilient architecture and data availability
-* **Flexible Storage Options** – As an open platform, the network has the flexibility for the creation & disseminations of tools and services provided by the community of developers improving and building on the protocol
+
+
+* **Verifiable Storage** – Rather than needing to trust a cloud storage provider or rely on legal recourse, the Filecoin Protocol cryptographically verifies data storage.
+* **Open Participation** – Anyone with sufficient hardware and an internet connection can be a storage provider (Filecoin miner) for the Filecoin Network.
+* **Empowers Local Optimization** – Driven by open participation, market forces will enable more efficient and distributed data storage and communication than centralized storage platforms. The distributed network allows for a more local and resilient architecture and data availability.
+* **Flexible Storage Options** – As an open platform, the network has the flexibility for the creation & disseminations of tools and services provided by the community of developers improving and building on the protocol.
 * **A Community Network** – Filecoin provides participants the opportunity to have stake in the networkʼs success. Participants in the network benefit by working together to improve the Filecoin network as a whole
+* **Granular Control** – Over parameters for data storage and control over storage pricing
+* **Content Addressing** – Means that your data can be stored and located by anyone, anywhere, as well as indexed and searched by content identifier instead of a URL that is tied to an individual storing that data
+* **Data Persistence** – for the amount of time that you can choose & negotiate with those providing the storage
 
 
-### Filecoin Implementations
+### Filecoin Use Cases
+
+Filecoin is used to manage data storage in a decentralized network of data storage. Note that this data is not stored _on_ the blockchain, but the protocol is used to verify and incentivize storage on this network..  Filecoin also be used like any other token, as a currency for payment.
+
+In addition to the current uses and markets for Filecoin, there is development going on in other exciting areas:
+* [Data Retrieval Markets](https://retrieval.market/) that retrieve and deliver data stored with Filecoin storage providers
+* [Compute over Data](https://www.cod.cloud/) to process and deliver data
+* [FIlecoin Virtual Machine (FVM)](https://fvm.filecoin.io/) to write smart contracts and introduce new functionality to the blockchain with programmable actors
+
+
+## Filecoin Implementations
 
 There are different languages and supported versions of the Filecoin blockchain, maintained by different entities. These different implementations all have the same core capabilities and features, and run on the same network, but because they are different programming languages and maintained by different entities.
-
 * [Lotus](https://lotus.filecoin.io/) is maintained by Protocol Labs and written in Go
 * [Venus](https://github.com/filecoin-project/venus) is an open source project also written in the Go programming language, with slightly different architecture and features
 * [Forest](https://github.com/ChainSafe/forest) is maintained by Chainsafe and is written in the Rust programming language
