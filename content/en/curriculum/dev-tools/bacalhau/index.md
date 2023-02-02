@@ -28,7 +28,7 @@ First, you provide the CID of the Python script to the Bacalhau network.
 The script is fetched from IPFS, and is executed by one or several Bacalhau nodes.
 After the computation is finished, the results (the numbers printed) are published to IPFS, with a new CID, `QmFH...`.
 
-## Why Is It Important?
+## Why Bacalhau?
 
 Bacalhau opens up the possibility for a market where clients can pay Bacalhau providers to perform these compute functions over data in and IPFS network, saving the clients time and effort of downloading large datasets, and creating a new type of incentive for those who are providers in an IPFS network.
 
