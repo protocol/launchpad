@@ -12,8 +12,7 @@ level:
 - deep
 ---
 
-Bacalhau is a framework that allows you to perform distributed computations on IPFS.
-These computations are executed in the form of Docker containers or WASM programs.
+Bacalhau is a framework that allows you to perform distributed computations on IPFS.  These computations are executed in the form of Docker containers or WASM programs.
 
 The **Bacalhau network is a set of computers (nodes) working ready to perform computations**.
 You can send your computation (Docker container or WASM) to the Bacalhau network and then read the results.
@@ -31,14 +30,17 @@ After the computation is finished, the results (the numbers printed) are publish
 
 ## Why Is It Important?
 
+Bacalhau opens up the possibility for a market where clients can pay Bacalhau providers to perform these compute functions over data in and IPFS network, saving the clients time and effort of downloading large datasets, and creating a new type of incentive for those who are providers in an IPFS network.
+
 * Sometimes, **you need to perform tasks that are heavy in computational terms**, and you may not have the right hardware to execute them.
 The Bacalhau network **provides you with a wide range of machines and resources** that you can use to run your computations.
 
 * Bacalhau offers **built-in integration** with IPFS.
 You can use IPFS files and folders as an input in your computations, and the results are stored in IPFS.
 
-* In the future, running heavy computations might not be free.
-However, Bacalhau **nodes have the ability to bid for executing computations**, thus creating a market where supply and demand can offer really competitive prices.
+* Bacalhau **nodes have the ability to bid for executing computations**
+
+* With Bacalhau, there is the possibility of a **new market and incentivizationfor those who provide the infrastructure** of distributed IPFS networks.
 
 ## Architecture
 
