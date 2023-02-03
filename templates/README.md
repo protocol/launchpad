@@ -90,4 +90,89 @@ section = "<make up a unique section>"
 description = "<Short description>"
 ```
 
+### How to add Objectives to Curriculum Modules
+First, you will need to add your goals to the `content/_default/goals.json` file, like so
+
+```json
+ "filecoin": {
+    "1.0": {
+      "description": "Know what...",
+      "subgoals": [
+        {
+          "id": "1.01",
+          "description": "Understand ..."
+        },
+        {
+          "id": "1.02",
+          "description": "Be able to ..."
+        },
+        {
+          "id": "1.03",
+          "description": "Be able to ..."
+        }
+      ],
+      "levels": [
+        "shallow", "deep"
+      ]
+    },
+    "1.2": {
+      "description": "Understand ...",
+      "subgoals": [],
+      "levels": [
+        "shallow", "deep"
+      ]
+    },
+    "1.3": {
+      "description": "Describe ...",
+      "subgoals": [],
+      "levels": [
+        "shallow", "deep"
+      ]
+    }
+  }
+}
+```
+#### Objectives Page
+To add and 'Objectives' page, in the header of the `.md` file, add in the field `identifier: xxx-objectives` to the `menu: curriculum` object
+```markdown
+menu:
+  curriculum:
+    parent: "curriculum-filecoin"
+    identifier: "filecoin-objectives"
+weight: 375
+```
+
+
+Also add in the and `objectives:` object at the end of the metadata which will add in all the top level goals (1.0, 1.1, etc):
+
+
+```markdown
+objectives:
+    show: true
+    showTitle: false
+    introPage: true
+```
+
+
+![Objectives Page](objectives-page.png)
+
+#### Learning Objectives & Sub-Goals
+To add an objectives & it's sub goals to a page, at the end add in a top-level `objectives:` object with goal and sub-goals
+
+```markdown
+objectives:
+  show: true
+  goals:
+  - "1.0"
+  subgoals:
+  - 1.01
+  - 1.02
+  - 1.03
+  - 1.04
+  - 1.05
+```
+![Learning Objectives](learning-objectives.png)
+
+
+
 
