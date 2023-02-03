@@ -87,9 +87,9 @@ Filecoin offers several advantages over typical, centralized data storage soluti
 Filecoin is used to manage data storage in a decentralized network of data storage. Note that this data is not stored _on_ the blockchain, but the protocol is used to verify and incentivize storage on this network. Filecoin can also be used like any other token, as a currency for payment.
 
 In addition to the current uses and markets for Filecoin, there is development going on in other exciting areas:
-* [Data Retrieval Markets](https://retrieval.market/) that retrieve and deliver data stored with Filecoin storage providers
-* [Compute over Data](https://www.cod.cloud/) to process and deliver data
-* [FIlecoin Virtual Machine (FVM)](https://fvm.filecoin.io/) to write smart contracts and introduce new functionality to the blockchain with programmable actors
+* [Data Retrieval Markets](https://retrieval.market/) that retrieves and deliver data stored with Filecoin storage providers
+* [Compute over Data](https://www.cod.cloud/) is creating a network of providers who compute over large amounts of data on distributed networks like IPFS
+* [FIlecoin Virtual Machine (FVM)](https://fvm.filecoin.io/) enabling smart contracts and introducing new functionality to the blockchain with programmable actors
 
 
 ## Filecoin Implementations
