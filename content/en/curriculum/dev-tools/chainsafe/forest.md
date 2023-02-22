@@ -20,9 +20,9 @@ Forest put its focus on being a light infrastructure node and having an enhanced
 
 - the ability to generate its own snapshots for calibration and main network
 - the ability to generate snapshots with 10 GB memory 
-- fast snapshot download time: main net (under 1 hour), calibration net (under 1 mintute)
+- fast snapshot export time: main net (under 1 hour), calibration net (under 1 minute)
 - the ability to switch networks during runtime with a flag 
-- the ability to run Forest with docker containers 
+- the ability to run Forest with docker containers as first class citizens with native images for amd64 and arm64
 
 
 ## Tutorial 
@@ -31,7 +31,7 @@ Please follow the [Forest documentation](https://github.com/ChainSafe/forest) if
 
 ## Coming Next
 A few key features that you can expect from the Forest client in the near future:
-- Full functional Filecoin wallet handling 
+- Filecoin wallet handling capabilities including send, receive and store FIL
 - The ability to make storage and retrieval deals
 - A javascript console into the Forest CLI (inspired by Geth Go Ethereum Client) for developers to retrieve chain data, interact with chain state, etc 
 
@@ -39,6 +39,7 @@ A few key features that you can expect from the Forest client in the near future
 * [Forest repo](https://github.com/ChainSafe/forest)
 * [Forest releases](https://github.com/ChainSafe/forest/releases)
 * [Forest wiki](https://github.com/ChainSafe/forest/wiki)
+* [Forest docker documentation](https://github.com/ChainSafe/forest/blob/main/documentation/src/docker.md)
 
 
 ## Support
