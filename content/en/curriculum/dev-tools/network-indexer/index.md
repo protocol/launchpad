@@ -105,12 +105,12 @@ Installing and running the indexer on your local machine makes it possible for y
 
 In this tutorial we are going to run an indexer locally, however it's also possible to advertise your data to cid.contact directly. Running a local node makes it possible for cid.contact to dial back into your node to fetch a chain of advertisements. This is possible without extra firewall configurations because of the provider-node setup in the next sections.
 
-You can see the documentation, CLI commands, and thorough instructions at [https://github.com/filecoin-project/storetheindex/#install](https://github.com/filecoin-project/storetheindex/#install).
+You can see the documentation, CLI commands, and thorough instructions at [https://github.com/ipni/storetheindex/#install](https://github.com/ipni/storetheindex/#install).
 
 Install storetheindex:
 
 ```
-$ go install github.com/filecoin-project/storetheindex@v0.4.28
+$ go install github.com/ipni/storetheindex@v0.5.8
 ```
 
 Initialize the storetheindex repository and configuration:
@@ -266,12 +266,12 @@ In the`.ipfs/config` file, find the "Identity" field and write down the `PeerID`
 The index-provider should be run as a sidecar to both post an announcements on libp2p that they have new data (the CID and other metadata), and make it possible for the indexer to make a connection & transmit the data from your local machine behind a firewall without having to set up port forwarding.
 
 
-See [https://github.com/ipni/index-provider#install](https://github.com/filecoin-project/index-provider#install) for full instructions on run a standalone provider daemon instance.
+See [https://github.com/ipni/index-provider#install](https://github.com/ipni/index-provider#install) for full instructions on run a standalone provider daemon instance.
 
 Install index-provider:
 
 ```
-$ go install github.com/filecoin-project/ipni/cmd/provider@v0.10.2
+$ go install github.com/ipni/ipni/cmd/provider@v0.10.2
 ```
 
 Initialise the index-provider repository and configuration:
