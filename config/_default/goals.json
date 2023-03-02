@@ -1,8 +1,26 @@
 {
   "pln": {
-    "1.1": {
-      "description": "Know what the PL Network is, how Protocol Labs evolved from company to network, as well as the projects, tooling, and DApps being built on the PLN",
-      "subgoals": []
+    "1.0": {
+      "description": "Understand the Protocol Lab Network, how Protocol Labs evolved from a company to a network, and where it is headed.",
+      "subgoals": 
+      [
+        {
+          "id": "1.01",
+          "description": "Describe the history of Protocol Labs (PL) and its evolution"
+        },
+        {
+          "id": "1.02",
+          "description": "Understand what the Protocol Labs Network (PLN) is"
+        },
+        {
+          "id": "1.03",
+          "description": "Identify the different teams/groups of PL and PLN that help move the organization into the future"
+        },
+        {
+          "id": "1.04",
+          "description": "Understand the resources and services available for PLN members"
+        }
+      ]
     },
     "1.2": {
       "description": "Understand what the resources and tools are within the PL Network to support teams, individuals, companies, and general growth of our mission",
