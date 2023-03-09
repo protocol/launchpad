@@ -83,7 +83,6 @@ CIDs are the native link format for IPLD that distinguishes it from a simple dat
 * IPLD brings its own formats that represent CIDs natively in the encoded bytes.
 * IPLD can also be used as a lens through which to view other content addressed formats, such as Git, or Bitcoin from which we can derive CIDs by assumption.
 
-
 ## UnixFS
 
 [UnixFS](https://docs.ipfs.tech/concepts/file-systems/#unix-file-system-unixfs) is a data format for creating directory & file hierarchies and Merkle DAGs. UnixFS does this by adding an encoding layer _above_ the DAG-PB codec that takes the file metadata, such as timestamps, permissions, and labels for types of data (mime types), and converts it into bytes that make it easier to transfer data to other files, databases, or memory storage.
@@ -100,6 +99,9 @@ To achieve this you will need a **sharding** system that will break the data up 
 More information about UnixFS can be found in the [**IPFS docs**](https://docs.ipfs.io/concepts/file-systems/#unix-file-system-unixfs) or in the UnixFS [**specification**](https://github.com/ipfs/specs/blob/master/UNIXFS.md).
 
 ## IPLD Data Types and Formats
+
+## Visualizing DAGs with IPLD | Marco Salinas - Fierro Labs
+{{% youtube 9bTEBDildIQ %}}
 ### Intro to IPLD Data Model
 The IPLD Data Model exists to give structure to how data is structured, organized, and moved through the various states it can be accessed and manipulated in. This includes:
 * In-memory data, for short or long term
