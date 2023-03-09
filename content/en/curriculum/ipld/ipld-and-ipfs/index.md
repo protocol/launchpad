@@ -101,7 +101,7 @@ More information about UnixFS can be found in the [**IPFS docs**](https://docs.i
 ## IPLD Data Types and Formats
 
 ## Visualizing DAGs with IPLD | Marco Salinas - Fierro Labs
-{{% youtube 9bTEBDildIQ %}}
+{{% youtube Oh08rmAVeMQ %}}
 ### Intro to IPLD Data Model
 The IPLD Data Model exists to give structure to how data is structured, organized, and moved through the various states it can be accessed and manipulated in. This includes:
 * In-memory data, for short or long term
