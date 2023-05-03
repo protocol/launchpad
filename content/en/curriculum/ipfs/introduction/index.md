@@ -45,6 +45,11 @@ Though it gets difficult to predict what is going to happen in the next, say, 10
 
 Computation has gone through so many phases; from the first computers, to machines that can timeshare, to multiprocessing and sandboxed VMs, to user terminals, to networked computers with multiprocessing, now with personal computers networked across a worldwide internet that all came from a relatively simple set of functions and data transmission. Now, IPFS is on the front lines of the Web3 evolution that will bring us to the next stage in computing.
 
+#### The State of the IPFS Ecosystem  | Molly Mackinlay
+In this video from IPFS Camp 2022, Molly Mackinaly highlights the major events and growth in the ecosystem since 2019 and looks toward the future of IPFS. 
+
+{{< youtube fGwhPLik3_4 >}}
+
 #### How IPFS Works | Steve Allen
 In this video, Steve Allen describes how IPFS **Imports, Names, Finds** and **Fetches** content.
 
