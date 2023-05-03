@@ -14,15 +14,15 @@ level:
 
 ## The Future of Web3
 
-At the end of 2022, Protocol Labs consists of 450+ companies and projects building in our network. As the web3 space accelerates, now is a great time for high-growth researchers & developers inside and outside web3 to ramp up their “InterPlanetary” knowledge and contribute to these cutting-edge technologies.
+At the end of 2022, Protocol Labs consists of 450+ companies and projects building in our network. As the Web3 space accelerates, now is a great time for high-growth researchers & developers inside and outside Web3 to ramp up their “InterPlanetary” knowledge and contribute to these cutting-edge technologies.
 
 From core OSS contribution, to Radius grants distributed systems engineers, to network researchers, to community managers, to startup operators, there are a vast number of exciting opportunities across PLN teams and companies.
 
-#### The next Internet Revolution | Juan Benet | TEDxSanFrancisco
+#### Protocol Lab's Vision | Juan Benet | LabWeek22
 
-{{< youtube 2RCwZDRwk48 >}}
+{{< youtube 8lDwBnQ9Wuc >}}
 
-_Learn about how important a distributed system like IPFS is in preserving documents, and how we are moving towards a web of the future. Every day hundreds of developers are putting together more of these pieces, and many applications have already been created leveraging this technology. Understand the possibilities that exist for a decentralized, free internet._
+_Learn about how Protocol Labs and the advancement of computing is pushing humanity forward._
 
 ## Background, Work, & Business Model
 
