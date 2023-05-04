@@ -27,6 +27,7 @@ This portal is the central point of reference for all the resources available to
 * The [PLN Member Directory](https://www.plnetwork.io/directory/teams) is a listing of all the companies, projects, and teams in the wider PLN
 * The [PLN Code of Conduct](https://protocol.almanac.io/docs/pln-code-of-conduct-ymBUYyonmhfvizGu6yOpXH1qkuWYce96) outlines the expectations and code of conduct for all members of our network
 * The [Glossary](https://protocol.almanac.io/docs/glossary-ycx3uRbXUM3d7uf1EBz89msUmb1UjzR7) provides a comprehensive list of terms to help you navigate web3
+* [Mosia](https://www.mosaia.io/) our very own web3 service provider marketplace where you kind find web3 native companies to service all of your business needs from tokenomics to marketing. 
 
 
 ### Protocol Labs Ecosystem Directories
