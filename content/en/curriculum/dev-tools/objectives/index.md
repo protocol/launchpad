@@ -34,7 +34,7 @@ To learn more about the team members and maintainers of different projects, see 
 * **[Spice.ai](/curriculum/dev-tools/spice/)**: Web3 and blockchain solutions that are enabling developers to build the next generation of apps
 * **[Textile](/curriculum/dev-tools/textile/)**: A suite of developer tools, including Powergate, Buckets, and ThreadDB, and more
 * **[Ceramic](/curriculum/dev-tools/ceramic/)**: Identity-based storage & indexing
-* **[thridweb](https://thirdweb.com/)**:thirdweb is a complete web3 development framework that provides everything you need to build, manage, and deploy smart contracts. We offer SDKs in common languages, UI components, storage, RPC nodes, on chain data, and more tools to make it easier to build in web3.
+* **[thirdweb](https://thirdweb.com/)**:thirdweb is a complete web3 development framework that provides everything you need to build, manage, and deploy smart contracts. We offer SDKs in common languages, UI components, storage, RPC nodes, on chain data, and more tools to make it easier to build in web3.
 
 **Other Project Links**
 * **[Saturn](https://strn.network/)**: The web3 open-source Content Delivery Network (CDN). Run your own node and earn Filecoin
