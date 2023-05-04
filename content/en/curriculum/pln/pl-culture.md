@@ -25,6 +25,9 @@ _Watch at least one!_
 #### 2018
 
 {{< youtube RGUETp7QMhc >}}
+#### 2018
+
+{{< youtube RGUETp7QMhc >}}
 
 #### 2019
 
@@ -37,6 +40,10 @@ _Watch at least one!_
 #### 2021
 
 {{< youtube k6L3pA6F0tI >}}
+
+#### 2022
+
+{{< youtube y16TDxV5C0 >}}
 
 ## Communication at Protocol Labs
 
