@@ -52,16 +52,15 @@ Spend less time configuring encryption or managing content addresses with Thread
 
 [Read More](https://docs.textile.io/threads/)
 
-
 ## Other Resources
+
 Join our public Slack, visit our GitHub, follow us on Twitter, and check out the Blog!
 
 [Read More](https://docs.textile.io/powergate/) | [On Github](https://github.com/textileio/powergate/)
 
-
 Learn more about Filecoin with the [Interview with Andrew Hill](https://filecoin.io/blog/posts/meet-andrew-hill/)
 
-#### Getting Started with Filecion (Using Textile & Powergate) | ETHGlobal – Andrew Hill
+#### Getting Started with Filecoin (Using Textile & Powergate) | ETHGlobal – Andrew Hill
 
 A workshop for beginners and intermediate developers with Andrew Hill of Textile. This is for anyone who understands the basics and wants to build something now.
 
