@@ -18,7 +18,7 @@ The [IPNI network indexer](https://github.com/ipni) is a project created and mai
 ## Why Use Indexed Content Routing?
 Protocol Labs' Network Indexer (IPNI) enables any user or developer to query both the IPFS and Filecoin public nodes to find content-addresses data using the [CID](../ipfs/content-addressing/#content-addressing).
 
-Since IPFS and Filecoin use different protocols to retrieve data (IPFS uses Bitswap, and Filecion uses Graphsync), there is a need for a solution that makes it possible for anyone who would want to retrieve and use that data to locate and understand which protocol they can use to retrieve that data and use it in other applications.
+Since IPFS and Filecoin use different protocols to retrieve data (IPFS uses Bitswap, and Filecoin uses Graphsync), there is a need for a solution that makes it possible for anyone who would want to retrieve and use that data to locate and understand which protocol they can use to retrieve that data and use it in other applications.
 
 Kubo 16 introduced Delegated Routing protocol that allows a node to publish its CIDs to alternative routing systems alongside the DHT and be used for subsequent content-addressed data lookups.
 
@@ -35,7 +35,8 @@ Laern more about IPNI, the motivations behind it, and potential use cases, see t
 IPNI builds its index by processing [Advertisements](https://github.com/ipni/storetheindex/blob/main/api/v0/ingest/schema/schema.ipldsch#L40). The Advertisement construct allows a Storage Provider to offer their CIDs to IPNI, which would make these CIDs available for fast lookups once the Advertisement has been processed. Since Filecoin and IPFS store data on separate networks, using different methods of data transfer, there are who different ways that the information about the CIDs are communicated to IPNI.
 
 ### Advertising Filecoin CIDs
-Storage providers such as [Estuary](https://estuary.tech/) who store on Filecion can publish their content to the indexer using [index-provider](https://github.com/ipni/index-provider) library. When a deal is made and data is published to Filecoin, they would also [advertise](https://github.com/ipni/storetheindex/blob/main/api/v0/ingest/schema/schema.ipldsch#L40) to IPNI. An update is made available on a libp2p to a topic that IPNI follows and then reaches out to the Storage Providers for an update when sees it.
+
+Storage providers such as [Estuary](https://estuary.tech/) who store on Filecoin can publish their content to the indexer using [index-provider](https://github.com/ipni/index-provider) library. When a deal is made and data is published to Filecoin, they would also [advertise](https://github.com/ipni/storetheindex/blob/main/api/v0/ingest/schema/schema.ipldsch#L40) to IPNI. An update is made available on a libp2p to a topic that IPNI follows and then reaches out to the Storage Providers for an update when sees it.
 
 ### Advertising IPFS CIDs
 When data is added to the IPFS network via kubo version 16 and above, there is an API used with the Reframe or [go-delegated-routing](https://github.com/ipfs/go-delegated-routing) that is used to send data about those CIDs to IPNI. Anyone who published to ipfs using Kubo can configure their node to advertise CIDs into both the DHT and IPNI.
