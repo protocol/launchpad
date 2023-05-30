@@ -57,7 +57,7 @@ _In Protocol Labs, there are new projects and technologies being invented every 
 
 The Protocol Labs Summit was a great recap of the Impact that the PL Network created in 2022, and how the PL Network is structured today: as an Innovation Network that _drives breakthroughs in computing to push humanity forward_.
 
-{{< youtube b6tnt24cIIw&t=9358s >}}
+{{< youtube "b6tnt24cIIw?start=9358" >}}
 
 Check out this section of the Lab Summit recording up until 03:04:24 for an overview of the core offerings that make up the PL Network as a product:
 * Network
