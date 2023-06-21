@@ -126,4 +126,31 @@ In this talk by Pooja Shah of Protocol Labs, learn about the basic functioning a
 
 **Lotus Common Architecture** Currently for those using lotus directly, it is recommended that you have a hardware configuration with 32GB of RAM, an 8-core CPU, and at least 200 GB of SSD storage. See the [Filecoin docs on Hardware requirements](https://docs.filecoin.io/storage-provider/hardware-requirements/)
 
+#### Getting Started with Filecoin
+Now that you understand the basics of Filecoin, here are some ways to start building on the network:
+
+**Run a Local Testnet**
+The easiest way to start is by running a local testnet using Lotus. This will allow you to deploy smart contracts, send messages, and get a feel for how Filecoin works without using real FIL. Follow the guide to set up Lotus and run a local testnet.
+
+**Try Examples and Tutorials**
+Work through the example contracts, dapps, and tutorials in the Filecoin documentation. Some options:
+
+* Deploy an ERC-20 contract
+* Build a "Hello, World!" dapp
+* Create and fund a multisig wallet
+* Build Your Own Dapp
+* Once you get the hang of Filecoin development, you can start building your own decentralized application! Some project ideas:
+
+**A decentralized storage marketplace**
+* A non-fungible token (NFT) minting and trading platform
+* A DAO for funding public goods
+* Decentralized finance (DeFi) apps for lending, borrowing, and more
+* Participate in the Community
+* The Filecoin community is active and always open to new members. Some ways to get involved:
+
+**Join the Filecoin Slack and Discord**
+* Contribute to Lotus, documentation, or other repos on GitHub
+* Attend or speak at upcoming events like Distributed Camp
+* Get Filecoin updates by following @Filecoin on Twitter
+
 {{% /level %}}
