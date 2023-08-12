@@ -4,7 +4,11 @@
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [
-        "Filecoin"
+        "Filecoin",
+        "Gitbook",
+        "IPFS",
+        "IPLD",
+        "Toolkits"
     ],
     "ignoreWords": [],
     "import": []

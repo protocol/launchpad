@@ -2,14 +2,14 @@
 This repository contains intentionally organized and curated content for Protocol Labs' Launchpad program.
 We welcome contributions, but please read the Contributing section below.
 
-See the staging stite at: [https://empty-poetry-5978.on.fleek.co/](https://empty-poetry-5978.on.fleek.co/)
+See the staging site at: [https://empty-poetry-5978.on.fleek.co/](https://empty-poetry-5978.on.fleek.co/)
 
 The default branch for this repository is **main** for the curriculum published on: https://curriculum.pl-launchpad.io/.
 
 **!Important** The content published on the now deprecated Gitbook at https://protocol-labs.gitbook.io/launchpad-curriculum is configured & published from the **gitbook** branch.
 
 ## Contributing to the Launchpad Curriculum
-We highly encourage collboration & contributions from others who are creating content! Adding tutorials to the Tutorials page of the platform, and Dev Tools pages are super helpful!
+We highly encourage collaboration & contributions from others who are creating content! Adding tutorials to the Tutorials page of the platform, and Dev Tools pages are super helpful!
 * See the [Style Guide](https://github.com/protocol/launchpad/blob/main/STYLE-GUIDE.md) for information on how to format the markdown and add content like images and videos
 * See the [directions for creating tutorials and dev tools pages](https://github.com/protocol/launchpad/blob/main/templates/README.md)
 
