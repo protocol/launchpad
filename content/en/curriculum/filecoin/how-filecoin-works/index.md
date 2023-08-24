@@ -126,7 +126,10 @@ In this talk by Pooja Shah of Protocol Labs, learn about the basic functioning a
 
 **Lotus Common Architecture** Currently for those using lotus directly, it is recommended that you have a hardware configuration with 32GB of RAM, an 8-core CPU, and at least 200 GB of SSD storage. See the [Filecoin docs on Hardware requirements](https://docs.filecoin.io/storage-provider/hardware-requirements/)
 
+{{% /level %}}
+
 ## Getting Started with Filecoin
+
 Now that you understand the basics of Filecoin, here are some ways to start building on the network:
 
 **Run a Local Testnet**
