@@ -3,8 +3,9 @@ title: "Web3 & Protocol Labs"
 description: "What is Web3, and How the Protocol Labs Network is Contributing"
 draft: false
 menu:
-    resources:
-        parent: "resources-prerequisites"
+    curriculum:
+        parent: "curriculum-web3"
+category: lecture
 weight: 10
 ---
 

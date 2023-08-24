@@ -3,8 +3,9 @@ title: "Web3 Tools"
 description: "The Basic Tools and Mechanisms"
 draft: false
 menu:
-    resources:
-        parent: "resources-prerequisites"
+    curriculum:
+        parent: "curriculum-web3"
+category: lecture
 weight: 30
 ---
 

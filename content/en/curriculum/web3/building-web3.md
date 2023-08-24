@@ -3,8 +3,9 @@ title: "Building Web3"
 description: "The What and Why of Web3"
 draft: false
 menu:
-    resources:
-        parent: "resources-prerequisites"
+    curriculum:
+        parent: "curriculum-web3"
+category: lecture
 weight: 20
 ---
 

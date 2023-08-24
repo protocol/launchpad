@@ -3,16 +3,13 @@ title: "Learning Objectives & Quiz"
 description: "Test your knowledge by taking a quiz"
 draft: false
 menu:
-    resources:
-        parent: "resources-prerequisites"
+    curriculum:
+        parent: "curriculum-web3"
+category: lecture
 weight: 10
 aliases:
     - /prerequisites/objectives/
 ---
-
-# Pre-Requisites
-
-Before staring PL Launchpad program, you will need to have an understanding of the basic mechanisms and tools, as well as the _what_ and _why_ of web3.
 
 ## Learning Objectives
 
