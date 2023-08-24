@@ -1,3 +1,28 @@
 {{ define "main" }}
-{{ partial "main/curriculum-page.html" . }}
-{{ end }}
+<style>
+  #block1 {
+    background-image: url("images/slide_wave.jpg");
+    height: 600px;
+    padding: 10rem;
+  }
+  #block2 {
+    padding: 2rem;
+  }
+  body div.wrap {
+    padding: 0;
+  }
+</style>
+<div id="block1" class="text-center">
+  <h2>Blast off into web3</h2>
+  <h3>Protocol Labs Launchpad</h3>
+</div>
+<div id="block2" class="text-center">
+  <p>Here is our Paris Summit:</p>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/Fw725DWbAv4?si=DMmCZgKOUlD9LVr_"
+  ></iframe>
+</div>
+
+{{end}}
