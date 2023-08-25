@@ -14,16 +14,18 @@ category: lecture
 This recording and deck is intended to provide a high-level overview of the fundamental concepts of IPFS.
 
 {{< youtube gpA81kJGnYE>}}
-Introduction to IPFS (3/23/23)
+
 {{< embed src="https://docs.google.com/presentation/d/e/2PACX-1vRNf3ltzM3U-pUEOHT08QIAF6fqHOQW9ND8X97wUaD71oZN8TtIn4b15CaTciYMTGKgSQKIApFuyPQg/embed?start=false&loop=false" frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" >}}
+Introduction to IPFS (3/23/23)
 
 ## IPFS Shallow Dive
 
 This Shallow Dive explores the core topics of IPFS including content addressing, routing, and transferring, and looks at a few IPFS implementations.
 
 {{< youtube sElVUVUbho0>}}
+
+{{< embed src="https://docs.google.com/presentation/d/e/2PACX-1vQ_TUBs9E4eByZDsdQqHaTYNDBeuo3lOcs7cZyliNM_IRZbrdqwwqOl7l_Tu5BUoN1D2YNtHMV8FJLs/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" >}}
 IPFS Shallow Dive (3/23/23)
-{{< embed src="https://docs.google.com/presentation/d/1UMjVq9xVDTztzaPoHBMTIcdUXDV4yTAIARcMNPdTzzQ/edit?usp=sharing" width="100%" height="900px" >}}
 
 ## IPFS Deep Dive
 
