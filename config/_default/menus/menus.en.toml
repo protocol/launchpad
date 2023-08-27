@@ -19,22 +19,12 @@
       height = 26
 
 [[main]]
-  name = "Resources"
+  name = "About"
   url = "/resources/about/"
   weight = 3500
   [main.params]
     identifier = "resources"
     image = "https://cdn-icons-png.flaticon.com/128/2563/2563002.png"
-    width = 24
-    height = 24
-
-[[main]]
-  name = "Website"
-  url = "https://pl-launchpad.io"
-  weight = 4000
-  [main.params]
-    identifier = "website"
-    image = "https://cdn-icons-png.flaticon.com/512/4302/4302080.png"
     width = 24
     height = 24
 
@@ -151,17 +141,9 @@
     description = "Learn about some of the most popular tools and projects built using Protocol Labs' technology"
 
 [[resources]]
-  name = "Resources"
-  weight = 20
-  identifier = "resources-other"
-
-
-
-[[resources]]
   name = "About"
   weight = 20
   identifier = "resources-about"
-
 
 [[tutorials]]
   name = "Introduction to IPFS"

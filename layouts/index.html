@@ -1,28 +1,75 @@
 {{ define "main" }}
+<link
+  href="https://fonts.googleapis.com/css2?family=Aileron&amp;family=Source+Serif+Pro:wght@400;700&amp;family=Source+Code+Pro:wght@400;700&amp;display=swap"
+  rel="stylesheet"
+  data-optimized-fonts="true"
+/>
 <style>
   #block1 {
-    background-image: url("images/slide_wave.jpg");
-    height: 600px;
-    padding: 10rem;
+    background-image: url("images/Karla-under-4-LPW_qldyrv.jpg");
+    background-size: cover;
+    height: 500px;
+    padding: 2rem;
   }
   #block2 {
     padding: 2rem;
   }
-  body div.wrap {
-    padding: 0;
+  #block3 {
+    background-image: url("images/slide_wave.jpg");
+    background-size: cover;
+    height: 300px;
+  }
+  div.wrap {
+    font-family: "Source Serif Pro", sans-serif;
+    margin: unset;
+    padding: unset;
+    max-width: unset;
+  }
+  .title {
+    color: white;
+    font-weight: 700;
+    font-size: 65px;
+  }
+  .subtitle {
+    color: white;
+    font-weight: 400;
+    font-size: 23px;
+    font-family: "Aileron", sans-serif;
+  }
+
+  .row {
+    margin: unset;
+    padding: unset;
+    max-width: unset;
   }
 </style>
-<div id="block1" class="text-center">
-  <h2>Blast off into web3</h2>
-  <h3>Protocol Labs Launchpad</h3>
-</div>
-<div id="block2" class="text-center">
-  <p>Here is our Paris Summit:</p>
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/Fw725DWbAv4?si=DMmCZgKOUlD9LVr_"
-  ></iframe>
+
+<div id="block1" class="text-center" class="row">
+  <h2 class="title">BLAST OFF INTO WEB3</h2>
+  <p class="subtitle">Protocol Labs Launchpad</p>
 </div>
 
+<div id="block2" class="row">
+  <div class="col-8">
+    <p>{{.Content}}</p>
+  </div>
+  <div class="col">
+    <iframe
+      width="100%"
+      height="100%"
+      style="padding-bottom: unset"
+      src="https://www.youtube.com/embed/Fw725DWbAv4?si=DMmCZgKOUlD9LVr_"
+    ></iframe>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <iframe
+      style="border: none; width: 100%"
+      height="500px"
+      src="https://noteforms.com/forms/lp-referrals-db-nrnwjx"
+    ></iframe>
+  </div>
+</div>
 {{end}}
