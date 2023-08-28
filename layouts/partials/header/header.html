@@ -73,8 +73,11 @@
         <button type="button" class="btn-close text-reset me-2" data-bs-dismiss="offcanvas" aria-label="Close main menu"></button>
       </div>
       <div class="offcanvas-body px-4">
-        <h3 class="h6 text-uppercase mb-3 d-md-none">Main</h3>
         <ul class="nav flex-column flex-md-row ms-md-n3">
+          <li style="display: flex; align-items: center; color: white;">
+            <span style="font-size: 1.5rem; font-weight: 700;">Protocol Labs Launchpad</span>
+            <span style="font-size: 1.5rem;"> &nbsp&nbsp|&nbsp </span>
+          </li>
           {{- $current := . -}}
           {{- $isHome := .IsHome}}
           {{- $section := $current.Section -}}
@@ -106,8 +109,6 @@
             {{ end }}
           {{ end -}}
         </ul>
-        <hr class="text-black-50 my-4 d-md-none">
-        <h3 class="h6 text-uppercase mb-3 d-md-none">Socials</h3>
         <ul class="nav flex-column flex-md-row ms-md-auto me-md-n5 pe-md-2">
           {{ range .Site.Menus.social -}}
             <li class="nav-item">
