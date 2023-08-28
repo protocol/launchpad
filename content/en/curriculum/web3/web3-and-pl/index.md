@@ -3,10 +3,13 @@ title: "Web3 & Protocol Labs"
 description: "What is Web3, and How the Protocol Labs Network is Contributing"
 draft: false
 menu:
-    curriculum:
-        parent: "curriculum-web3"
+  curriculum:
+    parent: "curriculum-web3"
 category: lecture
 weight: 10
+level:
+  - shallow
+  - deep
 ---
 
 ### What is Web3?
@@ -45,7 +48,7 @@ See the [original whitepaper](https://ipfs.io/ipfs/QmR7GSQM93Cx5eAg6a6yRzNde1FQv
 
 #### Web3 & Decentralization – Further Reading
 
-* [Wikipedia – Web3](https://en.wikipedia.org/wiki/Web3)
-* [Web2 vs. Web3 – Ethereum](https://ethereum.org/en/developers/docs/web2-vs-web3/)
-* [Decentralisation: the next big step for the world wide web - The Guardian](https://www.theguardian.com/technology/2018/sep/08/decentralisation-next-big-step-for-the-world-wide-web-dweb-data-internet-censorship-brewster-kahle)
-* [The New York Times - What  is web3?](https://www.nytimes.com/interactive/2022/03/18/technology/web3-definition-internet.html)
+- [Wikipedia – Web3](https://en.wikipedia.org/wiki/Web3)
+- [Web2 vs. Web3 – Ethereum](https://ethereum.org/en/developers/docs/web2-vs-web3/)
+- [Decentralisation: the next big step for the world wide web - The Guardian](https://www.theguardian.com/technology/2018/sep/08/decentralisation-next-big-step-for-the-world-wide-web-dweb-data-internet-censorship-brewster-kahle)
+- [The New York Times - What is web3?](https://www.nytimes.com/interactive/2022/03/18/technology/web3-definition-internet.html)

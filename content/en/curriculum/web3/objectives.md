@@ -3,12 +3,15 @@ title: "Learning Objectives & Quiz"
 description: "Test your knowledge by taking a quiz"
 draft: false
 menu:
-    curriculum:
-        parent: "curriculum-web3"
+  curriculum:
+    parent: "curriculum-web3"
 category: lecture
 weight: 10
 aliases:
-    - /prerequisites/objectives/
+  - /prerequisites/objectives/
+level:
+  - shallow
+  - deep
 ---
 
 ## Learning Objectives
@@ -20,7 +23,7 @@ aliases:
 
 ## Quiz
 
-Take the [**Pre-Requisites Quiz - Protocol Labs Launchpad**](https://docs.google.com/forms/d/e/1FAIpQLSfBhz3elo3K8U6MpMKeO1-0CfTdTQwPaMSYJPi3bSNyFLm0Dw/viewform?usp=sf\_link) before or after covering the pre-requisite content to gauge your understanding.
+Take the [**Pre-Requisites Quiz - Protocol Labs Launchpad**](https://docs.google.com/forms/d/e/1FAIpQLSfBhz3elo3K8U6MpMKeO1-0CfTdTQwPaMSYJPi3bSNyFLm0Dw/viewform?usp=sf_link) before or after covering the pre-requisite content to gauge your understanding.
 
 {{% embed src="https://cdn.iframe.ly/d9hjUvK" width="100%" height="800px" %}}
 

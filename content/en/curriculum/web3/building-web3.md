@@ -3,10 +3,13 @@ title: "Building Web3"
 description: "The What and Why of Web3"
 draft: false
 menu:
-    curriculum:
-        parent: "curriculum-web3"
+  curriculum:
+    parent: "curriculum-web3"
 category: lecture
 weight: 20
+level:
+  - shallow
+  - deep
 ---
 
 ## Building Web3
@@ -15,13 +18,13 @@ weight: 20
 
 Web3 enhances the internet as we know it today with a few other added characteristics. web3 is:
 
-* Verifiable
-* Trustless
-* Self-governing
-* Permissionless
-* Distributed
-* Stateful
-* Has secure, native currency and payments
+- Verifiable
+- Trustless
+- Self-governing
+- Permissionless
+- Distributed
+- Stateful
+- Has secure, native currency and payments
 
 [**How does a blockchain work - Simply Explained**](https://youtu.be/SSo_EIwHSd4)
 
