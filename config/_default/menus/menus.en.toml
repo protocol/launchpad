@@ -68,7 +68,7 @@
   weight = 1
   identifier = "curriculum-intro"
   [curriculum.params]
-    image = "/logos/pl.png"
+    image = "/logos/lp-primary-color.png"
     width = 100
     height = 100
     section = "getting-started"
@@ -79,7 +79,7 @@
   weight = 9
   identifier = "curriculum-web3"
   [curriculum.params]
-    image = "/logos/pl.png"
+    image = "/logos/blockchain.png"
     width = 100
     height = 100
     section = "web3"
