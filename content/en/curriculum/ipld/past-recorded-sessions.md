@@ -9,7 +9,7 @@ weight: 170
 category: lecture
 ---
 
-## IPLD TEST
+## IPLD Introduction
 
 This recording and deck is intended to provide a high-level overview of the fundamental concepts of IPLD.
 
