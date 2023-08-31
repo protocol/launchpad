@@ -9,7 +9,7 @@ weight: 170
 category: lecture
 ---
 
-## IPLD Introduction
+## IPLD TEST
 
 This recording and deck is intended to provide a high-level overview of the fundamental concepts of IPLD.
 
@@ -20,7 +20,7 @@ Introduction to IPLD (3/9/23)
 
 ## IPLD Shallow Dive
 
-This Shallow Dive explores the core topics of IPLD including content-address structed data, multihashes, IPLD pathing, and some use cases.
+This Shallow Dive explores the core topics of IPLD including content-address structed data, multihashes, IPLD pathing, and some use cases. 
 
 {{< youtube nxyQVGy6_mI>}}
 IPLD Shallow Dive (3/9/23)
