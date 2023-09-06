@@ -20,10 +20,10 @@
 
 [[main]]
   name = "About"
-  url = "/resources/about/"
+  url = "/about/"
   weight = 3500
   [main.params]
-    identifier = "resources"
+    identifier = "about"
     image = "https://cdn-icons-png.flaticon.com/128/2563/2563002.png"
     width = 24
     height = 24
@@ -151,10 +151,6 @@
     section = "dev-tools"
     description = "Learn about some of the most popular tools and projects built using Protocol Labs' technology"
 
-[[resources]]
-  name = "About"
-  weight = 20
-  identifier = "resources-about"
 
 [[tutorials]]
   name = "Introduction to IPFS"
@@ -209,5 +205,5 @@
 
 [[footer]]
   name = "About Launchpad"
-  url = "/resources/about/"
+  url = "/about/"
   weight = 10

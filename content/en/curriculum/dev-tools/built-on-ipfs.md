@@ -1,13 +1,15 @@
 ---
 title: "Built on IPFS and Filecoin"
 description: "Apps, Tooling, and Other Projects"
-draft: false
+draft: true
 menu:
-  resources:
-    parent: "resources-about"
-weight: 70
-aliases:
-  - /resources/built-on-ipfs/
+  curriculum:
+    parent: "curriculum-devtools"
+category: lecture
+level:
+  - shallow
+  - deep
+weight: 300
 ---
 
 IPFS and Filecoin have made it possible for a number of Dapps and tooling to be built for Web3.

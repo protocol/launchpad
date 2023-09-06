@@ -3,11 +3,13 @@ title: "Additional Learning"
 description: "Deeper Learning and Context to Prepare you for Web3"
 draft: false
 menu:
-  resources:
-    parent: "resources-about"
-weight: 60
-aliases:
-  - /resources/additional-learning/
+  curriculum:
+    parent: "curriculum-ipfs"
+category: lecture
+weight: 200
+level:
+  - shallow
+  - deep
 ---
 
 #### The Lifecycle of Data in DWeb | IPFS Camp 2019
@@ -35,7 +37,7 @@ aliases:
 - [Go Comments and Conventions](https://github.com/golang/go/wiki/CodeReviewComments) is a supplement
 - [Functional Options for friendly APIS](https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis)
 - [Slice Tricks for Go](https://github.com/golang/go/wiki/SliceTricks)
-- PLs [Distributed Systems Curriculum (with Golang)](https://docs.google.com/document/d/18mlkt3JPHP2eSeDOeCE0wafnLKv95Taj0rDh0NIus3Y/edit#heading=h.l73q2rxlx59z). Includes a tutorial on debugging and lots of good coding exercises for leraning distributed systems with Go
+- PLs [Distributed Systems Curriculum (with Golang)](https://docs.google.com/document/d/18mlkt3JPHP2eSeDOeCE0wafnLKv95Taj0rDh0NIus3Y/edit#heading=h.l73q2rxlx59z). Includes a tutorial on debugging and lots of good coding exercises for learning distributed systems with Go
 
 ## Computer Networks
 

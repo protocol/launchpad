@@ -3,11 +3,13 @@ title: "Github Guide"
 description: "Github usage for open source contribution"
 draft: false
 menu:
-  resources:
-    parent: "resources-about"
+  curriculum:
+    parent: "curriculum-intro"
 weight: 80
-aliases:
-  - /resources/github-guide/
+category: lecture
+levels:
+  - shallow
+  - deep
 ---
 
 {{< embed src="https://docs.google.com/presentation/d/11V_BA5A64lCY_wFsvuLO4je02zvzJwD5vf2kzONDWyc/embed" width="100%" height="600px">}}
