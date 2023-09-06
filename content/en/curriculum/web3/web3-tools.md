@@ -6,7 +6,7 @@ menu:
   curriculum:
     parent: "curriculum-web3"
 category: lecture
-weight: 30
+weight: 200
 level:
   - shallow
   - deep

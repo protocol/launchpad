@@ -6,7 +6,7 @@ menu:
   curriculum:
     parent: "curriculum-web3"
 category: lecture
-weight: 10
+weight: 1
 aliases:
   - /prerequisites/objectives/
 level:
