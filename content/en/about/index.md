@@ -1,13 +1,10 @@
 ---
 title: "About Launchpad"
-description: "The What and Why of Web3"
+description: "Describes the Protocol Labs Launchpad program."
 draft: false
-menu:
-    resources:
-        parent: "resources-about"
 weight: 20
 aliases:
-    - /about/
+  - /about/
 ---
 
 {{< aboutpage >}}
