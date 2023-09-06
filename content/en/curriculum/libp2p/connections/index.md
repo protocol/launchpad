@@ -178,7 +178,7 @@ Usually, several protocols are tried during the negotiation, with a preference o
 
 #### Multiplexer
 
-Once the connection is secured, a multiplexer protocol is negotiated. Muxtiplexing means opening up multiple distinct logical streams to a peer on a single connection. For example you may want to interact with a peer on the DHT, but you may also want to ping that peer. Multiplexing lets you do both of these on the same underlying connection.
+Once the connection is secured, a multiplexer protocol is negotiated. Multiplexing means opening up multiple distinct logical streams to a peer on a single connection. For example you may want to interact with a peer on the DHT, but you may also want to ping that peer. Multiplexing lets you do both of these on the same underlying connection.
 
 Because the data will be sent over the same connection, we need an abstraction called _stream_. A stream represents the data for a specific protocol in a given connection. Data flowing through the connection is assigned its corresponding _stream id_. In the following example, the streams for two protocols are shown: [rendezvous](https://github.com/libp2p/specs/blob/master/rendezvous/README.md#the-protocol) (with protocol id `/rendezvous/1.0.0`) and [identify](https://github.com/libp2p/specs/blob/master/identify/README.md#overview) (with protocol id `/ipfs/id/1.0.0`).
 

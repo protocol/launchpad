@@ -45,10 +45,21 @@ Use Hugo to statically serve & preview files on your machine
 
 > Note that you may have the run `npm install` on new/ others' branches you checkout and server before running `hugo server`
 
-#### Editing Content
+## Editing Content
 
 Content is located in `content/en/` and the directories in there will be one of the links along the top of the page.
 
 Edit the landing pages in `section-name/index.html` or `section-name.md`
 
 Edit Sidebar content in `config/_default/menus/menus.en.toml`
+
+When editing content, please ask for a PR review from a content maintainer:
+* Curriculum website structure / formatting: @chase
+* PL Network: 
+* web3 Basics: 
+* IPFS: 
+* IPLD: 
+* libp2p: 
+* Filecoin: 
+* DevTools: 
+* Launchpad Getting Started: @momack2
