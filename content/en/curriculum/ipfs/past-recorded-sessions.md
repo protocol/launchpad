@@ -1,5 +1,5 @@
 ---
-title: "Past Recorded Sessions"
+title: "Past Recorded Sessions For IPFS"
 description: "Introductory, Shallow & Deep Dives into IPFS"
 draft: false
 menu:
