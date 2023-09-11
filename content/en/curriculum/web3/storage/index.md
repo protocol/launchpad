@@ -18,9 +18,8 @@ thousands of dollars to store megabytes of data on standard blockchains. Several
 purpose-built chains have emerged to fulfill this need, including:
 
 - IPFS and Filecoin
-- Arweave
 - StorJ
-- Sia
+- Arweave
 
 Given this program is sponsored by Protocol Labs, we will cover IPFS and
 Filecoin extensively in later sections, but we will take a moment here to
@@ -33,6 +32,40 @@ networks provide robust storage options with different tradeoffs. But the
 tradeoff that all still share is in read performance. Decentralized storage is
 still working on solving the problem: how do you deliver content as quickly and
 efficiently as edge CDN providers like Cloudflare?
+
+## Filecoin
+
+![Filecoin](filecoin.png)
+
+Token: FIL
+
+[Filecoin website](https://filecoin.io/store/#intro)
+
+- Total network capacity: ~13,000 PB
+- Total data stored: ~1,300 PB
+- Storage cost: USD$0-0.19 per TB-month (varies per storage provider and file size)
+
+Filecoin is the largest decentralized storage marketplace by several orders of magnitude. It is based off of the popular IPFS protocol, which is the voluntary storage network that stores many of the NFTs on Ethereum, but adds an incentivization layer that guarantees storage over the duration of a deal period. Instead of relying on statistical consistency checks, Filecoin uses a sophisticated cryptographic algorithm to prove that all data is being accurately stored across all storage providers on a daily basis. Such checks provide the most reliable guarantee that data has not gone stale. Filecoin is a protocol that strives to provide the maximum flexibility in terms of storage parameters. Users can configure the deal duration, redundancy, storage provider location, read-performance, and other parameters. Filecoin relies on an ecosystem of interface providers to offer users
+
+## Storj
+
+![Storj](storj.png)
+
+"Globally distributed cloud object storage"
+
+Token: STORJ
+
+[Storj website](https://www.storj.io/)
+
+[Storj statistics](https://storjstats.info/d/storj/storj-network-statistics?orgId=1)
+
+- Total network capacity: ~60 PB
+- Total data stored: ~20 PB
+- Storage cost: $4 per TB-month
+
+StorJ breaks up files into small components and distributes them across its
+network. It aims to allow regular computer users to share their extra space.
+Storj focuses on enterprise storage and compatibility with Amazon S3.
 
 ## Arweave
 
@@ -69,40 +102,6 @@ Arweave priorities ease of use over configurability, which makes it will suited
 for simple use cases nad perhaps less well suited for larger or more complex
 data sets that would prefer to optimize on costs, availability or other
 parameters.
-
-## Storj
-
-![Storj](storj.png)
-
-"Globally distributed cloud object storage"
-
-Token: STORJ
-
-[Storj website](https://www.storj.io/)
-
-[Storj statistics](https://storjstats.info/d/storj/storj-network-statistics?orgId=1)
-
-- Total network capacity: ~60 PB
-- Total data stored: ~20 PB
-- Storage cost: $4 per TB-month
-
-StorJ breaks up files into small components and distributes them across its
-network. It aims to allow regular computer users to share their extra space.
-Storj focuses on enterprise storage and compatibility with Amazon S3.
-
-## Filecoin
-
-![Filecoin](filecoin.png)
-
-Token: FIL
-
-[Filecoin website](https://filecoin.io/store/#intro)
-
-- Total network capacity: ~13,000 PB
-- Total data stored: ~1,300 PB
-- Storage cost: USD$0-0.19 per TB-month (varies per storage provider and file size)
-
-Filecoin is the largest decentralized storage marketplace by several orders of magnitude. It is based off of the popular IPFS protocol, which is the voluntary storage network that stores many of the NFTs on Ethereum, but adds an incentivization layer that guarantees storage over the duration of a deal period. Instead of relying on statistical consistency checks, Filecoin uses a sophisticated cryptographic algorithm to prove that all data is being accurately stored across all storage providers on a daily basis. Such checks provide the most reliable guarantee that data has not gone stale. Filecoin is a protocol that strives to provide the maximum flexibility in terms of storage parameters. Users can configure the deal duration, redundancy, storage provider location, read-performance, and other parameters. Filecoin relies on an ecosystem of interface providers to offer users
 
 ---
 
