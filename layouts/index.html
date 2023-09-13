@@ -10,49 +10,8 @@
       href="logos/lp-primary-color.png"
     />
     <link href="css/styles.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/tailwind-output.css" />
     <style>
-      .m-10 {
-        margin-top: 5px;
-        margin-bottom: 5px;
-      }
-
-      .nav-brand {
-        width: 7rem;
-      }
-
-      .split-word {
-        padding-right: 5px;
-      }
-
-      .home-header_component {
-        max-width: unset;
-      }
-
-      #header-benefits {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin-top: 50px;
-        gap: 50px;
-
-        .icon {
-          display: block;
-          margin-right: 10px;
-          width: 30px;
-          height: 30px;
-        }
-
-        .text {
-          max-width: 350px;
-          margin: auto;
-        }
-
-        .subcontainer {
-          display: flex;
-          flex-direction: row;
-        }
-      }
-
       @media (max-width: 991px) and (min-width: 768px) {
         html.w-mod-js:not(.w-mod-ix)
           [data-w-id="f542cf99-beb9-ec4f-30e9-80bc7574e298"] {
@@ -289,18 +248,18 @@
           <div class="container is-nav">
             <div class="nav_component">
               <div style="display: flex">
-                <a
-                  href="/#home-header-section"
-                  class="nav-brand w-inline-block w--current"
-                >
+                <div class="nav-brand w-inline-block w--current">
                   <img
                     src="logos/lp-logo.png"
                     loading="lazy"
                     alt=""
                     class="nav-logo"
                   />
-                </a>
-                <h1 class="text-color-light-blue" style="margin: auto">
+                </div>
+                <h1
+                  class="text-4xl font-extrabold text-color-light-blue"
+                  style="margin: auto"
+                >
                   PLN Launchpad
                 </h1>
               </div>
@@ -515,7 +474,6 @@
                   </div>
                 </div>
               </h1>
-              <!-- Used to be p tag -->
               <div
                 class="heading-36 text-color-blue split-type"
                 style="opacity: 1; visibility: inherit"
@@ -597,14 +555,16 @@
                     learning!
                   </div>
                 </div>
-                <h4>
-                  Protocol Labs starts & supports breakthroughs in computing to
-                  push humanity forward.
-                </h4>
               </div>
-              <div id="header-benefits">
-                <div class="subcontainer">
-                  <img class="icon" src="icons/hello.png" alt="" />
+              <div class="text-lg">
+                Protocol Labs starts & supports breakthroughs in computing to
+                push humanity forward.
+              </div>
+              <div
+                class="flex flex-col lg:flex-row lg:justify-evenly gap-10 mt-10"
+              >
+                <div class="flex flex-row">
+                  <img class="lp-icon" src="icons/hello.png" alt="" />
                   <h3 class="item">
                     <span class="text-color-light-blue">Onboarding</span> and
                     connecting
@@ -613,8 +573,8 @@
                   </h3>
                 </div>
 
-                <div class="subcontainer">
-                  <img class="icon" src="icons/bulb.png" alt="" />
+                <div class="flex flex-row">
+                  <img class="lp-icon" src="icons/bulb.png" alt="" />
                   <h3 class="item">
                     Providing the learning and technical knowledge to quickly
                     prepare employees
@@ -622,8 +582,8 @@
                     their their roles in Web3
                   </h3>
                 </div>
-                <div class="subcontainer">
-                  <img class="icon" src="icons/shuttle.png" alt="" />
+                <div class="flex flex-row">
+                  <img class="lp-icon" src="icons/shuttle.png" alt="" />
                   <h3 class="item">
                     Accelerating talent into becoming
                     <span class="text-color-light-blue">connected</span>,
@@ -639,106 +599,58 @@
         <section class="section-home-network">
           <div class="container">
             <div class="home-network_component">
-              <div
-                class="home-network_top"
-                style="flex-direction: row; align-items: center"
-              >
-                <div
-                  class="home-network-cta"
-                  style="max-width: 400px; margin-right: 20px"
-                >
-                  <h2
-                    class="heading-50 text-color-grey split-type"
-                    style="opacity: 1; visibility: inherit"
-                  >
-                    <div
-                      class="split-line"
-                      style="display: block; text-align: start; width: 100%"
-                    >
-                      <div
-                        class="split-word"
-                        style="
-                          display: inline-block;
-                          translate: none;
-                          rotate: none;
-                          scale: none;
-                          transform: translate(0px, 0%);
-                        "
-                      >
-                        A Training
-                      </div>
-                      <div
-                        class="split-word"
-                        style="
-                          display: inline-block;
-                          translate: none;
-                          rotate: none;
-                          scale: none;
-                          transform: translate(0px, 0%);
-                        "
-                      >
-                        Program for
-                      </div>
-                      <span
-                        class="text-color-dark-blue"
-                        style="display: inline-block; position: relative"
-                      >
-                        <div
-                          class="split-word"
-                          style="
-                            display: inline-block;
-                            translate: none;
-                            rotate: none;
-                            scale: none;
-                            transform: translate(0px, 0%);
-                          "
-                        >
-                          You!
-                        </div>
-                      </span>
-                    </div>
+              <div class="flex flex-col items-center">
+                <div class="">
+                  <h2 class="heading-50 text-color-grey">
+                    A Training Program for
+                    <span class="text-color-dark-blue"> You! </span>
                   </h2>
-                  <!-- Used to be p tag -->
-                  <div
-                    class="text-18 text-color-grey"
-                    style="opacity: 1; visibility: inherit"
-                  >
-                    Launchpad is a thriving hub for web3 learning and onboarding
-                    within the Protocol Labs Network, having welcomed over 200
-                    learners all over the world! Whether newcomers or seasoned
-                    professionals, Launchpad has been instrumental in providing
-                    essential knowledge and support for individuals venturing
-                    into the exciting world of web3.
-                  </div>
-
-                  <div
-                    class="text-18 text-color-grey"
-                    style="opacity: 1; visibility: inherit"
-                  >
-                    From training how to set up their first IPFS or Filecoin
-                    node, to fostering collaborative connections across the PLN,
-                    Launchpad has served as the catalyst for the growth and
-                    development of talented developers, marketing managers,
-                    recruiters, and many more professionals across the
-                    ecosystem. With our curriculum, you will be able to learn
-                    about Web3 at your own pace!
-                  </div>
-
-                  <div
-                    class="text-18 text-color-grey"
-                    style="opacity: 1; visibility: inherit"
-                  >
-                    Click on the video to learn more about the Launchpad
-                    journey!
-                  </div>
                 </div>
-                <div style="width: 100%; flex: auto">
+                <div class="mt-10 mb-5 text-18 text-color-grey">
+                  Click on the video to learn more about the Launchpad journey!
+                </div>
+                <div style="width: 100%">
                   <iframe
                     width="100%"
                     height="500px"
                     style="padding-bottom: unset"
                     src="https://www.youtube.com/embed/Fw725DWbAv4?si=DMmCZgKOUlD9LVr_"
                   ></iframe>
+                </div>
+                <div class="flex flex-col lg:flex-row mt-10 gap-10 text-18">
+                  <div class="text-color-grey">
+                    Launchpad is a thriving hub for
+                    <span class="text-22 text-color-dark-blue">
+                      web3 learning</span
+                    >
+                    and onboarding within the Protocol Labs Network, having
+                    welcomed over
+                    <span class="text-22 text-color-dark-blue"
+                      >200 learners all over the world!</span
+                    >
+                    Whether newcomers or seasoned professionals, Launchpad has
+                    been instrumental in providing essential knowledge and
+                    support for individuals venturing into the exciting world of
+                    web3.
+                  </div>
+
+                  <div class="text-color-grey">
+                    From training how to set up their first IPFS or Filecoin
+                    node, to fostering
+                    <span class="text-22 text-color-dark-blue"
+                      >collaborative connections</span
+                    >
+                    across the PLN, Launchpad has served as the catalyst for the
+                    growth and development of talented
+                    <span class="text-22 text-color-dark-blue">developers</span
+                    >, <span> marketing managers </span>,
+                    <span class="text-22 text-color-dark-blue">recruiters</span
+                    >, and many more professionals across the ecosystem. With
+                    our curriculum, you will be able to learn about Web3 at
+                    <span class="text-22 text-color-dark-blue"
+                      >your own pace!</span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -1196,13 +1108,9 @@
         </section>
         <section>
           <div
-            style="
-              display: flex;
-              flex-direction: row;
-              justify-content: space-evenly;
-            "
+            class="flex flex-col items-center lg:flex-row lg:justify-center gap-16"
           >
-            <div style="padding-left: 50px; height: 600px">
+            <div class="ml-50" style="height: 600px">
               <iframe
                 class="testimonial-slider-wrapper"
                 style="border: none; width: 500px"
@@ -1212,47 +1120,60 @@
             </div>
             <div
               class="testimonial-slider-wrapper"
-              style="
-                height: 600px;
-                padding-right: 50px;
-                padding-top: 40px;
-                max-width: 600px;
-              "
+              style="padding-right: 50px; padding-top: 40px; max-width: 600px"
             >
-              <ul>
-                <li class="text-18 m-10">
+              <div class="flex flex-col gap-5 cta-list text-18">
+                <div>
                   Launchpad is a training program covering topics like:
-                  blockchains, peer-to-peer communication, content addressing,
-                  and decentralized file storage.
-                </li>
-                <li class="text-18 m-10">
-                  The onboarding and training program was been built over the
-                  span of 1.5 years, with 12 live cohorts held in various
-                  locations such as Paris, Reykjavik, and Palo Alto, just to
-                  name a few.
-                </li>
-                <li class="text-18 m-10">
-                  Launchpad has proven to be a valuable resource to over 270
-                  participants from 20 diverse organizations.
-                </li>
-                <li class="text-18 m-10">
-                  Launchpad live cohorts are currently paused. Our curriculum
-                  and resources are now available to use for self-guided
-                  exploration.
-                  <ul style="padding: 20px">
-                    <li class="text-18 m-10">
-                      Click on ‘Explore the Curriculum!’ in the menu to begin
-                      your learning experience!"
-                    </li>
-                    <li class="text-18 m-10">
+                  <span class="text-color-light-blue">blockchains</span>,
+                  peer-to-peer communication, <span>content addressing</span>,
+                  and
+                  <span class="text-color-light-blue"
+                    >decentralized file storage</span
+                  >.
+                </div>
+                <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700" />
+                <div>
+                  The onboarding and training program was built over the span of
+                  1.5 years, with
+                  <span>12 live cohorts</span>
+                  held in various locations such as Paris, Reykjavik, and Palo
+                  Alto, just to name a few.
+                </div>
+                <div>
+                  Launchpad has proven to be a valuable resource to
+                  <span>over 270 participants </span>
+                  from 20 diverse organizations.
+                </div>
+                <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700" />
+                <div>
+                  Launchpad
+                  <span class="text-color-light-blue"
+                    >live cohorts are currently paused</span
+                  >. Our curriculum and resources are now available to use for
+                  <span class="text-color-light-blue"
+                    >self-guided exploration</span
+                  >.
+                </div>
+                <div class="flex flex-col gap-10 ml-5 mt-3">
+                  <div class="flex flex-row">
+                    <img class="lp-icon" src="icons/shuttle.png" alt="" />
+                    <div class="">
+                      Click on
+                      <a href="curriculum/">Explore the Curriculum!</a> in the
+                      menu to begin your learning experience!"
+                    </div>
+                  </div>
+                  <div class="flex flex-row">
+                    <img class="lp-icon" src="icons/hello.png" alt="" />
+                    <div>
                       To get in touch with us at Protocol Labs, Join us on
-                      Filecoin Slack .
-                      <a href="https://filecoin.io/slack">Filecoin Slack</a> or
-                      fill the form and join our waitlist.
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+                      <a href="https://filecoin.io/slack">Filecoin Slack</a>
+                      or fill the form and join our waitlist.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
