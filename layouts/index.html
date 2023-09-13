@@ -24,6 +24,35 @@
         padding-right: 5px;
       }
 
+      .home-header_component {
+        max-width: unset;
+      }
+
+      #header-benefits {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        gap: 50px;
+
+        .icon {
+          display: block;
+          margin-right: 10px;
+          width: 30px;
+          height: 30px;
+        }
+
+        .text {
+          max-width: 350px;
+          margin: auto;
+        }
+
+        .subcontainer {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+
       @media (max-width: 991px) and (min-width: 768px) {
         html.w-mod-js:not(.w-mod-ix)
           [data-w-id="f542cf99-beb9-ec4f-30e9-80bc7574e298"] {
@@ -434,16 +463,6 @@
           </div>
         </div>
         <header id="home-header-section" class="section-home-header">
-          <div class="home-header-visual">
-            <canvas
-              id="defaultCanvas0"
-              class="p5Canvas"
-              width="3116"
-              height="1826"
-              style="width: 1558.28px; height: 913.477px"
-            >
-            </canvas>
-          </div>
           <div
             class="container"
             style="display: flex; flex-direction: row; align-items: center"
@@ -578,25 +597,42 @@
                     learning!
                   </div>
                 </div>
-                <h4 style="margin-top: 50px">
+                <h4>
                   Protocol Labs starts & supports breakthroughs in computing to
                   push humanity forward.
                 </h4>
               </div>
-            </div>
-            <div style="max-width: 400px">
-              <h3 style="margin-top: 100px; margin-bottom: 40px">
-                - Onboarding and connecting new hires from PLN teams to Web3 &
-                the PL Network
-              </h3>
-              <h3 style="margin-bottom: 40px">
-                - Providing the learning and technical knowledge to quickly
-                prepare employees to succeed in their their roles in Web3
-              </h3>
-              <h3 style="margin-bottom: 40px">
-                - Accelerating talent into becoming connected, effective, and
-                productive contributors
-              </h3>
+              <div id="header-benefits">
+                <div class="subcontainer">
+                  <img class="icon" src="icons/hello.png" alt="" />
+                  <h3 class="item">
+                    <span class="text-color-light-blue">Onboarding</span> and
+                    connecting
+                    <span class="text-color-light-blue">new hires</span>
+                    from PLN teams to Web3 & the PL Network
+                  </h3>
+                </div>
+
+                <div class="subcontainer">
+                  <img class="icon" src="icons/bulb.png" alt="" />
+                  <h3 class="item">
+                    Providing the learning and technical knowledge to quickly
+                    prepare employees
+                    <span class="text-color-light-blue">to succeed</span> in
+                    their their roles in Web3
+                  </h3>
+                </div>
+                <div class="subcontainer">
+                  <img class="icon" src="icons/shuttle.png" alt="" />
+                  <h3 class="item">
+                    Accelerating talent into becoming
+                    <span class="text-color-light-blue">connected</span>,
+                    <span class="text-color-light-blue">effective</span>, and
+                    <span class="text-color-light-blue">productive</span>
+                    contributors
+                  </h3>
+                </div>
+              </div>
             </div>
           </div>
         </header>
