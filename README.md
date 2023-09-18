@@ -57,7 +57,7 @@ Edit Sidebar content in `config/_default/menus/menus.en.toml`
 
 When editing content, please ask for a PR review from a content maintainer:
 * Curriculum website structure, formatting, and maintenance: @chase
-* PL Network: 
+* PL Network: @rschanger
 * web3 Basics: 
 * IPFS: 
 * IPLD:
