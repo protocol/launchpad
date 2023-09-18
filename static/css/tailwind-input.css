@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind utilities;
+
+.nav-brand {
+  width: 7rem;
+}
+
+.split-word {
+  padding-right: 5px;
+}
+
+.home-header_component {
+  max-width: unset;
+}
+
+.lp-icon {
+  display: block;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
