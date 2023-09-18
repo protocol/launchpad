@@ -26,7 +26,7 @@ We highly encourage collaboration & contributions from others who are creating c
 
 ### Launchpad Learning Resources
 
-- [Web3](curriculum/web3)
+- [Web3](content/en/curriculum/web3)
 - [The Protocol Labs Network](docs/protocol-labs-network/README.md)
 - [IPFS](docs/ipfs/README.md)
 - [IPLD](docs/ipld/README.md)
