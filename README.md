@@ -53,13 +53,21 @@ Edit the landing pages in `section-name/index.html` or `section-name.md`
 
 Edit Sidebar content in `config/_default/menus/menus.en.toml`
 
+### Content Maintainers
+
 When editing content, please ask for a PR review from a content maintainer:
-* Curriculum website structure / formatting: @chase
+* Curriculum website structure, formatting, and maintenance: @chase
 * PL Network: 
 * web3 Basics: 
 * IPFS: 
-* IPLD: 
+* IPLD:
 * libp2p: 
 * Filecoin: 
 * DevTools: 
 * Launchpad Getting Started: @momack2
+
+### Content Maintainer Expectations
+
+1. Review and merge new PRs to their section of the curriculum
+2. Keep curriculum content "up to date" - including linking to new content when its source of truth moves to new locations (ex, if curriculum content is moved to a new source of truth, link to the new source of truth within the curriculum (and remove the duplicated content)
+3. Review their curriculum section at least 1x/quarter to check for needed updates / deprecation / etc
