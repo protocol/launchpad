@@ -54,6 +54,7 @@
         {{ end -}}
 
         <div id="goal"></div>
+        <p>Last edited: {{ .Lastmod.Format "January 2, 2006" }}</p><br />
 
         {{ .Content }}
         {{ if .Site.Params.editPage -}}
