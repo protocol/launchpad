@@ -70,7 +70,7 @@ repoHost = "GitHub"
 docsRepo = "https://github.com/protocol/launchpad"
 docsRepoBranch = "main"
 docsRepoSubPath = ""
-editPage = false
+editPage = true
 lastMod = false
 
 [options]

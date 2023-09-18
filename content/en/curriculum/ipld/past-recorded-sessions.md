@@ -1,5 +1,5 @@
 ---
-title: "Past Recorded Sessions"
+title: "Past Recorded Sessions For IPLD"
 description: "Introductory, Shallow & Deep Dives into IPLD"
 draft: false
 menu:
@@ -20,7 +20,7 @@ Introduction to IPLD (3/9/23)
 
 ## IPLD Shallow Dive
 
-This Shallow Dive explores the core topics of IPLD including content-address structed data, multihashes, IPLD pathing, and some use cases. 
+This Shallow Dive explores the core topics of IPLD including content-address structed data, multihashes, IPLD pathing, and some use cases.
 
 {{< youtube nxyQVGy6_mI>}}
 IPLD Shallow Dive (3/9/23)

@@ -1,5 +1,5 @@
 ---
-title: "Past Recorded Sessions"
+title: "Past Recorded Sessions For Libp2p"
 description: "Introductory, Shallow & Deep Dives into libp2p"
 draft: false
 menu:
@@ -20,7 +20,7 @@ Introduction to libp2p (3/9/23)
 
 ## libp2p Shallow Dive
 
-This Shallow Dive explores the core topics of libp2p including transports, multiplexers, peer routing, implementations, and more! 
+This Shallow Dive explores the core topics of libp2p including transports, multiplexers, peer routing, implementations, and more!
 
 {{< youtube FzUcCOswxCI>}}
 libp2p Shallow Dive (3/9/23)
