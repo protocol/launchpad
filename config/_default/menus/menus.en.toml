@@ -19,22 +19,12 @@
       height = 26
 
 [[main]]
-  name = "Resources"
-  url = "/resources/about/"
+  name = "About"
+  url = "/about/"
   weight = 3500
   [main.params]
-    identifier = "resources"
+    identifier = "about"
     image = "https://cdn-icons-png.flaticon.com/128/2563/2563002.png"
-    width = 24
-    height = 24
-
-[[main]]
-  name = "Website"
-  url = "https://pl-launchpad.io"
-  weight = 4000
-  [main.params]
-    identifier = "website"
-    image = "https://cdn-icons-png.flaticon.com/512/4302/4302080.png"
     width = 24
     height = 24
 
@@ -73,6 +63,27 @@
   url = "https://twitter.com/launchpad_pl"
   weight = 20
 
+[[curriculum]]
+  name = "Getting Started"
+  weight = 1
+  identifier = "curriculum-intro"
+  [curriculum.params]
+    image = "/logos/lp-primary-color.png"
+    width = 100
+    height = 100
+    section = "getting-started"
+    description = "How to get started with the self-guided Launchpad curriculum."
+
+[[curriculum]]
+  name = "Web 3 Basics"
+  weight = 9
+  identifier = "curriculum-web3"
+  [curriculum.params]
+    image = "/logos/blockchain.png"
+    width = 100
+    height = 100
+    section = "web3"
+    description = "Learn about the basics of web3, including blockchains, wallets, and more."
 
 [[curriculum]]
   name = "Protocol Labs Network"
@@ -98,7 +109,7 @@
 
 [[curriculum]]
   name = "IPLD"
-  weight = 30
+  weight = 50
   identifier = "curriculum-ipld"
   [curriculum.params]
     image = "/logos/ipld.png"
@@ -120,7 +131,7 @@
 
 [[curriculum]]
   name = "Filecoin"
-  weight = 50
+  weight = 30
   identifier = "curriculum-filecoin"
   [curriculum.params]
     image = "/logos/filecoin.png"
@@ -131,7 +142,7 @@
 
 [[curriculum]]
   name = "Dev Tools"
-  weight = 55
+  weight = 35
   identifier = "curriculum-devtools"
   [curriculum.params]
     image = "/icons/devtools.png"
@@ -139,21 +150,6 @@
     height = 100
     section = "dev-tools"
     description = "Learn about some of the most popular tools and projects built using Protocol Labs' technology"
-
-[[resources]]
-  name = "Resources"
-  weight = 20
-  identifier = "resources-other"
-
-[[resources]]
-  name = "Prerequisites"
-  weight = 20
-  identifier = "resources-prerequisites"
-
-[[resources]]
-  name = "About"
-  weight = 20
-  identifier = "resources-about"
 
 
 [[tutorials]]
@@ -209,5 +205,5 @@
 
 [[footer]]
   name = "About Launchpad"
-  url = "/resources/about/"
+  url = "/about/"
   weight = 10

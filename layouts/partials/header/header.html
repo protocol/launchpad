@@ -59,7 +59,7 @@
 <header class="navbar navbar-expand-md navbar-light doks-navbar">
   <nav class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} flex-wrap flex-md-nowrap" aria-label="Main navigation">
     <a class="navbar-brand p-0 me-auto" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Params.Title }}">
-      <img src="/logos/launchpad.png" width="37.6" height="52.4">
+      <img src="/logos/lp-primary-white.png" height="50">
     </a>
 
     <button class="btn btn-menu d-block d-md-none order-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoks" aria-controls="offcanvasDoks" aria-label="Open main menu">
@@ -73,8 +73,11 @@
         <button type="button" class="btn-close text-reset me-2" data-bs-dismiss="offcanvas" aria-label="Close main menu"></button>
       </div>
       <div class="offcanvas-body px-4">
-        <h3 class="h6 text-uppercase mb-3 d-md-none">Main</h3>
         <ul class="nav flex-column flex-md-row ms-md-n3">
+          <li style="display: flex; align-items: center; color: white;">
+            <span style="font-size: 1.5rem; font-weight: 700;">Protocol Labs Launchpad</span>
+            <span style="font-size: 1.5rem;"> &nbsp&nbsp|&nbsp </span>
+          </li>
           {{- $current := . -}}
           {{- $isHome := .IsHome}}
           {{- $section := $current.Section -}}
@@ -106,8 +109,6 @@
             {{ end }}
           {{ end -}}
         </ul>
-        <hr class="text-black-50 my-4 d-md-none">
-        <h3 class="h6 text-uppercase mb-3 d-md-none">Socials</h3>
         <ul class="nav flex-column flex-md-row ms-md-auto me-md-n5 pe-md-2">
           {{ range .Site.Menus.social -}}
             <li class="nav-item">
