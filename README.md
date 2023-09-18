@@ -1,49 +1,65 @@
 # Launchpad
+
 This repository contains intentionally organized and curated content for Protocol Labs' Launchpad program.
 We welcome contributions, but please read the Contributing section below.
 
-See the staging site at: [https://empty-poetry-5978.on.fleek.co/](https://empty-poetry-5978.on.fleek.co/)
-
 The default branch for this repository is **main** for the curriculum published on: https://curriculum.pl-launchpad.io/.
 
-**!Important** The content published on the now deprecated Gitbook at https://protocol-labs.gitbook.io/launchpad-curriculum is configured & published from the **gitbook** branch.
+**!Important!** The content published on the now deprecated Gitbook at https://protocol-labs.gitbook.io/launchpad-curriculum is configured & published from the **gitbook** branch.
 
 ## Contributing to the Launchpad Curriculum
-We highly encourage collaboration & contributions from others who are creating content! Adding tutorials to the Tutorials page of the platform, and Dev Tools pages are super helpful!
-* See the [Style Guide](https://github.com/protocol/launchpad/blob/main/STYLE-GUIDE.md) for information on how to format the markdown and add content like images and videos
-* See the [directions for creating tutorials and dev tools pages](https://github.com/protocol/launchpad/blob/main/templates/README.md)
 
-* We would love to make a PR To help get you started! [ping the core contributors](https://github.com/protocol/launchpad/graphs/contributors) to this repository, or open an [Issue](https://github.com/protocol/launchpad/issues).
+We highly encourage collaboration & contributions from others who are creating content! Adding tutorials to the Tutorials page of the platform, and Dev Tools pages are super helpful!
+
+- See the [Style Guide](https://github.com/protocol/launchpad/blob/main/STYLE-GUIDE.md) for information on how to format the markdown and add content like images and videos
+- See the [directions for creating tutorials and dev tools pages](https://github.com/protocol/launchpad/blob/main/templates/README.md)
+
+- We would love to make a PR To help get you started! [ping the core contributors](https://github.com/protocol/launchpad/graphs/contributors) to this repository, or open an [Issue](https://github.com/protocol/launchpad/issues).
 
 ## Sections
 
 ### Pre-Requisites
-* Web3 and Protocol Labs
-* Building Web3
-* Web3 Tools
+
+- Web3 and Protocol Labs
+- Building Web3
+- Web3 Tools
 
 ### Launchpad Learning Resources
-* [The Protocol Labs Network](docs/protocol-labs-network/README.md)
-* [IPFS](docs/ipfs/README.md)
-* [IPLD](docs/ipld/README.md)
-* [LibP2p](docs/libp2p/README.md)
-* [Filecoin](docs/filecoin/README.md)
+
+- [Web3](curriculum/web3)
+- [The Protocol Labs Network](docs/protocol-labs-network/README.md)
+- [IPFS](docs/ipfs/README.md)
+- [IPLD](docs/ipld/README.md)
+- [LibP2p](docs/libp2p/README.md)
+- [Filecoin](docs/filecoin/README.md)
 
 ### Dev Tools
-* [Protocol Labs Toolkits & SDKs](docs/protocol-labs-toolkits-sdks/README.md)
-* [Built on IPFS and Filecoin](docs/built-on-ipfs-filecoin/README.md)
-* [Additional Learning](docs/additional-learning-resources/README.md)
+
+- [Protocol Labs Toolkits & SDKs](docs/protocol-labs-toolkits-sdks/README.md)
+- [Built on IPFS and Filecoin](docs/built-on-ipfs-filecoin/README.md)
+- [Additional Learning](docs/additional-learning-resources/README.md)
 
 ## Hugo
+
 Use Hugo to statically serve & preview files on your machine
 
-* Create a [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of this repo or simply use `git clone git@github.com:protocol/launchpad.git`
-* Open the `/launchpad` folder where you cloned it
-* Install version 0.101.1 + of Hugo with `brew install hugo`
-* Run `npm install` from the top level of the launchpad repository
-* Run `hugo server` to start hugo & preview this on `localhost:1313`
+- Create a [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of this repo or simply use `git clone git@github.com:protocol/launchpad.git`
+- Open the `/launchpad` folder where you cloned it
+- Install version 0.101.1 + of Hugo with `brew install hugo`
+- Run `npm install` from the top level of the launchpad repository
+- Run `hugo server` to start hugo & preview this on `localhost:1313`
 
 > Note that you may have the run `npm install` on new/ others' branches you checkout and server before running `hugo server`
+
+> CSS for the homepage is now managed by tailwindcss, which gets installed
+> automatically through npm. Tailwindcss runs as a standalone application,
+> monitoring the source code, and generating only the css that will be needed.
+> The command to run the tailwindcss daemon from the root directory is:
+
+````
+npx tailwindcss -i
+./static/css/tailwind-input.css -o ./static/css/tailwind-output.css --minify
+--watch```
 
 ## Editing Content
 
@@ -54,12 +70,14 @@ Edit the landing pages in `section-name/index.html` or `section-name.md`
 Edit Sidebar content in `config/_default/menus/menus.en.toml`
 
 When editing content, please ask for a PR review from a content maintainer:
-* Curriculum website structure / formatting: @chase
-* PL Network: 
-* web3 Basics: 
-* IPFS: 
-* IPLD: 
-* libp2p: 
-* Filecoin: 
-* DevTools: 
-* Launchpad Getting Started: @momack2
+
+- Curriculum website structure / formatting: @chase
+- PL Network:
+- web3 Basics:
+- IPFS:
+- IPLD:
+- libp2p:
+- Filecoin:
+- DevTools:
+- Launchpad Getting Started: @momack2
+````
