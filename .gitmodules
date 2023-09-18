@@ -1,0 +1,3 @@
+[submodule "themes/hugo-debugprint"]
+	path = themes/hugo-debugprint
+	url = https://github.com/kaushalmodi/hugo-debugprint.git
