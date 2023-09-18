@@ -31,13 +31,7 @@ pages are super helpful!
 
 ## Sections
 
-### Pre-Requisites
-
-- Web3 and Protocol Labs
-- Building Web3
-- Web3 Tools
-
-### Launchpad Learning Resources
+### Curriculum
 
 - [Getting Started](content/en/curriculum/getting-started)
 - [Web3](content/en/curriculum/web3)
@@ -47,6 +41,14 @@ pages are super helpful!
 - [IPLD](content/en/curriculum/ipld)
 - [LibP2p](content/en/curriculum/libp2p)
 - [DevTools](content/en/curriculum/dev-tools)
+
+### Tutorials
+
+- [FVM](content/en/tutorials)
+- [IPFS](content/en/ipfs-intro)
+- [IPFS](content/en/ipld)
+- [libp2p](content/en/libp2p)
+- [Metamask](content/en/metamask-intro)
 
 ## Hugo
 
@@ -86,8 +88,8 @@ When editing content, please ask for a PR review from a content maintainer:
 
 ## Launchpad Homepage
 
-The Launchpad homepage is now a single html file, which is also tracked in this
-repository at: `layouts/index.html`.
+The Launchpad homepage is now a single html file, which is also hosted by Hugo
+and tracked in this repository at: `layouts/index.html`.
 
 CSS for the homepage is mostly managed through tailwindcss, which gets installed
 automatically with npm. Tailwindcss runs as a standalone application, monitoring
