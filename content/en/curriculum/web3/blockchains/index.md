@@ -69,13 +69,13 @@ visualization](blockchain2.png)
 Consensus is the process whereby nodes that don't know each other can come into
 agreement regarding the validity and ordering of transactions. Decentralized
 consensus is difficult because it has to work even when there are some number of
-hostile actors who are deliberately trying to game the system. In the case of
-most blockchains, as long as >50% of the actors are good actors, who play by the
+hostile actors who are deliberately trying to game the system (even at their own cost). In the case of
+most blockchains, as long as >50% of the actors are rational actors, who play by the
 rules, the system will function properly.
 
 How do blockchains ensure they retain a majority of good actors?
 
-There is no guarantee, but there ways to encourage success. Incentivizes are
+There is no guarantee, but there ways to encourage success. Incentives are
 constructed in such a way that playing by the rules will yield a greater result
 than breaking the rules. An actor who assaults the system may be charged a
 significant fee taken from their bonded collateral. Ultimately, an actor who
@@ -85,7 +85,7 @@ there have been hacks and other minor exploits, the systems have proven to be
 stable and trustworthy. The hacks and exploits will reduce in time as these
 systems mature.
 
-How does consensus work?
+### How does consensus work?
 
 Bitcoin consensus innovation is called Proof of Work. Nodes (also called miners)
 in the network compete to solve cryptographic problems in order to earn the

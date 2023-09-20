@@ -27,10 +27,10 @@ The Launchpad curriculum is split into these topic areas:
 
 - Web3 Basics
 - The Protocol Labs Network
-- IPFS -- voluntary decentralized file storage
+- IPFS -- peer-to-peer data storage and sharing
 - Filecoin -- incentivized decentralized file storage
-- IPLD -- universal method to represent data
-- libp2p -- universal peer-to-peer networking
+- IPLD -- data-model for content addressed data
+- libp2p -- universal peer-to-peer networking library
 
 ## Depth Levels
 
@@ -45,10 +45,10 @@ disappear when you select "deep".
 1. Read through the material.
 2. Watch the reference videos either as you go or at the end.
 3. Once you've read and watched, you are then ready to view on of our recorded
-   sessions. In the past we would host live sessions with engineers who would
+   Q&A sessions. In the past we would host live sessions with engineers who would
    talk about the technologies and answer questions. We have some of those
    recorded and linked for you to watch.
-4. At this point you have completed everything for the course. You next step
+4. At this point you have completed everything for the async course. Your next step
    can be to reach out in Filecoin Slack if you have questions. Go to github
-   and check out our repos. There are issues tagged as good starting tasks, if
+   and check out the associated repos. There are issues tagged as good starting tasks, if
    you want to start contributing.
