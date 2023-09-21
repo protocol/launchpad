@@ -14,8 +14,11 @@ level:
 
 # Filecoin
 
-Filecoin is an independent organization that was founded by, and now collaborates with Protocol Labs and the PLN, and is the token behind decentralized storage. Filecoin uses IPFS, libp2p, IPLD, and many other technologies to create protocols, tools, and services to help radically improve the network and drive breakthroughs in computing.
+Filecoin is an independent organization that collaborates with the Protocol Labs Network, and is the token behind decentralized storage. Filecoin uses IPFS, libp2p, IPLD, and many other technologies to create protocols, tools, and services to help radically improve the network and drive breakthroughs in computing.
 
+On the Filecoin network, users pay in Filecoin tokens to store their files with storage providers. Storage providers earn units of Filecoin (FIL) for storing files, and they are responsible for storing files and proving they have stored the files correctly over time.
+
+Available storage and the price of that storage is not controlled by any single company. Instead, the Filecoin network facilitates open markets for storing and retrieving files (by making storage deals between clients and providers) that anyone can participate in. At any time, users can verify that their files are being stored correctly by looking at proofs on Filecoin’s blockchain.
 #### IPFS & Filecoin: The building blocks of an open, decentralized web | Ally Haire
 
 In this talk by DeveloperAlly, she gives a quick overview of the history of IPFS and Filecoin, information about the organizations today, and gives an intro about why Filecoin exists, how it's connected to IPFS, and (at 12:46) the basics of how it works to provide a decentralized and reliable storage system.
