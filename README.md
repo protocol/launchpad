@@ -46,7 +46,7 @@ pages are super helpful!
 
 - [FVM](content/en/tutorials)
 - [IPFS](content/en/ipfs-intro)
-- [IPFS](content/en/ipld)
+- [IPLD](content/en/ipld)
 - [libp2p](content/en/libp2p)
 - [Metamask](content/en/metamask-intro)
 
@@ -74,10 +74,14 @@ Edit the landing pages in `section-name/index.html` or
 
 Edit Sidebar content in `config/_default/menus/menus.en.toml`
 
+### Content Maintainers
+
+When editing content, please ask for a PR review from a content maintainer:
+
 - Curriculum website structure, formatting, and maintenance: @chase
 - Launchpad Getting Started: @momack2
 - Web3 Basics:
-- PL Network:
+- PL Network: @rschanger
 - IPFS:
 - IPLD:
 - libp2p:
