@@ -99,7 +99,7 @@ will be punished through fines (loss of collateral) and missing data will be
 restored from and reassigned to other nodes.
 
 Arweave priorities ease of use over configurability, which makes it will suited
-for simple use cases nad perhaps less well suited for larger or more complex
+for simple use cases and perhaps less well suited for larger or more complex
 data sets that would prefer to optimize on costs, availability or other
 parameters.
 
@@ -109,4 +109,4 @@ Filecoin storage estimates from
 [this](https://www.coingecko.com/research/publications/centralized-decentralized-storage-cost)
 Coingecko report, updated May 2023.
 
-The Arweave and Storj from each of their respective websites.
+The network size and cost estimates for Arweave and Storj come from each of their respective websites.
