@@ -43,9 +43,22 @@ Token: FIL
 
 - Total network capacity: ~13,000 PB
 - Total data stored: ~1,300 PB
-- Storage cost: USD$0-0.19 per TB-month (varies per storage provider and file size)
+- Storage cost: USD$0-0.19 per TB-month (varies per storage provider and file
+  size)
 
-Filecoin is the largest decentralized storage marketplace by several orders of magnitude. It is based off of the popular IPFS protocol, which is the voluntary storage network that stores many of the NFTs on Ethereum, but adds an incentivization layer that guarantees storage over the duration of a deal period. Instead of relying on statistical consistency checks, Filecoin uses a sophisticated cryptographic algorithm to prove that all data is being accurately stored across all storage providers on a daily basis. Such checks provide the most reliable guarantee that data has not gone stale. Filecoin is a protocol that strives to provide the maximum flexibility in terms of storage parameters. Users can configure the deal duration, redundancy, storage provider location, read-performance, and other parameters. Filecoin relies on an ecosystem of interface providers to offer users simple and purpose-specific onramps into the network.
+Filecoin is the largest decentralized storage marketplace by several orders of
+magnitude. It is based off of the popular IPFS protocol, which is the voluntary
+storage network that stores many of the NFTs on Ethereum, but adds an
+incentivization layer that guarantees storage over the duration of a deal
+period. Instead of relying on statistical consistency checks, Filecoin uses a
+sophisticated cryptographic algorithm to prove that all data is being accurately
+stored across all storage providers on a daily basis. Such checks provide the
+most reliable guarantee that data has not gone stale. Filecoin is a protocol
+that strives to provide the maximum flexibility in terms of storage parameters.
+Users can configure the deal duration, redundancy, storage provider location,
+read-performance, and other parameters. Filecoin relies on an ecosystem of
+interface providers to offer users simple and purpose-specific onramps into the
+network.
 
 ## Storj
 
@@ -57,7 +70,8 @@ Token: STORJ
 
 [Storj website](https://www.storj.io/)
 
-[Storj statistics](https://storjstats.info/d/storj/storj-network-statistics?orgId=1)
+[Storj
+statistics](https://storjstats.info/d/storj/storj-network-statistics?orgId=1)
 
 - Total network capacity: ~60 PB
 - Total data stored: ~20 PB
@@ -85,7 +99,8 @@ Token: AR
   - (~USD$15 per TB-month, 20 years)
   - (~USD$6 per TB-month, 50 years)
   - (~USD$3 per TB-month, 100 years)
-  - Formula: 4.27 USD$/AR x 0.87 AR/GiB x 1024 GiB/TiB / X-years / 12 months/year
+  - Formula: 4.27 USD$/AR x 0.87 AR/GiB x 1024 GiB/TiB / X-years / 12
+    months/year
 
 Arweave strives for a simple and unified web2-like interface and a simple
 pricing model: pay once for perpetual storage. This results in storage prices
@@ -109,4 +124,5 @@ Filecoin storage estimates from
 [this](https://www.coingecko.com/research/publications/centralized-decentralized-storage-cost)
 Coingecko report, updated May 2023.
 
-The network size and cost estimates for Arweave and Storj come from each of their respective websites.
+The network size and cost estimates for Arweave and Storj come from each of
+their respective websites.
