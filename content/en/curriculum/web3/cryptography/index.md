@@ -149,7 +149,7 @@ systems which allow anonymous transactions to take place.” (A Cypherpunk’s
 Manifesto)
 
 A decentralized digital currency must not have a central authority that could be
-shut down. But without a the central authority, the problem arises of how to
+shut down. But without a central authority, the problem arises of how to
 arbitrate and create a fair system that both incentivizes good behavior and
 prevents being gamed by hostile actors.
 

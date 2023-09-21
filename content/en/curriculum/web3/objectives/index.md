@@ -14,7 +14,7 @@ level:
 
 ## Overview
 
-The internet is a result humanity's drive to develop more efficient ways of
+The internet is a result of humanity's drive to develop more efficient ways of
 communicating with each other. What started as a group of universities and
 governmental agencies experimenting with digital communication, is now a
 cambrian explosion of different use cases. The internet is many things. It's a

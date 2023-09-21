@@ -70,7 +70,7 @@ to win out for simple payments, exchange and other application-specific use
 cases, but in the medium to long term ZK rollups will win out in all use cases
 as ZK-SNARK technology improves.”
 
-Vitalik Buterin, An Incomplete Guide to Rollups
+-- Vitalik Buterin, An Incomplete Guide to Rollups
 
 How do Optimistic Rollups work?
 

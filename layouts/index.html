@@ -1,3 +1,1196 @@
-{{ define "main" }}
-{{ partial "main/curriculum-page.html" . }}
-{{ end }}
+<!DOCTYPE html>
+<html lang="en" class="w-mod-js w-mod-ix">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>PLN Launchpad</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="logos/lp-primary-color.png"
+    />
+    <link href="css/styles.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/tailwind-output.css" />
+    <style>
+      @media (max-width: 991px) and (min-width: 768px) {
+        html.w-mod-js:not(.w-mod-ix)
+          [data-w-id="f542cf99-beb9-ec4f-30e9-80bc7574e298"] {
+          -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+            rotateY(0) rotateZ(0deg) skew(0, 0);
+          -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+            rotateY(0) rotateZ(0deg) skew(0, 0);
+          -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+            rotateY(0) rotateZ(0deg) skew(0, 0);
+          transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+            rotateZ(0deg) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix)
+          [data-w-id="f542cf99-beb9-ec4f-30e9-80bc7574e299"] {
+          height: 0px;
+        }
+      }
+      @media (max-width: 767px) and (min-width: 480px) {
+        html.w-mod-js:not(.w-mod-ix)
+          [data-w-id="f542cf99-beb9-ec4f-30e9-80bc7574e298"] {
+          -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+            rotateY(0) rotateZ(0deg) skew(0, 0);
+          -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+            rotateY(0) rotateZ(0deg) skew(0, 0);
+          -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+            rotateY(0) rotateZ(0deg) skew(0, 0);
+          transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+            rotateZ(0deg) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix)
+          [data-w-id="f542cf99-beb9-ec4f-30e9-80bc7574e299"] {
+          height: 0px;
+        }
+      }
+      @media (max-width: 479px) {
+        html.w-mod-js:not(.w-mod-ix)
+          [data-w-id="f542cf99-beb9-ec4f-30e9-80bc7574e298"] {
+          -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+            rotateY(0) rotateZ(0deg) skew(0, 0);
+          -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+            rotateY(0) rotateZ(0deg) skew(0, 0);
+          -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+            rotateY(0) rotateZ(0deg) skew(0, 0);
+          transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+            rotateZ(0deg) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix)
+          [data-w-id="f542cf99-beb9-ec4f-30e9-80bc7574e299"] {
+          height: 0px;
+        }
+      }
+    </style>
+    <script defer="" src="js/gsap.min.js"></script>
+    <script defer="" src="js/ScrollTrigger.min.js"></script>
+    <script defer="" src="js/split-type.js"></script>
+
+    <!--MOBILE NAV ANIMATIONS-->
+    <script defer="" src="js/nav.js"></script>
+
+    <!-- TEXT INTRO -->
+    <script defer="" src="js/text-intro.js"></script>
+
+    <!--ANIMATION TEMPLATEs : SCROLL INTRO ANIMATIONS-->
+    <script defer="" src="js/anim-1.js"></script>
+    <script defer="" src="js/anim-2.js"></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="global-settings">
+        <div class="default-css w-embed">
+          <style>
+            :root {
+              --clr-blue: #002256;
+              --clr-light-blue: #156ff7;
+              --clr-grey: #f6f7fa;
+              --clr-white: #ffffff;
+            }
+
+            /*default font size */
+            @media (min-width: 240px) {
+              html {
+                font-size: calc(7.68px + 8.32 * ((100vw - 240px) / 239));
+              }
+            }
+
+            @media (min-width: 768px) {
+              html {
+                font-size: calc(12.31px + 3.69 * ((100vw - 768px) / 223));
+              }
+            }
+
+            @media (min-width: 992px) {
+              html {
+                font-size: calc(11.56px + 4.44 * ((100vw - 992px) / 374));
+              }
+            }
+
+            @media (min-width: 2000px) {
+              html {
+                font-size: 16px;
+              }
+            }
+
+            /*removes tap color on mobile*/
+            a {
+              color: inherit;
+              text-decoration: none;
+              -webkit-tap-highlight-color: var(--clr-light-blue);
+              -webkit-tap-highlight-color: transparent; /* For some Androids */
+            }
+
+            /*Stylize scrollbar*/
+            ::-webkit-scrollbar {
+              width: 2px;
+              background-color: var(--clr-grey);
+            }
+            /*Main color*/
+            ::-webkit-scrollbar-thumb {
+              background-color: var(--clr-blue);
+            }
+
+            /*Change highlight color*/
+            ::selection {
+              color: var(--clr-light-blue);
+              background: var(--clr-grey); /* WebKit/Blink Browsers */
+            }
+            ::-moz-selection {
+              color: var(--clr-light-blue);
+              background: var(--clr-grey); /* Gecko Browsers */
+            }
+
+            /*font smoothing*/
+            body {
+              font-kerning: normal;
+              font-variant-ligatures: common-ligatures;
+              text-rendering: optimizeLegibility;
+              -moz-osx-font-smoothing: grayscale; /* Firefox */
+              -webkit-font-smoothing: antialiased; /* WebKit  */
+              font-style: normal;
+              font-stretch: normal;
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+            }
+
+            /*UTILS*/
+            .no-click {
+              pointer-events: none;
+              touch-action: none;
+            }
+
+            .can-click {
+              pointer-events: auto;
+              touch-action: auto;
+            }
+
+            .no-wrap {
+              white-space: nowrap;
+            }
+
+            .weight-300 {
+              font-weight: 300;
+            }
+
+            .weight-400 {
+              font-weight: 400;
+            }
+
+            .weight-500 {
+              font-weight: 500;
+            }
+
+            .weight-600 {
+              font-weight: 600;
+            }
+
+            .weight-700 {
+              font-weight: 700;
+            }
+
+            .weight-800 {
+              font-weight: 800;
+            }
+          </style>
+        </div>
+        <div class="button-link-styles w-embed">
+          <style>
+            /* BUTTONS */
+            .button-secondary {
+              background: linear-gradient(#ffffff, #ffffff) padding-box,
+                linear-gradient(to right, #156ff7, #71d4a6) border-box;
+              background-origin: border-box;
+            }
+
+            .button-secondary:hover,
+            .button-primary:hover {
+              background: linear-gradient(to right, #156ff7, #71d4a6) border-box;
+              color: white;
+              border-color: transparent;
+            }
+
+            /*NAV LINKS*/
+            .nav-link.w--current::before {
+              content: "";
+              position: absolute;
+              bottom: -3px;
+              left: 0;
+              right: 0;
+              height: 1px;
+              background-color: currentColor;
+            }
+          </style>
+        </div>
+        <div class="animations-css w-embed">
+          <style>
+            .split-line {
+              /* overflow: hidden; */
+              padding-bottom: 0.25rem;
+            }
+          </style>
+        </div>
+      </div>
+      <main class="main is-grey">
+        <nav id="top-nav" class="nav">
+          <div class="container is-nav">
+            <div class="flex flex-row justify-between items-center pt-4 pb-4">
+              <div class="flex flex-row">
+                <div class="nav-brand w-inline-block w--current">
+                  <img
+                    src="logos/lp-primary-color.png"
+                    loading="lazy"
+                    alt=""
+                    class="nav-logo"
+                  />
+                </div>
+                <h1
+                  class="text-4xl font-extrabold text-color-light-blue"
+                  style="margin: auto"
+                >
+                  PLN Launchpad
+                </h1>
+              </div>
+
+              <div class="nav-links">
+                <div class="nav-links-wrapper">
+                  <a href="curriculum/" class="button-primary w-inline-block">
+                    <div>Explore the Curriculum!</div>
+                    <div class="button-icon w-embed">
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 16 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.3327 6.78688L0 6.78688M9.15582 12.4016L14.841 6.70081L9.15582 1"
+                          stroke="currentColor"
+                          stroke-width="1.2"
+                          stroke-linejoin="bevel"
+                        ></path>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="nav-button hide-temporary">
+                <div class="nav-button-line is-1"></div>
+                <div class="nav-button-line is-2"></div>
+              </div>
+              <div class="temporary_nav-links">
+                <a
+                  href="curriculum/"
+                  class="button-primary is-temporary w-inline-block"
+                >
+                  <div>Explore the Curriculum!</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="page-css">
+          <div class="what-we-offer-hexagons w-embed">
+            <style>
+              .home-doc-polygon {
+                clip-path: polygon(
+                  50% 0%,
+                  95% 25%,
+                  95% 75%,
+                  50% 100%,
+                  5% 75%,
+                  5% 25%
+                );
+              }
+
+              .docs-res-list-item.is-2:nth-child(odd) .home-doc-polygon {
+                background-color: var(--clr-light-blue);
+              }
+
+              @media only screen and (min-width: 991px) {
+                /*HEXAGON LAYOUT PATTERN*/
+                .docs-res-list-item.is-2:nth-child(10n + 3),
+                .docs-res-list-item.is-2:nth-child(10n + 4),
+                .docs-res-list-item.is-2:nth-child(10n + 7),
+                .docs-res-list-item.is-2:nth-child(10n + 8),
+                .docs-res-list-item.is-2:nth-child(10n + 11),
+                .docs-res-list-item.is-2:nth-child(10n + 12),
+                .docs-res-list-item.is-2:nth-child(10n + 15),
+                .docs-res-list-item.is-2:nth-child(10n + 16) {
+                  margin-left: -12.75rem;
+                }
+                .docs-res-list-item.is-2:nth-child(10n + 9),
+                .docs-res-list-item.is-2:nth-child(10n + 10) {
+                  margin-left: -25.5rem;
+                }
+                .docs-res-list-item.is-2:nth-child(10n + 13),
+                .docs-res-list-item.is-2:nth-child(10n + 14) {
+                  margin-left: 0;
+                }
+
+                .docs-res-list-item.is-2:nth-child(odd) .home-doc-polygon {
+                  background-color: var(--clr-light-blue);
+                }
+
+                .docs-res-list-item.is-2:nth-child(4n + 1) .home-doc-polygon {
+                  background-color: #fff;
+                }
+
+                .docs-res-list-item.is-2:nth-child(4n + 1) .is-poly-heading {
+                  color: var(--clr-light-blue);
+                }
+
+                .docs-res-list-item.is-2:nth-child(4n + 1) .is-poly-subtext {
+                  color: #707075;
+                }
+
+                .docs-res-list-item.is-2:nth-child(4n + 2) .home-doc-polygon,
+                .docs-res-list-item.is-2:nth-child(4n + 3) .home-doc-polygon {
+                  background-color: var(--clr-light-blue);
+                }
+              }
+            </style>
+          </div>
+          <div class="testimonial-slider w-embed">
+            <style>
+              @media only screen and (min-width: 480px) {
+                .swiper-slide.is-testimonial:hover {
+                  .testimonial-slider-wrapper {
+                    transform: translateY(-4rem);
+                  }
+                }
+              }
+            </style>
+          </div>
+          <div class="nav-dark-mode w-embed">
+            <style>
+              .nav.is-dark {
+                .nav-logo.is-dark {
+                  opacity: 0;
+                }
+
+                .nav-logo.is-light {
+                  opacity: 1;
+                }
+
+                .nav-link {
+                  color: var(--clr-white);
+                }
+
+                .button-primary {
+                  background: var(--clr-light-blue);
+                  border-color: var(--clr-light-blue);
+                }
+
+                .button-secondary {
+                  background: transparent;
+                  border-color: var(--clr-white);
+                  color: var(--clr-white);
+                }
+              }
+            </style>
+          </div>
+          <div class="network-logo-marquee w-embed">
+            <style>
+              @keyframes scroll {
+                from {
+                  transform: translateX(0);
+                }
+                to {
+                  transform: translateX(calc(-100% - 6.25rem));
+                }
+              }
+
+              .scroll-marquee {
+                animation: scroll 25s linear infinite;
+              }
+            </style>
+          </div>
+        </div>
+        <header id="home-header-section" class="section-home-header">
+          <div class="container flex flex-col items-center mb-60">
+            <div id="observable-spacing" class="w-full h-72"></div>
+            <div>
+              <h1
+                data-w-id="263a2bd9-fbc7-6cfc-dc75-94910588accc"
+                class="heading-72 text-color-blue split-type"
+              >
+                <div
+                  class="split-line"
+                  style="display: block; text-align: start; width: 100%"
+                >
+                  <div
+                    class="split-word"
+                    style="
+                      display: inline-block;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(0px, 0%);
+                    "
+                  >
+                    Welcome
+                  </div>
+                  <div
+                    class="split-word"
+                    style="
+                      display: inline-block;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(0px, 0%);
+                    "
+                  >
+                    to
+                  </div>
+                  <div
+                    class="split-word"
+                    style="
+                      display: inline-block;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(0px, 0%);
+                    "
+                  >
+                    Launchpad!
+                  </div>
+                </div>
+              </h1>
+              <div
+                class="heading-36 text-color-blue split-type"
+                style="opacity: 1; visibility: inherit"
+              >
+                <div
+                  class="split-line"
+                  style="display: block; text-align: start; width: 100%"
+                >
+                  <div
+                    class="split-word"
+                    style="
+                      display: inline-block;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(0px, 0%);
+                    "
+                  >
+                    Accelerate
+                  </div>
+                  <div
+                    class="split-word text-color-light-blue"
+                    style="
+                      display: inline-block;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(0px, 0%);
+                    "
+                  >
+                    your
+                  </div>
+                  <div
+                    class="split-word"
+                    style="
+                      display: inline-block;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(0px, 0%);
+                    "
+                  >
+                    Web3
+                  </div>
+                  <div
+                    class="split-word"
+                    style="
+                      display: inline-block;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(0px, 0%);
+                    "
+                  >
+                    knowledge,
+                  </div>
+                  <div
+                    class="split-word"
+                    style="
+                      display: inline-block;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(0px, 0%);
+                    "
+                  >
+                    connections &
+                  </div>
+                  <div
+                    class="split-word"
+                    style="
+                      display: inline-block;
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(0px, 0%);
+                    "
+                  >
+                    learning!
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col lg:flex-row lg:justify-evenly gap-10 mt-20"
+              >
+                <div class="flex flex-row">
+                  <img class="lp-icon" src="icons/hello.png" alt="" />
+                  <h3 class="item">
+                    <span class="text-color-light-blue">Onboard</span> and
+                    connect
+                    <span class="text-color-light-blue">new hires</span>
+                    to Web3 & the PL Network
+                  </h3>
+                </div>
+
+                <div class="flex flex-row">
+                  <img class="lp-icon" src="icons/bulb.png" alt="" />
+                  <h3 class="item">
+                    Gain the technical knowledge and network know-how for new
+                    hires to
+                    <span class="text-color-light-blue">succeed</span> in web3
+                  </h3>
+                </div>
+                <div class="flex flex-row">
+                  <img class="lp-icon" src="icons/shuttle.png" alt="" />
+                  <h3 class="item">
+                    Accelerate new talent to become
+                    <span class="text-color-light-blue">connected</span>,
+                    <span class="text-color-light-blue">effective</span>, and
+                    <span class="text-color-light-blue">productive</span>
+                    contributors within web3
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="section-home-network">
+          <div class="container">
+            <div
+              class="flex flex-col rounded-lg p-10"
+              style="background-color: #156ff7"
+            >
+              <div class="flex flex-col items-center">
+                <h2 class="heading-50 text-color-grey mb-10">
+                  A Training Program for
+                  <span class="text-color-dark-blue"> You! </span>
+                </h2>
+                <div class="w-full">
+                  <div class="">
+                    <div
+                      class="videoWrapper"
+                      style="
+                        position: relative;
+                        padding-bottom: 56.25%;
+                        height: 0;
+                      "
+                    >
+                      <iframe
+                        style="position: absolute; width: 100%; height: 100%"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/Fw725DWbAv4?si=4AnkkwDNjc4R3UJp"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col lg:flex-row mt-10 gap-10 text-18">
+                  <div class="text-color-grey">
+                    Launchpad is a hub for
+                    <span class="text-22 text-color-dark-blue">
+                      web3 learning</span
+                    >
+                    and onboarding within the Protocol Labs Network, having
+                    welcomed over
+                    <span class="text-22 text-color-dark-blue"
+                      >200 learners all over the world!</span
+                    >
+                    From newcomers to seasoned professionals, Launchpad provides
+                    essential knowledge and support for individuals venturing
+                    into the exciting world of web3.
+                  </div>
+
+                  <div class="text-color-grey">
+                    From guides on how to set up your first IPFS or Filecoin
+                    node, to fostering
+                    <span class="text-22 text-color-dark-blue"
+                      >collaborative connections</span
+                    >
+                    across the PLN, Launchpad has served as the catalyst for the
+                    growth and development of talented
+                    <span class="text-22 text-color-dark-blue">developers</span
+                    >, <span> marketing managers</span>,
+                    <span class="text-22 text-color-dark-blue">recruiters</span
+                    >, and many more across the ecosystem. The Launchpad
+                    curriculum helps anyone learn about Web3 at
+                    <span class="text-22 text-color-dark-blue"
+                      >your own pace!</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="seciton-home-testimonials">
+          <div class="container">
+            <div class="home-testimonials_component">
+              <div class="home-testimonial-header">
+                <h2
+                  class="heading-50 split-type"
+                  style="opacity: 1; visibility: inherit"
+                >
+                  <div class="split-line block text-start w-full">
+                    <div class="split-word inline-block">What</div>
+                    <div class="split-word inline-block">our</div>
+                    <div class="split-word inline-block text-color-light-blue">
+                      Residents
+                    </div>
+                    <div class="split-word inline-block">say</div>
+                  </div>
+                </h2>
+              </div>
+              <div class="home-testimonials-content">
+                <div class="testimonials-temp">
+                  <div
+                    class="swiper is-testimonial is-temporary w-dyn-list swiper-initialized swiper-horizontal swiper-backface-hidden"
+                  >
+                    <div
+                      role="list"
+                      class="swiper-wrapper is-testimonial anim-2 is-temporary w-dyn-items"
+                      id="swiper-wrapper-57feea89ec2f6279"
+                      aria-live="polite"
+                      style="opacity: 1; visibility: inherit"
+                    >
+                      <div
+                        role="group"
+                        class="swiper-slide is-testimonial is-temporary w-dyn-item is-active"
+                        aria-label="1 / 3"
+                        style="
+                          translate: none;
+                          rotate: none;
+                          scale: none;
+                          margin-right: 40px;
+                        "
+                      >
+                        <div class="testimonial-slider-wrapper">
+                          <div class="testimonial-top">
+                            <div class="testimonial-headshot">
+                              <img
+                                loading="lazy"
+                                alt=""
+                                src="images/diego.jpeg"
+                                sizes="(max-width: 767px) 100vw, (max-width: 991px) 8vw, 6vw"
+                                class="img-contain"
+                              />
+                            </div>
+                            <div class="testimonial-name">
+                              <div
+                                class="text-14 text-color-light-blue weight-600"
+                              >
+                                Diego, Software Engineer
+                              </div>
+                              <div
+                                class="text-14 text-color-light-blue weight-300"
+                              >
+                                Protocol Labs Network - Saturn Team
+                              </div>
+                            </div>
+                          </div>
+                          <div class="testimonial-bottom">
+                            <p class="text-18 text-color-blue">
+                              "The Launchpad program provided a structured and
+                              right-to-the-point curriculum that allowed me to
+                              learn and process the topics with ease. I have
+                              nothing but appreciation and gratitude with
+                              everyone involved in making Launchpad possible."
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        role="group"
+                        class="swiper-slide is-testimonial is-temporary w-dyn-item swiper-slide-next"
+                        aria-label="2 / 3"
+                        style="
+                          translate: none;
+                          rotate: none;
+                          scale: none;
+                          margin-right: 40px;
+                        "
+                      >
+                        <div class="testimonial-slider-wrapper">
+                          <div class="testimonial-top">
+                            <div class="testimonial-headshot">
+                              <img
+                                loading="lazy"
+                                alt=""
+                                src="images/joao.jpeg"
+                                sizes="(max-width: 767px) 100vw, (max-width: 991px) 8vw, 6vw"
+                                class="img-contain"
+                              />
+                            </div>
+                            <div class="testimonial-name">
+                              <div
+                                class="text-14 text-color-light-blue weight-600"
+                              >
+                                João, Technical Program Manager
+                              </div>
+                              <div
+                                class="text-14 text-color-light-blue weight-300"
+                              >
+                                Protocol Labs Network - Data Programs
+                              </div>
+                            </div>
+                          </div>
+                          <div class="testimonial-bottom">
+                            <p class="text-18 text-color-blue">
+                              "The content was thoughtfully curated and I felt
+                              like I gained the fundamental knowledge necessary
+                              to make contributions to our technical stack and
+                              strategy. Crucially, it was also a way for me to
+                              connect the dots: from how everything works
+                              together in practice to who I should go to for
+                              answers."
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        role="group"
+                        class="swiper-slide is-testimonial is-temporary w-dyn-item"
+                        aria-label="3 / 3"
+                        style="
+                          translate: none;
+                          rotate: none;
+                          scale: none;
+                          margin-right: 40px;
+                        "
+                      >
+                        <div class="testimonial-slider-wrapper">
+                          <div class="testimonial-top">
+                            <div class="testimonial-headshot">
+                              <img
+                                loading="lazy"
+                                alt=""
+                                src="images/ally.jpeg"
+                                sizes="(max-width: 767px) 100vw, (max-width: 991px) 8vw, 6vw"
+                                class="img-contain"
+                              />
+                            </div>
+                            <div class="testimonial-name">
+                              <div
+                                class="text-14 text-color-light-blue weight-600"
+                              >
+                                Ally, Developer Advocate
+                              </div>
+                              <div
+                                class="text-14 text-color-light-blue weight-300"
+                              >
+                                Filecoin Foundation
+                              </div>
+                            </div>
+                          </div>
+                          <div class="testimonial-bottom">
+                            <p class="text-18 text-color-blue">
+                              "Launchpad is an invaluable way to gain knowledge
+                              on the Protocol Labs (PL) ecosystem and for
+                              surfacing opportunities to contribute to. The
+                              program offers a crucial path to getting up to
+                              speed on the essential building blocks of the
+                              network."
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span
+                      class="swiper-notification"
+                      aria-live="assertive"
+                      aria-atomic="true"
+                    >
+                    </span>
+                  </div>
+                </div>
+                <div class="tetsimonial-slider">
+                  <div
+                    class="swiper is-testimonial w-dyn-list swiper-initialized swiper-horizontal"
+                  >
+                    <div
+                      role="list"
+                      class="swiper-wrapper is-testimonial anim-2 w-dyn-items"
+                      id="swiper-wrapper-16f3748107d62cb86"
+                      aria-live="polite"
+                      style="
+                        transition-duration: 0ms;
+                        opacity: 1;
+                        visibility: inherit;
+                      "
+                    >
+                      <div
+                        role="listitem"
+                        class="swiper-slide is-testimonial w-dyn-item"
+                        style="
+                          translate: none;
+                          rotate: none;
+                          scale: none;
+                          transform: translate(0%, 0%);
+                          opacity: 1;
+                        "
+                      >
+                        <div class="testimonial-slider-wrapper">
+                          <div class="testimonial-top">
+                            <div class="testimonial-headshot">
+                              <img
+                                loading="lazy"
+                                alt=""
+                                src="images/diego.jpeg"
+                                sizes="(max-width: 767px) 12vw, 100vw"
+                                class="img-contain"
+                              />
+                            </div>
+                            <div class="testimonial-name">
+                              <div
+                                class="text-14 text-color-light-blue weight-600"
+                              >
+                                Protocol Labs Network - Saturn Team
+                              </div>
+                              <div
+                                class="text-14 text-color-light-blue weight-300"
+                              >
+                                Diego, Software Engineer
+                              </div>
+                            </div>
+                          </div>
+                          <div class="testimonial-bottom">
+                            <p class="text-18 text-color-blue">
+                              "The Launchpad program provided a structured and
+                              right-to-the-point curriculum that allowed me to
+                              learn and process the topics with ease. I have
+                              nothing but appreciation and gratitude with
+                              everyone involved in making Launchpad possible."
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        role="listitem"
+                        class="swiper-slide is-testimonial w-dyn-item"
+                        style="
+                          translate: none;
+                          rotate: none;
+                          scale: none;
+                          transform: translate(0%, 0%);
+                          opacity: 1;
+                        "
+                      >
+                        <div class="testimonial-slider-wrapper">
+                          <div class="testimonial-top">
+                            <div class="testimonial-headshot">
+                              <img
+                                loading="lazy"
+                                alt=""
+                                src="images/joao.jpeg"
+                                sizes="(max-width: 767px) 12vw, 100vw"
+                                class="img-contain"
+                              />
+                            </div>
+                            <div class="testimonial-name">
+                              <div
+                                class="text-14 text-color-light-blue weight-600"
+                              >
+                                Protocol Labs Network - Data Programs
+                              </div>
+                              <div
+                                class="text-14 text-color-light-blue weight-300"
+                              >
+                                João, Technical Program Manager
+                              </div>
+                            </div>
+                          </div>
+                          <div class="testimonial-bottom">
+                            <p class="text-18 text-color-blue">
+                              "The content was thoughtfully curated and I felt
+                              like I gained the fundamental knowledge necessary
+                              to make contributions to our technical stack and
+                              strategy. Crucially, it was also a way for me to
+                              connect the dots: from how everything works
+                              together in practice to who I should go to for
+                              answers."
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        role="listitem"
+                        class="swiper-slide is-testimonial w-dyn-item"
+                        style="
+                          translate: none;
+                          rotate: none;
+                          scale: none;
+                          transform: translate(0%, 0%);
+                          opacity: 1;
+                        "
+                      >
+                        <div class="testimonial-slider-wrapper">
+                          <div class="testimonial-top">
+                            <div class="testimonial-headshot">
+                              <img
+                                loading="lazy"
+                                alt=""
+                                src="images/ally.jpeg"
+                                sizes="(max-width: 767px) 12vw, 100vw"
+                                class="img-contain"
+                              />
+                            </div>
+                            <div class="testimonial-name">
+                              <div
+                                class="text-14 text-color-light-blue weight-600"
+                              >
+                                Filecoin Foundation
+                              </div>
+                              <div
+                                class="text-14 text-color-light-blue weight-300"
+                              >
+                                Ally, Developer Advocate
+                              </div>
+                            </div>
+                          </div>
+                          <div class="testimonial-bottom">
+                            <p class="text-18 text-color-blue">
+                              "Launchpad is an invaluable way to gain knowledge
+                              on the Protocol Labs (PL) ecosystem and for
+                              surfacing opportunities to contribute to. The
+                              program offers a crucial path to getting up to
+                              speed on the essential building blocks of the
+                              network."
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span
+                      class="swiper-notification"
+                      aria-live="assertive"
+                      aria-atomic="true"
+                    >
+                    </span>
+                  </div>
+                  <div class="slider-arrows is-testimonial">
+                    <a
+                      href="#"
+                      class="swiper-arrow is-testimonial is-prev w-inline-block"
+                      tabindex="0"
+                      role="button"
+                      aria-label="Previous slide"
+                      aria-controls="swiper-wrapper-16f3748107d62cb86"
+                      aria-disabled="false"
+                    >
+                      <div class="button-icon is-button flipped w-embed">
+                        <svg
+                          width="100%"
+                          height="100%"
+                          viewBox="0 0 16 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.3327 6.78688L0 6.78688M9.15582 12.4016L14.841 6.70081L9.15582 1"
+                            stroke="currentColor"
+                            stroke-width="1.2"
+                            stroke-linejoin="bevel"
+                          ></path>
+                        </svg>
+                      </div>
+                    </a>
+                    <a
+                      href="#"
+                      class="swiper-arrow is-testimonial is-next w-inline-block"
+                      tabindex="0"
+                      role="button"
+                      aria-label="Next slide"
+                      aria-controls="swiper-wrapper-16f3748107d62cb86"
+                      aria-disabled="false"
+                    >
+                      <div class="button-icon is-button w-embed">
+                        <svg
+                          width="100%"
+                          height="100%"
+                          viewBox="0 0 16 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.3327 6.78688L0 6.78688M9.15582 12.4016L14.841 6.70081L9.15582 1"
+                            stroke="currentColor"
+                            stroke-width="1.2"
+                            stroke-linejoin="bevel"
+                          ></path>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- Where button used to be -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="flex flex-col lg:flex-row lg:justify-center gap-16">
+            <div class="ml-50" style="height: 100%">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSc53TYjK7q5jxD-CAJB5_CfSbwtPzvRGKuT43Rd6UIoYxcpbw/viewform?embedded=true"
+                width="640"
+                height="1000"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                >Loading…</iframe
+              >
+            </div>
+            <div
+              class="testimonial-slider-wrapper"
+              style="padding-right: 50px; padding-top: 40px; max-width: 600px"
+            >
+              <div class="flex flex-col gap-5 cta-list text-18">
+                <div>
+                  The Launchpad curriculum covers topics like:
+                  <span class="text-color-light-blue">blockchains</span>,
+                  peer-to-peer communication, <span>content addressing</span>,
+                  and
+                  <span class="text-color-light-blue"
+                    >decentralized file storage</span
+                  >.
+                </div>
+                <div>
+                  Launchpad has proven to be a valuable resource to
+                  <span class="text-color-light-blue"
+                    >over 270 participants
+                  </span>
+                  from 20 diverse organizations, with both synchronous and async
+                  cohorts of learners diving into the curriculum together.
+                </div>
+                <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700" />
+                <div>
+                  Launchpad
+                  <span class="text-color-light-blue"
+                    >live cohorts are currently paused</span
+                  >. However the curriculum and resources are available to use
+                  for
+                  <span class="text-color-light-blue"
+                    >self-guided exploration</span
+                  >.
+                </div>
+                <div class="flex flex-col gap-10 ml-5 mt-3">
+                  <div class="flex flex-row">
+                    <img class="lp-icon" src="icons/shuttle.png" alt="" />
+                    <div class="">
+                      <a href="curriculum/">Explore the Curriculum!</a> to begin
+                      your learning experience!
+                    </div>
+                  </div>
+                  <div class="flex flex-row">
+                    <img class="lp-icon" src="icons/hello.png" alt="" />
+                    <div>
+                      Get in touch with us on
+                      <a href="https://filecoin.io/slack">Filecoin Slack</a>
+                      or fill out the form to join our waitlist.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div
+            class="home-testimonials-cta"
+            style="margin-top: 50px; padding-bottom: 50px"
+          >
+            <a href="curriculum/" class="button-secondary w-inline-block">
+              <div class="button-secondary-text">Explore the Curriculum!</div>
+              <div class="button-icon w-embed">
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 16 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.3327 6.78688L0 6.78688M9.15582 12.4016L14.841 6.70081L9.15582 1"
+                    stroke="currentColor"
+                    stroke-width="1.2"
+                    stroke-linejoin="bevel"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </section>
+        <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700" />
+        <div class="flex flex-row justify-between ml-36 mr-36 mt-5 pb-5">
+          <div class="">
+            <ul>
+              <li>
+                Made with &hearts; by Protocol Labs. <br />
+                The icons used are provided by
+                <a href="https://www.freepik.com" title="Freepik">Freepik</a>
+                and
+                <a
+                  href="https://www.flaticon.com/authors/muhammad-usman"
+                  title="Muhammad_Usman"
+                  >Usman</a
+                >.
+              </li>
+            </ul>
+          </div>
+          <div class="text-lg">
+            <ul>
+              <li>
+                <a href="about">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      // The following will make the top nav have a white background when the
+      // window is scrolled down slightly.  The top nav should have no
+      // background color when the page is scrolled all the way at the top.
+      let observable = document.querySelector("#observable-spacing");
+      let top_nav = document.querySelector("#top-nav");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          let entry = entries[0];
+          console.log("observed: ", entry);
+          top_nav.classList.toggle("bg-white", !entry.isIntersecting);
+        },
+        {
+          threshold: 0.5,
+        }
+      );
+      observer.observe(observable);
+    </script>
+  </body>
+</html>
