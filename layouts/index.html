@@ -235,19 +235,10 @@
         </div>
       </div>
       <main class="main is-grey">
-        <nav
-          class="nav"
-          style="
-            translate: none;
-            rotate: none;
-            scale: none;
-            transform: translate(0px, 0%);
-            opacity: 1;
-          "
-        >
+        <nav id="top-nav" class="nav">
           <div class="container is-nav">
-            <div class="nav_component">
-              <div style="display: flex">
+            <div class="flex flex-row justify-between items-center pt-4 pb-4">
+              <div class="flex flex-row">
                 <div class="nav-brand w-inline-block w--current">
                   <img
                     src="logos/lp-primary-color.png"
@@ -301,7 +292,6 @@
               </div>
             </div>
           </div>
-          <div class="nav-background-color" style="opacity: 0"></div>
         </nav>
         <div class="page-css">
           <div class="what-we-offer-hexagons w-embed">
@@ -422,8 +412,9 @@
           </div>
         </div>
         <header id="home-header-section" class="section-home-header">
-          <div class="container flex flex-row items-center">
-            <div class="home-header_component">
+          <div class="container flex flex-col items-center mb-60">
+            <div id="observable-spacing" class="w-full h-60"></div>
+            <div>
               <h1
                 data-w-id="263a2bd9-fbc7-6cfc-dc75-94910588accc"
                 class="heading-72 text-color-blue split-type"
@@ -572,9 +563,9 @@
                 <div class="flex flex-row">
                   <img class="lp-icon" src="icons/bulb.png" alt="" />
                   <h3 class="item">
-                    Providing the technical knowledge and network know-how for new-hires to
-                    <span class="text-color-light-blue">succeed</span> in
-                    web3
+                    Providing the technical knowledge and network know-how for
+                    new-hires to
+                    <span class="text-color-light-blue">succeed</span> in web3
                   </h3>
                 </div>
                 <div class="flex flex-row">
@@ -593,15 +584,18 @@
         </header>
         <section class="section-home-network">
           <div class="container">
-            <div class="home-network_component">
+            <div
+              class="flex flex-col rounded-lg p-10"
+              style="background-color: #156ff7"
+            >
               <div class="flex flex-col items-center">
-                <h2 class="heading-50 text-color-grey">
+                <h2 class="heading-50 text-color-grey mb-5">
                   A Training Program for
                   <span class="text-color-dark-blue"> You! </span>
                 </h2>
-                <div class="w-full">
+                <div class="w-auto">
                   <iframe
-                    width="100%"
+                    width="888px"
                     height="500px"
                     style="padding-bottom: unset"
                     src="https://www.youtube.com/embed/Fw725DWbAv4?si=DMmCZgKOUlD9LVr_"
@@ -618,8 +612,9 @@
                     <span class="text-22 text-color-dark-blue"
                       >200 learners all over the world!</span
                     >
-                    From newcomers to seasoned professionals, Launchpad provides essential knowledge and
-                    support for individuals venturing into the exciting world of web3.
+                    From newcomers to seasoned professionals, Launchpad provides
+                    essential knowledge and support for individuals venturing
+                    into the exciting world of web3.
                   </div>
 
                   <div class="text-color-grey">
@@ -633,7 +628,8 @@
                     <span class="text-22 text-color-dark-blue">developers</span
                     >, <span> marketing managers</span>,
                     <span class="text-22 text-color-dark-blue">recruiters</span
-                    >, and many more across the ecosystem. The Launchpad curriculum helps anyone learn about Web3 at
+                    >, and many more across the ecosystem. The Launchpad
+                    curriculum helps anyone learn about Web3 at
                     <span class="text-22 text-color-dark-blue"
                       >your own pace!</span
                     >
@@ -1071,20 +1067,24 @@
                   peer-to-peer communication, <span>content addressing</span>,
                   and
                   <span class="text-color-light-blue"
-                    >decentralized file storage</span>.
+                    >decentralized file storage</span
+                  >.
                 </div>
                 <div>
                   Launchpad has proven to be a valuable resource to
-                  <span class="text-color-light-blue">over 270 participants </span>
-                  from 20 diverse organizations, with both synchronous and async cohorts of
-                  learners diving into the curriculum together.
+                  <span class="text-color-light-blue"
+                    >over 270 participants
+                  </span>
+                  from 20 diverse organizations, with both synchronous and async
+                  cohorts of learners diving into the curriculum together.
                 </div>
                 <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700" />
                 <div>
                   Launchpad
                   <span class="text-color-light-blue"
                     >live cohorts are currently paused</span
-                  >. However the curriculum and resources are available to use for
+                  >. However the curriculum and resources are available to use
+                  for
                   <span class="text-color-light-blue"
                     >self-guided exploration</span
                   >.
@@ -1093,7 +1093,8 @@
                   <div class="flex flex-row">
                     <img class="lp-icon" src="icons/shuttle.png" alt="" />
                     <div class="">
-                      <a href="curriculum/">Explore the Curriculum!</a> to begin your learning experience!
+                      <a href="curriculum/">Explore the Curriculum!</a> to begin
+                      your learning experience!
                     </div>
                   </div>
                   <div class="flex flex-row">
@@ -1135,7 +1136,50 @@
             </a>
           </div>
         </section>
+        <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700" />
+        <div class="flex flex-row justify-between ml-36 mr-36 mt-5 pb-5">
+          <div class="">
+            <ul>
+              <li>
+                Made with &hearts; by Protocol Labs. <br />
+                The icons used are provided by
+                <a href="https://www.freepik.com" title="Freepik">Freepik</a>
+                and
+                <a
+                  href="https://www.flaticon.com/authors/muhammad-usman"
+                  title="Muhammad_Usman"
+                  >Usman</a
+                >.
+              </li>
+            </ul>
+          </div>
+          <div class="text-lg">
+            <ul>
+              <li>
+                <a href="about">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </main>
     </div>
+    <script>
+      // The following will make the top nav have a white background when the
+      // window is scrolled down slightly.  The top nav should have no
+      // background color when the page is scrolled all the way at the top.
+      let observable = document.querySelector("#observable-spacing");
+      let top_nav = document.querySelector("#top-nav");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          let entry = entries[0];
+          console.log("observed: ", entry);
+          top_nav.classList.toggle("bg-white", !entry.isIntersecting);
+        },
+        {
+          threshold: 0.5,
+        }
+      );
+      observer.observe(observable);
+    </script>
   </body>
 </html>
