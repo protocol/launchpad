@@ -4,8 +4,8 @@ description: "Contributing to Protocol Labs Core Projects"
 draft: false
 menu:
     curriculum:
-        parent: "curriculum-pln"
-weight: 60
+        parent: "curriculum-intro"
+weight: 30
 category: lecture
 level:
 - shallow
