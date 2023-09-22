@@ -65,7 +65,7 @@
 
 [[curriculum]]
   name = "Getting Started"
-  weight = 1
+  weight = 10
   identifier = "curriculum-intro"
   [curriculum.params]
     image = "/logos/lp-primary-color.png"
@@ -76,7 +76,7 @@
 
 [[curriculum]]
   name = "Web 3 Basics"
-  weight = 9
+  weight = 20
   identifier = "curriculum-web3"
   [curriculum.params]
     image = "/logos/blockchain.png"
@@ -87,7 +87,7 @@
 
 [[curriculum]]
   name = "Protocol Labs Network"
-  weight = 10
+  weight = 30
   identifier = "curriculum-pln"
   [curriculum.params]
     image = "/logos/pl.png"
@@ -98,7 +98,7 @@
 
 [[curriculum]]
   name = "IPFS"
-  weight = 20
+  weight = 40
   identifier = "curriculum-ipfs"
   [curriculum.params]
     image = "/logos/ipfs.svg"
@@ -109,7 +109,7 @@
 
 [[curriculum]]
   name = "IPLD"
-  weight = 50
+  weight = 70
   identifier = "curriculum-ipld"
   [curriculum.params]
     image = "/logos/ipld.png"
@@ -120,7 +120,7 @@
 
 [[curriculum]]
   name = "libp2p"
-  weight = 40
+  weight = 60
   identifier = "curriculum-libp2p"
   [curriculum.params]
     image = "/logos/libp2p.png"
@@ -131,7 +131,7 @@
 
 [[curriculum]]
   name = "Filecoin"
-  weight = 30
+  weight = 50
   identifier = "curriculum-filecoin"
   [curriculum.params]
     image = "/logos/filecoin.png"
@@ -142,7 +142,7 @@
 
 [[curriculum]]
   name = "Dev Tools"
-  weight = 35
+  weight = 80
   identifier = "curriculum-devtools"
   [curriculum.params]
     image = "/icons/devtools.png"
