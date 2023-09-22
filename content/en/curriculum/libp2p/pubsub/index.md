@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-libp2p"
-weight: 330
+weight: 60
 category: lecture
 objectives:
   show: true
@@ -42,7 +42,7 @@ FloodSub is simple, reliable, and highly resistant to malicious actors and censo
 
 ## Gossipsub
 
-The main goal of Gossipsub is to reduce the bandwith used in delivering messages.
+The main goal of Gossipsub is to reduce the bandwidth used in delivering messages.
 In the Gossipsub, peers can connect by setting up a _full-message connection_ or a _metadata-only connection_.
 Full-message peers exchange all the information about the message; metadata-only peers exchange only data identifying the message, but not the full message itself.
 
@@ -57,14 +57,14 @@ The number of _full-message_ peers that a node is connected to, depends on a par
 You can get more information about PubSub in the [libp2p documentation](https://docs.libp2p.io/concepts/publish-subscribe/) and the in the following videos, which extensively cover the Gossipsub protocol.
 
 ## Tutorial: Publish Subscribe (Pubsub) with IPFS & libp2p
-In this tutorial video, you will see how you can use the publish-subscribe functionality (using the libp2p Gossipsub routing algorithm) with an IPFS node.  Follow along to start an IPFS node with pubsub enabled, and send and recieve messages.
+In this tutorial video, you will see how you can use the publish-subscribe functionality (using the libp2p Gossipsub routing algorithm) with an IPFS node.  Follow along to start an IPFS node with pubsub enabled, and send and receive messages.
 
 {{< youtube 9pUqOhORsYI >}}
 
 **Resources:**
 * [Blog with Pubsub instructions](https://bitly.protocol.ai/pubsub-blog)
 * [Other Pubsub Options](https://bitly.protocol.ai/pusub-flags)
-* [lipbp2p Docs – Publish/Subscribe](https://docs.libp2p.io/concepts/publish-subscribe/)
+* [libp2p Docs – Publish/Subscribe](https://docs.libp2p.io/concepts/publish-subscribe/)
 
 
 ## Expand Your Knowledge

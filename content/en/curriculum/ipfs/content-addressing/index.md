@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-ipfs"
-weight: 75
+weight: 30
 category: lecture
 level:
 - shallow

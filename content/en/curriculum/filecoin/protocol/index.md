@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-filecoin"
-weight: 410
+weight: 50
 category: lecture
 level:
 - deep
@@ -46,7 +46,7 @@ In order to understand the nuances of the Filecoin protocol, there are several c
 
 This talk given in July of 2022 takes a deep dive into the Actors that make up the computational model of the Filecoin protocol. Filecoin actors are hard-coded programs that run concurrently (as opposed to linear, stack based computing) on a blockchain.
 
-Learn about why Filecoin uses actors, the different types of actors and what the current 11 Filecoin actors do, and understand the upgrades that have occured since mainnet launch. As the [Filecoin Virtual Machine (FVM) is developed](https://fvm.filecoin.io/#roadmap-4), the capabilities of Filecoin actors will greatly expand along with the potential for the Filecoin Protocol, by decoupling adding functionality from protocol upgrades and allowing for independent user actors.
+Learn about why Filecoin uses actors, the different types of actors and what the current 11 Filecoin actors do, and understand the upgrades that have occurred since mainnet launch. As the [Filecoin Virtual Machine (FVM) is developed](https://fvm.filecoin.io/#roadmap-4), the capabilities of Filecoin actors will greatly expand along with the potential for the Filecoin Protocol, by decoupling adding functionality from protocol upgrades and allowing for independent user actors.
 
 {{< youtube 9JbwbTPonv0 >}}
 

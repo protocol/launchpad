@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-filecoin"
-weight: 380
+weight: 20
 category: lecture
 level:
 - shallow
@@ -15,6 +15,15 @@ level:
 # Filecoin
 
 Filecoin is an independent organization that was founded by, and now collaborates with Protocol Labs and the PLN, and is the token behind decentralized storage. Filecoin uses IPFS, libp2p, IPLD, and many other technologies to create protocols, tools, and services to help radically improve the network and drive breakthroughs in computing.
+
+## Filecoin Introduction
+
+This recording and deck is intended to provide a high-level overview of the fundamental concepts of Filecoin.
+
+{{< youtube i7srSNxFFaI>}}
+
+{{< embed src="https://docs.google.com/presentation/d/e/2PACX-1vRHoTj6pPtBUHgW-2w1CMknEyW3gfwUpQz0iH-aFjA4yxN71u8fR4x_4WhrimeW6rHSsO7YG8D9iJgm/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" >}}
+Introduction to Filecoin (3/28/23)
 
 #### IPFS & Filecoin: The building blocks of an open, decentralized web | Ally Haire
 
@@ -28,7 +37,7 @@ In Filecoin, users can pay to store their files on storage providers (They can a
 
 ![](intro.png)
 
-Available storage, and the price of that storage, is not controlled by any single entity. Instead, Filecoin facilitates open markets for storing and retrieving files that anyone can participate in, and recieve FIL for their participation in the network.
+Available storage, and the price of that storage, is not controlled by any single entity. Instead, Filecoin facilitates open markets for storing and retrieving files that anyone can participate in, and receive FIL for their participation in the network.
 
 [Read More](https://docs.filecoin.io/about-filecoin/what-is-filecoin/#for-users)
 

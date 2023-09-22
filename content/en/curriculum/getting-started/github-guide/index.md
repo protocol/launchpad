@@ -5,7 +5,7 @@ draft: false
 menu:
   curriculum:
     parent: "curriculum-intro"
-weight: 80
+weight: 40
 category: lecture
 levels:
   - shallow

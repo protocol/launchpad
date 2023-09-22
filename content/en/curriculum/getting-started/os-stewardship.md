@@ -4,8 +4,8 @@ description: "Open Source Culture and Stewardship"
 draft: false
 menu:
     curriculum:
-        parent: "curriculum-pln"
-weight: 50
+        parent: "curriculum-intro"
+weight: 20
 category: lecture
 level:
 - deep

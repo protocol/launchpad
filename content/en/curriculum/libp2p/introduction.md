@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-libp2p"
-weight: 290
+weight: 20
 category: lecture
 level:
 - shallow
@@ -29,6 +29,15 @@ Building large scale peer-to-peer systems has presented many complex difficultie
 This is the stuff that moves libp2p from "a networking toolbox to build P2P applications" to the thing that fundamentally reshapes the architecture of the Internet; our dreams and aspirations, the North star we should always keep in sight; this is what motivates us and it's speaks intimately to our mission statement; the libp2p analogy of IPFS working on Mars.
 
 [Node data dashboard](https://kademlia-exporter.max-inden.de/d/-avwMhsik/kademlia-exporter?orgId=1)
+
+## libp2p Introduction
+
+This recording and deck is intended to provide a high-level overview of the fundamental concepts of libp2p.
+
+{{< youtube Xw-5cRSs85M>}}
+
+{{< embed src="https://docs.google.com/presentation/d/e/2PACX-1vSBFLQibkm_YWUi0sIaY7CLLd4PMpPk0kjgE1nt5XPBuHwhTU0owdCP44nv5OzBmoDAOIwcy4Ngx0AV/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" >}}
+Introduction to libp2p (3/9/23)
 
 ### Introduction to libp2p | David Dias
 
@@ -78,7 +87,7 @@ The users of the libp2p protocol suite include, and is a list that is always bei
 **Resources:**
 * [Blog with Pubsub instructions](https://bitly.protocol.ai/pubsub-blog)
 * [Other Pubsub Options](https://bitly.protocol.ai/pusub-flags)
-* [lipbp2p Docs – Publish/Subscribe](https://docs.libp2p.io/concepts/publish-subscribe/)
+* [libp2p Docs – Publish/Subscribe](https://docs.libp2p.io/concepts/publish-subscribe/)
 
 ### Links
 

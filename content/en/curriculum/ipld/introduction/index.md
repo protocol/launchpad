@@ -42,6 +42,15 @@ Treating the data layer as a discrete system provides developers working on cont
 2. Can we unify disparate content addressed formats and link between them? Git, blockchains, IPFS, etc.
 3. Can we build distributed data structures that we can interact with like we do with hosted databases, while taking advantage of the benefits of content addressing?
 
+## IPLD Introduction
+
+This recording and deck is intended to provide a high-level overview of the fundamental concepts of IPLD.
+
+{{< youtube q1rIiuSP9SA>}}
+
+{{< embed src="https://docs.google.com/presentation/d/e/2PACX-1vQy3u4CWiZIa5_1JiF5HeeCX7kIJ2mAQth2ylVIAZNk9djsbkqhqMb5qZIlbVdth0vCmClElcocbJF2/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" >}}
+Introduction to IPLD (3/9/23)
+
 ### [ResNetLab: Course Module - InterPlanetary Linked Data (IPLD)](https://research.protocol.ai/tutorials/resnetlab-on-tour/ipld/)
 
 {{< youtube Sgf6j_mCdjI >}}

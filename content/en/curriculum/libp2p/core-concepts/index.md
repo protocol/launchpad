@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-libp2p"
-weight: 300
+weight: 30
 category: lecture
 goal: 1.2
 subgoals:

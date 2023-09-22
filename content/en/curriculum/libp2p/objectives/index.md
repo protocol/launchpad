@@ -6,7 +6,7 @@ menu:
     curriculum:
         parent: "curriculum-libp2p"
         identifier: "libp2p-objectives"
-weight: 289
+weight: 10
 category: lecture
 level:
 - shallow

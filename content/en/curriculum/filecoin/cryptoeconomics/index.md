@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-filecoin"
-weight: 400
+weight: 40
 category: lecture
 level:
 - shallow
@@ -32,7 +32,7 @@ Since Filecoin exists to incentivize storage on the network, there are certain p
 While that data is being sealed and stored, several content identifiers are produced such as CommR, CommD, and more, which you can read about in the [ProtoSchool tutorial](https://proto.school/verifying-storage-on-filecoin/03).
 
 #### Proofs-of-Replication | Filecoin Research – Ben Fisch, Nicola Greco, & Juan Benet
-In this 6 minute video, understand how Filecoin proves both replication, retrievablilty, and proof of used (useful) storage space.
+In this 6 minute video, understand how Filecoin proves both replication, retrievability, and proof of used (useful) storage space.
 
 {{< youtube L826rIziNMQ >}}
 
