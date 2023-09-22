@@ -1,5 +1,5 @@
 ---
-title: "Past Recorded Sessions For Libp2p"
+title: "Libp2p Shallow and Deep Dive Sessions"
 description: "Introductory, Shallow & Deep Dives into libp2p"
 draft: false
 menu:
@@ -8,15 +8,6 @@ menu:
 weight: 170
 category: lecture
 ---
-
-## libp2p Introduction
-
-This recording and deck is intended to provide a high-level overview of the fundamental concepts of libp2p.
-
-{{< youtube Xw-5cRSs85M>}}
-
-{{< embed src="https://docs.google.com/presentation/d/e/2PACX-1vSBFLQibkm_YWUi0sIaY7CLLd4PMpPk0kjgE1nt5XPBuHwhTU0owdCP44nv5OzBmoDAOIwcy4Ngx0AV/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" >}}
-Introduction to libp2p (3/9/23)
 
 ## libp2p Shallow Dive
 

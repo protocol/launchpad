@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-libp2p"
-weight: 350
+weight: 70
 category: lecture
 level:
 - deep
@@ -76,9 +76,9 @@ This includes two types of hosts: publicly reachable and non-publicly reachable 
 
 _See_ [_the full proposal here_](https://github.com/protocol/web3-dev-team/pull/21/files#diff-b137dc3a933796d3ce264eeb6a31386d72a7a1c925c01e62c3ab026f46c417c2)
 
-Given the pervasiveness of IPv4 peers that are behind NATs on the internet, NAT traversal is an essential requirement for a peer to peer application. The inability to traverse NATs means that such NATT’d peers are NOT reachable on the network and are thus unable to provide any meaningful service to the network. Nor can they interact with network participants under protocol patterns that require inbound connections (e.g. dialbacks).
+Given the pervasiveness of IPv4 peers that are behind NATs on the internet, NAT traversal is an essential requirement for a peer to peer application. The inability to traverse NATs means that such NAT’d peers are NOT reachable on the network and are thus unable to provide any meaningful service to the network. Nor can they interact with network participants under protocol patterns that require inbound connections (e.g. dialbacks).
 
-libp2p currently executes NAT traversal using[ Circuit Relays](https://docs.libp2p.io/concepts/circuit-relay/) wherein publicly dialable Relay servers relay the entirety of user traffic to peers that are NATT’d. This approach does NOT scale because:
+libp2p currently executes NAT traversal using[ Circuit Relays](https://docs.libp2p.io/concepts/circuit-relay/) wherein publicly dialable Relay servers relay the entirety of user traffic to peers that are NAT’d. This approach does NOT scale because:
 
 1. It costs bandwidth on the Relay server.
 2. There is NO real incentive to be a Relay server.

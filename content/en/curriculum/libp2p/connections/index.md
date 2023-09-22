@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-libp2p"
-weight: 310
+weight: 40
 category: lecture
 level:
 - shallow
@@ -186,7 +186,7 @@ Because the data will be sent over the same connection, we need an abstraction c
 
 ### Negotiating protocols
 
-After the connection is established (i.e. handshake, security, and multiplexing), peers exchange what application protocols they support. Because `multistream-select` is used, the procedure to agree on an application protocol is the same as for the security and mutiplexing negotiations: the protocol identifier is sent to the peer and `na` is answered if the protocol is not supported.
+After the connection is established (i.e. handshake, security, and multiplexing), peers exchange what application protocols they support. Because `multistream-select` is used, the procedure to agree on an application protocol is the same as for the security and multiplexing negotiations: the protocol identifier is sent to the peer and `na` is answered if the protocol is not supported.
 
 Every supported protocol is assigned a handler, which manages the data for that protocol.
 
