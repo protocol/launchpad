@@ -1,5 +1,5 @@
 ---
-title: "Shallow and Deep Dive Sessions"
+title: "Filecoin Shallow and Deep Dive Sessions"
 description: "Introductory, Shallow & Deep Dives into Filecoin"
 draft: false
 menu:

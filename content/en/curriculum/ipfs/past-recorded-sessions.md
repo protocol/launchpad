@@ -1,5 +1,5 @@
 ---
-title: "Shallow and Deep Dive Sessions"
+title: IPFS Shallow and Deep Dive Sessions"
 description: "Introductory, Shallow & Deep Dives into IPFS"
 draft: false
 menu:
