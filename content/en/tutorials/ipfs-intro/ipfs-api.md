@@ -7,7 +7,7 @@ menu:
         parent: "curriculum-ipfs"
     tutorials:
         parent: "tutorials-ipfs"
-weight: 160
+weight: 130
 category: tutorial
 level:
 - deep

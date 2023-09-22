@@ -1,22 +1,13 @@
 ---
-title: "Past Recorded Sessions For IPFS"
+title: "Shallow and Deep Dive Sessions"
 description: "Introductory, Shallow & Deep Dives into IPFS"
 draft: false
 menu:
   curriculum:
     parent: "curriculum-ipfs"
-weight: 170
+weight: 80
 category: lecture
 ---
-
-## IPFS Introduction
-
-This recording and deck is intended to provide a high-level overview of the fundamental concepts of IPFS.
-
-{{< youtube gpA81kJGnYE>}}
-
-{{< embed src="https://docs.google.com/presentation/d/e/2PACX-1vRNf3ltzM3U-pUEOHT08QIAF6fqHOQW9ND8X97wUaD71oZN8TtIn4b15CaTciYMTGKgSQKIApFuyPQg/embed?start=false&loop=false" frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" >}}
-Introduction to IPFS (3/23/23)
 
 ## IPFS Shallow Dive
 
