@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-filecoin"
-weight: 390
+weight: 30
 category: lecture
 level:
 - shallow
@@ -91,7 +91,7 @@ Filecoin Plus is a mechanism for onboarding data into the Filecoin market that i
 
 There are a few ways one can get [approved to store data](https://plus.fil.org/landing) on the Filecoin network, and there are [governance processes and roles](https://github.com/filecoin-project/notary-governance), including root key-holders, notaries, clients, and storage providers who interact through the allocation and spending of DataCap, and help onboard that data to the network.
 
-![Filcoin Plus Governance](notary.png)
+![Filecoin Plus Governance](notary.png)
 
 {{% level type="[deep]" %}}
 

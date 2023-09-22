@@ -1,22 +1,13 @@
 ---
-title: "Past Recorded Sessions"
+title: "Shallow and Deep Dive Sessions"
 description: "Introductory, Shallow & Deep Dives into Filecoin"
 draft: false
 menu:
   curriculum:
     parent: "curriculum-filecoin"
-weight: 170
+weight: 80
 category: lecture
 ---
-
-## Filecoin Introduction
-
-This recording and deck is intended to provide a high-level overview of the fundamental concepts of Filecoin.
-
-{{< youtube i7srSNxFFaI>}}
-
-{{< embed src="https://docs.google.com/presentation/d/e/2PACX-1vRHoTj6pPtBUHgW-2w1CMknEyW3gfwUpQz0iH-aFjA4yxN71u8fR4x_4WhrimeW6rHSsO7YG8D9iJgm/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" >}}
-Introduction to Filecoin (3/28/23)
 
 ## Filecoin Shallow Dive
 

@@ -5,7 +5,7 @@ draft: false
 menu:
     curriculum:
         parent: "curriculum-filecoin"
-weight: 430
+weight: 70
 category: lecture
 level:
 - deep

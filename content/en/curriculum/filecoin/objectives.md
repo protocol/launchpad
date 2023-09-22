@@ -6,7 +6,7 @@ menu:
     curriculum:
         parent: "curriculum-filecoin"
         identifier: "filecoin-objectives"
-weight: 375
+weight: 10
 category: lecture
 level:
 - shallow
