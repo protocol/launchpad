@@ -5,6 +5,7 @@
 @layer base {
   html {
     @apply text-pl-dark-blue;
+    @apply text-xl;
   }
 
   h1 {
