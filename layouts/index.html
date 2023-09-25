@@ -10,7 +10,7 @@
       href="logos/lp-primary-color.png"
     />
     <link href="css/styles.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/tailwind-output.css" />
+    <link href="css/tailwind-output.css" rel="stylesheet" />
     <script defer="" src="js/gsap.min.js"></script>
     <script defer="" src="js/ScrollTrigger.min.js"></script>
     <script defer="" src="js/split-type.js"></script>
@@ -199,10 +199,7 @@
                 <div class="nav-button-line is-2"></div>
               </div>
               <div class="temporary_nav-links">
-                <a
-                  href="curriculum/"
-                  class="button-primary is-temporary w-inline-block"
-                >
+                <a href="curriculum/" class="button-primary w-inline-block">
                   <div>Explore the Curriculum!</div>
                 </a>
               </div>
@@ -210,17 +207,6 @@
           </div>
         </nav>
         <div class="page-css">
-          <div class="testimonial-slider w-embed">
-            <style>
-              @media only screen and (min-width: 480px) {
-                .swiper-slide.is-testimonial:hover {
-                  .testimonial-slider-wrapper {
-                    transform: translateY(-4rem);
-                  }
-                }
-              }
-            </style>
-          </div>
           <div class="nav-dark-mode w-embed">
             <style>
               .nav.is-dark {
@@ -370,381 +356,295 @@
           </div>
         </section>
         <section class="seciton-home-testimonials">
-          <div class="container">
-            <div class="home-testimonials_component">
-              <div class="home-testimonial-header">
-                <h2
-                  class="heading-50 split-type"
-                  style="opacity: 1; visibility: inherit"
+          <div class="home-testimonials_component ml-10 mr-10">
+            <div class="home-testimonial-header">
+              <h1 class="split-type">
+                <div class="split-line block text-start w-full">
+                  What our
+                  <span class="text-pl-blue font-bold"> Residents </span>
+                  say:
+                </div>
+              </h1>
+            </div>
+            <div class="home-testimonials-content">
+              <div
+                class="swiper w-dyn-list swiper-initialized swiper-horizontal swiper-backface-hidden"
+              >
+                <div
+                  class="swiper-wrapper anim-2 w-dyn-items flex flex-col lg:flex-row gap-10 items-stretch"
                 >
-                  <div class="split-line block text-start w-full">
-                    <div class="split-word inline-block">What</div>
-                    <div class="split-word inline-block">our</div>
-                    <div class="split-word inline-block text-pl-blue">
-                      Residents
+                  <div class="w-full">
+                    <div
+                      class="bg-white rounded-2xl h-full p-7 lg:hover:-translate-y-12 lg:duration-500"
+                    >
+                      <div class="testimonial-top">
+                        <div class="testimonial-headshot">
+                          <img
+                            loading="lazy"
+                            alt=""
+                            src="images/diego.jpeg"
+                            sizes="(max-width: 767px) 100vw, (max-width: 991px) 8vw, 6vw"
+                            class="img-contain"
+                          />
+                        </div>
+                        <div class="testimonial-name text-pl-blue">
+                          <h3>Diego, Software Engineer</h3>
+                          <h4>Protocol Labs Network - Saturn Team</h4>
+                        </div>
+                      </div>
+                      <div class="testimonial-bottom">
+                        <p>
+                          "The Launchpad program provided a structured and
+                          right-to-the-point curriculum that allowed me to learn
+                          and process the topics with ease. I have nothing but
+                          appreciation and gratitude with everyone involved in
+                          making Launchpad possible."
+                        </p>
+                      </div>
                     </div>
-                    <div class="split-word inline-block">say</div>
                   </div>
-                </h2>
+                  <div class="w-full">
+                    <div
+                      class="bg-white rounded-2xl h-full p-7 lg:hover:-translate-y-12 lg:duration-500"
+                    >
+                      <div class="testimonial-top">
+                        <div class="testimonial-headshot">
+                          <img
+                            loading="lazy"
+                            alt=""
+                            src="images/joao.jpeg"
+                            sizes="(max-width: 767px) 100vw, (max-width: 991px) 8vw, 6vw"
+                            class="img-contain"
+                          />
+                        </div>
+                        <div class="testimonial-name text-pl-blue">
+                          <h3>João, Technical Program Manager</h3>
+                          <h4>Protocol Labs Network - Data Programs</h4>
+                        </div>
+                      </div>
+                      <div class="testimonial-bottom">
+                        <p>
+                          "The content was thoughtfully curated and I felt like
+                          I gained the fundamental knowledge necessary to make
+                          contributions to our technical stack and strategy.
+                          Crucially, it was also a way for me to connect the
+                          dots: from how everything works together in practice
+                          to who I should go to for answers."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full">
+                    <div
+                      class="bg-white rounded-2xl h-full p-7 lg:hover:-translate-y-12 lg:duration-500"
+                    >
+                      <div class="testimonial-top">
+                        <div class="testimonial-headshot">
+                          <img
+                            loading="lazy"
+                            alt=""
+                            src="images/ally.jpeg"
+                            sizes="(max-width: 767px) 100vw, (max-width: 991px) 8vw, 6vw"
+                            class="img-contain"
+                          />
+                        </div>
+                        <div class="testimonial-name text-pl-blue">
+                          <h3>Ally, Developer Advocate</h3>
+                          <h4>Filecoin Foundation</h4>
+                        </div>
+                      </div>
+                      <div class="testimonial-bottom">
+                        <p>
+                          "Launchpad is an invaluable way to gain knowledge on
+                          the Protocol Labs (PL) ecosystem and for surfacing
+                          opportunities to contribute to. The program offers a
+                          crucial path to getting up to speed on the essential
+                          building blocks of the network."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span
+                  class="swiper-notification"
+                  aria-live="assertive"
+                  aria-atomic="true"
+                >
+                </span>
               </div>
-              <div class="home-testimonials-content">
-                <div class="testimonials-temp">
-                  <div
-                    class="swiper is-testimonial is-temporary w-dyn-list swiper-initialized swiper-horizontal swiper-backface-hidden"
-                  >
+              <div class="tetsimonial-slider">
+                <div
+                  class="swiper is-testimonial w-dyn-list swiper-initialized swiper-horizontal"
+                >
+                  <div class="swiper-wrapper is-testimonial anim-2 w-dyn-items">
                     <div
-                      role="list"
-                      class="swiper-wrapper is-testimonial anim-2 is-temporary w-dyn-items"
-                      id="swiper-wrapper-57feea89ec2f6279"
-                      aria-live="polite"
-                      style="opacity: 1; visibility: inherit"
+                      role="listitem"
+                      class="swiper-slide is-testimonial w-dyn-item"
                     >
-                      <div
-                        role="group"
-                        class="swiper-slide is-testimonial is-temporary w-dyn-item is-active"
-                        aria-label="1 / 3"
-                        style="
-                          translate: none;
-                          rotate: none;
-                          scale: none;
-                          margin-right: 40px;
-                        "
-                      >
-                        <div class="testimonial-slider-wrapper">
-                          <div class="testimonial-top">
-                            <div class="testimonial-headshot">
-                              <img
-                                loading="lazy"
-                                alt=""
-                                src="images/diego.jpeg"
-                                sizes="(max-width: 767px) 100vw, (max-width: 991px) 8vw, 6vw"
-                                class="img-contain"
-                              />
-                            </div>
-                            <div class="testimonial-name">
-                              <div class="text-14 text-pl-blue weight-600">
-                                Diego, Software Engineer
-                              </div>
-                              <div class="text-14 text-pl-blue weight-300">
-                                Protocol Labs Network - Saturn Team
-                              </div>
-                            </div>
+                      <div class="testimonial-slider-wrapper">
+                        <div class="testimonial-top">
+                          <div class="testimonial-headshot">
+                            <img
+                              loading="lazy"
+                              alt=""
+                              src="images/diego.jpeg"
+                              sizes="(max-width: 767px) 12vw, 100vw"
+                              class="img-contain"
+                            />
                           </div>
-                          <div class="testimonial-bottom">
-                            <p class="text-18 text-color-blue">
-                              "The Launchpad program provided a structured and
-                              right-to-the-point curriculum that allowed me to
-                              learn and process the topics with ease. I have
-                              nothing but appreciation and gratitude with
-                              everyone involved in making Launchpad possible."
-                            </p>
+                          <div class="testimonial-name">
+                            <div class="text-14 text-pl-blue weight-600">
+                              Protocol Labs Network - Saturn Team
+                            </div>
+                            <div class="text-14 text-pl-blue weight-300">
+                              Diego, Software Engineer
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div
-                        role="group"
-                        class="swiper-slide is-testimonial is-temporary w-dyn-item swiper-slide-next"
-                        aria-label="2 / 3"
-                        style="
-                          translate: none;
-                          rotate: none;
-                          scale: none;
-                          margin-right: 40px;
-                        "
-                      >
-                        <div class="testimonial-slider-wrapper">
-                          <div class="testimonial-top">
-                            <div class="testimonial-headshot">
-                              <img
-                                loading="lazy"
-                                alt=""
-                                src="images/joao.jpeg"
-                                sizes="(max-width: 767px) 100vw, (max-width: 991px) 8vw, 6vw"
-                                class="img-contain"
-                              />
-                            </div>
-                            <div class="testimonial-name">
-                              <div class="text-14 text-pl-blue weight-600">
-                                João, Technical Program Manager
-                              </div>
-                              <div class="text-14 text-pl-blue weight-300">
-                                Protocol Labs Network - Data Programs
-                              </div>
-                            </div>
-                          </div>
-                          <div class="testimonial-bottom">
-                            <p class="text-18 text-color-blue">
-                              "The content was thoughtfully curated and I felt
-                              like I gained the fundamental knowledge necessary
-                              to make contributions to our technical stack and
-                              strategy. Crucially, it was also a way for me to
-                              connect the dots: from how everything works
-                              together in practice to who I should go to for
-                              answers."
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        role="group"
-                        class="swiper-slide is-testimonial is-temporary w-dyn-item"
-                        aria-label="3 / 3"
-                        style="
-                          translate: none;
-                          rotate: none;
-                          scale: none;
-                          margin-right: 40px;
-                        "
-                      >
-                        <div class="testimonial-slider-wrapper">
-                          <div class="testimonial-top">
-                            <div class="testimonial-headshot">
-                              <img
-                                loading="lazy"
-                                alt=""
-                                src="images/ally.jpeg"
-                                sizes="(max-width: 767px) 100vw, (max-width: 991px) 8vw, 6vw"
-                                class="img-contain"
-                              />
-                            </div>
-                            <div class="testimonial-name">
-                              <div class="text-14 text-pl-blue weight-600">
-                                Ally, Developer Advocate
-                              </div>
-                              <div class="text-14 text-pl-blue weight-300">
-                                Filecoin Foundation
-                              </div>
-                            </div>
-                          </div>
-                          <div class="testimonial-bottom">
-                            <p class="text-18 text-color-blue">
-                              "Launchpad is an invaluable way to gain knowledge
-                              on the Protocol Labs (PL) ecosystem and for
-                              surfacing opportunities to contribute to. The
-                              program offers a crucial path to getting up to
-                              speed on the essential building blocks of the
-                              network."
-                            </p>
-                          </div>
+                        <div class="testimonial-bottom">
+                          <p class="text-18 text-color-blue">
+                            "The Launchpad program provided a structured and
+                            right-to-the-point curriculum that allowed me to
+                            learn and process the topics with ease. I have
+                            nothing but appreciation and gratitude with everyone
+                            involved in making Launchpad possible."
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <span
-                      class="swiper-notification"
-                      aria-live="assertive"
-                      aria-atomic="true"
-                    >
-                    </span>
-                  </div>
-                </div>
-                <div class="tetsimonial-slider">
-                  <div
-                    class="swiper is-testimonial w-dyn-list swiper-initialized swiper-horizontal"
-                  >
                     <div
-                      role="list"
-                      class="swiper-wrapper is-testimonial anim-2 w-dyn-items"
-                      id="swiper-wrapper-16f3748107d62cb86"
-                      aria-live="polite"
-                      style="
-                        transition-duration: 0ms;
-                        opacity: 1;
-                        visibility: inherit;
-                      "
+                      role="listitem"
+                      class="swiper-slide is-testimonial w-dyn-item"
                     >
-                      <div
-                        role="listitem"
-                        class="swiper-slide is-testimonial w-dyn-item"
-                        style="
-                          translate: none;
-                          rotate: none;
-                          scale: none;
-                          transform: translate(0%, 0%);
-                          opacity: 1;
-                        "
-                      >
-                        <div class="testimonial-slider-wrapper">
-                          <div class="testimonial-top">
-                            <div class="testimonial-headshot">
-                              <img
-                                loading="lazy"
-                                alt=""
-                                src="images/diego.jpeg"
-                                sizes="(max-width: 767px) 12vw, 100vw"
-                                class="img-contain"
-                              />
-                            </div>
-                            <div class="testimonial-name">
-                              <div class="text-14 text-pl-blue weight-600">
-                                Protocol Labs Network - Saturn Team
-                              </div>
-                              <div class="text-14 text-pl-blue weight-300">
-                                Diego, Software Engineer
-                              </div>
-                            </div>
+                      <div class="testimonial-slider-wrapper">
+                        <div class="testimonial-top">
+                          <div class="testimonial-headshot">
+                            <img
+                              loading="lazy"
+                              alt=""
+                              src="images/joao.jpeg"
+                              sizes="(max-width: 767px) 12vw, 100vw"
+                              class="img-contain"
+                            />
                           </div>
-                          <div class="testimonial-bottom">
-                            <p class="text-18 text-color-blue">
-                              "The Launchpad program provided a structured and
-                              right-to-the-point curriculum that allowed me to
-                              learn and process the topics with ease. I have
-                              nothing but appreciation and gratitude with
-                              everyone involved in making Launchpad possible."
-                            </p>
+                          <div class="testimonial-name">
+                            <div class="text-14 text-pl-blue weight-600">
+                              Protocol Labs Network - Data Programs
+                            </div>
+                            <div class="text-14 text-pl-blue weight-300">
+                              João, Technical Program Manager
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div
-                        role="listitem"
-                        class="swiper-slide is-testimonial w-dyn-item"
-                        style="
-                          translate: none;
-                          rotate: none;
-                          scale: none;
-                          transform: translate(0%, 0%);
-                          opacity: 1;
-                        "
-                      >
-                        <div class="testimonial-slider-wrapper">
-                          <div class="testimonial-top">
-                            <div class="testimonial-headshot">
-                              <img
-                                loading="lazy"
-                                alt=""
-                                src="images/joao.jpeg"
-                                sizes="(max-width: 767px) 12vw, 100vw"
-                                class="img-contain"
-                              />
-                            </div>
-                            <div class="testimonial-name">
-                              <div class="text-14 text-pl-blue weight-600">
-                                Protocol Labs Network - Data Programs
-                              </div>
-                              <div class="text-14 text-pl-blue weight-300">
-                                João, Technical Program Manager
-                              </div>
-                            </div>
-                          </div>
-                          <div class="testimonial-bottom">
-                            <p class="text-18 text-color-blue">
-                              "The content was thoughtfully curated and I felt
-                              like I gained the fundamental knowledge necessary
-                              to make contributions to our technical stack and
-                              strategy. Crucially, it was also a way for me to
-                              connect the dots: from how everything works
-                              together in practice to who I should go to for
-                              answers."
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        role="listitem"
-                        class="swiper-slide is-testimonial w-dyn-item"
-                        style="
-                          translate: none;
-                          rotate: none;
-                          scale: none;
-                          transform: translate(0%, 0%);
-                          opacity: 1;
-                        "
-                      >
-                        <div class="testimonial-slider-wrapper">
-                          <div class="testimonial-top">
-                            <div class="testimonial-headshot">
-                              <img
-                                loading="lazy"
-                                alt=""
-                                src="images/ally.jpeg"
-                                sizes="(max-width: 767px) 12vw, 100vw"
-                                class="img-contain"
-                              />
-                            </div>
-                            <div class="testimonial-name">
-                              <div class="text-14 text-pl-blue weight-600">
-                                Filecoin Foundation
-                              </div>
-                              <div class="text-14 text-pl-blue weight-300">
-                                Ally, Developer Advocate
-                              </div>
-                            </div>
-                          </div>
-                          <div class="testimonial-bottom">
-                            <p class="text-18 text-color-blue">
-                              "Launchpad is an invaluable way to gain knowledge
-                              on the Protocol Labs (PL) ecosystem and for
-                              surfacing opportunities to contribute to. The
-                              program offers a crucial path to getting up to
-                              speed on the essential building blocks of the
-                              network."
-                            </p>
-                          </div>
+                        <div class="testimonial-bottom">
+                          <p class="text-18 text-color-blue">
+                            "The content was thoughtfully curated and I felt
+                            like I gained the fundamental knowledge necessary to
+                            make contributions to our technical stack and
+                            strategy. Crucially, it was also a way for me to
+                            connect the dots: from how everything works together
+                            in practice to who I should go to for answers."
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <span
-                      class="swiper-notification"
-                      aria-live="assertive"
-                      aria-atomic="true"
+                    <div
+                      role="listitem"
+                      class="swiper-slide is-testimonial w-dyn-item"
                     >
-                    </span>
-                  </div>
-                  <div class="slider-arrows is-testimonial">
-                    <a
-                      href="#"
-                      class="swiper-arrow is-testimonial is-prev w-inline-block"
-                      tabindex="0"
-                      role="button"
-                      aria-label="Previous slide"
-                      aria-controls="swiper-wrapper-16f3748107d62cb86"
-                      aria-disabled="false"
-                    >
-                      <div class="button-icon is-button flipped w-embed">
-                        <svg
-                          width="100%"
-                          height="100%"
-                          viewBox="0 0 16 13"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M14.3327 6.78688L0 6.78688M9.15582 12.4016L14.841 6.70081L9.15582 1"
-                            stroke="currentColor"
-                            stroke-width="1.2"
-                            stroke-linejoin="bevel"
-                          ></path>
-                        </svg>
+                      <div class="testimonial-slider-wrapper">
+                        <div class="testimonial-top">
+                          <div class="testimonial-headshot">
+                            <img
+                              loading="lazy"
+                              alt=""
+                              src="images/ally.jpeg"
+                              sizes="(max-width: 767px) 12vw, 100vw"
+                              class="img-contain"
+                            />
+                          </div>
+                          <div class="testimonial-name">
+                            <div class="text-14 text-pl-blue weight-600">
+                              Filecoin Foundation
+                            </div>
+                            <div class="text-14 text-pl-blue weight-300">
+                              Ally, Developer Advocate
+                            </div>
+                          </div>
+                        </div>
+                        <div class="testimonial-bottom">
+                          <p class="text-18 text-color-blue">
+                            "Launchpad is an invaluable way to gain knowledge on
+                            the Protocol Labs (PL) ecosystem and for surfacing
+                            opportunities to contribute to. The program offers a
+                            crucial path to getting up to speed on the essential
+                            building blocks of the network."
+                          </p>
+                        </div>
                       </div>
-                    </a>
-                    <a
-                      href="#"
-                      class="swiper-arrow is-testimonial is-next w-inline-block"
-                      tabindex="0"
-                      role="button"
-                      aria-label="Next slide"
-                      aria-controls="swiper-wrapper-16f3748107d62cb86"
-                      aria-disabled="false"
-                    >
-                      <div class="button-icon is-button w-embed">
-                        <svg
-                          width="100%"
-                          height="100%"
-                          viewBox="0 0 16 13"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M14.3327 6.78688L0 6.78688M9.15582 12.4016L14.841 6.70081L9.15582 1"
-                            stroke="currentColor"
-                            stroke-width="1.2"
-                            stroke-linejoin="bevel"
-                          ></path>
-                        </svg>
-                      </div>
-                    </a>
+                    </div>
                   </div>
+                  <span
+                    class="swiper-notification"
+                    aria-live="assertive"
+                    aria-atomic="true"
+                  >
+                  </span>
                 </div>
-                <!-- Where button used to be -->
+                <div class="slider-arrows is-testimonial">
+                  <a
+                    href="#"
+                    class="swiper-arrow is-testimonial is-prev w-inline-block"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Previous slide"
+                    aria-controls="swiper-wrapper-16f3748107d62cb86"
+                    aria-disabled="false"
+                  >
+                    <div class="button-icon is-button flipped w-embed">
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 16 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.3327 6.78688L0 6.78688M9.15582 12.4016L14.841 6.70081L9.15582 1"
+                          stroke="currentColor"
+                          stroke-width="1.2"
+                          stroke-linejoin="bevel"
+                        ></path>
+                      </svg>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="swiper-arrow is-testimonial is-next w-inline-block"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Next slide"
+                    aria-controls="swiper-wrapper-16f3748107d62cb86"
+                    aria-disabled="false"
+                  >
+                    <div class="button-icon is-button w-embed">
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 16 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.3327 6.78688L0 6.78688M9.15582 12.4016L14.841 6.70081L9.15582 1"
+                          stroke="currentColor"
+                          stroke-width="1.2"
+                          stroke-linejoin="bevel"
+                        ></path>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

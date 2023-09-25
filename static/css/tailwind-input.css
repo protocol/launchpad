@@ -19,7 +19,10 @@
 
   h3 {
     @apply text-3xl lg:text-2xl;
-    @apply lg:leading-5;
+  }
+
+  h4 {
+    @apply text-2xl lg:text-xl;
   }
 }
 
