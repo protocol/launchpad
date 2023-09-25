@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="w-mod-js w-mod-ix">
+<html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>PLN Launchpad</title>
@@ -11,59 +11,6 @@
     />
     <link href="css/styles.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/tailwind-output.css" />
-    <style>
-      @media (max-width: 991px) and (min-width: 768px) {
-        html.w-mod-js:not(.w-mod-ix)
-          [data-w-id="f542cf99-beb9-ec4f-30e9-80bc7574e298"] {
-          -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
-            rotateY(0) rotateZ(0deg) skew(0, 0);
-          -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
-            rotateY(0) rotateZ(0deg) skew(0, 0);
-          -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
-            rotateY(0) rotateZ(0deg) skew(0, 0);
-          transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-            rotateZ(0deg) skew(0, 0);
-        }
-        html.w-mod-js:not(.w-mod-ix)
-          [data-w-id="f542cf99-beb9-ec4f-30e9-80bc7574e299"] {
-          height: 0px;
-        }
-      }
-      @media (max-width: 767px) and (min-width: 480px) {
-        html.w-mod-js:not(.w-mod-ix)
-          [data-w-id="f542cf99-beb9-ec4f-30e9-80bc7574e298"] {
-          -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
-            rotateY(0) rotateZ(0deg) skew(0, 0);
-          -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
-            rotateY(0) rotateZ(0deg) skew(0, 0);
-          -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
-            rotateY(0) rotateZ(0deg) skew(0, 0);
-          transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-            rotateZ(0deg) skew(0, 0);
-        }
-        html.w-mod-js:not(.w-mod-ix)
-          [data-w-id="f542cf99-beb9-ec4f-30e9-80bc7574e299"] {
-          height: 0px;
-        }
-      }
-      @media (max-width: 479px) {
-        html.w-mod-js:not(.w-mod-ix)
-          [data-w-id="f542cf99-beb9-ec4f-30e9-80bc7574e298"] {
-          -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
-            rotateY(0) rotateZ(0deg) skew(0, 0);
-          -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
-            rotateY(0) rotateZ(0deg) skew(0, 0);
-          -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
-            rotateY(0) rotateZ(0deg) skew(0, 0);
-          transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
-            rotateZ(0deg) skew(0, 0);
-        }
-        html.w-mod-js:not(.w-mod-ix)
-          [data-w-id="f542cf99-beb9-ec4f-30e9-80bc7574e299"] {
-          height: 0px;
-        }
-      }
-    </style>
     <script defer="" src="js/gsap.min.js"></script>
     <script defer="" src="js/ScrollTrigger.min.js"></script>
     <script defer="" src="js/split-type.js"></script>
@@ -88,31 +35,6 @@
               --clr-light-blue: #156ff7;
               --clr-grey: #f6f7fa;
               --clr-white: #ffffff;
-            }
-
-            /*default font size */
-            @media (min-width: 240px) {
-              html {
-                font-size: calc(7.68px + 8.32 * ((100vw - 240px) / 239));
-              }
-            }
-
-            @media (min-width: 768px) {
-              html {
-                font-size: calc(12.31px + 3.69 * ((100vw - 768px) / 223));
-              }
-            }
-
-            @media (min-width: 992px) {
-              html {
-                font-size: calc(11.56px + 4.44 * ((100vw - 992px) / 374));
-              }
-            }
-
-            @media (min-width: 2000px) {
-              html {
-                font-size: 16px;
-              }
             }
 
             /*removes tap color on mobile*/
@@ -152,9 +74,6 @@
               -webkit-font-smoothing: antialiased; /* WebKit  */
               font-style: normal;
               font-stretch: normal;
-              -webkit-box-sizing: border-box;
-              -moz-box-sizing: border-box;
-              box-sizing: border-box;
             }
 
             /*UTILS*/
@@ -235,8 +154,8 @@
         </div>
       </div>
       <main class="main is-grey">
-        <nav id="top-nav" class="nav">
-          <div class="container is-nav">
+        <nav id="top-nav" class="nav ml-5 mr-5">
+          <div class="is-nav">
             <div class="flex flex-row justify-between items-center pt-4 pb-4">
               <div class="flex flex-row">
                 <div class="nav-brand w-inline-block w--current">
@@ -294,67 +213,6 @@
           </div>
         </nav>
         <div class="page-css">
-          <div class="what-we-offer-hexagons w-embed">
-            <style>
-              .home-doc-polygon {
-                clip-path: polygon(
-                  50% 0%,
-                  95% 25%,
-                  95% 75%,
-                  50% 100%,
-                  5% 75%,
-                  5% 25%
-                );
-              }
-
-              .docs-res-list-item.is-2:nth-child(odd) .home-doc-polygon {
-                background-color: var(--clr-light-blue);
-              }
-
-              @media only screen and (min-width: 991px) {
-                /*HEXAGON LAYOUT PATTERN*/
-                .docs-res-list-item.is-2:nth-child(10n + 3),
-                .docs-res-list-item.is-2:nth-child(10n + 4),
-                .docs-res-list-item.is-2:nth-child(10n + 7),
-                .docs-res-list-item.is-2:nth-child(10n + 8),
-                .docs-res-list-item.is-2:nth-child(10n + 11),
-                .docs-res-list-item.is-2:nth-child(10n + 12),
-                .docs-res-list-item.is-2:nth-child(10n + 15),
-                .docs-res-list-item.is-2:nth-child(10n + 16) {
-                  margin-left: -12.75rem;
-                }
-                .docs-res-list-item.is-2:nth-child(10n + 9),
-                .docs-res-list-item.is-2:nth-child(10n + 10) {
-                  margin-left: -25.5rem;
-                }
-                .docs-res-list-item.is-2:nth-child(10n + 13),
-                .docs-res-list-item.is-2:nth-child(10n + 14) {
-                  margin-left: 0;
-                }
-
-                .docs-res-list-item.is-2:nth-child(odd) .home-doc-polygon {
-                  background-color: var(--clr-light-blue);
-                }
-
-                .docs-res-list-item.is-2:nth-child(4n + 1) .home-doc-polygon {
-                  background-color: #fff;
-                }
-
-                .docs-res-list-item.is-2:nth-child(4n + 1) .is-poly-heading {
-                  color: var(--clr-light-blue);
-                }
-
-                .docs-res-list-item.is-2:nth-child(4n + 1) .is-poly-subtext {
-                  color: #707075;
-                }
-
-                .docs-res-list-item.is-2:nth-child(4n + 2) .home-doc-polygon,
-                .docs-res-list-item.is-2:nth-child(4n + 3) .home-doc-polygon {
-                  background-color: var(--clr-light-blue);
-                }
-              }
-            </style>
-          </div>
           <div class="testimonial-slider w-embed">
             <style>
               @media only screen and (min-width: 480px) {
