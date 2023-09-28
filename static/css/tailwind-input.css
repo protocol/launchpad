@@ -31,6 +31,10 @@
     @apply bg-pl-dark-blue text-pl-gray;
     @apply text-2xl lg:text-base;
   }
+
+  .button-secondary {
+    @apply text-2xl lg:text-base;
+  }
 }
 
 .nav-brand {
