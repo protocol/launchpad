@@ -7,31 +7,24 @@ aliases:
   - /about/
 ---
 
-<link rel="icon" type="image/x-icon" href="/logos/launchpad.png">
-<div class="row justify-content-center">
-  <div class="">
-    <div class="column">
-      <p>Protocol Labs Network (PLN) Launchpad is a four-week onboarding program to train, onboard, and connect teams, projects, and companies across the PL Network.
-        In the Launchpad curriculum, you will learn about the Protocol Labs Network and its core open source technologies: IPFS, IPLD, libp2p, Filecoin, and more.
-            Our curriculum allows you to take a <i>shallow</i> or <i>deep</i> dive into technical topics and PLN projects.
-        While you are learning, work with your teeam on something you can create using your new web3 knowledge to share with the PL Network during an upcoming demo day!
-      <ul>
-        <li>Send an e-mail to <a href="mailto:recruiting@protocol.ai?subject=Launchpad: Join PLN">recruiting@protocol.ai about roles you are interested in</a>
-          <li>Take a <a href="https://jobs.protocol.ai/companies" target="_blank">look at the companies</a> that are hiring in the Protocol Labs Network</li>
-          <li><a href="https://jobs.protocol.ai/jobs" target="_blank"> See open roles</a> in the Protocol Labs Network</li>
-        <li><a href="https://protocol.ai/join/" target="_blank"> Learn more</a> about joining PLN</li>
-        <li>Protocol Labs Network members can see any upcoming sync-cohort dates to register</li>
-      </ul>
+Protocol Labs Network (PLN) Launchpad is a four-week onboarding program to train, onboard, and connect teams, projects, and companies across the PL Network.
+In the Launchpad curriculum, you will learn about the Protocol Labs Network and its core open source technologies: IPFS, IPLD, libp2p, Filecoin, and more.
+Our curriculum allows you to take a _shallow_ or **deep** dive into technical topics and PLN projects.
+While you are learning, work with your teeam on something you can create using your new web3 knowledge to share with the PL Network during an upcoming demo day!
 
-      Launchpad cohorts help onboard a broad community of primed talent into PL Network teams - and also grow our network engineering culture, strong community bonds, and solid cross-functional knowledge of various parts of the PL Network tools and protocols.
-      </br>
-      </br> See an issue or opportunity with the curriculum? <a href="https://github.com/protocol/launchpad/issues">Create a Github Issue<a> or <a href="https://github.com/protocol/launchpad"> make a PR<a>
-      </p>
-    </div>
-  </div>
+- Send an e-mail to <a href="mailto:recruiting@protocol.ai?subject=Launchpad: Join PLN">recruiting@protocol.ai about roles you are interested in</a>
+- Take a <a href="https://jobs.protocol.ai/companies" target="_blank">look at the companies</a> that are hiring in the Protocol Labs Network</li>
+- <a href="https://jobs.protocol.ai/jobs" target="_blank"> See open roles</a> in the Protocol Labs Network</li>
+- <a href="https://protocol.ai/join/" target="_blank"> Learn more</a> about joining PLN</li>
+- Protocol Labs Network members can see any upcoming sync-cohort dates to register</li>
 
 
-<div style="height: 10px;"></div>
+Launchpad cohorts help onboard a broad community of primed talent into PL Network teams - and also grow our network engineering culture, strong community bonds, and solid cross-functional knowledge of various parts of the PL Network tools and protocols.
+
+
+See an issue or opportunity with the curriculum? <a href="https://github.com/protocol/launchpad/issues">Create a Github Issue<a> or <a href="https://github.com/protocol/launchpad"> make a PR<a>
+
+
 
   <h2>Launchpad Principles</h2>
   <p>
