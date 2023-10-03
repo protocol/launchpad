@@ -80,13 +80,13 @@ When editing content, please ask for a PR review from a content maintainer:
 
 - Curriculum website structure, formatting, and maintenance: @chase
 - Launchpad Getting Started: @momack2
-- Web3 Basics:
+- Web3 Basics: @hammertoe
 - PL Network: @rschanger
-- IPFS:
-- IPLD:
-- libp2p:
-- Filecoin:
-- DevTools:
+- IPFS: @2color
+- IPLD: @2color
+- libp2p: @2color
+- Filecoin: @hammertoe
+- DevTools: @hammertoe
 
 ### Content Maintainer Expectations
 
