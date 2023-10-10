@@ -85,7 +85,7 @@ Here are a few characteristics found in Web1:
   discovery and monetization
 - Infrastructure is provided through virtualized cloud services
 
-Web2 -- An example social media page ![Social media page](web2.png)
+Web2 -- An example social media page ![Social media page](web2-li.png)
 
 ## Web3
 
