@@ -78,10 +78,10 @@ In the category of non-custodial wallets, there are two types: software and hard
 
 Software wallets are applications that run on your computer or phone. The most
 popular software-based wallets are browser plugins like
-[Metamask](https://metamask.io/). Browser plugin wallets are convenient because
+[MetaMask](https://metamask.io/). Browser plugin wallets are convenient because
 they can automatically interact with the websites that you visit, once you give
 them permission. Browser plugins typically support one network family at a
-time, like Ethereum or Solana. Desktop application wallets like [Exodus]()
+time, like Ethereum or Solana. Desktop application wallets like [Exodus](https://www.exodus.com/)
 typically support the majority of cryptocurrencies in one package and are
 convenient for managing a whole portfolio. They provide a beautiful interface
 with many useful features.
