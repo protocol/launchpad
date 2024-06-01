@@ -20,10 +20,17 @@ We're going to be creating an ERC-20 token in this quickstart. The ERC-20 contra
 
 * You must have a **Metamask wallet ready** to use in your browser.
 Learn how [here](/tutorials/metamask-intro/create-wallet/).
-* You must be connected to the **Filecoin Wallaby Testnet**.
+* You must **know how to switch the network** your Metamask is connected to.
 Learn how [here](/tutorials/metamask-intro/switch-networks/).
 
 ## Instructions
+
+### Connect Metamask to the Hyperspace Network
+
+In this tutorial, you will deploy a smart contract to the Hyperspace Filecoin Testnet, therefore, you must be connected to the network.
+[This tutorial](/tutorials/metamask-intro/switch-networks/) covers how to switch networks in Metamask.
+
+You can use the **Connect Wallet** button in the [ChainList Hyperspace Filecoin Testnet web site](https://chainlist.org/chain/3141) to connect to the Hyperspace network.
 
 ### Get some funds
 
@@ -34,17 +41,12 @@ Before you can operate in the Filecoin test network, you need funds to pay for g
 
    ![Select your account in MetaMask.](faucet-select-account-in-metamask.png)
 
-1. Go to [wallaby.network](https://wallaby.network/#faucet) and scrolldown to the **Faucet** section.
+1. Go to [hyperspace.yoga](https://hyperspace.yoga) and scrolldown to the **Faucet** section.
 1. Paste your address into the address field, complete the **I am human** captcha, and then click **Send**:
 
    ![Click the send button in MetaMask.](faucet-click-send.png)
 
-1. The faucet should give you a link to the transaction. Click it to view your transaction:
-
-   ![Click the transaction link on the faucet.](faucet-transaction-link.png)
-
-1. The block explorer will show you the transaction history for your address. After a couple of minutes, you should see 5000 `tFIL` transferred to your address.
-1. Open MetaMask to confirm that you received the `tFIL`:
+1. Open MetaMask to confirm that you received the `tFIL`. It might take some seconds.
 
    ![View your funds in MetaMask.](faucet-metamask-with-funds.png)
 
@@ -104,13 +106,10 @@ Now that we've successfully compiled our contract, we need to deploy it somewher
 
 1. MetaMask will open a new window confirming that you want to connect your account to Remix.
 1. Click **Next** and then **Connect** to connect your `tFIL` account to Remix.
-1. Back in Remix, under the **Account** field, you'll see that it says something like `0x5A5... (5000 ether)`. This value is 5000 `tFIL`, but Remix doesn't natively support the Filecoin network and thus doesn't understand what `tFIL` is. This isn't a problem; it's just a little quirk of using Remix.
-
-   ![Remix showing 5000 tFil.](remix-5000-tfil.png)
-
+1. Back in Remix, under the **Account** field, you'll see that it says something like `0x657... (5 ether)`. This value is 5 `tFIL`, but Remix doesn't natively support the Filecoin network and thus doesn't understand what `tFIL` is. This isn't a problem; it's just a little quirk of using Remix.
 1. Under the **Contract** dropdown, ensure the contract you created is selected.
 
-   ![Select your contract in Remix.](remix-select-contract.png)
+   ![Select your contract in Remix.](remix-data.png)
 
 1. Click **Deploy**.
 
@@ -145,7 +144,7 @@ Let's call a method within the deployed contract to mint some tokens.
 
    ![Add an address into Remix.](remix-add-address.png)
 
-1. This field expects an `attoFil` value. 1 `FIL` is equal to 1,000,000,000,000,000,000 `attoFil`. So if you wanted to mint 100 `FIL`, you would enter `100` followed by 18 zeros: `100000000000000000000`.
+1. This field expects an `attoFil` value. 1 `FIL` is equal to 1,000,000,000,000,000,000 `attoFil`. So if you wanted to mint 1 `FIL`, you would enter `1` followed by 18 zeros: `100000000000000000000`.
 
    ![Enter a value into Remix.](remix-add-number.png)
 
