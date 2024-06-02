@@ -284,13 +284,13 @@ $ provider init
 
 
 
-In the provider config, under the `"Reframe"` object, update the `""ProviderID": "<KUBO_NODE_PEERID>","` with the PeerID from your kubo node that you noted in the previous step:
+In the provider config, update the `"Reframe"` object.
 
 Open the index-provider config
 ```
 $ vim ~/.index-provider/config
 ```
-Add in your ipfs `PeerID` to the `.index-provider/config` `"ProviderID":` like so:
+Replace the `Reframe` object with the following `Reframe` object, after replacing `<KUBO_NODE_PEERID>` with the `PeerID` you wrote down from `.ipfs/config`:
 
 ```json
 ...
@@ -302,7 +302,7 @@ Add in your ipfs `PeerID` to the `.index-provider/config` `"ProviderID":` like s
       "CidTtl": "24h0m0s",
       "ChunkSize": 1,
       "SnapshotSize": 100,
-      "ProviderID": "12D3KooWBEQR33uW1T6axtpspeyJo6m8Sy531fQ8mzQbW1JBnWxJ",
+      "ProviderID": "<KUBO_NODE_PEERID>",
       "DsPageSize": 5000,
       "Addrs": [
           "/ip4/0.0.0.0/tcp/4001",
