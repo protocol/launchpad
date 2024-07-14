@@ -90,7 +90,7 @@ To find a value for a given key, we iteratively find the _k_ closest nodes of a 
 
 ![Distances from every peer to the key](libp2p-dht-distances.png)
 
-Every peer has a parameter, _dist_, which represents the distance from the peer to the target key (`key1`). For example, `Peer 5` with `dist = 10` means that `distance(peer5, key1) = 5`.
+Every peer has a parameter, _dist_, which represents the distance from the peer to the target key (`key1`). For example, `Peer 5` with `dist = 10` means that `distance(peer5, key1) = 10`.
 The arrows represent the close nodes of every peer.
 For simplicity, only one node (`Peer 10`) contains the key.
 
