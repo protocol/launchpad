@@ -16,7 +16,7 @@ level:
 
 Blockchains with smart contracts have proven to be extremely popular and useful.
 This has revealed the next challenge to overcome: scaling. When too many people
-uses these systems, the costs go up and performance can suffer. During its
+use these systems, the costs go up and performance can suffer. During its
 busiest times, transactions on Bitcoin and Ethereum can cost tens to hundreds of
 USD$. This isn't a problem for high value transactions, but prevents average
 users from using these systems. Blockchains need to develop techniques to be
@@ -152,7 +152,7 @@ security independently from all other chains. One chain that has only 100 nodes
 may therefore be less secure than a more popular chain that has thousands of
 nodes.
 
-The Cosmos-sponsored reference chain provides the ATOM token. It's purpose is to
+The Cosmos-sponsored reference chain provides the ATOM token. Its purpose is to
 act as a reference and to provide services that the other chains can use. It's
 latest feature is the ability to share security resources. The ATOM chain can
 therefore use its vast node infrastructure to benefit all of the other chains in
@@ -237,7 +237,7 @@ higher-performance consensus algorithm known as “Avalanche consensus” and
 utilizing separate purpose-built chains for each key service. It targets
 thousands of transactions per second and finality below 2 seconds.
 
-Avalanches reaches its performance goals by using statistical sampling
+Avalanche reaches its performance goals by using statistical sampling
 techniques to quickly establish consensus among a sub-set of nodes. Avalanche
 uses three chains, one for transactions (X-chain), one for smart contracts
 (C-chain), and one for side-chains (P-chain). This allows each chain to be

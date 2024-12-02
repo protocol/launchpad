@@ -113,7 +113,7 @@ continual basis. Nodes that cannot prove they have their portion of the data
 will be punished through fines (loss of collateral) and missing data will be
 restored from and reassigned to other nodes.
 
-Arweave priorities ease of use over configurability, which makes it will suited
+Arweave prioritizes ease of use over configurability, which makes it well-suited
 for simple use cases and perhaps less well suited for larger or more complex
 data sets that would prefer to optimize on costs, availability or other
 parameters.

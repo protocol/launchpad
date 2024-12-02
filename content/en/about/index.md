@@ -10,7 +10,7 @@ aliases:
 Protocol Labs Network (PLN) Launchpad is a four-week onboarding program to train, onboard, and connect teams, projects, and companies across the PL Network.
 In the Launchpad curriculum, you will learn about the Protocol Labs Network and its core open source technologies: IPFS, IPLD, libp2p, Filecoin, and more.
 Our curriculum allows you to take a _shallow_ or **deep** dive into technical topics and PLN projects.
-While you are learning, work with your teeam on something you can create using your new web3 knowledge to share with the PL Network during an upcoming demo day!
+While you are learning, work with your team on something you can create using your new web3 knowledge to share with the PL Network during an upcoming demo day!
 
 - Send an e-mail to <a href="mailto:recruiting@protocol.ai?subject=Launchpad: Join PLN">recruiting@protocol.ai about roles you are interested in</a>
 - Take a <a href="https://jobs.protocol.ai/companies" target="_blank">look at the companies</a> that are hiring in the Protocol Labs Network</li>
