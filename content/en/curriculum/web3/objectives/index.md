@@ -74,7 +74,7 @@ video production all become accessible and the social media scene explodes.
 Dominant service providers emerge like Google and Meta. It spans from early
 2000s until now.
 
-Here are a few characteristics found in Web1:
+Here are a few characteristics found in Web2:
 
 - Pages uses javascript to make sites interactive
 - Communication happens directly in web applications
