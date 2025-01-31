@@ -36,7 +36,7 @@ The Launchpad curriculum is split into these topic areas:
 
 There are two study levels: Shallow and Deep. You select a desired level by
 choosing from the menu in the upper right. Some advanced sections will
-disappear when you select "deep".
+disappear when you select "shallow".
 
 ![Levels](levels.png)
 
